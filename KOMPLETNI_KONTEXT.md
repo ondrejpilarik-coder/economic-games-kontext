@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 25. 10. 2026 17:35 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `72ea8276`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 25. 10. 2026 17:36 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `aae6e4ee`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -1637,10 +1637,19 @@ Hlavní repozitář `economic-games` je a **zůstává soukromý** (Ondřej 25. 
 [economic-games-kontext](https://github.com/ondrejpilarik-coder/economic-games-kontext), jehož odkaz Ondřej dává
 webovému Gemini (místní klon `%USERPROFILE%\economic-games-kontext`, commity s anonymní adresou GitHubu, ne
 Ondřejovým e-mailem). Obsah: poslední scénář s kontrolou čísel a konzultací, kuchařka, podklady scénáře,
-`CLAUDE.md` a aktivní skilly, každý jako Markdown i PDF (`scripts/kontext_pro_gemini_web.py`; u každého souboru
-nejnovější verze z mainu a všech pracovních kopií). Do veřejného repozitáře nepatří nic jiného (žádná data,
-zvuk ani klíče). Stejné soubory se ukládají i do složky Disku Google `Můj disk/Ekonomické hry – kontext pro Gemini`
-(dokud Disk Google na PC není, do stejnojmenné složky v profilu uživatele).
+`CLAUDE.md` a aktivní skilly jako **čisté Markdowny bez PDF** (`00_CTI_NEJDRIV.md` až `05_AKTIVNI_SKILLY.md`)
+a vše spojené v **`KOMPLETNI_KONTEXT.md`** (`scripts/kontext_pro_gemini_web.py`; u každého souboru nejnovější verze
+z mainu a všech pracovních kopií). PDF do veřejného repozitáře nepatří: s nimi ho webové Gemini načetlo jako ZIP
+a text nepřečetlo (Ondřej 25. 10. 2026); PDF vzniká jen na požádání (`--pdf`) do místní složky. Do veřejného
+repozitáře nepatří nic jiného (žádná data, zvuk ani klíče). `KOMPLETNI_KONTEXT.md` leží i v kořeni hlavní pracovní
+kopie projektu (`C:\Users\ondre\Desktop\Ekonomické hry Codex\KOMPLETNI_KONTEXT.md`, git ho ignoruje přes
+`.git/info/exclude`) a všechny soubory i ve složce Disku Google `Můj disk/Ekonomické hry – kontext pro Gemini`
+(dokud Disk Google na PC není, ve stejnojmenné složce v profilu uživatele).
+- **TRVALÉ PRAVIDLO (Ondřej 25. 10. 2026):** „Pokaždé, když se změní jakýkoliv skill, kuchařka nebo se vygeneruje
+  nový scénář, automaticky přegeneruj `KOMPLETNI_KONTEXT.md` a pushni změny do veřejného repozitáře
+  `economic-games-kontext`, aniž by ti to Ondřej musel připomínat.“ Dělají to hooky a nástroj níže; Claude po
+  každé takové změně ověří, že veřejný repozitář má novou verzi, a když ne, spustí
+  `py scripts/kontext_pro_gemini_web.py` sám.
 - Obnovuje se sám: git hooky `post-commit` a `post-merge` po změně skillů, `CLAUDE.md`, kuchařky nebo scénáře
   (instalace `py scripts/instaluj_hooky_gemini_web.py`, platí pro všechny pracovní kopie na Ondřejově PC) a
   `scripts/gemini_scenarista.py` po každém novém scénáři, kontrole i odpovědi Argona.
