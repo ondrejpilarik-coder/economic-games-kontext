@@ -31,13 +31,18 @@ a skript ho odmítne. Gemini CLI s předplatným Ultra od 18. 6. 2026 nefunguje 
   vrátí nový text scénáře: ten uloží a znovu zkontroluje čísla. Záznam rozhovoru je v `{REGION}/ROZHOVOR.md`.
 - Platí dál: sloh v souvislých větách, žádné „my“ o Česku, žádné čekané místo, žádné kódy (vše je i v kuchařce, oddíl 7).
 
-## KONTEXT PRO WEBOVÉ GEMINI NA DISKU GOOGLE — Ondřej 25. 10. 2026
+## KONTEXT PRO WEBOVÉ GEMINI: VEŘEJNÝ REPOZITÁŘ A DISK GOOGLE — Ondřej 25. 10. 2026
 
-Repozitář je soukromý, takže webové Gemini (gemini.google.com) odkaz na GitHub neotevře (chyba 13), a Ondřej nechce
-nic nahrávat ručně. Souhrnný kontext proto vzniká **automaticky** ve složce Disku Google
-`Můj disk/Ekonomické hry – kontext pro Gemini` jako PDF (a vedle toho Markdown): poslední scénář s kontrolou čísel
-a konzultací, kuchařka, podklady scénáře, `CLAUDE.md` a aktivní skilly (`scripts/kontext_pro_gemini_web.py`;
-u každého souboru nejnovější verze z mainu a všech pracovních kopií).
+Hlavní repozitář `economic-games` je a **zůstává soukromý** (Ondřej 25. 10. 2026), takže ho webové Gemini
+(gemini.google.com) neotevře (chyba 13), a Ondřej nechce nic nahrávat ručně. Souhrnný kontext proto vzniká
+**automaticky** a nahrává se do malého **veřejného** repozitáře
+[economic-games-kontext](https://github.com/ondrejpilarik-coder/economic-games-kontext), jehož odkaz Ondřej dává
+webovému Gemini (místní klon `%USERPROFILE%\economic-games-kontext`, commity s anonymní adresou GitHubu, ne
+Ondřejovým e-mailem). Obsah: poslední scénář s kontrolou čísel a konzultací, kuchařka, podklady scénáře,
+`CLAUDE.md` a aktivní skilly, každý jako Markdown i PDF (`scripts/kontext_pro_gemini_web.py`; u každého souboru
+nejnovější verze z mainu a všech pracovních kopií). Do veřejného repozitáře nepatří nic jiného (žádná data,
+zvuk ani klíče). Stejné soubory se ukládají i do složky Disku Google `Můj disk/Ekonomické hry – kontext pro Gemini`
+(dokud Disk Google na PC není, do stejnojmenné složky v profilu uživatele).
 - Obnovuje se sám: git hooky `post-commit` a `post-merge` po změně skillů, `CLAUDE.md`, kuchařky nebo scénáře
   (instalace `py scripts/instaluj_hooky_gemini_web.py`, platí pro všechny pracovní kopie na Ondřejově PC) a
   `scripts/gemini_scenarista.py` po každém novém scénáři, kontrole i odpovědi Argona.
