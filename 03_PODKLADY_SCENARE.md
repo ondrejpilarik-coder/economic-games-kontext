@@ -288,6 +288,17 @@ a silent reserve and high part-time employment.“
 - Huber, P., Böhs, G. (WIFO): Labour Migration from Eight New EU Countries since the Opening of the Labour Market,
   WIFO-Monatsberichte 85(11), 2012, https://www.wifo.ac.at/en/publication/117082/
 
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí:** Státní smlouva 15. 5. 1955 ukončila spojeneckou okupaci (vojska odešla v říjnu 1955); linecké ocelárny VÖEST zestátněny 1946, z Marshallova plánu šla na obnovu průmyslu včetně nich skoro 1 mld. USD; turismus přímo 4,2–4,3 % HDP v roce 2023, s nepřímými účinky 6,1–6,2 % (OECD Tourism 2024, WIFO).
+- **Oddíl 2, platí s výhradou:** rakouské banky získaly po roce 1990 velký podíl trhů regionu: v roce 2004 asi 32 % českého a 44 % slovenského trhu (guvernér rakouské centrální banky 2005, číslo z výtahu projevu); dnes Erste v Česku 26,9 % retailových úvěrů, na Slovensku 24,8 % (k tomu Tatra banka skupiny Raiffeisen), v Maďarsku 11,7 %; Bank Austria patří od 2005 italské UniCredit. „Ovládly“ sedí na Slovensko, na Česko „velký podíl“, na Maďarsko ne.
+- **Oddíl 2, platí:** prémie za výzkum 14 % od 2018 (12 % od 2016, dříve 10 %; BMF 2023).
+- **Oddíl 3, platí s výhradou:** 13. a 14. plat zdaněn sazbou 6 % jen do šestiny ročního platu, po odvodech a nezdanitelné části 620 €; od 2023 zrušena studená progrese: pásma se automaticky zvedají o dvě třetiny inflace, o zbylé třetině rozhoduje zákon (2023: dvě nejnižší hranice +6,3 %, ostatní +3,47 %).
+- **Oddíl 4, platí s výhradou:** účinnost vlády (Světová banka 2023, 0–100) AT 85,3, CZ 77,3, SK 64,7; PISA 2022 matematika AT 487 stejně jako CZ 487 (SK 464) → „lépe fungující stát“, ne „lepší školy“; zdravotnictví a bezpečnost neověřeny.
+- **Oddíl 4, platí (nepřímo):** čisté prvotní důchody 2023 AT +0,04 % HDP (vyrovnané) proti CZ −4,4 %, PL −4,1 %, SK −3,9 %, HU −3,1 % (Světová banka): zisky z Rakouska skoro neodtékají, centrály firem jsou doma.
+
 
 # Česko: proč má v kolech takové hodnoty (průměrná čistá mzda, podklad pro výklad)
 
@@ -483,6 +494,14 @@ v rozvinutých ekonomikách“ (citace podle `ekonomove/CZ.md`).
   Membership in the European Union Using the Synthetic Counterfactuals Method, IZA Discussion Paper č. 8162, duben 2014,
   tabulky 2 a 3 (archivní kopie Univerzitní knihovny v Bonnu), https://epflicht.ulb.uni-bonn.de/download/pdf/149785
 - **Rešerše ekonomů:** `ekonomove/CZ.md` (citace v oddílu 5 a údaje označené „podle rešerše“).
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí s výhradou:** soukromý sektor 1989 podle zdroje 3–11 % HDP (MMF, Borish a Noël 1996; tento výklad uvádí pod 5 % podle MMF 2000), proti asi 20 % v Maďarsku a 28 % v Polsku; Československo mělo malý zahraniční dluh (Maďarsko v roce 1995 asi 2 800 USD na obyvatele, Česko a Slovensko asi 900); chyběl domácí kapitál, rozvinuté banky i kapitálový trh.
+- **Oddíl 2, hodnocení kupónové privatizace podle výchozí pozice (Ondřej 26. 10. 2026):** kritika (slabá správa firem a tunelování, chyba v konstrukci investičních fondů, fondy ovládané státními bankami; Hanousek, Kočenda a Švejnar: typ vlastníka měl na výkon firem omezený vliv, pomohl hlavně většinový zahraniční vlastník) i obhajoba (rychlost: soukromý sektor asi 70 % HDP v roce 1995; kupónové knížky koupily víc než tři čtvrtiny dospělých; studie z roku 2020: tunelování menší, než se traduje). Že prodej strategickým investorům jako v Maďarsku nebyl pro Česko proveditelný, je argument tvůrců privatizace, ne prokázaný fakt; prodej cizincům byl možný, ale pomalejší a politicky citlivý. Podle pojistky výchozí pozice (analytický skill, krok 9b) se privatizace nepočítá jako zjevná chyba, ale jako volba z horší výchozí pozice s doloženými náklady.
+- **Oddíl 2, nelze doložit:** že kurzový závazek ČNB 2013–2017 oslabil tlak na inovace; jen dobová kritika („firmy zlenivěly“), kterou ČNB odmítla (Hampl 2016); analýza ČNB 2017 našla průkazný účinek hlavně na inflaci, pozdější studie nižší nezaměstnanost; dopad na inovace nikdo nezměřil. Do scénáře jen jako názor kritiků.
 
 
 # Polsko: proč má v kolech takové hodnoty
@@ -752,6 +771,14 @@ rešerše ekonomů projektu [28]).
     https://www.mnb.hu/letoltes/termelekenysegi-jelentes-2024-december-eng.pdf
 30. Rešerše studií projektu: [`studie/UCINKY.md`](../studie/UCINKY.md), oddíly o minimální mzdě a o odchodu lidí do ciziny.
 
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí s výhradou:** kolektivizace se zkoušela ve 40. a 50. letech, Gomułka ji v roce 1956 opustil a družstva se rozpadla; v roce 1989 soukromý sektor obdělával 76,2 % orné půdy a dával 79 % zemědělské produkce, 57 % statků mělo pod 5 ha a stát je do 80. let znevýhodňoval při přidělování strojů a hnojiv (Poland Country Study).
+- **Oddíl 1, platí:** soukromý sektor 1989 asi 28 % HDP, hlavně díky soukromému zemědělství (Maďarsko asi 20 %, Česko 3–11 %).
+- **Oddíl 4, ceny, platí zčásti:** v potravinách je Polsko na 78 % průměru EU, Slovensko na 107 % (2023); jako příčinu sbližování cen doložila polská studie hlavně konkurenci na trhu a dohánění produktivity; potravinová soběstačnost a vlastní měna jako příčiny nedoloženy. Cenová hladina projektu (skutečná individuální spotřeba 2024: PL 69,9 %, SK 80,8 %) je jiný souhrn než cenová hladina výdajů domácností v přehledech Eurostatu (72 a 85 %).
+
 
 # Slovensko: proč má v kolech takové hodnoty (průměrná čistá mzda, podklad pro výklad)
 
@@ -936,6 +963,14 @@ množství práce než na produktivitě“, což „omezuje prostor pro trvalý 
 - **MMF 2026:** International Monetary Fund, Slovak Republic: 2026 Article IV Consultation, Country Report č. 26/65,
   podle rešerše `ekonomove/SK.md`, https://www.imf.org/-/media/files/publications/cr/2026/english/1svkea2026001-source-pdf.pdf
 - **Rešerše ekonomů:** `ekonomove/SK.md` (citace v oddílu 5 a údaje označené „podle rešerše“).
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí (dobová publicistika, ne statistika):** československý zbrojní průmysl zaměstnával přímo i nepřímo asi 140 000 lidí a asi 60 % ze zhruba 100 zbrojních podniků leželo na Slovensku, s výrobou pro trh Varšavské smlouvy; v letech 1988–92 zaniklo asi 40 000 míst, nezaměstnanost v Martině, Dubnici a dalších zbrojních regionech vystoupala skoro k 25 %; ZŤS Martin vyráběla v roce 1992 jen 10 % zbraní proti roku 1988 (Christian Science Monitor 1992, 1994; The Slovak Spectator).
+- **Oddíl 2/4, platí:** v zahraničí studuje asi každý pátý slovenský vysokoškolák (jedna z nejvyšších měr v OECD; 14 % v roce 2010, 17 % v roce 2017), zhruba dvě třetiny z nich v Česku, a polovina se nechce vrátit (policy brief ISS a Slovenské akademie věd 2026; STVR).
+- **Nelze doložit:** že slovenské startupy vznikají raději v Česku (jen průzkum advokátní kanceláře, podle kterého 67 % startupů zvažuje přesun, a jednotlivé případy).
 
 
 # Maďarsko: proč má v kolech takové hodnoty
@@ -1210,3 +1245,10 @@ EU „hlavně kvůli nízkému podílu domácí přidané hodnoty ve výrobě“
 26. Rešerše studií projektu: [`studie/UCINKY.md`](../studie/UCINKY.md), oddíl o tom, kdo nese daně a odvody z práce.
 27. Mezinárodní měnový fond (2010): IMF Survey: Poland: European Success Story but Challenges Ahead (26. 3. 2010):
     https://www.imf.org/external/pubs/ft/survey/so/2010/CAR032610A.htm
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1–2, platí:** soukromý sektor 1989 asi 20 % HDP; nejvyšší zahraniční dluh na obyvatele v regionu (asi 2 800 USD v roce 1995 proti asi 900 v Česku a na Slovensku), včasné splácení pomohlo přilákat zahraniční investory; podniky prodávalo jednotlivě strategickým investorům, zhruba dvě třetiny aktiv privatizovaných 1991–97 koupili cizinci za asi 6,4 mld. USD (Kaminski a Riboud 2000, sekundární citace).
+- **Oddíl 4:** asi 60 % bankovních aktiv v domácích rukou; Erste má 11,7 % retailových úvěrů.

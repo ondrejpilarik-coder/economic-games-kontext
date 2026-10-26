@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 26. 10. 2026 18:38 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `52efc5b2`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 26. 10. 2026 18:43 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `d403dcdd`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -20,10 +20,10 @@ Aktualizováno 26. 10. 2026 18:38 automaticky ze soukromého repozitáře projek
 
 # Poslední scénář – Zlatý vzor scénáře regionu: Střední Evropa (průměrná čistá mzda, 25. 10. 2026)
 
-*Zlatý vzor regionu, který Ondřej dokončil s webovým Gemini; Claude zkontroloval a bodově opravil čísla. Uloženo 26. 10. 2026 17:01.*
+*Zlatý vzor regionu, který Ondřej dokončil s webovým Gemini; Claude zkontroloval a bodově opravil čísla. Uloženo 26. 10. 2026 18:42.*
 
 
-*Ondřej s webovým Gemini 4 Argon, 25. 10. 2026: oficiální vzor formy pro scénáře regionů (writer pro regiony, oddíl 0; kuchařka pro Gemini, oddíl 8). Sestava Rakousko, Česko, Polsko, Slovensko, Maďarsko. Forma platí celá; čísla jen po ověření proti datům epizody. Claude 26. 10. 2026 bodově opravil 12 míst podle dat mezd (`analyza_regiony_2026_10/data/kola.json`, `vysledek.json`, `vyklad/`), seznam a tvrzení bez opory v podkladech jsou v `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/gemini/STREDNI_EVROPA/AUDIT_ZLATY_VZOR.md`; původní text `ZLATY_VZOR_PUVODNI_2026-10-25.md` tamtéž.*
+*Ondřej s webovým Gemini 4 Argon, 25. 10. 2026: oficiální vzor formy pro scénáře regionů (writer pro regiony, oddíl 0; kuchařka pro Gemini, oddíl 8). Sestava Rakousko, Česko, Polsko, Slovensko, Maďarsko. Forma platí celá; čísla jen po ověření proti datům epizody. Claude 26. 10. 2026 bodově opravil 12 míst podle dat mezd a 6 míst podle rešerše tvrzení bez opory (`analyza_regiony_2026_10/RESERSE_ZLATY_VZOR_2026-10-26.md`) (`analyza_regiony_2026_10/data/kola.json`, `vysledek.json`, `vyklad/`), seznam a tvrzení bez opory v podkladech jsou v `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/gemini/STREDNI_EVROPA/AUDIT_ZLATY_VZOR.md`; původní text `ZLATY_VZOR_PUVODNI_2026-10-25.md` tamtéž.*
 
 ## Předstartovní showcase
 
@@ -37,7 +37,7 @@ První kolo rozdává startovní karty roku devatenáct set devadesát šest pod
 
 Nejlepší karty z postkomunistické čtveřice drželo Česko na dvou třetinách evropského středu. České země byly ještě před válkou stejně bohaté jako Rakousko a díky zděděnému strojírenskému jádru v čele se Škodou či Tatrou měl český soustružník v roce devatenáct set devadesát šest v halách dokonce o sedm procent více strojů a budov než průměrný Evropan. Háček byl v tom, že Česko opouštělo socialismus jako nejvíce zestátněná země celého bloku, kde soukromníci tvořili méně než pět procent výkonu a obří státní kolosy vyráběly zboží s nízkou západní tržní hodnotou.
 
-O patro níž, těsně nad polovinou evropského středu, začínalo Maďarsko se Slovenskem. Maďarsko si z dob takzvaného gulášového komunismu přineslo volnější podnikové prostředí, malý podíl zemědělství a nejvýkonnější zpracovatelský průmysl na východě. Naopak historicky agrární Slovensko komunisté industrializovali stavbou těžkých zbrojovek na tanky a hutí pro sovětskou armádu; když východní trhy zanikly, slovenský výkon se propadl o čtvrtinu a v halách chyběla třetina kapitálu. A úplně z nejhlubšího dna na dvaadvacátém místě v Evropě vyráželo Polsko. Polští komunisté totiž nikdy nezkolektivizovali venkov, takže skoro čtvrtina všech Poláků stále pracovala na malých rozdrobených políčkách, kde jeden rolník vyprodukoval ani ne desetinu toho, co farmář ve Francii.
+O patro níž, těsně nad polovinou evropského středu, začínalo Maďarsko se Slovenskem. Maďarsko si z dob takzvaného gulášového komunismu přineslo volnější podnikové prostředí, malý podíl zemědělství a nejvýkonnější zpracovatelský průmysl na východě. Naopak historicky agrární Slovensko komunisté industrializovali stavbou těžkých zbrojovek na tanky a hutí pro sovětskou armádu; když východní trhy zanikly, slovenský výkon se propadl o čtvrtinu a v halách chyběla třetina kapitálu. A úplně z nejhlubšího dna na dvaadvacátém místě v Evropě vyráželo Polsko. Polští komunisté totiž kolektivizaci venkova v roce devatenáct set padesát šest vzdali, tři čtvrtiny půdy zůstaly soukromým rolníkům a skoro čtvrtina všech Poláků stále pracovala na malých rozdrobených políčkách, kde jeden rolník vyprodukoval ani ne desetinu toho, co farmář ve Francii.
 
 ## Kolo 2 – Tah země: Vývoj produktivity 1996–2024 (295 slov / 1:55 min)
 
@@ -45,11 +45,11 @@ O patro níž, těsně nad polovinou evropského středu, začínalo Maďarsko s
 
 Druhé kolo sleduje, jak země se svými startovními kartami hrály až do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v tempu růstu napříč ligou přitom vysvětlí prosté dohánění z nízkého základu, protože převzít západní výrobní linku je snazší než vymýšlet patenty na špičce.
 
-Bohaté Rakousko proto vůči středu ligy o dvě procenta ztratilo – svůj náskok ve špičce si ale ubránilo, ovládlo středoevropský bankovní trh a výdaje na výzkum zvedlo z jedné a půl na víc než tři procenta výkonu ekonomiky. Naopak nejdrtivější stíhací jízdu předvedlo Polsko, které zvedlo produktivitu jeden a třičtvrtěkrát – pátým nejrychlejším tempem v celé Evropě – a za ním Slovensko s růstem jedenapůlkrát. Polsko po šokové terapii přesunulo miliony lidí z políček do osmkrát výkonnějšího průmyslu a desetkrát výkonnějších služeb, přes ekonomické zóny udrželo přes sedmdesát procent hodnoty vývozu doma a jako jediné v Unii rostlo i v krizi roku dva tisíce devět. Pomohl mu tehdy slabší zlotý, velký domácí trh i to, že vláda neškrtala a pustila schodek rozpočtu přes sedm procent. Polská školská reforma sice mezitím zlepšila výsledky žáků, ale dovednosti dospělých v počtech a čtení zatím zůstávají pod průměrem – proč se školství propisuje do mezd až po dekádách, uvidíme v epizodě o školství.
+Bohaté Rakousko proto vůči středu ligy o dvě procenta ztratilo – svůj náskok ve špičce si ale ubránilo, jeho banky ovládly slovenský a velkou část českého bankovního trhu a čtrnáctiprocentní prémií za firemní výzkum zvedlo výdaje na vědu z jedné a půl na víc než tři procenta výkonu ekonomiky. Naopak nejdrtivější stíhací jízdu předvedlo Polsko, které zvedlo produktivitu jeden a třičtvrtěkrát – pátým nejrychlejším tempem v celé Evropě – a za ním Slovensko s růstem jedenapůlkrát. Polsko po šokové terapii přesunulo miliony lidí z políček do osmkrát výkonnějšího průmyslu a desetkrát výkonnějších služeb, přes ekonomické zóny udrželo přes sedmdesát procent hodnoty vývozu doma a jako jediné v Unii rostlo i v krizi roku dva tisíce devět. Pomohl mu tehdy slabší zlotý, velký domácí trh i to, že vláda neškrtala a pustila schodek rozpočtu přes sedm procent. Polská školská reforma sice mezitím zlepšila výsledky žáků, ale dovednosti dospělých v počtech a čtení zatím zůstávají pod průměrem – proč se školství propisuje do mezd až po dekádách, uvidíme v epizodě o školství.
 
 Česko a Maďarsko vyrostly shodně o necelé dvě pětiny. Zatímco Maďarsko na začátku transformace prodalo nejlepší podniky za hotové západním koncernům jako General Electric či Audi, v Česku musel stát téměř stoprocentně státní ekonomiku bleskově zprivatizovat kuponovou metodou. Ta ale zanechala podniky v rukou fondů a polostátních bank bez kapitálu, což v roce devatenáct set devadesát sedm vyústilo v měnovou krizi a recesi. Od roku dva tisíce pak Česko i Slovensko otočily kormidlo a vsadily na zahraniční automobilky v čele se Škodou a bratislavským Volkswagenem, přičemž Slovensku kolem roku dva tisíce devět pomohl i desetiprocentní skok z přijetí eura.
 
-Po roce dva tisíce šestnáct ale model levných montoven narazil na strop. U Maďarska je přitom růst o dvě pětiny prokazatelným selháním: po dluhovém kolapsu roku dva tisíce osm s hypotékami v cizích měnách a záchranným úvěrem dvacet miliard eur totiž maďarská vláda hnala zaměstnanost nahoru jen přes veřejně prospěšné práce a montovny s poloviční domácí přidanou hodnotou a výzkumem pod jedním procentem výkonu ekonomiky. Česko zase přibrzdily tři vlastní kroky: rozpočtové škrty po roce dva tisíce deset sice udržely nízký státní dluh pro budoucí disciplínu o zadlužení, ale v této disciplíně prodloužily recesi. Umělé oslabení koruny centrální bankou po roce dva tisíce třináct přineslo vývozcům snadné zisky bez tlaku na inovace. A zatímco Rakousko do vědy přidávalo, ze zahraničních investic do nových závodů v Česku šla do výzkumu jen čtyři procenta – a na výzkum dává Česko ani ne procento a půl a Slovensko jen tři čtvrtě procenta výkonu ekonomiky, což rozebereme v epizodě o produktivitě a sektorech.
+Po roce dva tisíce šestnáct ale model levných montoven narazil na strop. U Maďarska je přitom růst o dvě pětiny prokazatelným selháním: po dluhovém kolapsu roku dva tisíce osm s hypotékami v cizích měnách a záchranným úvěrem dvacet miliard eur totiž maďarská vláda hnala zaměstnanost nahoru jen přes veřejně prospěšné práce a montovny s poloviční domácí přidanou hodnotou a výzkumem pod jedním procentem výkonu ekonomiky. Česko zase přibrzdily tři vlastní kroky: rozpočtové škrty po roce dva tisíce deset sice udržely nízký státní dluh pro budoucí disciplínu o zadlužení, ale v této disciplíně prodloužily recesi. Umělé oslabení koruny centrální bankou po roce dva tisíce třináct podle kritiků přineslo vývozcům snadné zisky bez tlaku na inovace, i když centrální banka to odmítá a dopad na inovace nikdo nezměřil. A zatímco Rakousko platí firmám za vědu, ze zahraničních investic do nových závodů v Česku šla do výzkumu jen čtyři procenta – a na výzkum dává Česko ani ne procento a půl a Slovensko jen tři čtvrtě procenta výkonu ekonomiky, což rozebereme v epizodě o produktivitě a sektorech.
 
 ## Kolo 3 – Tah země: Daňový klín (210 slov / 1:20 min)
 
@@ -59,7 +59,7 @@ Třetí kolo měří takzvaný daňový klín – tedy když sečteme úplně v�
 
 Nejmenší celkový díl bere stát v Polsku pod čtyřiceti procenty díky nezdanitelné částce třicet tisíc zlotých, i když část úlevy sebralo lidem zrušení odpočtu zdravotního pojištění. Přesně na evropském středu kolem jednačtyřiceti procent sedí Maďarsko a Česko: Maďarsko má sice nízké odvody firem, ale bezdětným strhává třetinu přímo z hrubé mzdy hned od prvního forintu, zatímco Česko po zrušení superhrubé mzdy v roce dva tisíce dvacet jedna drží nízkou daň z příjmu, ale schovává za ni třetinové odvody zaměstnavatelů.
 
-Nejtěžší daňový klín pak nesou Slovensko se skoro pětačtyřiceti procenty a Rakousko se sedmačtyřiceti procenty nákladů práce. Jenže v bohatém Rakousku, které daň z příjmu reformami let 2016 a 2023 zase snížilo, dostávají lidé za vysoké daně špičkové zdravotnictví, školy i bezpečnost – pro sebe ani pro své děti tak v Evropě jen těžko najdou lepší stát a nemají důvod odcházet. Když ale skoro pětačtyřicetiprocentní zátěž uvalí na práci dohánějící Slovensko, aby zalepilo přetížený důchodový systém a druhý pilíř, dusí tím vlastní budoucnost. Za západní daně totiž slovenské firmy a rodiny nedostávají západní instituce: drahá kvalifikovaná práce tam zabíjí vznik nových startupů, které raději zamíří do Česka bez jazykové bariéry, domácí pracovníci utíkají do švarcsystému s nejvyšším podílem závislých živnostníků v Unii a mladí talenti odcházejí do ciziny. Jestli si tím Slovensko kupuje aspoň udržitelné důchody, ukáže epizoda o penzích.
+Nejtěžší daňový klín pak nesou Slovensko se skoro pětačtyřiceti procenty a Rakousko se sedmačtyřiceti procenty nákladů práce. Jenže v bohatém Rakousku, které navíc daní třináctý a čtrnáctý plat zvýhodněnou šestiprocentní sazbou a od roku dva tisíce dvacet tři zvedá daňová pásma o většinu inflace, dostávají lidé za vysoké daně lépe fungující stát – pro sebe ani pro své děti tak v Evropě jen těžko najdou lepší stát a nemají důvod odcházet. Když ale skoro pětačtyřicetiprocentní zátěž uvalí na práci dohánějící Slovensko, aby zalepilo přetížený důchodový systém a druhý pilíř, dusí tím vlastní budoucnost. Za západní daně totiž slovenské firmy a rodiny nedostávají západní instituce: drahá kvalifikovaná práce tam brzdí vznik nových firem, domácí pracovníci utíkají do švarcsystému s nejvyšším podílem závislých živnostníků v Unii a každý pátý slovenský vysokoškolák studuje v cizině, nejčastěji v Česku. Jestli si tím Slovensko kupuje aspoň udržitelné důchody, ukáže epizoda o penzích.
 
 ## Finále regionu: Odhalení pořadí od posledního po vítěze (305 slov / 2:00 min)
 
@@ -126,7 +126,7 @@ smlouvy pro 98 % zaměstnanců díky povinnému členství v hospodářské komo
     o 31 bodů“ → **o 16 bodů**; „přes polovinu výkonu do výplat“ → **skoro polovina** (49,6 %).
 12. Chybějící mezera „pelotonu.V roli“.
 
-### Bez opory ve výkladech zemí (ponecháno, rozhoduje Ondřej nebo doplní rešerše)
+### Bez opory ve výkladech zemí (stav před rešerší 26. 10.; výsledek v oddílu „Po rešerši“ níže)
 
 Tvrzení nejsou v podkladech; mohou být pravdivá, ale podle kuchařky (oddíl 6) a pravidla „čísla a příčiny jen
 z podkladů“ by je Argon napsat nesměl. Buď je analytik doloží do výkladu země (krok 8), nebo se ze vzoru vypustí.
@@ -138,6 +138,28 @@ z podkladů“ by je Argon napsat nesměl. Buď je analytik doloží do výkladu
   živnostníky bez zaměstnanců asi 14 %).
 - Česko: kurzový závazek ČNB přinesl „snadné zisky bez tlaku na inovace“.
 - Maďarsko: General Electric a Audi jako kupci podniků (značky jako obraz doloženého prodeje podniků cizincům).
+
+### Po rešerši (26. 10. 2026; Ondřej: „pokud tam není opora, tak určitě je dobrý doplnit rešerši“)
+
+Rešerše: `analyza_regiony_2026_10/RESERSE_ZLATY_VZOR_2026-10-26.md`; doložené části zapsané do výkladů zemí
+(`vyklad/{AT,CZ,PL,SK}.md`, oddíl 7). Ve vzoru podle toho:
+- **Doloženo, zůstává:** Rakousko 1955, Voest a turismus; centrály firem doma (Rakousko má vyrovnané prvotní důchody,
+  Česko −4,4 % HDP); slovenské zbrojovky pro Varšavskou smlouvu a jejich pád (dobová publicistika); polské soukromé
+  zemědělství; Maďarsko prodávalo podniky strategickým investorům.
+- **Vráceno s doloženou výhradou:** čtrnáctiprocentní prémie za výzkum (od 2018); 13. a 14. plat zvýhodněnou
+  šestiprocentní sazbou a pásma zvedaná od 2023 o většinu inflace (automaticky o dvě třetiny).
+- **Zpřesněno:** „nikdy nezkolektivizovali“ → „kolektivizaci v roce 1956 vzdali, tři čtvrtiny půdy zůstaly
+  soukromým rolníkům“; „ovládlo středoevropský bankovní trh“ → „banky ovládly slovenský a velkou část českého trhu“
+  (v Maďarsku ne); „špičkové zdravotnictví, školy i bezpečnost“ → „lépe fungující stát“ (účinnost vlády AT 85,
+  CZ 77, SK 65; v matematice PISA je Rakousko stejně jako Česko); „mladí talenti odcházejí“ → „každý pátý slovenský
+  vysokoškolák studuje v cizině, nejčastěji v Česku“.
+- **Nedoloženo, přeformulováno:** startupy přecházející do Česka (vypuštěno, „brzdí vznik nových firem“); kurzový
+  závazek ČNB a inovace jen jako názor kritiků, který centrální banka odmítá a nikdo nezměřil.
+- **Ponecháno se zdrojem projektu:** soukromé firmy pod 5 % HDP v Česku (MMF 2000 ve výkladu země); jiné zdroje
+  uvádějí 3–11 %, všechny shodně „skoro žádný soukromý sektor“ proti asi 20 % v Maďarsku a 28 % v Polsku.
+- **Ceny Polska:** příčiny ve vzoru (velký trh, levné potraviny, vlastní měna) jsou doložené jen zčásti (konkurence
+  na trhu ano, potraviny jsou v Polsku na 78 % EU proti 107 % na Slovensku; vlastní měna nedoložena); věta zůstává
+  jako krátká udička na epizodu o cenové hladině.
 
 ### Štítky
 
@@ -563,6 +585,17 @@ a silent reserve and high part-time employment.“
 - Huber, P., Böhs, G. (WIFO): Labour Migration from Eight New EU Countries since the Opening of the Labour Market,
   WIFO-Monatsberichte 85(11), 2012, https://www.wifo.ac.at/en/publication/117082/
 
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí:** Státní smlouva 15. 5. 1955 ukončila spojeneckou okupaci (vojska odešla v říjnu 1955); linecké ocelárny VÖEST zestátněny 1946, z Marshallova plánu šla na obnovu průmyslu včetně nich skoro 1 mld. USD; turismus přímo 4,2–4,3 % HDP v roce 2023, s nepřímými účinky 6,1–6,2 % (OECD Tourism 2024, WIFO).
+- **Oddíl 2, platí s výhradou:** rakouské banky získaly po roce 1990 velký podíl trhů regionu: v roce 2004 asi 32 % českého a 44 % slovenského trhu (guvernér rakouské centrální banky 2005, číslo z výtahu projevu); dnes Erste v Česku 26,9 % retailových úvěrů, na Slovensku 24,8 % (k tomu Tatra banka skupiny Raiffeisen), v Maďarsku 11,7 %; Bank Austria patří od 2005 italské UniCredit. „Ovládly“ sedí na Slovensko, na Česko „velký podíl“, na Maďarsko ne.
+- **Oddíl 2, platí:** prémie za výzkum 14 % od 2018 (12 % od 2016, dříve 10 %; BMF 2023).
+- **Oddíl 3, platí s výhradou:** 13. a 14. plat zdaněn sazbou 6 % jen do šestiny ročního platu, po odvodech a nezdanitelné části 620 €; od 2023 zrušena studená progrese: pásma se automaticky zvedají o dvě třetiny inflace, o zbylé třetině rozhoduje zákon (2023: dvě nejnižší hranice +6,3 %, ostatní +3,47 %).
+- **Oddíl 4, platí s výhradou:** účinnost vlády (Světová banka 2023, 0–100) AT 85,3, CZ 77,3, SK 64,7; PISA 2022 matematika AT 487 stejně jako CZ 487 (SK 464) → „lépe fungující stát“, ne „lepší školy“; zdravotnictví a bezpečnost neověřeny.
+- **Oddíl 4, platí (nepřímo):** čisté prvotní důchody 2023 AT +0,04 % HDP (vyrovnané) proti CZ −4,4 %, PL −4,1 %, SK −3,9 %, HU −3,1 % (Světová banka): zisky z Rakouska skoro neodtékají, centrály firem jsou doma.
+
 
 # Česko: proč má v kolech takové hodnoty (průměrná čistá mzda, podklad pro výklad)
 
@@ -758,6 +791,14 @@ v rozvinutých ekonomikách“ (citace podle `ekonomove/CZ.md`).
   Membership in the European Union Using the Synthetic Counterfactuals Method, IZA Discussion Paper č. 8162, duben 2014,
   tabulky 2 a 3 (archivní kopie Univerzitní knihovny v Bonnu), https://epflicht.ulb.uni-bonn.de/download/pdf/149785
 - **Rešerše ekonomů:** `ekonomove/CZ.md` (citace v oddílu 5 a údaje označené „podle rešerše“).
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí s výhradou:** soukromý sektor 1989 podle zdroje 3–11 % HDP (MMF, Borish a Noël 1996; tento výklad uvádí pod 5 % podle MMF 2000), proti asi 20 % v Maďarsku a 28 % v Polsku; Československo mělo malý zahraniční dluh (Maďarsko v roce 1995 asi 2 800 USD na obyvatele, Česko a Slovensko asi 900); chyběl domácí kapitál, rozvinuté banky i kapitálový trh.
+- **Oddíl 2, hodnocení kupónové privatizace podle výchozí pozice (Ondřej 26. 10. 2026):** kritika (slabá správa firem a tunelování, chyba v konstrukci investičních fondů, fondy ovládané státními bankami; Hanousek, Kočenda a Švejnar: typ vlastníka měl na výkon firem omezený vliv, pomohl hlavně většinový zahraniční vlastník) i obhajoba (rychlost: soukromý sektor asi 70 % HDP v roce 1995; kupónové knížky koupily víc než tři čtvrtiny dospělých; studie z roku 2020: tunelování menší, než se traduje). Že prodej strategickým investorům jako v Maďarsku nebyl pro Česko proveditelný, je argument tvůrců privatizace, ne prokázaný fakt; prodej cizincům byl možný, ale pomalejší a politicky citlivý. Podle pojistky výchozí pozice (analytický skill, krok 9b) se privatizace nepočítá jako zjevná chyba, ale jako volba z horší výchozí pozice s doloženými náklady.
+- **Oddíl 2, nelze doložit:** že kurzový závazek ČNB 2013–2017 oslabil tlak na inovace; jen dobová kritika („firmy zlenivěly“), kterou ČNB odmítla (Hampl 2016); analýza ČNB 2017 našla průkazný účinek hlavně na inflaci, pozdější studie nižší nezaměstnanost; dopad na inovace nikdo nezměřil. Do scénáře jen jako názor kritiků.
 
 
 # Polsko: proč má v kolech takové hodnoty
@@ -1027,6 +1068,14 @@ rešerše ekonomů projektu [28]).
     https://www.mnb.hu/letoltes/termelekenysegi-jelentes-2024-december-eng.pdf
 30. Rešerše studií projektu: [`studie/UCINKY.md`](../studie/UCINKY.md), oddíly o minimální mzdě a o odchodu lidí do ciziny.
 
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí s výhradou:** kolektivizace se zkoušela ve 40. a 50. letech, Gomułka ji v roce 1956 opustil a družstva se rozpadla; v roce 1989 soukromý sektor obdělával 76,2 % orné půdy a dával 79 % zemědělské produkce, 57 % statků mělo pod 5 ha a stát je do 80. let znevýhodňoval při přidělování strojů a hnojiv (Poland Country Study).
+- **Oddíl 1, platí:** soukromý sektor 1989 asi 28 % HDP, hlavně díky soukromému zemědělství (Maďarsko asi 20 %, Česko 3–11 %).
+- **Oddíl 4, ceny, platí zčásti:** v potravinách je Polsko na 78 % průměru EU, Slovensko na 107 % (2023); jako příčinu sbližování cen doložila polská studie hlavně konkurenci na trhu a dohánění produktivity; potravinová soběstačnost a vlastní měna jako příčiny nedoloženy. Cenová hladina projektu (skutečná individuální spotřeba 2024: PL 69,9 %, SK 80,8 %) je jiný souhrn než cenová hladina výdajů domácností v přehledech Eurostatu (72 a 85 %).
+
 
 # Slovensko: proč má v kolech takové hodnoty (průměrná čistá mzda, podklad pro výklad)
 
@@ -1211,6 +1260,14 @@ množství práce než na produktivitě“, což „omezuje prostor pro trvalý 
 - **MMF 2026:** International Monetary Fund, Slovak Republic: 2026 Article IV Consultation, Country Report č. 26/65,
   podle rešerše `ekonomove/SK.md`, https://www.imf.org/-/media/files/publications/cr/2026/english/1svkea2026001-source-pdf.pdf
 - **Rešerše ekonomů:** `ekonomove/SK.md` (citace v oddílu 5 a údaje označené „podle rešerše“).
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí (dobová publicistika, ne statistika):** československý zbrojní průmysl zaměstnával přímo i nepřímo asi 140 000 lidí a asi 60 % ze zhruba 100 zbrojních podniků leželo na Slovensku, s výrobou pro trh Varšavské smlouvy; v letech 1988–92 zaniklo asi 40 000 míst, nezaměstnanost v Martině, Dubnici a dalších zbrojních regionech vystoupala skoro k 25 %; ZŤS Martin vyráběla v roce 1992 jen 10 % zbraní proti roku 1988 (Christian Science Monitor 1992, 1994; The Slovak Spectator).
+- **Oddíl 2/4, platí:** v zahraničí studuje asi každý pátý slovenský vysokoškolák (jedna z nejvyšších měr v OECD; 14 % v roce 2010, 17 % v roce 2017), zhruba dvě třetiny z nich v Česku, a polovina se nechce vrátit (policy brief ISS a Slovenské akademie věd 2026; STVR).
+- **Nelze doložit:** že slovenské startupy vznikají raději v Česku (jen průzkum advokátní kanceláře, podle kterého 67 % startupů zvažuje přesun, a jednotlivé případy).
 
 
 # Maďarsko: proč má v kolech takové hodnoty
@@ -1485,6 +1542,13 @@ EU „hlavně kvůli nízkému podílu domácí přidané hodnoty ve výrobě“
 26. Rešerše studií projektu: [`studie/UCINKY.md`](../studie/UCINKY.md), oddíl o tom, kdo nese daně a odvody z práce.
 27. Mezinárodní měnový fond (2010): IMF Survey: Poland: European Success Story but Challenges Ahead (26. 3. 2010):
     https://www.imf.org/external/pubs/ft/survey/so/2010/CAR032610A.htm
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1–2, platí:** soukromý sektor 1989 asi 20 % HDP; nejvyšší zahraniční dluh na obyvatele v regionu (asi 2 800 USD v roce 1995 proti asi 900 v Česku a na Slovensku), včasné splácení pomohlo přilákat zahraniční investory; podniky prodávalo jednotlivě strategickým investorům, zhruba dvě třetiny aktiv privatizovaných 1991–97 koupili cizinci za asi 6,4 mld. USD (Kaminski a Riboud 2000, sekundární citace).
+- **Oddíl 4:** asi 60 % bankovních aktiv v domácích rukou; Erste má 11,7 % retailových úvěrů.
 
 
 ---
@@ -14709,7 +14773,7 @@ stavitelů v Evropě a země, která téměř přestala stavět?
 
 ## Zlatý vzor scénáře regionu: Střední Evropa (průměrná čistá mzda, 25. 10. 2026)
 
-*Ondřej s webovým Gemini 4 Argon, 25. 10. 2026: oficiální vzor formy pro scénáře regionů (writer pro regiony, oddíl 0; kuchařka pro Gemini, oddíl 8). Sestava Rakousko, Česko, Polsko, Slovensko, Maďarsko. Forma platí celá; čísla jen po ověření proti datům epizody. Claude 26. 10. 2026 bodově opravil 12 míst podle dat mezd (`analyza_regiony_2026_10/data/kola.json`, `vysledek.json`, `vyklad/`), seznam a tvrzení bez opory v podkladech jsou v `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/gemini/STREDNI_EVROPA/AUDIT_ZLATY_VZOR.md`; původní text `ZLATY_VZOR_PUVODNI_2026-10-25.md` tamtéž.*
+*Ondřej s webovým Gemini 4 Argon, 25. 10. 2026: oficiální vzor formy pro scénáře regionů (writer pro regiony, oddíl 0; kuchařka pro Gemini, oddíl 8). Sestava Rakousko, Česko, Polsko, Slovensko, Maďarsko. Forma platí celá; čísla jen po ověření proti datům epizody. Claude 26. 10. 2026 bodově opravil 12 míst podle dat mezd a 6 míst podle rešerše tvrzení bez opory (`analyza_regiony_2026_10/RESERSE_ZLATY_VZOR_2026-10-26.md`) (`analyza_regiony_2026_10/data/kola.json`, `vysledek.json`, `vyklad/`), seznam a tvrzení bez opory v podkladech jsou v `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/gemini/STREDNI_EVROPA/AUDIT_ZLATY_VZOR.md`; původní text `ZLATY_VZOR_PUVODNI_2026-10-25.md` tamtéž.*
 
 ### Předstartovní showcase
 
@@ -14723,7 +14787,7 @@ První kolo rozdává startovní karty roku devatenáct set devadesát šest pod
 
 Nejlepší karty z postkomunistické čtveřice drželo Česko na dvou třetinách evropského středu. České země byly ještě před válkou stejně bohaté jako Rakousko a díky zděděnému strojírenskému jádru v čele se Škodou či Tatrou měl český soustružník v roce devatenáct set devadesát šest v halách dokonce o sedm procent více strojů a budov než průměrný Evropan. Háček byl v tom, že Česko opouštělo socialismus jako nejvíce zestátněná země celého bloku, kde soukromníci tvořili méně než pět procent výkonu a obří státní kolosy vyráběly zboží s nízkou západní tržní hodnotou.
 
-O patro níž, těsně nad polovinou evropského středu, začínalo Maďarsko se Slovenskem. Maďarsko si z dob takzvaného gulášového komunismu přineslo volnější podnikové prostředí, malý podíl zemědělství a nejvýkonnější zpracovatelský průmysl na východě. Naopak historicky agrární Slovensko komunisté industrializovali stavbou těžkých zbrojovek na tanky a hutí pro sovětskou armádu; když východní trhy zanikly, slovenský výkon se propadl o čtvrtinu a v halách chyběla třetina kapitálu. A úplně z nejhlubšího dna na dvaadvacátém místě v Evropě vyráželo Polsko. Polští komunisté totiž nikdy nezkolektivizovali venkov, takže skoro čtvrtina všech Poláků stále pracovala na malých rozdrobených políčkách, kde jeden rolník vyprodukoval ani ne desetinu toho, co farmář ve Francii.
+O patro níž, těsně nad polovinou evropského středu, začínalo Maďarsko se Slovenskem. Maďarsko si z dob takzvaného gulášového komunismu přineslo volnější podnikové prostředí, malý podíl zemědělství a nejvýkonnější zpracovatelský průmysl na východě. Naopak historicky agrární Slovensko komunisté industrializovali stavbou těžkých zbrojovek na tanky a hutí pro sovětskou armádu; když východní trhy zanikly, slovenský výkon se propadl o čtvrtinu a v halách chyběla třetina kapitálu. A úplně z nejhlubšího dna na dvaadvacátém místě v Evropě vyráželo Polsko. Polští komunisté totiž kolektivizaci venkova v roce devatenáct set padesát šest vzdali, tři čtvrtiny půdy zůstaly soukromým rolníkům a skoro čtvrtina všech Poláků stále pracovala na malých rozdrobených políčkách, kde jeden rolník vyprodukoval ani ne desetinu toho, co farmář ve Francii.
 
 ### Kolo 2 – Tah země: Vývoj produktivity 1996–2024 (295 slov / 1:55 min)
 
@@ -14731,11 +14795,11 @@ O patro níž, těsně nad polovinou evropského středu, začínalo Maďarsko s
 
 Druhé kolo sleduje, jak země se svými startovními kartami hrály až do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v tempu růstu napříč ligou přitom vysvětlí prosté dohánění z nízkého základu, protože převzít západní výrobní linku je snazší než vymýšlet patenty na špičce.
 
-Bohaté Rakousko proto vůči středu ligy o dvě procenta ztratilo – svůj náskok ve špičce si ale ubránilo, ovládlo středoevropský bankovní trh a výdaje na výzkum zvedlo z jedné a půl na víc než tři procenta výkonu ekonomiky. Naopak nejdrtivější stíhací jízdu předvedlo Polsko, které zvedlo produktivitu jeden a třičtvrtěkrát – pátým nejrychlejším tempem v celé Evropě – a za ním Slovensko s růstem jedenapůlkrát. Polsko po šokové terapii přesunulo miliony lidí z políček do osmkrát výkonnějšího průmyslu a desetkrát výkonnějších služeb, přes ekonomické zóny udrželo přes sedmdesát procent hodnoty vývozu doma a jako jediné v Unii rostlo i v krizi roku dva tisíce devět. Pomohl mu tehdy slabší zlotý, velký domácí trh i to, že vláda neškrtala a pustila schodek rozpočtu přes sedm procent. Polská školská reforma sice mezitím zlepšila výsledky žáků, ale dovednosti dospělých v počtech a čtení zatím zůstávají pod průměrem – proč se školství propisuje do mezd až po dekádách, uvidíme v epizodě o školství.
+Bohaté Rakousko proto vůči středu ligy o dvě procenta ztratilo – svůj náskok ve špičce si ale ubránilo, jeho banky ovládly slovenský a velkou část českého bankovního trhu a čtrnáctiprocentní prémií za firemní výzkum zvedlo výdaje na vědu z jedné a půl na víc než tři procenta výkonu ekonomiky. Naopak nejdrtivější stíhací jízdu předvedlo Polsko, které zvedlo produktivitu jeden a třičtvrtěkrát – pátým nejrychlejším tempem v celé Evropě – a za ním Slovensko s růstem jedenapůlkrát. Polsko po šokové terapii přesunulo miliony lidí z políček do osmkrát výkonnějšího průmyslu a desetkrát výkonnějších služeb, přes ekonomické zóny udrželo přes sedmdesát procent hodnoty vývozu doma a jako jediné v Unii rostlo i v krizi roku dva tisíce devět. Pomohl mu tehdy slabší zlotý, velký domácí trh i to, že vláda neškrtala a pustila schodek rozpočtu přes sedm procent. Polská školská reforma sice mezitím zlepšila výsledky žáků, ale dovednosti dospělých v počtech a čtení zatím zůstávají pod průměrem – proč se školství propisuje do mezd až po dekádách, uvidíme v epizodě o školství.
 
 Česko a Maďarsko vyrostly shodně o necelé dvě pětiny. Zatímco Maďarsko na začátku transformace prodalo nejlepší podniky za hotové západním koncernům jako General Electric či Audi, v Česku musel stát téměř stoprocentně státní ekonomiku bleskově zprivatizovat kuponovou metodou. Ta ale zanechala podniky v rukou fondů a polostátních bank bez kapitálu, což v roce devatenáct set devadesát sedm vyústilo v měnovou krizi a recesi. Od roku dva tisíce pak Česko i Slovensko otočily kormidlo a vsadily na zahraniční automobilky v čele se Škodou a bratislavským Volkswagenem, přičemž Slovensku kolem roku dva tisíce devět pomohl i desetiprocentní skok z přijetí eura.
 
-Po roce dva tisíce šestnáct ale model levných montoven narazil na strop. U Maďarska je přitom růst o dvě pětiny prokazatelným selháním: po dluhovém kolapsu roku dva tisíce osm s hypotékami v cizích měnách a záchranným úvěrem dvacet miliard eur totiž maďarská vláda hnala zaměstnanost nahoru jen přes veřejně prospěšné práce a montovny s poloviční domácí přidanou hodnotou a výzkumem pod jedním procentem výkonu ekonomiky. Česko zase přibrzdily tři vlastní kroky: rozpočtové škrty po roce dva tisíce deset sice udržely nízký státní dluh pro budoucí disciplínu o zadlužení, ale v této disciplíně prodloužily recesi. Umělé oslabení koruny centrální bankou po roce dva tisíce třináct přineslo vývozcům snadné zisky bez tlaku na inovace. A zatímco Rakousko do vědy přidávalo, ze zahraničních investic do nových závodů v Česku šla do výzkumu jen čtyři procenta – a na výzkum dává Česko ani ne procento a půl a Slovensko jen tři čtvrtě procenta výkonu ekonomiky, což rozebereme v epizodě o produktivitě a sektorech.
+Po roce dva tisíce šestnáct ale model levných montoven narazil na strop. U Maďarska je přitom růst o dvě pětiny prokazatelným selháním: po dluhovém kolapsu roku dva tisíce osm s hypotékami v cizích měnách a záchranným úvěrem dvacet miliard eur totiž maďarská vláda hnala zaměstnanost nahoru jen přes veřejně prospěšné práce a montovny s poloviční domácí přidanou hodnotou a výzkumem pod jedním procentem výkonu ekonomiky. Česko zase přibrzdily tři vlastní kroky: rozpočtové škrty po roce dva tisíce deset sice udržely nízký státní dluh pro budoucí disciplínu o zadlužení, ale v této disciplíně prodloužily recesi. Umělé oslabení koruny centrální bankou po roce dva tisíce třináct podle kritiků přineslo vývozcům snadné zisky bez tlaku na inovace, i když centrální banka to odmítá a dopad na inovace nikdo nezměřil. A zatímco Rakousko platí firmám za vědu, ze zahraničních investic do nových závodů v Česku šla do výzkumu jen čtyři procenta – a na výzkum dává Česko ani ne procento a půl a Slovensko jen tři čtvrtě procenta výkonu ekonomiky, což rozebereme v epizodě o produktivitě a sektorech.
 
 ### Kolo 3 – Tah země: Daňový klín (210 slov / 1:20 min)
 
@@ -14745,7 +14809,7 @@ Třetí kolo měří takzvaný daňový klín – tedy když sečteme úplně v�
 
 Nejmenší celkový díl bere stát v Polsku pod čtyřiceti procenty díky nezdanitelné částce třicet tisíc zlotých, i když část úlevy sebralo lidem zrušení odpočtu zdravotního pojištění. Přesně na evropském středu kolem jednačtyřiceti procent sedí Maďarsko a Česko: Maďarsko má sice nízké odvody firem, ale bezdětným strhává třetinu přímo z hrubé mzdy hned od prvního forintu, zatímco Česko po zrušení superhrubé mzdy v roce dva tisíce dvacet jedna drží nízkou daň z příjmu, ale schovává za ni třetinové odvody zaměstnavatelů.
 
-Nejtěžší daňový klín pak nesou Slovensko se skoro pětačtyřiceti procenty a Rakousko se sedmačtyřiceti procenty nákladů práce. Jenže v bohatém Rakousku, které daň z příjmu reformami let 2016 a 2023 zase snížilo, dostávají lidé za vysoké daně špičkové zdravotnictví, školy i bezpečnost – pro sebe ani pro své děti tak v Evropě jen těžko najdou lepší stát a nemají důvod odcházet. Když ale skoro pětačtyřicetiprocentní zátěž uvalí na práci dohánějící Slovensko, aby zalepilo přetížený důchodový systém a druhý pilíř, dusí tím vlastní budoucnost. Za západní daně totiž slovenské firmy a rodiny nedostávají západní instituce: drahá kvalifikovaná práce tam zabíjí vznik nových startupů, které raději zamíří do Česka bez jazykové bariéry, domácí pracovníci utíkají do švarcsystému s nejvyšším podílem závislých živnostníků v Unii a mladí talenti odcházejí do ciziny. Jestli si tím Slovensko kupuje aspoň udržitelné důchody, ukáže epizoda o penzích.
+Nejtěžší daňový klín pak nesou Slovensko se skoro pětačtyřiceti procenty a Rakousko se sedmačtyřiceti procenty nákladů práce. Jenže v bohatém Rakousku, které navíc daní třináctý a čtrnáctý plat zvýhodněnou šestiprocentní sazbou a od roku dva tisíce dvacet tři zvedá daňová pásma o většinu inflace, dostávají lidé za vysoké daně lépe fungující stát – pro sebe ani pro své děti tak v Evropě jen těžko najdou lepší stát a nemají důvod odcházet. Když ale skoro pětačtyřicetiprocentní zátěž uvalí na práci dohánějící Slovensko, aby zalepilo přetížený důchodový systém a druhý pilíř, dusí tím vlastní budoucnost. Za západní daně totiž slovenské firmy a rodiny nedostávají západní instituce: drahá kvalifikovaná práce tam brzdí vznik nových firem, domácí pracovníci utíkají do švarcsystému s nejvyšším podílem závislých živnostníků v Unii a každý pátý slovenský vysokoškolák studuje v cizině, nejčastěji v Česku. Jestli si tím Slovensko kupuje aspoň udržitelné důchody, ukáže epizoda o penzích.
 
 ### Finále regionu: Odhalení pořadí od posledního po vítěze (305 slov / 2:00 min)
 
