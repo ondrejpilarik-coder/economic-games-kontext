@@ -12402,6 +12402,62 @@ jen v prvním regionu. Co zůstává: tvrdá pravidla z 13.–14. 10. (oddíl 5;
 pořadí podle rozdaných karet (oddíl 5, pravidlo 1) a délku regionů bydlení asi 57 minut („Zatím to je v pořádku.
 Podle reakce lidí bych to zkracoval.“).*
 
+### 0. Doplněk 25. 10. 2026: zlatý vzor Střední Evropy z webového Gemini 4 Argon (závazné, má přednost)
+
+*Ondřej 25. 10. 2026 s webovým Gemini dokončil zlatý vzor scénáře Střední Evropy (Rakousko, Česko, Polsko,
+Slovensko, Maďarsko; 1 150 slov, asi 7,5 minuty) a zrevidoval pravidla. Z verze 1.0 se nic nemaže; kde se liší,
+platí tento oddíl. Stejná pravidla má kuchařka pro Gemini `PROMPT_GEMINI_SCENARISTA.md` (oddíl 8), podle které
+scénáře píše Gemini 4 Argon. Vzor: `references/voiceover-regiony-zlaty-vzor-stredni-evropa-2026-10-25.md`.
+Příklady čísel níže ověřil Claude proti datům mezd (`analyza_regiony_2026_10/data/kola.json`, `vysledek.json`,
+`vyklad/`); kde se Ondřejovo zadání od dat lišilo, je u příkladu oprava.*
+
+1. **Úvod regionu = předstartovní showcase na startovní čáře (asi 110 slov, 45 s).** Úvod nevypráví historii roku
+   1989 ani zděděné továrny, to patří do kola 1. Představí pětici zemí na startovní čáře přes jejich dnešní ekonomický
+   charakter a rozdá jim předstartovní očekávání v pelotonu: kdo je favoritem na medaile a evropskou špičku, kdo bojuje
+   o střed pelotonu nebo roli skokana a komu hrozí pád na chvost.
+2. **Rozpočet délky regionu 1 050–1 150 slov (asi 7–7,5 minuty):** showcase asi 110, kolo 1 asi 230, kolo 2 asi 295,
+   kolo 3 asi 210, finále asi 305 slov. Přesná desetinná čísla a úplné výčty pěti zemí patří do řádku `[VIZUÁL: …]`.
+   Hlas seskupuje země do pater, zaokrouhluje na zlomky, říká nejvýš 2 čísla ve větě a 45–55 čísel na region a drží
+   souvětí nejvýš o 3 větných členech. Pořadí z 27 zemí říká jen u krajností, se slovní kotvou „v celé Evropě“ nebo
+   „z celé sedmadvacítky“.
+3. **Přísná hranice mezi kolem 1 (zděděné karty) a kolem 2 (transformace a růst).** Kolo 1 (produktivita 1996)
+   vysvětluje výhradně dědictví komunismu nebo poválečné éry: předválečné bohatství, vlastnictví v roce 1990 (v Česku
+   tvořily soukromé firmy méně než 5 % HDP, stát tedy vlastnil skoro vše), zděděné stroje a továrny, zděděnou strukturu
+   zemědělství a průmyslu. Transformační rozhodnutí 90. let (kupónová privatizace a měnová krize 1997 v Česku, šoková
+   terapie v Polsku, prodej podniků cizincům v Maďarsku) jsou tahy země a patří výhradně do kola 2.
+   *Nezkolektivizovaná soukromá políčka v Polsku a orientace slovenských zbrojovek na trh SSSR jsou dobré obrazy, ale výklady
+   zemí je zatím nedokládají; do scénáře smějí až s oporou v podkladu (analytický skill, krok 8, oddíl 1).*
+4. **Daňový klín v kole 3 přesně:** součet všech daní a odvodů, které ze mzdy zaplatí zaměstnanec i zaměstnavatel
+   dohromady, v poměru k celkovým nákladům práce, vysvětlený srozumitelně a graficky. Ukáže se, jak státy zátěž účetně
+   schovávají: v Polsku, Maďarsku a Rumunsku strhává stát většinu odvodů přímo zaměstnanci z hrubé mzdy, v Česku a na
+   Slovensku vidí člověk na pásce jen menší část (asi 21–24 % hrubé mzdy) a hlavní balík (asi 34–36 % hrubé mzdy navíc)
+   posílá státu potichu firma. *Přesné podíly se berou z podkladu dané epizody (OECD Taxing Wages ve výkladu země).*
+5. **Tíha daní podle vývojové fáze a kvality institucí („hodnota za peníze, nebo odchod talentů“).** Vysoké zdanění
+   práce se hodnotí v kontextu toho, co za ně stát dává: v bohaté zemi se špičkovými institucemi (Rakousko,
+   **47,0 %** nákladů práce; zadání uvádělo 47,4 %, data mezd mají 47,0 %) dostávají lidé za vysoké daně vysokou
+   hodnotu; v dohánějící zemi s nízkou produktivitou a slabým výzkumem (Slovensko, 44,6 %), kde odvody látají
+   důchodový systém, drahá kvalifikovaná práce brzdí nové firmy, tlačí lidi do nepravého samostatného podnikání
+   (švarcsystém) a vyhání talenty do ciziny. *Kvalita rakouských institucí, zakládání slovenských startupů v Česku
+   a odchod mladých ze Slovenska výklady zemí zatím nedokládají (doložené je jen nepravé samostatné podnikání: Slovensko
+   má podle Evropské komise nejvyšší podíl závislých živnostníků v EU); do scénáře smějí až s oporou v podkladu.*
+6. **Dvojí pravda hospodářských kroků a otevřené smyčky na další epizody.** Kroky vlád a centrálních bank se nehodnotí
+   černobíle, když měly přínos pro jinou disciplínu: rozpočtové škrty v Česku 2010–2013 proti polskému deficitu, který
+   v roce 2009 dosáhl 7,2 % HDP (zbrzdily růst mezd, ale udržely nízký dluh → otevřená otázka na epizodu o zadlužení);
+   kurzový závazek ČNB 2013–2017 (krátkodobě nakopl export a růst; výdaje na výzkum se podle ČNB zastavily v roce 2014
+   pod 2 % HDP; *že závazek utlumil tlak na inovace, podklad zatím nedokládá, smí jen jako možnost s oporou*); vysoké
+   odvody na důchody (Slovensko, Česko): jednou větou kam peníze tečou a udička na epizodu o penzích.
+7. **Finále regionu = odpočet od 5. do 1. místa v regionu (asi 305 slov).** Konečná místa v celé lize (1.–27.) se
+   neprozrazují, odpočítává se pořadí uvnitř regionu. Každá země má vlastní odstavec (50–60 slov), který spojí:
+   (a) výsledek v kupní síle i v eurech, patro evropské reality a vliv místních cen; (b) o kolik bodů země překonala
+   nebo podstřelila součet svých tří kol („co kola nevysvětlí“) a proč (například odliv zisků z Česka 5,2 % HDP v roce
+   2025; v Rakousku kolektivní smlouvy pro 98 % zaměstnanců díky povinnému členství firem v hospodářské komoře,
+   **+16,0 bodu** — zadání uvádělo +31,4, data mezd mají +16,0; podíl zaměstnanců mezi pracujícími 91,7 % v Maďarsku
+   proti živnostníkům v Polsku a na Slovensku); (c) závěrečný štítek.
+8. **Cenová hladina stručně a s udičkou.** Nižší cenová hladina Polska (69,9 % průměru EU) proti Slovensku (80,8 %) se
+   nesvádí jen na vlastní měnu; shrne se kombinací velkého konkurenčního trhu, levných domácích potravin a vlastní měny
+   (každé jen s oporou v podkladu, analytický skill krok 8, oddíl 4) a hned se uzavře odkazem na chystanou epizodu
+   o cenové hladině.
+
 ### 1. Účel a vstupy
 
 Skill píše blok jednoho regionu. Epizoda má úvod, regiony v pevném pořadí a finále; úvod a finále se píšou zvlášť
@@ -12759,6 +12815,14 @@ stavitelů v Evropě a země, která téměř přestala stavět?
 
 ## Analýza příčin pro regionový systém (skill v1.4)
 
+> **Doplněk 25. 10. 2026 (Ondřej, ze zlatého vzoru Střední Evropy z webového Gemini 4 Argon). Z verze 1.4 se nic
+> nemaže; kde se liší, platí doplněk:**
+> 1. **Regiony 5–5–5** (slovník, řádek „region“): střední Evropa AT, CZ, PL, SK, HU; Balkán a jihovýchodní Evropa
+>    SI, HR, RO, BG, GR; západní Evropa DE, CH, FR, GB, IE. Ve skriptech mezd `analyza_regiony_2026_10/data_mzdy.py`
+>    (`REGIONY`); kola přepočítána, změnilo se jen zařazení zemí, žádné číslo.
+> 2. **Kalibrace štítků s výsledkem a s růstem nad rámec dohánění** (krok 9b, pojistka níže).
+> 3. **Výklad zemí odděluje dědictví od transformace a u cen uvádí víc než měnu** (krok 8, pojistka níže).
+
 > **Verze 1.4, 16. 10. 2026: rozdané karty a tah země, oprava síly výstavby, hodnocení na dvou osách. NÁVRH,
 > NEAKTIVNÍ.** Ondřej 16. 10. 2026 předal zadání, které napsal Gemini 4, s poznámkou: „A ty chyby v analýze taky půjde
 > nedělat. Gemini dokonce velmi dobře rozdělil potenciál na strategii, což se nám za celý rok nepovedlo.“ Doslovný
@@ -13052,7 +13116,7 @@ začátku horizontu, `tok` to, co přibylo za horizont, krok 7.4; citace a kdo c
 | zvláštnost zemí (nové ve v1.2; dřív `specifikum`) | faktor, který má dost svědků jen v některých zemích; rozebere se u nich (krok 7.3), do čekaného výsledku nevstupuje |
 | hypotéza (nové ve v1.2) | faktor s mechanismem, ale bez dvou nezávislých svědků; uvede se mezi vedlejšími faktory s tím, který svědek chybí („co by rozhodlo“) |
 | časový profil (nové ve v1.2) | jak rychle výsledek na změnu faktoru reaguje a jak dlouho účinek trvá; určuje, jak se tok měří (váhy podle stáří, krok 3.11) |
-| region | Skandinávie a Benelux (NO, SE, FI, DK, NL, BE); západní Evropa (GB, IE, DE, FR, CH, AT); jižní Evropa (ES, PT, IT); Balkán a východní Evropa (HR, RO, BG, GR); střední Evropa (CZ, PL, SK, HU, SI); Pobaltí (EE, LV, LT) |
+| region | **od 25. 10. 2026 (Ondřej, 1. epizoda mzdy):** Skandinávie a Benelux (NO, SE, FI, DK, NL, BE); západní Evropa (DE, CH, FR, GB, IE); jižní Evropa (ES, PT, IT); Balkán a jihovýchodní Evropa (SI, HR, RO, BG, GR); střední Evropa (AT, CZ, PL, SK, HU); Pobaltí (EE, LV, LT). *Dříve (11. 10. 2026, platí dál v hotových scénářích bydlení, dokud Ondřej nerozhodne jinak): západní Evropa i s AT, Balkán a východní Evropa (HR, RO, BG, GR), střední Evropa i se SI.* |
 | kolo (nové po nezávislé kontrole 13. 10. 2026) | jeden zařazený faktor (krok 5), nebo jedna jeho část podle kroku 7.4, který se v epizodě ukáže všem zemím regionu najednou; kola jdou od největšího obvyklého vlivu po nejmenší, je jich nejvýš pět a stejná pro všechny země (krok 7.5) |
 | bod (nové po nezávislé kontrole 13. 10. 2026) | jednotka příspěvku faktoru: 1 bod ≈ bydlení o 1 % dostupnější než u typické země ligy. Přesně to platí jen u malých hodnot, protože se počítá v `logaritmech`: 20 bodů je asi 18–22 %, 33 bodů asi 28–39 % |
 | typická země (nové po nezávislé kontrole 13. 10. 2026) | pomyslná země, která má u všech faktorů hodnotu měřítka ligy; body se počítají proti ní |
@@ -13345,6 +13409,20 @@ Postup při rozporu: (1) najít důvod (obrácený směr, měření, horizont, s
 
 Pro každou zemi: vývoj ukazatele a faktorů za horizont proti měřítku ligy; kroky vlád, firem a institucí s datem a zdrojem; jak se vývoj po kroku změnil. Časová souvislost není důkaz; jako příčina se krok uvede jen s dokladem z kroku 4.
 
+**Pojistka 25. 10. 2026 (Ondřej): stavba výkladu země `vyklad/{KOD}.md`.**
+- **Oddíl 1 (výchozí stav, rozdané karty)** popisuje jen to, co země zdědila před začátkem hodnoceného období:
+  zděděnou strukturu ekonomiky (zemědělství, těžký průmysl, orientace výroby na trhy bývalého východního bloku),
+  vlastnictví v roce 1990 (například v Česku tvořily soukromé firmy méně než 5 % HDP, tedy stát vlastnil skoro vše),
+  předválečné bohatství, zděděný kapitál a vzdělání. U zemí bez plánované ekonomiky obdobně poválečné dědictví.
+- **Oddíl 2 (růst, tah země)** obsahuje všechna rozhodnutí od roku 1990: metody privatizace (kupónová privatizace,
+  prodej podniků cizincům), šokovou terapii, měnové krize a reakce na ně, investiční pobídky, vstup do EU a eura.
+  Transformace je tah země, ne rozdaná karta, i když se odehrála před rokem 1996.
+- **Oddíl 4 (další faktory), ceny:** u zemí, kde cenová hladina výrazně mění pořadí mezi eury a kupní silou (například
+  Polsko 69,9 % proti Slovensku 80,8 % průměru EU), uvede podklad vedle měnového režimu stručně i velikost vnitřního
+  trhu a konkurenci a soběstačnost v potravinách, každé se zdrojem; je to podklad pro krátkou zmínku a odkaz na
+  epizodu o cenové hladině, ne kolo.
+- Výklady zemí z 17.–18. 10. 2026 jsou podle starší stavby; při další revizi se přeskupí, obsah se nemaže.
+
 #### Krok 9. Výstup pro regionový systém
 
 Pro každý region (pořadí regionů určuje průběžné pořadí týmové soutěže):
@@ -13531,6 +13609,20 @@ nýbrž komu výsledek slouží, a doplňuje hlavní hodnocení skoro každé ze
 5. **Těží z okolností:** dostupnost z věcí, které nejsou zásluhou politiky (úbytek lidí, zděděné byty, levná stavba).
 6. **Nedá se posoudit:** bez dokladu účinku se krok neoznačí za úspěch ani chybu; hodnocení zní „nedá se posoudit,
    protože…“.
+
+**Pojistka 25. 10. 2026 (Ondřej): kalibrace štítků s výsledkem a s růstem nad rámec dohánění.** Hlavní štítek
+„Dělá to dobře a je to vidět“ nesmí dostat země, která (a) v kole růstu rostla prokazatelně pomaleji, než odpovídá
+běžnému dohánění (u mezd zařazení „rostla pomaleji“ v kupní síle i v reálných cenách, například Maďarsko), nebo (b)
+u které instituce v podkladu konstatují vyčerpání růstového modelu a zároveň skončila v suterénu (21.–27. místo).
+Slepý agent dostane tato dvě kritéria spolu s kroky země; místo v lize nadále nevidí, kritérium (b) doplní koordinátor
+po slepém hodnocení. Přesnější štítky osy 1:
+7. **Dobrý motor, ale s vlastními brzdami:** doložená politika s doloženým účinkem a zároveň doložená vlastní
+   rozhodnutí, která růst brzdila (například Česko: přímé investice a vstup do EU proti měnové krizi 1997, škrtům
+   2010–2013 a výzkumu zastavenému pod 2 % HDP).
+8. **Vyčerpaný montážní model:** růst stál na zahraničních montážních investicích, instituce konstatují, že model
+   ztratil dech, a země skončila v suterénu (například Slovensko).
+Hodnocení mezd z 17.–18. 10. 2026 (`data/hodnoceni/`) vzniklo před touto pojistkou; Česko, Maďarsko a Slovensko se
+podle ní přehodnotí.
 
 **Osa 2: komu dostupnost platí** (samostatný štítek, do výkonu politiky se nepočítá): **dostupné jen pro někoho**, když
 čísla vypadají dobře, ale nováčci se k bydlení nedostanou (pořadníky, regulace, podnájmy, mladí u rodičů), s dokladem;

@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 25. 10. 2026 17:37 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `aae6e4ee`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 26. 10. 2026 16:48 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `aae6e4ee`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -292,12 +292,14 @@ Rozumím, beru na vědomí všech osm bodových oprav a při všech dalších ú
 > Kuchařka, kterou Claude posílá Gemini 4 Argonu (Antigravity CLI) jako závaznou instrukci při každém psaní scénáře.
 > Zadal Ondřej 23. 10. 2026. Odesílá ji skript `scripts/gemini_scenarista.py` spolu s podklady regionu.
 > Oddíly 1–6 jsou Ondřejovo zadání; oddíl 7 doplňuje závazná pravidla projektu, která už platila dřív.
+> **25. 10. 2026:** oddíl 8 = pravidla ze zlatého vzoru Střední Evropy (Ondřej s webovým Gemini); má přednost
+> před oddíly 1 a 3 (délka, úvod, finále). Vzor: `05_epizode_packs/_skills/references/voiceover-regiony-zlaty-vzor-stredni-evropa-2026-10-25.md`.
 
 ## 1. Role a styl
 
 Jsi hlavní dokumentární scenárista série Ekonomické hry. Píšeš strhující, obrazný, přirozeně plynoucí voiceover
-v češtině. Cílová délka na jeden region je 5,5 až 7 minut čteného textu, tedy asi 750–950 slov mluveného textu
-(vizuální poznámky v hranatých závorkách a nadpisy se do délky nepočítají).
+v češtině. Cílová délka na jeden region je 7 až 7,5 minuty čteného textu, tedy 1 050–1 150 slov mluveného textu
+(vizuální poznámky v hranatých závorkách a nadpisy se do délky nepočítají; rozpočet po částech v oddílu 8).
 
 ## 2. Zákaz odrážek (KRITICKÉ)
 
@@ -308,7 +310,7 @@ mluvené slovo. Nikdy nepoužívej odrážkové seznamy ani tabulky, ani pro vý
 
 Scénář každého regionu členíš striktně takto (nadpis každé části jako `## …`):
 
-- **Úvod regionu:** hlavní paradox nebo společný příběh daných zemí.
+- **Předstartovní showcase na startovní čáře** (dřív „úvod regionu“; podrobně oddíl 8, pravidlo 1).
 - **Kolo 1 – Rozdané karty: Produktivita práce v roce 1996.** Vždy používej výraz „produktivita“, nikdy „výkon
   pracujícího“. Porovnej startovní pozice všech zemí regionu najednou a vysvětli je přes historický režim (komunismus,
   válka, diktatura proti svobodnému trhu) a zděděné vybavení stroji a kapitálem či školství.
@@ -318,9 +320,10 @@ Scénář každého regionu členíš striktně takto (nadpis každé části ja
 - **Kolo 3 – Tah země: Daně, odvody a povinné platby (2024).** Souvisle a příběhově vysvětli, kolik si z celkových
   nákladů práce ukousne stát a fondy, jaké triky státy používají (schovávání odvodů za zaměstnavatele, nevalorizovaná
   pásma, daňové útesy) a co se změnilo v letech 2025 a 2026 podle výkladů zemí.
-- **Finále regionu:** skutečné pořadí v čisté mzdě v kupní síle (PPS), vliv místních cen (kupní síly), rozklíčování
-  velkých zbytků („Co kola nevysvětlí“, zejména přes podíl mezd na výkonu a podíl zaměstnanců a živnostníků u střední
-  a jižní Evropy, nebo přes částečné úvazky u západní Evropy a Nizozemska) a závěrečné štítky z hodnocení zemí.
+- **Finále regionu:** odpočet pořadí uvnitř regionu od 5. do 1. místa (oddíl 8, pravidlo 7): čistá mzda v kupní síle
+  (PPS) i v eurech, vliv místních cen, rozklíčování velkých zbytků („Co kola nevysvětlí“, zejména přes podíl mezd na
+  výkonu a podíl zaměstnanců a živnostníků u střední a jižní Evropy, nebo přes částečné úvazky u západní Evropy
+  a Nizozemska) a závěrečné štítky z hodnocení zemí.
 
 ## 4. Pravidlo hmatatelné kotvy (zákaz řeči centrálních bank)
 
@@ -362,9 +365,44 @@ stejný („asi 66 procent“ za 66,08 %), a u zaokrouhlení použij „asi“ n
 - **Žádná zmínka o datech, tabulkách ani o tom, odkud čísla jsou** (žádné „podle Eurostatu“, „v tabulce“), pokud to
   podklad výslovně nežádá.
 
+## 8. Pravidla zlatého vzoru Střední Evropy (25. 10. 2026, mají přednost)
+
+1. **Předstartovní showcase na startovní čáře (asi 110 slov, 45 s).** Žádná historie roku 1989 ani zděděné továrny,
+   to patří do kola 1. Představ pětici zemí na startovní čáře přes jejich dnešní ekonomický charakter a rozdej jim
+   předstartovní očekávání v pelotonu: kdo je favoritem na medaile a evropskou špičku, kdo bojuje o střed pelotonu nebo
+   roli skokana a komu hrozí pád na chvost.
+2. **Rozpočet 1 050–1 150 slov:** showcase asi 110, kolo 1 asi 230, kolo 2 asi 295, kolo 3 asi 210, finále asi 305.
+   Přesná desetinná čísla a úplné výčty pěti zemí dej do řádku `[VIZUÁL: …]`. Hlas seskupuje země do pater, zaokrouhluje
+   na zlomky, říká nejvýš 2 čísla ve větě a 45–55 čísel na celý region a drží souvětí nejvýš o 3 větných členech.
+   Pořadí z 27 zemí říkej jen u krajností se slovní kotvou „v celé Evropě“ nebo „z celé sedmadvacítky“.
+3. **Kolo 1 = jen zděděné karty, kolo 2 = transformace a růst.** Kolo 1 (produktivita 1996) vysvětluje výhradně
+   dědictví komunismu nebo poválečné éry: předválečné bohatství, vlastnictví v roce 1990 (například v Česku tvořily
+   soukromé firmy méně než 5 % HDP), zděděné stroje a továrny, zděděnou strukturu zemědělství a průmyslu.
+   Transformační rozhodnutí 90. let (kupónová privatizace a měnová krize 1997, šoková terapie, prodej podniků cizincům)
+   jsou tahy země a patří výhradně do kola 2.
+4. **Daňový klín v kole 3:** vysvětli srozumitelně, že je to součet všech daní a odvodů, které ze mzdy zaplatí
+   zaměstnanec i zaměstnavatel dohromady, v poměru k celkovým nákladům práce. Ukaž, jak státy zátěž účetně schovávají:
+   někde strhává stát většinu odvodů přímo zaměstnanci z hrubé mzdy, jinde (Česko, Slovensko) vidí člověk na pásce jen
+   menší část a hlavní balík posílá státu potichu firma nad rámec hrubé mzdy. Podíly ber z podkladů.
+5. **Tíha daní podle vývojové fáze a kvality státu („hodnota za peníze, nebo odchod talentů“):** vysoké zdanění práce
+   hodnoť v kontextu toho, co za ně stát dává (bohatá země se silnými institucemi proti dohánějící zemi, kde odvody
+   látají důchody a drahá kvalifikovaná práce brzdí nové firmy, tlačí lidi do švarcsystému a vyhání talenty).
+   Konkrétní tvrzení o kvalitě institucí, startupech nebo odchodu lidí smíš říct jen tehdy, když je dokládají podklady.
+6. **Dvojí pravda hospodářských kroků:** kroky vlád a centrálních bank nehodnoť černobíle, když měly přínos pro jinou
+   oblast (škrty zbrzdily mzdy, ale udržely nízký dluh; levnější měna nakopla export, ale mohla oslabit tlak na
+   inovace; vysoké odvody na důchody). Jednou větou řekni, kam to vede, a otevři otázku na budoucí epizodu (o zadlužení,
+   o penzích, o inovacích). Fakta ber jen z podkladů.
+7. **Finále = odpočet od 5. do 1. místa v regionu (asi 305 slov).** Neprozrazuj konečná místa v celé lize (1.–27.),
+   odpočítávej pořadí uvnitř regionu. Každá země má vlastní odstavec (50–60 slov), který spojí: (a) výsledek v kupní
+   síle i v eurech, patro evropské reality a vliv místních cen; (b) o kolik bodů země překonala nebo podstřelila součet
+   svých tří kol („co kola nevysvětlí“) a proč, podle podkladů; (c) závěrečný štítek.
+8. **Cenová hladina stručně a s udičkou:** rozdíl cenových hladin (například Polsko proti Slovensku) nesváděj jen na
+   vlastní měnu; shrň ho kombinací příčin, které podklady uvádějí (velký konkurenční trh, levné domácí potraviny,
+   vlastní měna), a hned uzavři odkazem na chystanou epizodu o cenové hladině.
+
 ## Formát odpovědi
 
-Vrať jen hotový scénář v Markdownu: nadpis `# Střední Evropa` (podle regionu), pak pět částí s nadpisy podle oddílu 3,
+Vrať jen hotový scénář v Markdownu: nadpis s názvem regionu (například `# Střední Evropa`), pak pět částí s nadpisy podle oddílu 3,
 každá začíná řádkem `[VIZUÁL: …]` a pokračuje souvislými odstavci. Nepiš úvodní ani závěrečný komentář pro autora.
 
 
@@ -374,7 +412,7 @@ každá začíná řádkem `[VIZUÁL: …]` a pokračuje souvislými odstavci. N
 
 # Podklady pro scénář regionu Střední Evropa
 
-Země regionu: Česko, Polsko, Slovensko, Maďarsko, Slovinsko. Ukazatel: průměrná čistá mzda na plný úvazek v kupní síle (PPS), rok 2024. Body kol a pořadí jsou hotové a nesmějí se měnit.
+Země regionu: Rakousko, Česko, Polsko, Slovensko, Maďarsko. Ukazatel: průměrná čistá mzda na plný úvazek v kupní síle (PPS), rok 2024. Body kol a pořadí jsou hotové a nesmějí se měnit.
 
 # Tabulky kol
 
@@ -397,10 +435,10 @@ Růst výkonu 1996 → 2020–2024 je z **86,1 %** dohánění: přímka růstu 
 
 | Země | Výkon na začátku | Body růstu | Růst nad rámec dohánění v kupní síle (body, přímka a křivka) | Totéž v reálných cenách | Slovy (společné zařazení) |
 | --- | ---: | ---: | --- | --- | --- |
+| Rakousko | 120,1 % | −17,0 | −0,9 až +4,0 | −1,1 až +0,0 | rostla zhruba tak, jak odpovídá dohánění |
 | Polsko | 47,7 % | +39,9 | +2,3 až +6,7 | +14,4 až +16,4 | nejisté: v kupní síle nejisté, v reálných cenách rychleji |
 | Česko | 66,1 % | +16,6 | −0,4 až +6,5 | +2,0 až +4,9 | nejisté: záleží na tom, jak se dohánění počítá |
 | Slovensko | 52,8 % | +28,4 | −2,9 až +2,9 | +9,7 až +12,2 | nejisté: v kupní síle zhruba tak, v reálných cenách rychleji |
-| Slovinsko | 69,9 % | +6,7 | −6,7 až +0,0 | +1,8 až +4,4 | nejisté: v kupní síle nejisté, v reálných cenách zhruba tak |
 | Maďarsko | 55,1 % | +16,6 | −11,9 až −5,6 | −13,5 až −11,0 | rostla pomaleji, než odpovídá dohánění |
 
 ## Přenos daní podle dat ligy (nález oponenta 3)
@@ -413,9 +451,9 @@ Vysoký podíl vysvětlených rozdílů je zčásti účetní vazba: náklady pr
 
 | Země | Co kola nevysvětlí | Z toho podíl mezd a složení | Zbývá | Podíl mezd na výkonu | Zaměstnanci mezi pracujícími |
 | --- | ---: | ---: | ---: | ---: | ---: |
+| Rakousko | +16,0 | +2,0 | +14,0 | 49,6 % | 87,9 % |
 | Maďarsko | −13,6 | −15,3 | +1,7 | 41,6 % | 91,7 % |
 | Slovensko | −10,9 | −7,9 | −3,0 | 42,6 % | 86,0 % |
-| Slovinsko | +10,2 | +13,6 | −3,5 | 52,2 % | 80,5 % |
 | Česko | −4,1 | −5,6 | +1,5 | 43,8 % | 85,8 % |
 | Polsko | −3,4 | −7,6 | +4,3 | 39,5 % | 80,1 % |
 
@@ -425,7 +463,7 @@ Vysoký podíl vysvětlených rozdílů je zčásti účetní vazba: náklady pr
 
 | Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| Slovinsko | 69,88 | 17 | 1 | −34,9 |  |  |
+| Rakousko | 120,07 | 4 | 1 | +17,8 | ano |  |
 | Česko | 66,08 | 18 | 2 | −40,3 |  |  |
 | Maďarsko | 55,14 | 20 | 3 | −57,9 | ano |  |
 | Slovensko | 52,78 | 21 | 4 | −62,2 | ano | ano |
@@ -439,7 +477,7 @@ Vysoký podíl vysvětlených rozdílů je zčásti účetní vazba: náklady pr
 | Slovensko | 1,56 | 7 | 2 | +28,4 |  |  |
 | Maďarsko | 1,38 | 9 | 3 | +16,6 |  |  |
 | Česko | 1,38 | 10 | 4 | +16,6 |  | ano |
-| Slovinsko | 1,25 | 12 | 5 | +6,7 |  |  |
+| Rakousko | 0,98 | 21 | 5 | −17,0 |  |  |
 
 **Kolo 3: Daně a odvody** (% nákladů práce, které jdou na daně, odvody a povinné platby)
 
@@ -449,24 +487,24 @@ Vysoký podíl vysvětlených rozdílů je zčásti účetní vazba: náklady pr
 | Maďarsko | 41,15 | 13 | 2 | +0,0 |  |  |
 | Česko | 41,18 | 14 | 3 | +0,0 |  | ano |
 | Slovensko | 44,57 | 22 | 4 | −4,0 |  |  |
-| Slovinsko | 45,77 | 23 | 5 | −5,4 | ano |  |
+| Rakousko | 46,99 | 26 | 5 | −6,9 | ano |  |
 
 
 | --- | ---: | --- | ---: | ---: | ---: | --- | ---: |
-| Slovinsko | 15 | nad středem až střed Evropy | 24 415 | −3,5 % | +10,2 (nad typickou odchylkou) | 17 → 16 → 20 | +5 |
+| Rakousko | 2 | evropská špička | 34 051 | +34,5 % | +16,0 (nad typickou odchylkou) | 4 → 6 → 10 | +8 |
 | Česko | 16 | pod středem Evropy | 23 345 | −7,8 % | −4,1 | 18 → 15 → 15 | -1 |
 | Polsko | 18 | pod středem Evropy | 22 036 | −12,9 % | −3,4 | 22 → 19 → 18 | +0 |
 | Slovensko | 25 | evropský suterén | 18 956 | −25,1 % | −10,9 (nad typickou odchylkou) | 21 → 21 → 23 | -2 |
 | Maďarsko | 26 | evropský suterén | 17 818 | −29,6 % | −13,6 (nad typickou odchylkou) | 20 → 24 → 24 | -2 |
 
-Papírové pořadí podle rozdaných karet: Slovinsko (−34,9), Česko (−40,3), Maďarsko (−57,9), Slovensko (−62,2), Polsko (−72,0). Průměrný zbytek regionu −4,4 bodu.
+Papírové pořadí podle rozdaných karet: Rakousko (+17,8), Česko (−40,3), Maďarsko (−57,9), Slovensko (−62,2), Polsko (−72,0). Průměrný zbytek regionu −3,2 bodu.
 
 
 ## Výsledek v cíli (rok 2024)
 
 | Země | Skutečné místo v lize (27 zemí) | Patro | Čistá mzda v kupní síle (PPS ročně) | Čistá mzda v eurech ročně | Cenová hladina spotřeby (EU27 = 100) | Daně, odvody a povinné platby (% nákladů práce) |
 |---|---:|---|---:|---:|---:|---:|
-| Slovinsko | 15 | nad středem až střed Evropy | 24 415 | 22 120 | 90,6 | 45,8 |
+| Rakousko | 2 | evropská špička | 34 051 | 40 112 | 117,8 | 47,0 |
 | Česko | 16 | pod středem Evropy | 23 345 | 18 886 | 80,9 | 41,2 |
 | Polsko | 18 | pod středem Evropy | 22 036 | 15 403 | 69,9 | 39,6 |
 | Slovensko | 25 | evropský suterén | 18 956 | 15 317 | 80,8 | 44,6 |
@@ -478,14 +516,190 @@ Patra evropské reality: 1.–6. evropská špička, 7.–15. nad středem až s
 
 ## Štítky z hodnocení výkonu zemí (pro finále)
 
+- Rakousko: Dělá to dobře a je to vidět
 - Česko: Dělá to dobře a je to vidět; vedlejší štítek: Chybami si přitížil
 - Polsko: Dělá to dobře a je to vidět
 - Slovensko: Dělá to dobře a je to vidět; vedlejší štítek: Těží z okolností
 - Maďarsko: Dělá to dobře a je to vidět; vedlejší štítek: Chybami si přitížil
-- Slovinsko: Dělá to dobře a je to vidět
 
 
 # Výklady zemí (proč mají v kolech takové hodnoty)
+
+# Rakousko: proč má v kolech takové hodnoty
+
+*Oprava koordinátora 17. 10. 2026 večer: zátěž daní a odvodů se po doplnění povinných plateb mimo daně u všech 27 zemí (nález nezávislého oponenta 1, `LIST_UKAZATELE.md`) změnila na 47,0 % (26. od nejnižší; dřív 46,4 %, 25.); čísla níže jsou bodově opravená, ostatní text zůstává.*
+
+*Podklad pro výklad hodnot v kolech průměrné čisté mzdy (rok 2024), sestavený 17. 10. 2026. Čísla výkonu a zátěže jsou
+z dat projektu (`data/kontext_kroky.json`, `data/mereni.json`), výroky ekonomů z `ekonomove/AT.md`, síla účinků ze
+`studie/UCINKY.md`, ostatní z otevřených oficiálních a odborných zdrojů v oddílu 6. Kroky vlád a institucí s doklady jsou
+v `data/kroky_zemi/AT.json`. „Můj přepočet“ znamená výpočet z uvedených dat, „můj úsudek“ moji úvahu bez přímého dokladu.*
+
+## Ve zkratce
+
+Rakousko startovalo vysoko s velkou zásobou kapitálu a s polohou, kterou po pádu železné opony a po vstupu do EU proměnilo
+ve výhodu; do roku 2004 si proto náskok před středem ligy drželo. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl rakouský výkon na pracujícího v letech 1996–2004 asi o 14 %, střed ligy asi o 21 %; náskok si Rakousko drželo jen v kupní síle, reálně za středem ligy ztrácelo už v těchto letech (proti Španělsku si ale polepšilo). Pak výkon na pracujícího vůči středu ligy klesal, protože
+bohatá země nemá z čeho dohánět, protože se po krizi 2008/09 zpomalil růst produktivity a hlavně proto, že Rakušané
+odpracují na hlavu asi o 16 % méně hodin než v roce 1996; za hodinu práce se Rakousko naopak středu ligy vzdálilo. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl rakouský výkon za odpracovanou hodinu v letech 1996–2024 asi o 39 %, střed ligy asi o 45 % (25 zemí s údaji o hodinách); od středu ligy se tedy Rakousko za hodinu reálně nevzdálilo, mírně za ním zaostalo, a polepšilo si jen proti Španělsku, kde výkon za hodinu vzrostl asi o 17 %. Zátěž daní
+a odvodů je vysoká kvůli velkým odvodům na sociální pojištění; do roku 2015 ji zvedala daň z příjmu, protože se pásma
+neupravovala o inflaci, a pak ji snížily reformy z let 2016 a 2023.
+
+## 1. Proč takový výkon na začátku (1996)
+
+V roce 1996 vytvořil pracující v Rakousku 120,1 % toho, co pracující ve střední zemi ligy (data projektu z Eurostatu).
+Rakousko mělo na pracovníka asi 1,38násobek kapitálu střední země ligy (Penn World Table 11.0, data projektu) a těžilo
+z polohy: po otevření trhů střední a východní Evropy v roce 1990 vzrostly v rakouských obcích do 50 kilometrů od hranice
+mzdy i zaměstnanost víc než ve vnitrozemí (změřeno: Brülhart, Carrère a Trionfetti 2012, srovnání obcí u hranice
+s vnitrozemím před rokem 1990 a po něm). Ekonom Rakouského institutu pro hospodářský výzkum (WIFO) Fritz Breuss odhaduje, že
+otevření východu zvedalo rakouský reálný HDP asi o 0,2 % ročně a vstup do EU 1. ledna 1995 asi o 0,6 % ročně (posoudil
+Breuss 2015, makroekonomický model). Část vysokého výkonu na pracujícího dělala tehdy také dlouhá pracovní doba: rakouský
+pracující odpracoval v roce 1996 1 806 hodin, španělský 1 740 a německý 1 515 (Eurostat, přepočet projektu), takže za hodinu
+práce vytvořil Rakušan jen asi 108 % toho, co Španěl (můj přepočet z dat Eurostatu).
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon na pracujícího vůči střední zemi ligy se v Rakousku zmenšil na 0,978násobek stavu z roku 1996, zatímco typická země
+ligy si polepšila na 1,17násobek (data projektu). Průběh: 119,1 % (2000), 121,1 % (2004), 116,2 % (2008), 112,4 % (2013),
+116,2 % (2019) a 114,5 % (2024) (data projektu). Do roku 2004 si Rakousko náskok udrželo, nejvíc ztratilo v letech
+2004–2013, v letech 2013–2019 část dohnalo a po roce 2019 znovu mírně ztratilo. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl rakouský výkon na pracujícího v letech 1996–2004 asi o 14 % a střed ligy asi o 21 %, takže náskok si Rakousko udrželo jen v kupní síle a reálně ztrácelo už do roku 2004.
+
+**Bohatá země nemá z čeho dohánět.** Střed ligy táhnou nahoru východní země, které dohánějí z nízkého základu (například
+Rumunsko zvětšilo výkon vůči střední zemi 3,17krát, Polsko 1,76krát; data projektu) a kterým vstup do EU zvýšil příjem na
+obyvatele v průměru asi o 12 % (změřeno: Campos, Coricelli a Moretti 2019, podle rešerše studií projektu). Že Rakousko jako
+bohatá země takto dohánět nemůže, je můj úsudek z dat ligy. Střední zemí ligy je od roku 2000 Španělsko, jehož výkon na
+pracujícího v krizi let 2008–2013 vyskočil, protože ztratilo 3,4 milionu pracovních míst (Eurostat, přepočet projektu;
+podrobněji ve výkladu u Německa); i to rakouskou hodnotu v letech 2008–2013 stlačilo.
+
+**Do roku 2004 bonus z evropské integrace.** Podle Breusse přidal celý proces integrace od roku 1989 (otevření východu, vstup
+do EU, euro od roku 1999 a rozšíření EU v roce 2004) rakouskému reálnému HDP asi 0,9 % ročně a přes 18 000 pracovních míst
+ročně; účinky jednotlivých kroků se překrývají, takže se nesčítají, a bonus vydržel do krize 2008/09 (posoudil Breuss 2015,
+makroekonomický model). Nejvíc podle něj získaly firmy silně angažované v nových členských zemích a podíl mezd na národním
+důchodu klesal (posoudil Breuss 2015).
+
+**Po krizi 2008/09 pomalejší produktivita.** Růst produktivity práce zpomalil z 1,8 % ročně (1995–2005) na 0,9 % ročně
+(2006–2019) (Rada pro produktivitu 2024) a podle Rady pro produktivitu, nezávislého poradního orgánu při Rakouské národní
+bance, se zpomaluje už od krize 2008/09, podobně jako v jiných vyspělých zemích (Rada pro produktivitu 2025; jen časová
+souvislost s krizí). Jako příčiny zpomalení Rada jmenuje měnící se skladbu pracovní síly, malé investice do nehmotného
+majetku, jako jsou software, patenty a odborná příprava, slabiny digitalizace a velkou váhu méně produktivních oborů, jako je
+ubytování (posoudila Rada pro produktivitu 2024).
+
+**Na hlavu se odpracuje mnohem méně hodin.** Kolo měří výkon na pracujícího, ne na hodinu. Rakouský pracující odpracoval
+v roce 2024 v průměru 1 524 hodin, o 16 % méně než v roce 1996, kdežto španělský o 6 % méně (Eurostat, přepočet projektu).
+Za hodinu práce vytvářelo Rakousko v roce 1996 asi 108 % a v roce 2024 asi 123 % toho, co Španělsko, na pracujícího ale
+112 % a 115 % (můj přepočet z dat Eurostatu). Slabý růst výkonu na pracujícího je tedy z velké části kratší prací na hlavu,
+ne slabší hodinovou produktivitou (můj úsudek z těchto dat). Pracujících přibylo z 3,60 milionu (1996) na 4,74 milionu
+(2024), odpracovaných hodin jen o 11 % (Eurostat, přepočet projektu). Evropská komise uvádí, že podíl částečných úvazků je
+s 30,7 % druhý nejvyšší v EU, dál roste, a tím snižuje počet hodin na pracujícího (posoudila Evropská komise 2025);
+u žen dosáhl podíl částečných úvazků v roce 2024 51,1 % (Rada pro produktivitu 2025). Komise zároveň píše, že vysoké zdanění
+práce od delší pracovní doby odrazuje (posoudila Evropská komise 2025, viz oddíl 3).
+
+**Po roce 2019 recese a náklady.** Rakousko bylo v letech 2023 a 2024 v recesi a produktivita práce klesala asi o 1,1 %
+ročně, hlavně ve zpracovatelském průmyslu; Rada pro produktivitu to připisuje recesi a tomu, že firmy držely zaměstnance
+(posoudila Rada pro produktivitu 2025). Cenová konkurenceschopnost vývozců se zhoršila kvůli rostoucím nákladům práce
+a energií (posoudila Rada pro produktivitu 2024). Výkon vůči středu ligy klesl ze 116,2 % (2019) na 114,5 % (2024) (data
+projektu).
+
+**Investice a výzkum.** Rakousko investovalo v letech 1996–2024 v průměru 24,1 % HDP, víc než střední země ligy s 22,8 %
+(Eurostat, data projektu), a výdaje na výzkum a vývoj zvýšilo z 1,59 % HDP (1996) na 3,34 % (2024) (Eurostat, data
+projektu). Proč se to neprojevilo rychlejším růstem výkonu, zdroje přímo nevysvětlují; Rada pro produktivitu upozorňuje na
+malé investice do nehmotného majetku a slabiny digitalizace (Rada pro produktivitu 2024).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Z toho, co firma za zaměstnance s průměrnou mzdou zaplatí, šlo v roce 2024 na daně, odvody a povinnou podnikovou zaopatřovací pokladnu 47,0 % (výpočet projektu; bez pokladny,
+kterou OECD nepočítá, 46,4 %; střední země ligy 41,2 %). Podle OECD (Organizace pro hospodářskou spolupráci a rozvoj) tvořily v roce 2024 odvody zaměstnavatele 27,6 %
+hrubé mzdy, odvody zaměstnance 17,9 % a daň z příjmu 14,6 % (OECD Taxing Wages, data projektu); jádrem zátěže jsou tedy
+odvody na sociální pojištění, které jsou vyšší než daň. Daň z příjmu měla v roce 2024 pásma se sazbou 0 % do 12 816 eur
+ročně a dál 20, 30, 40, 48 a 50 % (Spolkové ministerstvo financí). Evropská komise uvádí, že Rakousko mělo v roce 2025 šestý
+nejvyšší daňový klín v EU (Evropská komise 2026), a Rada pro produktivitu očekává, že země v roce 2025 dosáhne nejvyššího
+podílu daní a odvodů na HDP v EU (Rada pro produktivitu 2025). Komise píše, že vysoký klín odrazuje od delší pracovní doby
+a vede k vysokému podílu částečných úvazků (posoudila Evropská komise 2025).
+
+**Test protipříkladem.** Rozdělení odvodů mezi zaměstnavatele a zaměstnance výši zátěže nevysvětluje: kdyby všechno platil
+zaměstnanec, byla by vyšší hrubá mzda, ale zátěž vůči nákladům práce stejná. Příčinou je výše odvodů a daně, tedy to, kolik
+sociální pojištění a stát stojí a že se platí převážně z práce; podle Komise se rakouský daňový systém silně opírá o příjmy
+z práce (Evropská komise 2025). O změně toho, kdo odvody formálně platí, rešerše ekonomů u Rakouska nic nenašla.
+
+**Vývoj od roku 2000.** Zátěž svobodného s průměrnou mzdou vzrostla podle OECD ze 47,3 % nákladů práce (2000) na 49,0 %
+(2008), 49,2 % (2013) a nejvyšších 49,6 % (2015), pak klesla na 47,3 % (2016), 47,9 % (2019) a 46,8 % (2024) (data projektu
+z OECD). Pohyb dělala hlavně daň z příjmu:
+- do roku 2015 rostla průměrná sazba daně z 12,9 % na 17,0 % hrubé mzdy (OECD Taxing Wages); hranice pásem se do roku 2022
+  automaticky neupravovaly o inflaci (Spolkové ministerstvo financí), takže inflace bez změny zákona zvyšovala daň (můj
+  úsudek; s daty OECD jen časová souvislost);
+- daňová reforma 2015/2016 snížila nejnižší sazbu na 25 % (Spolkové ministerstvo financí 2015) a průměrná sazba daně klesla
+  ze 17,0 % na 14,1 %, zátěž ze 49,6 % na 47,3 % (OECD Taxing Wages); OECD tento pokles výslovně přičetla reformě daní
+  z práce (posoudila OECD 2017);
+- v letech 2017 a 2018 vláda snížila příspěvek zaměstnavatelů do fondu pro rodinné dávky ze 4,5 % mzdy o 0,4 a o dalších
+  0,2 procentního bodu (rakouský parlament 2015) a odvody zaměstnavatele klesly podle OECD z 28,9 % hrubé mzdy (2016) na
+  28,3 % (2018) (jen časová souvislost);
+- od 1. ledna 2023 se pásma daně každý rok upravují o inflaci (Spolkové ministerstvo financí) a průměrná sazba daně klesla
+  z 15,3 % (2022) na 14,6 % (2024) (OECD Taxing Wages; jen časová souvislost).
+
+Odvody zaměstnance se mezitím skoro nezměnily (18,1 % hrubé mzdy v roce 2000, 17,9 % v roce 2024), odvody zaměstnavatele
+klesly z 31,0 % na 27,6 % (OECD Taxing Wages).
+
+## 4. Další faktory země
+
+**Kolektivní smlouvy pro skoro všechny a mzdy podle inflace.** Kolektivní smlouvy kryly v roce 2024 98 % zaměstnanců, což
+podle Evropské komise odráží povinné členství zaměstnavatelů v hospodářské komoře a koordinované vyjednávání (Evropská
+komise 2026). Smlouvy se v praxi řídí průměrnou inflací za posledních dvanáct měsíců: kolektivně sjednané mzdy vzrostly od
+začátku roku 2022 do konce roku 2025 o 22,7 %, v letech 2022–2025 o 8 procentních bodů víc než v eurozóně, a podíl mezd na
+HDP vzrostl z 61,9 % na 65,9 % (posoudila Rakouská národní banka 2026: důvodem je výrazná faktická indexace smluv). Mzdy tak
+v letech 2023–2024 rostly, zatímco produktivita práce klesala asi o 1,1 % ročně (Rada pro produktivitu 2025), takže rakouská
+mzda roku 2024 může vycházet vysoko vůči výkonu na pracujícího (můj úsudek z údajů národní banky a Rady pro produktivitu).
+
+**Částečné úvazky a měření.** Mzda v ukazateli je přepočtená na plný úvazek, výkon v kolech se ale počítá na hlavu
+pracujícího včetně částečných úvazků. V Rakousku, kde podíl částečných úvazků dosahuje 30,7 % (Evropská komise 2025), proto
+výkon na pracujícího ukazuje méně, než kolik vytvoří hodina práce (můj úsudek z dat Eurostatu v oddílu 2).
+
+**Přistěhovalci.** Od 1. května 2011 mohou v Rakousku bez omezení pracovat občané osmi zemí, které vstoupily do EU v roce
+2004; jejich počet v Rakousku vzrostl v prvních dvanácti měsících o 29 493, nejvíc v Burgenlandu a dalších východních
+spolkových zemích (WIFO 2012). Účinek na mzdy tato studie nehodnotí, příčina vlivu na mzdy tedy není doložena.
+
+**Ceny.** Cenová hladina spotřeby byla v Rakousku v roce 2024 na 117,8 % průměru EU (Eurostat, data projektu), takže tatáž
+mzda v eurech koupí asi o 15 % méně než při průměrných cenách EU (můj přepočet).
+
+## 5. Co říkají ekonomové
+
+Rada pro produktivitu (2024) píše: „Österreich ist eine der leistungsfähigsten Volkswirtschaften Europas mit einer hohen
+Produktivität.“ Rakouská národní banka (2026) vysvětluje rychlý růst mezd let 2022–2025 takto: „Der Grund für diese
+Entwicklung liegt in einer ausgeprägten ‚De-facto-Indexierung‘ der KV-Abschlüsse an die Verbraucherpreisinflation in
+Österreich.“ (KV-Abschlüsse = uzavřené kolektivní smlouvy.) Evropská komise (2025) k daním dodává: „A high tax wedge on labour discourages longer working hours, resulting in
+a silent reserve and high part-time employment.“
+
+## 6. Zdroje
+
+**Data projektu**
+- `data/kontext_kroky.json`: výkon na pracujícího vůči střední zemi ligy 1996–2024 (Eurostat; HDP v kupní síle na
+  pracujícího), násobek růstu, zátěž daní a odvodů 2024 a řada OECD.
+- `data/mereni.json` a `data/raw_faktory/`: kapitál na pracovníka 1996 (Penn World Table 11.0), investice a výzkum (Eurostat),
+  zaměstnanost a hodiny. Eurostat zaměstnanost: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995 ;
+  hodiny: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_HW&nace_r2=TOTAL&na_item=EMP_DC&sinceTimePeriod=1995 ;
+  HDP v kupní síle: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
+  cenové hladiny: Eurostat `prc_ppp_ind_1` (skutečná individuální spotřeba, EU27 = 100).
+- `data/raw_krok1/oecd_taxing_wages.json`: OECD Taxing Wages 2000–2025, https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/all?startPeriod=2000&endPeriod=2025&format=csvfilewithlabels
+- `LIST_UKAZATELE.md` a `KOLA_TABULKA.md`: střední hodnoty ligy (zátěž 41,2 %, násobek růstu 1,17).
+- `studie/UCINKY.md`: Campos, Coricelli, Moretti (2019), účinek vstupu do EU.
+
+**Instituce a studie**
+- Brülhart, M., Carrère, C., Trionfetti, F.: How wages and employment adjust to trade liberalization: Quasi-experimental
+  evidence from Austria, Journal of International Economics 86(1), 2012, https://ideas.repec.org/a/eee/inecon/v86y2012i1p68-81.html
+- Breuss, F. (WIFO): 20 Jahre EU-Mitgliedschaft: Österreich, bisher großer Gewinner, muss seine Rolle neu definieren, ÖGfE
+  Policy Brief 4/2015, https://Fritz.Breuss.wifo.ac.at/Breuss_20_Jahre_EU-Mitgliedschaft_OEGFE_Policy_Brief-2015.04_03_02_2015.pdf
+- Produktivitätsrat (Rada pro produktivitu): Produktivitätsbericht 2024, Kurzfassung, https://produktivitaetsrat.at/dam/jcr:29886c17-eb16-44f0-a39b-f9a722abced1/PROD-Bericht_2024_Kurzfassung.pdf
+- Produktivitätsrat: Produktivitätsbericht 2025, https://www.produktivitaetsrat.at/dam/jcr:fd881915-3032-446c-906d-2fb15be9ad3a/PROD-Bericht_2025_Screen.pdf
+- Evropská komise: 2025 Country Report – Austria, SWD(2025) 220, https://economy-finance.ec.europa.eu/document/download/fca1ebd8-9670-4482-906d-ba121c873112_en?filename=AT_CR_SWD_2025_220_1_EN_autre_document_travail_service_part1_v4.pdf
+- Evropská komise: 2026 Country Report – Austria, SWD(2026) 220, https://economy-finance.ec.europa.eu/document/download/13e824f0-82fe-4184-b3dc-cb1cc9634a28_en?filename=AT_SWD_2026_220_1_EN_autre_document_travail_service_part1_v3.pdf
+- Oesterreichische Nationalbank (Rakouská národní banka): Hohes Lohnwachstum in den vergangenen Jahren – niedrigere
+  Abschlüsse in der laufenden Lohnrunde, Policy Brief 2026/1, https://www.oenb.at/dam/jcr:c261f616-0c3c-42e2-ac4f-41f04d93ca55/policy-brief-2026-1.pdf
+- Spolkové ministerstvo financí Rakouska: stanovisko k petici č. 38 o daňové reformě 2015/2016, parlament, 29. 5. 2015,
+  https://www.parlament.gv.at/dokument/XXV/SPET/49/fname_421381.pdf
+- Spolkové ministerstvo financí Rakouska: stránka o zrušení studené progrese a pásmech daně 2024/2025, https://www.bmf.gv.at/public/informationen/entlastungen2025.html
+- Rakouský parlament: pozměňovací návrh AA-124 XXV. GP (popis vládního plánu snížit příspěvek zaměstnavatelů do fondu pro
+  rodinné dávky), 2015, https://www.parlament.gv.at/dokument/XXV/AA/124/imfname_490166.pdf
+- OECD: tisková zpráva k Taxing Wages 2017 (duben 2017), převzatá v plném znění serverem Taxlive, https://www.taxlive.nl/nl/documenten/nieuws/oecd-tax-rates-on-labour-income-continued-decreasing-slowly-in-2016/
+- Huber, P., Böhs, G. (WIFO): Labour Migration from Eight New EU Countries since the Opening of the Labour Market,
+  WIFO-Monatsberichte 85(11), 2012, https://www.wifo.ac.at/en/publication/117082/
+
 
 # Česko: proč má v kolech takové hodnoty (průměrná čistá mzda, podklad pro výklad)
 
@@ -1408,188 +1622,6 @@ EU „hlavně kvůli nízkému podílu domácí přidané hodnoty ve výrobě“
 26. Rešerše studií projektu: [`studie/UCINKY.md`](../studie/UCINKY.md), oddíl o tom, kdo nese daně a odvody z práce.
 27. Mezinárodní měnový fond (2010): IMF Survey: Poland: European Success Story but Challenges Ahead (26. 3. 2010):
     https://www.imf.org/external/pubs/ft/survey/so/2010/CAR032610A.htm
-
-
-# Slovinsko: proč má v kolech takové hodnoty (průměrná čistá mzda, podklad pro výklad)
-
-> Krok 8 a podklad pro krok 9a zkoušky návrhu skillu `analyza-pricin-regiony-SKILL-v1.4.md` (neaktivní), 17. 10. 2026.
-> Zadání: `ZADANI_KROKY_ZEMI.md`. Seznam kroků s doklady: `data/kroky_zemi/SI.json`.
-> U každého tvrzení o příčině je síla dokladu: „změřeno (kdo, jak)“, „posoudila (instituce)“, „jen časová souvislost“,
-> nebo „můj úsudek“. Zkratky zdrojů v závorkách jsou rozepsané v oddílu Zdroje.
-
-Hodnoty Slovinska v kolech: výkon na začátku 69,9 % výkonu střední země ligy v roce 1996, růst výkonu 1,25násobek
-(z roku 1996 na průměr let 2020–2024) a zátěž daní a odvodů 45,8 % nákladů práce v roce 2024. Průměrná čistá mzda
-na plný úvazek byla v roce 2024 asi 24 415 jednotek kupní síly ročně (vše Projekt 2026).
-
-## 1. Proč takový výkon na začátku (1996)
-
-V roce 1996 vytvořil slovinský pracující 69,9 % toho, co pracující ve střední zemi ligy, nejvíc ze zemí střední Evropy
-v lize (Projekt 2026). Slovinsko vyšlo z jugoslávské podnikové samosprávy, která od 50. let stála mezi tržní a centrálně
-plánovanou ekonomikou (Prašnikar, Domadenik a Koman 2009), a proto má podle kódování V-Dem jen 23 let centrálně plánované ekonomiky proti 42 letům v Česku a na Slovensku (V-Dem v Projekt 2026).
-Výstup po roce 1989 sice klesl do roku 1992 o 20,4 %, ale zotavil se rychle a v roce 1999 už převyšoval úroveň před
-začátkem transformace o 5 % (MMF 2000); kapitálu na pracovníka mělo Slovinsko v roce 1996 84 % střední země ligy
-(Penn World Table 11.0 v Projekt 2026). Privatizace dala přednost zaměstnancům a vedení podniků, kteří dostávali
-akcie a mohli podniky levně odkupovat (posoudil Bojnec 1999), takže podniky zůstaly hlavně v domácích rukou (můj
-úsudek) a zahraničního kapitálu přicházelo málo: čistý příliv přímých zahraničních investic dosahoval v letech
-1996–2000 průměrně 0,9 % HDP ročně proti 5,5 % v Česku (Světová banka v Projekt 2026). Vyšší start tedy dala kratší a měkčí plánovaná ekonomika a rychlé zotavení (můj úsudek).
-
-## 2. Proč takový růst výkonu (1996–2024)
-
-Výkon slovinského pracujícího vůči střední zemi ligy vzrostl z 69,9 % v roce 1996 na průměr 87,3 % v letech 2020–2024,
-tedy 1,25krát, nejméně z těchto tří zemí (Projekt 2026). Část pomalejšího růstu je vyšší start, protože kdo je blíž
-bohatým, má méně co dohánět (můj úsudek). Nejvíc Slovinsko dohánělo v letech 1996–2004 (o 11,8 procentního bodu, na
-81,7 %), pak do roku 2008 stálo, v krizi let 2008–2013 ztratilo 5,3 procentního bodu, v letech 2013–2019 dohnalo 6,0 bodu a do
-roku 2024 ještě 3,1 bodu na 86,6 % (Projekt 2026). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* že do roku 2008 stálo, platí jen v kupní síle; ve stálých cenách vzrostl slovinský výkon na pracujícího v letech 2004–2008 asi o 14 %, střed ligy asi o 6 %, takže reálně Slovinsko dál dohánělo.
-
-**1996–2004: dohánění před vstupem do EU.** Hodinová produktivita rostla v letech 2000–2008 v průměru o 3,4 % ročně
-(IMAD 2023) a investice do roku 2008 rychle rostly v podnicích i v infrastruktuře, hlavně díky stavbě dálnic
-(IMAD 2023). Vstup do EU v roce 2004 podle srovnání se syntetickým Slovinskem ze zemí mimo EU zvýšil HDP na obyvatele
-o 10,4 %; statisticky průkazný je rozdíl u produktivity práce, u HDP na obyvatele ne (změřili Campos, Coricelli
-a Moretti 2014).
-
-**2004–2008: zastavení při vysoké úrovni.** Výkon se držel kolem 82–83 % střední země ligy (Projekt 2026). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* to platí jen v kupní síle; ve stálých cenách vzrostl výkon na pracujícího v letech 2004–2008 asi o 14 % proti asi 6 % u středu ligy. Podle IMAD
-přitom příspěvek kapitálu k růstu v letech 2001–2008 nepřevýšil rychleji rostoucí země EU (posoudil IMAD 2023).
-Slovinsko v roce 2007 přijalo euro (Vláda SI 2006); hodnocení jeho účinku se srovnáním jsem nenašel.
-
-**2008–2013: hluboká krize a bankovní krize.** Výkon klesl z 82,8 % na 76,2 % v roce 2009 a v roce 2013 byl 77,5 %
-(Projekt 2026). Investice v letech 2007–2012 klesly víc než v kterékoli zemi EU kromě Řecka, hlavně kvůli problémům
-bankovního sektoru, oddlužování firem a horším očekáváním (posoudil IMAD 2023). Po krátkém oživení v roce 2010 se země
-v roce 2011 znovu propadla do recese s druhým největším poklesem HDP v eurozóně (Nye 2021) a v prosinci 2013 stát
-dokapitalizoval pět bank celkem asi 3,2 mld. € (Banka Slovenije 2013, součet můj). Největší odstup HDP na obyvatele od
-průměru EU mělo Slovinsko v roce 2015 (IMAD 2026).
-
-**2013–2024: návrat, ale pomalý.** Výkon vzrostl na 83,5 % v roce 2019 a na 86,6 % v roce 2024 (Projekt 2026). Po krizi
-zužovaly odstup od EU zhruba stejným dílem produktivita a podíl zaměstnaných a od roku 2019 hlavně produktivita, od roku
-2023 se ale dohánění zastavilo a HDP na obyvatele v kupní síle dosáhlo v roce 2025 91 % průměru EU (IMAD 2026).
-Hodinová produktivita rostla v letech 2009–2022 jen o 0,9 % ročně proti 3,4 % v letech 2000–2008 a klíčovým důvodem
-zpomalení bylo podle IMAD skromnější prohlubování kapitálu (posoudil IMAD 2023).
-
-**Brzdy.** Slovinsko zůstává mezi zeměmi EU s nejnižším poměrem přímých zahraničních investic k HDP (posoudila EK 2026)
-a v letech 1996–2024 do něj přitékalo průměrně jen 2,2 % HDP ročně proti 4,7 % v Česku (Světová banka v Projekt 2026);
-nízké jsou i investice do nehmotného kapitálu (EK 2026 podle rešerše `ekonomove/SI.md`). Výdaje na výzkum a vývoj byly
-naopak v letech 1996–2023 v průměru 1,81 % HDP, víc než v Česku a na Slovensku (Eurostat v Projekt 2026).
-
-## 3. Proč taková zátěž daní a odvodů (2024)
-
-Ze všeho, co firma za zaměstnance s průměrnou mzdou v roce 2024 zaplatila, odvedl stát 45,8 % (Projekt 2026); OECD
-při své průměrné mzdě uvádí 44,7 % (OECD TW 2026). Rozdíl je měřením: průměrná mzda z národních účtů je ve Slovinsku
-o 24 % vyšší než mzda průměrného pracovníka podle OECD a progresivní daň z ní proto bere víc (Projekt 2026,
-`data/vysledek.json`; výklad můj). Slovinský systém je zvláštní tím, že odvody platí hlavně zaměstnanec: 22,1 % hrubé
-mzdy, od roku 2024 23,6 %, kdežto zaměstnavatel 16,1 % (OECD TW 2026). Daň z příjmu je progresivní s nejvyšší sazbou 50 %
-od poměrně nízké hranice (IMAD 2023) a při průměrné mzdě činí 12,2 % hrubé mzdy (OECD TW 2026). IMAD vysokou zátěž
-přičítá nadprůměrným odvodům zaměstnanců a vysoké nejvyšší sazbě daně (posoudil IMAD 2023) a Evropská komise mluví
-o silné závislosti na zdanění práce, protože odvody dávají 16,8 % HDP proti 13 % v EU (EK 2026 podle rešerše
-`ekonomove/SI.md`).
-
-**Test protipříkladem.** Kdyby zaměstnavatel platil větší část odvodů a zaměstnanec menší při stejném součtu, zátěž
-vůči nákladům práce by byla stejná; měnil by se jen poměr čisté a hrubé mzdy, který jako doklad nepoužívám (můj úsudek
-ze vzorce). Vysoké odvody zaměstnance tedy samy vysokou zátěž nevysvětlují. Odvody obou stran dohromady berou ve
-Slovinsku asi 34 % nákladů práce, podobně jako v Česku a na Slovensku, a o vyšší zátěž se stará hlavně daň z příjmu:
-asi 10,5 % nákladů práce proti 7,0 % v Česku a 8,0 % na Slovensku (můj přepočet z OECD TW 2026 za rok 2024).
-
-**Jak se zátěž měnila od roku 2000 (OECD TW 2026, svobodný bez dětí při průměrné mzdě).** Byla 46,3 % v roce 2000,
-45,6 % v roce 2005, 43,3 % v roce 2007, 42,2 % v roce 2009, 43,5 % v roce 2019, 42,9 % v roce 2022, 43,1 % v roce 2023
-a 44,7 % v roce 2024. Mezi lety 2006 a 2009 stát podle plánu z konce roku 2005 postupně zrušil daň z vyplacených mezd
-placenou zaměstnavateli (Vláda SI 2006) a odvody zaměstnavatele včetně této daně klesly z 19,9 % na 16,1 % hrubé mzdy
-(OECD TW 2026; že pokles odpovídá rušení daně, je můj výklad z průběhu dat). Od roku 2007 platí nový zákon o dani
-z příjmu se třemi pásmy místo pěti a nejvyšší sazbou 41 % místo 50 % (Vláda SI 2006) a daň při průměrné mzdě klesla
-z 12,7 % na 10,7 % hrubé mzdy (OECD TW 2026). Pak daň plíživě rostla až na 12,3 % hrubé mzdy v roce 2019 (OECD TW 2026);
-proč, se mi doložit nepodařilo. Snížení daně na jaře 2022 vrátila novela účinná od roku 2023 většinou zpět (posoudila
-EK 2023).
-
-**Rok 2024 je hlavně změna měření.** V lednu 2024 stát zrušil dobrovolné doplňkové zdravotní pojištění a nahradil ho
-povinným příspěvkem 35 € měsíčně (EK 2024), pojistné zaměstnance v datech OECD vzrostlo z 22,1 % na 23,6 % hrubé mzdy
-a celková zátěž ze 43,1 % na 44,7 % (OECD TW 2026). Nový příspěvek se ale rovná dřívějšímu dobrovolnému pojistnému
-(EK 2024), které platilo zhruba 73 % obyvatel (EK 2023), a hrubé předepsané pojistné pojišťoven pak kleslo o 12,8 %
-(EK 2026). Kdyby k přeměně nedošlo, byla by měřená zátěž v roce 2024 nižší asi o 1,3 procentního bodu (můj
-přepočet z OECD TW 2026), většina domácností by ale zdravotní pojistné platila dál jako dobrovolné; pro ně se čistý
-příjem po zaplacení pojistného skoro nezměnil (můj úsudek). Od července 2025 přibyl příspěvek na dlouhodobou péči 2 % hrubé mzdy, napůl od zaměstnance a zaměstnavatele
-(EK 2026), který do roku 2024 ještě nezasahuje.
-
-## 4. Další faktory země
-
-- **Vysoká minimální mzda a stlačené mzdy.** Slovinsko má jeden z nejmenších rozdílů mezi minimální a průměrnou mzdou
-  v EU, částečně kvůli nízké nerovnosti a velké koncentraci nízkých mezd; v letech 2022 a 2023 bylo podle Eurostatu
-  první a druhé v poměru minimální a průměrné mzdy (IMAD 2025). Zvýšení minimální mzdy o 22,9 % v roce 2010 se přelilo
-  i do mezd těsně nad minimem (změřili Laporšek, Vodopivec a Vodopivec 2019, rozdíl v rozdílech), ale nízko placeným
-  přineslo velkou a trvalou ztrátu zaměstnání (změřili Laporšek, Orazem, Vodopivec a Vodopivec 2019). Část nárůstu
-  minimální mzdy vznikla změnou definice, která nyní nezahrnuje řadu příplatků (IMAD 2025).
-- **Nedostatek pracovníků** byl v posledních letech klíčovým faktorem růstu mezd, hlavně v pracovně náročných odvětvích
-  s nižšími mzdami (posoudil IMAD 2025).
-- **Kolektivní vyjednávání** pokrývalo v letech 1996–2000 všechny zaměstnance a v letech 2015–2024 v průměru 83 %
-  (OECD/AIAS ICTWSS v Projekt 2026); podle údajů hlášených podle evropské směrnice to bylo v roce 2023 63,3 % (EK 2026 podle
-  rešerše `ekonomove/SI.md`). Vliv na průměrnou mzdu instituce nevyčíslují.
-- **Přistěhovalci.** Lidé narození v cizině tvoří 14,9 % obyvatel (OSN 2024 v Projekt 2026) a cizinci ze zemí mimo EU
-  pracují podle Evropské komise převážně v nízkopříjmových odvětvích (EK 2026 podle rešerše `ekonomove/SI.md`); vliv na
-  průměrnou mzdu nevyčíslen.
-- **Ceny.** Cenová hladina spotřeby byla v roce 2024 90,6 % průměru EU, výrazně víc než v Česku (80,9 %) a na Slovensku
-  (80,8 %) (Eurostat v Projekt 2026). Slovinské náklady práce na zaměstnance (40 789 € ročně) jsou o 27 % vyšší než
-  české, čistá mzda v eurech o 17 % a v kupní síle jen o 5 % (Projekt 2026, můj přepočet); rozdíl smazává vyšší zátěž
-  a vyšší ceny.
-- **Veřejné platy.** Platová reforma ve veřejném sektoru byla přijata koncem roku 2024 a první kroky přišly v roce 2025
-  (Banka Slovenije 2026 podle rešerše `ekonomove/SI.md`); Evropská komise jí ale připisuje i růst mezd v roce 2024
-  (EK 2026 podle téže rešerše), takže její vliv na rok 2024 je nejasný.
-
-## 5. Co říkají ekonomové
-
-Slovinský vládní ústav IMAD píše, že „náklady práce jsou z pohledu firem relativně vysoké, zatímco čistý příjem
-zaměstnance je relativně nízký“ a že úroveň rozvoje zůstává pod průměrem EU „kvůli nižší produktivitě“; Evropská komise
-dodává, že produktivita konverguje „příliš pomalu na to, aby vyrovnala rostoucí náklady práce“ (citace podle
-`ekonomove/SI.md`).
-
-## 6. Zdroje
-
-- **Projekt 2026:** data projektu Ekonomické hry, 17. 10. 2026, v této složce: `data/kontext_kroky.json` (výkon na
-  pracujícího vůči střední zemi ligy z Eurostatu, zátěž 2024, čistá mzda), `data/mereni.json` (roční řada výkonu, kapitál
-  na pracovníka z Penn World Table 11.0 https://www.rug.nl/ggdc/productivity/pwt/, roky plánované ekonomiky z V-Dem
-  https://www.v-dem.net/data/the-v-dem-dataset/, přímé zahraniční investice ze Světové banky WDI, výzkum z Eurostatu,
-  kolektivní smlouvy z OECD/AIAS ICTWSS, přistěhovalci z OSN International Migrant Stock 2024), `data/vysledek.json`
-  (hrubá a čistá mzda, cenová hladina, podíl skutečné mzdy na mzdě průměrného pracovníka OECD 1,244).
-- **OECD TW 2026:** OECD, Taxing Wages – comparative tables (jednotlivec bez dětí, 100 % průměrné mzdy: celková zátěž,
-  odvody zaměstnance a zaměstnavatele, daň z příjmu), staženo 17. 10. 2026,
-  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/CZE+SVK+SVN.AV_TW..S_C0.AW100..A
-- **MMF 2000:** Fischer, S., Sahay, R.: Taking Stock, Finance & Development 37(3), září 2000, tabulka 1 (Output
-  Performance, 1989–99), https://www.imf.org/external/pubs/ft/fandd/2000/09/fischer.htm
-- **Bojnec 1999:** Bojnec, Š.: Privatisation, Restructuring and Management in Slovene Enterprises, Comparative Economic
-  Studies 41(4), 1999, https://ideas.repec.org/a/pal/compes/v41y1999i4p71-102.html
-- **Prašnikar, Domadenik a Koman 2009:** Prašnikar, J., Domadenik, P., Koman, M.: konferenční studie o chování firem po
-  privatizaci v bývalé Jugoslávii (Makedonie, Černá Hora, Slovinsko), konference CAED, Hitotsubashi University, 2009,
-  https://gcoe.ier.hit-u.ac.jp/CAED/papers/id135_Prasnikar_Domadenik_Koman.pdf
-- **Campos, Coricelli a Moretti 2014:** Economic Growth and Political Integration: Estimating the Benefits from
-  Membership in the European Union Using the Synthetic Counterfactuals Method, IZA Discussion Paper č. 8162, duben 2014,
-  tabulky 2 a 3, https://epflicht.ulb.uni-bonn.de/download/pdf/149785
-- **Vláda SI 2006:** Republic of Slovenia, Reform Programme for Achieving the Lisbon Strategy Goals – Implementation
-  Report 2006, Ljubljana, říjen 2006, https://www.umar.gov.si/fileadmin/user_upload/projects/02_SI-NRP2006-eng.pdf
-- **IMAD 2023:** IMAD (Institut pro makroekonomické analýzy a rozvoj, vládní analytický ústav), Productivity Report 2023
-  (s. 26, 28, 57 a 76),
-  https://www.umar.gov.si/fileadmin/user_upload/publikacije/Porocilo_o_produktivnosti/2023/Productivity_Report_2023.pdf
-- **IMAD 2025:** IMAD, Quality of Life in Slovenia – Development Report 2025,
-  https://www.umar.gov.si/fileadmin/user_upload/razvoj_slovenije/2025/angleski/POR_2025_EN.pdf
-- **IMAD 2026:** IMAD, Quality of Life in Slovenia – Development Report 2026 (s. 106),
-  https://www.umar.gov.si/fileadmin/user_upload/razvoj_slovenije/2026/angleski/Development_Report_2026.pdf
-- **Nye 2021:** Nye, A.: Bank Assets Management Company (BAMC), Journal of Financial Crises 3(2), 2021, Yale School of
-  Management, https://elischolar.library.yale.edu/journal-of-financial-crises/vol3/iss2/29/
-- **Banka Slovenije 2013:** Government carries out capital increases at five banks following European Commission
-  approval, tisková zpráva, 18. 12. 2013,
-  https://www.bsi.si/en/media/posts/government-carries-out-capital-increases-at-five-banks-following-european-commission-approval
-- **Laporšek, Vodopivec a Vodopivec 2019:** Spillover effects of a minimum wage increase – evidence from Slovenia,
-  Post-Communist Economies 31(5), 2019, https://ideas.repec.org/a/taf/pocoec/v31y2019i5p603-622.html
-- **Laporšek, Orazem, Vodopivec a Vodopivec 2019:** Long-Term Responses to Large Minimum Wage Shocks: Sub-Minimum and
-  Super-Minimum Workers in Slovenia, IZA Discussion Paper č. 12123, 2019,
-  https://ideas.repec.org/p/iza/izadps/dp12123.html
-- **Laporšek, Vodopivec a Vodopivec 2021:** Lowering wage inequality with the minimum wage increase in Slovenia,
-  International Journal of Sustainable Economy 13(3), 2021 (velikost zvýšení 22,9 %),
-  https://ideas.repec.org/a/ids/ijsuse/v13y2021i3p306-321.html
-- **EK 2023:** Evropská komise, 2023 Country Report – Slovenia, SWD(2023) 624 (s. 66 a 72 PDF),
-  https://economy-finance.ec.europa.eu/document/download/90187e4a-cbde-4046-9e9f-4faeb8d14c14_en?filename=ip248_en.pdf
-- **EK 2024:** Evropská komise, 2024 Country Report – Slovenia, SWD(2024) 624 (s. 13 a 83 PDF),
-  https://economy-finance.ec.europa.eu/document/download/237bde97-bc2e-4577-854d-f4c4c4ca5912_en?filename=SWD_2024_624_1_EN_Slovenia.pdf
-- **EK 2026:** Evropská komise, 2026 Country Report – Slovenia, SWD(2026) 224 (s. 44, 53 a 66 PDF),
-  https://economy-finance.ec.europa.eu/document/download/e0221ff2-b3b2-4f97-8ac6-676d0fcfdac2_en?filename=SI_SWD_2026_224_1_EN_autre_document_travail_service_part1_v4.pdf
-- **Banka Slovenije 2026:** Banka Slovenije, Review of Macroeconomic Developments and Projections, červen 2026, podle
-  rešerše `ekonomove/SI.md`,
-  https://www.bsi.si/storage/uploads/75afd222-ff01-455b-9354-71099a9984e5/Review-of-macroeconomic-developments-and-projections-June-2026.pdf
-- **Rešerše ekonomů:** `ekonomove/SI.md` (citace v oddílu 5 a údaje označené „podle rešerše“).
 
 
 ---
@@ -14400,6 +14432,62 @@ jen v prvním regionu. Co zůstává: tvrdá pravidla z 13.–14. 10. (oddíl 5;
 pořadí podle rozdaných karet (oddíl 5, pravidlo 1) a délku regionů bydlení asi 57 minut („Zatím to je v pořádku.
 Podle reakce lidí bych to zkracoval.“).*
 
+### 0. Doplněk 25. 10. 2026: zlatý vzor Střední Evropy z webového Gemini 4 Argon (závazné, má přednost)
+
+*Ondřej 25. 10. 2026 s webovým Gemini dokončil zlatý vzor scénáře Střední Evropy (Rakousko, Česko, Polsko,
+Slovensko, Maďarsko; 1 150 slov, asi 7,5 minuty) a zrevidoval pravidla. Z verze 1.0 se nic nemaže; kde se liší,
+platí tento oddíl. Stejná pravidla má kuchařka pro Gemini `PROMPT_GEMINI_SCENARISTA.md` (oddíl 8), podle které
+scénáře píše Gemini 4 Argon. Vzor: `references/voiceover-regiony-zlaty-vzor-stredni-evropa-2026-10-25.md`.
+Příklady čísel níže ověřil Claude proti datům mezd (`analyza_regiony_2026_10/data/kola.json`, `vysledek.json`,
+`vyklad/`); kde se Ondřejovo zadání od dat lišilo, je u příkladu oprava.*
+
+1. **Úvod regionu = předstartovní showcase na startovní čáře (asi 110 slov, 45 s).** Úvod nevypráví historii roku
+   1989 ani zděděné továrny, to patří do kola 1. Představí pětici zemí na startovní čáře přes jejich dnešní ekonomický
+   charakter a rozdá jim předstartovní očekávání v pelotonu: kdo je favoritem na medaile a evropskou špičku, kdo bojuje
+   o střed pelotonu nebo roli skokana a komu hrozí pád na chvost.
+2. **Rozpočet délky regionu 1 050–1 150 slov (asi 7–7,5 minuty):** showcase asi 110, kolo 1 asi 230, kolo 2 asi 295,
+   kolo 3 asi 210, finále asi 305 slov. Přesná desetinná čísla a úplné výčty pěti zemí patří do řádku `[VIZUÁL: …]`.
+   Hlas seskupuje země do pater, zaokrouhluje na zlomky, říká nejvýš 2 čísla ve větě a 45–55 čísel na region a drží
+   souvětí nejvýš o 3 větných členech. Pořadí z 27 zemí říká jen u krajností, se slovní kotvou „v celé Evropě“ nebo
+   „z celé sedmadvacítky“.
+3. **Přísná hranice mezi kolem 1 (zděděné karty) a kolem 2 (transformace a růst).** Kolo 1 (produktivita 1996)
+   vysvětluje výhradně dědictví komunismu nebo poválečné éry: předválečné bohatství, vlastnictví v roce 1990 (v Česku
+   tvořily soukromé firmy méně než 5 % HDP, stát tedy vlastnil skoro vše), zděděné stroje a továrny, zděděnou strukturu
+   zemědělství a průmyslu. Transformační rozhodnutí 90. let (kupónová privatizace a měnová krize 1997 v Česku, šoková
+   terapie v Polsku, prodej podniků cizincům v Maďarsku) jsou tahy země a patří výhradně do kola 2.
+   *Nezkolektivizovaná soukromá políčka v Polsku a orientace slovenských zbrojovek na trh SSSR jsou dobré obrazy, ale výklady
+   zemí je zatím nedokládají; do scénáře smějí až s oporou v podkladu (analytický skill, krok 8, oddíl 1).*
+4. **Daňový klín v kole 3 přesně:** součet všech daní a odvodů, které ze mzdy zaplatí zaměstnanec i zaměstnavatel
+   dohromady, v poměru k celkovým nákladům práce, vysvětlený srozumitelně a graficky. Ukáže se, jak státy zátěž účetně
+   schovávají: v Polsku, Maďarsku a Rumunsku strhává stát většinu odvodů přímo zaměstnanci z hrubé mzdy, v Česku a na
+   Slovensku vidí člověk na pásce jen menší část (asi 21–24 % hrubé mzdy) a hlavní balík (asi 34–36 % hrubé mzdy navíc)
+   posílá státu potichu firma. *Přesné podíly se berou z podkladu dané epizody (OECD Taxing Wages ve výkladu země).*
+5. **Tíha daní podle vývojové fáze a kvality institucí („hodnota za peníze, nebo odchod talentů“).** Vysoké zdanění
+   práce se hodnotí v kontextu toho, co za ně stát dává: v bohaté zemi se špičkovými institucemi (Rakousko,
+   **47,0 %** nákladů práce; zadání uvádělo 47,4 %, data mezd mají 47,0 %) dostávají lidé za vysoké daně vysokou
+   hodnotu; v dohánějící zemi s nízkou produktivitou a slabým výzkumem (Slovensko, 44,6 %), kde odvody látají
+   důchodový systém, drahá kvalifikovaná práce brzdí nové firmy, tlačí lidi do nepravého samostatného podnikání
+   (švarcsystém) a vyhání talenty do ciziny. *Kvalita rakouských institucí, zakládání slovenských startupů v Česku
+   a odchod mladých ze Slovenska výklady zemí zatím nedokládají (doložené je jen nepravé samostatné podnikání: Slovensko
+   má podle Evropské komise nejvyšší podíl závislých živnostníků v EU); do scénáře smějí až s oporou v podkladu.*
+6. **Dvojí pravda hospodářských kroků a otevřené smyčky na další epizody.** Kroky vlád a centrálních bank se nehodnotí
+   černobíle, když měly přínos pro jinou disciplínu: rozpočtové škrty v Česku 2010–2013 proti polskému deficitu, který
+   v roce 2009 dosáhl 7,2 % HDP (zbrzdily růst mezd, ale udržely nízký dluh → otevřená otázka na epizodu o zadlužení);
+   kurzový závazek ČNB 2013–2017 (krátkodobě nakopl export a růst; výdaje na výzkum se podle ČNB zastavily v roce 2014
+   pod 2 % HDP; *že závazek utlumil tlak na inovace, podklad zatím nedokládá, smí jen jako možnost s oporou*); vysoké
+   odvody na důchody (Slovensko, Česko): jednou větou kam peníze tečou a udička na epizodu o penzích.
+7. **Finále regionu = odpočet od 5. do 1. místa v regionu (asi 305 slov).** Konečná místa v celé lize (1.–27.) se
+   neprozrazují, odpočítává se pořadí uvnitř regionu. Každá země má vlastní odstavec (50–60 slov), který spojí:
+   (a) výsledek v kupní síle i v eurech, patro evropské reality a vliv místních cen; (b) o kolik bodů země překonala
+   nebo podstřelila součet svých tří kol („co kola nevysvětlí“) a proč (například odliv zisků z Česka 5,2 % HDP v roce
+   2025; v Rakousku kolektivní smlouvy pro 98 % zaměstnanců díky povinnému členství firem v hospodářské komoře,
+   **+16,0 bodu** — zadání uvádělo +31,4, data mezd mají +16,0; podíl zaměstnanců mezi pracujícími 91,7 % v Maďarsku
+   proti živnostníkům v Polsku a na Slovensku); (c) závěrečný štítek.
+8. **Cenová hladina stručně a s udičkou.** Nižší cenová hladina Polska (69,9 % průměru EU) proti Slovensku (80,8 %) se
+   nesvádí jen na vlastní měnu; shrne se kombinací velkého konkurenčního trhu, levných domácích potravin a vlastní měny
+   (každé jen s oporou v podkladu, analytický skill krok 8, oddíl 4) a hned se uzavře odkazem na chystanou epizodu
+   o cenové hladině.
+
 ### 1. Účel a vstupy
 
 Skill píše blok jednoho regionu. Epizoda má úvod, regiony v pevném pořadí a finále; úvod a finále se píšou zvlášť
@@ -14757,6 +14845,14 @@ stavitelů v Evropě a země, která téměř přestala stavět?
 
 ## Analýza příčin pro regionový systém (skill v1.4)
 
+> **Doplněk 25. 10. 2026 (Ondřej, ze zlatého vzoru Střední Evropy z webového Gemini 4 Argon). Z verze 1.4 se nic
+> nemaže; kde se liší, platí doplněk:**
+> 1. **Regiony 5–5–5** (slovník, řádek „region“): střední Evropa AT, CZ, PL, SK, HU; Balkán a jihovýchodní Evropa
+>    SI, HR, RO, BG, GR; západní Evropa DE, CH, FR, GB, IE. Ve skriptech mezd `analyza_regiony_2026_10/data_mzdy.py`
+>    (`REGIONY`); kola přepočítána, změnilo se jen zařazení zemí, žádné číslo.
+> 2. **Kalibrace štítků s výsledkem a s růstem nad rámec dohánění** (krok 9b, pojistka níže).
+> 3. **Výklad zemí odděluje dědictví od transformace a u cen uvádí víc než měnu** (krok 8, pojistka níže).
+
 > **Verze 1.4, 16. 10. 2026: rozdané karty a tah země, oprava síly výstavby, hodnocení na dvou osách. NÁVRH,
 > NEAKTIVNÍ.** Ondřej 16. 10. 2026 předal zadání, které napsal Gemini 4, s poznámkou: „A ty chyby v analýze taky půjde
 > nedělat. Gemini dokonce velmi dobře rozdělil potenciál na strategii, což se nám za celý rok nepovedlo.“ Doslovný
@@ -15050,7 +15146,7 @@ začátku horizontu, `tok` to, co přibylo za horizont, krok 7.4; citace a kdo c
 | zvláštnost zemí (nové ve v1.2; dřív `specifikum`) | faktor, který má dost svědků jen v některých zemích; rozebere se u nich (krok 7.3), do čekaného výsledku nevstupuje |
 | hypotéza (nové ve v1.2) | faktor s mechanismem, ale bez dvou nezávislých svědků; uvede se mezi vedlejšími faktory s tím, který svědek chybí („co by rozhodlo“) |
 | časový profil (nové ve v1.2) | jak rychle výsledek na změnu faktoru reaguje a jak dlouho účinek trvá; určuje, jak se tok měří (váhy podle stáří, krok 3.11) |
-| region | Skandinávie a Benelux (NO, SE, FI, DK, NL, BE); západní Evropa (GB, IE, DE, FR, CH, AT); jižní Evropa (ES, PT, IT); Balkán a východní Evropa (HR, RO, BG, GR); střední Evropa (CZ, PL, SK, HU, SI); Pobaltí (EE, LV, LT) |
+| region | **od 25. 10. 2026 (Ondřej, 1. epizoda mzdy):** Skandinávie a Benelux (NO, SE, FI, DK, NL, BE); západní Evropa (DE, CH, FR, GB, IE); jižní Evropa (ES, PT, IT); Balkán a jihovýchodní Evropa (SI, HR, RO, BG, GR); střední Evropa (AT, CZ, PL, SK, HU); Pobaltí (EE, LV, LT). *Dříve (11. 10. 2026, platí dál v hotových scénářích bydlení, dokud Ondřej nerozhodne jinak): západní Evropa i s AT, Balkán a východní Evropa (HR, RO, BG, GR), střední Evropa i se SI.* |
 | kolo (nové po nezávislé kontrole 13. 10. 2026) | jeden zařazený faktor (krok 5), nebo jedna jeho část podle kroku 7.4, který se v epizodě ukáže všem zemím regionu najednou; kola jdou od největšího obvyklého vlivu po nejmenší, je jich nejvýš pět a stejná pro všechny země (krok 7.5) |
 | bod (nové po nezávislé kontrole 13. 10. 2026) | jednotka příspěvku faktoru: 1 bod ≈ bydlení o 1 % dostupnější než u typické země ligy. Přesně to platí jen u malých hodnot, protože se počítá v `logaritmech`: 20 bodů je asi 18–22 %, 33 bodů asi 28–39 % |
 | typická země (nové po nezávislé kontrole 13. 10. 2026) | pomyslná země, která má u všech faktorů hodnotu měřítka ligy; body se počítají proti ní |
@@ -15343,6 +15439,20 @@ Postup při rozporu: (1) najít důvod (obrácený směr, měření, horizont, s
 
 Pro každou zemi: vývoj ukazatele a faktorů za horizont proti měřítku ligy; kroky vlád, firem a institucí s datem a zdrojem; jak se vývoj po kroku změnil. Časová souvislost není důkaz; jako příčina se krok uvede jen s dokladem z kroku 4.
 
+**Pojistka 25. 10. 2026 (Ondřej): stavba výkladu země `vyklad/{KOD}.md`.**
+- **Oddíl 1 (výchozí stav, rozdané karty)** popisuje jen to, co země zdědila před začátkem hodnoceného období:
+  zděděnou strukturu ekonomiky (zemědělství, těžký průmysl, orientace výroby na trhy bývalého východního bloku),
+  vlastnictví v roce 1990 (například v Česku tvořily soukromé firmy méně než 5 % HDP, tedy stát vlastnil skoro vše),
+  předválečné bohatství, zděděný kapitál a vzdělání. U zemí bez plánované ekonomiky obdobně poválečné dědictví.
+- **Oddíl 2 (růst, tah země)** obsahuje všechna rozhodnutí od roku 1990: metody privatizace (kupónová privatizace,
+  prodej podniků cizincům), šokovou terapii, měnové krize a reakce na ně, investiční pobídky, vstup do EU a eura.
+  Transformace je tah země, ne rozdaná karta, i když se odehrála před rokem 1996.
+- **Oddíl 4 (další faktory), ceny:** u zemí, kde cenová hladina výrazně mění pořadí mezi eury a kupní silou (například
+  Polsko 69,9 % proti Slovensku 80,8 % průměru EU), uvede podklad vedle měnového režimu stručně i velikost vnitřního
+  trhu a konkurenci a soběstačnost v potravinách, každé se zdrojem; je to podklad pro krátkou zmínku a odkaz na
+  epizodu o cenové hladině, ne kolo.
+- Výklady zemí z 17.–18. 10. 2026 jsou podle starší stavby; při další revizi se přeskupí, obsah se nemaže.
+
 #### Krok 9. Výstup pro regionový systém
 
 Pro každý region (pořadí regionů určuje průběžné pořadí týmové soutěže):
@@ -15529,6 +15639,20 @@ nýbrž komu výsledek slouží, a doplňuje hlavní hodnocení skoro každé ze
 5. **Těží z okolností:** dostupnost z věcí, které nejsou zásluhou politiky (úbytek lidí, zděděné byty, levná stavba).
 6. **Nedá se posoudit:** bez dokladu účinku se krok neoznačí za úspěch ani chybu; hodnocení zní „nedá se posoudit,
    protože…“.
+
+**Pojistka 25. 10. 2026 (Ondřej): kalibrace štítků s výsledkem a s růstem nad rámec dohánění.** Hlavní štítek
+„Dělá to dobře a je to vidět“ nesmí dostat země, která (a) v kole růstu rostla prokazatelně pomaleji, než odpovídá
+běžnému dohánění (u mezd zařazení „rostla pomaleji“ v kupní síle i v reálných cenách, například Maďarsko), nebo (b)
+u které instituce v podkladu konstatují vyčerpání růstového modelu a zároveň skončila v suterénu (21.–27. místo).
+Slepý agent dostane tato dvě kritéria spolu s kroky země; místo v lize nadále nevidí, kritérium (b) doplní koordinátor
+po slepém hodnocení. Přesnější štítky osy 1:
+7. **Dobrý motor, ale s vlastními brzdami:** doložená politika s doloženým účinkem a zároveň doložená vlastní
+   rozhodnutí, která růst brzdila (například Česko: přímé investice a vstup do EU proti měnové krizi 1997, škrtům
+   2010–2013 a výzkumu zastavenému pod 2 % HDP).
+8. **Vyčerpaný montážní model:** růst stál na zahraničních montážních investicích, instituce konstatují, že model
+   ztratil dech, a země skončila v suterénu (například Slovensko).
+Hodnocení mezd z 17.–18. 10. 2026 (`data/hodnoceni/`) vzniklo před touto pojistkou; Česko, Maďarsko a Slovensko se
+podle ní přehodnotí.
 
 **Osa 2: komu dostupnost platí** (samostatný štítek, do výkonu politiky se nepočítá): **dostupné jen pro někoho**, když
 čísla vypadají dobře, ale nováčci se k bydlení nedostanou (pořadníky, regulace, podnájmy, mladí u rodičů), s dokladem;
