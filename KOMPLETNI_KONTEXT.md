@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 26. 10. 2026 17:09 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `8c774883`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 26. 10. 2026 18:37 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `52efc5b2`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -14775,6 +14775,18 @@ A suverénním vítězem vysoko v evropské špičce se stává Rakousko se čty
 >    (`REGIONY`); kola přepočítána, změnilo se jen zařazení zemí, žádné číslo.
 > 2. **Kalibrace štítků s výsledkem a s růstem nad rámec dohánění** (krok 9b, pojistka níže).
 > 3. **Výklad zemí odděluje dědictví od transformace a u cen uvádí víc než měnu** (krok 8, pojistka níže).
+> 4. **Regiony 5–5–5 platí pro celou sérii** (Ondřej 26. 10. 2026: „je to možný už zapsat tak, že by se měly sjednotit
+>    ty regionální týmy na režim pět, pět, pět“), tedy i pro bydlení. Přepočet a přestavba hotových scénářů bydlení
+>    proběhne, až to Ondřej zadá („to ještě budu řešit“).
+> 5. **Výchozí pozice při hodnocení kroků země** (Ondřej 26. 10. 2026, krok 9b, pojistka níže): krok transformace se
+>    neoznačí za chybu jen proto, že ho instituce kritizují; nejdřív se posoudí, jakou realisticky lepší možnost země
+>    při své výchozí pozici měla. Ondřejův příklad: Česko mělo v roce 1990 zestátněnou skoro celou ekonomiku (soukromé
+>    firmy pod 5 % HDP), mnohem víc než Polsko a Maďarsko, takže kupónovou privatizaci nelze bez dalšího hodnotit jako
+>    chybu, kterou šlo snadno udělat lépe.
+> 6. **Tvrzení scénáře bez opory v podkladu se doplní rešerší** (Ondřej 26. 10. 2026: „pokud tam není opora, tak určitě je
+>    dobrý doplnit rešerši“): co Ondřej nebo webové Gemini doplní do scénáře a výklad země to nedokládá, analytik dohledá
+>    se zdrojem a zapíše do výkladu země (krok 8); co se doložit nepodaří, z textu vypadne. Ondřejův pohled a kontext jsou
+>    vítaný vstup, ne chyba: analytický pohled jim často chybí.
 
 > **Verze 1.4, 16. 10. 2026: rozdané karty a tah země, oprava síly výstavby, hodnocení na dvou osách. NÁVRH,
 > NEAKTIVNÍ.** Ondřej 16. 10. 2026 předal zadání, které napsal Gemini 4, s poznámkou: „A ty chyby v analýze taky půjde
@@ -15069,7 +15081,7 @@ začátku horizontu, `tok` to, co přibylo za horizont, krok 7.4; citace a kdo c
 | zvláštnost zemí (nové ve v1.2; dřív `specifikum`) | faktor, který má dost svědků jen v některých zemích; rozebere se u nich (krok 7.3), do čekaného výsledku nevstupuje |
 | hypotéza (nové ve v1.2) | faktor s mechanismem, ale bez dvou nezávislých svědků; uvede se mezi vedlejšími faktory s tím, který svědek chybí („co by rozhodlo“) |
 | časový profil (nové ve v1.2) | jak rychle výsledek na změnu faktoru reaguje a jak dlouho účinek trvá; určuje, jak se tok měří (váhy podle stáří, krok 3.11) |
-| region | **od 25. 10. 2026 (Ondřej, 1. epizoda mzdy):** Skandinávie a Benelux (NO, SE, FI, DK, NL, BE); západní Evropa (DE, CH, FR, GB, IE); jižní Evropa (ES, PT, IT); Balkán a jihovýchodní Evropa (SI, HR, RO, BG, GR); střední Evropa (AT, CZ, PL, SK, HU); Pobaltí (EE, LV, LT). *Dříve (11. 10. 2026, platí dál v hotových scénářích bydlení, dokud Ondřej nerozhodne jinak): západní Evropa i s AT, Balkán a východní Evropa (HR, RO, BG, GR), střední Evropa i se SI.* |
+| region | **od 25. 10. 2026 (Ondřej, 1. epizoda mzdy):** Skandinávie a Benelux (NO, SE, FI, DK, NL, BE); západní Evropa (DE, CH, FR, GB, IE); jižní Evropa (ES, PT, IT); Balkán a jihovýchodní Evropa (SI, HR, RO, BG, GR); střední Evropa (AT, CZ, PL, SK, HU); Pobaltí (EE, LV, LT). **Platí pro celou sérii, i pro bydlení (Ondřej 26. 10. 2026); bydlení se přepočítá na jeho pokyn.** *Dříve (11. 10. 2026, zatím v hotových scénářích bydlení): západní Evropa i s AT, Balkán a východní Evropa (HR, RO, BG, GR), střední Evropa i se SI.* |
 | kolo (nové po nezávislé kontrole 13. 10. 2026) | jeden zařazený faktor (krok 5), nebo jedna jeho část podle kroku 7.4, který se v epizodě ukáže všem zemím regionu najednou; kola jdou od největšího obvyklého vlivu po nejmenší, je jich nejvýš pět a stejná pro všechny země (krok 7.5) |
 | bod (nové po nezávislé kontrole 13. 10. 2026) | jednotka příspěvku faktoru: 1 bod ≈ bydlení o 1 % dostupnější než u typické země ligy. Přesně to platí jen u malých hodnot, protože se počítá v `logaritmech`: 20 bodů je asi 18–22 %, 33 bodů asi 28–39 % |
 | typická země (nové po nezávislé kontrole 13. 10. 2026) | pomyslná země, která má u všech faktorů hodnotu měřítka ligy; body se počítají proti ní |
@@ -15570,12 +15582,22 @@ u které instituce v podkladu konstatují vyčerpání růstového modelu a zár
 Slepý agent dostane tato dvě kritéria spolu s kroky země; místo v lize nadále nevidí, kritérium (b) doplní koordinátor
 po slepém hodnocení. Přesnější štítky osy 1:
 7. **Dobrý motor, ale s vlastními brzdami:** doložená politika s doloženým účinkem a zároveň doložená vlastní
-   rozhodnutí, která růst brzdila (například Česko: přímé investice a vstup do EU proti měnové krizi 1997, škrtům
-   2010–2013 a výzkumu zastavenému pod 2 % HDP).
+   rozhodnutí, která růst brzdila (například Česko: přímé investice a vstup do EU proti škrtům 2010–2013 a výzkumu
+   zastavenému pod 2 % HDP; měnová krize 1997 jako cena kupónové privatizace z horší výchozí pozice, viz pojistka
+   26. 10. níže).
 8. **Vyčerpaný montážní model:** růst stál na zahraničních montážních investicích, instituce konstatují, že model
    ztratil dech, a země skončila v suterénu (například Slovensko).
 Hodnocení mezd z 17.–18. 10. 2026 (`data/hodnoceni/`) vzniklo před touto pojistkou; Česko, Maďarsko a Slovensko se
 podle ní přehodnotí.
+
+**Pojistka 26. 10. 2026 (Ondřej): výchozí pozice.** Doklad chyby (typ 3 „Chybami si přitížil“ a brzdy u typu 7)
+potřebuje navíc posouzení, zda země měla při své výchozí pozici realisticky proveditelnou lepší možnost: míra
+zestátnění a soukromého sektoru na začátku, zahraniční dluh, domácí kapitál a zájem zahraničních kupců, politická
+průchodnost. Kde instituce krok kritizují, ale lepší proveditelná možnost doložená není, zapíše se krok jako
+„kontroverzní, s doloženými náklady“ a do štítku se jako chyba nepočítá. Příklad: kupónová privatizace v Česku
+(skoro celá ekonomika ve vlastnictví státu, na rozdíl od Polska se soukromým zemědělstvím a Maďarska s dřívější
+liberalizací); náklady (slabá správa podniků, měnová krize 1997) se uvedou, ale jako cena volby z horší výchozí
+pozice, ne jako zjevná chyba.
 
 **Osa 2: komu dostupnost platí** (samostatný štítek, do výkonu politiky se nepočítá): **dostupné jen pro někoho**, když
 čísla vypadají dobře, ale nováčci se k bydlení nedostanou (pořadníky, regulace, podnájmy, mladí u rodičů), s dokladem;
