@@ -2,11 +2,11 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 27. 10. 2026 21:46 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `eb19a19c`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 27. 10. 2026 21:47 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `eb19a19c`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
-| 01_POSLEDNI_SCENAR | poslední scénář (POBALTI, od Gemini 4 Argonu) a kontrola čísel |
+| 01_POSLEDNI_SCENAR | poslední scénář (BALKAN_A_JIHOVYCHODNI_EVROPA, od Gemini 4 Argonu) a kontrola čísel |
 | 02_KUCHARKA_GEMINI | instrukce, podle kterých Gemini scénář napsal |
 | 03_PODKLADY_SCENARE | data a výklady zemí, ze kterých scénář vznikl (jediný zdroj čísel) |
 | 04_CLAUDE_MD | závazná pravidla projektu |
@@ -18,65 +18,73 @@ Aktualizováno 27. 10. 2026 21:46 automaticky ze soukromého repozitáře projek
 
 <!-- soubor 01_POSLEDNI_SCENAR.md -->
 
-# Poslední scénář – Pobaltí
+# Poslední scénář – Balkán a jihovýchodní Evropa
 
-*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 27. 10. 2026 21:46.*
+*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 27. 10. 2026 21:47.*
 
 
 ## Předstartovní showcase
 
-[VIZUÁL: Mapa Pobaltí na startovní čáře – digitální Tallinn se symbolem státní sítě X-tee, průmyslový a technologický Vilnius a rižský přístav s bankovní čtvrtí; ukazatel očekávání v pelotonu.]
+[VIZUÁL: Startovní rošt balkánské a jihovýchodní rozjížďky – pět zemí na startovní čáře: Slovinsko, Chorvatsko, Rumunsko, Bulharsko a Řecko.]
 
-Do pobaltské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupují tři sousedé, kteří bojují o únik z dolních pater pelotonu. Jako favorit regionu startuje Estonsko, země moderních služeb a informačních technologií, kde se o výplatách vyjednává přímo ve firmách, ale sráží je nejdražší život v Pobaltí. Na pobaltský trůn i průnik ke středu soutěže útočí Litva, opřená o průmysl, rostoucí technologie a citelně levnější život. Naopak Lotyšsku s jedním z nejvyšších podílů nízko placených míst v Unii hrozí i přes nižší ceny pád na chvost regionu i celé sedmadvacítky.
+V balkánské a jihovýchodní rozjížďce o čistou výplatu v kupní síle míří pět zemí od středu ligy až na chvost. Favoritem regionu útočícím na evropský střed je průmyslové Slovinsko, kde nedostatek lidí zvedá mzdy a život je nejdražší v regionu. O čelo regionu a střed Evropy by mělo hrát Řecko, země lodí a služeb, jenže při nízkých výdělcích a cenách vyšších než u většiny sousedů mu hrozí pád až na chvost ligy. O střed regionu těsně pod evropským středem bojuje turistické Chorvatsko, zatímco Rumunsko a Bulharsko, kde se spolu nakupuje nejlevněji v Evropě, startují z chvostu regionu i ligy.
 
 ## Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
 
-[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Estonsko (35,1 %, −102,0 b., 24. v Evropě), 2. Litva (34,4 %, −104,0 b., 25. v Evropě), 3. Lotyšsko (32,9 %, −108,1 b., 26. v Evropě). Rozpadající se sovětské tovární haly a přetrhané železniční tratě na východ.]
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Řecko (90,1 %, −10,1 b., 15. v Evropě), 2. Slovinsko (69,9 %, −34,9 b., 17. v Evropě), 3. Chorvatsko (57,4 %, −54,1 b., 19. v Evropě), 4. Bulharsko (35,2 %, −101,5 b., 23. v Evropě), 5. Rumunsko (25,7 %, −132,2 b., 27. v Evropě).]
 
-První kolo rozdává startovní karty roku devatenáct set devadesát šest podle zděděné produktivity. Pobaltské státy vyrážely ze samotného dna pelotonu, ze čtyřiadvacátého až šestadvacátého místa v celé Evropě, kdy hlouběji začínalo jen Rumunsko. Estonský, litevský i lotyšský dělník tehdy u sovětských soustruhů vyprodukovali jen zhruba třetinu toho, co pracující ve střední zemi ligy, takže si každá ze tří zemí na startu připsala ztrátu přes sto bodů.
+První kolo rozdává karty roku devatenáct set devadesát šest podle zděděné produktivity. Nejlepší drželo Řecko, které nepoznalo plánovanou ekonomiku, v Unii bylo od roku devatenáct set osmdesát jedna a začínalo desetinu pod středem ligy. Za západní Evropou zaostávalo, podle ekonomů možná kvůli náhlému otevření trhu nepřipraveným továrnám, a skoro pětina lidí pracovala v zemědělství.
 
-Pobaltí totiž netvořilo jen vnější prstenec satelitů jako střední Evropa, ale bylo přímo pohlceno do plánované ekonomiky Sovětského svazu. Místní továrny a přístavy stavěli moskevští plánovači jako úzce zaměřené dílny pro sovětský trh, odříznuté od západních strojů i obchodu. Když se impérium zhroutilo, udeřil rozpad na region mnohem drtivěji než na zbytek východního bloku, protože moskevské odběratelské řetězce se přes noc přetrhaly.
+O patro níž stálo Slovinsko na sedmi desetinách a Chorvatsko pod třemi pětinami středu ligy. Díky jugoslávské samosprávě podniků mezi plánem a trhem zažilo Slovinsko jen asi dvacet tři let plánované ekonomiky a pracující měl přes čtyři pětiny kapitálu na pracujícího ve střední zemi ligy. Chorvatsko stálo před rozpadem federace u střední Evropy, než válka a ztráta trhů srazily ekonomiku o třetinu.
 
-V Estonsku se výroba propadla o více než třetinu, Litva ztratila dvě pětiny produkce a v Lotyšsku se výroba zřítila o více než polovinu. Ještě na přelomu tisíciletí tak lotyšské a litevské podniky paběrkovaly zhruba na dvou třetinách předtransformační úrovně a příjem na obyvatele v regionu nedosahoval v polovině devadesátých let ani tří desetin starých zemí Unie.
+Východ Balkánu vyrážel ze suterénu. Bulharsko odkládalo reformy, kvůli finanční nekázni podniků a bank spadlo do krachu a hyperinflace a s více než pětinou lidí v zemědělství začínalo těsně nad třetinou středu ligy. Poslední, sedmadvacáté v Evropě s čtvrtinou produktivity středu ligy bylo Rumunsko, kde přes dvě pětiny lidí pracovaly na drobných políčkách, která sloužila jako záchranná síť.
 
 ## Kolo 2 – Tah země: Vývoj produktivity 1996–2024
 
-[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Litva (2,48×, +73,7 b., 2. v Evropě – rostla nad rámec dohánění; v reálných cenách +193 %, 1. v lize), 2. Estonsko (2,37×, +68,9 b., 3. v Evropě – nejisté, v reálných cenách +139 %), 3. Lotyšsko (2,16×, +60,0 b., 4. v Evropě – nejisté, v reálných cenách +160 %). Pád lotyšské banky Parex.]
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Rumunsko (3,17×, +97,3 b., 1. v Evropě – dohánění nejisté), 2. Bulharsko (1,63×, +32,5 b., 6. v Evropě – pomalejší než běžné dohánění), 3. Chorvatsko (1,50×, +24,8 b., 8. v Evropě – dohánění nejisté), 4. Slovinsko (1,25×, +6,7 b., 12. v Evropě – dohánění nejisté), 5. Řecko (0,77×, −40,0 b., 27. v Evropě – propad hluboko pod běžné dohánění).]
 
-Druhé kolo sleduje, jak země s rozdanými kartami hrály do roku dva tisíce dvacet čtyři. Pobaltské státy sice obsadily stupně těsně pod vrcholem v celé Evropě, jenže přes čtyři pětiny rozdílů v růstu napříč ligou vysvětlí prosté dohánění z nízkého základu. Litva přesto vyrostla víc, než se u tak chudé země dalo čekat, když na druhém místě v celé sedmadvacítce zvedla produktivitu vůči střední zemi skoro dvaapůlkrát, a více než dvojnásobný růst si připsaly i Estonsko a Lotyšsko.
+Druhé kolo sleduje hru do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu přitom vysvětlí prosté dohánění, protože chudší země rostou z nízkého základu rychleji samy od sebe, a Bulharsko s Řeckem vyrostly méně, než se dalo čekat.
 
-Zpočátku přivázaly Estonsko a Litva měny pevně k marce a dolaru a zavedly rovnou daň. Po ruské krizi se region napojil na severské trhy a vstup do Unie zvedl produktivitu v úvodní dekádě asi o pětinu, přičemž v Litvě společné podniky se zahraničními investory vytáhly nahoru místní dodavatele.
+Nejdrtivější skok v sedmadvacítce předvedlo Rumunsko: vůči středu ligy zvedlo produktivitu víc než třikrát za skoro sto bodů. Skoro dva miliony lidí opustily zemědělství, část do ciziny, a později růst táhly cizí automobilky jako Dacia a informatika v hrstce měst. Bukurešť však má sto třicet procent unijní produktivity a severovýchod dvě pětiny. Malým firmám chybí kapitál a výzkum bere půl procenta výkonu.
 
-Pak ale úvěry ze skandinávských bank nafoukly realitní bublinu, při níž lotyšské mzdy skákaly o pětinu ročně. Po krachu banky Parex v roce dva tisíce osm musela Riga žádat o mezinárodní záchranu a pobaltská výroba spadla až o čtvrtinu. Místo oslabení měn zvolily vlády vnitřní znehodnocení: v Lotyšsku seškrtaly veřejné platy skoro o čtvrtinu a nezaměstnanost tam vyskočila až k pětině pracovní síly a u sousedů jen o málo níž. Tvrdá léčba sice otevřela cestu k euru a nakopla litevský vývoz, jehož světový podíl byl v roce dva tisíce devatenáct víc než trojnásobný proti roku dva tisíce, ale Lotyšsku a Litvě od vstupu do Unie ubyla víc než desetina obyvatel, hlavně emigrací se silnou vlnou po krizi. Lotyšsko dál brzdily slabé investice, technologicky jednoduché provozy i útlum rižských bank po zásahu proti praní peněz. Estonsku nestačila ani síť X-tee a firmy jako Skype či Bolt: digitální úřady nezvedly produktivitu běžných podniků a po energetickém šoku ztratili vývozci skoro čtvrtinu tržního podílu – proč špičkové softwarové firmy neutáhnou celou ekonomiku, ukáže epizoda o produktivitě a sektorech.
+Bulharsko po krachu zavedlo měnovou radu a vyrostlo skoro o dvě třetiny, cizí kapitál před rokem dva tisíce osm ale natekl hlavně do stavebnictví, nemovitostí a financí. Pozdější průmyslový růst brzdí nejslabší školství v Unii a veřejné zakázky šité podle tří čtvrtin firem na míru spřízněným podnikům.
+
+Chorvatsko a Slovinsko privatizovaly podniky hlavně zaměstnancům a domácím manažerům; podle hodnocení chorvatské ekonomiky to nepřálo přílivu cizích továren. Chorvatský průmyslový dělník vytvoří čtvrtinu hodnoty německého; z růstu o polovinu přišla zhruba půlka před krizí na dluh a půlka v Unii z obchodu, dopravy, hotelů a fondů. Slovinsko s domácími podniky jako Krka dávalo na výzkum skoro dvě procenta výkonu a vůči středu ligy vyrostlo o čtvrtinu, po roce dva tisíce osm však stát sanoval banky více než třemi miliardami eur.
+
+V růstu skončilo Řecko poslední v sedmadvacítce se ztrátou skoro čtvrtiny produktivity vůči středu ligy. Po přijetí eura žilo z levných úvěrů, výstavby bytů a bobtnajícího státu, než krach smazal dvě třetiny investic. Odešlo přes milion a čtvrt lidí a skoro tři čtvrtiny zaměstnanců pracují v malých firmách a mikropodnicích jako taverny – o vlivu velikosti firem a školství budou další epizody.
 
 ## Kolo 3 – Tah země: Daňový klín
 
-[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce) a tabulka Kola 3: 1. Litva (39,9 %, +1,4 b., 10. v Evropě), 2. Estonsko (40,9 %, +0,3 b., 12. v Evropě), 3. Lotyšsko (42,0 %, −1,0 b., 18. v Evropě). Výplatní páska vs. obálka s hotovostí.]
+[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance z hrubé mzdy + odvodů zaměstnavatele nad hrubou mzdu vůči celkovým nákladům práce) a tabulka Kola 3: 1. Bulharsko (34,9 %, +6,8 b., 3. v Evropě), 2. Řecko (35,8 %, +5,8 b., 4. v Evropě), 3. Chorvatsko (41,4 %, −0,2 b., 15. v Evropě), 4. Rumunsko (42,8 %, −1,9 b., 19. v Evropě), 5. Slovinsko (45,8 %, −5,4 b., 23. v Evropě).]
 
-Třetí kolo měří daňový klín, tedy součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce. Dlouhodobě přitom dvě třetiny zátěže zaplatí zaměstnanec na nižší čisté výplatě. Pobaltské státy se sice seřadily těsně kolem evropského středu u čtyřiceti procent, ale na pásce zátěž ukazují opačně.
+Třetí kolo měří daňový klín – díl nákladů práce, který v součtu daní a odvodů zaměstnance i firmy berou stát a fondy; dlouhodobě zhruba dvě třetiny nese pracující na nižší čisté výplatě. Roku dva tisíce osmnáct Rumunsko přesunulo pojistné na zaměstnance a papírově zvedlo hrubé mzdy o pětinu. Člověku strhne pětatřicet procent odvodů plus rovnou daň a firma přidá přes dvě procenta beze změny čisté výplaty.
 
-Estonsko a Lotyšsko ji schovávají za zaměstnavatele: estonské firmy posílají státu nad hrubou mzdu třiatřicetiprocentní sociální daň a lotyšské skoro čtyřiadvacet procent na odvodech. Naopak Litva v roce dva tisíce devatenáct odvody účetně přesunula na pásku zaměstnance, kterému o necelou třetinu navýšila hrubou mzdu. Současně skutečně snížila celkové pojistné, takže si litevský stát ukousne nejméně v regionu, necelých čtyřicet procent nákladů práce.
+Těsně nejnižší zátěž v regionu a třetí v Evropě drží Bulharsko s necelými pětatřiceti procenty, za ním Řecko pod šestatřiceti. Bulharsko s rovnou desetiprocentní daní a stropem odvodů je jedinou zemí Unie, kde vysokopříjmoví odvádějí menší díl výdělku než lidé s poloviční mzdou. Řecko po krizi snížilo odvody o více než pět procentních bodů, nevalorizovaná pásma mu ale s inflací daň zvedají.
 
-Před cílem však zátěž potichu rostla i bez zvyšování sazeb: v Estonsku proto, že rostoucím mzdám ubývala nezdanitelná sleva, a u sousedů nejspíš ze stejného důvodu. V Estonsku tento mizící odpočet vytvořil daňový hrb, který vláda po roce dva tisíce dvacet čtyři nahradila jednotnou nezdanitelnou částkou vykoupenou zvýšením daně z příjmu na dvacet dva procent. Lotyšsko naopak v roce dva tisíce dvacet pět zátěž u průměrné mzdy skoro o dva procentní body snížilo. Přesto se v Pobaltí dál vyplácí asi šestina až pětina mezd načerno v obálkách.
+Na středu ligy kolem jednačtyřiceti procent sedí Chorvatsko s pětinovými důchodovými odvody zaměstnance a zdravotním pojištěním od firmy. Nejtěžší klín nesou Rumunsko se skoro třiačtyřiceti a Slovinsko se skoro šestačtyřiceti procenty. V Rumunsku odvody bez stropu drtí nízké mzdy a roku dva tisíce dvacet pět skončily oborové úlevy. Ve Slovinsku zátěž drží hlavně progresivní daň s nejvyšší sazbou od poměrně nízké hranice; roku dva tisíce dvacet čtyři ji papírově zvedl povinný zdravotní příspěvek místo dobrovolného a další léto dvouprocentní odvod na dlouhodobou péči.
 
 ## Finále regionu: Odhalení pořadí od posledního po vítěze
 
-[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 3. do 1. místa v Pobaltí + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Lotyšsko +5,6 b., Litva −1,9 b., Estonsko −3,0 b.) a srovnání cenových hladin (Estonsko 97,3 %, Lotyšsko 79,8 %, Litva 78,5 % průměru EU).]
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Bulharsko +22,3 b., Slovinsko +10,2 b., Rumunsko −0,6 b., Chorvatsko −5,9 b., Řecko −16,1 b.).]
 
-Jdeme do cíle roku dva tisíce dvacet čtyři, kde střed evropské ligy leží na pětadvaceti tisících třech stech jednotkách kupní síly.
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
 
-Třetí místo v regionu a pád do evropského suterénu bere Lotyšsko. Lotyš si v eurech vydělá necelých šestnáct tisíc čistého, ale nižší ceny mu výplatu v kupní síle zvednou skoro na dvacet tisíc jednotek. Oproti součtu kol si Lotyšsko polepší skoro o šest bodů: firmy totiž pouštějí na mzdy přes polovinu výkonu a k tlaku na mzdy přispívá i nedostatek lidí po zmíněné emigraci, přičemž zaměstnanci tvoří necelých osmaosmdesát procent pracujících. Lotyšsko bere štítek „Snaží se v těžkých podmínkách“.
+Páté v regionu a v evropském suterénu je Řecko s necelými sedmnácti tisíci jednotkami. Bere asi čtrnáct tisíc sto eur, s cenami přes čtyři pětiny unijního průměru, vyššími než u sousedů na chvostu. Oproti kolům ztrácí šestnáct bodů; asi třetinu vysvětlí nejnižší podíl mezd na výkonu v regionu pod sedmatřiceti procenty. V krizi totiž Řecko v ozdravných programech seškrtalo minimální mzdu o dvacet dva procent a zastavilo plošné rozšiřování kolektivních smluv, jejichž pokrytí spadlo z pětaosmdesáti procent zaměstnanců na třináct: podle Evropské komise tím sice zlepšilo konkurenceschopnost a snížilo jednotkové náklady práce i nezaměstnanost, ale ani přes růst minimální mzdy od roku dva tisíce dvacet dva se reálné mzdy na úroveň roku dva tisíce devatenáct nevrátily. Řekové odpracují nejvíc hodin týdně v Unii a berou štítek „Chybami si přitížil“ s vedlejším „Snaží se v těžkých podmínkách“.
 
-Druhé těsně v evropském suterénu končí Estonsko s jedenadvaceti a půl tisíci jednotkami kupní síly. Estonec si odnese skoro jedenadvacet tisíc eur čistého, nejvíc v Pobaltí, jenže ceny na sedmadevadesáti procentech unijního průměru mu náskok spolknou. Růst tamních výplat přitom zrychluje to, že Estonci mohou za výrazně lépe placenou prací dojíždět nebo odejít do sousedního Finska, což jim podle Mezinárodního měnového fondu dává v napjatém trhu práce přídavnou vyjednávací sílu, kterou mnozí využívají, a i podíl mezd na výkonu je tu dokonce o něco vyšší než ve středu Evropy. Oproti součtu kol přesto Estonsko ztrácí tři body a bere štítek „Snaží se v těžkých podmínkách“.
+Čtvrté v suterénu je Bulharsko s asi dvaceti tisíci sedmi sty jednotkami. V eurech bere necelých dvanáct tisíc, těsně pod Rumunem nejméně v regionu, cenovky pod třemi pětinami unijního průměru ho ale řadí před Řecko. Oproti kolům vyskočilo o dvaadvacet bodů, z čehož menší část vysvětlí skoro čtvrtina lidí mimo zaměstnanecký poměr. Mzdy v posledních letech zvedal odchod mladých a od roku dva tisíce dvacet tři také navázání minimální mzdy na polovinu průměrné hrubé mzdy; Bulharsko má štítek „Snaží se v těžkých podmínkách“ a za úvodní krizi vedlejší „Chybami si přitížil“.
 
-A vítězem pobaltské rozjížďky, který jako jediný pronikl těsně pod střed Evropy, se stává Litva s téměř dvaceti dvěma tisíci sedmi sty jednotkami kupní síly. Litevec sice bere necelých osmnáct tisíc eur, ale nakupuje za méně než čtyři pětiny unijních cen. Ačkoliv celé Pobaltí platí eurem, litevské cenovky zůstávají výrazně níž než estonské – proč se ceny mezi sousedy v eurozóně tak liší, rozklíčujeme v epizodě o cenové hladině. Oproti součtu kol sice Litva o necelé dva body klesá, protože na mzdy jde necelých osmačtyřicet procent výkonu, o něco méně než ve středu Evropy, a tlak na růst výplat zmírnil i příchod skoro osmdesáti tisíc pracovníků z Běloruska a Ukrajiny, přesto vítězí se štítkem „Dělá to dobře a je to vidět“.
+Třetí v suterénu je Rumunsko s asi jedenadvaceti tisíci třemi sty jednotkami. Výplatu dvanáct tisíc tři sta eur zhodnocují stejně nízké ceny jako v Bulharsku – proč se balkánské cenovky liší, ukáže epizoda o cenové hladině. Se ztrátou necelého bodu sedí na součtu kol: podíl mezd klesl pod devětatřicet procent výkonu, k čemuž podle výzkumníků přispělo zrušení celostátních kolektivních smluv, mzdy však v posledních letech táhlo zvedání minimální mzdy a státních platů. Bere štítek „Těží z okolností“ a vedlejší „Snaží se v těžkých podmínkách“.
+
+Druhé a pod středem Evropy je Chorvatsko s asi jedenadvaceti tisíci sedmi sty jednotkami. Bere šestnáct tisíc eur při cenách na třech čtvrtinách unijního průměru. Ztráta šesti bodů oproti kolům je v běžné odchylce a malou část vysvětlí nejvyšší podíl zaměstnanců v regionu, mezi něž se mzdy dělí. Právě v roce dva tisíce dvacet čtyři přitom chorvatský průměr zvedl nový zákon o platech ve státní a veřejné službě, který zavedl stejný plat za práci stejné složitosti, aby přilákal kvalifikované lidi: reálné platy ve veřejném sektoru vzrostly asi o pětinu a podle Mezinárodního měnového fondu táhly celkový růst mezd. Chorvatsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Vítězem ve středu Evropy je Slovinsko se čtyřiadvaceti tisíci čtyřmi sty jednotkami a více než dvaadvaceti tisíci eury. Ceny na devíti desetinách unijního průměru z náskoku ukrajují, přesto součet kol přeskočilo o deset bodů. Celý náskok nad koly vysvětlí nejvyšší podíl výplat na výkonu v regionu přes dvaapadesát procent, přičemž kolektivní smlouvy tam pokrývají většinu zaměstnanců. Samotné slovinské mzdy se pak tlačí těsně nad jednou z nejvyšších minimálních mezd vůči průměrné mzdě v Unii: asi čtvrtina zaměstnanců měla základní mzdu nejvýš o pět procent nad minimem, takže každé jeho zvýšení má sice podle centrální banky významný dopad na celkový vývoj mezd, do vyšších pásem se ale přelévá jen omezeně a skok minima v roce dva tisíce deset zároveň přinesl nízko placeným velkou a trvalou ztrátu zaměstnání. Se štítkem „Dělá to dobře a je to vidět“ opanovalo Slovinsko jihovýchod Evropy.
 
 
 # Kontrola čísel a opravy (Claude)
 
-### Automatická kontrola scénáře: Pobaltí
+### Automatická kontrola scénáře: Balkán a jihovýchodní Evropa
 
-Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_2026_10\gemini\POBALTI\SCENAR_GEMINI.md`; mluvený text 1097 slov (asi 7.8 minuty při 140 slovech za minutu).
+Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_2026_10\gemini\BALKAN_A_JIHOVYCHODNI_EVROPA\SCENAR_GEMINI.md`; mluvený text 1358 slov (asi 9.7 minuty při 140 slovech za minutu).
 Čísel psaných číslicemi: 0, z toho bez opory v datech: **0**.
 
 ### Čísla
@@ -86,7 +94,7 @@ Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_
 
 ### Pravidla
 
-- bez nálezu
+- délka 1358 slov mimo cíl 1 050–1 150
 
 ### Co automatická kontrola nepozná (ručně, Claude)
 
@@ -95,17 +103,17 @@ Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_
 
 ### Ruční kontrola (nezávislý kontrolor + Claude, 27. 10. 2026)
 
-**Sedí:** všechna čísla kol (hodnoty, body, místa 24.–26., 2.–4., 10./12./18.), čisté mzdy v kupní síle i v eurech, cenové hladiny, „co kola nevysvětlí“ (+5,6 / −3,0 / −1,9), podíly mezd, patra, štítky, stavba (showcase bez historie, odpočet od 3. do 1. místa). Automatický nález „u nás“ je falešný (řetězec „mu náskok“).
+**Sedí:** všechny tabulky v obraze (hodnoty, body, místa a zařazení k dohánění ve všech třech kolech i v cíli), čisté mzdy v kupní síle i v eurech, ceny, „co kola nevysvětlí“ (+22,3 / +10,2 / −0,6 / −5,9 / −16,1), podíly mezd a zaměstnanců, patra, hlavní i vedlejší štítky, mechanismy kola 3, stavba (odpočet od 5. do 1. místa, žádné čekané místo ani „my“ o Česku).
 
-**Bodově opraveno (20 míst; původní text Argona v `SCENAR_GEMINI_PUVODNI.md`):** příčiny bez opory nebo proti datům ve finále (Estonsko „slabé odbory a konkurenceschopnost“ – podíl mezd je nad středem, příčina chybí; Litva „větší trh udržel nižší ceny“ – nedoloženo, nahrazeno udičkou na epizodu o cenách; „slabé odbory“ u Litvy – vliv nedoložen; Lotyšsko „emigrace donutila firmy“ – zmírněno; 87,7 % je podíl zaměstnanců mezi pracujícími, ne „kolik zaměstnanců se dělí“); kolo 2 (zdůvodnění nejistoty dohánění podle tabulky; úbytek obyvatel od vstupu do EU, ne „vyhnala ho krizová léčba“; měnová rada a rovná daň bez „zkrotily inflaci“; násobek vůči střední zemi ligy; nezaměstnanost pětina jen v Lotyšsku; trojnásobný podíl litevského vývozu proti roku 2000; ztráta čtvrtiny podílu na trzích); kolo 1 (28 % příjmu v polovině 90. let; „výroba“ místo „průmysl“); kolo 3 (pokles nezdanitelné částky jistě jen v Estonsku; „procentní body“; šestina až pětina mezd v obálkách; bez zmínek o studiích a průzkumech).
+**Bodově opraveno (28 míst; původní text Argona v `SCENAR_GEMINI_PUVODNI.md`):** krajní tvrzení u těsných rozdílů (Bulharsko daně a ceny, nejnižší výplata v eurech); možné příčiny podané jako jisté (řecké otevření trhu, jugoslávská samospráva u Chorvatska, privatizace a zahraniční továrny); „čtyři pětiny kapitálu střední evropské země“ → střední země ligy, bez čísla u značky; rumunský odchod z polí (1,9 milionu, část do ciziny, automobilky až později); chorvatský růst půl před krizí na dluh, půl po vstupu do Unie; výzkum celé země místo firmy Krka; řecké pořadí v tempu růstu podané jako pořadí produktivity; slovinská zátěž = progresivní daň, zdravotní příspěvek jen na papíře; ve finále příčiny „co kola nevysvětlí“ podle rozkladu podílu mezd a zaměstnanců (Řecko, Bulharsko, Rumunsko, Chorvatsko, Slovinsko), bulharský vedlejší štítek za krizi 90. let, ne za minimální mzdu; ceny Rumunska bez nedoložených příčin; „asi“ u zaokrouhlení.
 
-**Bez opory, ponecháno jako obecně známé:** Skype a Bolt, Pobaltí jako součást SSSR, rižský přístav, Vilnius jako centrum IT, lotyšské dřevařství, „realitní bublina“.
+**Bez opory, ponecháno jako obecně známé:** Gorenje, Krka, Dacia, námořní flotila a ostrovní turismus, taverny, alpské a jadranské přívlastky.
 
-**Délka:** asi 1 165 slov (strop 1 150).
+**Spor v pravidlech (nerozhodnuto):** skill regionů dává transformační kroky do kola 2, výklady Bulharska a Rumunska je řadí do kola 1, protože krize 1996 tvoří hodnotu roku 1996.
 
 ### Zkrácení a nový showcase (27. 10. 2026)
 
-Ondřej: zkrátit, nic neříkat dvakrát, showcase bez věcí z kol a s charakteristikou a očekáváním každé země (pravidlo 9 kuchařky). Argon zkracoval ve dvou kolech ve svém rozhovoru regionu (záznam `ROZHOVOR.md`); verze před zkrácením je `SCENAR_PRED_ZKRACENIM.md`. Nezávislý kontrolor porovnal zkrácenou verzi větu po větě s verzí před zkrácením a showcase s podklady. **Bodově opraveno 5 míst:** nové tvrzení showcase bez opory nebo jen pro sousední zemi, prozrazený nebo zesílený výsledek ve showcase, krajní tvrzení u těsných rozdílů a opravené formulace, které zkrácení vypustilo („na pracujícího“, „vůči středu ligy“, „v regionu“, „jen“, „v průměru“, období). Pořadí v celé Evropě, která scénář zmiňuje, jsou ověřená proti tabulkám kol.
+Ondřej: zkrátit, nic neříkat dvakrát, showcase bez věcí z kol a s charakteristikou a očekáváním každé země (pravidlo 9 kuchařky). Argon zkracoval ve dvou kolech ve svém rozhovoru regionu (záznam `ROZHOVOR.md`); verze před zkrácením je `SCENAR_PRED_ZKRACENIM.md`. Nezávislý kontrolor porovnal zkrácenou verzi větu po větě s verzí před zkrácením a showcase s podklady. **Bodově opraveno 18 míst:** nové tvrzení showcase bez opory nebo jen pro sousední zemi, prozrazený nebo zesílený výsledek ve showcase, krajní tvrzení u těsných rozdílů a opravené formulace, které zkrácení vypustilo („na pracujícího“, „vůči středu ligy“, „v regionu“, „jen“, „v průměru“, období). Pořadí v celé Evropě, která scénář zmiňuje, jsou ověřená proti tabulkám kol.
 
 
 # Dosavadní konzultace s Gemini 4 Argonem
@@ -142,163 +150,187 @@ Vrať jen celý hotový scénář v Markdownu.
 
 ---
 
-### Pobaltí
+### Balkán a jihovýchodní Evropa
 
 ### Předstartovní showcase
 
-[VIZUÁL: Mapa Pobaltí na startovní čáře – digitální Tallinn se symbolem státní sítě X-tee, průmyslový a technologický Vilnius a rižský přístav s bankovní čtvrtí; ukazatel očekávání v pelotonu.]
+[VIZUÁL: Startovní rošt balkánské a jihovýchodní rozjížďky – pět zemí na startovní čáře: Slovinsko, Chorvatsko, Rumunsko, Bulharsko a Řecko.]
 
-Na startovní čáru pobaltské rozjížďky nastupují sousedé od Baltského moře, kteří v závodě o nejvyšší čistou výplatu v kupní síle bojují o únik z dolních pater pelotonu. V roli favorita startuje digitální Estonsko – země pověstná elektronickými úřady se sítí X-tee a technologickými firmami v čele se Skypem či Boltem. Na pozici regionálního lídra a největšího skokana ale dravě útočí Litva, která se opírá o silný vývozní průmysl, početnější domácí trh a rozkvétající informační technologie ve Vilniusu. Naopak Lotyšsko, tradičně sázící na rižské banky, tranzitní přístavy a dřevařské pily, vstupuje do závodu s hrozbou, že zůstane na chvostu pelotonu. Dokáže digitální hvězda severu odrazit litevský nápor, nebo ji zradí vlastní drahota?
-
-### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
-
-[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Estonsko (35,1 %, −102,0 b., 24. v Evropě), 2. Litva (34,4 %, −104,0 b., 25. v Evropě), 3. Lotyšsko (32,9 %, −108,1 b., 26. v Evropě). Rozpadající se sovětské tovární haly a přetrhané železniční tratě na východ.]
-
-První kolo rozdává startovní karty roku devatenáct set devadesát šest podle toho, s jakou produktivitou a zděděnou výbavou země vstupovaly do nové éry. Pobaltské státy přitom vyrážely prakticky z totožné startovní čáry na samotném dně pelotonu, ze čtyřiadvacátého až šestadvacátého místa v celé Evropě, kdy ještě hlouběji začínalo už jen Rumunsko. Estonský, litevský i lotyšský dělník tehdy u starých sovětských soustruhů vyprodukovali jen zhruba třetinu toho, co pracující ve střední zemi ligy, takže si každá z těchto zemí hned na startu připsala propastnou ztrátu přes sto bodů.
-
-Důvodem tohoto hlubokého propadu bylo, že Pobaltí netvořilo jen vnější prstenec sovětských satelitů jako střední Evropa, ale bylo přímo pohlceno do plánované ekonomiky Sovětského svazu. Místní továrny, elektrárny i přístavy stavěli moskevští plánovači jako úzce zaměřené dílny pro obří sovětský trh, naprosto odříznuté od západních strojů i obchodních vazeb. Když se sovětské impérium zhroutilo, udeřil tento rozpad na pobaltský region mnohem drtivěji než na zbytek východního bloku, protože moskevské odběratelské řetězce se přes noc přetrhaly.
-
-V Estonsku se výroba po rozpadu sovětského bloku propadla o více než třetinu. Litva ztratila dokonce dvě pětiny produkce a v Lotyšsku se výroba po zhroucení východních trhů zřítila o více než polovinu. Ještě na přelomu tisíciletí tak lotyšské a litevské podniky paběrkovaly zhruba na dvou třetinách předtransformační úrovně a příjem na obyvatele v celém regionu nedosahoval v polovině devadesátých let ani tří desetin starých zemí Unie.
-
-### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
-
-[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Litva (2,48×, +73,7 b., 2. v Evropě – rostla nad rámec dohánění; v reálných cenách +193 %, 1. v lize), 2. Estonsko (2,37×, +68,9 b., 3. v Evropě – nejisté, v reálných cenách +139 %), 3. Lotyšsko (2,16×, +60,0 b., 4. v Evropě – nejisté, v reálných cenách +160 %). Pád lotyšské banky Parex.]
-
-Druhé kolo sleduje, jak země se svými startovními kartami hrály až do roku dva tisíce dvacet čtyři. Pobaltské státy sice obsadily stupně těsně pod vrcholem v celé Evropě, jenže přes čtyři pětiny rozdílů v tempu růstu napříč ligou vysvětlí prosté dohánění z nízkého základu. Skutečný růst nad rámec běžného dohánění tak prokazatelně předvedla jen Litva, která na druhém místě v celé sedmadvacítce zvedla produktivitu vůči střední zemi ligy skoro dvaapůlkrát a ve stálých cenách rostla nejrychleji v lize. U Estonska a Lotyšska, které produktivitu zvedly více než dvojnásobně, je přínos nad běžné dohánění nejistý: Estonsko dohánění předběhlo jen v kupní síle, ve stálých cenách rostlo zhruba tak, jak odpovídá dohánění, a u Lotyšska záleží na tom, jak se dohánění počítá.
-
-Na počátku transformace přivázaly Estonsko a Litva své měny pevně k marce a k dolaru a zavedly rovnou daň. Po ruské krizi se region napojil na severské trhy a vstup do Unie zvedl pobaltskou produktivitu během úvodní dekády asi o pětinu, přičemž v Litvě společné podniky se zahraničními investory vytáhly nahoru místní dodavatele.
-
-Pak ale levné úvěry ze skandinávských bank nafoukly realitní bublinu, při níž lotyšské mzdy skákaly o pětinu ročně. Po krachu banky Parex v roce dva tisíce osm musela Riga žádat o mezinárodní záchranu a pobaltská výroba spadla až o čtvrtinu. Místo oslabení měn zvolily vlády vnitřní znehodnocení: v Lotyšsku seškrtaly veřejné platy skoro o čtvrtinu a nezaměstnanost vyskočila v Lotyšsku až k pětině pracovní síly a u sousedů jen o málo níž. Tvrdá léčba sice otevřela cestu k euru a nakopla litevský vývoz, jehož podíl na světovém vývozu byl v roce dva tisíce devatenáct víc než trojnásobný proti roku dva tisíce, ale Lotyšsku a Litvě od vstupu do Unie ubyla víc než desetina obyvatel, hlavně odchodem za prací na západ, a silná vlna přišla právě po krizi. Lotyšsko dál brzdily slabé investice, technologicky jednoduché provozy i útlum rižských bank po zásahu proti praní peněz. Estonsku zase nestačila ani digitální síť X-tee a technologické firmy jako Skype či Bolt: elektronické úřady totiž nezvedly produktivitu běžných podniků a po energetickém šoku ztratili estonští vývozci skoro čtvrtinu svého podílu na trzích – proč špičkové softwarové firmy samy neutáhnou celou ekonomiku, ukáže epizoda o produktivitě a sektorech.
-
-### Kolo 3 – Tah země: Daňový klín
-
-[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce) a tabulka Kola 3: 1. Litva (39,9 %, +1,4 b., 10. v Evropě), 2. Estonsko (40,9 %, +0,3 b., 12. v Evropě), 3. Lotyšsko (42,0 %, −1,0 b., 18. v Evropě). Výplatní páska vs. obálka s hotovostí.]
-
-Třetí kolo měří takzvaný daňový klín – tedy když sečteme úplně všechny daně a odvody, které ze mzdy zaplatí zaměstnanec i zaměstnavatel dohromady, a porovnáme je s celkovými náklady práce. Dlouhodobě přitom dvě třetiny této zátěže nakonec zaplatí sám zaměstnanec na nižší čisté výplatě. Pobaltské státy se sice seřadily těsně kolem evropského středu u čtyřiceti procent, ale na výplatní pásce tuhle zátěž ukazují úplně opačně.
-
-Estonsko a Lotyšsko schovávají hlavní balík za zaměstnavatele: estonské firmy posílají státu nad rámec hrubé mzdy třiatřicetiprocentní sociální daň a lotyšské podniky skoro čtyřiadvacet procent na odvodech. Naopak Litva v roce dva tisíce devatenáct odvody účetně přesunula přímo na pásku zaměstnance, kterému o necelou třetinu navýšila hrubou mzdu. Současně ale skutečně snížila celkové pojistné, takže si litevský stát ukousne nejméně v regionu, necelých čtyřicet procent nákladů práce.
-
-Před cílem však zátěž potichu rostla i bez zvyšování sazeb: v Estonsku proto, že rostoucím mzdám ubývala nezdanitelná sleva, a u sousedů nejspíš ze stejného důvodu. V Estonsku tento mizící odpočet vytvořil nepříjemný daňový hrb, který vláda po roce dva tisíce dvacet čtyři nahradila jednotnou nezdanitelnou částkou vykoupenou zvýšením daně z příjmu na dvacet dva procent. Lotyšsko naopak v roce dva tisíce dvacet pět zátěž u průměrné mzdy skoro o dva procentní body snížilo. Přesto se v celém Pobaltí dál vyplácí asi šestina až pětina mezd načerno v obálkách.
-
-### Finále regionu: Odhalení pořadí od posledního po vítěze
-
-[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 3. do 1. místa v Pobaltí + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Lotyšsko +5,6 b., Litva −1,9 b., Estonsko −3,0 b.) a srovnání cenových hladin (Estonsko 97,3 %, Lotyšsko 79,8 %, Litva 78,5 % průměru EU).]
-
-Jdeme do cíle roku dva tisíce dvacet čtyři, kde střed celé evropské ligy leží na pětadvaceti tisících třech stech jednotkách kupní síly.
-
-Poslední, třetí místo v regionu a pád do evropského suterénu bere Lotyšsko. Lotyš si sice v eurech vydělá necelých šestnáct tisíc čistého, ale nižší místní ceny mu výplatu v kupní síle zvednou skoro na dvacet tisíc jednotek. Oproti součtu kol si přitom Lotyšsko polepší skoro o šest bodů: firmy totiž pouštějí na mzdy přes polovinu vytvořeného výkonu a k tlaku na mzdy přispívá i nedostatek lidí po masové emigraci, přičemž zaměstnanci tvoří necelých osmaosmdesát procent všech pracujících. Lotyšsko si odnáší štítek „Snaží se v těžkých podmínkách“.
-
-Na druhém místě těsně v evropském suterénu končí původní favorit Estonsko s jedenadvaceti a půl tisíci jednotkami kupní síly. Estonec si přitom odnese skoro jedenadvacet tisíc eur čistého – v eurech nejvíc v celém Pobaltí –, jenže estonské ceny vyšplhaly na sedmadevadesát procent unijního průměru a drahota mu náskok spolkne. Oproti součtu kol navíc Estonsko ztrácí tři body, což je malý rozdíl bez jasné příčiny, protože podíl mezd na výkonu je tu dokonce o něco vyšší než ve středu Evropy, a Estonsko bere štítek „Snaží se v těžkých podmínkách“.
-
-A vítězem pobaltské rozjížďky, který jako jediný pronikl těsně pod střed Evropy, se stává Litva s téměř dvaceti dvěma tisíci sedmi sty jednotkami kupní síly. Litevec sice bere necelých osmnáct tisíc eur, ale nakupuje za méně než čtyři pětiny unijních cen. Ačkoliv celé Pobaltí platí stejným eurem, litevské cenovky zůstávají výrazně níž než estonské – proč se ceny mezi sousedy v eurozóně tak liší, rozklíčujeme v chystané epizodě o cenové hladině – proč se ceny mezi sousedy v eurozóně tak liší, rozklíčujeme v chystané epizodě o cenové hladině. Oproti součtu kol sice Litva o necelé dva body klesá, protože na mzdy jde necelých osmačtyřicet procent výkonu, o něco méně než ve středu Evropy. Tlak na růst výplat navíc zmírnil příchod skoro osmdesáti tisíc pracovníků z Běloruska a Ukrajiny, přesto Litva vítězí se štítkem „Dělá to dobře a je to vidět“.
-
-### Gemini 4 Argon
-
-### Pobaltí
-
-### Předstartovní showcase
-
-[VIZUÁL: Mapa Pobaltí na startovní čáře – digitální Tallinn se symbolem státní sítě X-tee, průmyslový a technologický Vilnius a rižský přístav s bankovní čtvrtí; ukazatel očekávání v pelotonu.]
-
-Na startovní čáru pobaltské rozjížďky nastupují tři sousedé od Baltského moře, kteří v závodě o nejvyšší čistou výplatu v kupní síle bojují o únik z dolních pater pelotonu. Jako favorit regionu startuje Estonsko, země moderních služeb a informačních technologií, kde výplaty táhne blízkost bohatého Finska, ale kupní sílu sráží drahý život na úrovni západní Evropy. Na pobaltský trůn i průnik ke středu celé soutěže proto útočí Litva, opřená o průmysl, rostoucí technologický sektor a citelně levnější životní náklady. Naopak Lotyšsku s převahou méně náročných oborů a spoustou nízko placených míst hrozí i přes nižší ceny pád na chvost regionu i celé sedmadvacítky.
+Na startovní čáru balkánské a jihovýchodní rozjížďky nastupuje pět zemí, které v závodě o nejvyšší čistou výplatu v kupní síle míří do opačných pater pelotonu. V roli favorita regionu startuje alpské Slovinsko – průmyslová země s domácími farmaceutickými i strojírenskými šampiony, která útočí na střed evropské ligy. Sekundovat by mu mělo Řecko, tradiční západní člen Unie s námořní flotilou a ostrovním turismem, jenže dnes mu hrozí pád až na dno celé sedmadvacítky. O střed pelotonu bojuje jadranské Chorvatsko, opřené o letní turisty, zatímco dravé Rumunsko s automobilkami a informačním sektorem má pověst největšího skokana Evropy a Bulharsko, které má spolu s Řeckem nejlehčí daně a spolu s Rumunskem nejlevnější obchody, se pokouší odlepit od chvostu. Kdo své předpoklady potvrdí?
 
 ### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
 
-[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Estonsko (35,1 %, −102,0 b., 24. v Evropě), 2. Litva (34,4 %, −104,0 b., 25. v Evropě), 3. Lotyšsko (32,9 %, −108,1 b., 26. v Evropě). Rozpadající se sovětské tovární haly a přetrhané železniční tratě na východ.]
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Řecko (90,1 %, −10,1 b., 15. v Evropě), 2. Slovinsko (69,9 %, −34,9 b., 17. v Evropě), 3. Chorvatsko (57,4 %, −54,1 b., 19. v Evropě), 4. Bulharsko (35,2 %, −101,5 b., 23. v Evropě), 5. Rumunsko (25,7 %, −132,2 b., 27. v Evropě).]
 
-První kolo rozdává startovní karty roku devatenáct set devadesát šest podle toho, s jakou produktivitou a zděděnou výbavou země vstupovaly do nové éry. Pobaltské státy vyrážely prakticky z jedné čáry na samotném dně pelotonu, ze čtyřiadvacátého až šestadvacátého místa v celé Evropě, kdy ještě hlouběji začínalo jen Rumunsko. Estonský, litevský i lotyšský dělník tehdy u starých sovětských soustruhů vyprodukovali jen zhruba třetinu toho, co pracující ve střední zemi ligy, takže si každá ze tří zemí hned na startu připsala propastnou ztrátu přes sto bodů.
+První kolo rozdává startovní karty roku devatenáct set devadesát šest podle toho, s jakou produktivitou a zděděnou strukturou ekonomiky země vstupovaly do nové éry. Nejlepší karty v regionu drželo Řecko, které jako jediné nepoznalo komunistické plánování, do evropského klubu vstoupilo už v roce devatenáct set osmdesát jedna a startovalo jen desetinu pod středem ligy. Oproti západní Evropě však zaostávalo a ekonomové jako možný důvod uvádějí příliš náhlé otevření trhu, na které řecké továrny nebyly připravené; skoro pětina lidí navíc pracovala v zemědělství.
 
-Důvodem tohoto propadu bylo, že Pobaltí netvořilo jen vnější prstenec sovětských satelitů jako střední Evropa, ale bylo přímo pohlceno do plánované ekonomiky Sovětského svazu. Místní továrny, elektrárny i přístavy stavěli moskevští plánovači jako úzce zaměřené dílny pro obří sovětský trh, zcela odříznuté od západních strojů i obchodních vazeb. Když se sovětské impérium zhroutilo, udeřil rozpad na pobaltský region mnohem drtivěji než na zbytek východního bloku, protože moskevské odběratelské řetězce se přes noc přetrhaly.
+O patro níž začínaly nejvyspělejší republiky bývalé Jugoslávie – Slovinsko na sedmi desetinách a Chorvatsko pod třemi pětinami středu ligy. Slovinsko prožilo jen asi dvacet tři let plánované ekonomiky, protože jugoslávská podniková samospráva stála mezi plánem a trhem, a slovinský pracující měl už tehdy přes čtyři pětiny strojů a kapitálu, s jakými pracoval člověk ve střední zemi ligy. Chorvatsko s rozvinutým průmyslem a jadranským turismem stálo před rozpadem federace po boku střední Evropy, jenže válka a ztráta trhů srazily jeho ekonomiku o třetinu.
 
-V Estonsku se výroba po rozpadu sovětského bloku propadla o více než třetinu. Litva ztratila dokonce dvě pětiny produkce a v Lotyšsku se výroba po zhroucení východních trhů zřítila o více než polovinu. Ještě na přelomu tisíciletí tak lotyšské a litevské podniky paběrkovaly zhruba na dvou třetinách předtransformační úrovně a příjem na obyvatele v celém regionu nedosahoval v polovině devadesátých let ani tří desetin starých zemí Unie.
-
-### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
-
-[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Litva (2,48×, +73,7 b., 2. v Evropě – rostla nad rámec dohánění; v reálných cenách +193 %, 1. v lize), 2. Estonsko (2,37×, +68,9 b., 3. v Evropě – nejisté, v reálných cenách +139 %), 3. Lotyšsko (2,16×, +60,0 b., 4. v Evropě – nejisté, v reálných cenách +160 %). Pád lotyšské banky Parex.]
-
-Druhé kolo sleduje, jak země se startovními kartami hrály do roku dva tisíce dvacet čtyři. Pobaltské státy sice obsadily stupně těsně pod vrcholem v celé Evropě, jenže přes čtyři pětiny rozdílů v růstu napříč ligou vysvětlí prosté dohánění z nízkého základu. Růst nad rámec dohánění tak prokazatelně předvedla jen Litva, která na druhém místě v celé sedmadvacítce zvedla produktivitu vůči střední zemi skoro dvaapůlkrát a ve stálých cenách rostla nejrychleji v lize. U Estonska a Lotyšska s více než dvojnásobným růstem je přínos nad dohánění nejistý: Estonsko ho předběhlo jen v kupní síle, ve stálých cenách rostlo zhruba podle dohánění, a u Lotyšska záleží na způsobu výpočtu.
-
-Na počátku transformace přivázaly Estonsko a Litva své měny pevně k marce a dolaru a zavedly rovnou daň. Po ruské krizi se region napojil na severské trhy a vstup do Unie zvedl pobaltskou produktivitu v úvodní dekádě asi o pětinu, přičemž v Litvě společné podniky se zahraničními investory vytáhly nahoru místní dodavatele.
-
-Pak ale levné úvěry ze skandinávských bank nafoukly realitní bublinu, při níž lotyšské mzdy skákaly o pětinu ročně. Po krachu banky Parex v roce dva tisíce osm musela Riga žádat o mezinárodní záchranu a pobaltská výroba spadla až o čtvrtinu. Místo oslabení měn zvolily vlády vnitřní znehodnocení: v Lotyšsku seškrtaly veřejné platy skoro o čtvrtinu a nezaměstnanost tam vyskočila až k pětině pracovní síly a u sousedů jen o málo níž. Tvrdá léčba sice otevřela cestu k euru a nakopla litevský vývoz, jehož podíl na světovém vývozu byl v roce dva tisíce devatenáct víc než trojnásobný proti roku dva tisíce, ale Lotyšsku a Litvě od vstupu do Unie ubyla víc než desetina obyvatel, hlavně emigrací na západ se silnou vlnou po krizi. Lotyšsko dál brzdily slabé investice, technologicky jednoduché provozy i útlum rižských bank po zásahu proti praní peněz. Estonsku nestačila ani digitální síť X-tee a technologické firmy jako Skype či Bolt: elektronické úřady nezvedly produktivitu běžných podniků a po energetickém šoku ztratili vývozci skoro čtvrtinu tržního podílu – proč špičkové softwarové firmy samy neutáhnou celou ekonomiku, ukáže epizoda o produktivitě a sektorech.
-
-### Kolo 3 – Tah země: Daňový klín
-
-[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce) a tabulka Kola 3: 1. Litva (39,9 %, +1,4 b., 10. v Evropě), 2. Estonsko (40,9 %, +0,3 b., 12. v Evropě), 3. Lotyšsko (42,0 %, −1,0 b., 18. v Evropě). Výplatní páska vs. obálka s hotovostí.]
-
-Třetí kolo měří daňový klín, tedy součet všech daní a odvodů zaměstnance i zaměstnavatele v poměru k celkovým nákladům práce. Dlouhodobě přitom dvě třetiny této zátěže zaplatí sám zaměstnanec na nižší čisté výplatě. Pobaltské státy se sice seřadily těsně kolem evropského středu u čtyřiceti procent, ale na výplatní pásce tuhle zátěž ukazují opačně.
-
-Estonsko a Lotyšsko schovávají hlavní balík za zaměstnavatele: estonské firmy posílají státu nad rámec hrubé mzdy třiatřicetiprocentní sociální daň a lotyšské podniky skoro čtyřiadvacet procent na odvodech. Naopak Litva v roce dva tisíce devatenáct odvody účetně přesunula přímo na pásku zaměstnance, kterému o necelou třetinu navýšila hrubou mzdu. Současně ale skutečně snížila celkové pojistné, takže si litevský stát ukousne nejméně v regionu, necelých čtyřicet procent nákladů práce.
-
-Před cílem však zátěž potichu rostla i bez zvyšování sazeb: v Estonsku proto, že rostoucím mzdám ubývala nezdanitelná sleva, a u sousedů nejspíš ze stejného důvodu. V Estonsku tento mizící odpočet vytvořil nepříjemný daňový hrb, který vláda po roce dva tisíce dvacet čtyři nahradila jednotnou nezdanitelnou částkou vykoupenou zvýšením daně z příjmu na dvacet dva procent. Lotyšsko naopak v roce dva tisíce dvacet pět zátěž u průměrné mzdy skoro o dva procentní body snížilo. Přesto se v celém Pobaltí dál vyplácí asi šestina až pětina mezd načerno v obálkách.
-
-### Finále regionu: Odhalení pořadí od posledního po vítěze
-
-[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 3. do 1. místa v Pobaltí + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Lotyšsko +5,6 b., Litva −1,9 b., Estonsko −3,0 b.) a srovnání cenových hladin (Estonsko 97,3 %, Lotyšsko 79,8 %, Litva 78,5 % průměru EU).]
-
-Jdeme do cíle roku dva tisíce dvacet čtyři, kde střed celé evropské ligy leží na pětadvaceti tisících třech stech jednotkách kupní síly.
-
-Poslední, třetí místo v regionu a pád do evropského suterénu bere Lotyšsko. Lotyš si sice v eurech vydělá necelých šestnáct tisíc čistého, ale nižší místní ceny mu výplatu v kupní síle zvednou skoro na dvacet tisíc jednotek. Oproti součtu kol si přitom Lotyšsko polepší skoro o šest bodů: firmy totiž pouštějí na mzdy přes polovinu vytvořeného výkonu a k tlaku na mzdy přispívá i nedostatek lidí po zmíněné emigraci, přičemž zaměstnanci tvoří necelých osmaosmdesát procent pracujících. Lotyšsko si odnáší štítek „Snaží se v těžkých podmínkách“.
-
-Na druhém místě těsně v evropském suterénu končí Estonsko s jedenadvaceti a půl tisíci jednotkami kupní síly. Estonec si přitom odnese skoro jedenadvacet tisíc eur čistého, nejvíc v Pobaltí, jenže estonské ceny na sedmadevadesáti procentech unijního průměru mu náskok spolknou. Oproti součtu kol navíc Estonsko ztrácí tři body, což je malý rozdíl bez jasné příčiny, protože podíl mezd na výkonu je tu dokonce o něco vyšší než ve středu Evropy, a země bere štítek „Snaží se v těžkých podmínkách“.
-
-A vítězem pobaltské rozjížďky, který jako jediný pronikl těsně pod střed Evropy, se stává Litva s téměř dvaceti dvěma tisíci sedmi sty jednotkami kupní síly. Litevec sice bere necelých osmnáct tisíc eur, ale nakupuje za méně než čtyři pětiny unijních cen. Ačkoliv celé Pobaltí platí stejným eurem, litevské cenovky zůstávají výrazně níž než estonské – proč se ceny mezi sousedy v eurozóně tak liší, rozklíčujeme v chystané epizodě o cenové hladině. Oproti součtu kol sice Litva o necelé dva body klesá, protože na mzdy jde necelých osmačtyřicet procent výkonu, o něco méně než ve středu Evropy, a tlak na růst výplat zmírnil i příchod skoro osmdesáti tisíc pracovníků z Běloruska a Ukrajiny, přesto vítězí se štítkem „Dělá to dobře a je to vidět“.
-
-### Claude (druhé kolo zkrácení podle Ondřeje 27. 10. 2026)
-
-Díky. Mluvený text tvé zkrácené verze má ale pořád 1186 slov (počítám bez nadpisů a řádků [VIZUÁL]), cíl je 1 050–1 150, tedy ubrat ještě asi 86 slov. Zkrať ji podle stejných závazných pravidel jako minule: nic nového, opravené formulace věcně beze změny, čísla a řádky [VIZUÁL] ponech. Škrtej opakované myšlenky, vedlejší ilustrace a druhé příklady k témuž; vysvětlení příčin ve finále zkracuj jen jazykově. Vrať jen celý hotový scénář v Markdownu.
-
-### Gemini 4 Argon
-
-### Pobaltí
-
-### Předstartovní showcase
-
-[VIZUÁL: Mapa Pobaltí na startovní čáře – digitální Tallinn se symbolem státní sítě X-tee, průmyslový a technologický Vilnius a rižský přístav s bankovní čtvrtí; ukazatel očekávání v pelotonu.]
-
-Do pobaltské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupují tři sousedé, kteří bojují o únik z dolních pater pelotonu. Jako favorit regionu startuje Estonsko, země moderních služeb a informačních technologií, kde výplaty táhne blízkost Finska, ale sráží je drahý život na západní úrovni. Na pobaltský trůn i průnik ke středu soutěže proto útočí Litva, opřená o průmysl, rostoucí technologie a citelně levnější život. Naopak Lotyšsku s převahou méně náročných oborů a spoustou nízko placených míst hrozí i přes nižší ceny pád na chvost regionu i celé sedmadvacítky.
-
-### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
-
-[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Estonsko (35,1 %, −102,0 b., 24. v Evropě), 2. Litva (34,4 %, −104,0 b., 25. v Evropě), 3. Lotyšsko (32,9 %, −108,1 b., 26. v Evropě). Rozpadající se sovětské tovární haly a přetrhané železniční tratě na východ.]
-
-První kolo rozdává startovní karty roku devatenáct set devadesát šest podle zděděné produktivity. Pobaltské státy vyrážely ze samotného dna pelotonu, ze čtyřiadvacátého až šestadvacátého místa v celé Evropě, kdy hlouběji začínalo jen Rumunsko. Estonský, litevský i lotyšský dělník tehdy u sovětských soustruhů vyprodukovali jen zhruba třetinu toho, co pracující ve střední zemi ligy, takže si každá ze tří zemí na startu připsala ztrátu přes sto bodů.
-
-Pobaltí totiž netvořilo jen vnější prstenec satelitů jako střední Evropa, ale bylo přímo pohlceno do plánované ekonomiky Sovětského svazu. Místní továrny a přístavy stavěli moskevští plánovači jako úzce zaměřené dílny pro sovětský trh, odříznuté od západních strojů i obchodu. Když se impérium zhroutilo, udeřil rozpad na region mnohem drtivěji než na zbytek východního bloku, protože moskevské odběratelské řetězce se přes noc přetrhaly.
-
-V Estonsku se výroba propadla o více než třetinu, Litva ztratila dvě pětiny produkce a v Lotyšsku se výroba zřítila o více než polovinu. Ještě na přelomu tisíciletí tak lotyšské a litevské podniky paběrkovaly zhruba na dvou třetinách předtransformační úrovně a příjem na obyvatele v regionu nedosahoval v polovině devadesátých let ani tří desetin starých zemí Unie.
+Z hlubokého suterénu vyrážela východobalkánská dvojice. Bulharsko po pádu režimu odkládalo reformy a kvůli finanční nekázni v podnicích a bankách se přímo na startu propadlo do bankovního krachu a hyperinflace, a s více než pětinou lidí v zemědělství začínalo jen o kousek nad třetinou středu ligy. A z posledního, sedmadvacátého místa v celé Evropě s čtvrtinou produktivity středu ligy startovalo Rumunsko. Tam pracovaly přes dvě pětiny lidí na drobných samozásobitelských políčkách, která sloužila jako záchranná síť proti chudobě.
 
 ### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
 
-[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Litva (2,48×, +73,7 b., 2. v Evropě – rostla nad rámec dohánění; v reálných cenách +193 %, 1. v lize), 2. Estonsko (2,37×, +68,9 b., 3. v Evropě – nejisté, v reálných cenách +139 %), 3. Lotyšsko (2,16×, +60,0 b., 4. v Evropě – nejisté, v reálných cenách +160 %). Pád lotyšské banky Parex.]
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Rumunsko (3,17×, +97,3 b., 1. v Evropě – dohánění nejisté), 2. Bulharsko (1,63×, +32,5 b., 6. v Evropě – pomalejší než běžné dohánění), 3. Chorvatsko (1,50×, +24,8 b., 8. v Evropě – dohánění nejisté), 4. Slovinsko (1,25×, +6,7 b., 12. v Evropě – dohánění nejisté), 5. Řecko (0,77×, −40,0 b., 27. v Evropě – propad hluboko pod běžné dohánění).]
 
-Druhé kolo sleduje, jak země s rozdanými kartami hrály do roku dva tisíce dvacet čtyři. Pobaltské státy sice obsadily stupně těsně pod vrcholem v celé Evropě, jenže přes čtyři pětiny rozdílů v růstu napříč ligou vysvětlí prosté dohánění z nízkého základu. Růst nad rámec dohánění tak prokazatelně předvedla jen Litva, která na druhém místě v celé sedmadvacítce zvedla produktivitu vůči střední zemi skoro dvaapůlkrát a ve stálých cenách rostla nejrychleji v lize. U Estonska a Lotyšska s více než dvojnásobným růstem je přínos nad dohánění nejistý: Estonsko ho předběhlo jen v kupní síle, ve stálých cenách rostlo zhruba podle dohánění, a u Lotyšska záleží na způsobu výpočtu.
+Druhé kolo sleduje, jak země se svými kartami hrály do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu napříč ligou vysvětlí prosté dohánění: u Rumunska, Chorvatska a Slovinska je růst nad rámec dohánění nejistý a závisí na způsobu výpočtu, kdežto Bulharsko a Řecko za doháněním prokazatelně zaostaly.
 
-Zpočátku přivázaly Estonsko a Litva měny pevně k marce a dolaru a zavedly rovnou daň. Po ruské krizi se region napojil na severské trhy a vstup do Unie zvedl produktivitu v úvodní dekádě asi o pětinu, přičemž v Litvě společné podniky se zahraničními investory vytáhly nahoru místní dodavatele.
+Nejdrtivější skok v celé sedmadvacítce předvedlo Rumunsko, které vůči středu ligy zvedlo produktivitu víc než třikrát a získalo skoro sto bodů. Skoro dva miliony lidí opustily drobná políčka, část z nich za prací do ciziny, a produktivitu pak táhly továrny zahraničních automobilek, třeba Dacia, a informační technologie v hrstce měst, i když v krizi roku dva tisíce deset vláda seškrtala státní platy o čtvrtinu. Země se ale rozpadla na dva světy, kde Bukurešť dosahuje sto třiceti procent unijní produktivity a severovýchod dvou pětin. Domácím malým firmám chybí kapitál a na výzkum jde půl procenta výkonu ekonomiky.
 
-Pak ale úvěry ze skandinávských bank nafoukly realitní bublinu, při níž lotyšské mzdy skákaly o pětinu ročně. Po krachu banky Parex v roce dva tisíce osm musela Riga žádat o mezinárodní záchranu a pobaltská výroba spadla až o čtvrtinu. Místo oslabení měn zvolily vlády vnitřní znehodnocení: v Lotyšsku seškrtaly veřejné platy skoro o čtvrtinu a nezaměstnanost tam vyskočila až k pětině pracovní síly a u sousedů jen o málo níž. Tvrdá léčba sice otevřela cestu k euru a nakopla litevský vývoz, jehož světový podíl byl v roce dva tisíce devatenáct víc než trojnásobný proti roku dva tisíce, ale Lotyšsku a Litvě od vstupu do Unie ubyla víc než desetina obyvatel, hlavně emigrací se silnou vlnou po krizi. Lotyšsko dál brzdily slabé investice, technologicky jednoduché provozy i útlum rižských bank po zásahu proti praní peněz. Estonsku nestačila ani síť X-tee a firmy jako Skype či Bolt: digitální úřady nezvedly produktivitu běžných podniků a po energetickém šoku ztratili vývozci skoro čtvrtinu tržního podílu – proč špičkové softwarové firmy neutáhnou celou ekonomiku, ukáže epizoda o produktivitě a sektorech.
+Bulharsko po hyperinflaci zavedlo měnovou radu a vyrostlo skoro o dvě třetiny, cizí kapitál před rokem dva tisíce osm ale natekl hlavně do stavebnictví, nemovitostí a financí. Pozdější průmyslový růst pak brzdí nejslabší školství v Unii a veřejné zakázky šité podle tří čtvrtin firem na míru spřízněným podnikům.
+
+Chorvatsko a Slovinsko privatizovaly podniky hlavně zaměstnancům a domácím manažerům a zahraničních továren pak přicházelo málo; podle hodnocení chorvatské ekonomiky tomu způsob privatizace nepřál. Chorvatský dělník v průmyslu vytvoří čtvrtinu hodnoty německého a ze svého růstu o polovinu nasbíralo Chorvatsko zhruba půlku před krizí na dluh a půlku po vstupu do Unie, kdy produktivitu táhly obchod, doprava a jadranské hotely a po pandemii i evropské fondy. Slovinské podniky zůstaly hlavně v domácích rukou, mezi nimi i farmaceutická Krka, celá země dávala na výzkum skoro dvě procenta výkonu ekonomiky a vůči středu ligy vyrostla o čtvrtinu. V krizi po roce dva tisíce osm však stát sanoval banky více než třemi miliardami eur.
+
+V tempu růstu skončilo Řecko poslední z celé sedmadvacítky, protože vůči středu ligy ztratilo skoro čtvrtinu produktivity. Po přijetí eura žilo z levných úvěrů, výstavby bytů a bobtnajícího státu, než krach smazal dvě třetiny investic. Ze země odešlo přes milion a čtvrt lidí a skoro tři čtvrtiny zaměstnanců pracují v mikropodnicích a malých firmách, třeba v rodinných tavernách – jak velikost podniků a školství určují růst, ukážou epizody o produktivitě a školství.
 
 ### Kolo 3 – Tah země: Daňový klín
 
-[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce) a tabulka Kola 3: 1. Litva (39,9 %, +1,4 b., 10. v Evropě), 2. Estonsko (40,9 %, +0,3 b., 12. v Evropě), 3. Lotyšsko (42,0 %, −1,0 b., 18. v Evropě). Výplatní páska vs. obálka s hotovostí.]
+[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance z hrubé mzdy + odvodů zaměstnavatele nad hrubou mzdu vůči celkovým nákladům práce) a tabulka Kola 3: 1. Bulharsko (34,9 %, +6,8 b., 3. v Evropě), 2. Řecko (35,8 %, +5,8 b., 4. v Evropě), 3. Chorvatsko (41,4 %, −0,2 b., 15. v Evropě), 4. Rumunsko (42,8 %, −1,9 b., 19. v Evropě), 5. Slovinsko (45,8 %, −5,4 b., 23. v Evropě).]
 
-Třetí kolo měří daňový klín, tedy součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce. Dlouhodobě přitom dvě třetiny zátěže zaplatí zaměstnanec na nižší čisté výplatě. Pobaltské státy se sice seřadily těsně kolem evropského středu u čtyřiceti procent, ale na pásce zátěž ukazují opačně.
+Třetí kolo měří daňový klín – tedy jaký díl z celkových nákladů práce si ukousne stát a fondy, když sečteme daně a odvody zaměstnance i firmy. Dlouhodobě zhruba dvě třetiny zátěže zaplatí pracující na nižší čisté výplatě. V roce dva tisíce osmnáct Rumunsko přesunulo téměř celé pojistné z firem na zaměstnance a papírově nafouklo hrubé mzdy o pětinu. Člověku stát strhne pětatřicet procent na odvodech plus rovnou daň, zatímco firma nad hrubou mzdu přidává přes dvě procenta, aniž by se změnila čistá výplata.
 
-Estonsko a Lotyšsko ji schovávají za zaměstnavatele: estonské firmy posílají státu nad hrubou mzdu třiatřicetiprocentní sociální daň a lotyšské skoro čtyřiadvacet procent na odvodech. Naopak Litva v roce dva tisíce devatenáct odvody účetně přesunula na pásku zaměstnance, kterému o necelou třetinu navýšila hrubou mzdu. Současně skutečně snížila celkové pojistné, takže si litevský stát ukousne nejméně v regionu, necelých čtyřicet procent nákladů práce.
+Těsně nejnižší zátěž v regionu a třetí nejnižší v celé Evropě drží Bulharsko s necelými pětatřiceti procenty. Hned za ním leží Řecko pod šestatřiceti procenty. Bulharsko vsadilo na rovnou desetiprocentní daň a strop odvodů, takže jako v jediné zemi Unie tam vysokopříjmoví odvádějí menší díl výdělku než lidé s poloviční mzdou. Řecko sice po krizi snížilo odvody o více než pět procentních bodů, nevalorizovaná pásma mu ale s inflací daň potichu zvedají.
 
-Před cílem však zátěž potichu rostla i bez zvyšování sazeb: v Estonsku proto, že rostoucím mzdám ubývala nezdanitelná sleva, a u sousedů nejspíš ze stejného důvodu. V Estonsku tento mizící odpočet vytvořil daňový hrb, který vláda po roce dva tisíce dvacet čtyři nahradila jednotnou nezdanitelnou částkou vykoupenou zvýšením daně z příjmu na dvacet dva procent. Lotyšsko naopak v roce dva tisíce dvacet pět zátěž u průměrné mzdy skoro o dva procentní body snížilo. Přesto se v Pobaltí dál vyplácí asi šestina až pětina mezd načerno v obálkách.
+Na evropském středu kolem jednačtyřiceti procent sedí Chorvatsko, kde zaměstnanec platí pětinu mzdy na důchody a firma nad hrubou mzdu hradí zdravotní pojištění. Nejtěžší klín nesou Rumunsko se skoro třiačtyřiceti procenty a Slovinsko se skoro šestačtyřiceti procenty. V Rumunsku odvody bez stropu drtí nízké mzdy a vláda od roku dva tisíce dvacet pět zrušila úlevy pro informatiky, stavaře a zemědělce. Ve Slovinsku zátěž drží nahoře hlavně progresivní daň z příjmu, která bere nejvyšší sazbu už od poměrně nízké hranice; v roce dva tisíce dvacet čtyři ji na papíře zvedl i povinný zdravotní příspěvek, který ale většině lidí jen nahradil dřívější dobrovolné pojištění, a další léto přibyl dvouprocentní odvod na dlouhodobou péči.
 
 ### Finále regionu: Odhalení pořadí od posledního po vítěze
 
-[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 3. do 1. místa v Pobaltí + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Lotyšsko +5,6 b., Litva −1,9 b., Estonsko −3,0 b.) a srovnání cenových hladin (Estonsko 97,3 %, Lotyšsko 79,8 %, Litva 78,5 % průměru EU).]
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Bulharsko +22,3 b., Slovinsko +10,2 b., Rumunsko −0,6 b., Chorvatsko −5,9 b., Řecko −16,1 b.).]
 
 Jdeme do cíle roku dva tisíce dvacet čtyři, kde střed evropské ligy leží na pětadvaceti tisících třech stech jednotkách kupní síly.
 
-Třetí místo v regionu a pád do evropského suterénu bere Lotyšsko. Lotyš si v eurech vydělá necelých šestnáct tisíc čistého, ale nižší ceny mu výplatu v kupní síle zvednou skoro na dvacet tisíc jednotek. Oproti součtu kol si Lotyšsko polepší skoro o šest bodů: firmy totiž pouštějí na mzdy přes polovinu výkonu a k tlaku na mzdy přispívá i nedostatek lidí po zmíněné emigraci, přičemž zaměstnanci tvoří necelých osmaosmdesát procent pracujících. Lotyšsko bere štítek „Snaží se v těžkých podmínkách“.
+Poslední, páté místo v regionu a pád do evropského suterénu bere Řecko s necelými sedmnácti tisíci jednotkami. Výplatu asi čtrnáct tisíc sto eur mu srážejí ceny přes čtyři pětiny průměru Unie. Oproti součtu kol ztrácí šestnáct bodů; asi třetinu z toho vysvětlí, že na mzdy jde jen necelých sedmatřicet procent výkonu, nejméně v regionu, a pokrytí kolektivními smlouvami se po krizi propadlo z většiny zaměstnanců na osminu. Řečtí pracovníci přitom odpracují nejvíc hodin týdně v celé Unii a Řecko bere štítek „Chybami si přitížil“ s vedlejším „Snaží se v těžkých podmínkách“.
 
-Druhé těsně v evropském suterénu končí Estonsko s jedenadvaceti a půl tisíci jednotkami kupní síly. Estonec si odnese skoro jedenadvacet tisíc eur čistého, nejvíc v Pobaltí, jenže ceny na sedmadevadesáti procentech unijního průměru mu náskok spolknou. Oproti součtu kol Estonsko ztrácí tři body, což je malý rozdíl bez jasné příčiny, protože podíl mezd na výkonu je tu dokonce o něco vyšší než ve středu Evropy, a bere štítek „Snaží se v těžkých podmínkách“.
+Čtvrté místo v evropském suterénu obsazuje Bulharsko s asi dvaceti tisíci sedmi sty jednotkami. V eurech bere Bulhar necelých dvanáct tisíc, těsně pod Rumunem nejméně v regionu, ale cenovky pod třemi pětinami průměru Unie ho posouvají před Řecko. Oproti součtu kol vyskočil o dvaadvacet bodů; menší část vysvětlí, že skoro čtvrtina lidí pracuje mimo zaměstnanecký poměr, a mzdy v posledních letech táhly odchod mladých do ciziny a pravidlo, které váže minimální mzdu na polovinu průměrné. Za krizi devadesátých let bere Bulharsko vedlejší štítek „Chybami si přitížil“, hlavní štítek ale zní „Snaží se v těžkých podmínkách“.
 
-A vítězem pobaltské rozjížďky, který jako jediný pronikl těsně pod střed Evropy, se stává Litva s téměř dvaceti dvěma tisíci sedmi sty jednotkami kupní síly. Litevec sice bere necelých osmnáct tisíc eur, ale nakupuje za méně než čtyři pětiny unijních cen. Ačkoliv celé Pobaltí platí eurem, litevské cenovky zůstávají výrazně níž než estonské – proč se ceny mezi sousedy v eurozóně tak liší, rozklíčujeme v epizodě o cenové hladině. Oproti součtu kol sice Litva o necelé dva body klesá, protože na mzdy jde necelých osmačtyřicet procent výkonu, o něco méně než ve středu Evropy, a tlak na růst výplat zmírnil i příchod skoro osmdesáti tisíc pracovníků z Běloruska a Ukrajiny, přesto vítězí se štítkem „Dělá to dobře a je to vidět“.
+Třetí příčku v evropském suterénu bere Rumunsko s asi jedenadvaceti tisíci třemi sty jednotkami. Výplatu dvanáct tisíc tři sta eur zhodnocují ceny pod třemi pětinami průměru Unie – proč se cenovky na Balkáně tak liší, rozklíčujeme v epizodě o cenové hladině. Se ztrátou necelého bodu končí na součtu kol: podíl mezd klesl pod devětatřicet procent výkonu, k čemuž podle výzkumníků přispělo zrušení celostátních kolektivních smluv; mzdy pak v posledních letech táhlo hlavně zvedání minimální mzdy a státních platů. Rumunsko bere štítek „Těží z okolností“ a vedlejší „Snaží se v těžkých podmínkách“.
+
+Druhé místo v regionu a patro pod středem Evropy bere Chorvatsko s asi jedenadvaceti tisíci sedmi sty jednotkami. V eurech bere Chorvat šestnáct tisíc a nakupuje za tři čtvrtiny unijních cen. Oproti součtu kol ztrácí šest bodů, což je v mezích běžné odchylky; malou část vysvětlí, že se mzdy dělí mezi nejvyšší podíl zaměstnanců v regionu, a Chorvatsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Vítězem regionu ve středu Evropy se stává Slovinsko se čtyřiadvaceti tisíci čtyřmi sty jednotkami kupní síly a více než dvaadvaceti tisíci eury. Nejdražší ceny regionu na devíti desetinách průměru Unie mu z náskoku ukrajují, přesto součet kol přeskočilo o deset bodů. Do výplat tam jde přes dvaapadesát procent výkonu, nejvíc v regionu, a to celý náskok vysvětlí; souvisí s tím vysoká minimální mzda, která táhne i mzdy těsně nad ní, a kolektivní smlouvy pro většinu zaměstnanců, a Slovinsko s čistým štítkem „Dělá to dobře a je to vidět“ opanovalo jihovýchod Evropy.
+
+### Gemini 4 Argon
+
+### Balkán a jihovýchodní Evropa
+
+### Předstartovní showcase
+
+[VIZUÁL: Startovní rošt balkánské a jihovýchodní rozjížďky – pět zemí na startovní čáře: Slovinsko, Chorvatsko, Rumunsko, Bulharsko a Řecko.]
+
+Na start balkánské a jihovýchodní rozjížďky nastupuje pět zemí, které v závodě o čistou výplatu v kupní síle míří od středu evropské ligy až na chvost. Favoritem regionu s šancí na evropský střed je průmyslové Slovinsko, kde nedostatek lidí zvedá mzdy, ale drahý život z nich ukrajuje. O čelo regionu a evropský střed by mělo hrát i Řecko, země námořní dopravy a služeb, jenže nízké výdělky při drahých cenách ho stahují na dno sedmadvacítky. Druhé místo pod evropským středem vyhlíží turistické Chorvatsko s mírnějšími cenami, zatímco Rumunsko a Bulharsko s nejnižšími eurovými platy spoléhají v suterénu na nejlevnější obchody.
+
+### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
+
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Řecko (90,1 %, −10,1 b., 15. v Evropě), 2. Slovinsko (69,9 %, −34,9 b., 17. v Evropě), 3. Chorvatsko (57,4 %, −54,1 b., 19. v Evropě), 4. Bulharsko (35,2 %, −101,5 b., 23. v Evropě), 5. Rumunsko (25,7 %, −132,2 b., 27. v Evropě).]
+
+První kolo rozdává karty roku devatenáct set devadesát šest podle zděděné produktivity. Nejlepší v regionu drželo Řecko, které nepoznalo plánovanou ekonomiku, v Unii bylo od roku devatenáct set osmdesát jedna a startovalo desetinu pod středem ligy. Za západní Evropou však zaostávalo, podle ekonomů možná kvůli příliš náhlému otevření trhu nepřipraveným továrnám; skoro pětina lidí navíc pracovala v zemědělství.
+
+O patro níž začínalo Slovinsko na sedmi desetinách a Chorvatsko pod třemi pětinami středu ligy. Protože jugoslávská samospráva podniků stála mezi plánem a trhem, zažilo Slovinsko jen asi dvacet tři let plánované ekonomiky a tamní pracující měl přes čtyři pětiny strojů a kapitálu střední země ligy. Průmyslové Chorvatsko stálo před rozpadem federace po boku střední Evropy, než válka a ztráta trhů srazily ekonomiku o třetinu.
+
+Ze suterénu vyrážel východ Balkánu. Bulharsko odkládalo reformy, kvůli finanční nekázni v podnicích a bankách spadlo do krachu a hyperinflace a s více než pětinou lidí v zemědělství začínalo těsně nad třetinou středu ligy. Poslední, sedmadvacáté v celé Evropě s čtvrtinou produktivity středu ligy startovalo Rumunsko, kde přes dvě pětiny lidí pracovaly na drobných políčkách jako v záchranné síti proti chudobě.
+
+### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
+
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Rumunsko (3,17×, +97,3 b., 1. v Evropě – dohánění nejisté), 2. Bulharsko (1,63×, +32,5 b., 6. v Evropě – pomalejší než běžné dohánění), 3. Chorvatsko (1,50×, +24,8 b., 8. v Evropě – dohánění nejisté), 4. Slovinsko (1,25×, +6,7 b., 12. v Evropě – dohánění nejisté), 5. Řecko (0,77×, −40,0 b., 27. v Evropě – propad hluboko pod běžné dohánění).]
+
+Druhé kolo sleduje hru zemí do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí prosté dohánění: u Rumunska, Chorvatska a Slovinska je růst nad rámec dohánění nejistý podle způsobu výpočtu, kdežto Bulharsko a Řecko za ním prokazatelně zaostaly.
+
+Nejdrtivější skok v celé sedmadvacítce předvedlo Rumunsko, které vůči středu ligy zvedlo produktivitu víc než třikrát a získalo skoro sto bodů. Skoro dva miliony lidí opustily zemědělství, část odešla do ciziny a růst táhly zahraniční automobilky jako Dacia a informatika v hrstce měst, ač v krizi roku dva tisíce deset vláda seškrtala státní platy o čtvrtinu. Bukurešť ale dosahuje sto třiceti procent unijní produktivity a severovýchod jen dvou pětin, malým domácím firmám chybí kapitál a na výzkum jde půl procenta výkonu.
+
+Bulharsko po krachu zavedlo měnovou radu a vyrostlo skoro o dvě třetiny, cizí kapitál před rokem dva tisíce osm ale natekl hlavně do stavebnictví, nemovitostí a financí. Pozdější průmyslový růst brzdí nejslabší školství v Unii a veřejné zakázky šité podle tří čtvrtin firem na míru spřízněným podnikům.
+
+Chorvatsko a Slovinsko privatizovaly podniky hlavně zaměstnancům a domácím manažerům a zahraničních továren přicházelo málo, čemuž podle hodnocení chorvatské ekonomiky způsob privatizace nepřál. Chorvatský dělník v průmyslu vytvoří čtvrtinu hodnoty německého a z růstu o polovinu nasbírala země půlku před krizí na dluh a půlku v Unii díky obchodu, dopravě, hotelům a po pandemii evropským fondům. Slovinské podniky včetně farmaceutické Krky zůstaly doma, výzkum bral skoro dvě procenta výkonu a produktivita vůči středu ligy vyrostla o čtvrtinu, v krizi po roce dva tisíce osm však stát sanoval banky více než třemi miliardami eur.
+
+V růstu skončilo Řecko poslední v celé sedmadvacítce se ztrátou skoro čtvrtiny produktivity vůči středu ligy. Po přijetí eura žilo z levných úvěrů, výstavby bytů a bobtnajícího státu, než krach smazal dvě třetiny investic. Odešlo přes milion a čtvrt lidí a skoro tři čtvrtiny zaměstnanců pracují v mikropodnicích a malých firmách, třeba tavernách – jak velikost podniků a školství určují růst, ukážou epizody o produktivitě a školství.
+
+### Kolo 3 – Tah země: Daňový klín
+
+[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance z hrubé mzdy + odvodů zaměstnavatele nad hrubou mzdu vůči celkovým nákladům práce) a tabulka Kola 3: 1. Bulharsko (34,9 %, +6,8 b., 3. v Evropě), 2. Řecko (35,8 %, +5,8 b., 4. v Evropě), 3. Chorvatsko (41,4 %, −0,2 b., 15. v Evropě), 4. Rumunsko (42,8 %, −1,9 b., 19. v Evropě), 5. Slovinsko (45,8 %, −5,4 b., 23. v Evropě).]
+
+Třetí kolo měří daňový klín – jaký díl nákladů práce si ukousne stát a fondy v součtu daní a odvodů zaměstnance i firmy, z čehož dlouhodobě zhruba dvě třetiny zaplatí pracující na nižší čisté výplatě. V roce dva tisíce osmnáct Rumunsko přesunulo téměř celé pojistné na zaměstnance a papírově nafouklo hrubé mzdy o pětinu: člověku strhne pětatřicet procent na odvodech plus rovnou daň a firma přidává přes dvě procenta, aniž se změnila čistá výplata.
+
+Těsně nejnižší zátěž v regionu a třetí nejnižší v celé Evropě drží Bulharsko s necelými pětatřiceti procenty, hned za ním Řecko pod šestatřiceti. Bulharsko s rovnou desetiprocentní daní a stropem odvodů je jedinou zemí Unie, kde vysokopříjmoví odvádějí menší díl výdělku než lidé s poloviční mzdou. Řecko po krizi snížilo odvody o více než pět procentních bodů, nevalorizovaná pásma mu ale s inflací daň zvedají.
+
+Na evropském středu kolem jednačtyřiceti procent sedí Chorvatsko s pětinovými důchodovými odvody zaměstnance a zdravotním pojištěním od firmy. Nejtěžší klín nesou Rumunsko se skoro třiačtyřiceti a Slovinsko se skoro šestačtyřiceti procenty. V Rumunsku odvody bez stropu drtí nízké mzdy a od roku dva tisíce dvacet pět skončily úlevy pro informatiky, stavaře a zemědělce. Ve Slovinsku zátěž drží nahoře progresivní daň s nejvyšší sazbou od poměrně nízké hranice; v roce dva tisíce dvacet čtyři ji papírově zvedl povinný zdravotní příspěvek místo dobrovolného pojištění a další léto přibyl dvouprocentní odvod na dlouhodobou péči.
+
+### Finále regionu: Odhalení pořadí od posledního po vítěze
+
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Bulharsko +22,3 b., Slovinsko +10,2 b., Rumunsko −0,6 b., Chorvatsko −5,9 b., Řecko −16,1 b.).]
+
+Jdeme do cíle roku dva tisíce dvacet čtyři, kde střed evropské ligy leží na pětadvaceti tisících třech stech jednotkách kupní síly.
+
+Poslední, páté v regionu a v evropském suterénu končí Řecko s necelými sedmnácti tisíci jednotkami a asi čtrnácti tisíci sto eury, sráženými cenami přes čtyři pětiny průměru Unie. Oproti součtu kol ztrácí šestnáct bodů; asi třetinu vysvětlí, že na mzdy jde necelých sedmatřicet procent výkonu, nejméně v regionu, a kolektivní smlouvy spadly po krizi z většiny zaměstnanců na osminu. Řekové přitom odpracují nejvíc hodin týdně v Unii a berou štítek „Chybami si přitížil“ s vedlejším „Snaží se v těžkých podmínkách“.
+
+Čtvrté v suterénu končí Bulharsko s asi dvaceti tisíci sedmi sty jednotkami. V eurech bere necelých dvanáct tisíc, těsně pod Rumunem nejméně v regionu, ale cenovky pod třemi pětinami průměru Unie ho posouvají před Řecko. Oproti kolům vyskočilo o dvaadvacet bodů; menší část vysvětlí skoro čtvrtina lidí mimo zaměstnanecký poměr a mzdy táhly odchod mladých do ciziny a navázání minimální mzdy na polovinu průměrné. Za krizi z prvního kola má vedlejší štítek „Chybami si přitížil“, hlavní je „Snaží se v těžkých podmínkách“.
+
+Třetí v suterénu bere Rumunsko s asi jedenadvaceti tisíci třemi sty jednotkami. Výplatu dvanáct tisíc tři sta eur zhodnocují stejně nízké ceny jako v Bulharsku – proč se cenovky na Balkáně tak liší, ukáže epizoda o cenové hladině. Se ztrátou necelého bodu končí na součtu kol: podíl mezd klesl pod devětatřicet procent výkonu, k čemuž podle výzkumníků přispělo zrušení celostátních kolektivních smluv, mzdy však táhlo zvedání minimální mzdy a státních platů. Bere štítek „Těží z okolností“ a vedlejší „Snaží se v těžkých podmínkách“.
+
+Druhé v regionu a pod středem Evropy končí Chorvatsko s asi jedenadvaceti tisíci sedmi sty jednotkami, šestnácti tisíci eury a cenami na třech čtvrtinách průměru Unie. Oproti kolům ztrácí šest bodů v mezích běžné odchylky; malou část vysvětlí nejvyšší podíl zaměstnanců v regionu, mezi něž se mzdy dělí, a bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Vítězem regionu ve středu Evropy je Slovinsko se čtyřiadvaceti tisíci čtyřmi sty jednotkami a více než dvaadvaceti tisíci eury. Ceny na devíti desetinách průměru Unie z náskoku ukrajují, přesto součet kol přeskočilo o deset bodů. Do výplat jde přes dvaapadesát procent výkonu, nejvíc v regionu, což celý náskok vysvětlí; souvisí s tím vysoká minimální mzda, táhnoucí i mzdy těsně nad ní, a kolektivní smlouvy pro většinu zaměstnanců, a Slovinsko se štítkem „Dělá to dobře a je to vidět“ opanovalo jihovýchod Evropy.
+
+### Claude (druhé kolo zkrácení podle Ondřeje 27. 10. 2026)
+
+Díky. Mluvený text tvé zkrácené verze má ale pořád 1253 slov (počítám bez nadpisů a řádků [VIZUÁL]), cíl je 1 050–1 150, tedy ubrat ještě asi 153 slov. Zkrať ji podle stejných závazných pravidel jako minule: nic nového, opravené formulace věcně beze změny, čísla a řádky [VIZUÁL] ponech. Škrtej opakované myšlenky, vedlejší ilustrace a druhé příklady k témuž; vysvětlení příčin ve finále zkracuj jen jazykově. Vrať jen celý hotový scénář v Markdownu.
+
+### Gemini 4 Argon
+
+### Balkán a jihovýchodní Evropa
+
+### Předstartovní showcase
+
+[VIZUÁL: Startovní rošt balkánské a jihovýchodní rozjížďky – pět zemí na startovní čáře: Slovinsko, Chorvatsko, Rumunsko, Bulharsko a Řecko.]
+
+V balkánské a jihovýchodní rozjížďce o čistou výplatu v kupní síle míří pět zemí od středu ligy až na chvost. Favoritem regionu útočícím na evropský střed je průmyslové Slovinsko, kde nedostatek lidí zvedá mzdy, ale drahý život z nich ukrajuje. O čelo regionu a střed Evropy by mělo hrát Řecko, země lodí a služeb, jenže nízké výdělky při drahých cenách ho táhnou na dno sedmadvacítky. Druhé místo pod evropským středem vyhlíží turistické Chorvatsko, zatímco Rumunsko a Bulharsko s nejnižšími eurovými platy spoléhají v suterénu na nejlevnější obchody.
+
+### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
+
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Řecko (90,1 %, −10,1 b., 15. v Evropě), 2. Slovinsko (69,9 %, −34,9 b., 17. v Evropě), 3. Chorvatsko (57,4 %, −54,1 b., 19. v Evropě), 4. Bulharsko (35,2 %, −101,5 b., 23. v Evropě), 5. Rumunsko (25,7 %, −132,2 b., 27. v Evropě).]
+
+První kolo rozdává karty roku devatenáct set devadesát šest podle zděděné produktivity. Nejlepší drželo Řecko, které nepoznalo plánovanou ekonomiku, v Unii bylo od roku devatenáct set osmdesát jedna a začínalo desetinu pod středem ligy. Za západní Evropou zaostávalo, podle ekonomů možná kvůli náhlému otevření trhu nepřipraveným továrnám, a skoro pětina lidí pracovala v zemědělství.
+
+O patro níž stálo Slovinsko na sedmi desetinách a Chorvatsko pod třemi pětinami středu ligy. Díky jugoslávské samosprávě podniků mezi plánem a trhem zažilo Slovinsko jen asi dvacet tři let plánované ekonomiky a pracující měl přes čtyři pětiny kapitálu střední země ligy. Chorvatsko stálo před rozpadem federace u střední Evropy, než válka a ztráta trhů srazily ekonomiku o třetinu.
+
+Východ Balkánu vyrážel ze suterénu. Bulharsko odkládalo reformy, kvůli finanční nekázni podniků a bank spadlo do krachu a hyperinflace a s více než pětinou lidí v zemědělství začínalo těsně nad třetinou středu ligy. Poslední, sedmadvacáté v Evropě s čtvrtinou produktivity středu ligy bylo Rumunsko, kde přes dvě pětiny lidí pracovaly na drobných políčkách jako v záchranné síti.
+
+### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
+
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Rumunsko (3,17×, +97,3 b., 1. v Evropě – dohánění nejisté), 2. Bulharsko (1,63×, +32,5 b., 6. v Evropě – pomalejší než běžné dohánění), 3. Chorvatsko (1,50×, +24,8 b., 8. v Evropě – dohánění nejisté), 4. Slovinsko (1,25×, +6,7 b., 12. v Evropě – dohánění nejisté), 5. Řecko (0,77×, −40,0 b., 27. v Evropě – propad hluboko pod běžné dohánění).]
+
+Druhé kolo sleduje hru do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění: u Rumunska, Chorvatska a Slovinska je růst nad rámec dohánění nejistý podle způsobu výpočtu, kdežto Bulharsko a Řecko za ním prokazatelně zaostaly.
+
+Nejdrtivější skok v sedmadvacítce předvedlo Rumunsko: vůči středu ligy zvedlo produktivitu víc než třikrát za skoro sto bodů. Skoro dva miliony lidí opustily zemědělství, část do ciziny, a růst táhly cizí automobilky jako Dacia a informatika v hrstce měst. Bukurešť však má sto třicet procent unijní produktivity a severovýchod dvě pětiny, malým firmám chybí kapitál a výzkum bere půl procenta výkonu.
+
+Bulharsko po krachu zavedlo měnovou radu a vyrostlo skoro o dvě třetiny, cizí kapitál před rokem dva tisíce osm ale natekl hlavně do stavebnictví, nemovitostí a financí. Pozdější průmyslový růst brzdí nejslabší školství v Unii a veřejné zakázky šité podle tří čtvrtin firem na míru spřízněným podnikům.
+
+Chorvatsko a Slovinsko privatizovaly podniky hlavně zaměstnancům a domácím manažerům; podle hodnocení chorvatské ekonomiky to nepřálo přílivu cizích továren. Chorvatský průmyslový dělník vytvoří čtvrtinu hodnoty německého; z růstu o polovinu přišla půlka před krizí na dluh a půlka v Unii z obchodu, dopravy, hotelů a fondů. Slovinsko s domácími podniky jako Krka dávalo na výzkum skoro dvě procenta výkonu a vyrostlo o čtvrtinu, po roce dva tisíce osm však stát sanoval banky více než třemi miliardami eur.
+
+V růstu skončilo Řecko poslední v sedmadvacítce se ztrátou skoro čtvrtiny produktivity vůči středu ligy. Po přijetí eura žilo z levných úvěrů, výstavby bytů a bobtnajícího státu, než krach smazal dvě třetiny investic. Odešlo přes milion a čtvrt lidí a skoro tři čtvrtiny zaměstnanců pracují v malých firmách a mikropodnicích jako taverny – o vlivu velikosti firem a školství budou další epizody.
+
+### Kolo 3 – Tah země: Daňový klín
+
+[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance z hrubé mzdy + odvodů zaměstnavatele nad hrubou mzdu vůči celkovým nákladům práce) a tabulka Kola 3: 1. Bulharsko (34,9 %, +6,8 b., 3. v Evropě), 2. Řecko (35,8 %, +5,8 b., 4. v Evropě), 3. Chorvatsko (41,4 %, −0,2 b., 15. v Evropě), 4. Rumunsko (42,8 %, −1,9 b., 19. v Evropě), 5. Slovinsko (45,8 %, −5,4 b., 23. v Evropě).]
+
+Třetí kolo měří daňový klín – díl nákladů práce, který v součtu daní a odvodů zaměstnance i firmy berou stát a fondy; dlouhodobě zhruba dvě třetiny nese pracující na nižší čisté výplatě. Roku dva tisíce osmnáct Rumunsko přesunulo pojistné na zaměstnance a papírově zvedlo hrubé mzdy o pětinu: člověku strhne pětatřicet procent odvodů plus rovnou daň a firma přidá přes dvě procenta beze změny čisté výplaty.
+
+Těsně nejnižší zátěž v regionu a třetí v Evropě drží Bulharsko s necelými pětatřiceti procenty, za ním Řecko pod šestatřiceti. Bulharsko s rovnou desetiprocentní daní a stropem odvodů je jedinou zemí Unie, kde vysokopříjmoví odvádějí menší díl výdělku než lidé s poloviční mzdou. Řecko po krizi snížilo odvody o více než pět procentních bodů, nevalorizovaná pásma mu ale s inflací daň zvedají.
+
+Na středu ligy kolem jednačtyřiceti procent sedí Chorvatsko s pětinovými důchodovými odvody zaměstnance a zdravotním pojištěním od firmy. Nejtěžší klín nesou Rumunsko se skoro třiačtyřiceti a Slovinsko se skoro šestačtyřiceti procenty. V Rumunsku odvody bez stropu drtí nízké mzdy a roku dva tisíce dvacet pět skončily oborové úlevy. Ve Slovinsku zátěž drží progresivní daň s nejvyšší sazbou od nízké hranice; roku dva tisíce dvacet čtyři ji papírově zvedl povinný zdravotní příspěvek místo dobrovolného a další léto dvouprocentní odvod na dlouhodobou péči.
+
+### Finále regionu: Odhalení pořadí od posledního po vítěze
+
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Bulharsko +22,3 b., Slovinsko +10,2 b., Rumunsko −0,6 b., Chorvatsko −5,9 b., Řecko −16,1 b.).]
+
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
+
+Páté v regionu a v evropském suterénu je Řecko s necelými sedmnácti tisíci jednotkami a asi čtrnácti tisíci sto eury, sráženými cenami přes čtyři pětiny unijního průměru. Oproti kolům ztrácí šestnáct bodů; asi třetinu vysvětlí nejnižší podíl mezd na výkonu v regionu pod sedmatřiceti procenty po pádu kolektivních smluv z většiny zaměstnanců na osminu. Řekové odpracují nejvíc hodin týdně v Unii a berou štítek „Chybami si přitížil“ s vedlejším „Snaží se v těžkých podmínkách“.
+
+Čtvrté v suterénu je Bulharsko s asi dvaceti tisíci sedmi sty jednotkami. V eurech bere necelých dvanáct tisíc, těsně pod Rumunem nejméně v regionu, cenovky pod třemi pětinami unijního průměru ho ale řadí před Řecko. Oproti kolům vyskočilo o dvaadvacet bodů; menší část vysvětlí skoro čtvrtina lidí mimo zaměstnanecký poměr a mzdy táhly odchod mladých a navázání minimální mzdy na polovinu průměrné. Má štítek „Snaží se v těžkých podmínkách“ a za úvodní krizi vedlejší „Chybami si přitížil“.
+
+Třetí v suterénu je Rumunsko s asi jedenadvaceti tisíci třemi sty jednotkami. Výplatu dvanáct tisíc tři sta eur zhodnocují stejně nízké ceny jako v Bulharsku – proč se balkánské cenovky liší, ukáže epizoda o cenové hladině. Se ztrátou necelého bodu sedí na součtu kol: podíl mezd klesl pod devětatřicet procent výkonu, k čemuž podle výzkumníků přispělo zrušení celostátních kolektivních smluv, mzdy však táhlo zvedání minimální mzdy a státních platů. Bere štítek „Těží z okolností“ a vedlejší „Snaží se v těžkých podmínkách“.
+
+Druhé a pod středem Evropy je Chorvatsko s asi jedenadvaceti tisíci sedmi sty jednotkami, šestnácti tisíci eury a cenami na třech čtvrtinách unijního průměru. Ztráta šesti bodů oproti kolům je v běžné odchylce; malou část vysvětlí nejvyšší podíl zaměstnanců v regionu, mezi něž se mzdy dělí, a bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Vítězem ve středu Evropy je Slovinsko se čtyřiadvaceti tisíci čtyřmi sty jednotkami a více než dvaadvaceti tisíci eury. Ceny na devíti desetinách unijního průměru z náskoku ukrajují, přesto součet kol přeskočilo o deset bodů. Celý náskok vysvětlí nejvyšší podíl výplat na výkonu v regionu přes dvaapadesát procent, spojený s vysokou minimální mzdou, táhnoucí i mzdy těsně nad ní, a kolektivními smlouvami pro většinu zaměstnanců; se štítkem „Dělá to dobře a je to vidět“ opanovalo jihovýchod Evropy.
 
 ### Claude (opravy)
 
@@ -306,55 +338,63 @@ OPRAVY OD KONTROLORA (Claude). Níže je seznam míst ve tvém posledním scén�
 
 AKTUÁLNÍ SCÉNÁŘ:
 
-### Pobaltí
+### Balkán a jihovýchodní Evropa
 
 ### Předstartovní showcase
 
-[VIZUÁL: Mapa Pobaltí na startovní čáře – digitální Tallinn se symbolem státní sítě X-tee, průmyslový a technologický Vilnius a rižský přístav s bankovní čtvrtí; ukazatel očekávání v pelotonu.]
+[VIZUÁL: Startovní rošt balkánské a jihovýchodní rozjížďky – pět zemí na startovní čáře: Slovinsko, Chorvatsko, Rumunsko, Bulharsko a Řecko.]
 
-Do pobaltské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupují tři sousedé, kteří bojují o únik z dolních pater pelotonu. Jako favorit regionu startuje Estonsko, země moderních služeb a informačních technologií, kde výplatám pomáhá možnost odejít za prací do Finska, ale sráží je nejdražší život v Pobaltí. Na pobaltský trůn i průnik ke středu soutěže útočí Litva, opřená o průmysl, rostoucí technologie a citelně levnější život. Naopak Lotyšsku s jedním z nejvyšších podílů nízko placených míst v Unii hrozí i přes nižší ceny pád na chvost regionu i celé sedmadvacítky.
+V balkánské a jihovýchodní rozjížďce o čistou výplatu v kupní síle míří pět zemí od středu ligy až na chvost. Favoritem regionu útočícím na evropský střed je průmyslové Slovinsko, kde nedostatek lidí zvedá mzdy a život je nejdražší v regionu. O čelo regionu a střed Evropy by mělo hrát Řecko, země lodí a služeb, jenže při nízkých výdělcích a cenách vyšších než u většiny sousedů mu hrozí pád až na chvost ligy. O střed regionu těsně pod evropským středem bojuje turistické Chorvatsko, zatímco Rumunsko a Bulharsko, kde se spolu nakupuje nejlevněji v Evropě, startují z chvostu regionu i ligy.
 
 ### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
 
-[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Estonsko (35,1 %, −102,0 b., 24. v Evropě), 2. Litva (34,4 %, −104,0 b., 25. v Evropě), 3. Lotyšsko (32,9 %, −108,1 b., 26. v Evropě). Rozpadající se sovětské tovární haly a přetrhané železniční tratě na východ.]
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Řecko (90,1 %, −10,1 b., 15. v Evropě), 2. Slovinsko (69,9 %, −34,9 b., 17. v Evropě), 3. Chorvatsko (57,4 %, −54,1 b., 19. v Evropě), 4. Bulharsko (35,2 %, −101,5 b., 23. v Evropě), 5. Rumunsko (25,7 %, −132,2 b., 27. v Evropě).]
 
-První kolo rozdává startovní karty roku devatenáct set devadesát šest podle zděděné produktivity. Pobaltské státy vyrážely ze samotného dna pelotonu, ze čtyřiadvacátého až šestadvacátého místa v celé Evropě, kdy hlouběji začínalo jen Rumunsko. Estonský, litevský i lotyšský dělník tehdy u sovětských soustruhů vyprodukovali jen zhruba třetinu toho, co pracující ve střední zemi ligy, takže si každá ze tří zemí na startu připsala ztrátu přes sto bodů.
+První kolo rozdává karty roku devatenáct set devadesát šest podle zděděné produktivity. Nejlepší drželo Řecko, které nepoznalo plánovanou ekonomiku, v Unii bylo od roku devatenáct set osmdesát jedna a začínalo desetinu pod středem ligy. Za západní Evropou zaostávalo, podle ekonomů možná kvůli náhlému otevření trhu nepřipraveným továrnám, a skoro pětina lidí pracovala v zemědělství.
 
-Pobaltí totiž netvořilo jen vnější prstenec satelitů jako střední Evropa, ale bylo přímo pohlceno do plánované ekonomiky Sovětského svazu. Místní továrny a přístavy stavěli moskevští plánovači jako úzce zaměřené dílny pro sovětský trh, odříznuté od západních strojů i obchodu. Když se impérium zhroutilo, udeřil rozpad na region mnohem drtivěji než na zbytek východního bloku, protože moskevské odběratelské řetězce se přes noc přetrhaly.
+O patro níž stálo Slovinsko na sedmi desetinách a Chorvatsko pod třemi pětinami středu ligy. Díky jugoslávské samosprávě podniků mezi plánem a trhem zažilo Slovinsko jen asi dvacet tři let plánované ekonomiky a pracující měl přes čtyři pětiny kapitálu na pracujícího ve střední zemi ligy. Chorvatsko stálo před rozpadem federace u střední Evropy, než válka a ztráta trhů srazily ekonomiku o třetinu.
 
-V Estonsku se výroba propadla o více než třetinu, Litva ztratila dvě pětiny produkce a v Lotyšsku se výroba zřítila o více než polovinu. Ještě na přelomu tisíciletí tak lotyšské a litevské podniky paběrkovaly zhruba na dvou třetinách předtransformační úrovně a příjem na obyvatele v regionu nedosahoval v polovině devadesátých let ani tří desetin starých zemí Unie.
+Východ Balkánu vyrážel ze suterénu. Bulharsko odkládalo reformy, kvůli finanční nekázni podniků a bank spadlo do krachu a hyperinflace a s více než pětinou lidí v zemědělství začínalo těsně nad třetinou středu ligy. Poslední, sedmadvacáté v Evropě s čtvrtinou produktivity středu ligy bylo Rumunsko, kde přes dvě pětiny lidí pracovaly na drobných políčkách, která sloužila jako záchranná síť.
 
 ### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
 
-[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Litva (2,48×, +73,7 b., 2. v Evropě – rostla nad rámec dohánění; v reálných cenách +193 %, 1. v lize), 2. Estonsko (2,37×, +68,9 b., 3. v Evropě – nejisté, v reálných cenách +139 %), 3. Lotyšsko (2,16×, +60,0 b., 4. v Evropě – nejisté, v reálných cenách +160 %). Pád lotyšské banky Parex.]
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Rumunsko (3,17×, +97,3 b., 1. v Evropě – dohánění nejisté), 2. Bulharsko (1,63×, +32,5 b., 6. v Evropě – pomalejší než běžné dohánění), 3. Chorvatsko (1,50×, +24,8 b., 8. v Evropě – dohánění nejisté), 4. Slovinsko (1,25×, +6,7 b., 12. v Evropě – dohánění nejisté), 5. Řecko (0,77×, −40,0 b., 27. v Evropě – propad hluboko pod běžné dohánění).]
 
-Druhé kolo sleduje, jak země s rozdanými kartami hrály do roku dva tisíce dvacet čtyři. Pobaltské státy sice obsadily stupně těsně pod vrcholem v celé Evropě, jenže přes čtyři pětiny rozdílů v růstu napříč ligou vysvětlí prosté dohánění z nízkého základu. Růst nad rámec dohánění tak prokazatelně předvedla jen Litva, která na druhém místě v celé sedmadvacítce zvedla produktivitu vůči střední zemi skoro dvaapůlkrát a ve stálých cenách rostla nejrychleji v lize. U Estonska a Lotyšska s více než dvojnásobným růstem je přínos nad dohánění nejistý: Estonsko dohánění předběhlo jen v kupní síle, ve stálých cenách rostlo zhruba podle dohánění, a u Lotyšska záleží na způsobu výpočtu.
+Druhé kolo sleduje hru do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění: u Rumunska, Chorvatska a Slovinska je růst nad rámec dohánění nejistý podle způsobu výpočtu, kdežto Bulharsko a Řecko za ním prokazatelně zaostaly.
 
-Zpočátku přivázaly Estonsko a Litva měny pevně k marce a dolaru a zavedly rovnou daň. Po ruské krizi se region napojil na severské trhy a vstup do Unie zvedl produktivitu v úvodní dekádě asi o pětinu, přičemž v Litvě společné podniky se zahraničními investory vytáhly nahoru místní dodavatele.
+Nejdrtivější skok v sedmadvacítce předvedlo Rumunsko: vůči středu ligy zvedlo produktivitu víc než třikrát za skoro sto bodů. Skoro dva miliony lidí opustily zemědělství, část do ciziny, a později růst táhly cizí automobilky jako Dacia a informatika v hrstce měst. Bukurešť však má sto třicet procent unijní produktivity a severovýchod dvě pětiny. Malým firmám chybí kapitál a výzkum bere půl procenta výkonu.
 
-Pak ale úvěry ze skandinávských bank nafoukly realitní bublinu, při níž lotyšské mzdy skákaly o pětinu ročně. Po krachu banky Parex v roce dva tisíce osm musela Riga žádat o mezinárodní záchranu a pobaltská výroba spadla až o čtvrtinu. Místo oslabení měn zvolily vlády vnitřní znehodnocení: v Lotyšsku seškrtaly veřejné platy skoro o čtvrtinu a nezaměstnanost tam vyskočila až k pětině pracovní síly a u sousedů jen o málo níž. Tvrdá léčba sice otevřela cestu k euru a nakopla litevský vývoz, jehož světový podíl byl v roce dva tisíce devatenáct víc než trojnásobný proti roku dva tisíce, ale Lotyšsku a Litvě od vstupu do Unie ubyla víc než desetina obyvatel, hlavně emigrací se silnou vlnou po krizi. Lotyšsko dál brzdily slabé investice, technologicky jednoduché provozy i útlum rižských bank po zásahu proti praní peněz. Estonsku nestačila ani síť X-tee a firmy jako Skype či Bolt: digitální úřady nezvedly produktivitu běžných podniků a po energetickém šoku ztratili vývozci skoro čtvrtinu tržního podílu – proč špičkové softwarové firmy neutáhnou celou ekonomiku, ukáže epizoda o produktivitě a sektorech.
+Bulharsko po krachu zavedlo měnovou radu a vyrostlo skoro o dvě třetiny, cizí kapitál před rokem dva tisíce osm ale natekl hlavně do stavebnictví, nemovitostí a financí. Pozdější průmyslový růst brzdí nejslabší školství v Unii a veřejné zakázky šité podle tří čtvrtin firem na míru spřízněným podnikům.
+
+Chorvatsko a Slovinsko privatizovaly podniky hlavně zaměstnancům a domácím manažerům; podle hodnocení chorvatské ekonomiky to nepřálo přílivu cizích továren. Chorvatský průmyslový dělník vytvoří čtvrtinu hodnoty německého; z růstu o polovinu přišla zhruba půlka před krizí na dluh a půlka v Unii z obchodu, dopravy, hotelů a fondů. Slovinsko s domácími podniky jako Krka dávalo na výzkum skoro dvě procenta výkonu a vůči středu ligy vyrostlo o čtvrtinu, po roce dva tisíce osm však stát sanoval banky více než třemi miliardami eur.
+
+V růstu skončilo Řecko poslední v sedmadvacítce se ztrátou skoro čtvrtiny produktivity vůči středu ligy. Po přijetí eura žilo z levných úvěrů, výstavby bytů a bobtnajícího státu, než krach smazal dvě třetiny investic. Odešlo přes milion a čtvrt lidí a skoro tři čtvrtiny zaměstnanců pracují v malých firmách a mikropodnicích jako taverny – o vlivu velikosti firem a školství budou další epizody.
 
 ### Kolo 3 – Tah země: Daňový klín
 
-[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce) a tabulka Kola 3: 1. Litva (39,9 %, +1,4 b., 10. v Evropě), 2. Estonsko (40,9 %, +0,3 b., 12. v Evropě), 3. Lotyšsko (42,0 %, −1,0 b., 18. v Evropě). Výplatní páska vs. obálka s hotovostí.]
+[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance z hrubé mzdy + odvodů zaměstnavatele nad hrubou mzdu vůči celkovým nákladům práce) a tabulka Kola 3: 1. Bulharsko (34,9 %, +6,8 b., 3. v Evropě), 2. Řecko (35,8 %, +5,8 b., 4. v Evropě), 3. Chorvatsko (41,4 %, −0,2 b., 15. v Evropě), 4. Rumunsko (42,8 %, −1,9 b., 19. v Evropě), 5. Slovinsko (45,8 %, −5,4 b., 23. v Evropě).]
 
-Třetí kolo měří daňový klín, tedy součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce. Dlouhodobě přitom dvě třetiny zátěže zaplatí zaměstnanec na nižší čisté výplatě. Pobaltské státy se sice seřadily těsně kolem evropského středu u čtyřiceti procent, ale na pásce zátěž ukazují opačně.
+Třetí kolo měří daňový klín – díl nákladů práce, který v součtu daní a odvodů zaměstnance i firmy berou stát a fondy; dlouhodobě zhruba dvě třetiny nese pracující na nižší čisté výplatě. Roku dva tisíce osmnáct Rumunsko přesunulo pojistné na zaměstnance a papírově zvedlo hrubé mzdy o pětinu. Člověku strhne pětatřicet procent odvodů plus rovnou daň a firma přidá přes dvě procenta beze změny čisté výplaty.
 
-Estonsko a Lotyšsko ji schovávají za zaměstnavatele: estonské firmy posílají státu nad hrubou mzdu třiatřicetiprocentní sociální daň a lotyšské skoro čtyřiadvacet procent na odvodech. Naopak Litva v roce dva tisíce devatenáct odvody účetně přesunula na pásku zaměstnance, kterému o necelou třetinu navýšila hrubou mzdu. Současně skutečně snížila celkové pojistné, takže si litevský stát ukousne nejméně v regionu, necelých čtyřicet procent nákladů práce.
+Těsně nejnižší zátěž v regionu a třetí v Evropě drží Bulharsko s necelými pětatřiceti procenty, za ním Řecko pod šestatřiceti. Bulharsko s rovnou desetiprocentní daní a stropem odvodů je jedinou zemí Unie, kde vysokopříjmoví odvádějí menší díl výdělku než lidé s poloviční mzdou. Řecko po krizi snížilo odvody o více než pět procentních bodů, nevalorizovaná pásma mu ale s inflací daň zvedají.
 
-Před cílem však zátěž potichu rostla i bez zvyšování sazeb: v Estonsku proto, že rostoucím mzdám ubývala nezdanitelná sleva, a u sousedů nejspíš ze stejného důvodu. V Estonsku tento mizící odpočet vytvořil daňový hrb, který vláda po roce dva tisíce dvacet čtyři nahradila jednotnou nezdanitelnou částkou vykoupenou zvýšením daně z příjmu na dvacet dva procent. Lotyšsko naopak v roce dva tisíce dvacet pět zátěž u průměrné mzdy skoro o dva procentní body snížilo. Přesto se v Pobaltí dál vyplácí asi šestina až pětina mezd načerno v obálkách.
+Na středu ligy kolem jednačtyřiceti procent sedí Chorvatsko s pětinovými důchodovými odvody zaměstnance a zdravotním pojištěním od firmy. Nejtěžší klín nesou Rumunsko se skoro třiačtyřiceti a Slovinsko se skoro šestačtyřiceti procenty. V Rumunsku odvody bez stropu drtí nízké mzdy a roku dva tisíce dvacet pět skončily oborové úlevy. Ve Slovinsku zátěž drží hlavně progresivní daň s nejvyšší sazbou od poměrně nízké hranice; roku dva tisíce dvacet čtyři ji papírově zvedl povinný zdravotní příspěvek místo dobrovolného a další léto dvouprocentní odvod na dlouhodobou péči.
 
 ### Finále regionu: Odhalení pořadí od posledního po vítěze
 
-[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 3. do 1. místa v Pobaltí + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Lotyšsko +5,6 b., Litva −1,9 b., Estonsko −3,0 b.) a srovnání cenových hladin (Estonsko 97,3 %, Lotyšsko 79,8 %, Litva 78,5 % průměru EU).]
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Bulharsko +22,3 b., Slovinsko +10,2 b., Rumunsko −0,6 b., Chorvatsko −5,9 b., Řecko −16,1 b.).]
 
-Jdeme do cíle roku dva tisíce dvacet čtyři, kde střed evropské ligy leží na pětadvaceti tisících třech stech jednotkách kupní síly.
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
 
-Třetí místo v regionu a pád do evropského suterénu bere Lotyšsko. Lotyš si v eurech vydělá necelých šestnáct tisíc čistého, ale nižší ceny mu výplatu v kupní síle zvednou skoro na dvacet tisíc jednotek. Oproti součtu kol si Lotyšsko polepší skoro o šest bodů: firmy totiž pouštějí na mzdy přes polovinu výkonu a k tlaku na mzdy přispívá i nedostatek lidí po zmíněné emigraci, přičemž zaměstnanci tvoří necelých osmaosmdesát procent pracujících. Lotyšsko bere štítek „Snaží se v těžkých podmínkách“.
+Páté v regionu a v evropském suterénu je Řecko s necelými sedmnácti tisíci jednotkami. Bere asi čtrnáct tisíc sto eur, s cenami přes čtyři pětiny unijního průměru, vyššími než u sousedů na chvostu. Oproti kolům ztrácí šestnáct bodů; asi třetinu vysvětlí nejnižší podíl mezd na výkonu v regionu pod sedmatřiceti procenty, a kolektivní smlouvy se po krizi propadly z většiny zaměstnanců na osminu. Řekové odpracují nejvíc hodin týdně v Unii a berou štítek „Chybami si přitížil“ s vedlejším „Snaží se v těžkých podmínkách“.
 
-Druhé těsně v evropském suterénu končí Estonsko s jedenadvaceti a půl tisíci jednotkami kupní síly. Estonec si odnese skoro jedenadvacet tisíc eur čistého, nejvíc v Pobaltí, jenže ceny na sedmadevadesáti procentech unijního průměru mu náskok spolknou. Oproti součtu kol Estonsko ztrácí tři body, což je malý rozdíl bez jasné příčiny, protože podíl mezd na výkonu je tu dokonce o něco vyšší než ve středu Evropy, a bere štítek „Snaží se v těžkých podmínkách“.
+Čtvrté v suterénu je Bulharsko s asi dvaceti tisíci sedmi sty jednotkami. V eurech bere necelých dvanáct tisíc, těsně pod Rumunem nejméně v regionu, cenovky pod třemi pětinami unijního průměru ho ale řadí před Řecko. Oproti kolům vyskočilo o dvaadvacet bodů; menší část vysvětlí skoro čtvrtina lidí mimo zaměstnanecký poměr a mzdy v posledních letech zvedal odchod mladých a navázání minimální mzdy na polovinu průměrné. Má štítek „Snaží se v těžkých podmínkách“ a za úvodní krizi vedlejší „Chybami si přitížil“.
 
-A vítězem pobaltské rozjížďky, který jako jediný pronikl těsně pod střed Evropy, se stává Litva s téměř dvaceti dvěma tisíci sedmi sty jednotkami kupní síly. Litevec sice bere necelých osmnáct tisíc eur, ale nakupuje za méně než čtyři pětiny unijních cen. Ačkoliv celé Pobaltí platí eurem, litevské cenovky zůstávají výrazně níž než estonské – proč se ceny mezi sousedy v eurozóně tak liší, rozklíčujeme v epizodě o cenové hladině. Oproti součtu kol sice Litva o necelé dva body klesá, protože na mzdy jde necelých osmačtyřicet procent výkonu, o něco méně než ve středu Evropy, a tlak na růst výplat zmírnil i příchod skoro osmdesáti tisíc pracovníků z Běloruska a Ukrajiny, přesto vítězí se štítkem „Dělá to dobře a je to vidět“.
+Třetí v suterénu je Rumunsko s asi jedenadvaceti tisíci třemi sty jednotkami. Výplatu dvanáct tisíc tři sta eur zhodnocují stejně nízké ceny jako v Bulharsku – proč se balkánské cenovky liší, ukáže epizoda o cenové hladině. Se ztrátou necelého bodu sedí na součtu kol: podíl mezd klesl pod devětatřicet procent výkonu, k čemuž podle výzkumníků přispělo zrušení celostátních kolektivních smluv, mzdy však v posledních letech táhlo zvedání minimální mzdy a státních platů. Bere štítek „Těží z okolností“ a vedlejší „Snaží se v těžkých podmínkách“.
+
+Druhé a pod středem Evropy je Chorvatsko s asi jedenadvaceti tisíci sedmi sty jednotkami. Bere šestnáct tisíc eur při cenách na třech čtvrtinách unijního průměru. Ztráta šesti bodů oproti kolům je v běžné odchylce; malou část vysvětlí nejvyšší podíl zaměstnanců v regionu, mezi něž se mzdy dělí, a bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Vítězem ve středu Evropy je Slovinsko se čtyřiadvaceti tisíci čtyřmi sty jednotkami a více než dvaadvaceti tisíci eury. Ceny na devíti desetinách unijního průměru z náskoku ukrajují, přesto součet kol přeskočilo o deset bodů. Celý náskok vysvětlí nejvyšší podíl výplat na výkonu v regionu přes dvaapadesát procent, spojený s vysokou minimální mzdou, táhnoucí i mzdy těsně nad ní, a kolektivními smlouvami pro většinu zaměstnanců; se štítkem „Dělá to dobře a je to vidět“ opanovalo jihovýchod Evropy.
 
 
 ---
@@ -364,67 +404,79 @@ SEZNAM OPRAV:
 Ondřej zjistil, že scénáře vynechávají mechanismy, bez kterých divák zemi nepochopí, ačkoli je analýza dokládá. Doplň níže uvedená jádra zemí a odstraň metodické poznámky. Fakta ber jen odsud a z podkladů, nic nepřidávej. Každé jádro řekni jednou, jednou až dvěma větami a nejvýš s jedním dvěma čísly; kam patří (kolo 2, kolo 3, nebo finále jako vysvětlení toho, co kola nevysvětlí), rozhodni ty.
 
 
-1. ESTONSKO, JÁDRO (Práce ve Finsku na dosah). Musí zaznít: Estonci mohou za výrazně lépe placenou prací do Finska dojíždět nebo odejít a podle Mezinárodního měnového fondu jim tato možnost v napjatém trhu práce dává přídavnou vyjednávací sílu, kterou mnozí využívají. Směr: Možnost odejít nebo dojíždět posiluje vyjednávací pozici zaměstnanců a zrychluje růst mezd (hlavně vývoj, zčásti úroveň). NESMÍ: Nesmí říct, že Estonci masově emigrovali: od vstupu do EU do zprávy ECB z roku 2017 ubylo Estonsku jen 3 % obyvatel proti 12 % v Lotyšsku a 14 % v Litvě. Nesmí tvrdit, že to vysvětluje náskok Estonska před sousedy v eurech ani ztrátu 3 bodů proti kolům, a nesmí uvádět číslo dopadu (nikdo ho nespočítal). Nesmí z toho udělat obecný „nedostatek pracovníků“.
+1. SLOVINSKO, JÁDRO (Vysoká minimální mzda a stlačené mzdy). Musí zaznít: Ve Slovinsku je minimální mzda vůči průměrné mzdě jedna z nejvyšších v EU a mzdy se tlačí těsně nad ní: asi čtvrtina zaměstnanců měla v roce 2024 základní mzdu nejvýš o 5 % vyšší než minimum. Proto má podle slovinské centrální banky každé zvýšení minima významný dopad na celkový vývoj mezd. Směr: Zvyšování minima zvedá mzdy u minima a těsně nad ním (změřeno u zvýšení o 22,9 % v roce 2010), přelévání do vyšších pásem je podle centrální banky relativně omezené; struktura je stlačená a nerovnost nízká. Zvýšení z roku 2010 zároveň přineslo nízko placeným velkou a trvalou ztrátu zaměstnání. Instituce netvrdí, že stlačená struktura zvyšuje nebo snižuje průměrnou mzdu. NESMÍ: Nesmí říct, že vysoká minimální mzda vysvětluje slovinské vítězství nebo náskok nad součtem kol (současná věta „Celý náskok vysvětlí … spojený s vysokou minimální mzdou“ to přehání), ani že minimum táhne nahoru všechny mzdy (přelévání je omezené, prokázané jen těsně nad minimem). Nesmí zamlčet ztrátu práce nízko placených, když zmíní účinek zvýšení z roku 2010. Nesmí vydávat nominální růst minima (+18,9 % v letech 2022–2025) za reálný, ani tvrdit, že čtvrtina zaměstnanců bere přesně minimum (jde o základní mzdu do 105 % minima).
 
-2. METODIKA VEN Z HLASU, kolo 2: věty „Růst nad rámec dohánění tak prokazatelně předvedla jen Litva … a ve stálých cenách rostla nejrychleji v lize.“ a „U Estonska a Lotyšska s více než dvojnásobným růstem je přínos nad dohánění nejistý: Estonsko dohánění předběhlo jen v kupní síle, ve stálých cenách rostlo zhruba podle dohánění, a u Lotyšska záleží na způsobu výpočtu.“ nahraď obyčejně: Litva vyrostla víc, než se u tak chudé země dalo čekat; u Estonska a Lotyšska srovnání s očekáváním neříkej.
+2. CHORVATSKO, JÁDRO (Platová reforma veřejné služby 2024). Musí zaznít: V roce 2024 Chorvatsko novým zákonem o platech ve státní a veřejné službě zavedlo stejný plat za práci stejné složitosti a zvedlo odměny, aby přilákalo kvalifikované lidi; reálné platy ve veřejném sektoru vzrostly asi o pětinu, v soukromém asi o 7,5 % a podle Mezinárodního měnového fondu veřejný sektor táhl celkový růst mezd. Směr: Zvedlo průměrnou mzdu právě v měřeném roce 2024 (MMF 2025); mzdový fond veřejného sektoru je o 2,8 % HDP nad průměrem EU. NESMÍ: Nesmí tvrdit, že reforma zvedla produktivitu, ani vydávat 56% růst minimální mzdy (leden 2022–leden 2025, nominálně) za růst roku 2024.
 
-3. ESTONSKO: showcase teď říká, že výplatám pomáhá možnost odejít za prací do Finska; to je příčina a do showcase nepatří (pravidlo 9). Přesuň to do finále jako jádro Estonska (níže) a ve finále vyškrtni „malý rozdíl bez jasné příčiny“. Pozor na směr: možnost odejít mzdy zvedá, nevysvětluje tedy ztrátu tří bodů.
+3. ŘECKO, JÁDRO (Škrty mezd v ozdravných programech). Musí zaznít: V krizi Řecko v ozdravných programech škrtalo mzdy: v únoru 2012 snížilo minimální mzdu o 22 % (mladším 25 let o 32 %) a zastavilo plošné rozšiřování kolektivních smluv, jejichž pokrytí kleslo z 85 % v roce 2011 na 13 % v roce 2016. Podle Evropské komise zlepšilo Řecko svou konkurenceschopnost hlavně díky škrtům mezd v letech 2010–2019. Směr: Škrty a reforma 2012 snížily mzdy a náklady práce (jednotkové náklady práce byly v letech 2013–2018 asi o 10,6 bodu nižší, než by byly bez reforem, změřilo IOBE) a zároveň snížily nezaměstnanost asi o 4 body; reformy zvýšily průměrnou pracovní dobu a nerovnost. Od roku 2022 minimální mzda opět roste (do prosince 2025 o 32,7 %, reálně o 12,2 %), reálné mzdy se ale na úroveň roku 2019 nevrátily. NESMÍ: Nesmí říct, že nízká řecká mzda je jen následkem škrtů – hlavní příčinou je podle institucí nízká produktivita (nesou ji kola). Nesmí vydávat 10,6 bodu za pokles mezd (jde o jednotkové náklady práce proti scénáři bez reforem v letech 2013–2018). Nesmí tvrdit, že reformy nic dobrého nepřinesly (IOBE měří nižší nezaměstnanost), ani že je minimální mzda dodnes snížená (od roku 2022 vzrostla o 32,7 %, nominálně). Nesmí plést nominální a reálný růst minima.
 
-4. Litva a Lotyšsko jádro nemají.
+4. METODIKA VEN Z HLASU, kolo 2: větu „Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění: u Rumunska, Chorvatska a Slovinska je růst nad rámec dohánění nejistý podle způsobu výpočtu, kdežto Bulharsko a Řecko za ním prokazatelně zaostaly.“ řekni obyčejně: chudší země rostou rychleji samy od sebe a Bulharsko s Řeckem vyrostly méně, než se dalo čekat. U Rumunska, Chorvatska a Slovinska srovnání s očekáváním neříkej vůbec.
+
+5. BULHARSKO, drobnost v jádru: u navázání minimální mzdy řekni, že jde o polovinu průměrné HRUBÉ mzdy a platí od roku 2023. Nesmí zaznít, že pravidlo vysvětluje skok Bulharska nad součet kol.
+
+6. SLOVINSKO, finále: věta „Celý náskok vysvětlí nejvyšší podíl výplat na výkonu v regionu přes dvaapadesát procent, spojený s vysokou minimální mzdou, táhnoucí i mzdy těsně nad ní…“ smí říct, že náskok nad koly vysvětlí nejvyšší podíl výplat na výkonu v regionu; minimální mzdu ale nevydávej za jeho příčinu. Jádro Slovinska (níže) řekni jako popis toho, jak se tam mzdy tvoří.
 
 DÉLKA: přesah do zhruba 1 250 slov mluveného textu je v pořádku. Když potřebuješ místo, zkrať jen obrazy a ilustrace v části, kam přidáváš; nikdy nevypouštěj čísla, štítky, roky ani omezující slova jako „na pracujícího“, „v regionu“, „oproti kolům“, „dlouhodobě“, „jen“, „asi“, „skoro“, „podle Komise“.
 
 ### Gemini 4 Argon
 
-### Pobaltí
+### Balkán a jihovýchodní Evropa
 
 ### Předstartovní showcase
 
-[VIZUÁL: Mapa Pobaltí na startovní čáře – digitální Tallinn se symbolem státní sítě X-tee, průmyslový a technologický Vilnius a rižský přístav s bankovní čtvrtí; ukazatel očekávání v pelotonu.]
+[VIZUÁL: Startovní rošt balkánské a jihovýchodní rozjížďky – pět zemí na startovní čáře: Slovinsko, Chorvatsko, Rumunsko, Bulharsko a Řecko.]
 
-Do pobaltské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupují tři sousedé, kteří bojují o únik z dolních pater pelotonu. Jako favorit regionu startuje Estonsko, země moderních služeb a informačních technologií, kde se o výplatách vyjednává přímo ve firmách, ale sráží je nejdražší život v Pobaltí. Na pobaltský trůn i průnik ke středu soutěže útočí Litva, opřená o průmysl, rostoucí technologie a citelně levnější život. Naopak Lotyšsku s jedním z nejvyšších podílů nízko placených míst v Unii hrozí i přes nižší ceny pád na chvost regionu i celé sedmadvacítky.
+V balkánské a jihovýchodní rozjížďce o čistou výplatu v kupní síle míří pět zemí od středu ligy až na chvost. Favoritem regionu útočícím na evropský střed je průmyslové Slovinsko, kde nedostatek lidí zvedá mzdy a život je nejdražší v regionu. O čelo regionu a střed Evropy by mělo hrát Řecko, země lodí a služeb, jenže při nízkých výdělcích a cenách vyšších než u většiny sousedů mu hrozí pád až na chvost ligy. O střed regionu těsně pod evropským středem bojuje turistické Chorvatsko, zatímco Rumunsko a Bulharsko, kde se spolu nakupuje nejlevněji v Evropě, startují z chvostu regionu i ligy.
 
 ### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
 
-[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Estonsko (35,1 %, −102,0 b., 24. v Evropě), 2. Litva (34,4 %, −104,0 b., 25. v Evropě), 3. Lotyšsko (32,9 %, −108,1 b., 26. v Evropě). Rozpadající se sovětské tovární haly a přetrhané železniční tratě na východ.]
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Řecko (90,1 %, −10,1 b., 15. v Evropě), 2. Slovinsko (69,9 %, −34,9 b., 17. v Evropě), 3. Chorvatsko (57,4 %, −54,1 b., 19. v Evropě), 4. Bulharsko (35,2 %, −101,5 b., 23. v Evropě), 5. Rumunsko (25,7 %, −132,2 b., 27. v Evropě).]
 
-První kolo rozdává startovní karty roku devatenáct set devadesát šest podle zděděné produktivity. Pobaltské státy vyrážely ze samotného dna pelotonu, ze čtyřiadvacátého až šestadvacátého místa v celé Evropě, kdy hlouběji začínalo jen Rumunsko. Estonský, litevský i lotyšský dělník tehdy u sovětských soustruhů vyprodukovali jen zhruba třetinu toho, co pracující ve střední zemi ligy, takže si každá ze tří zemí na startu připsala ztrátu přes sto bodů.
+První kolo rozdává karty roku devatenáct set devadesát šest podle zděděné produktivity. Nejlepší drželo Řecko, které nepoznalo plánovanou ekonomiku, v Unii bylo od roku devatenáct set osmdesát jedna a začínalo desetinu pod středem ligy. Za západní Evropou zaostávalo, podle ekonomů možná kvůli náhlému otevření trhu nepřipraveným továrnám, a skoro pětina lidí pracovala v zemědělství.
 
-Pobaltí totiž netvořilo jen vnější prstenec satelitů jako střední Evropa, ale bylo přímo pohlceno do plánované ekonomiky Sovětského svazu. Místní továrny a přístavy stavěli moskevští plánovači jako úzce zaměřené dílny pro sovětský trh, odříznuté od západních strojů i obchodu. Když se impérium zhroutilo, udeřil rozpad na region mnohem drtivěji než na zbytek východního bloku, protože moskevské odběratelské řetězce se přes noc přetrhaly.
+O patro níž stálo Slovinsko na sedmi desetinách a Chorvatsko pod třemi pětinami středu ligy. Díky jugoslávské samosprávě podniků mezi plánem a trhem zažilo Slovinsko jen asi dvacet tři let plánované ekonomiky a pracující měl přes čtyři pětiny kapitálu na pracujícího ve střední zemi ligy. Chorvatsko stálo před rozpadem federace u střední Evropy, než válka a ztráta trhů srazily ekonomiku o třetinu.
 
-V Estonsku se výroba propadla o více než třetinu, Litva ztratila dvě pětiny produkce a v Lotyšsku se výroba zřítila o více než polovinu. Ještě na přelomu tisíciletí tak lotyšské a litevské podniky paběrkovaly zhruba na dvou třetinách předtransformační úrovně a příjem na obyvatele v regionu nedosahoval v polovině devadesátých let ani tří desetin starých zemí Unie.
+Východ Balkánu vyrážel ze suterénu. Bulharsko odkládalo reformy, kvůli finanční nekázni podniků a bank spadlo do krachu a hyperinflace a s více než pětinou lidí v zemědělství začínalo těsně nad třetinou středu ligy. Poslední, sedmadvacáté v Evropě s čtvrtinou produktivity středu ligy bylo Rumunsko, kde přes dvě pětiny lidí pracovaly na drobných políčkách, která sloužila jako záchranná síť.
 
 ### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
 
-[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Litva (2,48×, +73,7 b., 2. v Evropě – rostla nad rámec dohánění; v reálných cenách +193 %, 1. v lize), 2. Estonsko (2,37×, +68,9 b., 3. v Evropě – nejisté, v reálných cenách +139 %), 3. Lotyšsko (2,16×, +60,0 b., 4. v Evropě – nejisté, v reálných cenách +160 %). Pád lotyšské banky Parex.]
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Rumunsko (3,17×, +97,3 b., 1. v Evropě – dohánění nejisté), 2. Bulharsko (1,63×, +32,5 b., 6. v Evropě – pomalejší než běžné dohánění), 3. Chorvatsko (1,50×, +24,8 b., 8. v Evropě – dohánění nejisté), 4. Slovinsko (1,25×, +6,7 b., 12. v Evropě – dohánění nejisté), 5. Řecko (0,77×, −40,0 b., 27. v Evropě – propad hluboko pod běžné dohánění).]
 
-Druhé kolo sleduje, jak země s rozdanými kartami hrály do roku dva tisíce dvacet čtyři. Pobaltské státy sice obsadily stupně těsně pod vrcholem v celé Evropě, jenže přes čtyři pětiny rozdílů v růstu napříč ligou vysvětlí prosté dohánění z nízkého základu. Litva přesto vyrostla víc, než se u tak chudé země dalo čekat, když na druhém místě v celé sedmadvacítce zvedla produktivitu vůči střední zemi skoro dvaapůlkrát, a více než dvojnásobný růst si připsaly i Estonsko a Lotyšsko.
+Druhé kolo sleduje hru do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu přitom vysvětlí prosté dohánění, protože chudší země rostou z nízkého základu rychleji samy od sebe, a Bulharsko s Řeckem vyrostly méně, než se dalo čekat.
 
-Zpočátku přivázaly Estonsko a Litva měny pevně k marce a dolaru a zavedly rovnou daň. Po ruské krizi se region napojil na severské trhy a vstup do Unie zvedl produktivitu v úvodní dekádě asi o pětinu, přičemž v Litvě společné podniky se zahraničními investory vytáhly nahoru místní dodavatele.
+Nejdrtivější skok v sedmadvacítce předvedlo Rumunsko: vůči středu ligy zvedlo produktivitu víc než třikrát za skoro sto bodů. Skoro dva miliony lidí opustily zemědělství, část do ciziny, a později růst táhly cizí automobilky jako Dacia a informatika v hrstce měst. Bukurešť však má sto třicet procent unijní produktivity a severovýchod dvě pětiny. Malým firmám chybí kapitál a výzkum bere půl procenta výkonu.
 
-Pak ale úvěry ze skandinávských bank nafoukly realitní bublinu, při níž lotyšské mzdy skákaly o pětinu ročně. Po krachu banky Parex v roce dva tisíce osm musela Riga žádat o mezinárodní záchranu a pobaltská výroba spadla až o čtvrtinu. Místo oslabení měn zvolily vlády vnitřní znehodnocení: v Lotyšsku seškrtaly veřejné platy skoro o čtvrtinu a nezaměstnanost tam vyskočila až k pětině pracovní síly a u sousedů jen o málo níž. Tvrdá léčba sice otevřela cestu k euru a nakopla litevský vývoz, jehož světový podíl byl v roce dva tisíce devatenáct víc než trojnásobný proti roku dva tisíce, ale Lotyšsku a Litvě od vstupu do Unie ubyla víc než desetina obyvatel, hlavně emigrací se silnou vlnou po krizi. Lotyšsko dál brzdily slabé investice, technologicky jednoduché provozy i útlum rižských bank po zásahu proti praní peněz. Estonsku nestačila ani síť X-tee a firmy jako Skype či Bolt: digitální úřady nezvedly produktivitu běžných podniků a po energetickém šoku ztratili vývozci skoro čtvrtinu tržního podílu – proč špičkové softwarové firmy neutáhnou celou ekonomiku, ukáže epizoda o produktivitě a sektorech.
+Bulharsko po krachu zavedlo měnovou radu a vyrostlo skoro o dvě třetiny, cizí kapitál před rokem dva tisíce osm ale natekl hlavně do stavebnictví, nemovitostí a financí. Pozdější průmyslový růst brzdí nejslabší školství v Unii a veřejné zakázky šité podle tří čtvrtin firem na míru spřízněným podnikům.
+
+Chorvatsko a Slovinsko privatizovaly podniky hlavně zaměstnancům a domácím manažerům; podle hodnocení chorvatské ekonomiky to nepřálo přílivu cizích továren. Chorvatský průmyslový dělník vytvoří čtvrtinu hodnoty německého; z růstu o polovinu přišla zhruba půlka před krizí na dluh a půlka v Unii z obchodu, dopravy, hotelů a fondů. Slovinsko s domácími podniky jako Krka dávalo na výzkum skoro dvě procenta výkonu a vůči středu ligy vyrostlo o čtvrtinu, po roce dva tisíce osm však stát sanoval banky více než třemi miliardami eur.
+
+V růstu skončilo Řecko poslední v sedmadvacítce se ztrátou skoro čtvrtiny produktivity vůči středu ligy. Po přijetí eura žilo z levných úvěrů, výstavby bytů a bobtnajícího státu, než krach smazal dvě třetiny investic. Odešlo přes milion a čtvrt lidí a skoro tři čtvrtiny zaměstnanců pracují v malých firmách a mikropodnicích jako taverny – o vlivu velikosti firem a školství budou další epizody.
 
 ### Kolo 3 – Tah země: Daňový klín
 
-[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce) a tabulka Kola 3: 1. Litva (39,9 %, +1,4 b., 10. v Evropě), 2. Estonsko (40,9 %, +0,3 b., 12. v Evropě), 3. Lotyšsko (42,0 %, −1,0 b., 18. v Evropě). Výplatní páska vs. obálka s hotovostí.]
+[VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance z hrubé mzdy + odvodů zaměstnavatele nad hrubou mzdu vůči celkovým nákladům práce) a tabulka Kola 3: 1. Bulharsko (34,9 %, +6,8 b., 3. v Evropě), 2. Řecko (35,8 %, +5,8 b., 4. v Evropě), 3. Chorvatsko (41,4 %, −0,2 b., 15. v Evropě), 4. Rumunsko (42,8 %, −1,9 b., 19. v Evropě), 5. Slovinsko (45,8 %, −5,4 b., 23. v Evropě).]
 
-Třetí kolo měří daňový klín, tedy součet daní a odvodů zaměstnance i zaměstnavatele vůči celkovým nákladům práce. Dlouhodobě přitom dvě třetiny zátěže zaplatí zaměstnanec na nižší čisté výplatě. Pobaltské státy se sice seřadily těsně kolem evropského středu u čtyřiceti procent, ale na pásce zátěž ukazují opačně.
+Třetí kolo měří daňový klín – díl nákladů práce, který v součtu daní a odvodů zaměstnance i firmy berou stát a fondy; dlouhodobě zhruba dvě třetiny nese pracující na nižší čisté výplatě. Roku dva tisíce osmnáct Rumunsko přesunulo pojistné na zaměstnance a papírově zvedlo hrubé mzdy o pětinu. Člověku strhne pětatřicet procent odvodů plus rovnou daň a firma přidá přes dvě procenta beze změny čisté výplaty.
 
-Estonsko a Lotyšsko ji schovávají za zaměstnavatele: estonské firmy posílají státu nad hrubou mzdu třiatřicetiprocentní sociální daň a lotyšské skoro čtyřiadvacet procent na odvodech. Naopak Litva v roce dva tisíce devatenáct odvody účetně přesunula na pásku zaměstnance, kterému o necelou třetinu navýšila hrubou mzdu. Současně skutečně snížila celkové pojistné, takže si litevský stát ukousne nejméně v regionu, necelých čtyřicet procent nákladů práce.
+Těsně nejnižší zátěž v regionu a třetí v Evropě drží Bulharsko s necelými pětatřiceti procenty, za ním Řecko pod šestatřiceti. Bulharsko s rovnou desetiprocentní daní a stropem odvodů je jedinou zemí Unie, kde vysokopříjmoví odvádějí menší díl výdělku než lidé s poloviční mzdou. Řecko po krizi snížilo odvody o více než pět procentních bodů, nevalorizovaná pásma mu ale s inflací daň zvedají.
 
-Před cílem však zátěž potichu rostla i bez zvyšování sazeb: v Estonsku proto, že rostoucím mzdám ubývala nezdanitelná sleva, a u sousedů nejspíš ze stejného důvodu. V Estonsku tento mizící odpočet vytvořil daňový hrb, který vláda po roce dva tisíce dvacet čtyři nahradila jednotnou nezdanitelnou částkou vykoupenou zvýšením daně z příjmu na dvacet dva procent. Lotyšsko naopak v roce dva tisíce dvacet pět zátěž u průměrné mzdy skoro o dva procentní body snížilo. Přesto se v Pobaltí dál vyplácí asi šestina až pětina mezd načerno v obálkách.
+Na středu ligy kolem jednačtyřiceti procent sedí Chorvatsko s pětinovými důchodovými odvody zaměstnance a zdravotním pojištěním od firmy. Nejtěžší klín nesou Rumunsko se skoro třiačtyřiceti a Slovinsko se skoro šestačtyřiceti procenty. V Rumunsku odvody bez stropu drtí nízké mzdy a roku dva tisíce dvacet pět skončily oborové úlevy. Ve Slovinsku zátěž drží hlavně progresivní daň s nejvyšší sazbou od poměrně nízké hranice; roku dva tisíce dvacet čtyři ji papírově zvedl povinný zdravotní příspěvek místo dobrovolného a další léto dvouprocentní odvod na dlouhodobou péči.
 
 ### Finále regionu: Odhalení pořadí od posledního po vítěze
 
-[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 3. do 1. místa v Pobaltí + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Lotyšsko +5,6 b., Litva −1,9 b., Estonsko −3,0 b.) a srovnání cenových hladin (Estonsko 97,3 %, Lotyšsko 79,8 %, Litva 78,5 % průměru EU).]
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Bulharsko +22,3 b., Slovinsko +10,2 b., Rumunsko −0,6 b., Chorvatsko −5,9 b., Řecko −16,1 b.).]
 
-Jdeme do cíle roku dva tisíce dvacet čtyři, kde střed evropské ligy leží na pětadvaceti tisících třech stech jednotkách kupní síly.
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
 
-Třetí místo v regionu a pád do evropského suterénu bere Lotyšsko. Lotyš si v eurech vydělá necelých šestnáct tisíc čistého, ale nižší ceny mu výplatu v kupní síle zvednou skoro na dvacet tisíc jednotek. Oproti součtu kol si Lotyšsko polepší skoro o šest bodů: firmy totiž pouštějí na mzdy přes polovinu výkonu a k tlaku na mzdy přispívá i nedostatek lidí po zmíněné emigraci, přičemž zaměstnanci tvoří necelých osmaosmdesát procent pracujících. Lotyšsko bere štítek „Snaží se v těžkých podmínkách“.
+Páté v regionu a v evropském suterénu je Řecko s necelými sedmnácti tisíci jednotkami. Bere asi čtrnáct tisíc sto eur, s cenami přes čtyři pětiny unijního průměru, vyššími než u sousedů na chvostu. Oproti kolům ztrácí šestnáct bodů; asi třetinu vysvětlí nejnižší podíl mezd na výkonu v regionu pod sedmatřiceti procenty. V krizi totiž Řecko v ozdravných programech seškrtalo minimální mzdu o dvacet dva procent a zastavilo plošné rozšiřování kolektivních smluv, jejichž pokrytí spadlo z pětaosmdesáti procent zaměstnanců na třináct: podle Evropské komise tím sice zlepšilo konkurenceschopnost a snížilo jednotkové náklady práce i nezaměstnanost, ale ani přes růst minimální mzdy od roku dva tisíce dvacet dva se reálné mzdy na úroveň roku dva tisíce devatenáct nevrátily. Řekové odpracují nejvíc hodin týdně v Unii a berou štítek „Chybami si přitížil“ s vedlejším „Snaží se v těžkých podmínkách“.
 
-Druhé těsně v evropském suterénu končí Estonsko s jedenadvaceti a půl tisíci jednotkami kupní síly. Estonec si odnese skoro jedenadvacet tisíc eur čistého, nejvíc v Pobaltí, jenže ceny na sedmadevadesáti procentech unijního průměru mu náskok spolknou. Růst tamních výplat přitom zrychluje to, že Estonci mohou za výrazně lépe placenou prací dojíždět nebo odejít do sousedního Finska, což jim podle Mezinárodního měnového fondu dává v napjatém trhu práce přídavnou vyjednávací sílu, kterou mnozí využívají, a i podíl mezd na výkonu je tu dokonce o něco vyšší než ve středu Evropy. Oproti součtu kol přesto Estonsko ztrácí tři body a bere štítek „Snaží se v těžkých podmínkách“.
+Čtvrté v suterénu je Bulharsko s asi dvaceti tisíci sedmi sty jednotkami. V eurech bere necelých dvanáct tisíc, těsně pod Rumunem nejméně v regionu, cenovky pod třemi pětinami unijního průměru ho ale řadí před Řecko. Oproti kolům vyskočilo o dvaadvacet bodů, z čehož menší část vysvětlí skoro čtvrtina lidí mimo zaměstnanecký poměr. Mzdy v posledních letech zvedal odchod mladých a od roku dva tisíce dvacet tři také navázání minimální mzdy na polovinu průměrné hrubé mzdy; Bulharsko má štítek „Snaží se v těžkých podmínkách“ a za úvodní krizi vedlejší „Chybami si přitížil“.
 
-A vítězem pobaltské rozjížďky, který jako jediný pronikl těsně pod střed Evropy, se stává Litva s téměř dvaceti dvěma tisíci sedmi sty jednotkami kupní síly. Litevec sice bere necelých osmnáct tisíc eur, ale nakupuje za méně než čtyři pětiny unijních cen. Ačkoliv celé Pobaltí platí eurem, litevské cenovky zůstávají výrazně níž než estonské – proč se ceny mezi sousedy v eurozóně tak liší, rozklíčujeme v epizodě o cenové hladině. Oproti součtu kol sice Litva o necelé dva body klesá, protože na mzdy jde necelých osmačtyřicet procent výkonu, o něco méně než ve středu Evropy, a tlak na růst výplat zmírnil i příchod skoro osmdesáti tisíc pracovníků z Běloruska a Ukrajiny, přesto vítězí se štítkem „Dělá to dobře a je to vidět“.
+Třetí v suterénu je Rumunsko s asi jedenadvaceti tisíci třemi sty jednotkami. Výplatu dvanáct tisíc tři sta eur zhodnocují stejně nízké ceny jako v Bulharsku – proč se balkánské cenovky liší, ukáže epizoda o cenové hladině. Se ztrátou necelého bodu sedí na součtu kol: podíl mezd klesl pod devětatřicet procent výkonu, k čemuž podle výzkumníků přispělo zrušení celostátních kolektivních smluv, mzdy však v posledních letech táhlo zvedání minimální mzdy a státních platů. Bere štítek „Těží z okolností“ a vedlejší „Snaží se v těžkých podmínkách“.
+
+Druhé a pod středem Evropy je Chorvatsko s asi jedenadvaceti tisíci sedmi sty jednotkami. Bere šestnáct tisíc eur při cenách na třech čtvrtinách unijního průměru. Ztráta šesti bodů oproti kolům je v běžné odchylce a malou část vysvětlí nejvyšší podíl zaměstnanců v regionu, mezi něž se mzdy dělí. Právě v roce dva tisíce dvacet čtyři přitom chorvatský průměr zvedl nový zákon o platech ve státní a veřejné službě, který zavedl stejný plat za práci stejné složitosti, aby přilákal kvalifikované lidi: reálné platy ve veřejném sektoru vzrostly asi o pětinu a podle Mezinárodního měnového fondu táhly celkový růst mezd. Chorvatsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Vítězem ve středu Evropy je Slovinsko se čtyřiadvaceti tisíci čtyřmi sty jednotkami a více než dvaadvaceti tisíci eury. Ceny na devíti desetinách unijního průměru z náskoku ukrajují, přesto součet kol přeskočilo o deset bodů. Celý náskok nad koly vysvětlí nejvyšší podíl výplat na výkonu v regionu přes dvaapadesát procent, přičemž kolektivní smlouvy tam pokrývají většinu zaměstnanců. Samotné slovinské mzdy se pak tlačí těsně nad jednou z nejvyšších minimálních mezd vůči průměrné mzdě v Unii: asi čtvrtina zaměstnanců měla základní mzdu nejvýš o pět procent nad minimem, takže každé jeho zvýšení má sice podle centrální banky významný dopad na celkový vývoj mezd, do vyšších pásem se ale přelévá jen omezeně a skok minima v roce dva tisíce deset zároveň přinesl nízko placeným velkou a trvalou ztrátu zaměstnání. Se štítkem „Dělá to dobře a je to vidět“ opanovalo Slovinsko jihovýchod Evropy.
 
 
 ---
@@ -560,28 +612,45 @@ každá začíná řádkem `[VIZUÁL: …]` a pokračuje souvislými odstavci. N
 
 <!-- soubor 03_PODKLADY_SCENARE.md -->
 
-# Podklady pro scénář regionu Pobaltí
+# Podklady pro scénář regionu Balkán a jihovýchodní Evropa
 
-Země regionu: Estonsko, Lotyšsko, Litva. Ukazatel: průměrná čistá mzda na plný úvazek v kupní síle (PPS), rok 2024. Body kol a pořadí jsou hotové a nesmějí se měnit.
+Země regionu: Slovinsko, Chorvatsko, Rumunsko, Bulharsko, Řecko. Ukazatel: průměrná čistá mzda na plný úvazek v kupní síle (PPS), rok 2024. Body kol a pořadí jsou hotové a nesmějí se měnit.
 
 # Jádro země: musí zaznít (Ondřej 27. 10. 2026)
 
 U každé země níže je mechanismus mimo tři kola, bez kterého divák zemi nepochopí. Ve scénáři zazní jednou, obyčejnou češtinou a svým stylem: v kole 2, je-li to tah země, v kole 3, týká-li se daní, jinak ve finále jako vysvětlení toho, co kola nevysvětlí. Drž se směru a nikdy neřekni, co je u něj zakázané.
 
-## Estonsko: Práce ve Finsku na dosah
+## Slovinsko: Vysoká minimální mzda a stlačené mzdy
 
-- Musí zaznít: Estonci mohou za výrazně lépe placenou prací do Finska dojíždět nebo odejít a podle Mezinárodního měnového fondu jim tato možnost v napjatém trhu práce dává přídavnou vyjednávací sílu, kterou mnozí využívají.
-- Směr podle instituce: Možnost odejít nebo dojíždět posiluje vyjednávací pozici zaměstnanců a zrychluje růst mezd (hlavně vývoj, zčásti úroveň).
-- Nesmí zaznít: Nesmí říct, že Estonci masově emigrovali: od vstupu do EU do zprávy ECB z roku 2017 ubylo Estonsku jen 3 % obyvatel proti 12 % v Lotyšsku a 14 % v Litvě. Nesmí tvrdit, že to vysvětluje náskok Estonska před sousedy v eurech ani ztrátu 3 bodů proti kolům, a nesmí uvádět číslo dopadu (nikdo ho nespočítal). Nesmí z toho udělat obecný „nedostatek pracovníků“.
-- Doklad: Mezinárodní měnový fond 2018; Evropská centrální banka 2017 (napjatý trh práce v Pobaltí)
+- Musí zaznít: Ve Slovinsku je minimální mzda vůči průměrné mzdě jedna z nejvyšších v EU a mzdy se tlačí těsně nad ní: asi čtvrtina zaměstnanců měla v roce 2024 základní mzdu nejvýš o 5 % vyšší než minimum. Proto má podle slovinské centrální banky každé zvýšení minima významný dopad na celkový vývoj mezd.
+- Směr podle instituce: Zvyšování minima zvedá mzdy u minima a těsně nad ním (změřeno u zvýšení o 22,9 % v roce 2010), přelévání do vyšších pásem je podle centrální banky relativně omezené; struktura je stlačená a nerovnost nízká. Zvýšení z roku 2010 zároveň přineslo nízko placeným velkou a trvalou ztrátu zaměstnání. Instituce netvrdí, že stlačená struktura zvyšuje nebo snižuje průměrnou mzdu.
+- Nesmí zaznít: Nesmí říct, že vysoká minimální mzda vysvětluje slovinské vítězství nebo náskok nad součtem kol (současná věta „Celý náskok vysvětlí … spojený s vysokou minimální mzdou“ to přehání), ani že minimum táhne nahoru všechny mzdy (přelévání je omezené, prokázané jen těsně nad minimem). Nesmí zamlčet ztrátu práce nízko placených, když zmíní účinek zvýšení z roku 2010. Nesmí vydávat nominální růst minima (+18,9 % v letech 2022–2025) za reálný, ani tvrdit, že čtvrtina zaměstnanců bere přesně minimum (jde o základní mzdu do 105 % minima).
+- Doklad: Evropská komise 2023 a 2026; IMAD (slovinský vládní ústav pro makroekonomické analýzy) 2025 a 2026; Banka Slovenije 2026; studie Laporšek a kol. 2019 (změřeno rozdílem v rozdílech)
 
-## Lotyšsko: bez jádra
+## Chorvatsko: Platová reforma veřejné služby 2024
 
-Žádný kandidát neprojde testem záměny a body 2–3. Lotyšské silné důvody mimo kola – odchod lidí a nedostatek pracovníků, mzdy rostoucí rychleji než produktivita, minimální mzda, slabé vyjednávání – instituce popisují stejně u Litvy a Estonska (ECB 2017 o celém Pobaltí). Jediné čistě lotyšské rysy, záchrana EU a MMF a nejhlubší předkrizové přehřátí, patří do průběhu kola 2, kde je scénář už nese.
+- Musí zaznít: V roce 2024 Chorvatsko novým zákonem o platech ve státní a veřejné službě zavedlo stejný plat za práci stejné složitosti a zvedlo odměny, aby přilákalo kvalifikované lidi; reálné platy ve veřejném sektoru vzrostly asi o pětinu, v soukromém asi o 7,5 % a podle Mezinárodního měnového fondu veřejný sektor táhl celkový růst mezd.
+- Směr podle instituce: Zvedlo průměrnou mzdu právě v měřeném roce 2024 (MMF 2025); mzdový fond veřejného sektoru je o 2,8 % HDP nad průměrem EU.
+- Nesmí zaznít: Nesmí tvrdit, že reforma zvedla produktivitu, ani vydávat 56% růst minimální mzdy (leden 2022–leden 2025, nominálně) za růst roku 2024.
+- Doklad: MMF 2024 a 2025; EK 2026
 
-## Litva: bez jádra
+## Rumunsko: bez jádra
 
-Žádný kandidát neprojde body 2–4. Produktivita, nízká kapitálová náročnost a rychlé dohánění nesou kola 1 a 2, daně kolo 3. Silné důvody mimo kola – napjatý trh práce po emigraci, mzdy rychleji než produktivita, krize s vnitřní devalvací – sdílí Litva s Lotyšskem a Estonskem (ECB 2017 o celém Pobaltí). Nejbližší je litevský příliv asi 80 000 lidí z Běloruska a Ukrajiny (Evropská komise 2026), ale Komise ho popisuje jen jako tlumení nedostatku pracovníků, Lotyšsko mělo také příliv Ukrajinců a scénář ho už říká.
+Žádný kandidát neprojde body 2–4. Dvojí ekonomika, struktura firem, vzdělání, výzkum a rychlé dohánění působí přes výkon a nesou je kola 1 a 2 (scénář je už má v kole 2: Dacia, Bukurešť 130 %); daňový klín a přesun odvodů z roku 2018 nese kolo 3; ceny finále. Minimální mzda a veřejné platy i odliv lidí neprojdou testem záměny (totéž v Chorvatsku a Bulharsku). Zrušení celostátní kolektivní smlouvy v roce 2011 nemá doklad instituce (posouzení výzkumníků Popescu a Ion 2025 bez vyčíslení) a neprojde testem záměny s Řeckem.
+
+## Bulharsko: Minimální mzda navázaná na polovinu průměrné
+
+- Musí zaznít: Bulharsko od roku 2023 stanoví minimální mzdu automaticky podle zákona na 50 % průměrné hrubé mzdy za předchozích 12 měsíců; od ledna 2022 do ledna 2026 tak vzrostla o 86,7 %. Podle Evropské komise je tato politika spolu s napjatým trhem práce příčinou nedávného růstu mezd.
+- Směr podle instituce: Pravidlo táhne mzdy nahoru a podle MMF pohání dohánění příjmů, ale zvyšuje poptávku a inflaci. Podle EK 2026 přitom výrazné zvýšení minima nesnížilo vysoký podíl chudých pracujících ani nízko placených. Bulharské platy zůstávají podle MMF nejnižší v EU.
+- Nesmí zaznít: Nesmí říct, že pravidlo udělalo z Bulharska zemi vysokých mezd nebo že vysvětluje jeho skok o 22 bodů nad součet kol (instituce to netvrdí). Nesmí vydávat 86,7 % za reálný růst (reálně 48,1 %) ani za růst v roce 2024 (jde o leden 2022 až leden 2026). Nesmí tvrdit, že zvýšení minima snížilo chudobu pracujících. Nesmí připsat růst mezd jen minimu (EK uvádí i napjatý trh práce a veřejné platy). Nesmí plést základ pravidla (50 % průměrné hrubé mzdy, ne čisté).
+- Doklad: Evropská komise 2025 a 2026; Mezinárodní měnový fond 2025
+
+## Řecko: Škrty mezd v ozdravných programech
+
+- Musí zaznít: V krizi Řecko v ozdravných programech škrtalo mzdy: v únoru 2012 snížilo minimální mzdu o 22 % (mladším 25 let o 32 %) a zastavilo plošné rozšiřování kolektivních smluv, jejichž pokrytí kleslo z 85 % v roce 2011 na 13 % v roce 2016. Podle Evropské komise zlepšilo Řecko svou konkurenceschopnost hlavně díky škrtům mezd v letech 2010–2019.
+- Směr podle instituce: Škrty a reforma 2012 snížily mzdy a náklady práce (jednotkové náklady práce byly v letech 2013–2018 asi o 10,6 bodu nižší, než by byly bez reforem, změřilo IOBE) a zároveň snížily nezaměstnanost asi o 4 body; reformy zvýšily průměrnou pracovní dobu a nerovnost. Od roku 2022 minimální mzda opět roste (do prosince 2025 o 32,7 %, reálně o 12,2 %), reálné mzdy se ale na úroveň roku 2019 nevrátily.
+- Nesmí zaznít: Nesmí říct, že nízká řecká mzda je jen následkem škrtů – hlavní příčinou je podle institucí nízká produktivita (nesou ji kola). Nesmí vydávat 10,6 bodu za pokles mezd (jde o jednotkové náklady práce proti scénáři bez reforem v letech 2013–2018). Nesmí tvrdit, že reformy nic dobrého nepřinesly (IOBE měří nižší nezaměstnanost), ani že je minimální mzda dodnes snížená (od roku 2022 vzrostla o 32,7 %, nominálně). Nesmí plést nominální a reálný růst minima.
+- Doklad: Evropská komise 2024 a 2025; Mezinárodní měnový fond 2025 a 2026; IOBE 2021 (řecká Nadace pro hospodářský a průmyslový výzkum, změřeno zobecněnou syntetickou kontrolou); pokrytí smluv OECD a AIAS
 
 
 # Tabulky kol
@@ -605,9 +674,11 @@ Růst výkonu 1996 → 2020–2024 je z **86,1 %** dohánění: přímka růstu 
 
 | Země | Výkon na začátku | Body růstu | Růst nad rámec dohánění v kupní síle (body, přímka a křivka) | Totéž v reálných cenách | Slovy (společné zařazení) |
 | --- | ---: | ---: | --- | --- | --- |
-| Litva | 34,4 % | +73,7 | +10,7 až +15,1 | +18,4 až +19,4 | rostla rychleji, než odpovídá dohánění |
-| Estonsko | 35,1 % | +68,9 | +7,9 až +11,6 | +0,0 až +0,7 | nejisté: v kupní síle rychleji, v reálných cenách zhruba tak |
-| Lotyšsko | 32,9 % | +60,0 | −7,3 až −1,2 | +4,1 až +5,5 | nejisté: záleží na tom, jak se dohánění počítá |
+| Rumunsko | 25,7 % | +97,3 | +2,8 až +20,3 | −7,7 až −2,5 | nejisté: záleží na tom, jak se dohánění počítá |
+| Chorvatsko | 57,4 % | +24,8 | −1,2 až +5,4 | −7,0 až −4,4 | nejisté: záleží na tom, jak se dohánění počítá |
+| Slovinsko | 69,9 % | +6,7 | −6,7 až +0,0 | +1,8 až +4,4 | nejisté: v kupní síle nejisté, v reálných cenách zhruba tak |
+| Bulharsko | 35,2 % | +32,5 | −28,0 až −24,5 | −27,5 až −26,9 | rostla pomaleji, než odpovídá dohánění |
+| Řecko | 90,1 % | −40,0 | −37,3 až −33,9 | −29,5 až −27,8 | rostla pomaleji, než odpovídá dohánění |
 
 ## Přenos daní podle dat ligy (nález oponenta 3)
 
@@ -619,53 +690,65 @@ Vysoký podíl vysvětlených rozdílů je zčásti účetní vazba: náklady pr
 
 | Země | Co kola nevysvětlí | Z toho podíl mezd a složení | Zbývá | Podíl mezd na výkonu | Zaměstnanci mezi pracujícími |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Lotyšsko | +5,6 | +3,4 | +2,3 | 50,3 % | 87,7 % |
-| Estonsko | −3,0 | −0,1 | −2,9 | 48,9 % | 89,0 % |
-| Litva | −1,9 | −1,3 | −0,6 | 47,7 % | 88,3 % |
+| Bulharsko | +22,3 | +5,5 | +16,8 | 44,0 % | 75,9 % |
+| Řecko | −16,1 | −5,2 | −10,9 | 36,7 % | 73,0 % |
+| Slovinsko | +10,2 | +13,6 | −3,5 | 52,2 % | 80,5 % |
+| Chorvatsko | −5,9 | −1,3 | −4,5 | 46,3 % | 86,0 % |
+| Rumunsko | −0,6 | −6,7 | +6,2 | 38,6 % | 77,7 % |
 
-### Pobaltí
+### Balkán a jihovýchodní Evropa
 
 **Kolo 1: Výkon na začátku** (% výkonu střední země ligy v roce 1996)
 
 | Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| Estonsko | 35,07 | 24 | 1 | −102,0 | ano |  |
-| Litva | 34,37 | 25 | 2 | −104,0 | ano | ano |
-| Lotyšsko | 32,95 | 26 | 3 | −108,1 | ano | ano |
+| Řecko | 90,10 | 15 | 1 | −10,1 |  |  |
+| Slovinsko | 69,88 | 17 | 2 | −34,9 |  |  |
+| Chorvatsko | 57,37 | 19 | 3 | −54,1 | ano |  |
+| Bulharsko | 35,24 | 23 | 4 | −101,5 | ano |  |
+| Rumunsko | 25,73 | 27 | 5 | −132,2 | ano |  |
 
 **Kolo 2: Růst výkonu** (kolikrát se výkon vůči střední zemi zvětšil (1996 → 2020–2024))
 
 | Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| Litva | 2,48 | 2 | 1 | +73,7 | ano |  |
-| Estonsko | 2,37 | 3 | 2 | +68,9 | ano | ano |
-| Lotyšsko | 2,16 | 4 | 3 | +60,0 | ano |  |
+| Rumunsko | 3,17 | 1 | 1 | +97,3 | ano |  |
+| Bulharsko | 1,63 | 6 | 2 | +32,5 |  |  |
+| Chorvatsko | 1,50 | 8 | 3 | +24,8 |  |  |
+| Slovinsko | 1,25 | 12 | 4 | +6,7 |  |  |
+| Řecko | 0,77 | 27 | 5 | −40,0 | ano |  |
 
 **Kolo 3: Daně a odvody** (% nákladů práce, které jdou na daně, odvody a povinné platby)
 
 | Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| Litva | 39,91 | 10 | 1 | +1,4 |  |  |
-| Estonsko | 40,94 | 12 | 2 | +0,3 |  |  |
-| Lotyšsko | 42,03 | 18 | 3 | −1,0 |  |  |
+| Bulharsko | 34,90 | 3 | 1 | +6,8 | ano |  |
+| Řecko | 35,85 | 4 | 2 | +5,8 | ano | ano |
+| Chorvatsko | 41,37 | 15 | 3 | −0,2 |  |  |
+| Rumunsko | 42,80 | 19 | 4 | −1,9 |  |  |
+| Slovinsko | 45,77 | 23 | 5 | −5,4 | ano |  |
 
 
 | Země | Místo v lize | Patro | Čistá mzda PPS | Proti středu ligy | Co kola nevysvětlí (body) |
 | --- | ---: | --- | ---: | ---: | ---: |
-| Litva | 17 | pod středem Evropy | 22 678 | −10,4 % | −1,9 |
-| Estonsko | 21 | evropský suterén | 21 558 | −14,8 % | −3,0 |
-| Lotyšsko | 24 | evropský suterén | 19 989 | −21,0 % | +5,6 |
+| Slovinsko | 15 | nad středem až střed Evropy | 24 415 | −3,5 % | +10,2 (nad typickou odchylkou) |
+| Chorvatsko | 20 | pod středem Evropy | 21 657 | −14,4 % | −5,9 |
+| Rumunsko | 22 | evropský suterén | 21 253 | −16,0 % | −0,6 |
+| Bulharsko | 23 | evropský suterén | 20 693 | −18,2 % | +22,3 (nad typickou odchylkou) |
+| Řecko | 27 | evropský suterén | 16 848 | −33,4 % | −16,1 (nad typickou odchylkou) |
 
-Papírové pořadí podle rozdaných karet: Estonsko (−102,0), Litva (−104,0), Lotyšsko (−108,1). Průměrný zbytek regionu +0,2 bodu.
+Papírové pořadí podle rozdaných karet: Řecko (−10,1), Slovinsko (−34,9), Chorvatsko (−54,1), Bulharsko (−101,5), Rumunsko (−132,2). Průměrný zbytek regionu +2,0 bodu.
 
 
 ## Výsledek v cíli (rok 2024)
 
 | Země | Skutečné místo v lize (27 zemí) | Patro | Čistá mzda v kupní síle (PPS ročně) | Čistá mzda v eurech ročně | Cenová hladina spotřeby (EU27 = 100) | Daně, odvody a povinné platby (% nákladů práce) |
 |---|---:|---|---:|---:|---:|---:|
-| Litva | 17 | pod středem Evropy | 22 678 | 17 802 | 78,5 | 39,9 |
-| Estonsko | 21 | evropský suterén | 21 558 | 20 976 | 97,3 | 40,9 |
-| Lotyšsko | 24 | evropský suterén | 19 989 | 15 951 | 79,8 | 42,0 |
+| Slovinsko | 15 | nad středem až střed Evropy | 24 415 | 22 120 | 90,6 | 45,8 |
+| Chorvatsko | 20 | pod středem Evropy | 21 657 | 16 026 | 74,0 | 41,4 |
+| Rumunsko | 22 | evropský suterén | 21 253 | 12 348 | 58,1 | 42,8 |
+| Bulharsko | 23 | evropský suterén | 20 693 | 11 940 | 57,7 | 34,9 |
+| Řecko | 27 | evropský suterén | 16 848 | 14 085 | 83,6 | 35,8 |
 
 Střed ligy (medián 27 zemí) v čisté mzdě: 25 308 PPS ročně.
 Patra evropské reality: 1.–6. evropská špička, 7.–15. nad středem až střed Evropy, 16.–20. pod středem Evropy, 21.–27. evropský suterén.
@@ -673,594 +756,448 @@ Patra evropské reality: 1.–6. evropská špička, 7.–15. nad středem až s
 
 ## Štítky z hodnocení výkonu zemí (pro finále)
 
-- Estonsko: Snaží se v těžkých podmínkách; vedlejší štítek: Dělá to dobře a je to vidět
-- Lotyšsko: Snaží se v těžkých podmínkách; vedlejší štítek: Dělá to dobře a je to vidět
-- Litva: Dělá to dobře a je to vidět; vedlejší štítek: Snaží se v těžkých podmínkách
+- Slovinsko: Dělá to dobře a je to vidět
+- Chorvatsko: Dělá to dobře a je to vidět; vedlejší štítek: Chybami si přitížil
+- Rumunsko: Těží z okolností; vedlejší štítek: Snaží se v těžkých podmínkách
+- Bulharsko: Snaží se v těžkých podmínkách; vedlejší štítek: Chybami si přitížil
+- Řecko: Chybami si přitížil; vedlejší štítek: Snaží se v těžkých podmínkách
 
 
 # Výklady zemí (proč mají v kolech takové hodnoty)
 
-# Estonsko: proč má v kolech takové hodnoty
+# Slovinsko: proč má v kolech takové hodnoty (průměrná čistá mzda, podklad pro výklad)
 
-*Podklad pro výklad hodnot v kolech (krok 8 a podklady pro krok 9a), průměrná čistá mzda 2024; sestaveno 17. 10. 2026.
-Výkon, růst, zátěž a čistá mzda jsou z `data/kontext_kroky.json` (Eurostat a OECD v přepočtu projektu), ostatní čísla
-mají zdroj v závorce a v oddílu Zdroje. U každé příčiny je síla dokladu: změřeno (kdo a jak), posoudila (instituce),
-jen časová souvislost, nebo můj úsudek. Kroky s roky a aktéry jsou v `data/kroky_zemi/EE.json`.*
+> Krok 8 a podklad pro krok 9a zkoušky návrhu skillu `analyza-pricin-regiony-SKILL-v1.4.md` (neaktivní), 17. 10. 2026.
+> Zadání: `ZADANI_KROKY_ZEMI.md`. Seznam kroků s doklady: `data/kroky_zemi/SI.json`.
+> U každého tvrzení o příčině je síla dokladu: „změřeno (kdo, jak)“, „posoudila (instituce)“, „jen časová souvislost“,
+> nebo „můj úsudek“. Zkratky zdrojů v závorkách jsou rozepsané v oddílu Zdroje.
 
-**Hodnoty Estonska:** výkon na začátku 35,1 % výkonu střední země ligy (1996); růst výkonu 2,37krát vůči střední zemi
-(1996 → průměr 2020–2024); zátěž daní a odvodů 40,9 % nákladů práce (2024); čistá mzda 21 558 v kupní síle ročně (2024).
-
-## 1. Proč takový výkon na začátku (1996)
-
-V roce 1996 vytvořil estonský pracující jen 35,1 % toho, co pracující ve střední zemi ligy (hrubý domácí produkt v kupní
-síle na pracujícího; Eurostat, přepočet projektu), skoro stejně jako Litva (34,4 %) a Lotyšsko (32,9 %), a méně měla jen
-Rumunsko (25,7 %). Estonsko vycházelo z plánované ekonomiky Sovětského svazu, jehož rozpad zasáhl pobaltské země tvrději
-než ostatní země střední a východní Evropy (posoudil Mezinárodní měnový fond 2010), a jeho výroba mezi lety 1989 a 1994
-klesla o 36,5 % (Fischer a Sahay 2000). Patřilo tak k zemím s nejhoršími výchozími podmínkami (Fischer a Sahay 2000), ale
-reformovalo rychle: měnovou radu, která pevně navázala korunu na německou marku, zavedlo už v dubnu 1992 (Mezinárodní
-měnový fond 2010) a v roce 1994 jako první z dnešních zemí s rovnou daní zavedlo jednotnou daň z příjmu 26 % (Keen, Kim
-a Varsano 2006). V roce 1995 měly pobaltské země na obyvatele jen asi 28 % průměrného příjmu patnácti starších zemí EU
-(Evropská centrální banka 2017), takže v roce 1996 Estonsko teprve začínalo dohánět.
-
-## 2. Proč takový růst výkonu (1996–2024)
-
-**Kolik a kdy.** Výkon estonského pracujícího se vůči střední zemi ligy zvětšil 2,37krát (z 35,1 % v roce 1996 na průměr
-let 2020–2024; Eurostat, přepočet projektu). Rychleji rostly jen Rumunsko (3,17krát) a Litva (2,48krát), Lotyšsko o něco
-pomaleji (2,16krát). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl výkon na pracujícího mezi rokem 1996 a průměrem let 2020–2024 v Estonsku asi o 139 %, v Lotyšsku asi o 160 %, v Rumunsku asi o 176 % a v Litvě asi o 193 % (střed ligy asi o 29 %); Lotyšsko tedy reálně rostlo rychleji než Estonsko, ne pomaleji, a Estonsko z těchto zemí nejpomaleji. Nejvíc Estonsko dohánělo v letech 2000–2008, kdy se jeho výkon zvedl ze 43,0 % na 66,0 % výkonu
-střední země, tedy asi o 2,9 bodu ročně. V letech 2008–2013 přidalo jen 5,9 bodu (asi 1,2 ročně), v letech 2013–2019
-9,1 bodu (asi 1,5 ročně) a vrchol 81,0 % mělo v roce 2019, odkud do roku 2024 kleslo na 78,1 % (vše Eurostat, přepočet
-projektu). Dohánění se tedy zpomalilo po roce 2008 a po roce 2019 se zastavilo a obrátilo.
-
-**Dohánění z nízkého základu, ale víc, než by odpovídalo samotnému základu.** Země, která startuje velmi nízko, může růst
-rychle už tím, že přebírá stroje a postupy bohatších zemí. Evropská centrální banka (2017) ale srovnáním zemí EU změřila,
-že pobaltské země spolu se Slovenskem rostly v letech 1999–2015 výrazně rychleji, než by odpovídalo jejich výchozímu
-příjmu, a Estonsko je v jejím grafu na prvním místě (změřeno: srovnání růstu s výchozím příjmem v zemích EU). Nízký start
-tedy rychlost vysvětluje jen zčásti.
-
-**Instituce a vstup do EU.** Jako jeden z možných důvodů jmenuje Evropská centrální banka (2017) výrazné zlepšení kvality
-institucí, nejvíc právě v Estonsku a nejrychleji v letech před vstupem do EU, kdy země přebíraly evropská pravidla
-(posoudila). Účinek samotného vstupu změřili Campos, Coricelli a Moretti (2019) srovnáním se „syntetickým Estonskem“
-poskládaným ze zemí mimo EU: v letech 1998–2008 byl estonský HDP na obyvatele v průměru o 24,2 % a produktivita práce
-o 20,5 % vyšší, než by byl bez členství, a ve srovnatelném okně prvních deseti let členství získaly Lotyšsko, Litva
-a Estonsko nejvíc ze všech zemí ve studii (změřeno).
-Studie bere za začátek členství rok 1998 a končí rokem 2008, takže v čísle je i část úvěrového boomu. Fondy EU z let
-2007–2013 zvýšily podle modelového výpočtu Evropské komise HDP nových členských zemí s vyšším přídělem na obyvatele
-v roce 2015 v průměru asi o 4,1 % (posoudila Evropská komise 2016); estonské číslo je ve zprávě jen v grafu, proto ho
-neuvádím.
-
-**Zapojení do výroby pro severské sousedy a kapitál.** Mezinárodní měnový fond (2026) píše, že dvě desetiletí rychlého
-dohánění podpořily zapojení do evropských hodnotových řetězců, přibývání kapitálu na pracovníka a otevřenost obchodu
-(posoudil), a po ruské krizi let 1998–1999 se pobaltské ekonomiky rychle vzpamatovaly díky užšímu napojení na severské
-země (Mezinárodní měnový fond 2010). Otevřenost je doložená i čísly: v roce 2015 tvořily pobočky zahraničních bank 78 %
-aktiv bank v Pobaltí a vývoz s dovozem 142 % HDP (Evropská centrální banka 2017). Samostatný účinek přímých zahraničních
-investic na estonský výkon ale v mých zdrojích změřený není. Daňová reforma z roku 2000, která osvobodila zisk ponechaný
-ve firmě, má rozporný doklad: proti lotyšským a litevským firmám držely estonské firmy víc hotovosti a podle studie víc
-investovaly a měly vyšší produktivitu (změřeno, Masso, Meriküll a Vahter 2011), proti finským firmám ale trvalé zvýšení
-investic nenašel Mezinárodní měnový fond (změřeno, 2026).
-
-**Úvěrový boom a propad 2008–2010.** Část růstu let 2004–2008 stála na půjčkách: velký příliv kapitálu ze skandinávských
-bank vedl v letech 2006–2007 k přehřátí (posoudila Liina Malk z Eesti Pank 2015), mzdy rostly v letech 2004–2008 asi
-o 16 % ročně a schodek běžného účtu dosáhl v roce 2007 17,6 % HDP (Mezinárodní měnový fond 2010). Pak výroba pobaltských
-zemí klesla od vrcholu o 20–25 % (Mezinárodní měnový fond 2010). Estonsko neznehodnotilo měnu a přizpůsobilo se úsporami
-a snížením mezd: čistá úsporná opatření dosáhla v roce 2009 7,1 % HDP (Mezinárodní měnový fond 2010), reálné hrubé mzdy
-klesly v roce 2009 o 5 % a v roce 2010 o 2 % a nezaměstnanost se více než zčtyřnásobila až na 16,7 % v roce 2010 (Malk
-2015). Evropská centrální banka (2017) toto „vnitřní znehodnocení“ hodnotí jako bolestné, ale účinné (posoudila); HDP
-vzrostl v roce 2011 o 8,3 % a v roce 2014 byla ekonomika zpět na předkrizové úrovni (Malk 2015). Ve výkonu na pracujícího
-se krize ukázala jen jako zpomalení (z 66,0 % v roce 2008 na 71,9 % v roce 2013), protože s výrobou silně klesl i počet
-pracujících (můj úsudek z uvedených čísel o nezaměstnanosti). Euro přijalo Estonsko v roce 2011 se zdravými veřejnými
-financemi (Evropská centrální banka 2017); jeho vliv na výkon nikdo z mých zdrojů nezměřil, příčina není doložena.
-
-**Proč se dohánění zpomalilo.** Eesti Pank (2026) rozložila růst HDP na obyvatele a příspěvek produktivity práce podle ní
-klesl z 6,4 procentního bodu ročně v letech 1995–2005 na 1,4 v letech 2005–2015 a 0,8 v letech 2015–2025 (posoudila
-rozkladem růstu). Mezinárodní měnový fond (2026) k tomu píše, že mezi lety 1993 a 2007 se příjmová mezera vůči EU zmenšila
-skoro o polovinu, od té doby se dohánění do velké míry zastavilo a „motor produktivity“, který dohánění v 2000. letech
-poháněl, ztratil sílu: ani nejvýkonnější firmy už nepostupují a výrobní firmy na špici jsou od roku 2010 zhruba beze změny
-(posoudil na datech firem). Pracovní studie Mezinárodního měnového fondu (2025, názor autorů) na datech firem změřila, že
-pokles produktivity v Pobaltí táhne hlavně špatné přidělování práce a kapitálu, zvlášť ve službách. Silnou digitální
-veřejnou správu, postavenou na státní datové výměně X-tee spuštěné v prosinci 2001 (Nordic Institute for Interoperability
-Solutions), Evropská komise (2026) uznává, ale píše, že se zatím plně nepromítla do digitalizace firem a do produktivity
-(posoudila); digitální stát tedy podle dokladů růst výkonu nevysvětluje.
-
-**Proč výkon po roce 2019 klesl.** Po energetickém šoku z ruské invaze na Ukrajinu mzdy rychle rostly a podle Evropské
-komise (2026) tato velká zvýšení nahlodala konkurenceschopnost Estonska (posoudila). Podíl Estonska na vývozních trzích
-klesl mezi 3. čtvrtletím 2021 a 4. čtvrtletím 2023 o 23 %, zatímco Litvy o 7 % a Lotyšska o 6 %, a podle pracovní studie
-Mezinárodního měnového fondu (2025) estonský pokles souvisí hlavně se slábnoucí konkurenceschopností a klesající relativní
-produktivitou (změřeno rozkladem vývozu, názor autorů). Výkon na pracujícího přitom klesl z 81,0 % výkonu střední země ligy
-v roce 2019 na 78,1 % v roce 2024 (Eurostat, přepočet projektu); spojení tohoto poklesu s energetickým šokem je jen časová
-souvislost, kterou podporují posudky institucí.
-
-## 3. Proč taková zátěž daní a odvodů (2024)
-
-Estonsko v roce 2024 odvedlo státu 40,9 % z toho, co firma za zaměstnance zaplatila (svobodný bez dětí při skutečné mzdě
-země; přepočet projektu), tedy zhruba tolik jako střední země ligy (41,2 %). Hlavní část zátěže tvoří sociální daň 33 %
-z hrubé mzdy, kterou platí zaměstnavatel (20 % sociální pojištění a 13 % zdravotní pojištění; Malk 2015). K ní patří
-pojistné v nezaměstnanosti 0,8 % u zaměstnavatele a 1,6 % u zaměstnance (od roku 2015; Malk 2015) a jednotná daň
-z příjmu se sazbou 20 % v letech 2015–2024 (Malk 2015; Evropská komise 2026) a s nezdanitelnou částkou, která s rostoucím
-příjmem ubývala (Evropská komise 2026). Z každých 100 eur nákladů práce šlo v roce 2024 při průměrné mzdě asi 25,3 eura na
-odvody zaměstnavatele, 1,2 eura na pojistné zaměstnance a 14,2 eura na daň z příjmu (můj přepočet z dat OECD).
-
-Podle řady OECD při průměrné mzdě se zátěž od roku 2000 pohybovala mezi 36 a 42 %: 41,3 % v roce 2000, 38,4 % v roce 2008,
-39,9 % v roce 2013, 37,0 % v roce 2019 a 40,7 % v roce 2024 (OECD, Taxing Wages). Pokles do roku 2008 způsobilo snižování
-sazby daně z příjmu z 26 % až na 21 % (Keen, Kim a Varsano 2006; Malk 2015), díky kterému daň z příjmu průměrného
-zaměstnance klesla z 20,9 % hrubé mzdy v roce 2004 na 17,3 % v roce 2008 (OECD). Zvýšení na 40,4 % v roce 2012 způsobilo
-hlavně krizové zvýšení pojistného v nezaměstnanosti v roce 2009 (u zaměstnavatele z 0,3 % na 1,4 %, u zaměstnance z 0,6 %
-na 2,8 %), které se v letech 2013 a 2015 zase snížilo (Malk 2015; OECD). Reforma 2018 zvedla nezdanitelnou částku pro
-nízké a střední mzdy a zátěž klesla na 36,2 % (OECD); čistá deklarovaná mzda pak rostla asi o 3,3 procentního bodu rychleji
-než hrubá a zaměstnavatelé podle Eesti Pank (2019) pravděpodobně zadrželi růst hrubých mezd. Od roku 2019 do roku 2024
-zátěž vzrostla na 40,7 %, ačkoli se sazby neměnily: daň z příjmu průměrného zaměstnance stoupla ze 14,1 % na 19,0 % hrubé
-mzdy, protože průměrná hrubá mzda vzrostla z 16 817 na 24 139 eur ročně (OECD) a z ubývajícího odpočtu jí zbývalo stále
-méně (můj úsudek z dat OECD). Evropská komise (2026) tento odpočet popisuje jako „progresivní“ s nežádoucím „hrbem“
-v mezních sazbách; po roce 2024 se sazba zvýšila na 22 % a odpočet nahradila jednotná nezdanitelná částka 8 400 eur ročně
-(Evropská komise 2026), do hodnoty za rok 2024 se to ale nepromítá.
-
-**Test protipříkladem.** Kdyby zaměstnavatel neplatil sociální daň 33 %, zátěž by byla asi o čtvrtinu nákladů práce nižší,
-takže sociální daň je skutečná příčina výše zátěže; to, že ji formálně platí zaměstnavatel, a ne zaměstnanec, nerozhoduje,
-rozhoduje její výše vůči nákladům práce. Kdyby nezdanitelná částka s příjmem neubývala, daň z příjmu by při růstu mezd jako
-podíl tolik nerostla, takže ubývající odpočet je příčina nárůstu zátěže po roce 2019 (můj úsudek). Rovná sazba sama o sobě
-výši zátěže při průměrné mzdě nevysvětluje: rozhoduje, jak vysoká je a kolik z ní odpočet umaže.
-
-## 4. Další faktory Estonska
-
-- **Odchod lidí do ciziny** byl menší než u sousedů: od vstupu do EU v roce 2004 do doby zprávy Evropské centrální banky
-  (2017) klesl počet obyvatel Estonska o 3 %, Lotyšska o 12 % a Litvy o 14 %. Odchod do Skandinávie a západní Evropy
-  pomohl přizpůsobení po krizi, ale snížil nabídku práce a přispěl k napjatému trhu práce (posoudila Evropská centrální
-  banka 2017).
-- **Přistěhovalci:** pracovníci najatí v zahraničí v roce 2018 brzdili růst mezd v soukromém sektoru, protože firmám méně
-  chyběli místní pracovníci (posoudila Eesti Pank 2019).
-- **Minimální mzda** vzrostla v letech 2019–2024 z 540 na 820 eur, tedy z 38,4 % na 41,4 % průměrné mzdy, a růst mezd
-  v roce 2024 podpořilo její zvýšení o 13,1 % (posoudila Eesti Pank 2025). Tripartitní dohodu o zvyšování na 50 %
-  průměrné mzdy do roku 2027 vláda odložila (Evropská komise 2026). Vliv na průměrnou mzdu nikdo nevyčíslil.
-- **Kolektivní vyjednávání** je slabé: kolektivní smlouvy pokrývaly v roce 2021 19,1 % zaměstnanců, odbory sdružovaly
-  v roce 2023 5,6 % zaměstnanců a mzdy se určují hlavně ve firmách (Evropská komise 2026). Vliv na průměrnou mzdu není
-  doložen.
-- **Veřejné platy:** hlavním tahounem zrychlení mezd ve druhém pololetí 2018 byl veřejný sektor, hlavně zdravotnictví
-  a školství (posoudila Eesti Pank 2019).
-- **Skladba ekonomiky:** podíl pracovních míst v informačních a komunikačních technologiích se mezi lety 2010 a 2025
-  zdvojnásobil a konkurenceschopnost stále víc táhnou služby; ani růst celkové produktivity špičkových firem v tomto oboru
-  asi o 30 % mezi lety 2010 a 2024 ale nestačil zvednout produktivitu celé ekonomiky (Mezinárodní měnový fond 2026).
-- **Mzdy v obálkách:** podle průzkumu Stockholmské ekonomické školy v Rize mezi řediteli firem se v roce 2025 skrývalo před státem 17,9 % mezd (SSE Riga 2026,
-  odhad autorů). Oficiální průměr proto může skutečné výdělky podceňovat (můj úsudek); o kolik, nikdo nevyčíslil.
-
-## 5. Co říkají ekonomové
-
-Podle rešerše výroků institucí (`ekonomove/EE.md`) vidí Evropská komise i Mezinárodní měnový fond hlavní příčinu úrovně
-mezd v produktivitě práce a Mezinárodní měnový fond (2026) píše, že „produktivní motor, který poháněl dohánění
-v 2000. letech, ztratil dynamiku“. Vývoj mezd po roce 2010 podle rešerše formovalo nejdřív „vnitřní znehodnocení“ let
-2009–2010, pak napjatý trh práce s možností odejít za prací do Finska a po roce 2021 energetická inflace, která mzdy
-vyhnala nad produktivitu.
-
-## 6. Zdroje
-
-- **Eurostat a přepočet projektu:** výkon na pracujícího (Eurostat `prc_ppp_ind_1` a `nama_10_pe`, vůči střední zemi ligy
-  téhož roku), zátěž daní a odvodů 2024 při skutečné mzdě a čistá mzda v kupní síle; soubor `data/kontext_kroky.json`
-  a výpočty `mereni.py`, `horizont.py` v pracovní složce.
-- **OECD, Taxing Wages – srovnávací tabulky** (zátěž, sazby odvodů a daň z příjmu při průměrné mzdě, 2000–2025):
-  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/all?startPeriod=2000&endPeriod=2025
-  (staženo projektem do `data/raw_krok1/oecd_taxing_wages.json`).
-- **Fischer a Sahay 2000:** Stanley Fischer a Ratna Sahay, Taking Stock, Finance & Development 37(3), Mezinárodní měnový
-  fond, září 2000. https://www.imf.org/external/pubs/ft/fandd/2000/09/fischer.htm
-- **Mezinárodní měnový fond 2010:** Catriona Purfield a Christoph Rosenberg, Adjustment under a Currency Peg: Estonia,
-  Latvia and Lithuania during the Global Financial Crisis 2008–09, pracovní studie 10/213, 2010 (názor autorů).
-  https://www.imf.org/external/pubs/ft/wp/2010/wp10213.pdf
-- **Keen, Kim a Varsano 2006:** Michael Keen, Yitae Kim a Ricardo Varsano, The “Flat Tax(es)”: Principles and Evidence,
-  Mezinárodní měnový fond, pracovní studie 06/218, 2006. https://www.imf.org/external/pubs/ft/wp/2006/wp06218.pdf
-- **Evropská centrální banka 2017:** Convergence and adjustment in the Baltic States, rámeček 1, Economic Bulletin 5/2017.
-  https://www.ecb.europa.eu/pub/pdf/other/ebbox201705_01.en.pdf
-- **Campos, Coricelli a Moretti 2019:** Institutional integration and economic growth in Europe, Journal of Monetary
-  Economics 103, 88–104 (otevřený plný text). https://bura.brunel.ac.uk/bitstream/2438/16695/3/FullText.pdf
-- **Evropská komise 2016:** The impact of cohesion policy 2007-2013: model simulations with Quest III, Ex post evaluation,
-  Work Package 14a. https://ec.europa.eu/regional_policy/sources/evaluation/expost2013/wp14a_final_report_en.pdf
-- **Mezinárodní měnový fond 2026:** Republic of Estonia: 2026 Article IV Consultation – Staff Report, Country Report
-  No. 26/243, včetně přílohy I. https://haldus.eestipank.ee/sites/default/files/2026-09/1estea2026001.pdf
-- **Mezinárodní měnový fond 2026 (podkladová studie):** Republic of Estonia: Selected Issues, Country Report No. 26/244,
-  kapitola Corporate Income Tax Regimes and Firm Investment. https://haldus.eestipank.ee/sites/default/files/2026-09/1estea2026002.pdf
-- **Masso, Meriküll a Vahter 2011:** Gross Profit Taxation Versus Distributed Profit Taxation and Firm Performance: Effects
-  of Estonia’s Corporate Income Tax Reform, Eesti Pank Working Paper 2/2011 (názor autorů).
-  https://digar.ee/arhiiv/en/download/199208
-- **Malk 2015:** Liina Malk, Labour Cost Adjustment in Estonia During and After the Crisis, Eesti Pank Occasional Paper
-  1/2015 (názor autorky). https://digar.ee/arhiiv/en/download/243554
-- **Eesti Pank 2019:** Labour Market Review 1/2019.
-  https://haldus.eestipank.ee/sites/default/files/publication/en/LabourMarket/2019/ty1__2019__eng.pdf
-- **Eesti Pank 2025:** Labour Market Review 2025. https://haldus.eestipank.ee/sites/default/files/2025-05/tty_1_2025_eng.pdf
-- **Eesti Pank 2026:** Labour Market Review 2026 (tabulka B2.1, rozklad růstu HDP).
-  https://haldus.eestipank.ee/sites/default/files/2026-04/tty_1_2026_eng.pdf
-- **Mezinárodní měnový fond 2025 (pracovní studie):** Saioa Armendariz a kol., Competitiveness and Productivity in the
-  Baltics: Common Shocks, Different Implications, pracovní studie 25/18, 2025 (názor autorů).
-  https://www.imf.org/-/media/files/publications/wp/2025/english/wpiea2025018-print-pdf.pdf
-- **Evropská komise 2026:** 2026 Country Report – Estonia, SWD(2026) 206.
-  https://data.consilium.europa.eu/doc/document/ST-10122-2026-ADD-1/en/pdf
-- **Nordic Institute for Interoperability Solutions:** X-Road History. https://x-road.global/xroad-history
-- **SSE Riga 2026:** Arnis Sauka a Tālis Putniņš, Shadow Economy Index for the Baltic Countries 2009–2025, Stockholmská
-  ekonomická škola v Rize, 2026. https://www.sseriga.edu/sites/default/files/2026-06/SSERiga_Shadow_Economy_Index_2009_2025_2.pdf
-- **Rešerše výroků institucí:** `ekonomove/EE.md` (citace Mezinárodního měnového fondu 2026 v překladu rešerše).
-
-
-# Lotyšsko: proč má v kolech takové hodnoty
-
-*Podklad pro výklad hodnot v kolech (krok 8 a podklady pro krok 9a), průměrná čistá mzda 2024; sestaveno 17. 10. 2026.
-Výkon, růst, zátěž a čistá mzda jsou z `data/kontext_kroky.json` (Eurostat a OECD v přepočtu projektu), ostatní čísla
-mají zdroj v závorce a v oddílu Zdroje. U každé příčiny je síla dokladu: změřeno (kdo a jak), posoudila (instituce),
-jen časová souvislost, nebo můj úsudek. Kroky s roky a aktéry jsou v `data/kroky_zemi/LV.json`.*
-
-**Hodnoty Lotyšska:** výkon na začátku 32,9 % výkonu střední země ligy (1996); růst výkonu 2,16krát vůči střední zemi
-(1996 → průměr 2020–2024); zátěž daní a odvodů 42,0 % nákladů práce (2024); čistá mzda 19 989 v kupní síle ročně (2024).
+Hodnoty Slovinska v kolech: výkon na začátku 69,9 % výkonu střední země ligy v roce 1996, růst výkonu 1,25násobek
+(z roku 1996 na průměr let 2020–2024) a zátěž daní a odvodů 45,8 % nákladů práce v roce 2024. Průměrná čistá mzda
+na plný úvazek byla v roce 2024 asi 24 415 jednotek kupní síly ročně (vše Projekt 2026).
 
 ## 1. Proč takový výkon na začátku (1996)
 
-V roce 1996 vytvořil lotyšský pracující 32,9 % toho, co pracující ve střední zemi ligy (hrubý domácí produkt v kupní síle
-na pracujícího; Eurostat, přepočet projektu), skoro stejně jako Litva (34,4 %) a Estonsko (35,1 %), a méně mělo jen
-Rumunsko (25,7 %). Lotyšsko vycházelo z plánované ekonomiky Sovětského svazu, jehož rozpad zasáhl pobaltské země tvrději
-než ostatní země střední a východní Evropy (posoudil Mezinárodní měnový fond 2010), a ze tří pobaltských zemí mělo
-nejhlubší propad: výroba klesla mezi lety 1989 a 1993 o 52,8 % a ještě v roce 1999 dosahovala jen 64 % úrovně z doby
-před transformací (Fischer a Sahay 2000). Pobaltské země navíc v 90. letech prošly dvěma vlnami krachů bank (Mezinárodní
-měnový fond 2010). Lotyšsko místo měnové rady zvolilo úzké pásmo kurzu vůči koši měn Mezinárodního měnového fondu
-(Mezinárodní měnový fond 2010) a rovnou daň z příjmu 25 % zavedlo až v roce 1997 (Keen, Kim a Varsano 2006), takže
-v roce 1996 bylo na začátku dohánění.
+V roce 1996 vytvořil slovinský pracující 69,9 % toho, co pracující ve střední zemi ligy, nejvíc ze zemí střední Evropy
+v lize (Projekt 2026). Slovinsko vyšlo z jugoslávské podnikové samosprávy, která od 50. let stála mezi tržní a centrálně
+plánovanou ekonomikou (Prašnikar, Domadenik a Koman 2009), a proto má podle kódování V-Dem jen 23 let centrálně plánované ekonomiky proti 42 letům v Česku a na Slovensku (V-Dem v Projekt 2026).
+Výstup po roce 1989 sice klesl do roku 1992 o 20,4 %, ale zotavil se rychle a v roce 1999 už převyšoval úroveň před
+začátkem transformace o 5 % (MMF 2000); kapitálu na pracovníka mělo Slovinsko v roce 1996 84 % střední země ligy
+(Penn World Table 11.0 v Projekt 2026). Privatizace dala přednost zaměstnancům a vedení podniků, kteří dostávali
+akcie a mohli podniky levně odkupovat (posoudil Bojnec 1999), takže podniky zůstaly hlavně v domácích rukou (můj
+úsudek) a zahraničního kapitálu přicházelo málo: čistý příliv přímých zahraničních investic dosahoval v letech
+1996–2000 průměrně 0,9 % HDP ročně proti 5,5 % v Česku (Světová banka v Projekt 2026). Vyšší start tedy dala kratší a měkčí plánovaná ekonomika a rychlé zotavení (můj úsudek).
 
 ## 2. Proč takový růst výkonu (1996–2024)
 
-**Kolik a kdy.** Výkon lotyšského pracujícího se vůči střední zemi ligy zvětšil 2,16krát (z 32,9 % v roce 1996 na průměr
-let 2020–2024; Eurostat, přepočet projektu). Rychleji rostly jen Rumunsko (3,17krát), Litva (2,48krát) a Estonsko
-(2,37krát), další v pořadí Polsko už jen 1,76krát. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl výkon na pracujícího mezi rokem 1996 a průměrem let 2020–2024 v Lotyšsku asi o 160 %, v Estonsku asi o 139 %, v Rumunsku asi o 176 %, v Litvě asi o 193 % a v Polsku asi o 131 % (střed ligy asi o 29 %); Estonsko tedy reálně rostlo pomaleji než Lotyšsko, ne rychleji. Nejvíc Lotyšsko dohánělo v letech 2000–2008, kdy se jeho výkon zvedl
-z 38,4 % na 53,5 % výkonu střední země, tedy asi o 1,9 bodu ročně. V letech 2008–2013 přidalo 4,8 bodu (asi 1,0 ročně),
-v letech 2013–2019 7,6 bodu (asi 1,3 ročně) a v letech 2019–2024 už jen 3,9 bodu (asi 0,8 ročně), na 69,8 % v roce 2024
-(vše Eurostat, přepočet projektu). Dohánění se tedy na rozdíl od Estonska nezastavilo, ale po roce 2008 a znovu po roce
-2019 se zpomalilo.
+Výkon slovinského pracujícího vůči střední zemi ligy vzrostl z 69,9 % v roce 1996 na průměr 87,3 % v letech 2020–2024,
+tedy 1,25krát, nejméně z těchto tří zemí (Projekt 2026). Část pomalejšího růstu je vyšší start, protože kdo je blíž
+bohatým, má méně co dohánět (můj úsudek). Nejvíc Slovinsko dohánělo v letech 1996–2004 (o 11,8 procentního bodu, na
+81,7 %), pak do roku 2008 stálo, v krizi let 2008–2013 ztratilo 5,3 procentního bodu, v letech 2013–2019 dohnalo 6,0 bodu a do
+roku 2024 ještě 3,1 bodu na 86,6 % (Projekt 2026). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* že do roku 2008 stálo, platí jen v kupní síle; ve stálých cenách vzrostl slovinský výkon na pracujícího v letech 2004–2008 asi o 14 %, střed ligy asi o 6 %, takže reálně Slovinsko dál dohánělo.
 
-**Dohánění z nízkého základu a vstup do EU.** Evropská centrální banka (2017) srovnáním zemí EU změřila, že pobaltské země
-včetně Lotyšska rostly v letech 1999–2015 rychleji, než by odpovídalo jejich výchozímu příjmu, a jako jeden z možných
-důvodů uvádí zlepšení kvality institucí, nejrychlejší před vstupem do EU (posoudila). Účinek samotného vstupu změřili
-Campos, Coricelli a Moretti (2019) srovnáním se „syntetickým Lotyšskem“ poskládaným ze zemí mimo EU: v letech 1998–2008
-byl lotyšský HDP na obyvatele v průměru o 31,7 % a produktivita práce o 19,4 % vyšší, než by byly bez členství, což je
-u HDP na obyvatele ve srovnatelném okně prvních deseti let členství největší účinek ze všech zemí ve studii (změřeno). Studie bere za začátek členství rok 1998
-a končí rokem 2008, takže v čísle je i úvěrový boom, který pak skončil krizí. Fondy EU z let 2007–2013 podle modelového
-výpočtu Evropské komise zvýšily lotyšský HDP v roce 2015 o 5,1 %, po Maďarsku nejvíc ze všech zemí (posoudila Evropská
-komise 2016).
+**1996–2004: dohánění před vstupem do EU.** Hodinová produktivita rostla v letech 2000–2008 v průměru o 3,4 % ročně
+(IMAD 2023) a investice do roku 2008 rychle rostly v podnicích i v infrastruktuře, hlavně díky stavbě dálnic
+(IMAD 2023). Vstup do EU v roce 2004 podle srovnání se syntetickým Slovinskem ze zemí mimo EU zvýšil HDP na obyvatele
+o 10,4 %; statisticky průkazný je rozdíl u produktivity práce, u HDP na obyvatele ne (změřili Campos, Coricelli
+a Moretti 2014).
 
-**Úvěrový boom: nejvíc přehřátá ekonomika Pobaltí.** Boom let 2004–2007 financovaly z velké části peníze severských
-mateřských bank, ale domácí lotyšské banky si snadno půjčovaly i z vkladů cizinců a na mezinárodních trzích (Mezinárodní
-měnový fond 2010). Mzdy rostly v letech 2004–2008 asi o 20 % ročně, inflace dosáhla v roce 2007 10,1 % a schodek běžného
-účtu 22,3 % HDP (Mezinárodní měnový fond 2010); reálná odměna na zaměstnance rostla v letech 2004–2007 v průměru o 25,2 %
-ročně, v Estonsku o 15,8 % a v Litvě o 15 % (Evropská centrální banka 2017). Mezinárodní měnový fond (2010) posoudil, že
-přehřátí bylo nejvýraznější v Lotyšsku, kde úřady také nejpomaleji použily nástroje k jeho zchlazení.
+**2004–2008: zastavení při vysoké úrovni.** Výkon se držel kolem 82–83 % střední země ligy (Projekt 2026). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* to platí jen v kupní síle; ve stálých cenách vzrostl výkon na pracujícího v letech 2004–2008 asi o 14 % proti asi 6 % u středu ligy. Podle IMAD
+přitom příspěvek kapitálu k růstu v letech 2001–2008 nepřevýšil rychleji rostoucí země EU (posoudil IMAD 2023).
+Slovinsko v roce 2007 přijalo euro (Vláda SI 2006); hodnocení jeho účinku se srovnáním jsem nenašel.
 
-**Nejhlubší krize Pobaltí.** V říjnu 2008 převzal stát krachující banku Parex, druhou největší v zemi (51 %, později
-85 %), a Lotyšsko jako jediná pobaltská země požádalo o pomoc Mezinárodní měnový fond, EU a severské země (Mezinárodní
-měnový fond 2010; Evropská centrální banka 2017). Čistá úsporná opatření dosáhla v roce 2009 11,2 % HDP, zdaleka nejvíc
-v Pobaltí; mzdy klesly ve 4. čtvrtletí 2009 meziročně o 12 %, ve veřejném sektoru o 23,7 % a v soukromém o 5,0 %,
-a nezaměstnanost dosáhla koncem roku 2009 20 % (Mezinárodní měnový fond 2010) a v roce 2010 19,5 % (Evropská centrální
-banka 2017). Evropská centrální banka (2017) hodnotí toto „vnitřní znehodnocení“ jako bolestné, ale účinné (posoudila).
-Čistá mzda v kupní síle byla ještě v roce 2013 nižší než v roce 2008 (10 568 proti 10 770 ročně; přepočet projektu), ve
-výkonu na pracujícího se ale krize ukázala jen jako zpomalení (z 53,5 % v roce 2008 na 58,3 % v roce 2013), protože
-s výrobou silně klesl i počet pracujících (můj úsudek z čísel o nezaměstnanosti).
+**2008–2013: hluboká krize a bankovní krize.** Výkon klesl z 82,8 % na 76,2 % v roce 2009 a v roce 2013 byl 77,5 %
+(Projekt 2026). Investice v letech 2007–2012 klesly víc než v kterékoli zemi EU kromě Řecka, hlavně kvůli problémům
+bankovního sektoru, oddlužování firem a horším očekáváním (posoudil IMAD 2023). Po krátkém oživení v roce 2010 se země
+v roce 2011 znovu propadla do recese s druhým největším poklesem HDP v eurozóně (Nye 2021) a v prosinci 2013 stát
+dokapitalizoval pět bank celkem asi 3,2 mld. € (Banka Slovenije 2013, součet můj). Největší odstup HDP na obyvatele od
+průměru EU mělo Slovinsko v roce 2015 (IMAD 2026).
 
-**Proč po krizi rostlo pomaleji než sousedé.** Mezinárodní měnový fond (2025) píše, že lotyšská produktivita od světové
-finanční krize zaostává za ostatními pobaltskými zeměmi i za eurozónou, a uvádí dvě hlavní příčiny: nedostatek kapitálu,
-protože se málo investuje, a špatné přidělování práce a kapitálu; přesun pracovníků do výkonnějších odvětví byl minimální,
-i ve srovnání s Estonskem a Litvou (posoudil na základě vlastních studií). Evropská komise (2023) uvádí, že lotyšská
-produktivita na hodinu dosáhla v roce 2021 73 % průměru EU proti 84 % v Estonsku a 85 % v Litvě, což lze zčásti přičíst
-skladbě ekonomiky s převahou firem s nízkou a středně nízkou technologickou úrovní (posoudila). K tomu podle Evropské
-komise (2023) upadla dvě hlavní vývozní odvětví, finanční služby a doprava: banky obsluhující cizince po zpřísnění
-pravidel proti praní peněz silně omezily činnost a vklady cizinců klesly z víc než 40 % aktiv bank v roce 2018 na 16,4 %
-ve 2. čtvrtletí 2022 (posoudila; vliv na mzdy nevyčíslila). Nedostatek pracovníků, který podle Mezinárodního měnového
-fondu (2025) způsobuje hlavně stárnutí a emigrace, je podle něj významnou překážkou investic a produktivity (posoudil).
-Daňová reforma z roku 2018, po které firmy neplatí daň ze zisku ponechaného ve firmě, investice nezvedla: míra investic
-lotyšských firem proti finským po ní klesla (změřeno, Mezinárodní měnový fond 2026). Že Lotyšsko rostlo pomaleji než
-Estonsko a Litva hlavně kvůli nejhlubšímu boomu a pádu a kvůli slabšímu růstu produktivity po krizi, je můj souhrn
-z uvedených posudků institucí; žádná instituce ten rozdíl jako celek nezměřila. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* pomaleji než Estonsko rostlo Lotyšsko jen v kupní síle; ve stálých cenách vzrostl lotyšský výkon na pracujícího mezi rokem 1996 a průměrem let 2020–2024 asi o 160 % proti 139 % v Estonsku a po krizi, v letech 2008–2024, asi o 29 % proti 15 %. Pomaleji než Litva (asi 193 % a 34 %) rostlo i reálně. Euro přijalo Lotyšsko v roce 2014
-(Evropská centrální banka 2017); jeho vliv na výkon nikdo z mých zdrojů nezměřil, příčina není doložena.
+**2013–2024: návrat, ale pomalý.** Výkon vzrostl na 83,5 % v roce 2019 a na 86,6 % v roce 2024 (Projekt 2026). Po krizi
+zužovaly odstup od EU zhruba stejným dílem produktivita a podíl zaměstnaných a od roku 2019 hlavně produktivita, od roku
+2023 se ale dohánění zastavilo a HDP na obyvatele v kupní síle dosáhlo v roce 2025 91 % průměru EU (IMAD 2026).
+Hodinová produktivita rostla v letech 2009–2022 jen o 0,9 % ročně proti 3,4 % v letech 2000–2008 a klíčovým důvodem
+zpomalení bylo podle IMAD skromnější prohlubování kapitálu (posoudil IMAD 2023).
 
-**Po roce 2021.** Mzdy rostly rychleji než produktivita: mzdové náklady na jednotku výkonu vzrostly o 11,3 % v roce 2022,
-o 9,3 % v roce 2023 a o 8,7 % v roce 2024 proti 4,8 % v EU, zatímco produktivita na hodinu v letech 2022 a 2023 klesla
-a v roce 2024 vzrostla jen o 0,9 % (Evropská komise 2026). Lotyšsko ale ztratilo mezi 3. čtvrtletím 2021 a 4. čtvrtletím
-2023 jen 6 % svého podílu na vývozních trzích, zatímco Estonsko 23 %, mimo jiné díky vyrovnanějšímu reálnému kurzu
-(změřeno rozkladem vývozu, pracovní studie Mezinárodního měnového fondu 2025, názor autorů), a jeho výkon vůči střední
-zemi ligy dál pomalu rostl z 65,9 % v roce 2019 na 69,8 % v roce 2024 (Eurostat, přepočet projektu).
+**Brzdy.** Slovinsko zůstává mezi zeměmi EU s nejnižším poměrem přímých zahraničních investic k HDP (posoudila EK 2026)
+a v letech 1996–2024 do něj přitékalo průměrně jen 2,2 % HDP ročně proti 4,7 % v Česku (Světová banka v Projekt 2026);
+nízké jsou i investice do nehmotného kapitálu (EK 2026 podle rešerše `ekonomove/SI.md`). Výdaje na výzkum a vývoj byly
+naopak v letech 1996–2023 v průměru 1,81 % HDP, víc než v Česku a na Slovensku (Eurostat v Projekt 2026).
 
 ## 3. Proč taková zátěž daní a odvodů (2024)
 
-Lotyšsko v roce 2024 odvedlo státu 42,0 % z toho, co firma za zaměstnance zaplatila (svobodný bez dětí při skutečné mzdě
-země; přepočet projektu), o něco víc než střední země ligy (41,2 %) a nejvíc z Pobaltí (Estonsko 40,9 %, Litva 39,9 %).
-Systém stojí na státním sociálním pojištění se souhrnnou sazbou 34,09 % hrubé mzdy (Latvijas Banka 2026a), z níž v roce
-2024 platil zaměstnavatel 23,61 % a zaměstnanec 10,5 %, a na dani z příjmu, která u průměrné mzdy brala 17,3 % hrubé mzdy
-(OECD, Taxing Wages). Z každých 100 eur nákladů práce tak šlo při průměrné mzdě asi 19,1 eura na odvody zaměstnavatele,
-8,5 eura na odvody zaměstnance a 14,0 eura na daň z příjmu (můj přepočet z dat OECD).
+Ze všeho, co firma za zaměstnance s průměrnou mzdou v roce 2024 zaplatila, odvedl stát 45,8 % (Projekt 2026); OECD
+při své průměrné mzdě uvádí 44,7 % (OECD TW 2026). Rozdíl je měřením: průměrná mzda z národních účtů je ve Slovinsku
+o 24 % vyšší než mzda průměrného pracovníka podle OECD a progresivní daň z ní proto bere víc (Projekt 2026,
+`data/vysledek.json`; výklad můj). Slovinský systém je zvláštní tím, že odvody platí hlavně zaměstnanec: 22,1 % hrubé
+mzdy, od roku 2024 23,6 %, kdežto zaměstnavatel 16,1 % (OECD TW 2026). Daň z příjmu je progresivní s nejvyšší sazbou 50 %
+od poměrně nízké hranice (IMAD 2023) a při průměrné mzdě činí 12,2 % hrubé mzdy (OECD TW 2026). IMAD vysokou zátěž
+přičítá nadprůměrným odvodům zaměstnanců a vysoké nejvyšší sazbě daně (posoudil IMAD 2023) a Evropská komise mluví
+o silné závislosti na zdanění práce, protože odvody dávají 16,8 % HDP proti 13 % v EU (EK 2026 podle rešerše
+`ekonomove/SI.md`).
 
-Podle řady OECD při průměrné mzdě byla zátěž 43,2 % v roce 2000, 41,3 % v roce 2008, 43,7 % v roce 2013, 42,5 % v roce
-2019 a 41,6 % v roce 2024 (OECD, Taxing Wages). Pokles do roku 2008 způsobilo hlavně snížení souhrnných sociálních odvodů:
-v letech 1996 a 1997 činily 38 % hrubé mzdy (Keen, Kim a Varsano 2006), v roce 2000 36 % a od roku 2004 asi 33 % (OECD).
-Krize přinesla nárůst na 44,3 % v roce 2012: daň z příjmu se v roce 2009 nejdřív snížila o 2 procentní body a pak zase
-zvýšila (Mezinárodní měnový fond 2010), takže u průměrné mzdy stoupla ze 17,6 % hrubé mzdy v roce 2009 na 21,5 % v roce
-2010, a odvody zaměstnance se v roce 2011 zvýšily z 9 % na 11 % (OECD). Pak zátěž postupně klesala; v roce 2018 se
-odvody zvedly o 1 procentní bod a daň z příjmu u průměrné mzdy klesla, takže zátěž zůstala skoro stejná (42,7 % v roce
-2017, 42,6 % v roce 2018), a v roce 2021 se odvody o 1 bod snížily a zátěž klesla na 40,5 % (OECD). Do roku 2024 se
-zvedla na 41,6 %, protože daň z příjmu průměrného zaměstnance vzrostla z 16,0 % hrubé mzdy v roce 2021 na 17,3 % v roce
-2024; proč, zdroje neuvádějí (můj úsudek: při rostoucích mzdách klesá podíl nezdanitelného minima). Po roce 2024 snížila daňová reforma 2025
-zátěž u průměrné mzdy asi o 1,8 procentního bodu (Evropská komise 2026), do hodnoty za rok 2024 se to ale nepromítá.
-U nízkých výdělků je zátěž vyšší než v EU: při polovině průměrné mzdy 35 % proti 31,6 % (2025; Evropská komise 2026).
+**Test protipříkladem.** Kdyby zaměstnavatel platil větší část odvodů a zaměstnanec menší při stejném součtu, zátěž
+vůči nákladům práce by byla stejná; měnil by se jen poměr čisté a hrubé mzdy, který jako doklad nepoužívám (můj úsudek
+ze vzorce). Vysoké odvody zaměstnance tedy samy vysokou zátěž nevysvětlují. Odvody obou stran dohromady berou ve
+Slovinsku asi 34 % nákladů práce, podobně jako v Česku a na Slovensku, a o vyšší zátěž se stará hlavně daň z příjmu:
+asi 10,5 % nákladů práce proti 7,0 % v Česku a 8,0 % na Slovensku (můj přepočet z OECD TW 2026 za rok 2024).
 
-**Test protipříkladem.** Lotyšsko má vyšší zátěž než Litva, protože si ponechalo souhrnné odvody 34,09 % hrubé mzdy,
-kdežto Litva je v roce 2019 snížila (viz výklad Litvy); kdyby Lotyšsko mělo litevské sazby, zátěž by byla nižší, takže
-výše odvodů je skutečná příčina. Proti Estonsku je rozdíl malý: daň z příjmu bere v obou zemích asi 14 eur ze 100 eur
-nákladů práce a odvody v Lotyšsku asi 27,6 eura proti 26,5 eura v Estonsku (můj přepočet z dat OECD). To, kdo odvody
-formálně platí, příčinou není: přesun části odvodů ze zaměstnavatele na zaměstnance v roce 1997 (z 37 % a 1 % na 33 %
-a 5 %; Keen, Kim a Varsano 2006) změnil hrubou mzdu, ne celkovou zátěž vůči nákladům práce, a uvádím ho jen jako měření.
-Lotyšská centrální banka k tomu píše, že nižší náklady práce v Lotyšsku odrážejí hlavně nižší mzdy, ne „lepší“ daňový
-systém, a že zátěž kolem 40 % při průměrné mzdě není v Evropě nic extrémního (Latvijas Banka 2026a).
+**Jak se zátěž měnila od roku 2000 (OECD TW 2026, svobodný bez dětí při průměrné mzdě).** Byla 46,3 % v roce 2000,
+45,6 % v roce 2005, 43,3 % v roce 2007, 42,2 % v roce 2009, 43,5 % v roce 2019, 42,9 % v roce 2022, 43,1 % v roce 2023
+a 44,7 % v roce 2024. Mezi lety 2006 a 2009 stát podle plánu z konce roku 2005 postupně zrušil daň z vyplacených mezd
+placenou zaměstnavateli (Vláda SI 2006) a odvody zaměstnavatele včetně této daně klesly z 19,9 % na 16,1 % hrubé mzdy
+(OECD TW 2026; že pokles odpovídá rušení daně, je můj výklad z průběhu dat). Od roku 2007 platí nový zákon o dani
+z příjmu se třemi pásmy místo pěti a nejvyšší sazbou 41 % místo 50 % (Vláda SI 2006) a daň při průměrné mzdě klesla
+z 12,7 % na 10,7 % hrubé mzdy (OECD TW 2026). Pak daň plíživě rostla až na 12,3 % hrubé mzdy v roce 2019 (OECD TW 2026);
+proč, se mi doložit nepodařilo. Snížení daně na jaře 2022 vrátila novela účinná od roku 2023 většinou zpět (posoudila
+EK 2023).
 
-## 4. Další faktory Lotyšska
+**Rok 2024 je hlavně změna měření.** V lednu 2024 stát zrušil dobrovolné doplňkové zdravotní pojištění a nahradil ho
+povinným příspěvkem 35 € měsíčně (EK 2024), pojistné zaměstnance v datech OECD vzrostlo z 22,1 % na 23,6 % hrubé mzdy
+a celková zátěž ze 43,1 % na 44,7 % (OECD TW 2026). Nový příspěvek se ale rovná dřívějšímu dobrovolnému pojistnému
+(EK 2024), které platilo zhruba 73 % obyvatel (EK 2023), a hrubé předepsané pojistné pojišťoven pak kleslo o 12,8 %
+(EK 2026). Kdyby k přeměně nedošlo, byla by měřená zátěž v roce 2024 nižší asi o 1,3 procentního bodu (můj
+přepočet z OECD TW 2026), většina domácností by ale zdravotní pojistné platila dál jako dobrovolné; pro ně se čistý
+příjem po zaplacení pojistného skoro nezměnil (můj úsudek). Od července 2025 přibyl příspěvek na dlouhodobou péči 2 % hrubé mzdy, napůl od zaměstnance a zaměstnavatele
+(EK 2026), který do roku 2024 ještě nezasahuje.
 
-- **Odchod lidí do ciziny:** od vstupu do EU v roce 2004 do doby zprávy Evropské centrální banky (2017) klesl počet
-  obyvatel o 12 %, hlavně odchodem mladších pracovníků. Odchod do Skandinávie a západní Evropy pomohl rychlému přizpůsobení
-  po krizi, ale snížil nabídku práce a pokračující čistá emigrace přispěla k napjatému trhu práce (posoudila Evropská
-  centrální banka 2017). Nejsilnější vlny přišly na začátku 10. let po krizi a čistá migrace byla poprvé od vstupu do EU
-  kladná až v roce 2022, hlavně kvůli Ukrajincům (Evropská komise 2025).
-- **Minimální mzda:** v roce 2023 vzrostla z 500 na 620 eur a podíl nízko kvalifikovaných pracovníků ohrožených chudobou
-  pak klesl z 37,5 % na 29,2 %; Evropská komise (2025) píše jen o souvislosti, ne o příčině. Další zvyšování (700 eur
-  v roce 2024, 740 eur v roce 2025, 780 eur v roce 2026) mělo podle Evropské komise (2026) kladný vliv na růst mezd hlavně
-  v odvětvích s mnoha příjemci minimální mzdy, produktivita ale nedržela krok (posoudila).
-- **Kolektivní vyjednávání a nízké mzdy:** kolektivní smlouvy pokrývaly v roce 2022 25,8 % zaměstnanců, odbory sdružovaly
-  v roce 2021 10,3 % zaměstnanců a Lotyšsko má jeden z nejvyšších podílů nízko placených zaměstnanců v EU (Evropská komise
-  2026). Vliv na průměrnou mzdu není doložen.
-- **Mzdy v obálkách:** podle průzkumu Stockholmské ekonomické školy v Rize mezi řediteli firem se v roce 2025 skrývalo před státem 19,6 % mezd a tyto mzdy
-  tvořily 47,1 % šedé ekonomiky (SSE Riga 2026, odhad autorů). Oficiální průměr proto může skutečné výdělky podceňovat
-  (můj úsudek); o kolik, nikdo nevyčíslil.
-- **Skladba ekonomiky:** úpadek finančních služeb a dopravy a převaha firem s nízkou technologickou úrovní (Evropská komise
-  2023), viz oddíl 2.
+## 4. Další faktory země
+
+- **Vysoká minimální mzda a stlačené mzdy.** Slovinsko má jeden z nejmenších rozdílů mezi minimální a průměrnou mzdou
+  v EU, částečně kvůli nízké nerovnosti a velké koncentraci nízkých mezd; v letech 2022 a 2023 bylo podle Eurostatu
+  první a druhé v poměru minimální a průměrné mzdy (IMAD 2025). Zvýšení minimální mzdy o 22,9 % v roce 2010 se přelilo
+  i do mezd těsně nad minimem (změřili Laporšek, Vodopivec a Vodopivec 2019, rozdíl v rozdílech), ale nízko placeným
+  přineslo velkou a trvalou ztrátu zaměstnání (změřili Laporšek, Orazem, Vodopivec a Vodopivec 2019). Část nárůstu
+  minimální mzdy vznikla změnou definice, která nyní nezahrnuje řadu příplatků (IMAD 2025).
+- **Nedostatek pracovníků** byl v posledních letech klíčovým faktorem růstu mezd, hlavně v pracovně náročných odvětvích
+  s nižšími mzdami (posoudil IMAD 2025).
+- **Kolektivní vyjednávání** pokrývalo v letech 1996–2000 všechny zaměstnance a v letech 2015–2024 v průměru 83 %
+  (OECD/AIAS ICTWSS v Projekt 2026); podle údajů hlášených podle evropské směrnice to bylo v roce 2023 63,3 % (EK 2026 podle
+  rešerše `ekonomove/SI.md`). Vliv na průměrnou mzdu instituce nevyčíslují.
+- **Přistěhovalci.** Lidé narození v cizině tvoří 14,9 % obyvatel (OSN 2024 v Projekt 2026) a cizinci ze zemí mimo EU
+  pracují podle Evropské komise převážně v nízkopříjmových odvětvích (EK 2026 podle rešerše `ekonomove/SI.md`); vliv na
+  průměrnou mzdu nevyčíslen.
+- **Ceny.** Cenová hladina spotřeby byla v roce 2024 90,6 % průměru EU, výrazně víc než v Česku (80,9 %) a na Slovensku
+  (80,8 %) (Eurostat v Projekt 2026). Slovinské náklady práce na zaměstnance (40 789 € ročně) jsou o 27 % vyšší než
+  české, čistá mzda v eurech o 17 % a v kupní síle jen o 5 % (Projekt 2026, můj přepočet); rozdíl smazává vyšší zátěž
+  a vyšší ceny.
+- **Veřejné platy.** Platová reforma ve veřejném sektoru byla přijata koncem roku 2024 a první kroky přišly v roce 2025
+  (Banka Slovenije 2026 podle rešerše `ekonomove/SI.md`); Evropská komise jí ale připisuje i růst mezd v roce 2024
+  (EK 2026 podle téže rešerše), takže její vliv na rok 2024 je nejasný.
 
 ## 5. Co říkají ekonomové
 
-Podle rešerše výroků institucí (`ekonomove/LV.md`) vidí Evropská komise i Mezinárodní měnový fond hlavní příčinu nízké
-úrovně mezd v nízké produktivitě; Mezinárodní měnový fond uvádí „dvě hlavní příčiny“, nedostatek kapitálu a špatné
-přesouvání práce a kapitálu k výkonným firmám. Vývoj mezd po roce 2010 podle rešerše formovala hluboká krize s „vnitřním
-znehodnocením“ a masová emigrace, takže nedostatek pracovníků je podle lotyšské centrální banky dlouhodobě „hlavním
-faktorem růstu mezd“.
+Slovinský vládní ústav IMAD píše, že „náklady práce jsou z pohledu firem relativně vysoké, zatímco čistý příjem
+zaměstnance je relativně nízký“ a že úroveň rozvoje zůstává pod průměrem EU „kvůli nižší produktivitě“; Evropská komise
+dodává, že produktivita konverguje „příliš pomalu na to, aby vyrovnala rostoucí náklady práce“ (citace podle
+`ekonomove/SI.md`).
 
 ## 6. Zdroje
 
-- **Eurostat a přepočet projektu:** výkon na pracujícího (Eurostat `prc_ppp_ind_1` a `nama_10_pe`, vůči střední zemi ligy
-  téhož roku), zátěž daní a odvodů 2024 při skutečné mzdě a čistá mzda v kupní síle; soubor `data/kontext_kroky.json`
-  a výpočty `mereni.py`, `horizont.py` v pracovní složce.
-- **OECD, Taxing Wages – srovnávací tabulky** (zátěž, sazby odvodů a daň z příjmu při průměrné mzdě, 2000–2025):
-  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/all?startPeriod=2000&endPeriod=2025
-  (staženo projektem do `data/raw_krok1/oecd_taxing_wages.json`).
-- **Fischer a Sahay 2000:** Stanley Fischer a Ratna Sahay, Taking Stock, Finance & Development 37(3), Mezinárodní měnový
-  fond, září 2000. https://www.imf.org/external/pubs/ft/fandd/2000/09/fischer.htm
-- **Mezinárodní měnový fond 2010:** Catriona Purfield a Christoph Rosenberg, Adjustment under a Currency Peg: Estonia,
-  Latvia and Lithuania during the Global Financial Crisis 2008–09, pracovní studie 10/213, 2010 (názor autorů).
-  https://www.imf.org/external/pubs/ft/wp/2010/wp10213.pdf
-- **Keen, Kim a Varsano 2006:** The “Flat Tax(es)”: Principles and Evidence, Mezinárodní měnový fond, pracovní studie
-  06/218, 2006. https://www.imf.org/external/pubs/ft/wp/2006/wp06218.pdf
-- **Evropská centrální banka 2017:** Convergence and adjustment in the Baltic States, rámeček 1, Economic Bulletin 5/2017.
-  https://www.ecb.europa.eu/pub/pdf/other/ebbox201705_01.en.pdf
-- **Campos, Coricelli a Moretti 2019:** Institutional integration and economic growth in Europe, Journal of Monetary
-  Economics 103, 88–104 (otevřený plný text). https://bura.brunel.ac.uk/bitstream/2438/16695/3/FullText.pdf
-- **Evropská komise 2016:** The impact of cohesion policy 2007-2013: model simulations with Quest III, Ex post evaluation,
-  Work Package 14a. https://ec.europa.eu/regional_policy/sources/evaluation/expost2013/wp14a_final_report_en.pdf
-- **Mezinárodní měnový fond 2025:** Republic of Latvia: 2025 Article IV Consultation – Staff Report, Country Report
-  No. 25/272. https://www.imf.org/-/media/files/publications/cr/2025/english/1lvaea2025001-source-pdf.pdf
-- **Mezinárodní měnový fond 2025 (pracovní studie):** Saioa Armendariz a kol., Competitiveness and Productivity in the
-  Baltics: Common Shocks, Different Implications, pracovní studie 25/18, 2025 (názor autorů).
-  https://www.imf.org/-/media/files/publications/wp/2025/english/wpiea2025018-print-pdf.pdf
-- **Mezinárodní měnový fond 2026:** Republic of Estonia: Selected Issues, Country Report No. 26/244, kapitola Corporate
-  Income Tax Regimes and Firm Investment (srovnání lotyšské reformy 2018 s Finskem).
-  https://haldus.eestipank.ee/sites/default/files/2026-09/1estea2026002.pdf
-- **Evropská komise 2023:** 2023 Country Report – Latvia, SWD(2023) 614.
-  https://data.consilium.europa.eu/doc/document/ST-9779-2023-ADD-1/en/pdf
-- **Evropská komise 2025:** 2025 Country Report – Latvia, SWD(2025) 214.
-  https://data.consilium.europa.eu/doc/document/ST-9849-2025-ADD-1/en/pdf
-- **Evropská komise 2026:** 2026 Country Report – Latvia, SWD(2026) 214.
-  https://data.consilium.europa.eu/doc/document/ST-10130-2026-ADD-1/en/pdf
-- **Latvijas Banka 2026a:** Baiba Brusbārde, Viena alga, trīs summas: cik maksā darbs Baltijā? (Jedna mzda, tři částky:
-  kolik stojí práce v Pobaltí), lotyšská centrální banka, 22. 7. 2026.
-  https://www.makroekonomika.lv/raksti/viena-alga-tris-summas-cik-maksa-darbs-baltija
-- **SSE Riga 2026:** Arnis Sauka a Tālis Putniņš, Shadow Economy Index for the Baltic Countries 2009–2025, Stockholmská
-  ekonomická škola v Rize, 2026. https://www.sseriga.edu/sites/default/files/2026-06/SSERiga_Shadow_Economy_Index_2009_2025_2.pdf
-- **Rešerše výroků institucí:** `ekonomove/LV.md` (citace Mezinárodního měnového fondu 2025 a Latvijas Banka 2025a
-  v překladu rešerše).
+- **Projekt 2026:** data projektu Ekonomické hry, 17. 10. 2026, v této složce: `data/kontext_kroky.json` (výkon na
+  pracujícího vůči střední zemi ligy z Eurostatu, zátěž 2024, čistá mzda), `data/mereni.json` (roční řada výkonu, kapitál
+  na pracovníka z Penn World Table 11.0 https://www.rug.nl/ggdc/productivity/pwt/, roky plánované ekonomiky z V-Dem
+  https://www.v-dem.net/data/the-v-dem-dataset/, přímé zahraniční investice ze Světové banky WDI, výzkum z Eurostatu,
+  kolektivní smlouvy z OECD/AIAS ICTWSS, přistěhovalci z OSN International Migrant Stock 2024), `data/vysledek.json`
+  (hrubá a čistá mzda, cenová hladina, podíl skutečné mzdy na mzdě průměrného pracovníka OECD 1,244).
+- **OECD TW 2026:** OECD, Taxing Wages – comparative tables (jednotlivec bez dětí, 100 % průměrné mzdy: celková zátěž,
+  odvody zaměstnance a zaměstnavatele, daň z příjmu), staženo 17. 10. 2026,
+  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/CZE+SVK+SVN.AV_TW..S_C0.AW100..A
+- **MMF 2000:** Fischer, S., Sahay, R.: Taking Stock, Finance & Development 37(3), září 2000, tabulka 1 (Output
+  Performance, 1989–99), https://www.imf.org/external/pubs/ft/fandd/2000/09/fischer.htm
+- **Bojnec 1999:** Bojnec, Š.: Privatisation, Restructuring and Management in Slovene Enterprises, Comparative Economic
+  Studies 41(4), 1999, https://ideas.repec.org/a/pal/compes/v41y1999i4p71-102.html
+- **Prašnikar, Domadenik a Koman 2009:** Prašnikar, J., Domadenik, P., Koman, M.: konferenční studie o chování firem po
+  privatizaci v bývalé Jugoslávii (Makedonie, Černá Hora, Slovinsko), konference CAED, Hitotsubashi University, 2009,
+  https://gcoe.ier.hit-u.ac.jp/CAED/papers/id135_Prasnikar_Domadenik_Koman.pdf
+- **Campos, Coricelli a Moretti 2014:** Economic Growth and Political Integration: Estimating the Benefits from
+  Membership in the European Union Using the Synthetic Counterfactuals Method, IZA Discussion Paper č. 8162, duben 2014,
+  tabulky 2 a 3, https://epflicht.ulb.uni-bonn.de/download/pdf/149785
+- **Vláda SI 2006:** Republic of Slovenia, Reform Programme for Achieving the Lisbon Strategy Goals – Implementation
+  Report 2006, Ljubljana, říjen 2006, https://www.umar.gov.si/fileadmin/user_upload/projects/02_SI-NRP2006-eng.pdf
+- **IMAD 2023:** IMAD (Institut pro makroekonomické analýzy a rozvoj, vládní analytický ústav), Productivity Report 2023
+  (s. 26, 28, 57 a 76),
+  https://www.umar.gov.si/fileadmin/user_upload/publikacije/Porocilo_o_produktivnosti/2023/Productivity_Report_2023.pdf
+- **IMAD 2025:** IMAD, Quality of Life in Slovenia – Development Report 2025,
+  https://www.umar.gov.si/fileadmin/user_upload/razvoj_slovenije/2025/angleski/POR_2025_EN.pdf
+- **IMAD 2026:** IMAD, Quality of Life in Slovenia – Development Report 2026 (s. 106),
+  https://www.umar.gov.si/fileadmin/user_upload/razvoj_slovenije/2026/angleski/Development_Report_2026.pdf
+- **Nye 2021:** Nye, A.: Bank Assets Management Company (BAMC), Journal of Financial Crises 3(2), 2021, Yale School of
+  Management, https://elischolar.library.yale.edu/journal-of-financial-crises/vol3/iss2/29/
+- **Banka Slovenije 2013:** Government carries out capital increases at five banks following European Commission
+  approval, tisková zpráva, 18. 12. 2013,
+  https://www.bsi.si/en/media/posts/government-carries-out-capital-increases-at-five-banks-following-european-commission-approval
+- **Laporšek, Vodopivec a Vodopivec 2019:** Spillover effects of a minimum wage increase – evidence from Slovenia,
+  Post-Communist Economies 31(5), 2019, https://ideas.repec.org/a/taf/pocoec/v31y2019i5p603-622.html
+- **Laporšek, Orazem, Vodopivec a Vodopivec 2019:** Long-Term Responses to Large Minimum Wage Shocks: Sub-Minimum and
+  Super-Minimum Workers in Slovenia, IZA Discussion Paper č. 12123, 2019,
+  https://ideas.repec.org/p/iza/izadps/dp12123.html
+- **Laporšek, Vodopivec a Vodopivec 2021:** Lowering wage inequality with the minimum wage increase in Slovenia,
+  International Journal of Sustainable Economy 13(3), 2021 (velikost zvýšení 22,9 %),
+  https://ideas.repec.org/a/ids/ijsuse/v13y2021i3p306-321.html
+- **EK 2023:** Evropská komise, 2023 Country Report – Slovenia, SWD(2023) 624 (s. 66 a 72 PDF),
+  https://economy-finance.ec.europa.eu/document/download/90187e4a-cbde-4046-9e9f-4faeb8d14c14_en?filename=ip248_en.pdf
+- **EK 2024:** Evropská komise, 2024 Country Report – Slovenia, SWD(2024) 624 (s. 13 a 83 PDF),
+  https://economy-finance.ec.europa.eu/document/download/237bde97-bc2e-4577-854d-f4c4c4ca5912_en?filename=SWD_2024_624_1_EN_Slovenia.pdf
+- **EK 2026:** Evropská komise, 2026 Country Report – Slovenia, SWD(2026) 224 (s. 44, 53 a 66 PDF),
+  https://economy-finance.ec.europa.eu/document/download/e0221ff2-b3b2-4f97-8ac6-676d0fcfdac2_en?filename=SI_SWD_2026_224_1_EN_autre_document_travail_service_part1_v4.pdf
+- **Banka Slovenije 2026:** Banka Slovenije, Review of Macroeconomic Developments and Projections, červen 2026, podle
+  rešerše `ekonomove/SI.md`,
+  https://www.bsi.si/storage/uploads/75afd222-ff01-455b-9354-71099a9984e5/Review-of-macroeconomic-developments-and-projections-June-2026.pdf
+- **Rešerše ekonomů:** `ekonomove/SI.md` (citace v oddílu 5 a údaje označené „podle rešerše“).
 
 
-# Litva: proč má v kolech takové hodnoty
+# Chorvatsko: proč má v kolech takové hodnoty (průměrná čistá mzda, krok 8)
 
-*Podklad pro výklad hodnot v kolech (krok 8 a podklady pro krok 9a), průměrná čistá mzda 2024; sestaveno 17. 10. 2026.
-Výkon, růst, zátěž a čistá mzda jsou z `data/kontext_kroky.json` (Eurostat a OECD v přepočtu projektu), ostatní čísla
-mají zdroj v závorce a v oddílu Zdroje. U každé příčiny je síla dokladu: změřeno (kdo a jak), posoudila (instituce),
-jen časová souvislost, nebo můj úsudek. Kroky s roky a aktéry jsou v `data/kroky_zemi/LT.json`.*
-
-**Hodnoty Litvy:** výkon na začátku 34,4 % výkonu střední země ligy (1996); růst výkonu 2,48krát vůči střední zemi
-(1996 → průměr 2020–2024); zátěž daní a odvodů 39,9 % nákladů práce (2024); čistá mzda 22 678 v kupní síle ročně (2024).
+Podklad pro výklad hodnot ve třech kolech. Čísla o výkonu vůči střední zemi ligy pocházejí z výpočtu projektu nad daty Eurostatu (HDP v kupní síle děleno počtem pracujících, `data/kontext_kroky.json`); ostatní čísla mají u sebe zdroj, adresy jsou v oddílu Zdroje. Síla dokladu je u každé příčiny napsaná slovy.
 
 ## 1. Proč takový výkon na začátku (1996)
 
-V roce 1996 vytvořil litevský pracující 34,4 % toho, co pracující ve střední zemi ligy (hrubý domácí produkt v kupní síle
-na pracujícího; Eurostat, přepočet projektu), skoro stejně jako Estonsko (35,1 %) a Lotyšsko (32,9 %), a méně mělo jen
-Rumunsko (25,7 %). Litva vycházela z plánované ekonomiky Sovětského svazu, jehož rozpad zasáhl pobaltské země tvrději než
-ostatní země střední a východní Evropy (posoudil Mezinárodní měnový fond 2010); její výroba mezi lety 1989 a 1994 klesla
-o 40,8 % a ještě v roce 1999 dosahovala jen 70 % úrovně z doby před transformací (Fischer a Sahay 2000). Stejně jako
-Estonsko zavedla měnovou radu, nejdřív navázanou na americký dolar (Mezinárodní měnový fond 2010), a v roce 1994 rovnou daň
-z příjmu 33 %, nejvyšší z dřívějších sazeb (Keen, Kim a Varsano 2006). Ve druhé polovině 90. let měla Litva na obyvatele
-jen asi 30 % HDP eurozóny v kupní síle (Mezinárodní měnový fond 2025), takže v roce 1996 stála na začátku dohánění.
+Chorvatsko vstupovalo do sledovaného období s výkonem na pracujícího 57,4 % střední země ligy, tedy zhruba na úrovni ostatních středoevropských zemí po komunismu (Maďarsko 55,1 %, Česko 66,1 %, Slovinsko 69,9 %; Eurostat, výpočet projektu). Přitom bylo v roce 1989 druhou nejrozvinutější republikou Jugoslávie, relativně průmyslovou a otevřenou zemí s velkým cestovním ruchem, a jeho HDP na obyvatele bylo v roce 1990 kolem průměru postkomunistických zemí střední a východní Evropy (Sigér 2024). Pád výroby na začátku 90. let byl ale hlubší než jinde, protože se k přechodu na trh přidal rozpad jugoslávského trhu a válka: reálné HDP kleslo v letech 1991–1993 o víc než 30 % (Mezinárodní měnový fond 1995) a v roce 1994 bylo jen na dvou třetinách předválečné úrovně (Sigér 2024). Válka a ztráta trhů tedy vysvětlují, proč země, která startovala jako jedna z nejvyspělejších ekonomik po komunismu, měla v roce 1996 výkon jen srovnatelný se středoevropskými sousedy (síla dokladu: propad HDP posoudil Mezinárodní měnový fond 1995 a Sigér 2024, která také píše, že výkon na pracujícího byl v 90. letech srovnatelný se zeměmi střední a východní Evropy; spojení s hodnotou roku 1996 je můj úsudek).
 
 ## 2. Proč takový růst výkonu (1996–2024)
 
-**Kolik a kdy.** Výkon litevského pracujícího se vůči střední zemi ligy zvětšil 2,48krát (z 34,4 % v roce 1996 na průměr
-let 2020–2024; Eurostat, přepočet projektu) a rychleji rostlo jen Rumunsko (3,17krát); Estonsko rostlo skoro stejně
-(2,37krát), Lotyšsko pomaleji (2,16krát). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl výkon na pracujícího mezi rokem 1996 a průměrem let 2020–2024 v Litvě asi o 193 %, nejvíc v lize, v Rumunsku asi o 176 %, v Lotyšsku asi o 160 % a v Estonsku asi o 139 % (střed ligy asi o 29 %); reálně tedy Rumunsko rostlo pomaleji než Litva a Estonsko výrazně pomaleji, ne skoro stejně. Pořadí Litvy a Rumunska ale závisí na počátečním roce: s počátkem v roce 1997 by rychleji rostlo Rumunsko. Nejvíc Litva doháněla v letech 2000–2008, kdy se její výkon zvedl ze 40,4 % na
-64,5 % výkonu střední země, tedy asi o 3,0 bodu ročně, skoro stejně rychle jako Estonsko. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl výkon na pracujícího v letech 2000–2008 v Litvě asi o 73 % a v Estonsku asi o 46 % (střed ligy asi o 14 %); Litva tedy reálně doháněla výrazně rychleji než Estonsko. V letech 2008–2013 přidala 6,9 bodu (asi
-1,4 ročně), v letech 2013–2019 9,5 bodu (asi 1,6 ročně, na 80,9 %) a v letech 2019–2024 už jen 2,8 bodu (asi 0,6 ročně),
-na 83,7 % v roce 2024 (vše Eurostat, přepočet projektu). Dohánění se tedy zpomalilo po roce 2008, v 10. letech znovu zrychlilo
-a po roce 2019 se skoro zastavilo.
+Výkon na pracujícího vůči střední zemi ligy vzrostl z 57,4 % (1996) přes 58,8 % (2000), 67,0 % (2004), 72,1 % (2008), 74,4 % (2013) a 81,6 % (2019) na 86,8 % (2024); průměr let 2020–2024 je 1,50násobkem výchozí hodnoty (Eurostat, výpočet projektu). Nejvíc země dohnala ve dvou obdobích: v letech 2000–2008 o 13 procentních bodů a po vstupu do EU v letech 2013–2024 o 12 bodů. Zastavila se v letech 1996–2000 a v krizi 2008–2013.
 
-**Co dohánění hnalo.** Mezinárodní měnový fond (2025) píše, že litevský HDP na obyvatele vzrostl z asi 30 % úrovně
-eurozóny ve druhé polovině 90. let na asi 85 % v posledních letech, nejrychleji v desetiletí před světovou finanční krizí
-a v 10. letech, a v obou obdobích ho podle rozkladu růstu táhl hlavně silný růst celkové produktivity a přibývání kapitálu
-(posoudil). Evropská centrální banka (2017) srovnáním zemí EU změřila, že pobaltské země rostly v letech 1999–2015
-rychleji, než by odpovídalo jejich nízkému výchozímu příjmu, a jako jeden z možných důvodů uvádí zlepšení kvality institucí,
-nejrychlejší před vstupem do EU (posoudila).
-
-**Ruská krize a přestavba firem.** Po ruské krizi let 1998–1999 se pobaltské ekonomiky rychle vzpamatovaly díky užšímu
-napojení na severské země (Mezinárodní měnový fond 2010). V Litvě byl pak boom před krizí 2008 nejmírnější z Pobaltí,
-podle Mezinárodního měnového fondu (2010) zčásti proto, že je litevská ekonomika větší, a zčásti proto, že přestavba firem
-po ruské krizi přinesla větší nárůst produktivity (posoudil).
-
-**Vstup do EU a zahraniční investice.** Campos, Coricelli a Moretti (2019) změřili srovnáním se „syntetickou Litvou“
-poskládanou ze zemí mimo EU, že v letech 1998–2008 byl litevský HDP na obyvatele v průměru o 28,1 % a produktivita práce
-o 24,1 % vyšší, než by byly bez členství; účinek na produktivitu práce je v prvních deseti letech členství největší ze
-všech zemí ve studii (změřeno). Studie bere za začátek členství rok 1998 a končí rokem 2008, takže v čísle je i úvěrový
-boom. Fondy EU z let 2007–2013 zvýšily podle modelového výpočtu Evropské komise HDP nových členských zemí s vyšším
-přídělem na obyvatele v roce 2015 v průměru asi o 4,1 % (posoudila Evropská komise 2016); litevské číslo je ve zprávě jen
-v grafu, proto ho neuvádím. Na datech litevských firem změřila Beata Javorcik (2004), že zahraniční investice zvyšují
-produktivitu místních dodavatelů zahraničních firem, a to u společných podniků s domácími vlastníky, ne u plně
-zahraničních (změřeno).
-
-**Úvěrový boom a krize 2008–2010.** Mzdy rostly v letech 2004–2008 asi o 16 % ročně a schodek běžného účtu dosáhl v roce
-2007 14,5 % HDP, méně než v Estonsku (17,6 %) a Lotyšsku (22,3 %) (Mezinárodní měnový fond 2010). Po vypuknutí krize
-klesly průměrné výdělky do konce roku 2009 od vrcholu o 9 % (Mezinárodní měnový fond 2010), nezaměstnanost vyvrcholila
-v roce 2010 na 17,8 % a v roce 2015 byla 9,1 % (Evropská centrální banka 2017). Vláda šetřila (čistě 7,0 % HDP v roce
-2009; Mezinárodní měnový fond 2010) a studie Banky Litvy statistickým rozkladem mezd změřila, že mzdy v letech 2009–2011
-klesly víc, než odpovídalo poklesu produktivity, kvůli úsporným opatřením, jako byly škrty míst a platů ve veřejném sektoru,
-vyšší daně a odklad veřejných investic (změřeno, Garcia-Louzao a Jouvanceau 2023, názor autorů). Ve výkonu na pracujícího
-se krize ukázala jen jako zpomalení (z 64,5 % v roce 2008 na 71,4 % v roce 2013), protože s výrobou silně klesl i počet
-pracujících (můj úsudek z čísel o nezaměstnanosti).
-
-**Rychlé zotavení tažené vývozem.** Podle pracovní studie Mezinárodního měnového fondu (2025, názor autorů) se Litva po
-krizi brzy vrátila k předkrizovému trendu růstu, kdežto Estonsko a Lotyšsko zpomalily; velké „vnitřní znehodnocení“ (snížení mezd a nákladů místo znehodnocení měny)
-připravilo půdu pro silné oživení tažené vývozem a podíl Litvy na světovém vývozu byl koncem roku 2019 0,17 %, víc než
-trojnásobek proti začátku roku 2000 (posoudila). Od roku 2017 má Litva vyšší HDP na obyvatele v kupní síle než Estonsko
-(pracovní studie Mezinárodního měnového fondu 2025). Studie Banky Litvy dodává, že hlavní silou růstu mezd v letech 2009–2020 byly šoky na straně
-nabídky, tedy hlavně technologie a produktivita (změřeno statistickým modelem, Garcia-Louzao a Jouvanceau 2023). Euro
-přijala Litva v roce 2015 (Evropská centrální banka 2017); autoři studie Banky Litvy jen jako pravděpodobný výklad zmiňují
-vyšší konkurenci po příchodu nových firem se zavedením eura, samostatně jeho vliv nezměřili, takže příčina není doložena.
-V roce 2020 se do Litvy přesunulo mnoho běloruských firem a pracovníků v oboru informačních technologií, což podle Evropské
-komise (2025) pomohlo růstu tohoto oboru (posoudila); vliv na průměrnou mzdu nevyčíslila.
-
-**Proč se dohánění po roce 2019 skoro zastavilo.** Mezinárodní měnový fond (2025) píše, že za posledních pět let se
-dohánění zastavilo, protože přínos práce, tažený hlavně kladnou čistou migrací, vyrovnal záporný růst celkové
-produktivity; příspěvek přibývání kapitálu a celkové produktivity k růstu produktivity práce ochabl a kapitálová
-náročnost zůstává nízká. Firmám podle něj brání špatný přístup k úvěrům, nízké výdaje na výzkum a nedostatek lidí
-s potřebnými digitálními dovednostmi (posoudil). Produktivita na odpracovanou
-hodinu klesla v roce 2022 o 2,7 % a v roce 2023 o 1,6 %, zčásti proto, že firmy v napjatém trhu práce držely pracovníky,
-a s dvouciferným růstem mezd to zvedlo mzdové náklady na jednotku výkonu o 14,9 % a o 12,2 % (Evropská komise 2026).
-Evropská komise (2023) připisuje relativně nízkou úroveň litevské produktivity skladbě ekonomiky soustředěné na méně
-znalostně náročné činnosti (posoudila) a jinde dodává, že ekonomika stojí na energeticky náročné výrobě zboží a služeb
-s nízkou a střední přidanou hodnotou. Vývoz přitom
-ztratil mezi 3. čtvrtletím 2021 a 4. čtvrtletím 2023 jen 7 % podílu na trzích, Estonsko 23 % (změřeno rozkladem vývozu,
-pracovní studie Mezinárodního měnového fondu 2025).
+- **Obnova po válce a bankovní krize (1996–2000).** Po válce zvedly růst obnova bytů a infrastruktury a odložená spotřeba a investice, rozmach ale od poloviny roku 1998 přerušila bankovní krize, ve které zkrachovalo 14 bank (síla dokladu: posoudila Sigér 2024). Reálné HDP kleslo v roce 1999 o 0,8 % (Eurostat) a výkon vůči střední zemi se za čtyři roky skoro nepohnul (z 57,4 na 58,8 %).
+- **Zahraniční investice a privatizace.** Privatizace probíhala hlavně odkupy manažery a zaměstnanci a od roku 1998 kupóny, což zahraničním investorům nepřálo; přímé investice pak šly hlavně do služeb, nejvíc do bank (v roce 2014 je z víc než 90 % vlastnili cizinci), a do už existujících podniků, zatímco zpracovatelský průmysl ovlivnily méně a nových továren na zelené louce bylo méně, než by odpovídalo možnostem země (síla dokladu: posoudila Sigér 2024 s odkazem na EBRD 2000 a pracovní studii Moore a Vamvakidis 2007). Chorvatsko podle stejného zdroje propáslo vlnu, kdy západní výrobci stavěli továrny ve střední Evropě, a je méně zapojené do mezinárodních výrobních řetězců (síla dokladu: posoudila Sigér 2024 s odkazem na Orsini 2017). To vysvětluje, proč dohánění nebylo tak rychlé jako u zemí, kde vznikla velká vývozní průmyslová výroba.
+- **Růst na dluh (2000–2008).** HDP rostlo v letech 2002–2008 v průměru o 4,5 % ročně, silná domácí poptávka ale byla financována hlavně dluhem a vytvořila velké nerovnováhy (síla dokladu: posoudila Světová banka 2023). Výkon vůči střední zemi stoupl z 58,8 na 72,1 % (Eurostat, výpočet projektu).
+- **Krize 2009–2014.** Světová finanční a evropská dluhová krize vyvolaly recesi, která trvala do roku 2014 (síla dokladu: posoudila Světová banka 2023); reálné HDP kleslo mezi lety 2008 a 2014 o 10,8 % a investice do fixního kapitálu o 36 % (Eurostat). Výkon vůči střední zemi přesto mezi lety 2008 a 2013 mírně vzrostl (z 72,1 na 74,4 %, s propadem na 68,2 % v roce 2009), protože počet pracujících klesl o 14 %, ze 1,75 na 1,50 milionu, a s ním i počet lidí, mezi které se výkon dělí; také střední země ligy, Španělsko, tehdy ztratila šestinu pracovních míst (Eurostat). Nejde tedy o lepší výkon, ale o úbytek práce (můj úsudek z dat). Mezinárodní měnový fond (2025) píše, že se Chorvatsko po krizi od srovnatelných nových členů EU odpojilo.
+- **Vstup do EU, cestovní ruch, fondy EU a euro (2013–2024).** Růst nad 3 % ročně v letech 2015–2019 podpořily lepší vnější podmínky a kladné účinky vstupu do EU v roce 2013 (síla dokladu: posoudila Světová banka 2023); vývoz vzrostl ze 43 % HDP (2013) na 51,4 % (2016) (Sigér 2024). Reálné výdaje na obyvatele v kupní síle vzrostly od vstupu do roku 2024 z 61 % na 77 % průměru EU, z toho 11 bodů až po roce 2020, a růst produktivity byl zpočátku slabší než u srovnatelných členů EU (Evropská komise 2025). Produktivitu po vstupu táhly hlavně obchod, doprava, ubytování a stravování, tedy cestovní ruch, zatímco příspěvek průmyslu byl skromný (síla dokladu: změřila Evropská komise 2026 rozkladem růstu produktivity podle odvětví). Po pandemii pomohly cestovní ruch, štědrá rozpočtová politika, mírnější zpřísnění měnové politiky díky přijetí eura v roce 2023 a velké čerpání fondů EU (síla dokladu: posoudil Mezinárodní měnový fond 2025). Výkon vůči střední zemi stoupl ze 74,4 % (2013) na 81,6 % (2019) a 86,8 % (2024) (Eurostat, výpočet projektu).
+- **Brzdy.** Přírůstky příjmu stály hlavně na víc práce a kapitálu, celková produktivita výrobních faktorů zůstala asi na dvou třetinách úrovně USA a vysvětluje asi 60 % mezery v příjmu (síla dokladu: změřil Mezinárodní měnový fond 2025 rozkladem růstu). Mezera v produktivitě proti Německu leží z téměř 90 % uvnitř odvětví, ne ve skladbě ekonomiky: i s německou skladbou odvětví by bylo Chorvatsko o 57 % méně produktivní a dělník ve zpracovatelském průmyslu vytvoří zhruba čtvrtinu přidané hodnoty německého (síla dokladu: změřila Světová banka 2023 rozkladem podle odvětví). Odchod vysoce kvalifikovaných lidí a stárnutí řadí Evropská komise (2026) mezi hlavní příčiny nedostatku dovedností (podle rešerše `ekonomove/HR.md`) a odchod lidí z jihovýchodní Evropy podle Mezinárodního měnového fondu zvedal mzdy, ale zpomaloval růst produktivity a dohánění (síla dokladu: posoudil Mezinárodní měnový fond 2016 srovnáním zemí regionu, bez čísla pro Chorvatsko).
 
 ## 3. Proč taková zátěž daní a odvodů (2024)
 
-Litva v roce 2024 odvedla státu 39,9 % z toho, co firma za zaměstnance zaplatila (svobodný bez dětí při skutečné mzdě
-země; přepočet projektu), o něco méně než střední země ligy (41,2 %) a nejméně z Pobaltí (Estonsko 40,9 %, Lotyšsko
-42,0 %). Systém stojí od roku 2019 na odvodech, které platí skoro celé zaměstnanec (19,5 % hrubé mzdy, zaměstnavatel
-1,77 %; Luxembourg Income Study 2023), a na dani z příjmu se sazbou 20 % (Luxembourg Income Study 2023) a nezdanitelnou
-částkou, která pro příjmy do výše minimální mzdy činila v roce 2024 747 eur (Evropská komise 2025). Z každých 100 eur
-nákladů práce šlo v roce 2024 při průměrné mzdě asi 1,8 eura na odvody zaměstnavatele, 19,2 eura na odvody zaměstnance
-a 18,5 eura na daň z příjmu (můj přepočet z dat OECD).
+Stát v Chorvatsku odvede 41,4 % z toho, co firma za zaměstnance zaplatí (rok 2024, měření projektu z modelu EUROMOD Eurostatu při skutečné mzdě země). Evropská komise (2026) uvádí pro rok 2025 při průměrné mzdě 41,2 % proti 40,0 % v průměru EU, u nízkých mezd ale výrazně víc než průměr EU (34,5 % proti 31,6 % při polovině průměrné mzdy).
 
-Podle řady OECD při průměrné mzdě byla zátěž 45,7 % v roce 2000, 41,6 % v roce 2008, 41,1 % v roce 2013, 37,7 % v roce
-2019 a 39,4 % v roce 2024 (OECD, Taxing Wages). Na začátku byla vysoká hlavně kvůli rovné dani 33 % (Keen, Kim a Varsano
-2006), která u průměrné mzdy brala 25,8 % hrubé mzdy, a odvodům 31,2 % u zaměstnavatele a 3 % u zaměstnance (OECD).
-Pokles do roku 2008 způsobilo snižování daně z příjmu: u průměrné mzdy klesla z 25,4 % hrubé mzdy v roce 2005 na 20,4 %
-v roce 2008 (OECD). V roce 2009 se daň z příjmu dál snížila (Mezinárodní měnový fond 2010), na 13,2 % hrubé mzdy, ale
-odvody zaměstnance vzrostly z 3 % na 9 %, takže zátěž klesla jen na 40,7 % a do roku 2018 se držela kolem 41 % (OECD).
+**Jak je systém stavěný.** Zaměstnanec platí ze své hrubé mzdy důchodové pojištění 20 % (15 % do průběžného systému a 5 % na osobní účet ve druhém pilíři) a zaměstnavatel k mzdě přidává zdravotní pojištění 16,5 % (Daňová správa Chorvatska 2025). Už samotné odvody tedy tvoří 36,5 % hrubé mzdy, tedy asi 31,3 % nákladů práce (můj přepočet: 0,365 ÷ 1,165); zbylých asi 10 bodů je daň z příjmu. Ta má dvě sazby, které si obce a města volí v zákonných mezích (podle stránky daňové správy z ledna 2026 15–23 % a 25–33 %, bez rozhodnutí obce 20 a 30 %), a základní nezdanitelnou částku 560 eur měsíčně (Daňová správa Chorvatska 2026). Evropská komise (2025) potvrzuje, že daně z práce pocházejí v Chorvatsku hlavně z odvodů.
 
-Reforma 2019 měla dvě části, které je potřeba oddělit. První byl přesun odvodů: zaměstnavatel místo 31,18 % platí 1,77 %,
-zaměstnanec místo 9 % platí 19,5 % a všechny hrubé mzdy se mechanicky navýšily koeficientem 1,289 (Luxembourg Income
-Study 2023). To je jen změna měření: náklady práce zůstaly stejné, protože hrubá mzda × 1,289 × 1,0177 dává stejnou částku
-jako původní hrubá mzda × 1,3118 (můj přepočet), změnila se jen hrubá mzda. Druhou částí bylo skutečné snížení zátěže:
-odvody celkem klesly vůči nákladům práce z 30,6 % na 20,9 %, daň z příjmu se sice zvýšila z 15 % na 20 % (vůči nákladům
-práce u průměrné mzdy z 10,0 % na 16,7 %), ale celkově zátěž u průměrné mzdy klesla ze 40,7 % v roce 2018 na 37,7 %
-v roce 2019 (můj přepočet z dat OECD). Luxembourg Income Study (2023) to shrnuje tak, že sazby odvodů a daní z práce
-celkově klesly, vyšší zdanitelný příjem to zčásti vyrovnal a čistý příjem většiny Litevců po reformě vzrostl (posoudila).
-Do roku 2024 se zátěž zvedla na 39,4 %, ačkoli se sazby neměnily, protože daň z příjmu průměrného zaměstnance stoupla
-ze 17,0 % na 18,8 % hrubé mzdy (OECD); proč, zdroje neuvádějí (můj úsudek: nezdanitelná částka s rostoucím příjmem
-ubývá). Evropská komise (2026) uvádí pro rok 2025 zátěž při průměrné mzdě 40,1 %, skoro stejně jako průměr EU (40,0 %).
+**Jak se zátěž měnila.** Srovnatelná řada Eurostatu existuje až od roku 2013 a týká se svobodného zaměstnance s 67 % průměrné mzdy (Eurostat, metadata; v souboru kontextu je řada označená jako zátěž při průměrné mzdě, podle Eurostatu jde ale o 67 % průměrné mzdy). Zátěž byla 34,7 % (2013), 35,8 % (2014), 35,1 % (2016), po reformě daně z příjmu z roku 2017, která zvýšila nezdanitelnou částku na 3 800 kun a snížila nejvyšší sazbu (CMS 2016), klesla na 33,4 % (2017; síla dokladu: jen časová souvislost) a pak rostla až na 36,9 % (2023). Tento růst odpovídá tomu, že pevná nezdanitelná částka a pásma ztrácela s inflací a rychlým růstem mezd na hodnotě; Evropská komise (2024) píše, že reforma z roku 2024 zvýšila pásma a nezdanitelnou částku právě proto, aby vyrovnala skryté zvyšování daní inflací (síla dokladu: posoudila Evropská komise 2024, bez vyčíslení). Reforma z ledna 2024 navíc snížila základ důchodového pojištění u nízkých mezd a podle simulací Komise snížila daně a pojistné ve všech příjmových desetinách (Evropská komise 2024). Hodnota 37,9 % za rok 2024 ale nejde s předchozími roky srovnat, protože do roku 2023 řadu počítala OECD a od roku 2024 Společné výzkumné středisko Evropské komise modelem EUROMOD a Eurostat rok 2024 označuje jako zlom řady.
 
-**Test protipříkladem.** Kdyby Litva v roce 2019 jen přesunula odvody na zaměstnance a sazby nesnížila, celková zátěž vůči
-nákladům práce by zůstala kolem 41 % a čistá mzda by se nezměnila; nižší zátěž proti Estonsku a Lotyšsku tedy nezpůsobuje
-to, že odvody platí zaměstnanec, ale nižší souhrnné odvody. Přesun odvodů uvádím jen jako měření, ne jako příčinu výše
-čisté mzdy: kvůli němu je v Litvě rozdíl mezi hrubou a čistou mzdou citelnější (Latvijas Banka 2026a), ale na celkovou
-zátěž vůči nákladům práce nemá vliv. Podíl čisté mzdy na hrubé proto jako doklad nepoužívám.
+**Test protipříkladem.** Kdyby zaměstnavatel neplatil zdravotní pojištění 16,5 %, byla by zátěž výrazně nižší, protože jde o skutečnou platbu nad hrubou mzdu; tento rys systému je tedy skutečná příčina výše zátěže. Kdyby se 5 % odváděných na osobní účet ve druhém pilíři nepočítalo jako zátěž, vyšla by asi o 4,3 bodu nižší (můj přepočet: 5 ÷ 116,5); to je ale otázka měření, ne ekonomiky, protože peníze zůstávají zaměstnanci na jeho účtu, a projekt je počítá stejně jako Evropská komise, jejíž definice zahrnuje i ostatní povinné příspěvky (Evropská komise 2026). Změnu toho, kdo odvody formálně platí, Chorvatsko ve sledovaném období nemělo.
 
-## 4. Další faktory Litvy
+## 4. Další faktory země
 
-- **Odchod lidí do ciziny:** od vstupu do EU v roce 2004 do doby zprávy Evropské centrální banky (2017) klesl počet obyvatel
-  o 14 % a mezi lety 2003 a 2021 Litva čistě přišla o více než 600 000 obyvatel (Evropská komise 2026). Odchod lidí do
-  Británie a Irska po roce 2004 zvýšil za pět let mzdy mladých pracovníků o 6 % a mzdy starších nezměnil (změřeno, Elsner
-  2013, model nastavený na datech podle věku a vzdělání). Podle studie Banky Litvy byla volná kapacita na trhu práce
-  (nezaměstnanost a další nevyužití pracovníci) hlavním hybatelem růstu mezd v letech 2008–2020: v letech 2009–2011 mzdy
-  brzdila a od roku 2014 je zvedala (změřeno jednodušším statistickým modelem, Garcia-Louzao a Jouvanceau 2023; ve
-  strukturním modelu téže studie vychází jako hlavní síla produktivita, viz oddíl 2).
-- **Přistěhovalci:** přistěhovalectví, hlavně z Běloruska a Ukrajiny, zvýšilo počet obyvatel i pracovní sílu mezi lety 2021
-  a 2024 téměř o 80 000 a pomohlo držet nedostatek pracovníků na uzdě; v roce 2025 se zpomalilo (Evropská komise 2026).
-- **Minimální mzda** vzrostla z 607 eur v lednu 2020 na 1 038 eur v roce 2025 a nezdanitelná částka pro příjmy do výše
-  minimální mzdy z 350 na 747 eur v roce 2024 (Evropská komise 2025). Evropská komise (2023) píše, že silné zvýšení minimální
-  mzdy a vyšší nezdanitelná částka pomohly lidem s minimální mzdou vyrovnat inflaci (posoudila); vliv na průměrnou mzdu
-  nikdo nevyčíslil.
-- **Kolektivní vyjednávání** je velmi slabé: kolektivní smlouvy pokrývaly v roce 2023 29 % zaměstnanců a odbory sdružovaly
-  v roce 2022 8,3 % zaměstnanců (Evropská komise 2026). Vliv na průměrnou mzdu není doložen.
-- **Mzdy v obálkách:** podle průzkumu Stockholmské ekonomické školy v Rize mezi řediteli firem se v roce 2025 skrývalo před státem 17,8 % mezd (SSE Riga 2026,
-  odhad autorů). Oficiální průměr proto může skutečné výdělky podceňovat (můj úsudek); o kolik, nikdo nevyčíslil.
-- **Skladba ekonomiky:** energeticky náročná výroba s nízkou a střední přidanou hodnotou (Evropská komise 2023) a rostoucí
-  obor informačních technologií, posílený přesunem běloruských firem v roce 2020 (Evropská komise 2025).
+- **Cestovní ruch.** Chorvatsko má nejvyšší přímý podíl cestovního ruchu na HDP v EU (11,8 %) a odvětví s ním spojená tvoří asi čtvrtinu přidané hodnoty; produktivita v něm je podobná jako v celé ekonomice (Evropská komise 2026). Komise (2025) zároveň píše, že přílišné spoléhání na cestovní ruch vytlačuje investice a podnikání s vyšší přidanou hodnotou (síla dokladu: posoudila Evropská komise 2025; Světová banka 2023 ale spočítala, že skladba ekonomiky mezeru v produktivitě nevysvětluje, takže instituce se v tom rozcházejí).
+- **Minimální mzda a veřejné platy.** Minimální mzda vzrostla mezi lednem 2022 a lednem 2025 o 56 %, reálně o 21 % (Evropská komise 2026), a po zákonu o platech ve státní a veřejné službě vzrostly reálné platy ve veřejném sektoru v roce 2024 asi o 19 % proti 7,5 % v soukromém sektoru, takže veřejný sektor táhl celkový růst mezd (síla dokladu: posoudil Mezinárodní měnový fond 2025). Mzdy v posledním desetiletí trvale rostly rychleji, než by odpovídalo běžným makroekonomickým činitelům (Evropská komise 2026).
+- **Odchod lidí a přistěhovalci.** Počet obyvatel klesl v letech 2013–2022 o 367 000 (8,7 %); od roku 2023 se úbytek zastavil a pracovníků ze zemí mimo EU přibylo ze 172 000 (2023) na 206 000 (2024), skoro dvě třetiny z nich ve stavebnictví, pohostinství a cestovním ruchu (Evropská komise 2025). Napjatý trh práce přispěl k prudkému růstu mezd o 15 % nominálně a 10,5 % reálně v roce 2024 (síla dokladu: posoudila Evropská komise 2025).
+- **Šedá ekonomika.** Odhad Evropské komise (2026) je 29,7 % HDP v roce 2022; souvislost s výší mezd Komise nepopisuje. Projekt u Chorvatska zapsal, že část mezd se vyplácí v obálkách mimo statistiku, takže skutečná mzda je spíš vyšší (`LIST_UKAZATELE.md`); rozsah není doložen.
+- **Ceny.** Cenová hladina skutečné individuální spotřeby (spotřeba domácností včetně veřejných služeb, které využívají) byla v roce 2024 74,0 % průměru EU (Eurostat), takže čistá mzda v kupní síle je vyšší, než by odpovídalo jejímu přepočtu v eurech.
 
 ## 5. Co říkají ekonomové
 
-Podle rešerše výroků institucí (`ekonomove/LT.md`) vychází z textů Evropské komise a Mezinárodního měnového fondu jako
-hlavní příčina úrovně mezd produktivita, která rychle dohání, ale pořád zaostává; Mezinárodní měnový fond píše, že „nízká
-kapitálová náročnost zůstává klíčovou překážkou“ růstu produktivity. Vývoj mezd po roce 2010 podle rešerše hnalo rychlé
-dohánění a napjatý trh práce a studie Banky Litvy označuje volnou kapacitu na trhu práce za „hlavního hybatele“ růstu mezd
-v letech 2008–2020.
+Evropská komise píše, že mzdy v Chorvatsku „zůstávají relativně nízké ve srovnání s ostatními členskými státy EU“ (Evropská komise 2026), a jako jádro příčin uvádějí instituce nízkou produktivitu uvnitř samotných odvětví a firem: podle Mezinárodního měnového fondu celková produktivita výrobních faktorů „vysvětluje asi 60 procent mezery v příjmu“ proti USA (Mezinárodní měnový fond 2025) a podle Světové banky rozdíly uvnitř odvětví vysvětlují „téměř 90 procent“ mezery v produktivitě proti Německu (Světová banka 2023; obojí podle rešerše `ekonomove/HR.md`).
 
 ## 6. Zdroje
 
-- **Eurostat a přepočet projektu:** výkon na pracujícího (Eurostat `prc_ppp_ind_1` a `nama_10_pe`, vůči střední zemi ligy
-  téhož roku), zátěž daní a odvodů 2024 při skutečné mzdě a čistá mzda v kupní síle; soubor `data/kontext_kroky.json`
-  a výpočty `mereni.py`, `horizont.py` v pracovní složce.
-- **OECD, Taxing Wages – srovnávací tabulky** (zátěž, sazby odvodů a daň z příjmu při průměrné mzdě, 2000–2025):
-  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/all?startPeriod=2000&endPeriod=2025
-  (staženo projektem do `data/raw_krok1/oecd_taxing_wages.json`).
-- **Fischer a Sahay 2000:** Stanley Fischer a Ratna Sahay, Taking Stock, Finance & Development 37(3), Mezinárodní měnový
-  fond, září 2000. https://www.imf.org/external/pubs/ft/fandd/2000/09/fischer.htm
-- **Mezinárodní měnový fond 2010:** Catriona Purfield a Christoph Rosenberg, Adjustment under a Currency Peg: Estonia,
-  Latvia and Lithuania during the Global Financial Crisis 2008–09, pracovní studie 10/213, 2010 (názor autorů).
-  https://www.imf.org/external/pubs/ft/wp/2010/wp10213.pdf
-- **Keen, Kim a Varsano 2006:** The “Flat Tax(es)”: Principles and Evidence, Mezinárodní měnový fond, pracovní studie
-  06/218, 2006. https://www.imf.org/external/pubs/ft/wp/2006/wp06218.pdf
-- **Evropská centrální banka 2017:** Convergence and adjustment in the Baltic States, rámeček 1, Economic Bulletin 5/2017.
-  https://www.ecb.europa.eu/pub/pdf/other/ebbox201705_01.en.pdf
-- **Campos, Coricelli a Moretti 2019:** Institutional integration and economic growth in Europe, Journal of Monetary
-  Economics 103, 88–104 (otevřený plný text). https://bura.brunel.ac.uk/bitstream/2438/16695/3/FullText.pdf
-- **Evropská komise 2016:** The impact of cohesion policy 2007-2013: model simulations with Quest III, Ex post evaluation,
-  Work Package 14a. https://ec.europa.eu/regional_policy/sources/evaluation/expost2013/wp14a_final_report_en.pdf
-- **Javorcik 2004:** Beata Smarzynska Javorcik, Does Foreign Direct Investment Increase the Productivity of Domestic Firms?
-  In Search of Spillovers Through Backward Linkages, American Economic Review 94(3), 605–627 (abstrakt).
-  https://ideas.repec.org/a/aea/aecrev/v94y2004i3p605-627.html
-- **Elsner 2013:** Benjamin Elsner, Emigration and wages: The EU enlargement experiment, Journal of International Economics
-  91(1), 154–163 (abstrakt). https://ideas.repec.org/a/eee/inecon/v91y2013i1p154-163.html
-- **Garcia-Louzao a Jouvanceau 2023:** Jose Garcia-Louzao a Valentin Jouvanceau, Wage growth in Lithuania from 2008 to 2020:
-  observed drivers and underlying shocks, Baltic Journal of Economics 23(2), 117–141 (vychází z Occasional Paper 44/2023
-  Banky Litvy; názor autorů). https://epublications.vu.lt/object/elaba:176462459/176462459.pdf
-- **Mezinárodní měnový fond 2025:** Republic of Lithuania: Selected Issues, Country Report No. 25/259, 2025.
-  https://www.imf.org/-/media/files/publications/cr/2025/english/1ltuea2025002-source-pdf.pdf
-- **Mezinárodní měnový fond 2025 (pracovní studie):** Saioa Armendariz a kol., Competitiveness and Productivity in the
-  Baltics: Common Shocks, Different Implications, pracovní studie 25/18, 2025 (názor autorů).
-  https://www.imf.org/-/media/files/publications/wp/2025/english/wpiea2025018-print-pdf.pdf
-- **Evropská komise 2023:** 2023 Country Report – Lithuania, SWD(2023) 615.
-  https://data.consilium.europa.eu/doc/document/ST-9780-2023-ADD-1/en/pdf
-- **Evropská komise 2025:** 2025 Country Report – Lithuania, SWD(2025) 215.
-  https://data.consilium.europa.eu/doc/document/ST-9850-2025-ADD-1/en/pdf
-- **Evropská komise 2026:** 2026 Country Report – Lithuania, SWD(2026) 215.
-  https://data.consilium.europa.eu/doc/document/ST-10131-2026-ADD-1/en/pdf
-- **Luxembourg Income Study 2023:** LIS Cross-National Data Center, Inequality Matters, Issue No. 27, září 2023, článek
-  2019 Labour Income Tax Reform in Lithuania. https://www.lisdatacenter.org/newsletter/nl-2023-27-im-3/
-- **Latvijas Banka 2026a:** Baiba Brusbārde, Viena alga, trīs summas: cik maksā darbs Baltijā? (Jedna mzda, tři částky:
-  kolik stojí práce v Pobaltí), lotyšská centrální banka, 22. 7. 2026.
-  https://www.makroekonomika.lv/raksti/viena-alga-tris-summas-cik-maksa-darbs-baltija
-- **SSE Riga 2026:** Arnis Sauka a Tālis Putniņš, Shadow Economy Index for the Baltic Countries 2009–2025, Stockholmská
-  ekonomická škola v Rize, 2026. https://www.sseriga.edu/sites/default/files/2026-06/SSERiga_Shadow_Economy_Index_2009_2025_2.pdf
-- **Rešerše výroků institucí:** `ekonomove/LT.md` (citace Mezinárodního měnového fondu 2025 a studie Banky Litvy v překladu
-  rešerše).
+- Eurostat, výpočet projektu: HDP v kupní síle (prc_ppp_ind_1) a zaměstnanost (nama_10_pe), `data/kontext_kroky.json`; https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 a https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995
+- Eurostat, HDP a investice ve stálých cenách (nama_10_gdp): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&unit=CLV20_MEUR&na_item=B1GQ&na_item=P51G&geo=EL&geo=HR&geo=RO&geo=BG&geo=ES&sinceTimePeriod=1995
+- Eurostat, zaměstnanost podle odvětví (nama_10_a10_e): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&nace_r2=TOTAL&nace_r2=A&nace_r2=F&nace_r2=C&geo=EL&geo=HR&geo=RO&geo=BG&geo=ES&sinceTimePeriod=1995
+- Eurostat, zdanění nízkých mezd (earn_nt_taxwedge): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_nt_taxwedge?format=JSON&lang=EN&sinceTimePeriod=2000; metadata (67 % průměrné mzdy, zlom řady 2024): https://ec.europa.eu/eurostat/cache/metadata/en/earn_net_esms.htm
+- Eurostat, cenová hladina skutečné individuální spotřeby (prc_ppp_ind_1, A01): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=PLI_EU27_2020&ppp_cat18=A01&sinceTimePeriod=1995
+- Mezinárodní měnový fond 1995: Press Release No. 95/20, 11. 4. 1995. https://www.imf.org/external/np/sec/pr/1995/pr9520.htm
+- Mezinárodní měnový fond 2016: Atoyan a kol., Emigration and Its Economic Impact on Eastern Europe, Staff Discussion Note 16/07. https://www.imf.org/external/pubs/ft/sdn/2016/sdn1607.pdf
+- Mezinárodní měnový fond 2024: Republic of Croatia, 2024 Article IV Consultation, Country Report No. 24/246. https://www.imf.org/-/media/files/publications/cr/2024/english/1hrvea2024001-print-pdf.pdf
+- Mezinárodní měnový fond 2025: Republic of Croatia, 2025 Article IV Consultation, Country Report No. 25/329 (příloha V o konvergenci a produktivitě). https://www.imf.org/-/media/files/publications/cr/2025/english/1hrvea2025001-source-pdf.pdf
+- Sigér 2024: Fruzsina Sigér, Economic Integration and Interdependence in Croatia. The Last Shall be the First?, kapitola 2, Ludovika University Press, Budapešť 2024. https://doi.org/10.36250/00801_03 (plný text https://openaccess.ludovika.hu/nke/catalog/download/62/534/1317?inline=1)
+- Světová banka 2023: Raising Croatia’s Long-Term Growth and Productivity (prezentace k hospodářskému memorandu, Záhřeb 1. 2. 2023). https://thedocs.worldbank.org/en/doc/93b272b87de28c8778e9793495662e7e-0080012023/original/FINAL-Slidedeck-Raising-Croatias-Long-Term-Growth-and-Productivity-01022023.pdf
+- Evropská komise 2024: 2024 Country Report – Croatia, SWD(2024) 611. https://economy-finance.ec.europa.eu/document/download/0aa0e1a7-e869-483b-b9b1-513d7df3040e_en?filename=SWD_2024_611_1_EN_Croatia.pdf
+- Evropská komise 2025: 2025 Country Report – Croatia, SWD(2025) 211. https://economy-finance.ec.europa.eu/document/download/8e333a09-8294-4b4c-b600-a8aeaf2c8ef7_en?filename=HR_CR_SWD_2025_211_1_EN_autre_document_travail_service_part1_v3.pdf
+- Evropská komise 2026: 2026 Country Report – Croatia, SWD(2026) 211. https://economy-finance.ec.europa.eu/document/download/89b277e8-9b8c-45b9-bda6-2b3075250e0d_en?filename=HR_SWD_2026_211_1_EN_autre_document_travail_service_part1_v3.pdf
+- Daňová správa Chorvatska 2025: Contributions – information on the general rules, rates and taxpayer (aktualizace 8. 1. 2025). https://porezna-uprava.gov.hr/en/contributions-info-rmation-on-the-gen-eral-rules-rates-and-taxpayer/7319
+- Daňová správa Chorvatska 2026: Income tax – information on the general rules, rates, taxpayer (aktualizace 23. 1. 2026). https://porezna-uprava.gov.hr/en/income-t-ax-information-on-the-general-rules-rates-taxpayer-and-submitting-annual-income-tax-return/7322
+- CMS 2016: Croatian tax reform to promote economic goals (advokátní kancelář Bardek, Lisac, Mušec, Skoko ve spolupráci s CMS), 28. 12. 2016. https://cms.law/en/hrv/publication/croatian-tax-reform-to-promote-economic-goals
+- Rešerše výroků ekonomů projektu: `ekonomove/HR.md`; měření mzdy: `LIST_UKAZATELE.md`.
+
+
+# Rumunsko: proč má v kolech takové hodnoty (průměrná čistá mzda, krok 8)
+
+Podklad pro výklad hodnot ve třech kolech. Čísla o výkonu vůči střední zemi ligy pocházejí z výpočtu projektu nad daty Eurostatu (HDP v kupní síle děleno počtem pracujících, `data/kontext_kroky.json`); ostatní čísla mají u sebe zdroj, adresy jsou v oddílu Zdroje. Síla dokladu je u každé příčiny napsaná slovy.
+
+## 1. Proč takový výkon na začátku (1996)
+
+Rumunsko vstupovalo do sledovaného období s výkonem na pracujícího jen 25,7 % střední země ligy, tedy zhruba na čtvrtině; Bulharsko mělo 35,2 % a Polsko 47,7 % (Eurostat, výpočet projektu). Mezinárodní měnový fond (2004) píše, že přechod Rumunska k trhu byl zpočátku váhavý a útržkovitý, politika v 90. letech prudce kolísala mezi zpřísňováním a uvolňováním a zděděná nepříznivá skladba ekonomiky spolu s nedostatkem soustavných reforem vedla ke slabé restrukturalizaci a finanční nekázni (síla dokladu: posoudil Mezinárodní měnový fond 2004). Na výkon na pracujícího nejvíc doléhala skladba zaměstnanosti: v roce 1996 pracovalo v zemědělství 4,6 milionu z 11,2 milionu pracujících, tedy 41 %, zatímco v Bulharsku 22,5 % a ve Španělsku 7,2 % (Eurostat, národní účty). Zemědělství, převážně drobné a samozásobitelské, podle Leibnizova institutu pro zemědělský rozvoj v transformujících se ekonomikách sloužilo jako sociální záchranná síť pro mnoho milionů lidí (Salasan a Fritzsch 2009). Že právě tak velký podíl lidí v zemědělství s nízkým výkonem stáhl průměrný výkon na pracujícího tak hluboko, je můj úsudek z dat Eurostatu.
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon na pracujícího vůči střední zemi ligy klesl z 25,7 % (1996) na 23,3 % (2000) a pak rostl přes 35,5 % (2004), 51,2 % (2008), 54,1 % (2013) a 73,8 % (2019) na 84,2 % (2024); průměr let 2020–2024 je 3,17násobkem výchozí hodnoty (Eurostat, výpočet projektu). Nejvíc země dohnala v letech 2000–2008 (o 28 procentních bodů) a 2013–2019 (o 20 bodů), další 10 bodů přidala v letech 2019–2024. Zastavila se v recesi 1996–2000 a v krizi 2008–2013. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* v letech 2008–2013 se Rumunsko reálně nezastavilo: ve stálých cenách vzrostl jeho výkon na pracujícího asi o 6 %, střed ligy asi o 2 %, takže mírně dohánělo (asi o 3 %).
+
+- **Recese a první reformy (1996–2000).** Reálné HDP kleslo mezi lety 1996 a 1999 o 7,1 % (Eurostat). Klíčové reformy let 1997–2000 omezily ztrátové činnosti státních podniků a vyřešily bankovní krizi (Mezinárodní měnový fond 2004).
+- **Dohánění 2000–2008: reformy, privatizace, zahraniční investice a odchod ze zemědělství.** Od poloviny roku 2001 přinesl důslednější program s Mezinárodním měnovým fondem silný růst (5,7 % v roce 2001, 5,0 % v roce 2002 a 4,9 % v roce 2003) a zrychlila se privatizace (síla dokladu: posoudil Mezinárodní měnový fond 2004). Dohánění EU stálo podle Evropské komise hlavně na nižších nákladech práce a technologickém pokroku, který přinesly zahraniční investice (síla dokladu: posoudila Evropská komise 2026). Počet pracujících v zemědělství klesl mezi lety 2000 a 2008 ze 4,8 na 2,9 milionu a celkový počet pracujících z 10,8 na 9,4 milionu (Eurostat); odchod z drobného zemědělství s nejnižším výkonem tak zvedal výkon na pracujícího (můj úsudek z dat). Část lidí odešla do ciziny, odchod z jihovýchodní Evropy zesílil po vstupu Rumunska do EU v roce 2007 (Mezinárodní měnový fond 2016). Od vstupu do EU vzrostlo HDP na obyvatele ze 44 % průměru EU (2007) na asi 78 % (2024) (Evropská komise 2026).
+- **Krize a úspory (2008–2013).** Reálné HDP kleslo mezi lety 2008 a 2010 o 9,2 % a investice do fixního kapitálu o 36 % (Eurostat). Rumunsko si v roce 2009 sjednalo úvěr od Mezinárodního měnového fondu a v červnu 2010 snížilo veřejné platy o 25 % a zvýšilo DPH na 24 % (Mezinárodní měnový fond 2010). Výkon vůči střední zemi se za pět let zvedl jen z 51,2 na 54,1 % (Eurostat, výpočet projektu; s krizí a úsporami jen časová souvislost).
+- **Rychlé dohánění 2013–2019.** Reálná produktivita za odpracovanou hodinu rostla v letech 2015–2019 asi o 4,5 % ročně a táhly ji informační technologie a továrny se zahraničními vlastníky v automobilovém, farmaceutickém, chemickém, elektronickém a leteckém průmyslu v malé skupině měst (síla dokladu: posoudila Evropská komise 2026). K růstu produktivity podle Komise významně přispěly silné investice, v poslední době hlavně veřejné investice podpořené fondy EU (Evropská komise 2024 podle rešerše `ekonomove/RO.md`). Výkon vůči střední zemi stoupl z 54,1 na 73,8 % (Eurostat, výpočet projektu).
+- **Zpomalení po pandemii (2019–2024).** Výkon vůči střední zemi dál rostl až na 84,2 %, reálné HDP vzrostlo mezi lety 2019 a 2024 o 11,2 % při skoro stejném počtu pracujících (Eurostat). Růst produktivity ale zpomalil na asi 2 % ročně (2020–2025) a od pandemie slábne průmysl i služby (Evropská komise 2026).
+- **Brzdy.** Úspěch několika odvětví se nepřenesl do zbytku ekonomiky, kterou ovládá velké množství malých a středních firem zaměřených na domácí trh, s omezeným přístupem ke kvalifikovaným lidem a financím (síla dokladu: posoudila Evropská komise 2026). Výkon za hodinu byl v roce 2022 v hlavním městě 130 % průměru EU, ale v nejchudším severovýchodním regionu jen 40 % (Evropská komise 2026). Výdaje na výzkum a vývoj jsou asi 0,5 % HDP proti 2,2 % v EU a vysokoškolské vzdělání má jen 23,2 % lidí ve věku 25–34 let proti 44,1 % v EU (Evropská komise 2026). Odchod lidí podle Mezinárodního měnového fondu v jihovýchodní Evropě zvedal mzdy, ale zpomaloval růst produktivity a dohánění (síla dokladu: posoudil Mezinárodní měnový fond 2016 srovnáním zemí regionu, bez čísla pro Rumunsko).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Stát v Rumunsku odvede 42,8 % z toho, co firma za zaměstnance zaplatí (rok 2024, měření projektu z modelu EUROMOD Eurostatu při skutečné mzdě země). Zátěž je skoro stejná u nízkých i vysokých mezd: Evropská komise (2026) uvádí pro rok 2025 41,7 % při polovině průměrné mzdy (průměr EU 31,6 %), 42,8 % při 67 % průměrné mzdy (EU 35,8 %) a 42,8 % i při 167 % (EU 44,1 %).
+
+**Jak je systém stavěný.** Od roku 2018 platí zaměstnanec z hrubé mzdy odvody na sociální zabezpečení 35 %, zaměstnavatel přidává jen asi 2,3 % a daň z příjmu je jednotných 10 % (Mezinárodní měnový fond 2018). Zátěž vůči nákladům práce pak vychází asi na 42,8 % (můj přepočet: 35 % odvodů a 10 % daně ze zbylých 65 % mzdy, k tomu 2,3 % zaměstnavatele, vše děleno 102,3; shoduje se s výpočtem Mezinárodního měnového fondu 2018). Evropská komise (2026) popisuje Rumunsko jako zemi s rovnou daní a vysokou sazbou sociálního pojištění bez stropu, což snižuje progresivitu a vede k velmi vysoké zátěži u nízkých mezd. Jednotnou daň z příjmu zavedlo Rumunsko v roce 2005, kdy nejvyšší sazba klesla ze 40 na 16 % (Evropská komise 2014).
+
+**Jak se zátěž měnila.** Řada Eurostatu se týká svobodného zaměstnance s 67 % průměrné mzdy a začíná rokem 2008 (Eurostat, metadata; v souboru kontextu je označená jako zátěž při průměrné mzdě, podle Eurostatu jde ale o 67 % průměrné mzdy). Zátěž byla podle Eurostatu 41,0 % (2008), 43,2–43,4 % (2009–2012), 40,9 % (2013) a 41,1 % (2014); proč v letech 2009–2012 vzrostla a v roce 2013 klesla, rešerše nedoložila. Po snížení odvodů zaměstnavatele o 5 procentních bodů, ohlášeném na rok 2014 (Evropská komise 2014), klesla na 38,3 % (2015; síla dokladu: jen časová souvislost). Přesun odvodů na zaměstnance v roce 2018 zátěž téměř nezměnil (38,3 % v roce 2017 a 37,3 % v roce 2018; Eurostat). Skok na 42,8 % v roce 2024 je zlom řady: do roku 2023 ji počítala OECD, od roku 2024 Společné výzkumné středisko Evropské komise modelem EUROMOD a Eurostat rok 2024 tak označuje. Že rozdíl je v metodě, a ne v zákonech, ukazuje i Mezinárodní měnový fond, který pro pravidla roku 2017 spočítal zátěž 42,9 %, zatímco řada Eurostatu z modelu OECD měla pro týž rok 38,3 % (můj úsudek z porovnání obou zdrojů; přesný důvod rozdílu žádný z otevřených zdrojů nevysvětluje).
+
+**Test protipříkladem.** Kdyby k přesunu odvodů v roce 2018 nedošlo, byla by zátěž stejná: Mezinárodní měnový fond (2018) spočítal, že když hrubé mzdy vzrostou asi o 20 %, zůstanou náklady práce (3 683 proti 3 682 lei), čistá mzda (2 104 proti 2 106 lei) i zátěž (42,9 proti 42,8 %) prakticky beze změny. Přesun je tedy jen změna měření: hrubá mzda se účetně zvětšila a poměr čisté a hrubé mzdy vychází na 0,585 (měření projektu), ale příčinou výše čisté mzdy není (síla dokladu: posoudil Mezinárodní měnový fond 2018). Kdyby ale Rumunsko nemělo tak vysoké odvody bez stropu (35 % hrubé mzdy u zaměstnance), byla by zátěž výrazně nižší; to je skutečná příčina (síla dokladu: posoudila Evropská komise 2026). Rovná daň 10 % drží zátěž u vysokých mezd pod průměrem EU, u průměrné mzdy je ale zátěž nad ním (42,8 % proti 40,0 %; Evropská komise 2026). Osvobození od daně z příjmu pro pracovníky v informačních technologiích, stavebnictví a zemědělství platilo do roku 2024 a stát ho zrušil od roku 2025 (Evropská komise 2026); v roce 2024 tedy zátěž v těchto odvětvích snižovalo, o kolik průměr, nikdo nevyčíslil.
+
+## 4. Další faktory země
+
+- **Kolektivní vyjednávání.** Zákon o sociálním dialogu z roku 2011 zrušil celostátní kolektivní smlouvu a silně omezil odvětvové smlouvy (Popescu a Ion 2025); pokrytí zaměstnanců smlouvami kleslo z 97,1 % (2010) na 35 % (2013) a 15 % (2017) (Mezinárodní organizace práce, ILOSTAT) a v roce 2023 bylo 27,96 % (Evropská komise 2026). Výzkumníci uvádějí, že zrušení celostátních smluv přispělo k poklesu podílu mezd na HDP (síla dokladu: posoudili Popescu a Ion 2025 s odkazem na další studie, bez vyčíslení).
+- **Minimální mzda a veřejné platy.** Minimální mzda vzrostla v roce 2023 dvakrát, celkem o 29,4 %, na asi 58 % mediánu mezd (Evropská komise 2024), a mezi lednem 2022 a lednem 2026 o 59 % (Evropská komise 2026). Jednotný zákon o platech z roku 2017 výrazně zvýšil veřejné platy (Mezinárodní měnový fond 2018) a výdaje na veřejné platy vzrostly v roce 2024 o 24 % (Mezinárodní měnový fond 2025). Mzdy v posledním desetiletí rostly výrazně nad úroveň danou makroekonomickými základy a jednotkové náklady práce vzrostly o 16,2 % (2023) a 18 % (2024) (Evropská komise 2026).
+- **Odchod lidí do ciziny.** V roce 2025 žilo v jiném členském státě 2,5 milionu Rumunů v produktivním věku, v roce 2023 odešlo 324 000 lidí a do ciziny odchází 15,7 % absolventů (2022); povolení k pobytu za prací mělo na konci roku 2024 přes 100 000 lidí ze zemí mimo EU (Evropská komise 2026). Nedostatek pracovníků je přesto výrazně pod průměrem EU (volná místa 0,6 % proti 2,1 %; Evropská komise 2026), takže napjatý trh práce vysvětluje rychlý růst mezd v Rumunsku méně než zvyšování minimální mzdy a veřejných platů (můj úsudek z údajů Komise).
+- **Zemědělství a regionální rozdíly.** V zemědělství pracovalo v roce 2024 ještě 1,8 milionu lidí, 20,6 % všech pracujících (Eurostat), a výkon se mezi hlavním městem a chudými regiony liší víc než trojnásobně (Evropská komise 2026).
+- **Šedá ekonomika.** Odhad Evropské komise (2026) je 29 % HDP; Komise ji spojuje s výběrem daní, ne s výší mezd. Projekt u Rumunska zapsal, že část mezd se vyplácí v obálkách mimo statistiku, takže skutečná mzda je spíš vyšší (`LIST_UKAZATELE.md`); rozsah není doložen.
+- **Ceny.** Cenová hladina skutečné individuální spotřeby (spotřeba domácností včetně veřejných služeb, které využívají) byla v roce 2024 58,1 % průměru EU (Eurostat), takže čistá mzda v kupní síle je výrazně vyšší, než by odpovídalo jejímu přepočtu v eurech.
+
+## 5. Co říkají ekonomové
+
+Evropská komise píše, že dosavadní dohánění EU „stálo hlavně na nižších nákladech práce a technologickém pokroku, který přinesly zahraniční investice“ a že rychlejší růst produktivity by vyžadoval širší domácí investice do inovací, zejména v malých a středních podnicích (Evropská komise 2026); Mezinárodní měnový fond dodává, že dohánění příjmů zpomalilo a „růst produktivity zůstává nízký“ (Mezinárodní měnový fond 2025; obojí podle rešerše `ekonomove/RO.md`).
+
+## 6. Zdroje
+
+- Eurostat, výpočet projektu: HDP v kupní síle (prc_ppp_ind_1) a zaměstnanost (nama_10_pe), `data/kontext_kroky.json`; https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 a https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995
+- Eurostat, HDP a investice ve stálých cenách (nama_10_gdp): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&unit=CLV20_MEUR&na_item=B1GQ&na_item=P51G&geo=EL&geo=HR&geo=RO&geo=BG&geo=ES&sinceTimePeriod=1995
+- Eurostat, zaměstnanost podle odvětví (nama_10_a10_e): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&nace_r2=TOTAL&nace_r2=A&nace_r2=F&nace_r2=C&geo=EL&geo=HR&geo=RO&geo=BG&geo=ES&sinceTimePeriod=1995
+- Eurostat, zdanění nízkých mezd (earn_nt_taxwedge): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_nt_taxwedge?format=JSON&lang=EN&sinceTimePeriod=2000; metadata (67 % průměrné mzdy, zlom řady 2024): https://ec.europa.eu/eurostat/cache/metadata/en/earn_net_esms.htm
+- Eurostat, cenová hladina skutečné individuální spotřeby (prc_ppp_ind_1, A01): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=PLI_EU27_2020&ppp_cat18=A01&sinceTimePeriod=1995
+- Mezinárodní měnový fond 2004: IMF Reviews Romania's Performance Under Past Fund-Supported Programs, Public Information Notice 04/44, 23. 4. 2004. https://www.imf.org/external/np/sec/pn/2004/pn0444.htm
+- Mezinárodní měnový fond 2010: Press Release No. 10/280 (2. 7. 2010) https://www.imf.org/external/np/sec/pr/2010/pr10280.htm a Statement by IMF Mission Chief for Romania, Press Release No. 10/307 (4. 8. 2010) https://www.imf.org/external/np/sec/pr/2010/pr10307.htm
+- Mezinárodní měnový fond 2016: Atoyan a kol., Emigration and Its Economic Impact on Eastern Europe, Staff Discussion Note 16/07. https://www.imf.org/external/pubs/ft/sdn/2016/sdn1607.pdf
+- Mezinárodní měnový fond 2018: Romania, 2018 Article IV Consultation, Country Report No. 18/148 (rámeček 1). https://www.imf.org/-/media/files/publications/cr/2018/cr18148.pdf
+- Mezinárodní měnový fond 2025: Romania, 2025 Article IV Consultation, Country Report No. 25/294. https://www.imf.org/-/media/files/publications/cr/2025/english/1rouea2025001-source-pdf.pdf
+- Evropská komise 2014: Taxation trends in the European Union, vydání 2014 (tabulka 2 a kapitola Rumunsko). https://taxation-customs.ec.europa.eu/system/files/2016-09/report.pdf
+- Evropská komise 2024: 2024 Country Report – Romania, SWD(2024) 623. https://economy-finance.ec.europa.eu/document/download/dcac26a0-120e-4233-88b6-8c7b0d919257_en?filename=SWD_2024_623_1_EN_Romania.pdf
+- Evropská komise 2026: 2026 Country Report – Romania, SWD(2026) 223. https://economy-finance.ec.europa.eu/document/download/d758a0d2-d908-4671-80a9-e76fad2346e8_en?filename=RO_SWD_2026_223_1_EN_autre_document_travail_service_part1_v3.pdf
+- Salasan a Fritzsch 2009: The Role of Agriculture for Overcoming Rural Poverty in Romania, IAMO Discussion Paper (Leibnizův institut pro zemědělský rozvoj v transformujících se ekonomikách). https://econpapers.repec.org/RePEc:ags:iamodp:91907
+- Popescu a Ion 2025: Trust in Relations between Unions and Employers in Europe, Country Report Romania, Central European Labour Studies Institute (projekt TRUE Europe), květen 2025. https://celsi.sk/media/datasource/TRUE_Europe_Romania.pdf
+- Mezinárodní organizace práce, ILOSTAT: pokrytí kolektivními smlouvami (ILR_CBCT_NOC_RT). https://sdmx.ilo.org/rest/data/ILO,DF_ILR_CBCT_NOC_RT/ROU+BGR+HRV+GRC..?format=csv
+- Rešerše výroků ekonomů projektu: `ekonomove/RO.md`; měření mzdy: `LIST_UKAZATELE.md`.
+
+
+# Bulharsko: proč má v kolech takové hodnoty (průměrná čistá mzda, krok 8)
+
+Podklad pro výklad hodnot ve třech kolech. Čísla o výkonu vůči střední zemi ligy pocházejí z výpočtu projektu nad daty Eurostatu (HDP v kupní síle děleno počtem pracujících, `data/kontext_kroky.json`); ostatní čísla mají u sebe zdroj, adresy jsou v oddílu Zdroje. Síla dokladu je u každé příčiny napsaná slovy.
+
+## 1. Proč takový výkon na začátku (1996)
+
+Bulharsko vstupovalo do sledovaného období s výkonem na pracujícího 35,2 % střední země ligy, a to uprostřed vrcholící krize (Eurostat, výpočet projektu). Po počáteční liberalizaci cen, kurzu a úroků se strukturální reformy zastavily a kořenem vážné finanční krize byla podle Mezinárodního měnového fondu pomalá reforma a finanční nekázeň v podnicích a bankách (síla dokladu: posoudil Mezinárodní měnový fond 1997). V roce 1996 kleslo reálné HDP o 10,9 %, centrální banka zavřela nebo dala pod nucenou správu banky s asi třetinou bankovního systému, lev oslabil ze 71 na 487 za dolar a inflace dosáhla na konci roku 311 %; v březnu 1997 přesáhla 2 000 % ročně (Mezinárodní měnový fond 1997; Gulde 1999). V roce 1997, kdy krize vyvrcholila, klesl výkon vůči střední zemi ještě níž, na 29,3 % (Eurostat, výpočet projektu). Výchozí hodnota tedy zachycuje zemi, která po konci plánované ekonomiky odkládala reformy a v roce 1996 se propadla do krize (můj úsudek opřený o hodnocení Mezinárodního měnového fondu); v zemědělství navíc pracovalo 22,5 % lidí (Eurostat, národní účty).
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon na pracujícího vůči střední zemi ligy klesl z 35,2 % (1996) na 31,0 % (2000), na úroveň roku 1996 se vrátil až v roce 2004 (35,3 %) a pak rostl přes 39,2 % (2008), 41,6 % (2013) a 50,4 % (2019) na 59,9 % (2024); průměr let 2020–2024 je 1,63násobkem výchozí hodnoty (Eurostat, výpočet projektu). Nejvíc země dohnala až po roce 2013 (o 18 procentních bodů, z toho 9,5 bodu v letech 2019–2024); v letech 1996–2004 se zastavila a v letech 2004–2013 dohnala jen 6 bodů. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl bulharský výkon na pracujícího v letech 1996–2004 asi o 12 %, střed ligy asi o 21 %; na postavení roku 1996 se Bulharsko vrátilo jen v kupní síle, reálně za středem ligy v těchto letech ztratilo asi 7 %.
+
+- **Stabilizace měnovou radou (1997).** Bulharsko zavedlo 1. 7. 1997 měnovou radu, inflace klesla do konce roku 1998 na 1 % a devizové rezervy vzrostly z méně než 800 milionů na víc než 3 miliardy dolarů; obnovení růstu ale zůstávalo kvůli jiným překážkám než měnovému uspořádání jen mírné (síla dokladu: posoudila Gulde, Mezinárodní měnový fond 1999).
+- **Boom na zahraniční kapitál (2004–2008).** Po dohodě o vstupu do EU v roce 2004 přitekl kapitál ve výši asi 30 % HDP, úvěry soukromému sektoru vzrostly z 36 na 67 % HDP (2004–2007) a HDP rostlo o víc než 6 % ročně, růst domácí poptávky se ale soustředil do stavebnictví, nemovitostí a finančních služeb a schodek běžného účtu přesáhl v roce 2008 24 % HDP (síla dokladu: posoudil Mezinárodní měnový fond 2008). Počet pracujících přitom vzrostl ze 3,40 na 3,81 milionu (Eurostat), takže výkon na pracujícího se vůči střední zemi zvedl jen ze 35,3 na 39,2 %; že boom vytvořil hlavně pracovní místa v odvětvích s nízkým výkonem, je můj úsudek z dat a z popisu Fondu.
+- **Konec boomu a krize (2009–2013).** Boom skončil ve čtvrtém čtvrtletí 2008, HDP kleslo v roce 2009 o 5,1 % (Mezinárodní měnový fond 2010) a počet pracujících klesl mezi lety 2008 a 2013 o 10 %, ze 3,81 na 3,42 milionu (Eurostat). Výkon vůči střední zemi se zvedl jen na 41,6 % (Eurostat, výpočet projektu).
+- **Dohánění po roce 2013.** Reálná produktivita práce od roku 2012 stabilně roste, hlavně díky zpracovatelskému průmyslu (síla dokladu: posoudila Evropská komise 2023). HDP na obyvatele v kupní síle vzrostlo z 38,4 % průměru EU v roce 2006 na 68 % v roce 2025, dohánění ale postupuje jen pomalu (Evropská komise 2026). Ubývající a stárnoucí obyvatelstvo a dlouhodobý odchod pracovníků zmenšily pracovní sílu a napjatý trh práce tlačí mzdy nahoru (síla dokladu: posoudila Evropská komise 2025).
+- **Brzdy.** Produktivita práce je trvale nízká a soukromé investice a inovace čelí velkým omezením (Evropská komise 2026). Veřejné zakázky mají podle 77 % firem (EU 58 %) podmínky psané na míru a firmy s vazbami na místní úředníky mají o 41 % větší šanci vyhrát zakázku bez soutěže; to podle Komise odrazuje od inovací a snižuje růst produktivity (síla dokladu: posoudila Evropská komise 2026 podle studie Světové banky, Fazekas a kol. 2025). Bulharsko má nejslabší výsledky vzdělávání v EU (Mezinárodní měnový fond 2025) a výdaje na výzkum a vývoj 0,77 % HDP (2024; Evropská komise 2026). Odchod lidí podle Mezinárodního měnového fondu zpomaloval dohánění v zemích jihovýchodní Evropy včetně Bulharska (síla dokladu: posoudil Mezinárodní měnový fond 2016 srovnáním zemí regionu).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Stát v Bulharsku odvede 34,9 % z toho, co firma za zaměstnance zaplatí (rok 2024, měření projektu z modelu EUROMOD Eurostatu při skutečné mzdě země). Evropská komise (2026) uvádí pro rok 2025 při průměrné mzdě 34,9 % proti 40,0 % v průměru EU, a stejně 34,9 % i při polovině průměrné mzdy (EU 31,6 %): zátěž je tedy nízká u průměrných a vysokých mezd a proti průměru EU spíš vysoká u nízkých.
+
+**Jak je systém stavěný.** Od roku 2008 platí jednotná daň z příjmu 10 % bez nezdanitelného minima, která nahradila sazby 20, 22 a 24 % (Evropská komise 2014; Evropská komise 2026). Odvody do veřejných fondů (důchodové, nemocenské a mateřské, zdravotní a v nezaměstnanosti) se dělí mezi zaměstnavatele a zaměstnance, u důchodového pojištění v roce 2014 9,9 % proti 7,9 % mzdy, u ostatních v poměru 60 : 40, a platí se jen do měsíčního stropu (Evropská komise 2014). Strop nestačil růstu mezd (Mezinárodní měnový fond 2025). Bulharsko je jediný členský stát, kde lidé se 167 % průměrné mzdy odvádějí na daních o něco menší podíl příjmu než lidé s 50 % (Evropská komise 2026).
+
+**Jak se zátěž měnila.** Srovnatelná řada Eurostatu začíná rokem 2008 a týká se svobodného zaměstnance s 67 % průměrné mzdy (Eurostat, metadata; v souboru kontextu je označená jako zátěž při průměrné mzdě, podle Eurostatu jde ale o 67 % průměrné mzdy). Zátěž klesla z 35,1 % (2008) přes 33,8 % (2009) na 32,5 % (2010), v letech 2011–2016 byla 33,6 %, v roce 2017 34,3 % a od roku 2018 34,9 %; v roce 2024 Eurostat řadu přepočítal modelem EUROMOD (zlom řady) a hodnota zůstala stejná. Evropská komise (2014) píše, že zdanění práce v předchozích letech klesalo hlavně díky snižování odvodů zaměstnavatelů (síla dokladu: posoudila Evropská komise 2014; přesné kroky a roky snížení jsem v otevřených zdrojích neověřil). Proč zátěž vzrostla v roce 2011 a v letech 2017–2018, příčina není v otevřených zdrojích doložena.
+
+**Test protipříkladem.** Kdyby Bulharsko mělo progresivní daň z příjmu jako většina EU, byla by zátěž u průměrné mzdy vyšší; nízkou zátěž dělá hlavně jednotná desetiprocentní daň a strop odvodů (síla dokladu: posoudila Evropská komise 2026, která jednotnou daň spojuje s nízkou zátěží vysokých příjmů a s malým přerozdělováním). Jak by vypadala zátěž bez reformy z roku 2008, z dat nejde říct, protože Eurostat řadu před rokem 2008 za srovnatelnou nepovažuje. Účetní změnu toho, kdo odvody formálně platí, Bulharsko ve sledovaném období nemělo.
+
+## 4. Další faktory země
+
+- **Odchod lidí a demografie.** Obyvatelstvo v produktivním věku může za 25 let ubýt až o 20 % (Mezinárodní měnový fond 2025) a i přes to, že čistá migrace se obrátila v příliv, pokračuje odliv mozků, mnoho odcházejících jsou mladí a lidé v produktivním věku (Evropská komise 2026). Napjatý trh práce a vládní politika minimálních a veřejných mezd jsou podle Komise příčinou nedávného růstu mezd (síla dokladu: posoudila Evropská komise 2025) a poptávka po práci dál předbíhá nabídku (Bulharská národní banka 2026).
+- **Minimální mzda.** Od roku 2023 je minimální mzda podle zákona 50 % průměrné hrubé mzdy za předchozích 12 měsíců; vzrostla mezi lednem 2022 a lednem 2026 o 86,7 % na 620 eur, podíl chudých pracujících a nízko placených se ale podstatně nesnížil (Evropská komise 2025; Evropská komise 2026).
+- **Kolektivní vyjednávání.** Smlouvy pokrývaly v roce 2023 jen 16,2 % pracovníků (Evropská komise 2026).
+- **Šedá ekonomika.** Odhad Evropské komise (2026) je 33,1 % HDP v roce 2022, nejvíc v EU; Komise ji se mzdami nespojuje. Bulharská národní banka (2026) upozorňuje, že národní účty obsahují dodatečné odhady nákladů práce v šedé ekonomice, což je otázka měření. Projekt u Bulharska zapsal, že část mezd se vyplácí v obálkách mimo statistiku, takže skutečná mzda je spíš vyšší (`LIST_UKAZATELE.md`); rozsah není doložen.
+- **Regionální rozdíly.** Hlavní město vytváří asi polovinu HDP země (Evropská komise 2026).
+- **Ceny.** Cenová hladina skutečné individuální spotřeby (spotřeba domácností včetně veřejných služeb, které využívají) byla v roce 2024 57,7 % průměru EU (Eurostat), takže čistá mzda v kupní síle je výrazně vyšší, než by odpovídalo jejímu přepočtu v eurech.
+
+## 5. Co říkají ekonomové
+
+Mezinárodní měnový fond píše, že bulharské platy „jsou nejnižší v EU“ (Mezinárodní měnový fond 2025), a Evropská komise vysvětluje, že náklady práce zůstávají mezi nejnižšími v EU, „což odráží nízkou úroveň mezd před vstupem do EU a celkově nižší produktivitu práce“ (Evropská komise 2025; obojí podle rešerše `ekonomove/BG.md`).
+
+## 6. Zdroje
+
+- Eurostat, výpočet projektu: HDP v kupní síle (prc_ppp_ind_1) a zaměstnanost (nama_10_pe), `data/kontext_kroky.json`; https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 a https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995
+- Eurostat, zaměstnanost podle odvětví (nama_10_a10_e): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&nace_r2=TOTAL&nace_r2=A&nace_r2=F&nace_r2=C&geo=EL&geo=HR&geo=RO&geo=BG&geo=ES&sinceTimePeriod=1995
+- Eurostat, zdanění nízkých mezd (earn_nt_taxwedge): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_nt_taxwedge?format=JSON&lang=EN&sinceTimePeriod=2000; metadata (67 % průměrné mzdy, zlom řady před rokem 2008 a v roce 2024): https://ec.europa.eu/eurostat/cache/metadata/en/earn_net_esms.htm
+- Eurostat, cenová hladina skutečné individuální spotřeby (prc_ppp_ind_1, A01): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=PLI_EU27_2020&ppp_cat18=A01&sinceTimePeriod=1995
+- Mezinárodní měnový fond 1997: IMF Concludes Article IV Consultation with Bulgaria, Public Information Notice 97/15, 29. 7. 1997. https://www.imf.org/en/News/Articles/2015/09/28/04/53/pn9715
+- Gulde 1999: Anne-Marie Gulde, The Role of the Currency Board in Bulgaria's Stabilization, Finance & Development 36 (3), Mezinárodní měnový fond, září 1999. https://www.imf.org/external/pubs/ft/fandd/1999/09/gulde.htm
+- Mezinárodní měnový fond 2008: Bulgaria – 2008 Article IV Consultation, Concluding Statement of IMF Mission, 15. 12. 2008. https://www.imf.org/external/np/ms/2008/121508a.htm
+- Mezinárodní měnový fond 2010: Bulgaria – 2010 Article IV Consultation, Concluding Statement, 3. 3. 2010. https://www.imf.org/en/news/articles/2015/09/28/04/52/mcs030110
+- Mezinárodní měnový fond 2016: Atoyan a kol., Emigration and Its Economic Impact on Eastern Europe, Staff Discussion Note 16/07. https://www.imf.org/external/pubs/ft/sdn/2016/sdn1607.pdf
+- Mezinárodní měnový fond 2025: Bulgaria, 2025 Article IV Consultation, Country Report No. 25/306. https://www.imf.org/-/media/files/publications/cr/2025/english/1bgrea2025001-source-pdf.pdf
+- Evropská komise 2014: Taxation trends in the European Union, vydání 2014 (kapitola Bulharsko). https://taxation-customs.ec.europa.eu/system/files/2016-09/report.pdf
+- Evropská komise 2023: 2023 Country Report – Bulgaria, Institutional Paper 226. https://economy-finance.ec.europa.eu/document/download/1cbe49d6-3eed-4218-90a4-ed49542ad28d_en?filename=ip226_en.pdf
+- Evropská komise 2025: 2025 Country Report – Bulgaria, SWD(2025) 202. https://economy-finance.ec.europa.eu/document/download/a517f04a-1817-48e1-b9c1-0f2f3e1e7173_en?filename=BG_CR_SWD_2025_202_1_EN_autre_document_travail_service_part1_v4.pdf
+- Evropská komise 2026: 2026 Country Report – Bulgaria, SWD(2026) 202. https://economy-finance.ec.europa.eu/document/download/fa789d72-0011-4d03-af69-974a7b3321ea_en?filename=BG_SWD_2026_202_1_EN_autre_document_travail_service_part1_v3.pdf
+- Bulharská národní banka 2026: Economic Review 1/2026. https://www.bnb.bg/bnbweb/groups/public/documents/bnb_publication/pub_ec_r_2026_01_en.pdf
+- Rešerše výroků ekonomů projektu: `ekonomove/BG.md`; měření mzdy: `LIST_UKAZATELE.md`.
+
+
+# Řecko: proč má v kolech takové hodnoty (průměrná čistá mzda, krok 8)
+
+Podklad pro výklad hodnot ve třech kolech. Čísla o výkonu vůči střední zemi ligy pocházejí z výpočtu projektu nad daty Eurostatu (HDP v kupní síle děleno počtem pracujících, `data/kontext_kroky.json`; stejným výpočtem jsou spočítané i roky a srovnání, která v souboru kontextu nejsou). Ostatní čísla mají u sebe zdroj, adresy jsou v oddílu Zdroje. Síla dokladu je u každé příčiny napsaná slovy.
+
+## 1. Proč takový výkon na začátku (1996)
+
+Řecko vstupovalo do sledovaného období s výkonem na pracujícího 90,1 % střední země ligy, tedy skoro na její úrovni; střední zemí byla v letech 1996–1999 pevninská ekonomika Norska a od roku 2000 Španělsko (Eurostat, výpočet projektu). Jako tržní ekonomika a člen EU od roku 1981 stálo Řecko vysoko nad všemi jedenácti zeměmi po komunismu, které měly v roce 1996 jen 25,7–69,9 % střední země a spolu s Portugalskem (72,5 %) tvořily skoro celou dolní polovinu ligy (Eurostat, výpočet projektu). Proti západní Evropě ale zaostávalo: v letech 1981–1995 se od průměru EU vzdalovalo a jeho HDP na obyvatele bylo nižší, než by bylo bez členství v EU (síla dokladu: změřili Campos, Coricelli a Moretti 2014 srovnáním se syntetickou kontrolní zemí; Řecko je v jejich studii jediný člen, kterému vstup podle odhadu neprospěl). Jako možný důvod autoři uvádějí příliš náhlé otevření nekonkurenceschopného domácího průmyslu. V zemědělství navíc pracovalo 18,3 % lidí proti 7,2 % ve Španělsku (Eurostat, národní účty).
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon na pracujícího vůči střední zemi ligy se vyvíjel opačně než u dohánějících zemí: 90,1 % (1996), 89,9 % (2000), 99,9 % (2004), 96,3 % (2008), 77,3 % (2013), 71,0 % (2019) a 68,7 % (2024); průměr let 2020–2024 je jen 0,77násobkem výchozí hodnoty (Eurostat, výpočet projektu). Do roku 2004 Řecko dotáhlo střední zemi, do roku 2008 mírně ztratilo, v letech 2008–2013 spadlo o 19 procentních bodů a ztrácelo i potom (o 6 bodů do roku 2019 a o 2 body do roku 2024). Proč výkon po roce 2004 klesá, vysvětlují čtyři doložené věci.
+
+- **Růst do roku 2004 stál na neudržitelných zdrojích.** Vstup do hospodářské a měnové unie přinesl obrat a v letech 1996–2008 rostlo Řecko rychleji než EU, hlavně díky lodní dopravě, cestovnímu ruchu a finančnictví (síla dokladu: posoudili Campos, Coricelli a Moretti 2014). Reálné HDP rostlo v letech 2000–2009 v průměru skoro o 4 % ročně proti 2 % v eurozóně; táhl ho rozmach domácí poptávky (spotřeba a bytová výstavba), vysoký růst reálných mezd, rychlý růst úvěrů podpořený nízkými reálnými úroky po přijetí eura v roce 2001 a volná rozpočtová politika, zatímco podíl vývozu na HDP klesl z 25 na 19 % a schodek běžného účtu dosáhl v roce 2008 14 % HDP (síla dokladu: posoudila Evropská komise 2010, podle které „silný růst stál na neudržitelných zdrojích“). Veřejný sektor přitom narostl ze 44 % HDP (2000) na víc než 50 % (2009) a rozpočtové cíle se soustavně míjely kvůli překračování výdajů, rozšířeným daňovým únikům a příliš optimistickým odhadům příjmů (Evropská komise 2010). Nominální jednotkové náklady práce vzrostly v letech 2001–2010 asi o 47 %, v eurozóně asi o 20 % (IOBE 2021; IOBE je řecká Nadace pro hospodářský a průmyslový výzkum). Už v letech 2004–2008 rostl řecký výkon na pracujícího v kupní síle pomaleji než španělský (o 11 proti 16 %; Eurostat, výpočet projektu). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl výkon na pracujícího v letech 2004–2008 v Řecku asi o 5,6 %, ve Španělsku asi o 0,2 % a ve středu ligy asi o 5,6 %; reálně tedy Řecko v těchto letech rostlo rychleji než Španělsko a stejně jako střed ligy, pomalejší růst platí jen v kupní síle.
+- **Krize 2008–2013 zničila výrobu a investice.** Reálné HDP kleslo mezi lety 2008 a 2013 o 27 % a investice do fixního kapitálu mezi lety 2007 a 2013 o 66 % (Eurostat). Ozdravné programy let 2010–2018 (Evropská komise 2023) zpočátku stály na prudkém snížení výdajů na veřejné platy a škrtech důchodů (Mezinárodní měnový fond 2026). HDP v kupní síle kleslo mezi lety 2008 a 2013 o 22 % a počet pracujících o 12 %, ze 4,87 na 4,30 milionu, takže výkon na pracujícího v kupní síle klesl o 12 % (Eurostat, výpočet projektu). Ve Španělsku, střední zemi ligy, ve stejné době výkon na pracujícího vzrostl o 10 %, protože Španělsko ztratilo šestinu pracovních míst (z 21,3 na 17,9 milionu), nejvíc ve stavebnictví (z 2,78 na 1,05 milionu mezi lety 2007 a 2013), zatímco jeho HDP kleslo jen o 8,4 % (Eurostat). Pád o 19 bodů tedy skládá řecký propad a statistický vzestup výkonu střední země (můj úsudek z dat).
+- **Po krizi produktivita stagnuje.** V letech 2013–2019 vzrostlo reálné HDP o 6,5 %, ale počet pracujících o 10,5 % (ze 4,30 na 4,75 milionu), takže výkon na pracujícího v kupní síle mírně klesl, zatímco u střední země vzrostl o 7,6 % (Eurostat, výpočet projektu); investice zůstaly zhruba na třetině úrovně roku 2007 (Eurostat). Produktivita podle Mezinárodního měnového fondu stagnuje od dluhové krize 2010 částečně kvůli nízkým investicím a velkému oddlužování a hlavním viníkem je pravděpodobně špatné přidělování zdrojů: celková produktivita výrobních faktorů je asi o 10 % pod úrovní roku 2009, zatímco při efektivním přidělování zdrojů by v letech 2009–2020 vzrostla asi o 30 %, a ztráta pochází hlavně ze stavebnictví, odborných služeb a ubytování a stravování (síla dokladu: změřil Mezinárodní měnový fond 2025 srovnáním s modelem efektivního přidělování na datech firem). V letech 2008–2022 navíc odešlo do ciziny přes 1,3 milionu Řeků, polovina mladších 35 let (Evropská komise 2026).
+- **Nová místa vznikají hlavně v odvětvích s nízkým výkonem.** V letech 2019–2024 vzrostlo reálné HDP o 8,6 % a počet pracujících o 9,7 % (Eurostat), takže výkon na pracujícího se reálně skoro nezměnil. Řecko víc než průměr EU spoléhá na odvětví s nízkou produktivitou, jako je ubytování a stravování, střední a vyspělá technologická výroba zaměstnává jen 1,4 % pracujících proti 6,0 % v EU a mikropodniky a malé firmy zaměstnávají 72,6 % zaměstnanců proti 49,7 % v EU (síla dokladu: posoudila Evropská komise 2025); nízkou produktivitu dorovnávají dlouhé pracovní doby (Evropská komise 2026). Příjem na obyvatele je víc než 15 % pod předkrizovým trendem kvůli stále nízkým investicím, rychlému stárnutí s nízkou účastí na trhu práce a pomalému růstu produktivity (síla dokladu: posoudil Mezinárodní měnový fond 2026). Investice se zvedají (z 11,3 % HDP v roce 2018 na 16,9 % v roce 2025) a evropský Nástroj pro oživení a odolnost má podle odhadu Komise zvýšit HDP do roku 2026 asi o 4,5 % proti vývoji bez něj (Evropská komise 2026).
+
+Celkově: řecký výkon na pracujícího v kupní síle byl v roce 2024 jen o 2,8 % vyšší než v roce 2008, kdežto u střední země ligy o 44 % (Eurostat, výpočet projektu), a reálné HDP bylo v roce 2024 stále asi o 16 % pod úrovní roku 2008 (Eurostat). Hodnota kola tedy neodráží jen řeckou krizi, ale i to, že ostatní země mezitím rostly: ze zemí po komunismu mělo v roce 2024 nižší výkon na pracujícího než Řecko už jen Bulharsko (Eurostat, výpočet projektu).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Stát v Řecku odvede 35,8 % z toho, co firma za zaměstnance zaplatí (rok 2024, měření projektu z modelu EUROMOD Eurostatu při skutečné mzdě země). Evropská komise (2026) píše, že zátěž práce je v Řecku pod průměrem EU na všech úrovních příjmů. Řada OECD v souboru kontextu (svobodný bez dětí při průměrné mzdě podle OECD) ukazuje pro rok 2024 vyšší hodnotu 39,5 %, protože počítá s vyšší mzdou (25 680 eur ročně; OECD) a řecká daň z příjmu je progresivní; průměrná mzda z národních účtů, se kterou počítá projekt, je u Řecka o 24–34 % nižší než podle šetření firem (`LIST_UKAZATELE.md`). Že rozdíl obou čísel plyne hlavně z jiné výše mzdy, je můj úsudek.
+
+**Jak je systém stavěný.** Základ zátěže tvoří vysoké odvody: při průměrné mzdě podle OECD platil v roce 2024 zaměstnavatel 22,3 % a zaměstnanec 13,9 % hrubé mzdy a progresivní daň z příjmu dělala 12,1 % hrubé mzdy (OECD, Taxing Wages). Sazba odvodů zaměstnance a zaměstnavatele dohromady klesla ze 40,56 % (2019) na 35,16 % (2025) (Evropská komise 2025).
+
+**Jak se zátěž měnila od roku 2000.** Podle OECD byla zátěž při průměrné mzdě 38,7 % (2000), 42,2 % (2006), 41,4 % (2008), 40,0 % (2010), 42,9 % (2011), 41,1 % (2013), 38,8 % (2015), 40,4 % (2019), 37,3 % (2021) a 39,5 % (2024) (OECD, Taxing Wages).
+- Růst v letech 2000–2006 šel z daně z příjmu (z 5,7 na 9,9 % hrubé mzdy), odvody se neměnily (zaměstnavatel 28,0–28,1 %, zaměstnanec 15,9–16,0 %; OECD); příčina v otevřených zdrojích není doložena, můj úsudek je, že s rostoucími mzdami stoupala průměrná sazba progresivní daně.
+- Skok v roce 2011 přišel opět z daně z příjmu (z 7,1 na 10,3 % hrubé mzdy; OECD); konkrétní opatření jsem v otevřených zdrojích nedoložil.
+- Pokles v letech 2012–2015 přinesly nižší odvody: odvody zaměstnavatele klesly o 1,1 bodu v roce 2012 a o 2,9 bodu v červenci 2014 a odvody zaměstnanců o 1 bod v roce 2014 (IOBE 2021), takže odvody zaměstnavatele klesly z 28,6 % (2012) na 24,6 % (2015) hrubé mzdy (OECD).
+- Pokles v letech 2019–2021 přineslo postupné snižování odvodů, které v letech 2019–2025 dohromady dosáhlo 5,4 bodu (Evropská komise 2025; síla dokladu: posoudil Mezinárodní měnový fond 2026).
+- Opětovný růst v letech 2021–2024 šel z daně z příjmu (z 9,1 na 12,1 % hrubé mzdy; OECD), protože pásma a slevy nejsou navázané na inflaci a mzdy; Mezinárodní měnový fond (2026) to označuje za nezamýšlené skryté zvyšování daní a zátěž práce stále za vysokou (síla dokladu: posoudil Mezinárodní měnový fond 2026).
+
+**Test protipříkladem.** Kdyby nebyly vysoké odvody (dohromady přes 35 % hrubé mzdy), byla by zátěž výrazně nižší; jsou tedy skutečnou příčinou její výše, a jejich snižování v letech 2014 a 2019–2025 zátěž opravdu snížilo (OECD). V Řecku přitom záleží i na tom, kdo odvody formálně platí: studie řecké reformy, po které měli lidé s prvním zaměstnáním od roku 1993 mnohem vyšší strop odvodů, zjistila, že vyšší odvody zaměstnavatele nesli zaměstnavatelé a vyšší odvody zaměstnance zaměstnanci (síla dokladu: změřili Saez, Matsaganis a Tsakloglou 2012 srovnáním ročníků podle data nástupu do práce; podle rešerše studií `studie/UCINKY.md`). To mění hrubou mzdu, ne celkovou zátěž vůči nákladům práce, kterou měří toto kolo. Účetní přesun odvodů mezi zaměstnavatelem a zaměstnancem jako v Rumunsku Řecko ve sledovaném období nemělo.
+
+## 4. Další faktory země
+
+- **Minimální mzda a kolektivní vyjednávání.** Minimální mzda byla v únoru 2012 snížena o 22 % (pro mladší 25 let o 32 %) a zároveň se zastavilo plošné rozšiřování kolektivních smluv; jednotkové náklady práce pak byly v letech 2013–2018 asi o 10,6 bodu nižší, než by byly bez reforem (síla dokladu: změřilo IOBE 2021 zobecněnou syntetickou kontrolou proti 22 zemím). Pokrytí kolektivními smlouvami kleslo z 85 % (2011) na 13 % (2016) (OECD a amsterdamský institut pro výzkum práce AIAS) a nízké pokrytí podle Komise omezuje dosah vyjednaných mezd (Evropská komise 2026). Mezi lednem 2022 a prosincem 2025 vzrostla minimální mzda asi o 32,7 %, reálně o 12,2 %, reálné mzdy se ale na úroveň roku 2019 nevrátily (Evropská komise 2026). Nákladová konkurenceschopnost se zlepšila hlavně škrty mezd v letech 2010–2019 (síla dokladu: posoudila Evropská komise 2025).
+- **Dlouhé pracovní doby.** Řečtí pracovníci mají nejvíc odpracovaných hodin týdně v EU (41 hodin) a plný úvazek znamená v průměru 42,3 hodiny týdně (Evropská komise 2026; Evropská komise 2025); roční mzda na plný úvazek tak zahrnuje víc hodin než jinde, takže za hodinu je mzda ještě nižší (můj úsudek).
+- **Odchod lidí.** V letech 2008–2022 odešlo přes 1,3 milionu Řeků, polovina mladších 35 let; Komise to spojuje s rozšířenou nedeklarovanou a netypickou prací, která zhoršuje kvalitu pracovních míst (Evropská komise 2026).
+- **Ceny.** Cenová hladina skutečné individuální spotřeby (spotřeba domácností včetně veřejných služeb, které využívají) klesla z 92,7 % průměru EU (2008) na 83,6 % (2024) (Eurostat); ceny zboží ale po škrtech mezd klesly méně než mzdy, což podle Mezinárodního měnového fondu ukazuje na nedokončené reformy trhu zboží (Mezinárodní měnový fond 2025).
+- **Měření mzdy.** Průměrná mzda z národních účtů je u Řecka o 24–34 % nižší než podle šetření firem s deseti a více zaměstnanci, protože zahrnuje i malé firmy s nízkými mzdami; nezávislé ověření u bydlení doporučilo pojetí z národních účtů s jistotou asi 70 % (`LIST_UKAZATELE.md`).
+
+## 5. Co říkají ekonomové
+
+Evropská komise píše, že řečtí pracovníci „mají jedny z nejnižších průměrných platů a nejvíce odpracovaných hodin týdně (41) v EU“ (Evropská komise 2026), a Mezinárodní měnový fond označuje špatné přidělování zdrojů za „pravděpodobně hlavního viníka“ vleklé stagnace produktivity (Mezinárodní měnový fond 2025; obojí podle rešerše `ekonomove/GR.md`).
+
+## 6. Zdroje
+
+- Eurostat, výpočet projektu: HDP v kupní síle (prc_ppp_ind_1) a zaměstnanost (nama_10_pe), `data/kontext_kroky.json`; https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 a https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995
+- Eurostat, HDP a investice ve stálých cenách (nama_10_gdp): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&unit=CLV20_MEUR&na_item=B1GQ&na_item=P51G&geo=EL&geo=HR&geo=RO&geo=BG&geo=ES&sinceTimePeriod=1995
+- Eurostat, zaměstnanost podle odvětví (nama_10_a10_e): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&nace_r2=TOTAL&nace_r2=A&nace_r2=F&nace_r2=C&geo=EL&geo=HR&geo=RO&geo=BG&geo=ES&sinceTimePeriod=1995
+- Eurostat, cenová hladina skutečné individuální spotřeby (prc_ppp_ind_1, A01): https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=PLI_EU27_2020&ppp_cat18=A01&sinceTimePeriod=1995
+- OECD, Taxing Wages (svobodný bez dětí, 100 % průměrné mzdy; zátěž, odvody, daň z příjmu, hrubá mzda): https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/all?startPeriod=2000&endPeriod=2025&format=csvfilewithlabels
+- OECD a amsterdamský institut pro výzkum práce AIAS, pokrytí kolektivními smlouvami: https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_TUD_CBC@DF_CBC,/all?startPeriod=1990&format=csvfilewithlabels
+- Campos, Coricelli a Moretti 2014: Economic Growth and Political Integration: Estimating the Benefits from Membership in the European Union Using the Synthetic Counterfactuals Method, IZA Discussion Paper 8162, duben 2014 (časopisecká verze: Institutional integration and economic growth in Europe, Journal of Monetary Economics 2019). https://docs.iza.org/dp8162.pdf
+- Evropská komise 2010: The Economic Adjustment Programme for Greece, European Economy Occasional Papers 61, květen 2010. https://ec.europa.eu/economy_finance/publications/occasional_paper/2010/pdf/ocp61_en.pdf
+- Evropská komise 2023: 2023 Country Report – Greece, Institutional Paper 232 (období programů 2010–2018). https://economy-finance.ec.europa.eu/document/download/252045c4-ed8d-4891-a710-03352bee65b6_en?filename=ip232_en.pdf
+- Evropská komise 2025: 2025 Country Report – Greece, SWD(2025) 208. https://economy-finance.ec.europa.eu/document/download/e4a67707-7a12-4af0-8f3a-9b01301e263f_en?filename=EL_CR_SWD_2025_208_1_EN_autre_document_travail_service_part1_v4.pdf
+- Evropská komise 2026: 2026 Country Report – Greece, SWD(2026) 208. https://economy-finance.ec.europa.eu/document/download/4ab92883-36dd-43a9-a2aa-8791c0302d4e_en?filename=EL_SWD_2026_208_1_EN_autre_document_travail_service_part1_v3.pdf
+- IOBE 2021: Gatopoulos, Louka, Polycarpou, Vettas, Evaluating the Impact of Labour Market Reforms in Greece during 2010–2018, GreeSE Paper No. 156, Hellenic Observatory, London School of Economics, únor 2021. https://www.lse.ac.uk/Hellenic-Observatory/Assets/Documents/Publications/GreeSE-Papers/GreeSE-No156.pdf
+- Mezinárodní měnový fond 2025: Ritong Qu, Improve Resource Allocation to Boost Growth in Greece, IMF Selected Issues Paper 2025/58. https://meetings.imf.org/-/media/Files/Publications/Selected-Issues-Papers/2025/English/SIPEA2025058.ashx
+- Mezinárodní měnový fond 2026: Greece, 2026 Article IV Consultation, Country Report No. 26/108. https://www.imf.org/-/media/files/publications/cr/2026/english/1grcea2026001.pdf
+- Saez, Matsaganis a Tsakloglou 2012: Earnings Determination and Taxes: Evidence from a Cohort-Based Payroll Tax Reform in Greece, Quarterly Journal of Economics 127 (podle rešerše `studie/UCINKY.md`). https://eml.berkeley.edu/~saez/saez-matsaganis-tsakloglouQJE11greecetax.pdf
+- Rešerše výroků ekonomů projektu: `ekonomove/GR.md`; měření mzdy: `LIST_UKAZATELE.md`.
 
 
 ---
