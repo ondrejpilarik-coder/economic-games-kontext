@@ -4,7 +4,7 @@ Aktualizováno 27. 10. 2026 21:50 automaticky ze soukromého repozitáře projek
 
 | Soubor | Co obsahuje |
 |---|---|
-| 01_POSLEDNI_SCENAR | poslední scénář (ZAPADNI_EVROPA, od Gemini 4 Argonu) a kontrola čísel |
+| 01_POSLEDNI_SCENAR | poslední scénář (STREDNI_EVROPA, od Gemini 4 Argonu) a kontrola čísel |
 | 02_KUCHARKA_GEMINI | instrukce, podle kterých Gemini scénář napsal |
 | 03_PODKLADY_SCENARE | data a výklady zemí, ze kterých scénář vznikl (jediný zdroj čísel) |
 | 04_CLAUDE_MD | závazná pravidla projektu |
