@@ -1,6 +1,6 @@
-# Podklady pro scénář regionu Západní Evropa
+# Podklady pro scénář regionu Střední Evropa
 
-Země regionu: Německo, Švýcarsko, Francie, Británie, Irsko. Ukazatel: průměrná čistá mzda na plný úvazek v kupní síle (PPS), rok 2024. Body kol a pořadí jsou hotové a nesmějí se měnit.
+Země regionu: Rakousko, Česko, Polsko, Slovensko, Maďarsko. Ukazatel: průměrná čistá mzda na plný úvazek v kupní síle (PPS), rok 2024. Body kol a pořadí jsou hotové a nesmějí se měnit.
 
 # Tabulky kol
 
@@ -23,11 +23,11 @@ Růst výkonu 1996 → 2020–2024 je z **86,1 %** dohánění: přímka růstu 
 
 | Země | Výkon na začátku | Body růstu | Růst nad rámec dohánění v kupní síle (body, přímka a křivka) | Totéž v reálných cenách | Slovy (společné zařazení) |
 | --- | ---: | ---: | --- | --- | --- |
-| Švýcarsko | 128,9 % | −10,8 | +7,1 až +14,8 | +7,1 až +9,1 | rostla rychleji, než odpovídá dohánění |
-| Irsko | 101,1 % | +0,6 | +10,7 až +11,4 | −0,3 až +0,4 | nejisté: v kupní síle rychleji, v reálných cenách zhruba tak |
-| Francie | 118,5 % | −19,1 | −3,3 až +1,1 | −1,6 až −0,6 | rostla zhruba tak, jak odpovídá dohánění |
-| Německo | 115,7 % | −21,3 | −6,2 až −2,6 | −4,2 až −3,5 | nejisté: v kupní síle nejisté, v reálných cenách zhruba tak |
-| Británie | 109,4 % | −20,9 | −7,5 až −5,8 | +1,9 až +1,9 | nejisté: v kupní síle pomaleji, v reálných cenách zhruba tak |
+| Rakousko | 120,1 % | −17,0 | −0,9 až +4,0 | −1,1 až +0,0 | rostla zhruba tak, jak odpovídá dohánění |
+| Polsko | 47,7 % | +39,9 | +2,3 až +6,7 | +14,4 až +16,4 | nejisté: v kupní síle nejisté, v reálných cenách rychleji |
+| Česko | 66,1 % | +16,6 | −0,4 až +6,5 | +2,0 až +4,9 | nejisté: záleží na tom, jak se dohánění počítá |
+| Slovensko | 52,8 % | +28,4 | −2,9 až +2,9 | +9,7 až +12,2 | nejisté: v kupní síle zhruba tak, v reálných cenách rychleji |
+| Maďarsko | 55,1 % | +16,6 | −11,9 až −5,6 | −13,5 až −11,0 | rostla pomaleji, než odpovídá dohánění |
 
 ## Přenos daní podle dat ligy (nález oponenta 3)
 
@@ -39,65 +39,65 @@ Vysoký podíl vysvětlených rozdílů je zčásti účetní vazba: náklady pr
 
 | Země | Co kola nevysvětlí | Z toho podíl mezd a složení | Zbývá | Podíl mezd na výkonu | Zaměstnanci mezi pracujícími |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Německo | +15,7 | +3,9 | +11,8 | 53,0 % | 91,5 % |
-| Švýcarsko | +7,3 | +10,0 | −2,6 | 57,2 % | 91,2 % |
-| Irsko | −6,6 | +6,7 | −13,3 | 51,3 % | 86,0 % |
-| Francie | +4,6 | +3,7 | +0,9 | 51,5 % | 89,2 % |
-| Británie | +4,2 | +4,0 | +0,2 | 48,8 % | 84,7 % |
+| Rakousko | +16,0 | +2,0 | +14,0 | 49,6 % | 87,9 % |
+| Maďarsko | −13,6 | −15,3 | +1,7 | 41,6 % | 91,7 % |
+| Slovensko | −10,9 | −7,9 | −3,0 | 42,6 % | 86,0 % |
+| Česko | −4,1 | −5,6 | +1,5 | 43,8 % | 85,8 % |
+| Polsko | −3,4 | −7,6 | +4,3 | 39,5 % | 80,1 % |
 
-### Západní Evropa
+### Střední Evropa
 
 **Kolo 1: Výkon na začátku** (% výkonu střední země ligy v roce 1996)
 
 | Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| Švýcarsko | 128,90 | 3 | 1 | +24,7 | ano |  |
-| Francie | 118,52 | 5 | 2 | +16,5 | ano |  |
-| Německo | 115,70 | 6 | 3 | +14,2 |  | ano |
-| Británie | 109,41 | 9 | 4 | +8,8 |  |  |
-| Irsko | 101,10 | 13 | 5 | +1,1 |  |  |
+| Rakousko | 120,07 | 4 | 1 | +17,8 | ano |  |
+| Česko | 66,08 | 18 | 2 | −40,3 |  |  |
+| Maďarsko | 55,14 | 20 | 3 | −57,9 | ano |  |
+| Slovensko | 52,78 | 21 | 4 | −62,2 | ano | ano |
+| Polsko | 47,71 | 22 | 5 | −72,0 | ano |  |
 
 **Kolo 2: Růst výkonu** (kolikrát se výkon vůči střední zemi zvětšil (1996 → 2020–2024))
 
 | Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| Irsko | 1,17 | 13 | 1 | +0,6 |  |  |
-| Švýcarsko | 1,04 | 16 | 2 | −10,8 |  |  |
-| Francie | 0,96 | 22 | 3 | −19,1 |  |  |
-| Británie | 0,94 | 23 | 4 | −20,9 | ano | ano |
-| Německo | 0,94 | 24 | 5 | −21,3 | ano | ano |
+| Polsko | 1,76 | 5 | 1 | +39,9 | ano |  |
+| Slovensko | 1,56 | 7 | 2 | +28,4 |  |  |
+| Maďarsko | 1,38 | 9 | 3 | +16,6 |  |  |
+| Česko | 1,38 | 10 | 4 | +16,6 |  | ano |
+| Rakousko | 0,98 | 21 | 5 | −17,0 |  |  |
 
 **Kolo 3: Daně a odvody** (% nákladů práce, které jdou na daně, odvody a povinné platby)
 
 | Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| Británie | 28,28 | 1 | 1 | +13,2 | ano |  |
-| Irsko | 34,25 | 2 | 2 | +7,4 | ano |  |
-| Švýcarsko | 36,49 | 6 | 3 | +5,1 |  |  |
-| Francie | 46,34 | 24 | 4 | −6,1 | ano |  |
-| Německo | 46,86 | 25 | 5 | −6,8 | ano | ano |
+| Polsko | 39,59 | 9 | 1 | +1,8 |  |  |
+| Maďarsko | 41,15 | 13 | 2 | +0,0 |  |  |
+| Česko | 41,18 | 14 | 3 | +0,0 |  | ano |
+| Slovensko | 44,57 | 22 | 4 | −4,0 |  |  |
+| Rakousko | 46,99 | 26 | 5 | −6,9 | ano |  |
 
 
 | Země | Místo v lize | Patro | Čistá mzda PPS | Proti středu ligy | Co kola nevysvětlí (body) |
 | --- | ---: | --- | ---: | ---: | ---: |
-| Švýcarsko | 1 | evropská špička | 40 189 | +58,8 % | +7,3 |
-| Británie | 4 | evropská špička | 32 510 | +28,5 % | +4,2 |
-| Irsko | 7 | nad středem až střed Evropy | 31 639 | +25,0 % | −6,6 |
-| Německo | 8 | nad středem až střed Evropy | 31 408 | +24,1 % | +15,7 (nad typickou odchylkou) |
-| Francie | 10 | nad středem až střed Evropy | 29 629 | +17,1 % | +4,6 |
+| Rakousko | 2 | evropská špička | 34 051 | +34,5 % | +16,0 (nad typickou odchylkou) |
+| Česko | 16 | pod středem Evropy | 23 345 | −7,8 % | −4,1 |
+| Polsko | 18 | pod středem Evropy | 22 036 | −12,9 % | −3,4 |
+| Slovensko | 25 | evropský suterén | 18 956 | −25,1 % | −10,9 (nad typickou odchylkou) |
+| Maďarsko | 26 | evropský suterén | 17 818 | −29,6 % | −13,6 (nad typickou odchylkou) |
 
-Papírové pořadí podle rozdaných karet: Švýcarsko (+24,7), Francie (+16,5), Německo (+14,2), Británie (+8,8), Irsko (+1,1). Průměrný zbytek regionu +5,0 bodu.
+Papírové pořadí podle rozdaných karet: Rakousko (+17,8), Česko (−40,3), Maďarsko (−57,9), Slovensko (−62,2), Polsko (−72,0). Průměrný zbytek regionu −3,2 bodu.
 
 
 ## Výsledek v cíli (rok 2024)
 
 | Země | Skutečné místo v lize (27 zemí) | Patro | Čistá mzda v kupní síle (PPS ročně) | Čistá mzda v eurech ročně | Cenová hladina spotřeby (EU27 = 100) | Daně, odvody a povinné platby (% nákladů práce) |
 |---|---:|---|---:|---:|---:|---:|
-| Švýcarsko | 1 | evropská špička | 40 189 | 73 064 | 181,8 | 36,5 |
-| Británie | 4 | evropská špička | 32 510 | 41 938 | 129,0 | 28,3 |
-| Irsko | 7 | nad středem až střed Evropy | 31 639 | 44 579 | 140,9 | 34,2 |
-| Německo | 8 | nad středem až střed Evropy | 31 408 | 34 329 | 109,3 | 46,9 |
-| Francie | 10 | nad středem až střed Evropy | 29 629 | 31 881 | 107,6 | 46,3 |
+| Rakousko | 2 | evropská špička | 34 051 | 40 112 | 117,8 | 47,0 |
+| Česko | 16 | pod středem Evropy | 23 345 | 18 886 | 80,9 | 41,2 |
+| Polsko | 18 | pod středem Evropy | 22 036 | 15 403 | 69,9 | 39,6 |
+| Slovensko | 25 | evropský suterén | 18 956 | 15 317 | 80,8 | 44,6 |
+| Maďarsko | 26 | evropský suterén | 17 818 | 12 277 | 68,9 | 41,2 |
 
 Střed ligy (medián 27 zemí) v čisté mzdě: 25 308 PPS ročně.
 Patra evropské reality: 1.–6. evropská špička, 7.–15. nad středem až střed Evropy, 16.–20. pod středem Evropy, 21.–27. evropský suterén.
@@ -105,190 +105,155 @@ Patra evropské reality: 1.–6. evropská špička, 7.–15. nad středem až s
 
 ## Štítky z hodnocení výkonu zemí (pro finále)
 
-- Německo: Dělá to dobře a je to vidět
-- Švýcarsko: Dělá to dobře a je to vidět
-- Francie: Dělá to dobře a je to vidět; vedlejší štítek: Chybami si přitížil
-- Británie: Chybami si přitížil; vedlejší štítek: Dělá to dobře a je to vidět
-- Irsko: Dělá to dobře a je to vidět; vedlejší štítek: Chybami si přitížil
+- Rakousko: Dělá to dobře a je to vidět
+- Česko: Dělá to dobře a je to vidět; vedlejší štítek: Chybami si přitížil
+- Polsko: Dělá to dobře a je to vidět
+- Slovensko: Dělá to dobře a je to vidět; vedlejší štítek: Těží z okolností
+- Maďarsko: Dělá to dobře a je to vidět; vedlejší štítek: Chybami si přitížil
 
 
 # Výklady zemí (proč mají v kolech takové hodnoty)
 
-# Německo: proč má v kolech takové hodnoty
+# Rakousko: proč má v kolech takové hodnoty
+
+*Oprava koordinátora 17. 10. 2026 večer: zátěž daní a odvodů se po doplnění povinných plateb mimo daně u všech 27 zemí (nález nezávislého oponenta 1, `LIST_UKAZATELE.md`) změnila na 47,0 % (26. od nejnižší; dřív 46,4 %, 25.); čísla níže jsou bodově opravená, ostatní text zůstává.*
 
 *Podklad pro výklad hodnot v kolech průměrné čisté mzdy (rok 2024), sestavený 17. 10. 2026. Čísla výkonu a zátěže jsou
-z dat projektu (`data/kontext_kroky.json`, `data/mereni.json`), výroky ekonomů z `ekonomove/DE.md`, síla účinků ze
+z dat projektu (`data/kontext_kroky.json`, `data/mereni.json`), výroky ekonomů z `ekonomove/AT.md`, síla účinků ze
 `studie/UCINKY.md`, ostatní z otevřených oficiálních a odborných zdrojů v oddílu 6. Kroky vlád a institucí s doklady jsou
-v `data/kroky_zemi/DE.json`. „Můj přepočet“ znamená výpočet z uvedených dat, „můj úsudek“ moji úvahu bez přímého dokladu.*
+v `data/kroky_zemi/AT.json`. „Můj přepočet“ znamená výpočet z uvedených dat, „můj úsudek“ moji úvahu bez přímého dokladu.*
 
 ## Ve zkratce
 
-Německo startovalo vysoko díky průmyslu bývalého západního Německa, celostátní průměr ale stahoval dolů východ, kde se
-po sjednocení dohánění kolem roku 1996 zastavilo. Výkon na pracujícího pak rostl pomaleji než ve střední zemi ligy, protože
-bohatá země nemá z čeho dohánět, protože Němci odpracují na hlavu stále méně hodin a protože po roce 2019 přišel energetický
-šok a útlum průmyslu; za hodinu práce Německo za středem ligy nezaostalo. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl německý výkon za odpracovanou hodinu v letech 1996–2024 asi o 30 %, střed ligy asi o 45 % (25 zemí s údaji o hodinách); i za hodinu práce tedy Německo za středem ligy reálně zaostalo, nezaostalo jen za Španělskem (asi +17 %). Daně a odvody jsou vysoké hlavně proto, že
-sociální pojištění se platí převážně z mezd; od roku 2000 zátěž klesla díky nižší dani z příjmu, pojistné zůstalo skoro stejné.
+Rakousko startovalo vysoko s velkou zásobou kapitálu a s polohou, kterou po pádu železné opony a po vstupu do EU proměnilo
+ve výhodu; do roku 2004 si proto náskok před středem ligy drželo. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl rakouský výkon na pracujícího v letech 1996–2004 asi o 14 %, střed ligy asi o 21 %; náskok si Rakousko drželo jen v kupní síle, reálně za středem ligy ztrácelo už v těchto letech (proti Španělsku si ale polepšilo). Pak výkon na pracujícího vůči středu ligy klesal, protože
+bohatá země nemá z čeho dohánět, protože se po krizi 2008/09 zpomalil růst produktivity a hlavně proto, že Rakušané
+odpracují na hlavu asi o 16 % méně hodin než v roce 1996; za hodinu práce se Rakousko naopak středu ligy vzdálilo. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl rakouský výkon za odpracovanou hodinu v letech 1996–2024 asi o 39 %, střed ligy asi o 45 % (25 zemí s údaji o hodinách); od středu ligy se tedy Rakousko za hodinu reálně nevzdálilo, mírně za ním zaostalo, a polepšilo si jen proti Španělsku, kde výkon za hodinu vzrostl asi o 17 %. Zátěž daní
+a odvodů je vysoká kvůli velkým odvodům na sociální pojištění; do roku 2015 ji zvedala daň z příjmu, protože se pásma
+neupravovala o inflaci, a pak ji snížily reformy z let 2016 a 2023.
 
 ## 1. Proč takový výkon na začátku (1996)
 
-V roce 1996 vytvořil pracující v Německu 115,7 % toho, co pracující ve střední zemi ligy (data projektu z Eurostatu;
-střední zemí ligy bylo toho roku pevninské Norsko). Vysoký start stál na průmyslu: Evropská komise popisuje německou
-konkurenceschopnost jako postavenou na rozmanité ekonomice se silnou průmyslovou základnou a dynamickými středními firmami
-a úroveň produktivity práce hodnotí jako vysokou (Evropská komise 2024), a kapitálu na pracovníka mělo Německo v roce 1996
-asi 1,18násobek střední země ligy (Penn World Table 11.0, data projektu). Celostátní průměr ale stahovalo dolů sjednocení
-z roku 1990. Na východě vytvořil pracující v roce 1991 méně než 45 % toho, co na západě, v roce 1996 asi 72 % a v roce
-2000 73 %, takže dohánění se právě kolem roku 1996 zastavilo (změřeno: Burda a Huntová 2001, přidaná hodnota na
-pracujícího podle údajů statistických úřadů). Sjednocení bylo i drahé: převody ze západu na východ dělaly kolem roku 2000
-asi 5 % německého HDP ročně a 40–45 % z nich tvořily sociální nároky, tedy hlavně důchody a podpory (Burda a Huntová 2001).
+V roce 1996 vytvořil pracující v Rakousku 120,1 % toho, co pracující ve střední zemi ligy (data projektu z Eurostatu).
+Rakousko mělo na pracovníka asi 1,38násobek kapitálu střední země ligy (Penn World Table 11.0, data projektu) a těžilo
+z polohy: po otevření trhů střední a východní Evropy v roce 1990 vzrostly v rakouských obcích do 50 kilometrů od hranice
+mzdy i zaměstnanost víc než ve vnitrozemí (změřeno: Brülhart, Carrère a Trionfetti 2012, srovnání obcí u hranice
+s vnitrozemím před rokem 1990 a po něm). Ekonom Rakouského institutu pro hospodářský výzkum (WIFO) Fritz Breuss odhaduje, že
+otevření východu zvedalo rakouský reálný HDP asi o 0,2 % ročně a vstup do EU 1. ledna 1995 asi o 0,6 % ročně (posoudil
+Breuss 2015, makroekonomický model). Část vysokého výkonu na pracujícího dělala tehdy také dlouhá pracovní doba: rakouský
+pracující odpracoval v roce 1996 1 806 hodin, španělský 1 740 a německý 1 515 (Eurostat, přepočet projektu), takže za hodinu
+práce vytvořil Rakušan jen asi 108 % toho, co Španěl (můj přepočet z dat Eurostatu).
 
 ## 2. Proč takový růst výkonu (1996–2024)
 
-Výkon na pracujícího vůči střední zemi ligy se v Německu zmenšil na 0,936násobek stavu z roku 1996 (průměr let 2020–2024,
-asi 108 % střední země, je můj přepočet z tohoto násobku), zatímco typická země ligy si polepšila na 1,17násobek (data
-projektu). Průběh: 108,0 % (2000), 112,6 % (2004), 107,4 % (2008), 102,9 % (2013), 107,3 % (2019) a 104,8 % (2024) (data
-projektu). Nejvíc Německo ztratilo v letech 1996–2000, 2004–2013 a 2019–2024, polepšilo si v letech 2000–2004
-a 2013–2019, v obou případech v době, kdy srovnávací Španělsko rychle přibíralo pracovníky (jen časová souvislost, viz
-níže). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách si Německo v letech 2000–2004 vůči středu ligy nepolepšilo: výkon na pracujícího vzrostl asi o 4 %, střed ligy asi o 9 %; polepšilo si jen proti Španělsku, kde výkon na pracujícího skoro nerostl (asi −0,2 %).
+Výkon na pracujícího vůči střední zemi ligy se v Rakousku zmenšil na 0,978násobek stavu z roku 1996, zatímco typická země
+ligy si polepšila na 1,17násobek (data projektu). Průběh: 119,1 % (2000), 121,1 % (2004), 116,2 % (2008), 112,4 % (2013),
+116,2 % (2019) a 114,5 % (2024) (data projektu). Do roku 2004 si Rakousko náskok udrželo, nejvíc ztratilo v letech
+2004–2013, v letech 2013–2019 část dohnalo a po roce 2019 znovu mírně ztratilo. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl rakouský výkon na pracujícího v letech 1996–2004 asi o 14 % a střed ligy asi o 21 %, takže náskok si Rakousko udrželo jen v kupní síle a reálně ztrácelo už do roku 2004.
 
-**Bohatá země nemá z čeho dohánět.** Střed ligy táhnou nahoru východní země, které dohánějí z nízkého základu: Rumunsko
-zvětšilo výkon vůči střední zemi 3,17krát, Polsko 1,76krát (data projektu). Zemím, které vstoupily do EU, zvýšil vstup
-příjem na obyvatele podle srovnání s umělými kontrolními zeměmi v průměru asi o 12 % (změřeno: Campos, Coricelli a Moretti
-2019, podle rešerše studií projektu). Že Německo jako země blízko technologické špičky takto dohánět nemůže, je můj úsudek
-z dat ligy.
+**Bohatá země nemá z čeho dohánět.** Střed ligy táhnou nahoru východní země, které dohánějí z nízkého základu (například
+Rumunsko zvětšilo výkon vůči střední zemi 3,17krát, Polsko 1,76krát; data projektu) a kterým vstup do EU zvýšil příjem na
+obyvatele v průměru asi o 12 % (změřeno: Campos, Coricelli a Moretti 2019, podle rešerše studií projektu). Že Rakousko jako
+bohatá země takto dohánět nemůže, je můj úsudek z dat ligy. Střední zemí ligy je od roku 2000 Španělsko, jehož výkon na
+pracujícího v krizi let 2008–2013 vyskočil, protože ztratilo 3,4 milionu pracovních míst (Eurostat, přepočet projektu;
+podrobněji ve výkladu u Německa); i to rakouskou hodnotu v letech 2008–2013 stlačilo.
 
-**Střední země ligy se mění a s ní i měřítko.** V roce 1996 bylo střední zemí pevninské Norsko, v letech 2000, 2004, 2008,
-2013, 2019 i 2024 Španělsko (data projektu). Proti Španělsku mělo Německo v roce 1996 i v roce 2000 stejný náskok, výkon
-108 % španělského (můj přepočet z dat projektu); pokles ze 115,7 % na 108,0 % v letech 1996–2000 tedy hlavně ukazuje, že
-Irsko, Norsko a Dánsko rostly rychleji než Španělsko a předběhly ho, takže se střed ligy posunul výš (data projektu). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl výkon na pracujícího v letech 1996–2000 v Německu asi o 4 %, ve Španělsku skoro vůbec (asi −0,3 %) a ve středu ligy asi o 9,5 %; proti Španělsku si tedy Německo reálně mírně polepšilo a za středem ligy reálně zaostalo asi o 5 %, pokles proto není jen posunem střední země. Od
-roku 2000 se Německo vlastně srovnává se Španělskem. Jeho výkon na pracujícího skočil v krizi, protože v letech 2008–2013
-ubylo 3,4 milionu pracujících, z 21,3 na 17,9 milionu (Eurostat, přepočet projektu); vývoj španělské produktivity v krizi
-podle studie Hospidové a Moreno-Galbisové z velké části odráží nepříznivý vývoj na trhu práce, ale také vývoj celkové
-efektivity výroby a změny ve skladbě (posoudily Hospido a Moreno-Galbis 2015). Německo naopak v krizi pracovní místa drželo: v roce 2009 mělo stejně pracujících
-jako v roce 2008, 40,9 milionu, ale každý odpracoval méně hodin, 1 407 místo 1 447 (Eurostat, přepočet projektu), protože
-firmy s podporou státu zkracovaly pracovní dobu místo propouštění; zkrácená práce podle srovnání zemí snížila ztráty
-pracovních míst (změřeno: Boeri a Brücker 2011). Proto německá hodnota v letech 2008–2013 klesla ze 107,4 % na 102,9 %
-(data projektu). Polepšení v letech 2000–2004 se zase časově kryje s tím, že Španělsko tehdy rychle přibíralo pracovníky,
-ze 16,7 milionu v roce 2000 na 19,0 milionu v roce 2004, a podobně v letech 2013–2019 ze 17,9 na 20,5 milionu, zatímco
-v Německu pracujících v letech 2000–2004 mírně ubylo, ze 40,0 na 39,4 milionu (Eurostat, přepočet projektu); španělský výkon
-na pracujícího proto rostl pomalu, je to ale jen časová souvislost.
+**Do roku 2004 bonus z evropské integrace.** Podle Breusse přidal celý proces integrace od roku 1989 (otevření východu, vstup
+do EU, euro od roku 1999 a rozšíření EU v roce 2004) rakouskému reálnému HDP asi 0,9 % ročně a přes 18 000 pracovních míst
+ročně; účinky jednotlivých kroků se překrývají, takže se nesčítají, a bonus vydržel do krize 2008/09 (posoudil Breuss 2015,
+makroekonomický model). Nejvíc podle něj získaly firmy silně angažované v nových členských zemích a podíl mezd na národním
+důchodu klesal (posoudil Breuss 2015).
 
-**Na hlavu se odpracuje stále méně hodin.** Kolo měří výkon na pracujícího, ne na hodinu. Německý pracující odpracoval
-v roce 1996 v průměru 1 515 hodin a v roce 2024 1 345 hodin, o 11 % méně, španělský 1 740 a 1 642 hodin, o 6 % méně
-(Eurostat, přepočet projektu). Za hodinu práce vytvořilo Německo v roce 1996 124 % a v roce 2024 128 % toho, co Španělsko
-(můj přepočet z dat Eurostatu), takže za hodinu za středem ligy nezaostalo, na pracujícího ano. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* proti Španělsku to platí i ve stálých cenách, proti středu ligy ne: za hodinu vzrostl německý výkon v letech 1996–2024 asi o 30 %, střed ligy asi o 45 % (viz opravu ve zkratce). Pracujících přibylo
-z 38,1 milionu (1996) na 46,0 milionu (2024), o 21 %, odpracovaných hodin ale jen o 7 % (Eurostat, přepočet projektu).
-Evropská komise uvádí, že velký sektor nízkých mezd táhnou pobídky v sociálních dávkách a okrajové částečné úvazky
-(posoudila Evropská komise 2026), a Mezinárodní měnový fond zaznamenává, že částečných úvazků dál přibývá (Mezinárodní
-měnový fond 2026). K velkému přírůstku pracujících přispěla i reforma podpor v nezaměstnanosti z roku 2005 (takzvaná Hartz
-IV), které model trhu práce připisuje 2,1 procentního bodu z poklesu nezaměstnanosti z 12 % (2005) na 5 % (2019)
-(změřeno: Hochmuth a kol. 2021, model odhadnutý na datech průzkumu volných míst). Že reforma snížila výkon na pracujícího
-tím, že do práce přivedla méně produktivní a kratší úvazky, nikdo nezměřil; je to můj úsudek.
+**Po krizi 2008/09 pomalejší produktivita.** Růst produktivity práce zpomalil z 1,8 % ročně (1995–2005) na 0,9 % ročně
+(2006–2019) (Rada pro produktivitu 2024) a podle Rady pro produktivitu, nezávislého poradního orgánu při Rakouské národní
+bance, se zpomaluje už od krize 2008/09, podobně jako v jiných vyspělých zemích (Rada pro produktivitu 2025; jen časová
+souvislost s krizí). Jako příčiny zpomalení Rada jmenuje měnící se skladbu pracovní síly, malé investice do nehmotného
+majetku, jako jsou software, patenty a odborná příprava, slabiny digitalizace a velkou váhu méně produktivních oborů, jako je
+ubytování (posoudila Rada pro produktivitu 2024).
 
-**Pomalý růst kolem roku 2000 a mzdová umírněnost.** V letech 1998–2005 rostla německá ekonomika jen asi o 1,2 % ročně
-a nezaměstnanost stoupla z 9,2 % na 11,1 % (Dustmann a kol. 2014). Odbory tehdy přistoupily na mírný růst mezd a do
-odvětvových smluv přibyly doložky, které firmám v potížích dovolily odchýlit se od smluvních mezd a pracovní doby; podle
-Institutu pro výzkum trhu práce (IAB) to přispělo k růstu produktivity a obnově konkurenceschopnosti (posoudil IAB 2026)
-a Dustmann a kol. pružnost německých institucí trhu práce považují za hlavní důvod hospodářského úspěchu Německa v desetiletí
-před rokem 2014 (posoudili Dustmann a kol. 2014).
+**Na hlavu se odpracuje mnohem méně hodin.** Kolo měří výkon na pracujícího, ne na hodinu. Rakouský pracující odpracoval
+v roce 2024 v průměru 1 524 hodin, o 16 % méně než v roce 1996, kdežto španělský o 6 % méně (Eurostat, přepočet projektu).
+Za hodinu práce vytvářelo Rakousko v roce 1996 asi 108 % a v roce 2024 asi 123 % toho, co Španělsko, na pracujícího ale
+112 % a 115 % (můj přepočet z dat Eurostatu). Slabý růst výkonu na pracujícího je tedy z velké části kratší prací na hlavu,
+ne slabší hodinovou produktivitou (můj úsudek z těchto dat). Pracujících přibylo z 3,60 milionu (1996) na 4,74 milionu
+(2024), odpracovaných hodin jen o 11 % (Eurostat, přepočet projektu). Evropská komise uvádí, že podíl částečných úvazků je
+s 30,7 % druhý nejvyšší v EU, dál roste, a tím snižuje počet hodin na pracujícího (posoudila Evropská komise 2025);
+u žen dosáhl podíl částečných úvazků v roce 2024 51,1 % (Rada pro produktivitu 2025). Komise zároveň píše, že vysoké zdanění
+práce od delší pracovní doby odrazuje (posoudila Evropská komise 2025, viz oddíl 3).
 
-**Po roce 2019 energetický šok a útlum průmyslu.** Energetický šok z poloviny roku 2022 a rychlé zvýšení úroků přinesly dva
-roky poklesu ekonomiky (2023 a 2024); dopady podle Mezinárodního měnového fondu zesílil slabý základní růst produktivity,
-zčásti kvůli dlouho odkládaným strukturálním reformám (posoudil Mezinárodní měnový fond 2026). Evropská komise mezi
-příčinami ztráty konkurenceschopnosti jmenuje slábnoucí technologický náskok, nedostatek kvalifikovaných pracovníků a vysoké
-mzdové náklady a ceny energií a uvádí, že soukromé investice klesly do roku 2025 pod úroveň roku 2015 (posoudila Evropská
-komise 2026). Podíl zpracovatelského průmyslu na přidané hodnotě klesl z 22,9 % (2016) na 20,8 % (2023) (Evropská komise
-2024) a Rada hospodářských expertů upozorňuje, že úbytek průmyslu a růst málo produktivních služeb tlumí růst a zvyšuje podíl
-hůře placených míst (posoudila Rada hospodářských expertů 2025). Výkon vůči středu ligy klesl ze 107,3 % (2019) na 104,8 %
-(2024) (data projektu).
+**Po roce 2019 recese a náklady.** Rakousko bylo v letech 2023 a 2024 v recesi a produktivita práce klesala asi o 1,1 %
+ročně, hlavně ve zpracovatelském průmyslu; Rada pro produktivitu to připisuje recesi a tomu, že firmy držely zaměstnance
+(posoudila Rada pro produktivitu 2025). Cenová konkurenceschopnost vývozců se zhoršila kvůli rostoucím nákladům práce
+a energií (posoudila Rada pro produktivitu 2024). Výkon vůči středu ligy klesl ze 116,2 % (2019) na 114,5 % (2024) (data
+projektu).
 
-**Investice a výzkum.** Německo investovalo v letech 1996–2024 v průměru 20,5 % HDP, méně než střední země ligy s 22,8 %
-(Eurostat, data projektu), výdaje na výzkum a vývoj ale zvýšilo z 2,14 % HDP (1996) na 3,12 % (2024) (Eurostat, data
-projektu). Proč vyšší výdaje na výzkum nezrychlily růst výkonu, zdroje nevysvětlují; Komise jen uvádí, že růst produktivity
-práce i celkové efektivity výroby v posledních letech zpomaluje (Evropská komise 2024).
+**Investice a výzkum.** Rakousko investovalo v letech 1996–2024 v průměru 24,1 % HDP, víc než střední země ligy s 22,8 %
+(Eurostat, data projektu), a výdaje na výzkum a vývoj zvýšilo z 1,59 % HDP (1996) na 3,34 % (2024) (Eurostat, data
+projektu). Proč se to neprojevilo rychlejším růstem výkonu, zdroje přímo nevysvětlují; Rada pro produktivitu upozorňuje na
+malé investice do nehmotného majetku a slabiny digitalizace (Rada pro produktivitu 2024).
 
 ## 3. Proč taková zátěž daní a odvodů (2024)
 
-Z toho, co firma za zaměstnance s průměrnou mzdou zaplatí, odvedl stát v roce 2024 46,86 % (výpočet projektu při skutečné
-průměrné mzdě 53 791 eur; střední země ligy 41,2 %). Systém stojí na sociálním pojištění placeném z mezd: součet sazeb
-důchodového (18,6 %), zdravotního (průměrně 16,3 % včetně dodatkového příspěvku), pečovatelského (3,4 %) a pojištění
-v nezaměstnanosti (2,6 %) činil v roce 2024 40,9 % hrubé mzdy a platí ho napůl zaměstnanec a napůl zaměstnavatel (Institut
-Arbeit und Qualifikation 2026). Při průměrné mzdě zaplatí zaměstnanec 11 323 eur pojistného a 8 139 eur daně z příjmu,
-solidární příplatek už neplatí (výpočet projektu podle pravidel roku 2024). Podle OECD (Organizace pro hospodářskou
-spolupráci a rozvoj) tvořila v roce 2024 daň z příjmu 16,8 % hrubé mzdy, pojistné zaměstnance 20,7 % a pojistné
-zaměstnavatele 20,1 % (OECD Taxing Wages, data projektu). Evropská komise píše, že německý daňový mix stojí hlavně na
-zdanění práce, které je vysoké u všech výší mezd (posoudila Evropská komise 2026).
+Z toho, co firma za zaměstnance s průměrnou mzdou zaplatí, šlo v roce 2024 na daně, odvody a povinnou podnikovou zaopatřovací pokladnu 47,0 % (výpočet projektu; bez pokladny,
+kterou OECD nepočítá, 46,4 %; střední země ligy 41,2 %). Podle OECD (Organizace pro hospodářskou spolupráci a rozvoj) tvořily v roce 2024 odvody zaměstnavatele 27,6 %
+hrubé mzdy, odvody zaměstnance 17,9 % a daň z příjmu 14,6 % (OECD Taxing Wages, data projektu); jádrem zátěže jsou tedy
+odvody na sociální pojištění, které jsou vyšší než daň. Daň z příjmu měla v roce 2024 pásma se sazbou 0 % do 12 816 eur
+ročně a dál 20, 30, 40, 48 a 50 % (Spolkové ministerstvo financí). Evropská komise uvádí, že Rakousko mělo v roce 2025 šestý
+nejvyšší daňový klín v EU (Evropská komise 2026), a Rada pro produktivitu očekává, že země v roce 2025 dosáhne nejvyššího
+podílu daní a odvodů na HDP v EU (Rada pro produktivitu 2025). Komise píše, že vysoký klín odrazuje od delší pracovní doby
+a vede k vysokému podílu částečných úvazků (posoudila Evropská komise 2025).
 
-**Test protipříkladem.** Že pojistné platí napůl zaměstnavatel, výši zátěže nevysvětluje: kdyby všechno platil zaměstnanec,
-byla by vyšší hrubá mzda, ale zátěž vůči nákladům práce stejná; je to jen účetní rozdělení. Skutečnou příčinou je, že
-důchody, zdravotní a dlouhodobá péče a podpory v nezaměstnanosti se platí převážně z pojistného z mezd (Institut Arbeit und
-Qualifikation 2026), u průměrné mzdy z celé její výše (strop zdravotního pojištění je například 62 100 eur, výpočet
-projektu). Kdyby se větší část platila z jiných daní, zátěž práce by byla nižší; naznačuje to i to, že stát v letech
-1990–2000 výrazně zvýšil příspěvek z rozpočtu do důchodového pojištění a sazba se pak udržela mezi 19 a 20 % (Institut
-Arbeit und Qualifikation 2026; že to sazbu udrželo, je můj úsudek).
+**Test protipříkladem.** Rozdělení odvodů mezi zaměstnavatele a zaměstnance výši zátěže nevysvětluje: kdyby všechno platil
+zaměstnanec, byla by vyšší hrubá mzda, ale zátěž vůči nákladům práce stejná. Příčinou je výše odvodů a daně, tedy to, kolik
+sociální pojištění a stát stojí a že se platí převážně z práce; podle Komise se rakouský daňový systém silně opírá o příjmy
+z práce (Evropská komise 2025). O změně toho, kdo odvody formálně platí, rešerše ekonomů u Rakouska nic nenašla.
 
-**Vývoj od roku 2000.** Zátěž svobodného s průměrnou mzdou klesla podle OECD z 52,9 % nákladů práce (2000) na 51,3 %
-(2008), 49,3 % (2013 i 2019) a 47,9 % (2024) (data projektu z OECD). Klesla hlavně daň z příjmu, jejíž průměrná sazba se
-snížila z 22,7 % hrubé mzdy (2000) na 16,8 % (2024) (OECD Taxing Wages, data projektu):
-- daňová reforma v letech 2001–2005 snížila nejnižší sazbu z 22,9 % na 15 % a nejvyšší z 51 % na 42 % (Spolkové
-  ministerstvo financí), průměrná sazba pak klesla z 22,7 % (2000) na 20,8 % (2005), celková zátěž ale jen z 52,9 % na
-  52,1 %, protože pojistné zaměstnance vzrostlo z 20,5 % na 21,4 % hrubé mzdy (OECD Taxing Wages; jen časová souvislost);
-- v roce 2010 klesla průměrná sazba daně podle OECD z 20,6 % na 18,7 % (OECD Taxing Wages); příčinu jsem v otevřeném zdroji
-  neověřil;
-- od roku 2021 přestalo solidární příplatek platit asi 90 % poplatníků a průměrná sazba klesla z 18,5 % na 17,6 %
-  (Regierungspräsidium Kassel; OECD Taxing Wages).
+**Vývoj od roku 2000.** Zátěž svobodného s průměrnou mzdou vzrostla podle OECD ze 47,3 % nákladů práce (2000) na 49,0 %
+(2008), 49,2 % (2013) a nejvyšších 49,6 % (2015), pak klesla na 47,3 % (2016), 47,9 % (2019) a 46,8 % (2024) (data projektu
+z OECD). Pohyb dělala hlavně daň z příjmu:
+- do roku 2015 rostla průměrná sazba daně z 12,9 % na 17,0 % hrubé mzdy (OECD Taxing Wages); hranice pásem se do roku 2022
+  automaticky neupravovaly o inflaci (Spolkové ministerstvo financí), takže inflace bez změny zákona zvyšovala daň (můj
+  úsudek; s daty OECD jen časová souvislost);
+- daňová reforma 2015/2016 snížila nejnižší sazbu na 25 % (Spolkové ministerstvo financí 2015) a průměrná sazba daně klesla
+  ze 17,0 % na 14,1 %, zátěž ze 49,6 % na 47,3 % (OECD Taxing Wages); OECD tento pokles výslovně přičetla reformě daní
+  z práce (posoudila OECD 2017);
+- v letech 2017 a 2018 vláda snížila příspěvek zaměstnavatelů do fondu pro rodinné dávky ze 4,5 % mzdy o 0,4 a o dalších
+  0,2 procentního bodu (rakouský parlament 2015) a odvody zaměstnavatele klesly podle OECD z 28,9 % hrubé mzdy (2016) na
+  28,3 % (2018) (jen časová souvislost);
+- od 1. ledna 2023 se pásma daně každý rok upravují o inflaci (Spolkové ministerstvo financí) a průměrná sazba daně klesla
+  z 15,3 % (2022) na 14,6 % (2024) (OECD Taxing Wages; jen časová souvislost).
 
-Pojistné se naopak skoro nezměnilo: součet sazeb byl 40,9 % hrubé mzdy v roce 1996 i v roce 2024. Mezitím vystoupal na
-42,1 % (1997–1998), po snížení pojištění v nezaměstnanosti ze 6,5 % na 2,8 % v letech 2007–2009 klesl na 39,6 % a pak ho
-zvedalo zdravotní a pečovatelské pojištění (Institut Arbeit und Qualifikation 2026). Snížení sazby pojištění
-v nezaměstnanosti umožnil podle téhož ústavu hlavně úbytek nezaměstnaných, ale také škrty v podporách (posoudil Institut
-Arbeit und Qualifikation 2026), a důchodová reforma z roku 2001 udržela sazbu důchodového pojištění díky nižší budoucí
-úrovni důchodů (posoudil Institut Arbeit und Qualifikation 2026). Malá část poklesu v letech 2023–2024 v datech OECD je jen
-měření: OECD počítá s tím, že 750 eur průměrné mzdy roku 2024 (1 000 eur v roce 2023) tvořila inflační prémie bez daní
-a odvodů, kterou náš výpočet jako dobrovolnou platbu nezapočítává (ověření projektu, `data/overeni_cista_mzda_2024.md`).
-V roce 2025, tedy po sledovaném roce, se zdravotní a pečovatelské pojištění zvýšilo o 1,4 procentního bodu a součet sazeb
-přesáhl 42 % hrubé mzdy (Mezinárodní měnový fond 2026). Změnu toho, kdo odvody formálně platí, rešerše ekonomů u Německa
-nenašla.
+Odvody zaměstnance se mezitím skoro nezměnily (18,1 % hrubé mzdy v roce 2000, 17,9 % v roce 2024), odvody zaměstnavatele
+klesly z 31,0 % na 27,6 % (OECD Taxing Wages).
 
 ## 4. Další faktory země
 
-**Minimální mzda.** Zákonná minimální mzda platí od 1. ledna 2015, zpočátku 8,50 eura za hodinu, a v říjnu 2022 ji zákon
-zvýšil z 10,45 na 12 eur (Komise pro minimální mzdu 2025). Při zavedení zasáhla asi 15 % zaměstnanců, zvedla mzdy bez
-poklesu zaměstnanosti a přesunula nízko placené pracovníky do větších, lépe platících a produktivnějších podniků, což
-vysvětluje až 17 % zvýšení mezd (změřeno: Dustmann a kol. 2022, srovnání podle toho, jak silně byli zasaženi lidé
-a regiony). Zvýšení na 12 eur zvedlo hodinové mzdy zasažených asi o 6 %, celkovou měsíční mzdovou sumu ekonomiky ale jen asi
-o 0,34 % (změřeno, podle Komise pro minimální mzdu 2025). Na průměrnou mzdu má tedy minimální mzda malý vliv, na spodek mezd
-velký.
+**Kolektivní smlouvy pro skoro všechny a mzdy podle inflace.** Kolektivní smlouvy kryly v roce 2024 98 % zaměstnanců, což
+podle Evropské komise odráží povinné členství zaměstnavatelů v hospodářské komoře a koordinované vyjednávání (Evropská
+komise 2026). Smlouvy se v praxi řídí průměrnou inflací za posledních dvanáct měsíců: kolektivně sjednané mzdy vzrostly od
+začátku roku 2022 do konce roku 2025 o 22,7 %, v letech 2022–2025 o 8 procentních bodů víc než v eurozóně, a podíl mezd na
+HDP vzrostl z 61,9 % na 65,9 % (posoudila Rakouská národní banka 2026: důvodem je výrazná faktická indexace smluv). Mzdy tak
+v letech 2023–2024 rostly, zatímco produktivita práce klesala asi o 1,1 % ročně (Rada pro produktivitu 2025), takže rakouská
+mzda roku 2024 může vycházet vysoko vůči výkonu na pracujícího (můj úsudek z údajů národní banky a Rady pro produktivitu).
 
-**Slábnoucí kolektivní smlouvy.** Kolektivní smlouvy kryly v roce 2000 68 % zaměstnanců a v roce 2023 49 %, v soukromém
-sektoru jen 35 %; smlouvy obvykle mzdy zvyšují a snižují rozdíly v mzdách uvnitř odvětví a firem (IAB 2026). Reálné mzdy
-na spodku rozdělení výrazně klesaly až do roku 2010 (IAB 2026). O kolik je kvůli slábnutí smluv nižší průměrná mzda, nikdo
-nevyčíslil, příčina tedy není doložena.
+**Částečné úvazky a měření.** Mzda v ukazateli je přepočtená na plný úvazek, výkon v kolech se ale počítá na hlavu
+pracujícího včetně částečných úvazků. V Rakousku, kde podíl částečných úvazků dosahuje 30,7 % (Evropská komise 2025), proto
+výkon na pracujícího ukazuje méně, než kolik vytvoří hodina práce (můj úsudek z dat Eurostatu v oddílu 2).
 
-**Sektor nízkých mezd.** Podíl pracovníků s nízkou mzdou klesl z 22,5 % (2014) na 19 % (2022), je ale vyšší než v EU
-s 14,7 % (Evropská komise 2026).
+**Přistěhovalci.** Od 1. května 2011 mohou v Rakousku bez omezení pracovat občané osmi zemí, které vstoupily do EU v roce
+2004; jejich počet v Rakousku vzrostl v prvních dvanácti měsících o 29 493, nejvíc v Burgenlandu a dalších východních
+spolkových zemích (WIFO 2012). Účinek na mzdy tato studie nehodnotí, příčina vlivu na mzdy tedy není doložena.
 
-**Přistěhovalci.** Od 1. května 2011 mohou v Německu volně pracovat občané osmi středo- a východoevropských zemí EU
-a v prvních pěti měsících jich přišlo 41 400, o 51 % víc než rok předtím (IAB 2011). Německá spolková banka píše, že
-v desetiletí před pandemií rostly mzdy slaběji, než by odpovídalo vysoké poptávce po práci, protože silný příliv pracovních
-přistěhovalců bránil vyššímu růstu mezd (posoudila Německá spolková banka 2024); o kolik, neuvádí.
-
-**Východ a západ.** Rozdíly v produktivitě mezi východními a západními regiony se v letech 2014–2024 zmenšily, ale zůstávají
-významné (Evropská komise 2026).
-
-**Ceny.** Cenová hladina spotřeby byla v Německu v roce 2024 na 109,3 % průměru EU (Eurostat, data projektu), takže tatáž
-mzda v eurech koupí asi o 8 % méně než při průměrných cenách EU (můj přepočet).
-
-**Měření: částečné úvazky.** Mzda v ukazateli je přepočtená na plný úvazek, výkon v kolech se ale počítá na hlavu
-pracujícího včetně částečných úvazků. V zemi, kde částečných úvazků přibývá, proto výkon na pracujícího roste pomaleji než
-to, co vytvoří hodina práce, a mzda na plný úvazek může vycházet vysoko vůči výkonu na pracujícího (můj úsudek z dat
-Eurostatu v oddílu 2).
+**Ceny.** Cenová hladina spotřeby byla v Rakousku v roce 2024 na 117,8 % průměru EU (Eurostat, data projektu), takže tatáž
+mzda v eurech koupí asi o 15 % méně než při průměrných cenách EU (můj přepočet).
 
 ## 5. Co říkají ekonomové
 
-Evropská komise (2026) shrnuje daně a odvody větou: „The labour tax burden is considerably higher and less progressive than
-the EU average.“ Německá spolková banka (2024) k desetiletí před pandemií píše: „Die kräftige arbeitsmarktorientierte
-Zuwanderung wirkte stärkeren Lohnzuwächsen entgegen.“ Mezinárodní měnový fond (2026) vysvětluje slabý růst posledních let
-tím, že odráží „lackluster underlying productivity growth, in part due to long-stalled structural reforms“.
+Rada pro produktivitu (2024) píše: „Österreich ist eine der leistungsfähigsten Volkswirtschaften Europas mit einer hohen
+Produktivität.“ Rakouská národní banka (2026) vysvětluje rychlý růst mezd let 2022–2025 takto: „Der Grund für diese
+Entwicklung liegt in einer ausgeprägten ‚De-facto-Indexierung‘ der KV-Abschlüsse an die Verbraucherpreisinflation in
+Österreich.“ (KV-Abschlüsse = uzavřené kolektivní smlouvy.) Evropská komise (2025) k daním dodává: „A high tax wedge on labour discourages longer working hours, resulting in
+a silent reserve and high part-time employment.“
 
 ## 6. Zdroje
 
@@ -301,782 +266,990 @@ tím, že odráží „lackluster underlying productivity growth, in part due to
   HDP v kupní síle: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
   cenové hladiny: Eurostat `prc_ppp_ind_1` (skutečná individuální spotřeba, EU27 = 100).
 - `data/raw_krok1/oecd_taxing_wages.json`: OECD Taxing Wages 2000–2025, https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/all?startPeriod=2000&endPeriod=2025&format=csvfilewithlabels
-- `data/overeni_cista_mzda_2024.md`: výpočet čisté mzdy a zátěže podle pravidel 2024; `LIST_UKAZATELE.md` a
-  `KOLA_TABULKA.md`: střední hodnoty ligy (zátěž 41,2 %, násobek růstu 1,17).
+- `LIST_UKAZATELE.md` a `KOLA_TABULKA.md`: střední hodnoty ligy (zátěž 41,2 %, násobek růstu 1,17).
 - `studie/UCINKY.md`: Campos, Coricelli, Moretti (2019), účinek vstupu do EU.
 
 **Instituce a studie**
-- Burda, M., Hunt, J.: From Reunification to Economic Integration: Productivity and the Labor Market in Eastern Germany,
-  Brookings Papers on Economic Activity 2:2001, https://www.brookings.edu/wp-content/uploads/2001/06/2001b_bpea_burda.pdf
-- Evropská komise: 2024 Country Report – Germany, SWD(2024) 605, https://economy-finance.ec.europa.eu/document/download/0826d6c6-4c97-44be-8b9e-1a0b5c4361c8_en?filename=SWD_2024_605_1_EN_Germany.pdf
-- Evropská komise: 2026 Country Report – Germany, SWD(2026) 205, https://economy-finance.ec.europa.eu/document/download/1ba59e9c-048c-49a1-a97f-cc359b74b278_en?filename=DE_SWD_2026_205_1_EN_autre_document_travail_service_part1_v3.pdf
-- Mezinárodní měnový fond: Germany: 2025 Article IV Consultation, Country Report No. 26/36, únor 2026, https://www.imf.org/-/media/files/publications/cr/2026/english/1deuea2026001.pdf
-- Deutsche Bundesbank (Německá spolková banka): Lohnentwicklung in Deutschland, Monatsbericht Oktober 2024, https://publikationen.bundesbank.de/caas/v1/media/941666/localSettings%2CreferenceDoc/dd9304b80ac36d870b1496654caa642b
-- Bellmann, Dustmann, Fitzenberger: Collective Bargaining in Germany: Trends and Challenges, IAB-Discussion Paper 4/2026, https://doku.iab.de/discussionpapers/2026/dp0426.pdf
-- Dustmann, Fitzenberger, Schönberg, Spitz-Oener: From Sick Man of Europe to Economic Superstar, Journal of Economic Perspectives 28(1), 2014, https://www.aeaweb.org/articles?id=10.1257/jep.28.1.167
-- Hochmuth, Kohlbrecher, Merkl, Gartner: Hartz IV and the Decline of German Unemployment: A Macroeconomic Evaluation, IHS Working Paper 31, 2021, https://irihs.ihs.ac.at/id/eprint/5705/
-- Boeri, T., Brücker, H.: Short-time work benefits revisited: some lessons from the Great Recession, Economic Policy 26(68), 2011, https://researchonline.lse.ac.uk/id/eprint/57237
-- Hospido, L., Moreno-Galbis, E.: The Spanish Productivity Puzzle in the Great Recession, IZA Discussion Paper 8891, 2015, https://www.iza.org/publications/dp/8891/the-spanish-productivity-puzzle-in-the-great-recession
-- Sachverständigenrat (Rada hospodářských expertů): Nationaler Produktivitätsbericht 2025, https://www.sachverstaendigenrat-wirtschaft.de/fileadmin/dateiablage/gutachten/fg2025/2025_Nationaler_Produktivitaetsbericht.pdf
-- Institut Arbeit und Qualifikation Univerzity Duisburg-Essen: Beitragssätze in den Zweigen der Sozialversicherung 1995–2026 (abbII8), stav 27. 1. 2026, https://www.sozialpolitik-aktuell.de/files/sozialpolitik-aktuell/_Politikfelder/Finanzierung/Datensammlung/PDF-Dateien/abbII8.pdf
-- Spolkové ministerstvo financí: Tarifhistorie (sazebník daně z příjmu 1958–2025), https://www.bmf-steuerrechner.de/javax.faces.resource/2025_10_14_Tarifhistorie_Steuerrechner.pdf.xhtml
-- Regierungspräsidium Kassel: Teilabschaffung des Solidaritätszuschlags ab 01.01.2021, https://rp-kassel.hessen.de/sites/rp-kassel.hessen.de/files/2022-07/teilabschaffung_des_solidaritaetszuschlags_ab_202101_0_1.pdf
-- Mindestlohnkommission (Komise pro minimální mzdu): Fünfter Bericht zu den Auswirkungen des gesetzlichen Mindestlohns, 2025, https://www.sozialpolitik-aktuell.de/files/sozialpolitik-aktuell/_Politikfelder/Einkommen-Armut/Dokumente/2025_06_Mindestlohnkommission_Bericht2025.pdf
-- Dustmann, Lindner, Schönberg, Umkehrer, vom Berge: Reallocation Effects of the Minimum Wage, Quarterly Journal of Economics 137(1), 2022, https://ideas.repec.org/a/oup/qjecon/v137y2022i1p267-328..html
-- Institut für Arbeitsmarkt- und Berufsforschung (IAB): Kurzbericht 10/2011, https://doku.iab.de/kurzber/2011/kb1011.pdf a Kurzbericht 24/2011, https://doku.iab.de/kurzber/2011/kb2411.pdf
+- Brülhart, M., Carrère, C., Trionfetti, F.: How wages and employment adjust to trade liberalization: Quasi-experimental
+  evidence from Austria, Journal of International Economics 86(1), 2012, https://ideas.repec.org/a/eee/inecon/v86y2012i1p68-81.html
+- Breuss, F. (WIFO): 20 Jahre EU-Mitgliedschaft: Österreich, bisher großer Gewinner, muss seine Rolle neu definieren, ÖGfE
+  Policy Brief 4/2015, https://Fritz.Breuss.wifo.ac.at/Breuss_20_Jahre_EU-Mitgliedschaft_OEGFE_Policy_Brief-2015.04_03_02_2015.pdf
+- Produktivitätsrat (Rada pro produktivitu): Produktivitätsbericht 2024, Kurzfassung, https://produktivitaetsrat.at/dam/jcr:29886c17-eb16-44f0-a39b-f9a722abced1/PROD-Bericht_2024_Kurzfassung.pdf
+- Produktivitätsrat: Produktivitätsbericht 2025, https://www.produktivitaetsrat.at/dam/jcr:fd881915-3032-446c-906d-2fb15be9ad3a/PROD-Bericht_2025_Screen.pdf
+- Evropská komise: 2025 Country Report – Austria, SWD(2025) 220, https://economy-finance.ec.europa.eu/document/download/fca1ebd8-9670-4482-906d-ba121c873112_en?filename=AT_CR_SWD_2025_220_1_EN_autre_document_travail_service_part1_v4.pdf
+- Evropská komise: 2026 Country Report – Austria, SWD(2026) 220, https://economy-finance.ec.europa.eu/document/download/13e824f0-82fe-4184-b3dc-cb1cc9634a28_en?filename=AT_SWD_2026_220_1_EN_autre_document_travail_service_part1_v3.pdf
+- Oesterreichische Nationalbank (Rakouská národní banka): Hohes Lohnwachstum in den vergangenen Jahren – niedrigere
+  Abschlüsse in der laufenden Lohnrunde, Policy Brief 2026/1, https://www.oenb.at/dam/jcr:c261f616-0c3c-42e2-ac4f-41f04d93ca55/policy-brief-2026-1.pdf
+- Spolkové ministerstvo financí Rakouska: stanovisko k petici č. 38 o daňové reformě 2015/2016, parlament, 29. 5. 2015,
+  https://www.parlament.gv.at/dokument/XXV/SPET/49/fname_421381.pdf
+- Spolkové ministerstvo financí Rakouska: stránka o zrušení studené progrese a pásmech daně 2024/2025, https://www.bmf.gv.at/public/informationen/entlastungen2025.html
+- Rakouský parlament: pozměňovací návrh AA-124 XXV. GP (popis vládního plánu snížit příspěvek zaměstnavatelů do fondu pro
+  rodinné dávky), 2015, https://www.parlament.gv.at/dokument/XXV/AA/124/imfname_490166.pdf
+- OECD: tisková zpráva k Taxing Wages 2017 (duben 2017), převzatá v plném znění serverem Taxlive, https://www.taxlive.nl/nl/documenten/nieuws/oecd-tax-rates-on-labour-income-continued-decreasing-slowly-in-2016/
+- Huber, P., Böhs, G. (WIFO): Labour Migration from Eight New EU Countries since the Opening of the Labour Market,
+  WIFO-Monatsberichte 85(11), 2012, https://www.wifo.ac.at/en/publication/117082/
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí:** Státní smlouva 15. 5. 1955 ukončila spojeneckou okupaci (vojska odešla v říjnu 1955); linecké ocelárny VÖEST zestátněny 1946, z Marshallova plánu šla na obnovu průmyslu včetně nich skoro 1 mld. USD; turismus přímo 4,2–4,3 % HDP v roce 2023, s nepřímými účinky 6,1–6,2 % (OECD Tourism 2024, WIFO).
+- **Oddíl 2, platí s výhradou:** rakouské banky získaly po roce 1990 velký podíl trhů regionu: v roce 2004 asi 32 % českého a 44 % slovenského trhu (guvernér rakouské centrální banky 2005, číslo z výtahu projevu); dnes Erste v Česku 26,9 % retailových úvěrů, na Slovensku 24,8 % (k tomu Tatra banka skupiny Raiffeisen), v Maďarsku 11,7 %; Bank Austria patří od 2005 italské UniCredit. „Ovládly“ sedí na Slovensko, na Česko „velký podíl“, na Maďarsko ne.
+- **Oddíl 2, platí:** prémie za výzkum 14 % od 2018 (12 % od 2016, dříve 10 %; BMF 2023).
+- **Oddíl 3, platí s výhradou:** 13. a 14. plat zdaněn sazbou 6 % jen do šestiny ročního platu, po odvodech a nezdanitelné části 620 €; od 2023 zrušena studená progrese: pásma se automaticky zvedají o dvě třetiny inflace, o zbylé třetině rozhoduje zákon (2023: dvě nejnižší hranice +6,3 %, ostatní +3,47 %).
+- **Oddíl 4, platí s výhradou:** účinnost vlády (Světová banka 2023, 0–100) AT 85,3, CZ 77,3, SK 64,7; PISA 2022 matematika AT 487 stejně jako CZ 487 (SK 464) → „lépe fungující stát“, ne „lepší školy“; zdravotnictví a bezpečnost neověřeny.
+- **Oddíl 4, platí (nepřímo):** čisté prvotní důchody 2023 AT +0,04 % HDP (vyrovnané) proti CZ −4,4 %, PL −4,1 %, SK −3,9 %, HU −3,1 % (Světová banka): zisky z Rakouska skoro neodtékají, centrály firem jsou doma.
 
 
-# Švýcarsko: proč má v kolech takové hodnoty
+# Česko: proč má v kolech takové hodnoty (průměrná čistá mzda, podklad pro výklad)
 
-*Podklad pro výklad hodnot v kolech průměrné čisté mzdy (rok 2024), sestavený 17. 10. 2026. Čísla výkonu a zátěže jsou
-z dat projektu (`data/kontext_kroky.json`, `data/mereni.json`, `data/overeni_cista_mzda_2024.md`), výroky ekonomů
-z `ekonomove/CH.md`, síla účinků ze `studie/UCINKY.md`, ostatní z otevřených oficiálních a odborných zdrojů v oddílu 6.
-Kroky vlád, firem a institucí s doklady jsou v `data/kroky_zemi/CH.json`. „Můj přepočet“ znamená výpočet z uvedených dat,
-„můj úsudek“ moji úvahu bez přímého dokladu.*
+> Krok 8 a podklad pro krok 9a zkoušky návrhu skillu `analyza-pricin-regiony-SKILL-v1.4.md` (neaktivní), 17. 10. 2026.
+> Zadání: `ZADANI_KROKY_ZEMI.md`. Seznam kroků s doklady: `data/kroky_zemi/CZ.json`.
+> U každého tvrzení o příčině je síla dokladu: „změřeno (kdo, jak)“, „posoudila (instituce)“, „jen časová souvislost“,
+> nebo „můj úsudek“. Zkratky zdrojů v závorkách jsou rozepsané v oddílu Zdroje.
 
-## Ve zkratce
-
-Švýcarsko bylo bohaté dávno před rokem 1996 a jeho vysoký výkon táhnou velké nadnárodní firmy ve farmacii, strojírenství,
-financích a obchodu. Výkon na pracujícího vůči střední zemi ligy se za sledované období mírně zvětšil, ale mnohem méně než
-u typické země ligy, protože bohatá země nemá z čeho dohánět, protože Švýcaři odpracují na hlavu méně hodin a protože po
-roce 2008 krize a silný frank brzdily produktivitu; po roce 2019 si polepšilo díky farmacii. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl švýcarský výkon na pracujícího mezi rokem 1996 a průměrem let 2020–2024 asi o 24 %, střed ligy asi o 29 %; vůči středu ligy se tedy reálně nezvětšil, ale mírně zmenšil (asi o 4 %), polepšil si jen proti Španělsku. Zátěž je nižší než v Německu
-a Rakousku, i když náš výpočet do ní započítává povinné zdravotní pojištění a povinné spoření v penzijních kasách, které
-OECD mezi daně a odvody nepočítá; bez nich by podle OECD činila 23 % místo 36,5 %.
+Hodnoty Česka v kolech: výkon na začátku 66,1 % výkonu střední země ligy v roce 1996, růst výkonu 1,38násobek
+(z roku 1996 na průměr let 2020–2024) a zátěž daní a odvodů 41,2 % nákladů práce v roce 2024. Průměrná čistá mzda
+na plný úvazek byla v roce 2024 asi 23 345 jednotek kupní síly ročně (vše Projekt 2026).
 
 ## 1. Proč takový výkon na začátku (1996)
 
-V roce 1996 vytvořil pracující ve Švýcarsku 128,9 % toho, co pracující ve střední zemi ligy (data projektu z Eurostatu).
-Švýcarsko bylo bohaté už před válkou: v letech 1929–1938 mělo HDP na obyvatele asi 9 800 mezinárodních dolarů z roku 2011,
-střední země ligy asi 4 700 (Maddison Project Database, data projektu), a v roce 1996 mělo na pracovníka asi 1,41násobek
-kapitálu střední země ligy (Penn World Table 11.0, data projektu). Vysoký výkon táhnou velké nadnárodní firmy, které tvoří
-přes 85 % přidané hodnoty, zatímco malé firmy a služby zaostávají (posoudil Mezinárodní měnový fond 2025), a zpracovatelský
-průmysl má po Irsku nejvyšší produktivitu práce v OECD už přes 20 let (Spolková rada 2024). Rostlo ale dlouho pomalu: od roku
-1973 patřilo k zemím OECD s nejnižším růstem HDP a v letech 1980–1996 rostlo v průměru jen o 1,25 % ročně (Spolková daňová
-správa 2003 podle údajů OECD). Za hodinu práce vytvořil Švýcar v roce 1996 asi 123 % toho, co Španěl, na pracujícího asi
-120 % (můj přepočet z dat Eurostatu).
+V roce 1996 vytvořil český pracující 66,1 % toho, co pracující ve střední zemi ligy (Projekt 2026). Česko vstupovalo
+do transformace po 42 letech centrálně plánované ekonomiky (V-Dem v Projekt 2026) s jedním z největších státních
+sektorů, protože soukromé firmy tvořily v roce 1990 méně než 5 % HDP (MMF 2000a), a jeho výstup po roce 1989 klesl do
+roku 1992 o 15,4 % (MMF 2000b). Po kupónové privatizaci podle MMF zůstaly podniky
+s rozptýleným vlastnictvím, které se nerestrukturalizovaly a držely nadbytečné pracovníky (posoudil MMF 2000a).
+Nedostatkem strojů a budov to nebylo: kapitálu na pracovníka mělo Česko v roce 1996 o 7 % víc než střední země ligy
+(Penn World Table 11.0 v Projekt 2026), takže nízký výkon byl spíš otázkou toho, jak efektivně se se zděděným
+kapitálem pracovalo (můj úsudek). Před válkou byly české země zhruba stejně bohaté jako Rakousko (5 269 proti 5 071
+mezinárodních dolarů z roku 2011 na obyvatele, nesourodé národní dopočty podle Maddisonovy databáze v Projekt 2026),
+takže start roku 1996 je hlavně stopou plánované ekonomiky a transformace, ne staré chudoby (můj úsudek).
 
 ## 2. Proč takový růst výkonu (1996–2024)
 
-Výkon na pracujícího vůči střední zemi ligy se ve Švýcarsku zvětšil na 1,044násobek stavu z roku 1996 (průměr let 2020–2024
-asi 135 % střední země je můj přepočet z tohoto násobku), zatímco typická země ligy si polepšila na 1,17násobek (data
-projektu). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl švýcarský výkon na pracujícího ve stejném období asi o 24 % a střed ligy asi o 29 %, takže reálně se poměr ke středu ligy nezvětšil, ale mírně zmenšil. Průběh: 126,7 % (2000), 123,6 % (2004), 130,3 % (2008), 126,3 % (2013), 124,8 % (2019) a 131,4 % (2024) (data
-projektu). Švýcarsko ztrácelo v letech 1996–2004 a 2008–2019 a polepšilo si v letech 2004–2008 a 2019–2024.
+Výkon českého pracujícího vůči střední zemi ligy vzrostl z 66,1 % v roce 1996 na průměr 91,3 % v letech 2020–2024,
+tedy 1,38krát (Projekt 2026). Pozor na rok 2020: kvůli pandemii v něm hodnota vyskočila na 96,4 % a do průměru vstupuje,
+v letech 2021–2024 se pohybovala mezi 89,7 % a 90,9 % (Projekt 2026). Nejvíc Česko dohánělo ve dvou obdobích,
+v letech 2013–2019 (o 14,0 procentního bodu) a 2000–2008 (o 11,6 procentního bodu), a třikrát se zastavilo: po roce 1996, po roce
+2008 a od roku 2019 (Projekt 2026). Kdo startuje níž, může dohánět rychleji a s bohatnutím dohánění přirozeně zpomaluje
+(posoudila ČNB 2024a jako běžný jev konvergující ekonomiky); u Česka je ale podstatnější, proč dohánění tolikrát
+přerušily krize a vlastní politika.
 
-**Bohatá země nemá z čeho dohánět.** Střed ligy táhnou nahoru východní země, které dohánějí z nízkého základu (například
-Rumunsko zvětšilo výkon vůči střední zemi 3,17krát, Polsko 1,76krát; data projektu). Proti střední zemi ligy, kterou je od
-roku 2000 Španělsko, si Švýcarsko polepšilo, z výkonu 120 % španělského v roce 1996 na 131 % v roce 2024 (můj přepočet z dat
-Eurostatu); pomalé je tedy jen ve srovnání se zeměmi, které dohánějí. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* proti Španělsku si Švýcarsko polepšilo i ve stálých cenách (v letech 1996–2024 asi +26 % proti +10 %), pomalé ale reálně nebylo jen proti dohánějícím zemím: mezi rokem 1996 a průměrem let 2020–2024 vzrostl výkon na pracujícího ve Švýcarsku asi o 24 %, ve Švédsku asi o 39 % a v Norsku asi o 48 %. Že bohatá země takto dohánět nemůže, je můj úsudek
-z dat ligy.
+**1996–2000: zastavení po měnové krizi.** Výkon klesl z 66,1 % na 64,7 % v roce 1997 a v roce 2000 byl 65,9 %
+(Projekt 2026). V květnu 1997 Česká národní banka po měnové krizi opustila pevný kurz a přísná měnová i rozpočtová
+politika přispěla k recesi: HDP v letech 1997–1999 klesal v průměru o více než 1 % ročně a nezaměstnanost vzrostla
+ze 3 % v roce 1996 na více než 9 % na konci roku 1999 (MMF 2000a). Kořen viděl MMF ve slabé správě státem ovládaných bank
+a podniků: nezreformované podniky po kupónové privatizaci a neopatrné úvěrování převážně státních bank dovolily růst
+mezd bez růstu výkonu, což zhoršilo konkurenceschopnost a otřáslo důvěrou v korunu (posoudil MMF 1999 a 2000a).
 
-**1996–2004: pokračující pomalý růst.** Zpráva o růstu spolkového ministerstva hospodářství z roku 2002 označila za hlavní
-důvod podprůměrného švýcarského růstu chráněný domácí trh (posoudilo spolkové ministerstvo hospodářství 2002, podle Spolkové
-daňové správy 2003). Výkon vůči středu ligy v té době klesl ze 128,9 % na 123,6 % (data projektu; s diagnózou zprávy
-jen časová souvislost).
+**2000–2008: dohánění tažené zahraničními investicemi.** Výkon vzrostl na 77,5 % (Projekt 2026). Podle OECD byl silný
+růst produktivity před finanční krizí tažen hlavně zapojením do mezinárodních dodavatelských řetězců, zvlášť navazujících
+činností v automobilovém průmyslu, a velkým přílivem přímých zahraničních investic do zpracovatelského průmyslu
+(posoudila OECD 2025); hodinová produktivita rostla v letech 2000–2007 téměř o 5 % ročně (OECD 2025). Čistý příliv
+přímých zahraničních investic dosahoval v letech 1996–2000 průměrně 5,5 % HDP ročně (Světová banka v Projekt 2026)
+a MMF už v roce 2000 přičetl začínající oživění mimo jiné jejich prudkému nárůstu (posoudil MMF 2000a). Stát investory
+lákal pobídkami od roku 1998, od roku 2000 podle zákona; příjemci do konce roku 2019 vyčerpali přes 75 mld. Kč, z toho
+85 % jako slevu na dani z příjmu, ale Nejvyšší kontrolní úřad konstatoval, že přínos pobídek samotných nikdo
+nevyhodnotil (NKÚ 2021), takže jejich účinek není doložen. Vstup do EU v roce 2004 zvýšil podle srovnání se syntetickým
+Českem složeným ze zemí mimo EU HDP na obyvatele asi o 5,6 %, statisticky ale neprůkazně (změřili Campos, Coricelli
+a Moretti 2014); OECD považuje polohu, otevřenost obchodu a investicím a vstup do EU za klíčové pro růst produktivity
+i mezd (posoudila OECD 2024) a Česká národní banka našla těsně před vstupem strukturální zlom se svižným růstem taženým
+přebytky zahraničního obchodu (posoudila ČNB 2024a). Investice do strojů a budov byly v letech 1996–2024 v průměru
+27,8 % HDP (Eurostat v Projekt 2026), podle ČNB mezi nejvyššími v Evropě (ČNB 2024a).
 
-**2004–2008: farmacie a otevření trhu práce.** Chemický a farmaceutický průmysl zvyšoval v letech 2004–2022 přidanou hodnotu
-v průměru o 9,4 % ročně a připadá na něj asi 24 % růstu švýcarského HDP za toto období (posoudila Spolková rada 2024). Od roku
-2002 platí dohoda s EU o volném pohybu osob a v roce 2007 se úplně uvolnilo zaměstnávání přeshraničních pracovníků (Státní
-sekretariát pro hospodářství 2026). Volný přístup přeshraničních pracovníků zvýšil v příhraničních regionech velikost,
-produktivitu a inovace firem náročných na kvalifikaci a mzdy vysokoškolsky vzdělaných domácích vzrostly (změřeno: Beerli,
-Ruffner, Siegenthaler a Peri 2021, srovnání regionů blízko hranice a dál od ní). Výkon vůči středu ligy vzrostl ze 123,6 %
-(2004) na 130,3 % (2008) (data projektu).
+**2008–2013: zastavení po světové krizi a při ozdravování rozpočtu.** Výkon klesl na 75,7 % v roce 2013 (Projekt 2026).
+Po krizi roku 2008 příliv zahraničních investic několik let slábl (OECD 2024). Vláda v letech 2010–2013 ozdravovala
+rozpočet zhruba o 4,5 % HDP a MMF v roce 2013 napsal, že ekonomika je ve vleklé recesi kvůli propadu v eurozóně a slabé
+domácí poptávce a že procyklická konsolidace vedla domácnosti a firmy k opatrnosti (posoudil MMF 2013).
 
-**2008–2019: krize a silný frank.** Produktivita práce mezi lety 2008 a 2012 klesla kvůli souběhu světové krize,
-strukturálních změn, silné měny a rozhodnutí firem udržet pracovní místa na úkor krátkodobé efektivity (posoudil Mezinárodní
-měnový fond 2025); počet pracujících přitom vzrostl ze 4,45 milionu (2008) na 4,68 milionu (2012) (Eurostat, přepočet
-projektu). Když národní banka v lednu 2015 zrušila minimální kurz 1,20 franku za euro, který držela od září 2011, frank
-okamžitě posílil asi o 10 % a zaměstnanost v průměrné průmyslové firmě byla o dva roky později o 4 % nižší než u srovnatelných
-rakouských firem (změřeno: Kaufmann a Renkin 2017, srovnání s kontrolní skupinou). Spolková rada naproti tomu hodnotí růst
-produktivity práce v letech 2011–2022, asi 1 % ročně, jako v mezinárodním srovnání poměrně vysoký (posoudila Spolková rada
-2024); zdroje se tu rozcházejí. Výkon vůči středu ligy klesl ze 130,3 % (2008) na 124,8 % (2019) (data projektu).
+**2013–2019: nejrychlejší dohánění.** Výkon vzrostl na 89,7 % (Projekt 2026) a HDP na obyvatele v kupní síle z 84 %
+průměru EU v roce 2011 na 95 % v roce 2020 (EK 2025). K oživění přispěl kurzový závazek České národní banky
+(listopad 2013 až duben 2017), který podle modelů i srovnání se zeměmi bez podobného opatření přidal k růstu HDP
+0,3–1,2 procentního bodu v roce 2014 a 0,6–1,8 procentního bodu v roce 2015 (změřila ČNB 2017), dále levná ropa v roce 2014 a silný
+příliv fondů EU v roce 2015 (ČNB 2017). Do roku 2017 vyvažovala zpomalující produktivitu klesající nezaměstnanost
+a nadprůměrný růst produktivity v letech 2016–2019 dávala hlavně příznivá fáze hospodářského cyklu (posoudila
+ČNB 2024a).
 
-**2019–2024: farmacie v pandemii.** Švýcarská ekonomika prošla pandemií poměrně dobře mimo jiné díky výhodné skladbě oborů se
-silným farmaceutickým průmyslem a malou vahou služeb založených na osobním kontaktu a turismu (posoudila Spolková rada 2024).
-Výkon vůči středu ligy vzrostl ze 124,8 % (2019) na 131,4 % (2024) (data projektu).
+**2019–2024: zastavení.** Výkon se zastavil na 89,9 % v roce 2024 (Projekt 2026) a HDP na obyvatele kleslo z 95 % průměru
+EU v roce 2020 na 90 % v roce 2023 (EK 2025). Podle České národní banky se růstový model založený na výkonném průmyslu
+od roku 2016 vyčerpává: průmyslová výroba od té doby stagnuje, roste jen výroba autodílů a podíl průmyslu na přidané
+hodnotě, který stoupal z 16 % na konci 90. let na asi 27 % v roce 2016, se zastavil (posoudila ČNB 2024a). Evropská komise
+píše, že růst založený na nízkých mzdách a přímých zahraničních investicích ztratil dynamiku (posoudila EK 2024),
+a MMF, že nepříznivá skladba ekonomiky vysvětluje jen asi třetinu propadu po pandemii a zbytek je slabší výkon uvnitř
+odvětví (změřil MMF 2025b srovnáním se skladbou průměrné země EU, podle rešerše `ekonomove/CZ.md`). Přidal se vnější
+šok drahých energií, po kterém reálné mzdy klesly v roce 2022 o 6,7 % a v roce 2023 o 2,9 % (EK 2024).
 
-**Na hlavu se odpracuje méně hodin.** Švýcarský pracující odpracoval v roce 1996 v průměru 1 697 hodin a v roce 2024
-1 519 hodin, o 10 % méně, španělský o 6 % méně (Eurostat, přepočet projektu). Za hodinu práce vytvářelo Švýcarsko v roce
-1996 asi 123 % a v roce 2024 asi 142 % toho, co Španělsko (můj přepočet z dat Eurostatu). Spolková rada píše, že pokles
-počtu hodin od roku 2000 jde skoro úplně na vrub přibývajících částečných úvazků a že zisky z produktivity šly v posledních
-letech zčásti do kratší pracovní doby; pracovní doba na pracujícího klesla v letech 2010–2022 o 5,2 % (posoudila Spolková
-rada 2024). Přistěhovalectví přidávalo za posledních 15 let asi 0,8 % ročně k objemu odpracované práce (Státní sekretariát
-pro hospodářství 2026).
-
-**Investice a výzkum.** Švýcarsko investovalo v letech 1996–2024 v průměru 26,7 % HDP, víc než střední země ligy s 22,8 %
-(Eurostat, data projektu), a výdaje na výzkum a vývoj zvýšilo z 2,34 % HDP (1996) na 3,10 % (2023) (Eurostat, data projektu).
-
-**Měření.** Vysokou měřenou produktivitu farmacie mohou zčásti zvyšovat zisky, které nadnárodní firmy vykazují ve Švýcarsku
-kvůli nízkým daním, i zbytek zpracovatelského průmyslu má ale mezinárodně velmi vysokou produktivitu (posoudila Spolková
-rada 2024).
+**Brzdy, které trvají.** Zahraniční pobočky nakupují od domácích dodavatelů jen 32 % svých vstupů proti zhruba
+polovině v zemích OECD a jen 4 % zahraničních investic do nových závodů v letech 2003–2022 směřovala do výzkumu
+(OECD 2025 podle rešerše `ekonomove/CZ.md`); výdaje na výzkum a vývoj dosahovaly v letech 1996–2023 průměrně 1,46 % HDP
+(Eurostat v Projekt 2026) a jejich podíl na HDP se podle ČNB zastavil v roce 2014 pod 2 % (ČNB 2024a).
 
 ## 3. Proč taková zátěž daní a odvodů (2024)
 
-Z toho, co firma za zaměstnance s průměrnou mzdou zaplatí, odvedl v roce 2024 stát, zdravotní pojišťovna a penzijní kasa
-dohromady 36,49 % (výpočet projektu; střední země ligy 41,2 %). Podle OECD (Organizace pro hospodářskou spolupráci a rozvoj)
-činila zátěž jen 23,0 % (OECD Taxing Wages, data projektu), protože OECD nepočítá povinné pojistné na zdravotní pojištění ani
-povinné příspěvky do penzijní kasy zaměstnavatele (druhý pilíř). Náš výpočet je odečítá stejně, jako je u zemí EU odečítá
-Eurostat: při průměrné hrubé mzdě 97 727 franků zbývá podle OECD 80 321 franků (82,2 %), po odečtení průměrného pojistného
-dospělého 5 120 franků a příspěvku do penzijní kasy 5 602 franků 69 599 franků (71,2 %) (výpočet projektu). Spolková rada
-sama upozorňuje, že celkové daně a odvody ve Švýcarsku, asi 28 % HDP proti 34 % v průměru OECD, nezahrnují příspěvky do
-penzijních kas ani pojistné na povinné zdravotní pojištění, které se v mnoha zemích platí přes daně a odvody, a mezinárodní
-srovnání je proto nutné brát opatrně (posoudila Spolková rada 2024).
+Ze všeho, co firma za zaměstnance s průměrnou mzdou v roce 2024 zaplatila, odvedl stát 41,2 % (Projekt 2026, při
+skutečné průměrné mzdě; OECD při své průměrné mzdě 41,0 %, OECD TW 2026). Systém stojí na vysokých odvodech
+zaměstnavatele, který platí navíc k hrubé mzdě 33,8 % na sociální a zdravotní pojištění; zaměstnanec platí 11,6 % hrubé
+mzdy (OECD TW 2026), z toho 7,1 % sociální a 4,5 % zdravotní pojištění (ČNB 2025a). Daň z příjmu je naopak nízká:
+15 % z hrubé mzdy se slevou na poplatníka 30 840 Kč ročně (ČNB 2025a), takže při průměrné mzdě činí jen 9,4 % hrubé mzdy
+(OECD TW 2026). Odvody tak berou asi 34 % nákladů práce a daň z příjmu asi 7 % (můj přepočet z OECD TW 2026); odvody
+berou podobný díl i na Slovensku a ve Slovinsku a nízká česká zátěž je tedy hlavně nízkou daní z příjmu.
 
-**Jak je systém postavený.** Státní starobní, invalidní a výdělkové pojištění stojí od roku 2020 10,55 % mzdy, napůl za
-zaměstnance a napůl za zaměstnavatele (Informační středisko státního důchodového pojištění 2020); podle OECD činilo v roce
-2024 pojistné zaměstnance i zaměstnavatele po 6,4 % hrubé mzdy a daň z příjmu 11,6 % (OECD Taxing Wages, data projektu).
-Zdravotní pojištění se platí jako pojistné na hlavu, stejné bez ohledu na příjem, na jehož snížení spolek a kantony
-domácnostem přispívají (Spolkový statistický úřad). Druhý pilíř je kapitálové spoření v penzijní kase, do které jsou
-zaměstnanci přihlášeni povinně nebo dobrovolně a kterou stát podporuje jen tím, že příspěvky a úspory nedaní (Spolkový úřad
-pro sociální pojištění).
+**Jak se zátěž měnila od roku 2000 (OECD TW 2026, svobodný bez dětí při průměrné mzdě).** Byla 42,6 % v roce 2000,
+43,4 % v roce 2008, 42,0 % v roce 2009, 44,1 % v roce 2020, 40,0 % v roce 2021 a 41,0 % v roce 2024. Jednotná sazba 15 %
+ze superhrubé mzdy od roku 2008 zátěž při průměrné mzdě nesnížila, daň z příjmu dokonce vzrostla z 10,4 % na 11,1 % hrubé
+mzdy (OECD TW 2026). V roce 2009 stát snížil pojistné zaměstnanců (sociální pojištění z 8 na 6,5 % hrubé mzdy, ČNB 2025a)
+i zaměstnavatelů (z 35 na 34 %, OECD TW 2026) a podle ČNB to výrazně zrychlilo růst čisté mzdy (posoudila ČNB 2025a).
+Potom zátěž plíživě rostla: sleva na poplatníka zůstala v letech 2012–2020 na 24 840 Kč (ČNB 2025a), mzdy rostly, a daň
+při průměrné mzdě proto stoupla z 11,2 % hrubé mzdy v roce 2009 na 14,2 % v roce 2020 (OECD TW 2026; souvislost s pevnou
+slevou je můj početní výklad). Zrušení superhrubé mzdy v roce 2021 srazilo daň při průměrné mzdě na 8,8 % hrubé mzdy
+a zátěž na 40,0 % (OECD TW 2026); podle ČNB šlo o největší změnu za více než 15 let a efektivní sazba klesla zhruba
+o 5 procentních bodů (posoudila ČNB 2025a). Konsolidační balíček od roku 2024 znovu zavedl nemocenské pojištění
+zaměstnanců 0,6 % hrubé mzdy a snížil hranici pro sazbu 23 % (ČNB 2025a); zátěž vzrostla ze 40,2 % v roce 2023 na 41,0 %,
+hlavně o nemocenské pojištění, protože pojistné zaměstnance stouplo z 11,0 % na 11,6 % hrubé mzdy (OECD TW 2026), kdežto
+nižší hranice pro sazbu 23 % se průměrné mzdy netýká (můj úsudek).
 
-**Proč je zátěž nižší než v sousedních zemích i se zdravotním pojištěním a penzí.** Daň z příjmu a pojistné do státního
-průběžného pojištění jsou nízké (viz čísla OECD výše) a Spolková rada to připisuje zdravým veřejným financím a efektivnímu
-státu (posoudila Spolková rada 2024). Pojistné na zdravotní pojištění je navíc pevná částka na hlavu, takže při vysoké
-průměrné mzdě tvoří jen asi 5,2 % hrubé mzdy (můj přepočet z dat projektu: 5 120 z 97 727 franků).
-
-**Test protipříkladem.** Že se zdravotní pojištění a penze platí mimo daně, zátěž v našem měření nesnižuje: obojí je v ní
-započítané, takže by vyšla stejně, kdyby se tyto platby nazývaly daní; jde o účetní zařazení, ne o příčinu. Stejně tak
-rozdělení pojistného napůl mezi zaměstnance a zaměstnavatele nic nevysvětluje. Příčinou nižší zátěže je nižší celková výše
-povinných plateb, hlavně nízká daň z příjmu a malé státní průběžné pojištění.
-
-**Vývoj od roku 2000.** Řada OECD se skoro nehýbe: 22,9 % (2000), 21,9 % (2008), 22,2 % (2013), 22,3 % (2019) a 23,0 %
-(2024) (data projektu z OECD). Zvýšení pojistného do státního starobního pojištění z 8,4 % na 8,7 % mzdy od roku 2020,
-schválené v referendu v roce 2019 (Informační středisko státního důchodového pojištění 2020), zvedlo pojistné zaměstnance
-podle OECD z 6,2 % na 6,4 % hrubé mzdy a zátěž z 22,3 % (2019) na 22,7 % (2020) a 23,1 % (2021) (OECD Taxing Wages).
-Mimo řadu OECD ale rychle rostlo zdravotní pojistné: index pojistného základního pojištění Spolkového statistického úřadu
-dosáhl v roce 2025 270,4 bodu (1999 = 100), tedy průměrně asi 3,9 % ročně (můj přepočet), a střední pojistné vzrostlo
-z asi 1 539 franků ročně v roce 1996 na 3 788 franků v roce 2021, o 146 % (Bernská vysoká škola aplikovaných věd 2023 podle
-údajů Spolkového statistického úřadu), kdežto nominální mzdy rostly v letech 2010–2025 asi o 0,9 % ročně (Státní sekretariát
-pro hospodářství 2026). Celková zátěž v našem pojetí proto od roku 2000 nejspíš vzrostla; časovou řadu našeho měření nemáme,
-je to můj úsudek.
+**Test protipříkladem.** Kdyby stát v roce 2021 jen změnil základ daně ze superhrubé na hrubou mzdu a sazbu zvýšil tak,
+aby daň zůstala stejná (asi 20 % z hrubé mzdy, protože superhrubá mzda byla 1,338násobkem hrubé; můj přepočet ze sazeb
+OECD TW 2026), byla by to jen účetní změna. Sazba ale zůstala 15 %, sleva se zvýšila a pojistné zaměstnavatele ani výše
+hrubé mzdy se reformou nezměnily (OECD TW 2026), takže celková zátěž vůči nákladům práce skutečně klesla o 4,1 procentního
+bodu. Bez této reformy by česká zátěž v roce 2024 byla podle dat OECD nejspíš kolem 44 % jako v letech 2019–2020 (můj
+úsudek). Zrušení superhrubé mzdy je tedy u Česka příčina nižší zátěže, ne jen změna měření. Zadání tohoto kroku ho uvádí
+mezi účetními změnami spolu s Rumunskem 2018 a Litvou 2019; data OECD to u Česka nepotvrzují, protože se tu nepřesouvaly
+odvody mezi zaměstnavatelem a zaměstnancem a nezvyšovala se kvůli tomu hrubá mzda, takže náklady práce zůstaly stejné
+a čistá mzda vzrostla (můj výklad z OECD TW 2026). Poměr čisté a hrubé mzdy jako doklad nepoužívám.
 
 ## 4. Další faktory země
 
-**Ceny.** Cenová hladina spotřeby byla ve Švýcarsku v roce 2024 na 181,8 % průměru EU (Eurostat, data projektu), takže tatáž
-mzda převedená kurzem koupí asi o 45 % méně než při průměrných cenách EU (můj přepočet). Spolková daňová správa uvádí vedle
-závěru zprávy o růstu z roku 2002 o chráněném domácím trhu, že za stejné zboží se ve Švýcarsku platí výrazně víc, například
-za hamburger Big Mac o 69 % víc než v USA (Spolková daňová správa 2003); že chráněný trh vysvětluje celou cenovou hladinu,
-doloženo není.
-
-**Přistěhovalci a jejich složení.** Čistá imigrace cizinců činila od roku 2002 v průměru 71 300 osob ročně, 61 % z nich
-přišlo ze zemí EU a ESVO a 53 % pracovníků přišlých podle dohody s EU má terciární vzdělání proti 45 % u Švýcarů (Státní
-sekretariát pro hospodářství 2026). Když přistěhovalci patří mezi dobře placené odborníky, zvedají průměrnou mzdu už svým
-složením (podle rešerše studií projektu jde o měření skladby, ne o účinek na mzdy). Riziko tlaku na mzdy vidí Státní
-sekretariát hlavně u přeshraničních pracovníků v Ticinu a v Jurském oblouku (posoudil Státní sekretariát pro hospodářství
-2026).
-
-**Mzdy rostou pomalu a se stálým podílem na výkonu.** Střední hrubá mzda na plný úvazek vzrostla z 6 207 franků měsíčně
-(2010) na 7 024 franků (2024), o 13,2 %, a podíl nízkých mezd se skoro nezměnil (10,8 % v roce 2024) (Státní sekretariát pro
-hospodářství 2026). Reálné mzdy vzrostly v letech 2010–2022 o 5,6 %, produktivita práce od roku 2010 o 13 %, podíl
-zaměstnanců na HDP ale zůstal stálý, asi 58 %, protože zisky z produktivity šly zčásti do kratší pracovní doby (posoudila
-Spolková rada 2024).
+- **Malý podíl mezd na výkonu a slabé vyjednávání.** Mzdy a platy tvoří jen 34 % HDP, páté nejméně v EU, a Evropská
+  komise píše, že to může souviset s nízkou odborovou organizovaností (9,4 % pracovníků v roce 2023) a s pokrytím
+  kolektivními smlouvami 43,2 % (EK 2026); vazba je posouzená opatrně („může souviset“). Podíl mezd měří i část
+  výsledku, proto ho beru jako stopu, ne jako příčinu.
+- **Odliv zisků zahraničních firem.** Záporná bilance výnosů z investic byla v roce 2024 −4,3 % HDP, z více než 80 %
+  kvůli výnosům z přímých zahraničních investic, a v roce 2025 se odliv prohloubil na 5,2 % HDP (ČNB 2025d a ČNB 2026
+  podle rešerše `ekonomove/CZ.md`); vliv na mzdy instituce nevyčíslují (příčina není doložena).
+- **Malé střídání práce.** V roce 2024 změnilo práci jen asi 1 % pracovníků proti 2,3 % v EU a podle Evropské komise to
+  brání přesunu lidí do produktivnějších odvětví a přispívá k nízkým reálným mzdám (posoudila EK 2025).
+- **Minimální mzda** vzrostla mezi lety 2022 a 2026 o 38 %, po odečtení inflace o 9 % (EK 2026); že by hýbala průměrnou
+  mzdou, žádná instituce netvrdí.
+- **Přistěhovalci.** Lidé narození v cizině tvoří 9,6 % obyvatel (OSN 2024 v Projekt 2026); vliv na průměrnou mzdu
+  doložen není.
+- **Ceny.** Cenová hladina spotřeby byla v roce 2024 80,9 % průměru EU (Eurostat v Projekt 2026), takže čistá mzda
+  18 886 € ročně odpovídá v kupní síle víc, než by ukazoval kurz (Projekt 2026). Obálkové mzdy projekt u Česka jako
+  zvláštní nejistotu měření neuvádí (Projekt 2026, `LIST_UKAZATELE.md`).
 
 ## 5. Co říkají ekonomové
 
-Mezinárodní měnový fond (2025) shrnuje zdroj švýcarského výkonu: „Multinational enterprises drive average productivity
-upwards, while small firms and the services sector lag.“ Spolková rada (2024) k pomalému růstu mezd na pracujícího píše:
-„Vielmehr flossen die Produktivitätsgewinne in den letzten Jahren in eine weitere Verkürzung der durchschnittlichen
-Arbeitszeit pro erwerbstätige Person.“ Státní sekretariát pro hospodářství (2026) dodává: „Entsprechend hängt das
-Wirtschaftswachstum der Schweiz bereits heute in erster Linie von Zuwanderung und Produktivitätsgewinnen ab.“
+Evropská komise píše, že v Česku jsou „mzdy nízké“, přestože zaměstnanost patří k nejvyšším v EU, a v roce 2024, že růst
+„založený na faktorech, jako jsou nízké mzdy a přímé zahraniční investice, ztratil dynamiku“; Česká národní banka dodává,
+že průmyslový růstový model „se od roku 2016 zjevně vyčerpává“ a že pozice odborů je „spíše slabší, než je běžné
+v rozvinutých ekonomikách“ (citace podle `ekonomove/CZ.md`).
 
 ## 6. Zdroje
 
-**Data projektu**
-- `data/kontext_kroky.json`: výkon na pracujícího vůči střední zemi ligy 1996–2024 (Eurostat; HDP v kupní síle na
-  pracujícího), násobek růstu, zátěž daní, odvodů a povinných plateb 2024 a řada OECD.
-- `data/mereni.json` a `data/raw_faktory/`: předválečný HDP na obyvatele (Maddison Project Database 2023), kapitál na
-  pracovníka 1996 (Penn World Table 11.0), investice a výzkum (Eurostat), zaměstnanost a hodiny. Eurostat zaměstnanost:
-  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995 ;
-  hodiny: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_HW&nace_r2=TOTAL&na_item=EMP_DC&sinceTimePeriod=1995 ;
-  HDP v kupní síle: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
-  cenové hladiny: Eurostat `prc_ppp_ind_1` (skutečná individuální spotřeba, EU27 = 100).
-- `data/raw_krok1/oecd_taxing_wages.json`: OECD Taxing Wages 2000–2025, https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/all?startPeriod=2000&endPeriod=2025&format=csvfilewithlabels
-- `data/overeni_cista_mzda_2024.md`: čistá mzda po povinném zdravotním pojištění a příspěvku do penzijní kasy (pojistné
-  podle Spolkového úřadu pro zdraví, https://www.priminfo.admin.ch/downloads/praemien_2024.pdf); `LIST_UKAZATELE.md`
-  a `KOLA_TABULKA.md`: střední hodnoty ligy (zátěž 41,2 %, násobek růstu 1,17).
-- `studie/UCINKY.md`: přistěhovalci a skladba průměrné mzdy.
+- **Projekt 2026:** data projektu Ekonomické hry, 17. 10. 2026, v této složce: `data/kontext_kroky.json` (výkon na
+  pracujícího vůči střední zemi ligy z Eurostatu, zátěž 2024, čistá mzda), `data/mereni.json` (roční řada výkonu, kapitál
+  na pracovníka z Penn World Table 11.0 https://www.rug.nl/ggdc/productivity/pwt/, roky plánované ekonomiky z V-Dem
+  https://www.v-dem.net/data/the-v-dem-dataset/, předválečný HDP z Maddison Project Database 2023
+  https://www.rug.nl/ggdc/historicaldevelopment/maddison/releases/maddison-project-database-2023, přímé zahraniční
+  investice ze Světové banky WDI, investice a výzkum z Eurostatu, přistěhovalci z OSN International Migrant Stock 2024),
+  `data/vysledek.json` (hrubá a čistá mzda, cenová hladina), `LIST_UKAZATELE.md`.
+- **OECD TW 2026:** OECD, Taxing Wages – comparative tables (jednotlivec bez dětí, 100 % průměrné mzdy: celková zátěž
+  AV_TW, odvody zaměstnance a zaměstnavatele, daň z příjmu), staženo 17. 10. 2026,
+  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/CZE+SVK+SVN.AV_TW..S_C0.AW100..A
+- **MMF 1999:** International Monetary Fund, Public Information Notice č. 99/64, Czech Republic – Article IV Consultation,
+  29. 7. 1999, https://www.imf.org/external/np/sec/pn/1999/pn9964.htm
+- **MMF 2000a:** International Monetary Fund, Czech Republic: Recent developments and current outlook, příloha
+  Finance & Development, září 2000, https://www.imf.org/external/pubs/ft/fandd/2000/09/pdf/suppleme.pdf
+- **MMF 2000b:** Fischer, S., Sahay, R.: Taking Stock, Finance & Development 37(3), září 2000, tabulka 1 (Output
+  Performance, 1989–99), https://www.imf.org/external/pubs/ft/fandd/2000/09/fischer.htm
+- **MMF 2013:** International Monetary Fund, Czech Republic – 2013 Article IV Consultation, Concluding Statement,
+  20. 5. 2013 (kopie na webu Ministerstva financí ČR),
+  https://www.mfcr.cz/assets/cs/media/TZ_2013-05-20_2013-Article-IV-Consultation-Concluding-Statement-May-20-2013.pdf
+- **MMF 2025b:** International Monetary Fund, Czech Republic: Selected Issues, Country Report č. 25/36, 2025, podle
+  rešerše `ekonomove/CZ.md`, https://www.imf.org/-/media/files/publications/cr/2025/english/1czeea2025002-print-pdf.pdf
+- **NKÚ 2021:** Nejvyšší kontrolní úřad, Kontrolní závěr 20/13 Investiční pobídky (anglická verze), schválen
+  22. 2. 2021, https://www.nku.cz/assets/kon-zavery/k20013_en.pdf
+- **OECD 2024:** OECD, Strengthening FDI and SME Linkages in Czechia, 2024 (s. 46 a 53),
+  https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/strengthening-fdi-and-sme-linkages-in-czechia_2883e1db/4c97d104-en.pdf
+- **OECD 2025:** OECD Economic Surveys: Czechia 2025, březen 2025 (s. 44), kopie na webu Svazu průmyslu a dopravy ČR,
+  https://www.spcr.cz/images/OECD_Economic_Survey_Czechia_2025.pdf
+- **ČNB 2017:** Česká národní banka, Brůha, J., Tonner, J.: Co by se stalo, kdyby ČNB nezavedla kurzový závazek, čnBlog,
+  7. 11. 2017, https://www.cnb.cz/cs/o_cnb/cnblog/Co-by-se-stalo-kdyby-CNB-nezavedla-kurzovy-zavazek
+- **ČNB 2024a:** Česká národní banka, Zpomalení růstu dlouhodobého potenciálu české ekonomiky, příloha Zprávy o měnové
+  politice – léto 2024,
+  https://www.cnb.cz/cs/menova-politika/zpravy-o-menove-politice/boxy-a-clanky/Zpomaleni-rustu-dlouhodobeho-potencialu-ceske-ekonomiky/
+- **ČNB 2025a:** Česká národní banka (Livorová, Ruschka), Vývoj čisté mzdy v posledních letech, příloha Zprávy o měnové
+  politice – zima 2025, 7. 2. 2025,
+  https://www.cnb.cz/cs/menova-politika/zpravy-o-menove-politice/boxy-a-clanky/Vyvoj-ciste-mzdy-v-poslednich-letech
+- **ČNB 2025d a ČNB 2026:** Česká národní banka, Zprávy o vývoji platební bilance za roky 2024 a 2025, podle rešerše
+  `ekonomove/CZ.md`,
+  https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/zpravy-o-vyvoji-platebni-bilance/zprava_o_vyvoji_platebni_bilance_2024.pdf
+  a https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/zpravy-o-vyvoji-platebni-bilance/zprava_o_vyvoji_platebni_bilance_2025.pdf
+- **EK 2024:** Evropská komise, 2024 Country Report – Czechia, SWD(2024) 603 (s. 57, 67 a 83 PDF),
+  https://economy-finance.ec.europa.eu/document/download/facc4bb2-4e1b-471f-998e-6895c4091e3c_en?filename=SWD_2024_603_1_EN_Czechia.pdf
+- **EK 2025:** Evropská komise, 2025 Country Report – Czechia, SWD(2025) 203 (s. 3, 24 a 123 PDF),
+  https://economy-finance.ec.europa.eu/document/download/74ea3c3d-de80-4b48-8bd7-7f7c9a055b85_en?filename=CZ_CR_SWD_2025_203_1_EN_autre_document_travail_service_part1_v4.pdf
+- **EK 2026:** Evropská komise, 2026 Country Report – Czechia, SWD(2026) 203 (s. 25 a 104 PDF),
+  https://economy-finance.ec.europa.eu/document/download/3f5af374-4872-4b57-ac99-8507c5420083_en?filename=CZ_SWD_2026_203_1_EN_autre_document_travail_service_part1_v3.pdf
+- **Campos, Coricelli a Moretti 2014:** Economic Growth and Political Integration: Estimating the Benefits from
+  Membership in the European Union Using the Synthetic Counterfactuals Method, IZA Discussion Paper č. 8162, duben 2014,
+  tabulky 2 a 3 (archivní kopie Univerzitní knihovny v Bonnu), https://epflicht.ulb.uni-bonn.de/download/pdf/149785
+- **Rešerše ekonomů:** `ekonomove/CZ.md` (citace v oddílu 5 a údaje označené „podle rešerše“).
 
-**Instituce a studie**
-- Mezinárodní měnový fond: Switzerland: Selected Issues, Country Report No. 25/264, září 2025, https://www.imf.org/-/media/files/publications/cr/2025/english/1cheea2025002-source-pdf.pdf
-- Spolková rada (švýcarská vláda): Lagebericht zur Schweizer Volkswirtschaft 2024, https://www.seco.admin.ch/dam/en/sd-web/Kls9FZQMBm5-/SECO-24-05-2024%20-Lagebericht_Schweizer_Volkswirtschaft-2024%20(1).pdf
-- Státní sekretariát pro hospodářství (SECO): 22. Bericht des Observatoriums zum Freizügigkeitsabkommen Schweiz – EU, 2026, https://www.seco.admin.ch/dam/de/sd-web/OApVoo89AUQX/22.%20Observatoriumsbericht%20zum%20FZA_SECO_2026_DE.pdf
-- Spolková daňová správa (Schaltegger, C. A.): Wachstumsschwäche der Schweiz: Ein Messproblem?, 2003, https://www.estv2.admin.ch/stp/notizen/stp-notizen-2003-wachstumschwaeche-schweiz-de.pdf
-- Beerli, Ruffner, Siegenthaler, Peri: The Abolition of Immigration Restrictions and the Performance of Firms and Workers:
-  Evidence from Switzerland, American Economic Review 111(3), 2021, https://www.aeaweb.org/articles?id=10.1257/aer.20181779
-- Kaufmann, D., Renkin, T.: Manufacturing prices and employment after the Swiss franc shock, SECO 2017, https://libra.unine.ch/handle/20.500.14713/29486
-- Švýcarská národní banka: tiskové zprávy z 6. 9. 2011 (minimální kurz 1,20 franku za euro), https://www.snb.ch/en/publications/communication/press-releases/2011/pre_20110906 a z 15. 1. 2015 (zrušení), https://www.snb.ch/en/publications/communication/press-releases/2015/pre_20150115
-- Spolkový statistický úřad: Krankenversicherungsprämien-Index 2025, tisková zpráva 21. 11. 2025, https://dam-api.bfs.admin.ch/hub/api/dam/assets/36292138/master ; Steckbrief Krankenversicherungsprämien-Index, https://dam-api.bfs.admin.ch/hub/api/dam/assets/35748312/master
-- Spolkový statistický úřad: Haushaltsbudgeterhebung (tabulka 2023), https://www.bfs.admin.ch/bfs/de/home/statistiken/wirtschaftliche-soziale-situation-bevoelkerung/einkommen-verbrauch-vermoegen/haushaltsbudget.html
-- Berner Fachhochschule (Bernská vysoká škola aplikovaných věd): Hohe Kosten = hohe Prämien, 23. 11. 2023, https://www.bfh.ch/de/aktuell/storys/krankenkassenpraemien-bealsten-schweizerinnen/
-- Informační středisko státního důchodového pojištění (AHV/IV): Merkblatt 1.2020 Änderungen auf 1. Januar 2020, https://ahv-iv.ch/p/1.2020.d
-- Spolkový úřad pro sociální pojištění: Berufliche Vorsorge (BVG) und 3. Säule – Übersicht, https://www.bsv.admin.ch/de/bvg-3-saeule
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
 
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
 
-# Francie: proč má v kolech takové hodnoty (průměrná čistá mzda 2024)
-
-> Podklad pro výklad hodnot kol v podkladu pro scénář regionu (zkouška návrhu skillu pro regiony), zpracováno
-> 17. 10. 2026. Výkon vůči střední zemi ligy, jeho růst a zátěž daní a odvodů jsou z kontextu projektu
-> (`data/kontext_kroky.json`: Eurostat; zátěž 2024 při skutečné francouzské mzdě; řada OECD). Střední zemí ligy bylo
-> v roce 1996 Norsko (jen pevninská ekonomika bez ropy) a od roku 2000 je to v datech každý rok Španělsko. Kroky vlád
-> a institucí s doklady jsou v `data/kroky_zemi/FR.json`. „Můj přepočet“ znamená výpočet z dat uvedeného zdroje, „můj
-> úsudek“ výklad, který zdroj sám neříká.
-
-## 1. Proč takový výkon na začátku (1996)
-
-Francouzský pracující vytvořil v roce 1996 asi 118,5 % toho, co pracující ve střední zemi ligy (kontext projektu podle
-Eurostatu), a asi 122 % průměru dnešní EU; na odpracovanou hodinu to bylo dokonce asi 133 % průměru EU, protože
-francouzský pracující odpracoval jen asi 1 578 hodin ročně proti 1 728 v průměru EU (Eurostat, můj přepočet). Francie
-byla dlouho industrializovaná země s vysokým výkonem na hodinu: výkon na hodinu, který v roce 1970 činil 70 %
-amerického, dohnala do konce 90. let (sekretariát Rady pro důchody 2023). Vysoký výkon na hodinu ale zčásti souvisí s tím, že
-pracuje méně lidí a méně hodin: delší pracovní doba a vyšší zaměstnanost mají klesající výnosy, takže měřený výkon na
-hodinu evropských zemí vychází výš, než by vycházel při americké pracovní době a zaměstnanosti (posoudili Bourlès
-a Cette ve studii francouzské centrální banky Banque de France 2005). Sekretariát francouzské Rady pro důchody mluví o dlouhodobé nerovnováze mezi
-relativně vysokou produktivitou a podprůměrnou zaměstnaností (posoudil sekretariát Rady pro důchody 2023). Na startu
-tak Francie patřila k nejvýkonnějším zemím ligy, přičemž výkon na pracujícího tlumila kratší pracovní doba.
-
-## 2. Proč takový růst výkonu (1996–2024)
-
-Výkon francouzského pracujícího vůči střední zemi ligy pomalu klesal ze 118,5 % v roce 1996 na 117,0 % v roce 2004,
-115,2 % v roce 2008 a 112,7 % v roce 2013, pak vystoupal na 118,6 % v roce 2019 a prudce spadl na 109,9 % v roce 2024.
-V průměru let 2020–2024 byl poměr ke střední zemi 0,958násobkem poměru z roku 1996 (kontext projektu). Vůči průměru
-EU je obraz jednodušší: 122 % v roce 1996, 117 % v roce 2004, pak dlouho 116 % (2008, 2013 i 2019) a 107 % v roce 2024
-(Eurostat, můj přepočet). Francie tedy nikdy nedoháněla, mírně ztrácela do poloviny prvního desetiletí, pak stála
-a nejvíc ztratila po pandemii.
-
-**1996–2004: víc míst, méně hodin.** Zákony Aubry zkrátily v letech 1998 a 2000 zákonnou pracovní dobu na 35 hodin
-a podle hodnocení statistiků rychle přidaly asi 350 000 míst v letech 1998–2002 (změřeno, Gubian a kol., francouzský
-statistický úřad 2005). Snížení odvodů zaměstnavatele u nízkých mezd z 90. let podle odhadu vytvořila nebo udržela
-460 000 míst v letech 1994–1997 (změřeno, Crépon a Desplatz 2001, podle skupiny expertů pro minimální mzdu 2025).
-Odpracované hodiny na pracujícího klesly z 1 578 ročně v roce 1996 na 1 519 v roce 2004 (Eurostat, můj přepočet), takže
-výkon na pracujícího rostl pomaleji než výkon na hodinu. Když navíc přibývá zaměstnaných s nižší kvalifikací,
-průměrný měřený výkon kvůli klesajícím výnosům z práce roste pomaleji (můj úsudek opřený o Bourlèse a Cetta 2005).
-
-**2004–2019: pomalý růst produktivity.** Komise píše, že francouzská produktivita na hodinu klesla z víc než 130 %
-úrovně EU na počátku tisíciletí na 112,7 % v roce 2025 a že v letech 2014–2023 rostla jen o 0,1 % ročně proti 0,6 %
-v EU; růst brzdí slabé přidávání kapitálu na pracovníka, téměř stagnující celková efektivita výroby a výdaje na
-výzkum a vývoj (2,18 % HDP v roce 2024) pod průměrem EU (posoudila Evropská komise 2026). Krize 2008–2013 francouzské
-postavení vůči průměru EU skoro nezměnila (116 % v letech 2008 i 2013, Eurostat, můj přepočet). Výkyvy vůči střední
-zemi v tomto období jsou hlavně měřítkem: Španělsko, které je střední zemí ligy, v krizi přišlo o mnoho míst (počet
-pracujících klesl z 21,3 milionu v roce 2008 na 17,9 milionu v roce 2013) a jeho výkon na pracujícího vůči průměru EU
-stoupl ze 101 na 103 %; v letech 2013–2019 naopak rychle přidávalo místa a jeho výkon vůči průměru EU klesl na 98 %
-(Eurostat, můj přepočet). Proto Francie vůči střední zemi do roku 2013 klesala a do roku 2019 stoupala, ačkoli vůči
-průměru EU stála na 116 %.
-
-**2019–2024: propad po pandemii.** Ve 3. čtvrtletí 2023 byl francouzský výkon na odpracovanou hodinu stále o 4 % pod
-koncem roku 2019, zatímco v ostatních třech velkých zemích eurozóny se už vrátil na předpandemickou úroveň (sekretariát
-Rady pro důchody 2023). Část vysvětluje rychlý růst zaměstnanosti, který podle sekretariátu na produktivitu pravděpodobně
-tlačil: reforma učňovství z roku 2018 a mimořádný příspěvek na nové učně od roku 2020 přidaly do konce roku 2022 o 543 000 učňů víc než v roce 2018, a podle
-statistického oddělení ministerstva práce připadala asi pětina ztráty výkonu na pracujícího proti předkrizovému trendu
-na učňovství, protože učni se počítají jako zaměstnanci na plný úvazek, i když část času studují (změřeno, Dares,
-podle sekretariátu Rady pro důchody 2023). Dalšími důvody bylo držení zaměstnanců v útlumu a přežívání neproduktivních
-firem díky krizové podpoře, což Mezinárodní měnový fond považuje za dočasné, kdežto trvalejší složku spojuje hlavně se
-začleňováním méně kvalifikovaných pracovníků (posoudil Mezinárodní měnový fond 2025). Vůči průměru EU klesl francouzský
-výkon na pracujícího ze 116 % v roce 2019 na 107 % v roce 2024 (Eurostat, můj přepočet), takže tento propad je
-francouzský, ne pohyb střední země.
-
-**Měření.** Rok 2020 je zvýšený pandemií (122,7 % střední země), protože Španělsku tehdy výkon na pracujícího spadl
-na 93 % průměru EU (Eurostat, můj přepočet); bez roku 2020 by násobek růstu vyšel 0,939 místo 0,958 (můj přepočet).
-
-## 3. Proč taková zátěž daní a odvodů (2024)
-
-Z toho, co firma za průměrně placeného svobodného zaměstnance bez dětí zaplatí, připadne ve Francii státu na daních
-a odvodech 46,3 %, čtvrtý nejvyšší podíl v lize; ve střední zemi ligy je to 41,2 % (kontext a list ukazatele projektu,
-tabulka kol). Řada OECD při průměrné mzdě OECD ukazuje 47,1 % v roce 2024 (OECD, databáze Taxing Wages).
-
-**Jak je systém postavený.** Hlavní část zátěže tvoří odvody zaměstnavatele na sociální pojištění. Při průměrné mzdě
-OECD činily v roce 2024 odvody zaměstnavatele 36,3 % hrubé mzdy, odvody zaměstnance 11,3 % a daň z příjmu včetně
-všeobecného sociálního příspěvku (CSG) 16,6 % hrubé mzdy (OECD, databáze Taxing Wages). Bez jakýchkoli úlev by odvody
-zaměstnavatele činily 45,28 % hrubé mzdy; po trvalých úlevách zděděných po daňovém odpočtu na konkurenceschopnost
-a zaměstnanost (CICE) a po paktu odpovědnosti 37,48 % a u minimální mzdy po všech obecných úlevách jen 5,15 %, takže na úrovni minimální mzdy je zrušeno skoro 80 % odvodů
-zaměstnavatele (skupina expertů pro minimální mzdu 2025). Komise řadí francouzské implicitní zdanění práce (38,8 %
-v roce 2024 proti 37,1 % v EU) a zdanění práce na straně zaměstnavatelů k nejvyšším v EU (posoudila Evropská komise
-2026). Úlevy jsou odstupňované podle mzdy: největší jsou u minimální mzdy a slábnou směrem nahoru; průměrná mzda OECD
-(45 313 eur v roce 2024) je asi 2,1násobkem roční minimální mzdy (11,65 eura za hodinu, 35 hodin týdně), takže se jí
-týkají úlevy do 2,5násobku a 3,5násobku minimální mzdy, ne ty do 1,6násobku (OECD; skupina expertů 2025; můj
-přepočet a úsudek).
-
-**Jak se zátěž měnila od roku 2000.** Podle řady OECD se do roku 2012 držela kolem 50 % (50,4 % v roce 2000, 49,8 %
-v roce 2008, 50,1 % v roce 2012) a pak klesla na 47,2 % v roce 2019; v roce 2024 činila 47,1 % (OECD, databáze Taxing
-Wages). Pokles přinesly úlevy zaměstnavatelům: daňový odpočet CICE ve výši 4 až 7 % mezd do 2,5násobku minimální mzdy
-(2013–2018), pakt odpovědnosti se snížením odvodů na rodinné dávky o 1,8 bodu až do 3,5násobku minimální mzdy (od
-dubna 2016) a od roku 2019 trvalé snížení odvodů na zdravotní pojištění o 6 bodů místo CICE (skupina expertů pro
-minimální mzdu 2025). V řadě OECD klesly odvody zaměstnavatele u průměrné mzdy ze 44,0 % hrubé mzdy v roce 2012 na
-40,2 % v roce 2013 a 35,1 % v roce 2017 a po přeměně CICE zůstaly na 36,3 % (OECD); že řada OECD CICE započítává jako
-snížení odvodů, je můj úsudek z toho, že pokles v roce 2013 odpovídá úlevě 4 %. Skupina expertů přičítá CICE a paktu,
-že se náklady práce do roku 2019 přiblížily průměru eurozóny (posoudila skupina expertů 2025), a hodnocení CICE našla
-asi 100 000 míst (změřeno, vládní analytický úřad France Stratégie 2020 podle skupiny expertů 2025). V roce 2018 stát zvýšil všeobecný sociální
-příspěvek o 1,7 bodu ze všech příjmů včetně důchodů a příjmů z kapitálu a zaměstnancům zrušil odvody na nemocenské
-a na pojištění v nezaměstnanosti (odpověď vlády Národnímu shromáždění 2018); v řadě OECD kleslo pojistné zaměstnance
-ze 14,3 % hrubé mzdy (2017) na 11,3 % (2019) a daň z příjmu stoupla ze 14,6 na 16,7 %, celková zátěž se ale změnila
-jen ze 47,4 na 47,2 % (OECD). Jde hlavně o přesun mezi druhy plateb, tedy o měření složení, ne o příčinu výše čisté
-mzdy.
-
-**Test protipříkladem.** Zátěž je vysoká hlavně kvůli odvodům zaměstnavatele. Kdyby Francie měla odvody zaměstnavatele
-jako Británie (11,4 % hrubé mzdy místo 36,3 %), vyšla by zátěž při průměrné mzdě OECD asi 35,3 % místo 47,1 % (můj
-přepočet ze složek OECD 2024); protipříklad tedy příčinu potvrzuje. Daň z příjmu to není: francouzská daň z příjmu
-včetně příspěvku CSG (16,6 % hrubé mzdy) je skoro stejná jako britská (16,1 %) a nižší než irská (21,9 %) (OECD).
-Kdyby nebyly úlevy z let 2013–2019 a odvody zaměstnavatele zůstaly na úrovni roku 2012 (44,0 % hrubé mzdy), byla by
-zátěž při průměrné mzdě asi 49,9 % místo 47,1 % (můj přepočet). Přesun z odvodů zaměstnance do příspěvku CSG v roce
-2018 celkovou zátěž skoro nezměnil, proto se jako příčina neuvádí. Studie francouzských reforem z let 2003–2006 navíc
-ukazuje, že snížení odvodů zaměstnavatele se do vyhlášených hrubých mezd nepřeneslo (změřeno, Lehmann, Marical
-a Rioux 2013), takže úlevy zaměstnavatelům se projevily hlavně v nákladech práce a zaměstnanosti, ne v čisté mzdě
-(můj úsudek z této studie).
-
-## 4. Další faktory země
-
-**Minimální mzda.** Francie je jednou ze dvou zemí EU, kde minimální mzda přesahuje 60 % mediánu (62,5 %) i 50 %
-průměrné mzdy (50,4 %); mezi lety 2021 a 2025 vzrostla o 17 %, kdežto vyjednané a základní mzdy asi o 15 % a nejvyšších
-5 % mezd o 12,6 %, takže mzdová škála je výrazně stlačená (skupina expertů pro minimální mzdu 2025). Komise píše, že
-vysoká úroveň minimální mzdy přispívá ke stlačení mezd (posoudila Evropská komise 2026). Na průměr působí minimální
-mzda hlavně přes spodek rozdělení; jak silně, pro Francii doloženo není.
-
-**Past nízkých mezd.** Úbytek úlev zaměstnavatele, ubývání příspěvku na zaměstnání a začátek daně z příjmu vytvářejí
-mezi 1,2 a 2násobkem minimální mzdy mezní zdanění 75 až 80 % a právě tam experti poprvé pozorují zpomalení mzdového
-postupu (posoudila skupina expertů pro minimální mzdu 2025). Komise dodává, že úlevy cílené na nízké mzdy pravděpodobně
-přispěly ke stlačení mezd a oslabily motivaci investovat do dovedností (posoudila Evropská komise 2026).
-
-**Kolektivní vyjednávání.** Kolektivními smlouvami je pokryto 98 % zaměstnanců (2024), v odborech je jich ale jen
-10,1 %, jeden z nejnižších podílů v EU (Evropská komise 2026).
-
-**Pracovní doba.** Kratší pracovní doba po zákonech Aubry snižuje výkon i mzdu na pracujícího proti výkonu na hodinu:
-francouzský pracující odpracoval v roce 2024 asi 1 513 hodin proti 1 612 v průměru EU (Eurostat, můj přepočet).
-
-**Ceny a kupní síla.** Cenová hladina skutečné individuální spotřeby byla ve Francii v roce 2024 108 % průměru EU
-(v roce 2000 110 %) (Eurostat), mnohem méně než v Británii (129 %) nebo Irsku (141 %), takže přepočet na kupní sílu
-francouzskou mzdu zmenšuje méně než mzdy těchto zemí.
-
-## 5. Co říkají ekonomové
-
-Instituce vysvětlují nižší francouzskou mzdu hlavně slabou a relativně klesající produktivitou: Komise píše, že růst
-produktivity brzdí „slabé přidávání kapitálu a téměř stagnující celková efektivita výroby“ (v originále „low capital
-deepening and almost stagnant total factor productivity“, Evropská komise 2026). Tvar mezd podle nich formuje vysoká
-minimální mzda s automatickým zvyšováním a snížené odvody zaměstnavatele u nízkých mezd, které mzdy stlačují a podle
-Komise i francouzských expertů zvyšují riziko pastí nízkých mezd (`ekonomove/FR.md`).
-
-## 6. Zdroje
-
-- **Kontext projektu:** `data/kontext_kroky.json` (výkon na pracujícího vůči střední zemi ligy po letech, násobek
-  růstu, zátěž 2024, řada OECD); list ukazatele `LIST_UKAZATELE.md` (medián ligy 41,2 %); tabulka kol
-  `KOLA_TABULKA.md` (pořadí v kole daní a odvodů).
-- **Eurostat (můj přepočet):** HDP v kupní síle, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
-  zaměstnanost, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995 ;
-  odpracované hodiny, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_HW&nace_r2=TOTAL&na_item=EMP_DC&sinceTimePeriod=1995
-  (staženo projektem 17. 10. 2026); cenová hladina skutečné individuální spotřeby, `prc_ppp_ind_1` (data projektu
-  `data/raw_krok1/prc_ppp_ind_1_A01.json`).
-- **OECD, databáze Taxing Wages** (svobodný bez dětí, průměrná mzda OECD; stažena 17. 10. 2026):
-  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/GBR+IRL+FRA......A?startPeriod=2000&endPeriod=2024
-- **Evropská komise 2026:** 2026 Country Report – France, SWD(2026) 210 final, 3. 6. 2026,
-  https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=SWD:2026:210:FIN
-- **Skupina expertů pro minimální mzdu 2025:** Groupe d'experts sur le Smic, Salaire minimum interprofessionnel de
-  croissance, rapport du Groupe d'experts, 25. 11. 2025, https://www.vie-publique.fr/files/rapport/pdf/301429_0.pdf
-  (shrnuje i hodnocení Crépon a Desplatz 2001, Cottet 2020 a France Stratégie 2020)
-- **Sekretariát Rady pro důchody 2023:** Secrétariat général du Conseil d'orientation des retraites, Les évolutions de
-  la productivité du travail, tendances passées et récentes, dokument č. 2 k zasedání 21. 12. 2023 (pracovní dokument,
-  nezavazuje Radu; shrnuje Dares 2023 a OFCE 2023),
-  https://www.cor-retraites.fr/sites/default/files/2023-12/Doc_02_%C3%A9volutions%20pass%C3%A9es%20et%20r%C3%A9centes%20de%20la%20productivit%C3%A9.pdf
-- **Mezinárodní měnový fond 2025:** France: 2025 Article IV Consultation, IMF Country Report No. 25/179, červenec 2025,
-  https://www.imf.org/-/media/files/publications/cr/2025/english/1fraea2025001-source-pdf.pdf
-- **Gubian a kol. 2005:** Gubian, Jugnot, Lerais, Passeron, Les effets de la RTT sur l'emploi : des estimations ex ante
-  aux évaluations ex post, Économie et Statistique 376-377, INSEE, červen 2005, https://www.insee.fr/fr/statistiques/1376464
-- **Bourlès a Cette 2005:** A comparison of Structural Productivity Levels in the Major Industrialised Countries,
-  Banque de France Working Paper 133, 2005, https://econpapers.repec.org/paper/bfrbanfra/133.htm
-- **Lehmann, Marical a Rioux 2013:** Labor income responds differently to income-tax and payroll-tax reforms, Journal
-  of Public Economics 99, https://ideas.repec.org/a/eee/pubeco/v99y2013icp66-84.html
-- **Odpověď vlády Národnímu shromáždění 2018:** písemný dotaz č. 6859, Journal officiel 2. 10. 2018,
-  https://www.assemblee-nationale.fr/dyn/15/questions/QANR5L15QE6859.pdf
-- **Rešerše ekonomů projektu:** `ekonomove/FR.md` (17. 10. 2026).
+- **Oddíl 1, platí s výhradou:** soukromý sektor 1989 podle zdroje 3–11 % HDP (MMF, Borish a Noël 1996; tento výklad uvádí pod 5 % podle MMF 2000), proti asi 20 % v Maďarsku a 28 % v Polsku; Československo mělo malý zahraniční dluh (Maďarsko v roce 1995 asi 2 800 USD na obyvatele, Česko a Slovensko asi 900); chyběl domácí kapitál, rozvinuté banky i kapitálový trh.
+- **Oddíl 2, hodnocení kupónové privatizace podle výchozí pozice (Ondřej 26. 10. 2026):** kritika (slabá správa firem a tunelování, chyba v konstrukci investičních fondů, fondy ovládané státními bankami; Hanousek, Kočenda a Švejnar: typ vlastníka měl na výkon firem omezený vliv, pomohl hlavně většinový zahraniční vlastník) i obhajoba (rychlost: soukromý sektor asi 70 % HDP v roce 1995; kupónové knížky koupily víc než tři čtvrtiny dospělých; studie z roku 2020: tunelování menší, než se traduje). Že prodej strategickým investorům jako v Maďarsku nebyl pro Česko proveditelný, je argument tvůrců privatizace, ne prokázaný fakt; prodej cizincům byl možný, ale pomalejší a politicky citlivý. Podle pojistky výchozí pozice (analytický skill, krok 9b) se privatizace nepočítá jako zjevná chyba, ale jako volba z horší výchozí pozice s doloženými náklady.
+- **Oddíl 2, nelze doložit:** že kurzový závazek ČNB 2013–2017 oslabil tlak na inovace; jen dobová kritika („firmy zlenivěly“), kterou ČNB odmítla (Hampl 2016); analýza ČNB 2017 našla průkazný účinek hlavně na inflaci, pozdější studie nižší nezaměstnanost; dopad na inovace nikdo nezměřil. Do scénáře jen jako názor kritiků.
 
 
-# Británie: proč má v kolech takové hodnoty (průměrná čistá mzda 2024)
+# Polsko: proč má v kolech takové hodnoty
 
-> Podklad pro výklad hodnot kol v podkladu pro scénář regionu (zkouška návrhu skillu pro regiony), zpracováno
-> 17. 10. 2026. Výkon vůči střední zemi ligy, jeho růst a zátěž daní a odvodů jsou z kontextu projektu
-> (`data/kontext_kroky.json`: Eurostat, u Británie po roce 2019 počet zaměstnaných podle britského statistického úřadu;
-> zátěž 2024 podle britských daňových pravidel; řada OECD). Střední zemí ligy bylo v roce 1996 Norsko (jen pevninská
-> ekonomika bez ropy) a od roku 2000 je to v datech každý rok Španělsko. Kroky vlád a institucí s doklady jsou
-> v `data/kroky_zemi/GB.json`. U každé příčiny je slovy uvedena síla dokladu; „můj přepočet“ znamená výpočet z dat
-> uvedeného zdroje, „můj úsudek“ výklad, který zdroj sám neříká.
+*Oprava koordinátora 17. 10. 2026 večer: zátěž daní a odvodů se po doplnění povinných plateb mimo daně u všech 27 zemí (nález nezávislého oponenta 1, `LIST_UKAZATELE.md`) změnila na 39,6 % (9. nejnižší) (dřív 37,7 %, 8. nejnižší); čísla níže jsou bodově opravená, ostatní text zůstává.*
+
+> Podklad pro výklad hodnot v kolech a seznam kroků země, průměrná čistá mzda. Zpracováno 17. 10. 2026 podle
+> [zadání](../ZADANI_KROKY_ZEMI.md). Kroky vlád a institucí s doklady jsou v
+> [`data/kroky_zemi/PL.json`](../data/kroky_zemi/PL.json). Čísla v hranatých závorkách odkazují na oddíl Zdroje; citace
+> z anglických zdrojů jsou můj překlad (originály jsou v souboru kroků). Síla dokladu je u každé příčiny napsaná slovy.
+
+**Hodnoty v kolech podle dat projektu [1]:** výkon na začátku 47,7 % výkonu střední země ligy (1996); růst výkonu
+1,76krát (ze 47,7 % v roce 1996 na 84,3 % v roce 2024); daně a odvody 39,6 % nákladů práce (2024). Čistá mzda v roce
+2024 podle měření projektu je 22 036 jednotek kupní síly ročně [1].
 
 ## 1. Proč takový výkon na začátku (1996)
 
-Britský pracující vytvořil v roce 1996 asi 109 % toho, co pracující ve střední zemi ligy (kontext projektu podle
-Eurostatu), a asi 112 % průměru dnešní EU (Eurostat, můj přepočet). Británie byla dávno industrializovaná země s velkým
-finančnictvím, výkon na odpracovanou hodinu ale měla asi o 16 % nižší než Francie a mezeru zčásti doháněla delší prací:
-britský pracující odpracoval v roce 1996 asi 1 728 hodin, francouzský 1 578 (Eurostat, můj přepočet). Hlavní důvod
-dnešního zaostávání za Francií vidí britský nezávislý výzkumný ústav Resolution Foundation v nedostatku strojů, budov
-a nehmotného kapitálu na pracovníka: celkové investice činily ve čtyřiceti letech do roku 2022 průměrně 19 % HDP, nejméně v G7 (průměr G7 22 %), a tato
-„mezera v kapitálu“ podle ní vysvětluje téměř celý dnešní rozdíl v produktivitě proti Francii (posoudila Resolution
-Foundation 2023). *Oprava koordinátora 18. 10. 2026 (nález A1 kontroly scénáře Západní Evropy):* výrok je v přítomném
-čase a studie, o kterou se ústav opírá, srovnává rok 2019; o roce 1996 neříká nic a publikovaná verze té studie
-(Van Reenen a Yang 2024) připisuje kapitálu jen asi třetinu mezery proti Francii. Pro start v roce 1996 tedy platí jen
-to, že Británie investuje dlouhodobě nejméně ze sedmi největších vyspělých ekonomik (souvislost, ne změřená příčina). V 90. letech přitom Británie produktivnější Francii, Německo a USA doháněla (posoudila Resolution
-Foundation 2023), takže startovala nad střední zemí ligy, ale pod nejproduktivnějšími sousedy.
+Polsko vstoupilo do sledovaného období šest let po takzvané šokové terapii: program, který připravil místopředseda vlády
+Leszek Balcerowicz a který začal 1. ledna 1990, naráz uvolnil ceny, zrušil dotace státním podnikům a otevřel ekonomiku
+zahraniční konkurenci, takže řada podniků i celých průmyslových oborů podle bývalého guvernéra polské centrální banky
+Marka Belky „téměř přes noc ztratila důvod existence“ (Belka 2019 [7]). Výroba se z propadu vzpamatovala rychle, v roce
+1991 byla asi o 7 % pod úrovní roku 1990 a v roce 1996 už o 18 % nad ní (Penn World Table 11.0 [6]), takže nízký výkon
+v roce 1996 nebyl následkem trvajícího propadu, ale zděděné skladby a zastaralého vybavení ekonomiky (můj úsudek z těchto
+dat). Nejviditelněji ho stahovalo zemědělství, ve kterém v roce 1996 pracovalo 23 % všech zaměstnaných proti 7,9 %
+v Maďarsku (Světová banka 2026, odhad Mezinárodní organizace práce [5]), a polský zemědělec vytvořil kolem roku 2000 méně
+než 9 % toho, co zemědělec ve Francii, kdežto polský průmysl 40 % a služby 56 % francouzské úrovně (posoudili Caselli
+a Tenreyro 2005, rozklad produktivity podle odvětví [8]). Stejní autoři ale upozorňují, že větší část zaostávání byla
+uvnitř odvětví, tedy v nedostatku kapitálu a ve starší technice, a cestu k dohánění viděli hlavně v investicích a lepší
+technologii v každém odvětví [8]. Zahraniční kapitál, který tyto mezery zaplňoval, přicházel v první polovině 90. let do
+Polska pomaleji než do Maďarska: příliv přímých zahraničních investic dosahoval v letech 1991–1996 v průměru 1,7 % HDP
+ročně proti 5,6 % v Maďarsku (Světová banka 2026 [5]; jako příčina nižšího startu jen časová souvislost).
 
 ## 2. Proč takový růst výkonu (1996–2024)
 
-Výkon britského pracujícího vůči střední zemi ligy prošel třemi obdobími: do roku 2004 vzrostl ze 109,4 na 114,4 %,
-do roku 2013 klesl na 100,9 % a od té doby se drží těsně nad střední zemí (101,2 % v roce 2019, 101,4 % v roce 2024).
-V průměru let 2020–2024 byl poměr ke střední zemi 0,94násobkem poměru z roku 1996 (kontext projektu). Nejvíc tedy
-Británie dohnala na přelomu tisíciletí, zastavila se v polovině prvního desetiletí a největší ztráta přišla
-s finanční krizí.
+Výkon polského pracujícího vůči střední zemi ligy rostl ze 47,7 % v roce 1996 na 54,0 % (2000), 63,0 % (2004), 61,9 %
+(2008), 70,8 % (2013), 80,0 % (2019) a 84,3 % v roce 2024; proti průměru let 2020–2024 je to 1,76násobek startu [1].
+Nejvíc Polsko dohánělo ve dvou obdobích, v letech 1996–2004 o 15,3 bodu a v letech 2008–2019 o 18,1 bodu, z toho
+o 8,9 bodu během evropské krize 2008–2013 [1]. Mezi lety 2004 a 2008 se dohánění na pracujícího zastavilo (−1,1 bodu) a po
+roce 2019 zpomalilo na 4,3 bodu za pět let [1].
 
-**Do roku 2004: rozmach finančnictví a ropy.** Až do poloviny prvního desetiletí Británie podle Resolution Foundation
-produktivnější země doháněla (posoudila Resolution Foundation 2023). Mezinárodní měnový fond ukazuje, že silný růst
-celkové efektivity výroby před krizí měl zvláštní zdroje, které se nedaly zopakovat: dluhem tažený rozmach
-finančnictví, ropu ze Severního moře a rozmach informačních technologií na začátku tisíciletí (posoudil Mezinárodní
-měnový fond 2024).
+**Dohánění z nízkého základu a změna skladby pracujících.** V letech 1996–2004 rostl výkon na pracujícího rychle i proto,
+že ubývala málo produktivní místa: HDP ve stálých cenách vzrostlo o 37 %, ale počet pracujících klesl o 8 % (ze 14,96 na
+13,76 milionu) a nezaměstnanost vystoupala v roce 2002 na 20,2 % (Eurostat 2026 [2, 3]; Světová banka 2026 [5]); výkon na
+pracujícího ve stálých cenách tak vzrostl asi o 49 % (můj přepočet z těchto dat). V letech 2004–2008 to bylo naopak: HDP
+vzrostlo o 22 %, ale pracujících přibylo o 14 % a nezaměstnanost klesla na 7,1 %, takže výkon na pracujícího ve stálých
+cenách vzrostl jen asi o 7 % (Eurostat 2026 [2, 3]; Světová banka 2026 [5]; můj přepočet). Zastavení dohánění v letech
+2004–2008 tedy neznamená slabou ekonomiku, ale to, že se do práce vracely statisíce lidí s nižší produktivitou (můj úsudek
+z těchto dat). Dlouhodobě pomáhal i odchod lidí ze zemědělství, jehož podíl na zaměstnanosti klesl z 23 % v roce 1996 na
+6,5 % v roce 2024 (Světová banka 2026 [5]); polský průmysl byl podle Caselliho a Tenreyra osmkrát a služby desetkrát
+produktivnější než zemědělství, takže každý takový přesun zvedal průměr (posoudili Caselli a Tenreyro 2005 [8]; kolik to
+dohromady přidalo, nikdo nevyčíslil).
 
-**2004–2013: krize vypnula motory růstu.** Finanční krize 2008 tyto motory zastavila. Růst výkonu na odpracovanou
-hodinu klesl z asi 2 % ročně před krizí na asi půl procenta po ní, víc než v jiných vyspělých zemích, a většinu
-poklesu Mezinárodní měnový fond přičítá ztrátě ropy ze Severního moře a dluhem taženého rozmachu finančnictví,
-prohloubené slabší dynamikou firem a pozdějšími šoky (posoudil Mezinárodní měnový fond 2024). Za dvanáct let po krizi
-rostla britská produktivita o 0,4 % ročně proti 0,9 % u 25 nejbohatších zemí OECD a mezera proti průměru USA, Francie
-a Německa se od roku 2008 zdvojnásobila na 18 % v roce 2022 (Resolution Foundation 2023). Druhou brzdou byly
-investice: podle rozkladu růstu klesl příspěvek kapitálu k růstu produktivity z asi 1¼ procentního bodu ročně
-v 90. letech na asi ½ bodu od poloviny prvního desetiletí a těsně po krizi a po referendu o odchodu z EU skoro na nulu
-(posoudil Mezinárodní měnový fond 2024). Část propadu vůči střední zemi je ale dána měřítkem: Španělsko, které je
-střední zemí ligy, v krizi přišlo o mnoho míst (počet pracujících klesl z 21,3 milionu v roce 2008 na 17,9 milionu
-v roce 2013) a jeho výkon na pracujícího vůči průměru EU stoupl ze 101 na 103 % (Eurostat, můj přepočet). Vůči průměru
-EU klesla Británie mezi lety 2008 a 2013 méně, ze 108 na 104 % (Eurostat, můj přepočet).
+**Produktivita, kapitál a technologie.** OECD píše, že polská životní úroveň se přiblížila z asi poloviny úrovně zemí OECD
+na 80 % v roce 2021 a že tento posun „z velké části táhl růst produktivity“ (posoudila OECD 2025 [9]). Mezinárodní měnový
+fond při rozkladu růstu jmenuje jako hlavní hnací síly celkovou efektivitu výroby a hromadění kapitálu z nízkého základu
+a dodává, že kapitálu je ve všech odvětvích stále poměrně málo, takže prostor pro další dohánění zůstává (posoudil
+Mezinárodní měnový fond 2025, podle rešerše ekonomů projektu [28]).
 
-**Od roku 2013: stagnace a odchod z EU.** Vůči střední zemi se britský výkon od roku 2013 skoro nehýbe, vůči průměru
-EU ale dál klesal, ze 104 % v roce 2013 na 99 % v letech 2019 i 2024 (Eurostat, můj přepočet). Stálost vůči střední
-zemi je hlavně tím, že ve Španělsku po krizi rychle přibývala místa a jeho výkon na pracujícího vůči průměru EU klesl
-ze 103 % v roce 2013 na 98 % v roce 2019 (Eurostat, můj přepočet; že šlo hlavně o méně produktivní místa, je můj
-úsudek). Brzdou v tomto období byl odchod z EU: podle velkého šetření britských firem snížilo očekávání odchodu
-investice během tří let po referendu asi o 11 % a produktivitu o 2 až 5 % (změřeno, Bloom a kol. 2019, šetření firem),
-a britský Úřad pro rozpočtovou odpovědnost počítá s tím, že dohoda o obchodu s EU sníží dlouhodobou produktivitu
-o 4 % (posoudil úřad 2026; je to předpoklad z průměru vnějších studií, ne změřený dopad). Mzdy se od výkonu
-neodpojily: jednotkové mzdové náklady se vyvíjely jako u srovnatelných zemí, takže růst reálných mezd jen odrážel
-velmi slabý růst produktivity (posoudil Mezinárodní měnový fond 2024), a reálné mzdy byly v polovině roku 2023 tam,
-kde během finanční krize (Resolution Foundation 2023). Zaměstnanost přitom rostla: britský Institut pro fiskální studia
-(Institute for Fiscal Studies) popisuje léta mezi velkou recesí a pandemií jako období bez růstu průměrné mzdy, ale s rozmachem pracovních míst
-(Institute for Fiscal Studies 2024).
+**Zahraniční investice a výroba pro bohaté sousedy.** Víc než třetinu domácí přidané hodnoty táhne zahraniční poptávka,
+zásoba přímých zahraničních investic dosáhla v roce 2023 40 % HDP a polská průmyslová politika stojí na lákání investorů
+do zvláštních ekonomických zón s infrastrukturou, granty a daňovými úlevami (OECD 2025 [9]). Že zóny opravdu přidávaly
+práci a kapitál, změřila studie polské centrální banky na 379 okresech v letech 2003–2012: každých 100 míst v zóně
+vytvořilo asi 72 míst mimo zónu v témže okrese a 137 v sousedních okresech a investice v zónách přidaly kapitál, aniž by
+vytlačily jiné investice; v roce 2012 patřilo 81 % kapitálu v zónách zahraničním investorům (změřeno, Ciżkowicz a kol.
+2015, panelové a prostorové modely okresů [16]). Vláda zóny v letech 2004–2008 rozšířila z 6 325 na 20 000 hektarů
+a od roku 2006 je otevřela i menším projektům [16]. Polský vývoz přitom obsahuje víc domácí přidané hodnoty než maďarský,
+asi 71,1 % proti 54,1 % (Maďarská národní banka 2024 [29]), takže větší část výroby pro cizí trhy zůstává doma (můj
+úsudek o významu tohoto rozdílu).
 
-**Měření.** Eurostat nemá britskou zaměstnanost po roce 2019, projekt ji proto prodloužil změnou počtu zaměstnaných
-podle šetření pracovních sil britského statistického úřadu (kontext projektu). Návratnost tohoto šetření klesla
-v říjnu 2023 na historicky nízkých 12,7 % a statistický úřad dočasně přestal zveřejňovat z něj odvozená čísla
-(Mezinárodní měnový fond 2024), takže hodnoty po roce 2019 jsou méně jisté. Rok 2020 je navíc zvýšený pandemií
-(105,3 % střední země); bez něj by násobek růstu vyšel 0,934 místo 0,94 (Eurostat, můj přepočet).
+**Vstup do EU a fondy EU.** Studie, která srovnávala Polsko s jeho „syntetickým dvojníkem“ složeným ze zemí mimo EU, našla
+u Polska v letech 1998–2008 HDP na obyvatele v průměru asi o 5,9 % vyšší, rozdíl ale nebyl statisticky průkazný; u Maďarska
+vyšlo 12,3 % a průkazně (změřeno, Campos, Coricelli a Moretti 2014, metoda syntetické kontroly [14]). Samotný vstup do EU
+tedy rychlejší polský růst nevysvětluje. Marek Belka přesto popisuje rok 2004 jako zlom, po kterém se zrychlil růst,
+investice i vývoz a začaly proudit fondy EU, jejichž čistý příliv dosahoval asi 3 % HDP ročně (posoudil Belka 2019 [7]).
+Podle modelu Evropské komise bylo polské HDP díky fondům z období 2007–2013 v roce 2015 asi o 4,3 % vyšší a v roce 2023
+o 5,7 % vyšší, než by bylo bez nich; u Maďarska vyšlo 5,3 % a 4,6 % (posoudila Evropská komise 2016, modelová simulace,
+ne měření [15]).
 
-## 3. Proč taková zátěž daní a odvodů (2024)
+**Vzdělání, výzkum a firemní investice.** Reforma školství z roku 1999 rozšířila všeobecné vzdělání a odložila rozdělování
+žáků do odborných škol; Světová banka změřila, že to zlepšilo výsledky žáků zhruba o jednu směrodatnou odchylku (změřeno,
+Jakubowski a kol. 2010, párování a rozdíl v rozdílech [17]). Dnešní dospělí ale mají podle šetření OECD z roku 2023
+dovednosti pod průměrem OECD, 236 bodů v gramotnosti a 239 v počtech proti 260 a 263, a nižší než v Maďarsku (248 a 254)
+(OECD 2024 [26]), takže rychlejší polský růst dovednosti dospělých nevysvětlují (můj úsudek). Slabinou zůstávají firemní
+investice: soukromé investice byly v roce 2022 jen 12,7 % HDP proti 19,6 % v EU a 22,8 % v Maďarsku (Evropská komise 2024
+[10]) a firemní investice podle OECD od roku 2009 stagnují (OECD 2025 [9]).
 
-Z toho, co firma za průměrně placeného svobodného zaměstnance bez dětí zaplatí, připadne v Británii státu na daních
-a odvodech 28,3 %, nejméně v lize; ve střední zemi ligy je to 41,2 % (list ukazatele projektu, výpočet podle britských
-daňových pravidel 2024). Řada OECD při průměrné mzdě OECD ukazuje podobnou úroveň, 29,9 % v roce 2024 (OECD,
-databáze Taxing Wages); rozdíl je v tom, při jaké výši mzdy se počítá.
+**Krize 2008–2013.** Polsko bylo v roce 2009 jedinou zemí EU, jejíž HDP rostlo, o 2,6 % při průměru EU −4,3 %, zatímco
+Maďarsko kleslo o 6,7 % (Eurostat 2026 [2]). Mezinárodní měnový fond to přičítá velkému domácímu trhu a menší závislosti na
+vývozu, dobře kapitalizovaným bankám, prostoru pro politiku proti krizi, protože země neměla velké nerovnováhy, a pružnému
+měnovému kurzu (posoudil Mezinárodní měnový fond 2010 [13]); Belka zdůrazňuje oslabení zlotého, díky kterému příjmy
+vývozců v domácí měně neklesly (posoudil Belka 2019 [7]). Vláda přitom nechala rozpočet působit proti propadu, schodek
+dosáhl v roce 2009 7,2 % HDP (Eurostat 2026 [4]). Právě v letech 2008–2013, kdy se většina Evropy propadala, se polský
+výkon posunul z 61,9 na 70,8 % střední země ligy [1] a ve stálých cenách vzrostl o 16 %, zatímco počet pracujících mírně
+klesl (Eurostat 2026 [2, 3]; můj přepočet). Kolik z toho připadá na jednotlivá opatření, nikdo nevyčíslil.
 
-**Jak je systém postavený.** Celá zátěž se skládá z daně z příjmu a ze státního pojistného (National Insurance). Při
-průměrné mzdě OECD činila v roce 2024 daň z příjmu 16,1 % hrubé mzdy, pojistné zaměstnance 5,8 % a pojistné
-zaměstnavatele 11,4 % hrubé mzdy (OECD, databáze Taxing Wages). Daň se platí až z příjmu nad osobní nezdanitelnou
-částkou 12 570 liber (britské ministerstvo financí, HM Treasury 2021) a hlavní sazba pojistného zaměstnance je od dubna 2024 8 % (HM Treasury 2024).
+**Zpomalení po roce 2019.** Mezinárodní měnový fond píše, že produktivita práce roste „kolem 3 %“, což je na Evropu výjimečné,
+ale zpomalí, protože se vyčerpávají přínosy napodobování a přebírání technologií (posoudil Mezinárodní měnový fond 2026,
+podle rešerše ekonomů projektu [28]). Jiná doložená příčina zpomalení po roce 2019 v otevřených zdrojích, které jsem měl,
+není.
 
-**Jak se zátěž měnila od roku 2000.** Podle řady OECD klesla z 32,6 % v roce 2000 na 29,9 % v roce 2024, ale ne
-rovnoměrně (OECD, databáze Taxing Wages). V roce 2003 stouplo pojistné zaměstnance i zaměstnavatele zhruba o bod
-hrubé mzdy (z 8,3 na 9,2 % a z 9,8 na 10,7 %) a zátěž se v letech 2003–2007 držela mezi 33,8 a 34,1 %; v roce 2008
-klesla průměrná sazba daně z příjmu ze 17,7 na 16,4 % hrubé mzdy (OECD). Které změny pravidel za oběma pohyby stály,
-jsem v otevřených zdrojích nedoložil. Mezi lety 2010 a 2019 vlády zvýšily osobní nezdanitelnou částku z 6 475 na
-12 500 liber (legislation.gov.uk 2010; HM Treasury 2018), průměrná sazba daně z příjmu při průměrné mzdě klesla ze
-16,2 na 13,9 % hrubé mzdy a zátěž z 32,6 na 30,9 % (OECD). Mzda po zdanění proto rostla rychleji než před zdaněním,
-o 6,4 % proti 3,5 % mezi lety 2009–10 a 2023–24, „díky snížení daní pro střední výdělky“ (posoudil Institute for
-Fiscal Studies 2024). Od roku 2021 jsou hranice daně zmrazené (HM Treasury 2021), podle Mezinárodního měnového fondu
-až do let 2028/29, takže s rychlým růstem mezd stoupla průměrná sazba daně z příjmu ze 13,7 % v roce 2020 na 16,1 %
-v roce 2024 (OECD; zvyšování příjmů státu zmrazením posoudil Mezinárodní měnový fond 2024). V roce 2024 pak vláda
-snížila hlavní sazbu pojistného zaměstnanců ze 12 na 8 % (HM Treasury 2024) a pojistné zaměstnance při průměrné mzdě
-kleslo z 8,5 na 5,8 % hrubé mzdy (OECD). Krátkodobý výkyv v roce 2022 (31,7 %) jde podle řady OECD hlavně na vrub
-vyššímu pojistnému zaměstnavatele toho roku (11,6 % hrubé mzdy proti 10,9 % v roce 2021); jeho příčinu jsem
-v otevřených zdrojích nedoložil.
-
-**Test protipříkladem.** Zátěž je nízká hlavně proto, že je nízké pojistné, zvlášť pojistné zaměstnavatele. Kdyby
-Británie měla odvody zaměstnavatele jako Francie (36,3 % hrubé mzdy místo 11,4 %), vyšla by zátěž při průměrné mzdě
-OECD asi 42,7 % místo 29,9 % (můj přepočet ze složek OECD 2024); protipříklad tedy příčinu potvrzuje. Nízká daň
-z příjmu to není: při průměrné mzdě je britská daň z příjmu (16,1 % hrubé mzdy) skoro stejná jako francouzská
-(16,6 %) (OECD). Kdyby vláda v roce 2024 pojistné zaměstnanců nesnížila, bylo by při průměrné mzdě OECD asi 8,7 %
-hrubé mzdy místo 5,8 % a zátěž asi 32,5 % místo 29,9 % (můj přepočet podle sazeb roku 2024). Kdyby hranice daně
-nebyly od roku 2021 zmrazené, byla by daň z příjmu nižší; o kolik přesně, není pro průměrnou mzdu v otevřených
-zdrojích vyčísleno. Kdo pojistné formálně platí, se v Británii ve sledovaném období neměnilo. Studie 35 let britských
-reforem pojistného zjistila, že náklady práce klesají mnohem víc při snížení pojistného zaměstnavatele než
-zaměstnance, takže skutečný dopad pojistného silně závisí na tom, kdo ho formálně platí (změřeno, Adam, Phillips
-a Roantree 2017, velký panel pracovníků); snížení pojistného zaměstnanců v roce 2024 se proto dá čekat hlavně ve vyšší
-čisté mzdě, ne v nižších nákladech práce (můj úsudek).
-
-## 4. Další faktory země
-
-**Minimální mzda.** Celostátní minimální mzda platí od roku 1999 a od roku 2016 vyšší národní životní mzda pro
-dospělé; v roce 2024 byla reálně asi o 70 % vyšší než při zavedení a asi o 30 % vyšší než v roce 2015, zatímco
-reálný medián hodinové mzdy byl zhruba stejný jako na začátku finanční krize (komise, která vládě radí s minimální
-mzdou, Low Pay Commission 2024). Mzdy dole
-po jejím zavedení rostly mnohem rychleji než nahoře (posoudila Low Pay Commission 2024) a Mezinárodní měnový fond
-upozorňuje, že desetiprocentní zvýšení v dubnu 2024 může zpomalit zmírňování růstu mezd i mimo cílovou skupinu
-(posoudil Mezinárodní měnový fond 2024). Na průměrnou mzdu působí hlavně přes spodek rozdělení; vlastní síla tohoto
-působení na průměr není pro Británii doložena.
-
-**Veřejné platy.** Zmrazení platů ve veřejném sektoru v letech 2011–2013 a následný strop asi 1 % ročně snížily
-průměrný reálný týdenní výdělek ve veřejném sektoru v letech 2016–17 o 4 % proti letům 2009–10 (posoudil Institute
-for Fiscal Studies 2017); týkalo se to asi 5,1 milionu lidí (Institute for Fiscal Studies 2017).
-
-**Přistěhovalci.** Po otevření trhu práce při rozšíření EU v roce 2004 odešlo do Británie a Irska asi 1,2 milionu
-pracovníků z východní Evropy (Elsner 2013). Přistěhovalectví podle studie snižuje mzdy domácích pracovníků pod
-20. percentilem a mírně zvyšuje mzdy výše, celkově mírně kladně (změřeno, Dustmann, Frattini a Preston 2013, srovnání
-oblastí). Po odchodu z EU platí nový přistěhovalecký režim, přistěhovalectví ale zůstalo silné a britský Úřad pro
-rozpočtovou odpovědnost dnes počítá se střednědobou čistou migrací 290 000 lidí ročně (Úřad pro rozpočtovou
-odpovědnost 2026).
-
-**Ceny a kupní síla.** Cenová hladina skutečné individuální spotřeby byla v Británii v roce 2024 129 % průměru EU
-a v roce 2000 dokonce 147 % (Eurostat), takže se britská mzda po přepočtu na kupní sílu zmenšuje víc než u levnějších
-zemí.
-
-**Průměr a nerovnost.** Británie má nejvyšší příjmovou nerovnost mezi velkými evropskými ekonomikami (Resolution
-Foundation 2023) a Londýn je o 41 % produktivnější než Manchester, kdežto Paříž proti Lyonu jen o 26 % (Resolution
-Foundation 2023). Průměrná mzda, se kterou projekt pracuje, je proto proti mzdě typického zaměstnance relativně vysoká
-(můj úsudek; britský statistický úřad dává přednost mediánu, podle rešerše ekonomů v `ekonomove/GB.md`).
-
-## 5. Co říkají ekonomové
-
-Mezinárodní měnový fond, britská centrální banka (Bank of England) a Resolution Foundation shodně uvádějí jako hlavní příčinu slabých britských
-mezd pomalý růst produktivity od finanční krize 2008; Resolution Foundation píše, že „kořenem stagnace mezd je
-žalostný vývoj produktivity práce na hodinu“ (v originále „The root of that wage stagnation and foregone leisure is
-the woeful trend in British labour productivity per hour“, Resolution Foundation 2023). Za slabou produktivitou vidí
-instituce hlavně nízké investice, zánik předkrizových motorů růstu (finančnictví a ropa ze Severního moře) a odchod
-z EU; mezery v dovednostech Mezinárodní měnový fond označuje za závazné omezení, Resolution Foundation to popírá
-(`ekonomove/GB.md`).
-
-## 6. Zdroje
-
-- **Kontext projektu:** `data/kontext_kroky.json` (výkon na pracujícího vůči střední zemi ligy po letech, násobek
-  růstu, zátěž 2024, řada OECD); list ukazatele projektu `LIST_UKAZATELE.md` (zátěž 2024 a medián ligy 41,2 %).
-- **Eurostat (můj přepočet):** HDP v kupní síle, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
-  zaměstnanost, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995 ;
-  odpracované hodiny, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_HW&nace_r2=TOTAL&na_item=EMP_DC&sinceTimePeriod=1995
-  (staženo projektem 17. 10. 2026); cenová hladina skutečné individuální spotřeby, `prc_ppp_ind_1` (data projektu
-  `data/raw_krok1/prc_ppp_ind_1_A01.json`). Britská zaměstnanost po roce 2019: britský statistický úřad, řada MGRZ,
-  https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/mgrz/lms
-  (podle `data/raw_faktory/doplnena_data.json`).
-- **OECD, databáze Taxing Wages** (svobodný bez dětí, průměrná mzda OECD; stažena 17. 10. 2026):
-  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/GBR+IRL+FRA......A?startPeriod=2000&endPeriod=2024
-- **Mezinárodní měnový fond 2024:** United Kingdom: 2024 Article IV Consultation, Staff Report, IMF Country Report
-  No. 24/203, červenec 2024, https://www.imf.org/-/media/files/publications/cr/2024/english/1gbrea2024001.pdf
-- **Resolution Foundation 2023:** Resolution Foundation a Centre for Economic Performance, Ending Stagnation: A New
-  Economic Strategy for Britain, prosinec 2023,
-  https://economy2030.resolutionfoundation.org/wp-content/uploads/2023/12/Ending-stagnation-final-report.pdf
-- **Institute for Fiscal Studies 2024:** Cribb, Waters, Seven key facts about UK living standards, IFS Report R315,
-  květen 2024, https://ifs.org.uk/sites/default/files/2024-06/New-Final-Seven-Key-Facts-living-standards-IFS-Report.pdf
-- **Institute for Fiscal Studies 2017:** Cribb, Public sector pay: still time for restraint?, Briefing Note BN216,
-  září 2017, https://ifs.org.uk/sites/default/files/output_url_files/BN216.pdf
-- **Low Pay Commission 2024:** The National Minimum Wage in 2024 and forecast National Living Wage in 2025, březen
-  2024, https://assets.publishing.service.gov.uk/media/66043e0991a320001a82b0e7/The_National_Minimum_Wage_in_2024.pdf
-- **Úřad pro rozpočtovou odpovědnost 2026:** Office for Budget Responsibility, Brexit analysis (aktualizováno
-  20. 7. 2026), https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/
-- **Bloom a kol. 2019:** Bloom, Bunn, Chen, Mizen, Smietanka, Thwaites, The Impact of Brexit on UK Firms, NBER Working
-  Paper 26218, září 2019, https://www.nber.org/papers/w26218
-- **Adam, Phillips a Roantree 2017:** 35 Years of Reforms: A Panel Analysis of the Incidence of, and Employee and
-  Employer Responses to, Social Security Contributions in the UK, NBER Working Paper 23336, duben 2017 (časopisecky
-  Journal of Public Economics 2019), https://www.nber.org/papers/w23336
-- **Dustmann, Frattini a Preston 2013:** The Effect of Immigration along the Distribution of Wages, Review of Economic
-  Studies 80(1), https://ideas.repec.org/a/oup/restud/v80y2013i1p145-173.html
-- **Elsner 2013:** Emigration and wages: The EU enlargement experiment, Journal of International Economics 91(1),
-  https://ideas.repec.org/a/eee/inecon/v91y2013i1p154-163.html
-- **legislation.gov.uk 2010:** Finance Act 2010, vysvětlivky k oddílu 1,
-  https://www.legislation.gov.uk/ukpga/2010/13/section/1/notes/data.htm
-- **HM Treasury 2018:** Income Tax: Personal Allowance and basic rate limit from 2019-20, 29. 10. 2018,
-  https://www.gov.uk/government/publications/income-tax-personal-allowance-and-basic-rate-limit-from-2019-to-2020/income-tax-personal-allowance-and-basic-rate-limit-from-2019-20
-- **HM Treasury 2021:** Income Tax Personal Allowance and the basic rate limit from 6 April 2022 to 5 April 2026,
-  3. 3. 2021,
-  https://www.gov.uk/government/publications/income-tax-personal-allowance-and-the-basic-rate-limit-from-6-april-2022-to-5-april-2026/income-tax-personal-allowance-and-the-basic-rate-limit-from-6-april-2022-to-5-april-2026
-- **HM Treasury 2024:** Reduction to the main rates of primary Class 1 and Class 4 National Insurance contributions,
-  7. 3. 2024,
-  https://www.gov.uk/government/publications/changes-to-national-insurance-contributions-from-6-april-2024/reduction-to-the-main-rates-of-primary-class-1-and-class-4-national-insurance-contributions
-- **Rešerše ekonomů projektu:** `ekonomove/GB.md` (17. 10. 2026).
-
-
-# Irsko: proč má v kolech takové hodnoty (průměrná čistá mzda 2024)
-
-> Podklad pro výklad hodnot kol v podkladu pro scénář regionu (zkouška návrhu skillu pro regiony), zpracováno
-> 17. 10. 2026. Výkon vůči střední zemi ligy, jeho růst a zátěž daní a odvodů jsou z kontextu projektu
-> (`data/kontext_kroky.json`). Irský výkon v něm není měřen celým HDP, ale upraveným hrubým národním důchodem (GNI*),
-> který irský statistický úřad počítá bez účetních vlivů nadnárodních firem (přesuny duševního vlastnictví, odpisy,
-> přesídlené firmy); projekt HDP v kupní síle násobí poměrem tohoto důchodu k HDP. Střední zemí ligy bylo v roce 1996
-> Norsko (jen pevninská ekonomika bez ropy) a od roku 2000 je to v datech každý rok Španělsko. Kroky vlád a institucí
-> s doklady jsou v `data/kroky_zemi/IE.json`. „Můj přepočet“ znamená výpočet z dat uvedeného zdroje, „můj úsudek“
-> výklad, který zdroj sám neříká.
-
-## 1. Proč takový výkon na začátku (1996)
-
-Irský pracující vytvořil v roce 1996 asi 101 % toho, co pracující ve střední zemi ligy, měřeno očištěným důchodem
-(kontext projektu podle Eurostatu a irského statistického úřadu), a asi 104 % průměru dnešní EU (Eurostat a irský
-statistický úřad, můj přepočet). Irsko bylo dlouho chudší zemí na okraji Evropy: ještě v roce 1986 mělo nezaměstnanost
-16 % a čistý odchod lidí do ciziny se blížil 1 % obyvatel (Honohan a Walsh 2002). Dohánění začalo až v polovině
-80. let a podle Honohana a Walshe ho předtím brzdila nevhodná rozpočtová a možná i měnová politika, takže se pak
-„stlačilo“ do krátkého období (posoudili Honohan a Walsh 2002). K roku 1996 už zemi zvedaly zahraniční investice
-lákané granty a daňovými výhodami pro zisky, bezcelní přístup na evropský trh od vstupu do Evropského hospodářského
-společenství v roce 1973 a vzdělanost rostoucí od zavedení bezplatného středního školství v roce 1967 (Honohan
-a Walsh 2002). Neočištěné HDP by irský start nadsadilo: v roce 1996 činil očištěný důchod 92 % HDP (irský statistický
-úřad), takže z celého HDP by irský pracující vycházel asi na 110 % střední země (můj přepočet).
-
-## 2. Proč takový růst výkonu (1996–2024)
-
-Výkon irského pracujícího vůči střední zemi ligy rostl ve dvou vlnách a mezi nimi ztrácel: z 101,1 % v roce 1996
-vystoupal na 116,3 % v roce 2004, do roku 2008 spadl na 104,9 % a do roku 2013 na 103,8 %, pak se zvedl na 109,2 %
-v roce 2019 a na 122,9 % v roce 2024. V průměru let 2020–2024 byl poměr ke střední zemi 1,173násobkem poměru z roku
-1996 (kontext projektu). Nejvíc Irsko dohnalo v letech 1996–2004 a 2019–2024, ztrácelo v letech 2004–2013.
-
-**1996–2004: keltský tygr.** Rychlý růst táhly zahraniční investice lákané konkurenceschopným a vstřícným
-podnikatelským prostředím: vývoz přesáhl 100 % HDP a přesunul se k výrobkům s vysokou přidanou hodnotou
-(informační technologie, služby, léčiva) (posoudil Mezinárodní měnový fond 2015). Od roku 2003 platí pro zisky všech
-firem jednotná daň 12,5 %, která nahradila zvýhodněných 10 % pro výrobu (Honohan a Walsh 2002), a umístění ziskových
-nadnárodních firem je podle irské centrální banky zvlášť citlivé na nízké zdanění, podnikatelské prostředí
-a dostupnost kvalifikovaných lidí (posoudila Central Bank of Ireland 2019). Fondy EU pomohly v kritické chvíli:
-na vrcholu v roce 1993 přinášely přes 3 % hrubého národního produktu a vláda díky nim mohla začít stavět odloženou
-infrastrukturu bez ohrožení křehce se zotavujícího rozpočtu (posoudili Honohan a Walsh 2002). Dohody sociálních partnerů vyměňovaly
-umírněný růst mezd za snižování daně z příjmu, což podle Honohana a Walshe zmírnilo růst mzdových nákladů a zlepšilo
-konkurenceschopnost (posoudili Honohan a Walsh 2002). Titíž autoři ale upozorňují, že hlavním rysem irského dohánění
-v příjmu na obyvatele byl rostoucí podíl lidí v práci a že po správném výkladu dat nešlo o „zázrak produktivity“
-(posoudili Honohan a Walsh 2002); počet pracujících vzrostl z 1,51 milionu v roce 1996 na 1,95 milionu v roce 2004
-(Eurostat). Výkon na pracujícího přesto i po očištění rostl rychleji než v EU, ze 104 % průměru EU v roce 1996 na
-116 % v roce 2004 (Eurostat a irský statistický úřad, můj přepočet), jen mnohem méně, než ukazuje neočištěné HDP.
-
-**2004–2013: bublina a krize.** Po vstupu do eurozóny v roce 1999 úrokové sazby výrazně klesly a přišel rozmach
-domácí poptávky, úvěrů a cen nemovitostí; úvěry soukromému sektoru rostly v letech 2002–2007 o 20 % ročně, rostoucí
-mzdy a ceny zhoršily konkurenceschopnost a celková efektivita výroby začala klesat (posoudil Mezinárodní měnový fond
-2015). Počet pracujících dál rostl, na 2,22 milionu v roce 2007 (Eurostat), i díky pracovníkům z nových členských zemí
-EU, kterých po roce 2004 odešlo do Británie a Irska asi 1,2 milionu (Elsner 2013); že nová místa byla hlavně ve
-stavebnictví a méně produktivních službách, je můj úsudek opřený o to, že po krizi se investice propadly „hlavně ve
-stavebnictví“ (Mezinárodní měnový fond 2015). Bankovní krize a splasknutí bubliny snížily v letech 2008–2010 reálný
-hrubý národní produkt o 9½ % a investice o 41 % (Mezinárodní měnový fond 2015), počet pracujících klesl na 1,92 milionu
-v roce 2010 (Eurostat) a nezaměstnanost vystoupala na 15,9 % v roce 2011 (Central Bank of Ireland 2020). Vláda v září
-2008 plošně zaručila závazky šesti bank, což podle Mezinárodního měnového fondu prohloubilo provázanost bank a státu,
-a v letech 2010–2013 prošlo Irsko ozdravným programem EU a Mezinárodního měnového fondu s balíkem 85 miliard eur a opatřeními
-za 15 miliard eur (9 % HDP roku 2010), ze dvou třetin ve výdajích (Mezinárodní měnový fond 2015). Program stabilizoval
-banky, domácí poptávka ale byla slabší, než se čekalo, a nezaměstnanost zůstala vysoká (posoudil Mezinárodní měnový
-fond 2015). Vůči průměru EU spadl irský výkon na pracujícího ze 116 % v roce 2004 na 106 % v roce 2008 a v roce 2013
-byl na 107 % (Eurostat a irský statistický úřad, můj přepočet), takže ztráta byla irská, ne jen pohyb střední země.
-
-**2013–2024: návrat a nadnárodní obory.** Nezaměstnanost klesla z vrcholu 15,9 % v roce 2011 na 4,9 % ve
-3. čtvrtletí 2019 (Central Bank of Ireland 2020) a výkon vůči střední zemi se zvedl na 109,2 % (2019). Nejprudší nárůst přišel po roce
-2019: očištěný důchod vzrostl mezi lety 2019 a 2024 v běžných cenách o 57 %, kdežto počet pracujících o 18 % (irský
-statistický úřad a Eurostat, můj přepočet), a vůči průměru EU se irský výkon na pracujícího zvedl ze 107 na 120 %
-(můj přepočet). Komise k tomu píše, že vysokou celostátní produktivitu silně ovlivňuje několik nadnárodních firem ve
-vysoce produktivních oborech, zatímco domácí firmy zaostávají za nimi i za firmami v EU (posoudila Evropská komise
-2026), a že daň ze zisku firem se od roku 2021 víc než zdvojnásobila díky výjimečným ziskům malého počtu zahraničních
-firem (Evropská komise 2026). Očištěný důchod vylučuje zisky, které firmy posílají do ciziny, obsahuje ale mzdy
-vyplácené nadnárodními firmami a daně z jejich zisků (můj úsudek z definice), takže i po očištění je část irského
-nárůstu po roce 2019 spjatá s nadnárodními firmami; jak velká, příčina není doložena.
-
-**Měření.** Bez očištění by čísla byla úplně jiná: nadnárodní firmy v roce 2015 přesunuly do Irska celé rozvahy
-s duševním vlastnictvím, HDP skokem vzrostlo o 26 % a kapitálová zásoba o 300 miliard eur (irský statistický úřad
-2016); proto úřad od července 2017 zveřejňuje očištěný důchod (irský statistický úřad 2017). Ten činil v roce 2024 jen
-57 % HDP (irský statistický úřad, můj přepočet), takže z celého HDP by irský pracující v roce 2024 vycházel asi na
-215 % střední země místo 123 % (můj přepočet). Rok 2020 je zvýšený pandemií (115,8 %); bez něj by násobek růstu vyšel
-1,18 místo 1,173 (můj přepočet).
+**Srovnání s Maďarskem.** Do roku 2008 rostl výkon obou zemí vůči střední zemi ligy podobně (Polsko o 14,2 bodu, Maďarsko
+o 16,6 bodu) a celý rozdíl vznikl až po roce 2008, kdy Polsko přidalo 22,4 bodu a Maďarsko 4,0 bodu [1]. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* to platí jen v kupní síle; ve stálých cenách rostl polský výkon na pracujícího rychleji už v letech 1996–2008, asi o 59 % proti 46 % v Maďarsku, a po roce 2008 se rozdíl výrazně prohloubil (čísla za roky 2008–2024 jsou v další větě). Ve stálých cenách
+vzrostl výkon na pracujícího v letech 2008–2024 v Polsku asi o 53 %, v Maďarsku asi o 12 % (Eurostat 2026 [2, 3]; můj
+přepočet). Proč, rozebírá výklad Maďarska; z polské strany jsou doložené hlavně odolnost v krizi 2009 (posoudil Mezinárodní
+měnový fond 2010 [13]) a vyšší domácí přidaná hodnota vývozu (Maďarská národní banka 2024 [29]).
 
 ## 3. Proč taková zátěž daní a odvodů (2024)
 
-Z toho, co firma za průměrně placeného svobodného zaměstnance bez dětí zaplatí, připadne v Irsku státu na daních
-a odvodech 34,2 %, druhý nejnižší podíl v lize po Británii; ve střední zemi ligy je to 41,2 % (kontext a list ukazatele
-projektu, výpočet podle irských pravidel 2024). Řada OECD při průměrné mzdě OECD ukazuje 33,3 % v roce 2024 (OECD,
-databáze Taxing Wages); rozdíl je v tom, při jaké výši mzdy se počítá.
+Podle měření projektu odvede stát u svobodného zaměstnance s průměrnou polskou mzdou 39,6 % toho, co za něj firma celkem
+zaplatí [1]. Systém stojí hlavně na sociálním a zdravotním pojištění a daň z příjmu je u průměrné mzdy malá. Zaměstnanec
+platí 9,76 % hrubé mzdy na důchodové, 1,5 % na invalidní a 2,45 % na nemocenské pojištění, dohromady 13,71 %, a k tomu
+9 % na zdravotní pojištění ze mzdy po odečtení sociálního pojištění (výpočet projektu podle pravidel roku 2024 z modelu
+EUROMOD [24]); od roku 2022 si zdravotní pojištění nesmí odečíst od daně (Evropská komise 2024 [10]). Daň z příjmu má od
+roku 2022 nezdanitelnou částku 30 000 zlotých, sazbu 12 % do 120 000 zlotých a 32 % nad touto hranicí (Evropská komise
+2024 [10]), takže u průměrné mzdy dělá jen asi 6 % hrubé mzdy (6,25 % podle OECD v roce 2024 [21]). Zaměstnavatel
+k hrubé mzdě přidává odvody asi 16,4 % (OECD 2026 [21]).
 
-**Jak je systém postavený.** Zátěž tvoří daň z příjmu spolu s univerzálním sociálním poplatkem (USC) a pojistné
-zaměstnance a zaměstnavatele. Při průměrné mzdě OECD činila v roce 2024 daň z příjmu včetně poplatku 21,9 % hrubé
-mzdy, pojistné zaměstnance 4,0 % a pojistné zaměstnavatele 11,1 % hrubé mzdy (OECD, databáze Taxing Wages). Komise
-shrnuje, že Irsko má velmi nízkou celkovou zátěž práce, ale silně progresivní zdanění: daně z práce tvoří méně než
-polovinu průměru EU v poměru k HDP a rozdíl zátěže mezi vysokou a nízkou mzdou patří k největším v EU (posoudila
-Evropská komise 2026).
+**Vývoj od roku 2000.** Řada OECD v kontextu, počítaná při průměrné mzdě podle OECD, ukazuje 38,2 % v roce 2000, 34,7 %
+v roce 2008, 35,6 % v letech 2013 a 2019 a 34,7 % v roce 2024 [1]; podrobnější roky jsou z téže databáze [21].
+- **2007–2008:** vláda snížila odvod na invalidní pojištění (a zavedla slevu na dani na děti, která se svobodného netýká);
+  podle mikrosimulace celý balík snížil průměrnou zátěž nákladů práce ze 41,6 na 35,7 % (posoudili Morawski a Myck 2010
+  [20]). V řadě OECD klesla zátěž svobodného s průměrnou mzdou z 38,9 % (2006) na 34,7 % (2008), protože odvody zaměstnance
+  klesly z 22,2 na 17,8 % a zaměstnavatele z 16,8 na 14,8 % hrubé mzdy [21].
+- **2012:** odvody zaměstnavatele stouply o 2 body na 16,8 % hrubé mzdy a zátěž na 35,5 % [21]; o jaký zákon šlo, jsem
+  v otevřeném zdroji neověřil.
+- **2019:** vláda v říjnu snížila sazbu daně z příjmu z 18 na 17 % (Kancelář předsedy vlády Polska 2023 [22]) a průměrná daň
+  u průměrné mzdy klesla ze 7,4 % hrubé mzdy (2018) na 6,4 % (2020), zátěž z 35,8 na 34,9 % [21].
+- **2022, „Polský řád“:** nezdanitelná částka 30 000 zlotých, sazba 12 %, hranice vyšší sazby 120 000 zlotých a zrušení
+  odpočtu zdravotního pojištění; Evropská komise odhaduje, že reforma snížila zátěž většině zaměstnanců, nejvíc u nižších
+  mezd, asi o 3 body u 67 % průměrné mzdy, kdežto samostatně výdělečným ji zvýšila (posoudila Evropská komise 2024 [10]),
+  a polská centrální banka čekala, že zátěž klesne lidem s nižšími příjmy a stoupne lépe situovaným (posoudila Národní
+  banka Polska 2022 [23]). V řadě OECD klesla zátěž průměrné mzdy z 34,9 % (2021) na 33,8 % (2022) [21].
+- **2023–2024:** zátěž se vrátila na 34,7 %, protože průměrná daň z příjmu stoupla z 5,1 na 6,2 % hrubé mzdy [21]. OECD
+  uvádí, že náklady reforem z let 2019 a 2022 (asi 0,6 % HDP) zčásti vyrovnalo to, že se daňová pásma nezvyšují s inflací
+  (posoudila OECD 2025 [9]); s rychle rostoucími mzdami tak větší část výplaty padá nad nezdanitelnou částku (můj úsudek
+  o mechanismu).
 
-**Jak se zátěž měnila od roku 2000.** Podle řady OECD klesla z 35,3 % v roce 2000 na 28,2 % v roce 2008, do roku 2013
-vystoupala na 33,9 % a od té doby se drží kolem 33 % (32,9 % v roce 2019, 33,3 % v roce 2024) (OECD, databáze Taxing
-Wages). Pokles do roku 2008 byl celý v dani z příjmu (z 24,1 na 17,1 % hrubé mzdy, OECD): vlády v rámci dohod
-sociálních partnerů slibovaly snižování daní výměnou za umírněné mzdové požadavky a zvyšovaly hranice, od kterých se
-daň platí (posoudili Honohan a Walsh 2002). V krizi se trend obrátil: od 1. 1. 2011 nahradil dřívější příjmovou
-a zdravotní dávku univerzální sociální poplatek z téměř všech příjmů (irská daňová správa Revenue), daň z příjmu včetně dávek
-a poplatku stoupla ze 17,1 % (2008) na 22,7 % hrubé mzdy (2013) a pojistné zaměstnance ze 3,4 na 4,0 % (OECD).
-Průměrná mzda podle OECD se přitom skoro nezměnila (42 783 eur v roce 2008, 43 046 eur v roce 2013), takže nárůst
-zátěže nevyvolaly vyšší mzdy, ale změny pravidel (můj úsudek z dat OECD); podíl jednotlivých opatření ale v otevřených
-zdrojích nikdo neoddělil (jen časová souvislost). Mírný pokles po roce 2014 (daň z příjmu včetně poplatku z 22,9 % na
-21,6 % hrubé mzdy v roce 2019, OECD) jsem konkrétním opatřením v otevřených zdrojích nepřiřadil.
-
-**Test protipříkladem.** Zátěž je nízká hlavně proto, že je nízké pojistné, ne proto, že by byla nízká daň z příjmu.
-Kdyby Irsko mělo odvody zaměstnavatele jako Francie (36,3 % hrubé mzdy místo 11,1 %), vyšla by zátěž při průměrné mzdě
-OECD asi 45,6 % místo 33,3 % (můj přepočet ze složek OECD 2024); protipříklad tedy příčinu potvrzuje. Daň z příjmu
-včetně poplatku je naopak vyšší než v Británii nebo ve Francii (21,9 % hrubé mzdy proti 16,1 % a 16,6 %, OECD), takže
-„nízké daně“ jako vysvětlení protipříkladem neprojdou. Kdyby nebyly krizové daně, byla by zátěž blíž úrovni roku 2008
-(28,2 %); celý nárůst o 5,7 bodu do roku 2013 ale nejde přičíst jen poplatku, protože se měnilo i pojistné. Kdo
-odvody formálně platí, se v Irsku ve sledovaném období neměnilo.
+**Test protipříkladem.**
+- *„Zátěž je nižší než v Maďarsku, protože daň z příjmu je u průměrné mzdy malá.“* Kdyby Polsko mělo u průměrné mzdy daň
+  z příjmu jako Maďarsko, tedy 15 % hrubé mzdy místo asi 6 %, byla by zátěž podle sazeb OECD asi 42,3 % místo 34,7 % (můj
+  přepočet ze sazeb OECD [21]). Příčina obstojí: nízká daň díky vysoké nezdanitelné částce je hlavní důvod, proč je polská
+  zátěž nižší než maďarská, i když polské odvody zaměstnance i zaměstnavatele jsou vyšší: zaměstnanec platí 13,71 % hrubé
+  mzdy na sociální a asi 7,8 % na zdravotní pojištění proti 18,5 % v Maďarsku, zaměstnavatel asi 16,4 % proti 13 % [21, 24].
+- *„Zátěž klesla od roku 2000, protože se snížil invalidní odvod.“* Bez snížení v letech 2007–2008 by byla zátěž asi o 4 body
+  vyšší, jak ukazuje skok v řadě OECD mezi lety 2006 a 2008 [21]; příčina obstojí.
+- *„Polský řád snížil zátěž.“* U průměrné mzdy je čistý rozdíl v roce 2024 malý (34,9 % v roce 2021, 34,7 % v roce 2024
+  [21]) a o kolik by zátěž byla vyšší bez reformy, nikdo nevyčíslil; jako příčina výše zátěže v roce 2024 není doložena.
+- *Měření, ne příčina:* projekt naměřil 39,6 %, OECD 34,7 %. Rozdíl dělají hlavně dvakrát 3,65 % hrubé mzdy důchodového pojištění (u zaměstnance
+  i u zaměstnavatele), které OECD v polské tabulce vede jako dřívější podíl soukromých penzijních fondů; u zaměstnance počítá 10,06 % místo zákonných 13,71 % (list ukazatele
+  projektu [1]). Jediné číslo navíc nevystihuje všechny pracující: u průměrné mzdy je zátěž přes 40 % u pracovní smlouvy,
+  21–34 % u samostatně výdělečných, 15–37 % u příkazních smluv (umowa zlecenie) a 6 % u smluv o dílo; samostatně výdělečných
+  bez zaměstnanců přibylo za deset let o 42 % a tvoří asi 14 % zaměstnanosti (Evropská komise 2026 [12]). Komise uvádí
+  „přes 40 %“ podle svého modelu EUROMOD a proč se liší od měření projektu, v textu nevysvětluje [12]. Pro měřenou zátěž
+  zaměstnance se smlouvou jsou to poznámky k měření (můj úsudek).
 
 ## 4. Další faktory země
 
-**Dvě ekonomiky vedle sebe.** Zahraniční nadnárodní firmy zaměstnávají téměř čtvrtinu pracovníků irského
-podnikatelského sektoru (průměr EU 15 %) a vytvářejí přes polovinu jeho přidané hodnoty (Central Bank of Ireland
-2019); v listopadu 2024 pracovalo v zahraničních firmách 618 700 zaměstnanců a v irských 1 877 800 (irský statistický
-úřad 2025). Medián týdenního výdělku byl v roce 2023 906,74 eura ve firmách nadnárodních skupin mimo EU, 789,07 eura
-ve firmách skupin z EU a 654,41 eura v irských firmách (irský statistický úřad 2025). Hodinové náklady práce činily
-v roce 2024 42,5 eura proti 33,5 eura v EU, což irská Národní rada pro konkurenceschopnost a produktivitu přičítá
-vysoce placeným oborům, napjatému trhu práce a zvyšování minimální mzdy (posoudila Národní rada pro
-konkurenceschopnost a produktivitu 2025). Průměrná mzda tak popisuje směs dvou ekonomik, ne typického zaměstnance
+**Minimální mzda a veřejné platy.** Vláda zvýšila minimální mzdu o 16 % v lednu 2023 a asi o 20 % v roce 2024 a podle OECD
+to přispělo k celkovému růstu mezd (posoudila OECD 2025 [9]); mezi lednem 2022 a červencem 2025 vzrostla o 55 %, po
+odečtení inflace asi o 21 % (Evropská komise 2026 [12]). Minimální mzda tvoří vyšší podíl mediánu než ve většině zemí OECD
+a platy ve veřejném sektoru vzrostly asi o 20 %, učitelů o 30 % (OECD 2025 [9]). Nízko placených zaměstnanců je přesto 19 %
+proti 14,7 % v EU (Evropská komise 2026 [12]). Studie z jiných zemí ukazují, že minimální mzda zvedá hlavně spodek
+výdělků a průměr jen mírně (rešerše studií projektu [30]), takže pro průměrnou mzdu roku 2024 jde spíš o menší přídavek
 (můj úsudek).
 
-**Minimální mzda.** Mezi lednem 2022 a lednem 2025 vzrostla o 28 % (reálně o 10 %), rychleji než ostatní mzdy
-(posoudila Evropská komise 2026), od 1. 1. 2025 na 13,50 eura za hodinu (Evropská komise 2025).
+**Slabé kolektivní vyjednávání.** Kolektivní smlouvy kryjí 13,4 % zaměstnanců a odvětvová smlouva nebyla uzavřena deset let
+(Evropská komise 2025 [11]); Komise zároveň píše, že mzdy v minulé dekádě rostly pomaleji, než by odpovídalo obvyklým
+makroekonomickým ukazatelům (posoudila Evropská komise 2025 [11]). Komise obě zjištění výslovně nespojuje; že slabé
+vyjednávání brzdilo přenos produktivity do mezd, je můj úsudek.
 
-**Ceny a kupní síla.** Cenová hladina skutečné individuální spotřeby byla v Irsku v roce 2024 141 % průměru EU
-a v roce 2000 116 % (Eurostat). Irská rada pro konkurenceschopnost k tomu píše, že Irsko má poměrně vysoké mzdy, ale
-vyvažují je vysoké ceny (Národní rada pro konkurenceschopnost a produktivitu 2025); po přepočtu na kupní sílu se proto
-irská mzda zmenší víc než mzdy v levnějších zemích.
+**Odchod lidí do ciziny a pozdější příliv Ukrajinců.** Počet Poláků dočasně žijících v cizině vzrostl z 1,0 milionu na
+konci roku 2004 na 2,27 milionu na konci roku 2007 (GUS 2010 [19]) a v roce 2024 žilo mimo Polsko 4,57 milionu lidí
+narozených v Polsku, 11,9 % obyvatel (OSN 2024 [25]). Odchod mírně zvýšil mzdy středně a vysoce kvalifikovaných, kteří
+odcházeli nejvíc (změřeno, Dustmann, Frattini a Rosso 2015, rozdíly mezi regiony [18]); podle rešerše studií projektu
+z plného textu odpovídal 1 procentní bod odešlých z populace krátkodobě asi 1 % vyšším průměrným reálným mzdám v letech
+1998–2007 [30].
+Po dvou desetiletích odchodů se Polsko stalo zemí, kam lidé přicházejí: počet registrovaných zahraničních pracovníků
+vzrostl od roku 2015 šestkrát na 1 milion v červenci 2024 a asi milion Ukrajinců, kteří přišli po roce 2022, zvýšil
+nabídku práce o 2 % a zmírnil tlak na růst mezd (posoudila OECD 2025 [9]); počet lidí narozených v cizině stoupl z 0,74
+milionu (2020) na 1,74 milionu (2024) (OSN 2024 [25]).
 
-**Kolektivní vyjednávání.** Kolektivními smlouvami bylo pokryto 34 % zaměstnanců (2017, poslední údaj), o 19 bodů
-méně než v roce 2003, a v odborech bylo v roce 2024 22,2 % zaměstnanců; slabé organizace podle Komise oslabují
-vyjednávání o spravedlivých mzdách (posoudila Evropská komise 2026). Vliv na průměrnou mzdu nikdo nevyčíslil.
-
-**Přistěhovalci.** Po otevření trhu práce v roce 2004 přicházeli pracovníci z nových členských zemí EU (do Británie
-a Irska dohromady asi 1,2 milionu, Elsner 2013); účinek na irské mzdy v otevřených zdrojích změřen není.
+**Ceny a kupní síla.** Cenová hladina skutečné individuální spotřeby byla v roce 2024 v Polsku 69,9 % průměru EU a v Maďarsku
+68,9 % (Eurostat 2026 [27]). Nízké ceny zvedají polskou mzdu v kupní síle proti mzdě v eurech, rozdíl proti Maďarsku ale
+nevysvětlují, protože jsou skoro stejné (můj úsudek z těchto dat).
 
 ## 5. Co říkají ekonomové
 
-Instituce vysvětlují vysokou irskou mzdu hlavně zahraničními nadnárodními firmami ve vysoce placených oborech:
-národní rada pro konkurenceschopnost píše, že vysoké irské náklady práce odrážejí „vysoce placená odvětví, jako jsou
-technologie, farmacie a mezinárodně obchodované služby“ (v originále „high-wage sectors such as technology,
-pharmaceuticals, and internationally traded services“, Národní rada pro konkurenceschopnost a produktivitu 2025).
-Evropská komise a Mezinárodní měnový fond zároveň zdůrazňují, že vysoká celostátní produktivita je dílem několika
-nadnárodních firem, zatímco domácí firmy zaostávají, takže průměr popisuje dvě ekonomiky vedle sebe (`ekonomove/IE.md`).
+OECD (2025) píše, že životní úroveň Polska vzrostla z asi poloviny úrovně zemí OECD na 80 % v roce 2021 a že tento růst
+„z velké části táhl růst produktivity“ [28]; Mezinárodní měnový fond (2026) dodává, že produktivita roste „kolem 3 %“, ale
+zpomalí, protože „efekty dohánění z napodobování a přenosu technologií se vyčerpávají“ [28]. Evropská komise (2025) upozorňuje,
+že mzdy v minulé dekádě rostly pomaleji, než by odpovídalo „obvyklým makroekonomickým ukazatelům“ (všechny citace podle
+rešerše ekonomů projektu [28]).
 
 ## 6. Zdroje
 
-- **Kontext projektu:** `data/kontext_kroky.json` (výkon na pracujícího vůči střední zemi ligy po letech, násobek
-  růstu, zátěž 2024, řada OECD); list ukazatele `LIST_UKAZATELE.md` (medián ligy 41,2 %); tabulka kol
-  `KOLA_TABULKA.md` (pořadí v kole daní a odvodů).
-- **Eurostat (můj přepočet):** HDP v kupní síle, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
-  zaměstnanost, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995
-  (staženo projektem 17. 10. 2026); cenová hladina skutečné individuální spotřeby, `prc_ppp_ind_1` (data projektu
-  `data/raw_krok1/prc_ppp_ind_1_A01.json`).
-- **Irský statistický úřad, očištěný důchod a HDP:** tabulka NA001 (zveřejněno 2. 7. 2026), https://data.cso.ie/table/NA001
-  (data projektu `data/raw_faktory/doplnena_data.json`).
-- **Irský statistický úřad 2016:** National Income and Expenditure 2016, FAQs,
-  https://www.cso.ie/en/media/csoie/methods/nationalincomeandexpenditureannualresults/NIE_2016_FAQS.pdf
-- **Irský statistický úřad 2017:** De-globalized GDP by using modified GNI (pro poradní skupinu expertů OSN, prosinec
-  2017), https://unstats.un.org/unsd/nationalaccount/aeg/2017/M11_3_4_Deglobalized_GDP_IP.pdf
-- **Irský statistický úřad 2025:** Employment and Earnings Insights by Nationality of Enterprise Ownership 2023–2024,
-  6. 2. 2025, https://www.cso.ie/en/releasesandpublications/fp/fp-eino/employmentandearningsinsightsbynationalityofenterpriseownership2023-2024/
-- **OECD, databáze Taxing Wages** (svobodný bez dětí, průměrná mzda OECD; stažena 17. 10. 2026):
-  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/GBR+IRL+FRA......A?startPeriod=2000&endPeriod=2024
-- **Honohan a Walsh 2002:** Catching Up with the Leaders: The Irish Hare, Brookings Papers on Economic Activity 1:2002,
-  https://www.brookings.edu/wp-content/uploads/2002/01/2002a_bpea_honohan.pdf
-- **Mezinárodní měnový fond 2015:** Ireland: Ex Post Evaluation of Exceptional Access Under the 2010 Extended
-  Arrangement, IMF Country Report No. 15/20, leden 2015, https://www.imf.org/external/pubs/ft/scr/2015/cr1520.pdf
-- **Central Bank of Ireland 2019:** Emter, McQuade, Mehigan, Box E MNEs and Ireland: A Firm Level Analysis, Quarterly
-  Bulletin 3/2019, https://www.centralbank.ie/docs/default-source/publications/quarterly-bulletins/boxes/box-e-mnes-and-ireland.pdf
-- **Central Bank of Ireland 2020:** Keenan, Box C Sectoral Wage Growth in Ireland, Quarterly Bulletin 1/2020,
-  https://www.centralbank.ie/docs/default-source/publications/quarterly-bulletins/boxes/qb1-2020/box-c-sectoral-wage-growth-in-ireland.pdf
-- **ESRI 2004:** Boyle, McElligott, O'Leary, Public-Private Wage Differentials in Ireland, 1994-2001, Quarterly
-  Economic Commentary, léto 2004, https://www.esri.ie/system/files/media/file-uploads/2015-07/QEC2004Sum_SA_Boyle.pdf
-  (dohoda Partnership 2000 v souboru kroků)
-- **Evropská komise 2026:** 2026 Country Report – Ireland, SWD(2026) 207 final, 3. 6. 2026,
-  https://economy-finance.ec.europa.eu/document/download/2e6416cf-583a-4518-9a54-61bcaf3a4a09_en?filename=IE_SWD_2026_207_1_EN_autre_document_travail_service_part1_v4.pdf
-- **Evropská komise 2025:** 2025 Country Report – Ireland, SWD(2025) 207 final,
-  https://economy-finance.ec.europa.eu/document/download/7ec5fe18-b881-4140-b86a-7b22cb7a8580_en?filename=IE_CR_SWD_2025_207_1_EN_autre_document_travail_service_part1_v3.pdf
-- **Národní rada pro konkurenceschopnost a produktivitu 2025:** National Competitiveness and Productivity Council,
-  Ireland's Competitiveness Challenge 2025, https://competitiveness.ie/media/3y4kcpus/irelands-competitiveness-challenge-2025.pdf
-- **Revenue:** irská daňová správa, Notes for Guidance – Taxes Consolidation Act 1997 – Part 18D Universal Social
-  Charge, https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf
-- **Elsner 2013:** Emigration and wages: The EU enlargement experiment, Journal of International Economics 91(1),
-  https://ideas.repec.org/a/eee/inecon/v91y2013i1p154-163.html
-- **Rešerše ekonomů projektu:** `ekonomove/IE.md` (17. 10. 2026).
+1. Projekt Ekonomické hry (2026): data a listy této složky: [`data/kontext_kroky.json`](../data/kontext_kroky.json) (výkon na
+   pracujícího vůči střední zemi ligy z Eurostatu, zátěž 2024, řada OECD, čistá mzda), [`KOLA_TABULKA.md`](../KOLA_TABULKA.md)
+   a [`LIST_UKAZATELE.md`](../LIST_UKAZATELE.md) (proč se polská zátěž projektu liší od OECD), 17. 10. 2026.
+2. Eurostat (2026): HDP ve stálých cenách, meziroční změna (nama_10_gdp), staženo 17. 10. 2026:
+   https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&unit=CLV_PCH_PRE&na_item=B1GQ&geo=PL&geo=HU&sinceTimePeriod=1996
+   a všechny země v roce 2009:
+   https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&unit=CLV_PCH_PRE&na_item=B1GQ&time=2009
+3. Eurostat (2026): pracující podle národních účtů (nama_10_pe, EMP_DC), staženo 17. 10. 2026:
+   https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&geo=PL&geo=HU&sinceTimePeriod=1996
+4. Eurostat (2026): saldo a dluh veřejných financí (gov_10dd_edpt1), staženo 17. 10. 2026:
+   https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&lang=EN&unit=PC_GDP&sector=S13&na_item=B9&na_item=GD&geo=PL&geo=HU&sinceTimePeriod=2000
+5. Světová banka (2026): World Development Indicators, odhady Mezinárodní organizace práce a data o investicích, staženo
+   17. 10. 2026: zaměstnanost v zemědělství
+   https://api.worldbank.org/v2/country/POL;HUN;CZE;SVK/indicator/SL.AGR.EMPL.ZS?format=json&date=1991:2024&per_page=500 ;
+   nezaměstnanost
+   https://api.worldbank.org/v2/country/POL;HUN/indicator/SL.UEM.TOTL.ZS?format=json&date=1991:2024&per_page=500 ;
+   příliv přímých zahraničních investic v % HDP
+   https://api.worldbank.org/v2/country/POL;HUN/indicator/BX.KLT.DINV.WD.GD.ZS?format=json&date=1991:1996&per_page=100
+6. Feenstra, R. C., Inklaar, R., Timmer, M. P.: Penn World Table 11.0 (Groningen Growth and Development Centre), reálné HDP
+   1990–1996; staženo projektem 17. 10. 2026 (`data/raw_faktory/pwt110.json`) z https://dataverse.nl/api/access/datafile/554030
+7. Belka, M. (2019): Transformation: The Bright and the Dark Sides. Vídeňský institut pro mezinárodní ekonomická srovnání
+   (wiiw), sborník Faces of Convergence: https://wiiw.ac.at/belka-transformation-the-bright-and-dark-sides-dlp-4916.pdf
+8. Caselli, F., Tenreyro, S. (2005): Is Poland the Next Spain? NBER Working Paper 11045:
+   https://www.nber.org/system/files/working_papers/w11045/w11045.pdf
+9. OECD (2025): OECD Economic Surveys: Poland 2025 (DOI 10.1787/483d3bb9-en); otevřeno přes kopii
+   https://agora.mfa.gr/infofiles/OECD%20Poland%202025%20pl.pdf
+10. Evropská komise (2024): 2024 Country Report – Poland, SWD(2024) 621:
+    https://economy-finance.ec.europa.eu/document/download/869bf64a-a2f1-4059-a991-66da32de8c7d_en?filename=SWD_2024_621_1_EN_Poland.pdf
+11. Evropská komise (2025): 2025 Country Report – Poland, SWD(2025) 221:
+    https://economy-finance.ec.europa.eu/document/download/12885764-f4ee-4449-b188-3c2daa838b9b_en?filename=PL_CR_SWD_2025_221_1_EN_autre_document_travail_service_part1_v3.pdf
+12. Evropská komise (2026): 2026 Country Report – Poland, SWD(2026) 221:
+    https://economy-finance.ec.europa.eu/document/download/258ee941-e3ed-48f6-b6e8-f1290379d41d_en?filename=PL_SWD_2026_221_1_EN_autre_document_travail_service_part1_v4.pdf
+13. Mezinárodní měnový fond (2010): IMF Survey: Poland: European Success Story but Challenges Ahead (26. 3. 2010):
+    https://www.imf.org/external/pubs/ft/survey/so/2010/CAR032610A.htm
+14. Campos, N. F., Coricelli, F., Moretti, L. (2014): Economic Growth and Political Integration: Estimating the Benefits from
+    Membership in the European Union Using the Synthetic Counterfactuals Method. IZA Discussion Paper 8162, tabulky 2 a 3:
+    https://www.iza.org/publications/dp/8162 ; plný text https://epflicht.ulb.uni-bonn.de/download/pdf/149785
+15. Evropská komise (2016): The impact of cohesion policy 2007-2013: model simulations with Quest III. Ex post evaluation,
+    Work Package 14a: https://ec.europa.eu/regional_policy/sources/evaluation/expost2013/wp14a_final_report_en.pdf
+16. Ciżkowicz, P., Ciżkowicz-Pękała, M., Pękała, P., Rzońca, A. (2015): The effects of special economic zones on employment
+    and investment: spatial panel modelling perspective. NBP Working Paper 208:
+    https://static.nbp.pl/publikacje/materialy-i-studia/208_en.pdf
+17. Jakubowski, M., Patrinos, H. A., Porta, E. E., Wiśniewski, J. (2010): The impact of the 1999 education reform in Poland.
+    World Bank Policy Research Working Paper 5263: https://ideas.repec.org/p/wbk/wbrwps/5263.html
+18. Dustmann, C., Frattini, T., Rosso, A. (2015): The Effect of Emigration from Poland on Polish Wages. Scandinavian Journal
+    of Economics 117(2), 522–564: https://ideas.repec.org/a/bla/scandj/v117y2015i2p522-564.html
+19. GUS, polský statistický úřad (2010): Informacja o rozmiarach i kierunkach emigracji z Polski w latach 2004–2009:
+    https://stat.gov.pl/cps/rde/xbcr/gus/lud_infor_o_rozm_i_kierunk_emigra_z_polski_w_latach_2004_2009.pdf
+20. Morawski, L., Myck, M. (2010): 'Klin'-ing up: Effects of Polish tax reforms on those in and on those out. Labour
+    Economics 17(3), 556–566: https://ideas.repec.org/a/eee/labeco/v17y2010i3p556-566.html
+21. OECD (2026): Taxing Wages, svobodný bez dětí při průměrné mzdě (zátěž, průměrná daň z příjmu, odvody zaměstnance
+    a zaměstnavatele), staženo 17. 10. 2026:
+    https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/POL+HUN.AV_TW+AV_ITR+AV_R_EMPEE_SSC+AV_R_EMPER_SSC..S_C0.AW100..A?startPeriod=2000&endPeriod=2024&format=csvfilewithlabels
+22. Kancelář předsedy vlády Polska (2023): Record tax cuts – this means more money in citizens' wallets:
+    https://www.gov.pl/web/primeminister/record-tax-cuts---this-means-more-money-in-citizens-wallets
+23. Národní banka Polska (2022): Inflation Report – March 2022:
+    https://static.nbp.pl/dokumenty/polityka-pieniezna/raporty-o-inflacji/iraport_march2022.pdf
+24. Projekt Ekonomické hry (2026): [`data/overeni_cista_mzda_2024.md`](../data/overeni_cista_mzda_2024.md), výpočet čisté
+    mzdy podle pravidel roku 2024; polské parametry z modelu EUROMOD Společného výzkumného střediska Komise:
+    https://euromod-web.jrc.ec.europa.eu/sites/default/files/2026-02/Y16_CR_PL.pdf
+25. OSN, Oddělení pro hospodářské a sociální záležitosti (2024): International Migrant Stock 2024; staženo projektem
+    (`data/raw_faktory/doplnena_data.json`) z
+    https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_ims_stock_by_sex_destination_and_origin.xlsx
+26. OECD (2024): Survey of Adult Skills 2023 (DOI 10.1787/b263dc5d-en); čísla převzal projekt z tabulky irského
+    statistického úřadu (`data/raw_faktory/doplnena_data.json`):
+    https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/PIAAC01/CSV/1.0/en
+27. Eurostat (2026): cenové hladiny skutečné individuální spotřeby, EU = 100 (prc_ppp_ind_1), staženo 17. 10. 2026:
+    https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=PLI_EU27_2020&ppp_cat18=A01&geo=PL&geo=HU&time=2024
+28. Rešerše ekonomů projektu: [`ekonomove/PL.md`](../ekonomove/PL.md) (výroky Mezinárodního měnového fondu 2025 a 2026,
+    OECD 2025 a Evropské komise 2025 v překladu, s odkazy na originály).
+29. Maďarská národní banka (2024): Productivity Report, prosinec 2024:
+    https://www.mnb.hu/letoltes/termelekenysegi-jelentes-2024-december-eng.pdf
+30. Rešerše studií projektu: [`studie/UCINKY.md`](../studie/UCINKY.md), oddíly o minimální mzdě a o odchodu lidí do ciziny.
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí s výhradou:** kolektivizace se zkoušela ve 40. a 50. letech, Gomułka ji v roce 1956 opustil a družstva se rozpadla; v roce 1989 soukromý sektor obdělával 76,2 % orné půdy a dával 79 % zemědělské produkce, 57 % statků mělo pod 5 ha a stát je do 80. let znevýhodňoval při přidělování strojů a hnojiv (Poland Country Study).
+- **Oddíl 1, platí:** soukromý sektor 1989 asi 28 % HDP, hlavně díky soukromému zemědělství (Maďarsko asi 20 %, Česko 3–11 %).
+- **Oddíl 4, ceny, platí zčásti:** v potravinách je Polsko na 78 % průměru EU, Slovensko na 107 % (2023); jako příčinu sbližování cen doložila polská studie hlavně konkurenci na trhu a dohánění produktivity; potravinová soběstačnost a vlastní měna jako příčiny nedoloženy. Cenová hladina projektu (skutečná individuální spotřeba 2024: PL 69,9 %, SK 80,8 %) je jiný souhrn než cenová hladina výdajů domácností v přehledech Eurostatu (72 a 85 %).
+
+
+# Slovensko: proč má v kolech takové hodnoty (průměrná čistá mzda, podklad pro výklad)
+
+*Oprava koordinátora 17. 10. 2026 večer: zátěž daní a odvodů se po doplnění povinných plateb mimo daně u všech 27 zemí (nález nezávislého oponenta 1, `LIST_UKAZATELE.md`) změnila na 44,6 % (22. od nejnižší) (dřív 42,9 %, 21. od nejnižší); čísla níže jsou bodově opravená, ostatní text zůstává.*
+
+> Krok 8 a podklad pro krok 9a zkoušky návrhu skillu `analyza-pricin-regiony-SKILL-v1.4.md` (neaktivní), 17. 10. 2026.
+> Zadání: `ZADANI_KROKY_ZEMI.md`. Seznam kroků s doklady: `data/kroky_zemi/SK.json`.
+> U každého tvrzení o příčině je síla dokladu: „změřeno (kdo, jak)“, „posoudila (instituce)“, „jen časová souvislost“,
+> nebo „můj úsudek“. Zkratky zdrojů v závorkách jsou rozepsané v oddílu Zdroje.
+
+Hodnoty Slovenska v kolech: výkon na začátku 52,8 % výkonu střední země ligy v roce 1996, růst výkonu 1,56násobek
+(z roku 1996 na průměr let 2020–2024) a zátěž daní a odvodů 44,6 % nákladů práce v roce 2024 (včetně druhého pilíře). Průměrná čistá mzda
+na plný úvazek byla v roce 2024 asi 18 956 jednotek kupní síly ročně (vše Projekt 2026).
+
+## 1. Proč takový výkon na začátku (1996)
+
+V roce 1996 vytvořil slovenský pracující 52,8 % toho, co pracující ve střední zemi ligy (Projekt 2026). Slovensko
+prošlo stejnými 42 lety centrálně plánované ekonomiky jako Česko (V-Dem v Projekt 2026), ale výstup po roce 1989 klesl
+hlouběji, o 24,7 %, a dno přišlo až v roce 1993 (MMF 2000). Kapitálu na pracovníka mělo v roce 1996 jen 68 % střední země
+ligy (Penn World Table 11.0 v Projekt 2026) a už před válkou bylo mnohem chudší než české země, s HDP na obyvatele
+1 746 proti 5 269 mezinárodních dolarů z roku 2011 (nesourodé národní dopočty podle Maddisonovy databáze v Projekt 2026);
+Slovensko tedy startovalo z nižšího základu už před komunismem (můj úsudek). Instituce byly v druhé polovině 90. let
+slabší než u sousedů: vláda práva podle Světové banky dosahovala v letech 1996–2000 v průměru 0,23 na její škále proti
+0,72 v Česku a 1,10 ve Slovinsku (Světová banka v Projekt 2026) a velké banky se začaly ozdravovat až v roce 1999
+(NBS 1999); souvislost s nízkým výkonem je jen časová.
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon slovenského pracujícího vůči střední zemi ligy vzrostl z 52,8 % v roce 1996 na průměr 82,3 % v letech 2020–2024,
+tedy 1,56krát (Projekt 2026). Nejvíc Slovensko dohánělo v letech 2000–2008, kdy výkon stoupl z 57,8 % na 78,9 %, tedy
+o 21,1 procentního bodu; v letech 2013–2019 naopak klesl z 81,7 % na 74,8 % a znovu se zvedl až po roce 2019 na 83,3 %
+v roce 2024 (Projekt 2026; v kupní síle, ve stálých cenách výkon v letech 2013–2019 rostl, viz níže). Část růstu je dohánění z nízkého základu, protože kdo začíná níž, může rychleji přebírat
+techniku a postupy (můj úsudek).
+
+**1996–2000: pomalý začátek.** Výkon vzrostl z 52,8 % na 57,8 % (Projekt 2026). Přímých zahraničních investic přicházelo
+v letech 1996–2000 průměrně 3,5 % HDP ročně proti 5,5 % v Česku (Světová banka v Projekt 2026) a stát ozdravil tři
+největší banky, převedl z nich asi 82,3 mld. Sk špatných úvěrů a začal je připravovat k prodeji zahraničním investorům
+až v roce 1999 (NBS 1999). Jak moc tyto okolnosti brzdily výkon, žádný zdroj nevyčísluje (jen časová souvislost).
+
+**2000–2008: nejrychlejší dohánění.** Výkon stoupl na 78,9 % (Projekt 2026) a HDP na obyvatele rostl v letech 2001–2011
+nejrychleji ze všech zemí OECD (OECD 2015). Do krize v roce 2008 hnaly rychlé dohánění zapojení do dodavatelských
+řetězců, zahraniční investice a vstup do EU (posoudila EK 2026) a po vstupu Slovensko těžilo z nižších nákladů práce než
+mnohé země EU (posoudila EK 2024). Stát lákal investory zákonem o investičních pobídkách účinným od 1. 1. 2002 (Zákon
+565/2001); dnes automobilový průmysl zaměstnává přes 260 000 lidí a vytváří až 12 % HDP (EK 2025), účinek pobídek samotných
+ale nikdo nezměřil. Daňová reforma z roku 2004 podle OECD obecně uznávaně přispěla k rychlému růstu (posoudila OECD 2015).
+Samotný vstup do EU podle srovnání se syntetickým Slovenskem ze zemí mimo EU zvýšil HDP na obyvatele jen o 0,3 %,
+statisticky neprůkazně (změřili Campos, Coricelli a Moretti 2014), takže rychlý růst nebyl jen zásluhou členství. Přijetí
+eura v roce 2009 podle srovnání s podobnými středoevropskými zeměmi mimo eurozónu přidalo do roku 2011 asi 10 % reálného
+HDP na obyvatele, z toho dvě třetiny už v roce 2008 v očekávání vstupu (změřili Žúdel a Melioris 2016).
+
+**2008–2013: krize a rychlý návrat.** HDP kleslo v roce 2009 o 5,3 % a v roce 2010 vzrostlo o 4,8 %, protože slovenská
+ekonomika kopíruje světový obchod (posoudila OECD 2015). Výkon na pracujícího klesl na 76,2 % v roce 2009, v roce 2010
+vyskočil na 83,5 % a v roce 2013 byl 81,7 % (Projekt 2026); euro podle Žúdela a Melioris v krizovém roce 2009 přechodně
+ubralo asi 2 % HDP (změřili Žúdel a Melioris 2016).
+
+**2013–2019: růst přes počet pracovníků, ne přes výkon.** Výkon na pracujícího vůči střední zemi ligy v kupní síle klesl
+z 81,7 % na 74,8 %, nejvíc mezi lety 2015 a 2017 (z 82,1 % na 73,0 %; Projekt 2026). *Oprava koordinátora 18. 10. 2026
+(nález A1 kontroly scénáře Střední Evropy, `REALNE_CENY.md`):* ve stálých cenách výkon na pracujícího v těch letech rostl,
+asi o 8 % (střední hodnota ligy asi o 5 %), a čistá mzda po odečtení inflace asi o 18 %; pád v kupní síle dělá hlavně skok
+slovenské cenové hladiny v roce 2016, ne skutečný pokles výkonu. Národná banka Slovenska píše, že v poslední dekádě stál růst hlavně na
+přibývání práce, ne na produktivitě (posoudila NBS 2026a), Evropská komise, že model založený na nízkých mzdách a vysokých
+přímých zahraničních investicích, hlavně v automobilovém průmyslu, ztratil dech a Slovensko ztratilo vedoucí postavení
+v produktivitě mezi zeměmi Visegrádu (posoudila EK 2024), a že od roku 2015 růst jen držel krok s průměrem EU (EK 2026).
+Čistá mzda v kupní síle se v těchto letech skoro nepohnula: 13 704 v roce 2013 a 14 214 v roce 2019 (Projekt 2026), po
+odečtení inflace ale vzrostla asi o 18 % (`REALNE_CENY.md`).
+
+**2019–2024: návrat produktivity.** Výkon na pracujícího vzrostl na 83,3 % (Projekt 2026). Od roku 2020 se podle NBS role
+obrátily: zrychlil růst HDP na odpracovanou hodinu, zatímco příspěvek zaměstnanosti prudce klesl, a oživení
+produktivity se soustředilo do úzké skupiny služeb, kdežto průmysl slábl (posoudila NBS 2026b).
+
+**Brzdy.** Výdaje na výzkum a vývoj byly v letech 1996–2023 v průměru jen 0,74 % HDP (Eurostat v Projekt 2026) a Evropská
+komise označuje výzkum a inovace za chronicky nízké (EK 2026 podle rešerše `ekonomove/SK.md`); nezaměstnanost byla
+v letech 1996–2024 v průměru 9,6 % (Eurostat v Projekt 2026).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Ze všeho, co firma za zaměstnance s průměrnou mzdou v roce 2024 zaplatila, šlo na daně, odvody a druhý pilíř 44,6 % (Projekt 2026, bez druhého pilíře 42,9 %, při skutečné
+mzdě; OECD při své průměrné mzdě 42,5 %, OECD TW 2026). Systém stojí na vysokých odvodech zaměstnavatele: OECD mu
+započítává 32,2 % hrubé mzdy, zaměstnanci 13,4 %, a u lidí, kteří spoří ve druhém pilíři, posílá zaměstnavatel dalších 4 % hrubé
+mzdy do soukromých penzijních fondů, které OECD mezi daně nepočítá (OECD TW 2026; NBS 2024; OECD 2015). Daň z příjmu je 19 % (nad hranicí 25 %)
+s nezdanitelnou částkou (OECD 2015) a při průměrné mzdě činí 10,6 % hrubé mzdy (OECD TW 2026). Odvody tak berou asi 34 %
+nákladů práce a daň z příjmu asi 8 % (můj přepočet z OECD TW 2026); OECD to shrnuje tak, že daň z příjmu je nízká,
+ale celková zátěž práce je vysoká kvůli silné závislosti na odvodech (posoudila OECD 2015).
+
+**Jak se zátěž měnila od roku 2000 (OECD TW 2026, svobodný bez dětí při průměrné mzdě).** Řada OECD ukazuje 42,1 % v roce
+2000, 42,5 % v roce 2004, 38,4 % v roce 2005, 39,0 % v roce 2008, 41,3 % v roce 2013, 41,9 % v roce 2019 a 42,5 % v roce
+2024. Velké skoky v ní ale většinou nejsou změnou toho, kolik firma za práci platí, nýbrž toho, kam peníze tečou: v roce
+2005 začalo 9 % hrubé mzdy odcházet do soukromých penzijních fondů a pojistné zaměstnavatele v datech OECD kleslo
+o 9 procentních bodů (OECD 2015); od září 2012 klesl příspěvek do fondů na 4 % a pojistné vzrostlo z 26,2 % na 31,2 % (OECD 2015);
+v letech 2017–2022 příspěvek do fondů rostl o 0,25 procentního bodu ročně na 5,5 % a od roku 2024 klesl zpět na 4 % (NBS 2024).
+Když se příspěvek do druhého pilíře započte, byla celková zátěž asi 42,5 % v roce 2004 i 2005, asi 43,0 % v letech 2008
+až 2013, 43,9 % v roce 2019 a 44,2 % v roce 2024 (můj přepočet z OECD TW 2026 a sazeb NBS 2024). Skutečná zátěž tedy rostla
+jen pomalu a hlavně proto, že daň z příjmu při průměrné mzdě stoupla z 8,2 % hrubé mzdy v roce 2009 na 10,6 % v roce
+2024 (OECD TW 2026); proč daň rostla, se mi doložit nepodařilo.
+
+**Test protipříkladem.** Kdyby Slovensko v roce 2004 rovnou daň nezavedlo, byla by zátěž při průměrné mzdě jiná? Podle
+dat OECD skoro ne: celková zátěž byla 42,9 % v roce 2003 a 42,5 % v roce 2004, protože vyšší sazbu pro nízké příjmy
+vyrovnala vyšší nezdanitelná částka a současně kleslo pojistné zaměstnavatele (OECD TW 2026; OECD 2015). Rovná daň tedy
+není příčinou dnešní výše zátěže při průměrné mzdě; snížila hlavně zdanění vyšších příjmů a firem, protože nejvyšší
+sazba daně z příjmu 38 % a daň firem 25 % klesly na 19 % (OECD 2015). Obdobně konec rovné
+daně v roce 2013 podle modelu Rady pro rozpočtovou odpovědnost nepřinesl významné změny zaměstnanosti ani nerovnosti
+(posoudila RRZ 2015). Druhý pilíř je měření: kdyby pracovník do druhého pilíře nespořil, šel by celý důchodový odvod
+státu a OECD by ho počítala jako daň.
+
+**Měření (pro analytika).** *Rozhodnuto 17. 10.: od opravy počítá kolo zátěž 44,6 % včetně 4 % do druhého pilíře, protože je firma platí v každém případě (stejné pravidlo jako u přesměrovaných pilířů jinde). Původní znění:* Zátěž použitá v kole (42,9 %) bere náklady práce jako hrubou mzdu plus odvody zaměstnavatele
+podle OECD (32,2 %), tedy bez 4 % do druhého pilíře, protože ten platí jen zaměstnavatel (Projekt 2026, `LIST_UKAZATELE.md`
+a `data/vysledek.json`). Se započtením tohoto příspěvku by zátěž vyšla asi 44,6 % (můj přepočet z dat projektu). Jde
+o povinnou platbu, takže by stálo za rozhodnutí, zda ji počítat stejně jako povinné platby zaměstnanců v jiných zemích.
+
+## 4. Další faktory země
+
+- **Veřejné platy.** Za sedm let do roku 2025 vzrostla průměrná reálná mzda v soukromém sektoru o 5,5 % a ve veřejném
+  o 22,7 %; rozdíl podle NBS nelze vysvětlit doháněním a veřejné mzdy předbíhají produktivitu (posoudila NBS 2026a).
+  Průměrnou mzdu to zvedá, příčinou nízké úrovně to není.
+- **Slabé kolektivní vyjednávání.** Pokrytí kolektivními smlouvami kleslo z 52 % v letech 1996–2000 na 26 % v letech
+  2015–2024 (OECD/AIAS ICTWSS v Projekt 2026); vliv na průměrnou mzdu instituce nevyčíslují.
+- **Minimální mzda** byla 816 € v roce 2025 a 915 € v roce 2026, což je 60 % průměrné mzdy, a podle Evropské komise
+  nezabránila reálnému poklesu mezd (EK 2026); vliv na průměr doložen není.
+- **Odchod lidí a rozdíly mezi regiony.** V cizině žije 7,1 % rodáků (OSN 2024 v Projekt 2026); HDP na obyvatele je
+  151 % průměru EU v Bratislavě a 55 % na východním Slovensku a regiony mimo hlavní město ztrácejí mladé a kvalifikované
+  lidi (EK 2026 podle rešerše `ekonomove/SK.md`). Výrok, že odchod lidí mění průměrnou mzdu, jsem nenašel.
+- **Nepravé samostatné podnikání.** Slovensko má podle Evropské komise nejvyšší podíl závislých samostatně výdělečných
+  osob v EU (EK 2025 podle rešerše `ekonomove/SK.md`); průměrná mzda zaměstnanců je nezahrnuje.
+- **Zisky zahraničních vlastníků** odcházejí do ciziny jako vysoké odlivy prvotních důchodů (MMF 2026 podle rešerše
+  `ekonomove/SK.md`); vliv na mzdy nevyčíslen.
+- **Ceny.** Cenová hladina spotřeby byla v roce 2024 80,8 % průměru EU (Eurostat v Projekt 2026), takže čistá mzda
+  15 317 € ročně odpovídá v kupní síle víc, než by ukazoval kurz (Projekt 2026).
+
+## 5. Co říkají ekonomové
+
+Evropská komise píše, že slovenský hospodářský model „založený na nízkých mzdách a vysokých přímých zahraničních
+investicích (zejména v automobilovém průmyslu) ztratil dech“ a že „strukturální posun hospodářství k aktivitám s vyšší
+přidanou hodnotou je nezbytný“; Národná banka Slovenska dodává, že růst posledního desetiletí stál „spíše na zvyšování
+množství práce než na produktivitě“, což „omezuje prostor pro trvalý růst reálných mezd“ (citace podle
+`ekonomove/SK.md`).
+
+## 6. Zdroje
+
+- **Projekt 2026:** data projektu Ekonomické hry, 17. 10. 2026, v této složce: `data/kontext_kroky.json` (výkon na
+  pracujícího vůči střední zemi ligy z Eurostatu, zátěž 2024, čistá mzda po letech), `data/mereni.json` (roční řada
+  výkonu, kapitál na pracovníka z Penn World Table 11.0 https://www.rug.nl/ggdc/productivity/pwt/, roky plánované
+  ekonomiky z V-Dem https://www.v-dem.net/data/the-v-dem-dataset/, předválečný HDP z Maddison Project Database 2023
+  https://www.rug.nl/ggdc/historicaldevelopment/maddison/releases/maddison-project-database-2023, vláda práva ze
+  Světové banky WGI, přímé zahraniční investice ze Světové banky WDI, výzkum a nezaměstnanost z Eurostatu, kolektivní
+  smlouvy z OECD/AIAS ICTWSS, rodáci v cizině z OSN International Migrant Stock 2024), `data/vysledek.json` (hrubá
+  a čistá mzda, náklady práce, cenová hladina), `LIST_UKAZATELE.md`.
+- **OECD TW 2026:** OECD, Taxing Wages – comparative tables (jednotlivec bez dětí, 100 % průměrné mzdy: celková zátěž,
+  odvody zaměstnance a zaměstnavatele, daň z příjmu), staženo 17. 10. 2026,
+  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/CZE+SVK+SVN.AV_TW..S_C0.AW100..A
+- **OECD 2015:** Remeta, J., Perret, S., Jareš, M., Brys, B.: Moving Beyond the Flat Tax – Tax Policy Reform in the Slovak
+  Republic, OECD Taxation Working Papers č. 22, 2015 (kopie na webu ministerstva financí SR),
+  https://www.mfsr.sk/files/archiv/priloha-stranky/19978/62/Moving-beyond-flat-tax.pdf
+- **RRZ 2015:** Rada pre rozpočtovú zodpovednosť (Horváth, M., Senaj, M., Siebertová, Z., Švarda, N.): The End of the
+  Flat Tax Experiment in Slovakia, Working Paper č. 4/2015,
+  https://www.rrz.sk/wp-content/uploads/2021/05/The-End-of-the-Flat-Tax-Experiment-in-Slovakia.pdf
+- **MMF 2000:** Fischer, S., Sahay, R.: Taking Stock, Finance & Development 37(3), září 2000, tabulka 1 (Output
+  Performance, 1989–99), https://www.imf.org/external/pubs/ft/fandd/2000/09/fischer.htm
+- **NBS 1999:** Národná banka Slovenska, Annual Report 1999, kapitola 3 (bankovní sektor),
+  https://nbs.sk/_img/Documents/_Publikacie/AnnualReport/ENG1999/AR1999_chap03.pdf
+- **NBS 2024:** Národná banka Slovenska, Old-age pension scheme (second pillar) – main features, aktualizováno
+  22. 10. 2024,
+  https://nbs.sk/en/financial-market-supervision1/supervision/pension-system/old-age-pension-scheme-second-pillar/main-features/
+- **NBS 2026a:** Národná banka Slovenska (Casalis, Doliak, Mráziková), Diverging Wage Dynamics in Slovakia: Public
+  Sector Growth Amid Private Stagnation, Policy Brief č. 22/2026,
+  https://nbs.sk/dokument/3feb0e1e-955f-49a4-ab5b-6814d045eed0/stiahnut?force=false
+- **NBS 2026b:** Národná banka Slovenska (Sutóris, Vaňko), Slovakia’s Productivity Shift: Grounds for Optimism or Cause
+  for Concern?, Policy Brief č. 24/2026, https://nbs.sk/dokument/686611c3-eeb4-4754-9238-f593616e251d/stiahnut?force=false
+- **Zákon 565/2001:** Zákon č. 565/2001 Z. z. o investičných stimuloch, účinný od 1. 1. 2002, Slov-Lex,
+  https://static.slov-lex.sk/static/SK/ZZ/2001/565/20020101.html
+- **EK 2024:** Evropská komise, 2024 Country Report – Slovakia, SWD(2024) 625 (s. 3, 5 a 56 PDF),
+  https://economy-finance.ec.europa.eu/document/download/e2c1dea3-1062-4824-a06d-4219d1e31f9b_en?filename=SWD_2024_625_1_EN_Slovakia.pdf
+- **EK 2025:** Evropská komise, 2025 Country Report – Slovakia, SWD(2025) 225 (s. 70 PDF),
+  https://economy-finance.ec.europa.eu/document/download/e16a9875-800f-4472-ab93-cf80087e28e4_en?filename=SK_CR_SWD_2025_225_1_EN_autre_document_travail_service_part1_v3.pdf
+- **EK 2026:** Evropská komise, 2026 Country Report – Slovakia, SWD(2026) 225 (s. 112 a 134 PDF),
+  https://economy-finance.ec.europa.eu/document/download/621352e0-6c70-488f-b702-d9163980978a_en?filename=SK_SWD_2026_225_1_EN_autre_document_travail_service_part1_v4.pdf
+- **Campos, Coricelli a Moretti 2014:** Economic Growth and Political Integration: Estimating the Benefits from
+  Membership in the European Union Using the Synthetic Counterfactuals Method, IZA Discussion Paper č. 8162, duben 2014,
+  tabulky 2 a 3, https://epflicht.ulb.uni-bonn.de/download/pdf/149785
+- **Žúdel a Melioris 2016:** Five Years in a Balloon: Estimating the Effects of Euro Adoption in Slovakia Using the
+  Synthetic Control Method, OECD Economics Department Working Paper č. 1317 (souhrn na webu ministerstva financí SR),
+  https://www.mfsr.sk/en/finance/institute-financial-policy/working-papers/five-years-balloon-estimating-effects-euro-adoption-slovakia-using-synthetic-control-method/
+- **MMF 2026:** International Monetary Fund, Slovak Republic: 2026 Article IV Consultation, Country Report č. 26/65,
+  podle rešerše `ekonomove/SK.md`, https://www.imf.org/-/media/files/publications/cr/2026/english/1svkea2026001-source-pdf.pdf
+- **Rešerše ekonomů:** `ekonomove/SK.md` (citace v oddílu 5 a údaje označené „podle rešerše“).
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1, platí (dobová publicistika, ne statistika):** československý zbrojní průmysl zaměstnával přímo i nepřímo asi 140 000 lidí a asi 60 % ze zhruba 100 zbrojních podniků leželo na Slovensku, s výrobou pro trh Varšavské smlouvy; v letech 1988–92 zaniklo asi 40 000 míst, nezaměstnanost v Martině, Dubnici a dalších zbrojních regionech vystoupala skoro k 25 %; ZŤS Martin vyráběla v roce 1992 jen 10 % zbraní proti roku 1988 (Christian Science Monitor 1992, 1994; The Slovak Spectator).
+- **Oddíl 2/4, platí:** v zahraničí studuje asi každý pátý slovenský vysokoškolák (jedna z nejvyšších měr v OECD; 14 % v roce 2010, 17 % v roce 2017), zhruba dvě třetiny z nich v Česku, a polovina se nechce vrátit (policy brief ISS a Slovenské akademie věd 2026; STVR).
+- **Nelze doložit:** že slovenské startupy vznikají raději v Česku (jen průzkum advokátní kanceláře, podle kterého 67 % startupů zvažuje přesun, a jednotlivé případy).
+
+
+# Maďarsko: proč má v kolech takové hodnoty
+
+> Podklad pro výklad hodnot v kolech a seznam kroků země, průměrná čistá mzda. Zpracováno 17. 10. 2026 podle
+> [zadání](../ZADANI_KROKY_ZEMI.md). Kroky vlád a institucí s doklady jsou v
+> [`data/kroky_zemi/HU.json`](../data/kroky_zemi/HU.json). Čísla v hranatých závorkách odkazují na oddíl Zdroje; citace
+> z anglických zdrojů jsou můj překlad (originály jsou v souboru kroků). Síla dokladu je u každé příčiny napsaná slovy.
+
+**Hodnoty v kolech podle dat projektu [1]:** výkon na začátku 55,1 % výkonu střední země ligy (1996); růst výkonu
+1,38krát (z 55,1 % v roce 1996 na 75,7 % v roce 2024); daně a odvody 41,15 % nákladů práce (2024). Čistá mzda v roce 2024
+podle měření projektu je 17 818 jednotek kupní síly ročně [1].
+
+## 1. Proč takový výkon na začátku (1996)
+
+Maďarsko otevřelo ekonomiku zahraničním firmám dřív a rychleji než Polsko: privatizace podle Miklóse Szanyiho z Ústavu
+světové ekonomiky Maďarské akademie věd sázela na rychlé prodeje státních firem za hotové, hlavně zahraničním investorům,
+doplněné štědrými daňovými prázdninami a průmyslovými zónami s volným obchodem, a hlubokou modernizaci průmyslu podle něj
+provedly hlavně zahraniční investice (posoudil Szanyi 2003 [7]). Příliv přímých zahraničních investic dosahoval v letech
+1991–1996 v průměru 5,6 % HDP ročně, v Polsku 1,7 % (Světová banka 2026 [5]), a převzetí firmy zahraničním vlastníkem
+v ní zvýšilo průměrné mzdy o 12–28 %, což autoři spojují s vyšší produktivitou zahraničních firem (změřeno, Earle, Telegdy
+a Antal 2012, párování firem podle stavu před převzetím [8]). Zároveň prošlo Maďarsko hlubokým propadem, HDP bylo v roce
+1993 jen na 81,9 % úrovně roku 1989 a ještě v roce 2000 pod ní (98,6 %) (Světová banka 2026 [5]), a mezi lety 1989
+a 1996 zaniklo 1,5 milionu pracovních míst, téměř 30 %, hlavně ve velkých státních podnicích a zemědělských družstvech
+(Fazekas a Koltay 2003 [6]); protože práci nadále měl menší počet lidí v modernizovaných firmách, vycházel výkon na
+jednoho pracujícího vyšší, než by odpovídalo samotné výši HDP (můj úsudek, pro Maďarsko institucemi nevyčíslený). Proti
+Polsku pomáhala i malá váha zemědělství, 7,9 % zaměstnaných v roce 1996 proti 23 % v Polsku (Světová banka 2026 [5]),
+a produktivnější průmysl: maďarský zpracovatelský průmysl dosahoval kolem roku 2000 asi 43 % francouzské produktivity,
+nejvíc z deseti východních zemí, které byly pod polovinou francouzské úrovně (posoudili Caselli a Tenreyro 2005 [9]).
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon maďarského pracujícího vůči střední zemi ligy rostl z 55,1 % v roce 1996 na 56,7 % (2000), 67,3 % (2004), 71,7 %
+(2008), 71,2 % (2013), 73,1 % (2019) a 75,7 % v roce 2024; proti průměru let 2020–2024 je to 1,38násobek startu [1].
+Nejvíc Maďarsko dohánělo v letech 2000–2008, o 15,0 bodu [1]. Po roce 2008 se dohánění zastavilo: v letech 2008–2013 výkon
+vůči střední zemi mírně klesl a za celých šestnáct let 2008–2024 přibyly jen 4,0 body [1].
+
+**Zahraniční investice a výroba pro bohaté sousedy.** Dohánění stálo z velké části na zahraničních firmách, které podle
+Szanyiho rozhodly o modernizaci průmyslu v 90. letech (posoudil Szanyi 2003 [7]); převzetí firmy zahraničním vlastníkem
+v ní zvedlo průměrné mzdy o 12–28 % a u firem později vrácených domácím vlastníkům se účinek z velké části obrátil
+(změřeno, Earle, Telegdy a Antal 2012 [8]). Velké podniky ale vyrábějí hlavně na vývoz s vysokým podílem dovozu (vozidla,
+díly, elektronika): domácí přidaná hodnota ve vývozu je 54,1 %, v Polsku asi 71,1 %, což Maďarská národní banka vysvětluje
+vysokým podílem dovozu ve vyvážených výrobcích a slabým zapojením přicházejícího kapitálu do domácích dodavatelských sítí;
+zahraniční firmy byly v letech 2010–2016 zhruba třikrát produktivnější než maďarské, v roce 2021 dvaapůlkrát (posoudila
+Maďarská národní banka 2024 [19]). Evropská komise píše, že Maďarsko „zůstává specializované na
+zdrojově náročné a nákladově citlivé montážní činnosti globálních hodnotových řetězců“ a že domácí firmy se do nich
+zapojují hlavně montáží s nízkou přidanou hodnotou (posoudila Evropská komise 2023 a 2026 [14, 17]); výdaje firem na výzkum
+klesly z 1,23 % HDP v roce 2021 na 0,99 % v roce 2024 proti 1,49 % v EU (Evropská komise 2026 [17]). Stát láká investory
+nízkou daní firem (9 %, nejnižší v EU), štědrou podporou investic a pružnou regulací, ale podle Komise tím nezmenšil
+zaostávání v inovacích, dovednostech a podnikatelském prostředí (posoudila Evropská komise 2023 [14]).
+
+**Vstup do EU a fondy EU.** Vstup do EU Maďarsku pomohl: proti syntetickému Maďarsku bez vstupu, složenému ze zemí mimo EU,
+bylo HDP na obyvatele v letech 1998–2008 v průměru asi o 12,3 % vyšší a rostlo asi o 1,1 procentního bodu ročně rychleji,
+statisticky průkazně (změřeno, Campos, Coricelli a Moretti 2014, metoda syntetické kontroly [10]). Fondy z období
+2007–2013 zvedly podle modelu Evropské komise maďarské HDP v roce 2015 asi o 5,3 % a v roce 2023 o 4,6 % (posoudila
+Evropská komise 2016, modelová simulace, ne měření [11]).
+
+**Krize a dluh 2006–2012.** Maďarsko vstoupilo do světové krize oslabené. Veřejné finance měly v roce 2006 schodek 9,3 %
+HDP (Eurostat 2026 [4]) a od roku 2004 bylo Maďarsko v unijním postupu kvůli nadměrnému schodku (Mezinárodní měnový fond
+2011 [13]). Ozdravný program snížil schodek na 5,1 % HDP v roce 2007 a 3,8 % v roce 2008 (Eurostat 2026 [4]), mimo jiné
+vyššími odvody zaměstnanců, kvůli kterým zátěž práce u průměrné mzdy stoupla z 51,9 na 54,5 % (OECD 2026 [20]), a HDP
+v těchto letech rostlo jen o 0,3 % a 1,0 % (Eurostat 2026 [2]; vliv ozdravného programu na růst je jen časová souvislost).
+Mezinárodní měnový fond popisuje, že veřejný dluh dosáhl skoro 70 % HDP kvůli trvale vysokým schodkům od počátku 2000s,
+zahraniční dluh skoro 100 % HDP a domácnosti si hojně půjčovaly v cizích měnách; když v říjnu 2008 zahraniční investoři
+začali hromadně prodávat maďarské státní dluhopisy, potřebovala vláda záchranný úvěr Mezinárodního měnového fondu, EU
+a Světové banky za 20 miliard eur (Mezinárodní měnový fond 2008 a 2011 [12, 13]). Tyto slabiny podle fondu nedovolily
+vést politiku proti krizi a prohloubily propad (posoudil Mezinárodní měnový fond 2011 [13]): HDP kleslo v roce 2009
+o 6,7 % a v roce 2012 znovu o 1,3 % (Eurostat 2026 [2]), dluh vzrostl na 80,2 % HDP v roce 2010 (Eurostat 2026 [4])
+a nezaměstnanost stoupla ze 7,8 % v roce 2008 na 11,2 % v roce 2010 (Světová banka 2026 [5]).
+
+**Růst po roce 2013 tažený počtem pracujících, ne výkonem.** Po krizi se maďarský příjem přibližoval EU hlavně tím, že
+přibylo pracujících: zaměstnanost lidí ve věku 20–64 let dosáhla v roce 2024 81,1 %, o 19 procentních bodů víc než v roce
+2010, nová místa podle Evropské komise obsadili hlavně málo kvalifikovaní lidé, což stáhlo průměrnou produktivitu,
+a produktivita práce je vůči EU na stejné úrovni jako před 15 lety, zatímco země s podobným příjmem ji za stejnou dobu
+zvýšily o 10 procentních bodů (posoudila Evropská komise 2025 [16]). Data Eurostatu to potvrzují: v letech 2010–2019
+vzrostlo HDP ve stálých cenách o 31 % a počet pracujících o 19 % (z 3,93 na 4,66 milionu), takže výkon na pracujícího jen
+asi o 10 % (Eurostat 2026 [2, 3]; můj přepočet). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* výrok Komise stojí na srovnání v kupní síle a čísla v předchozí větě ho nepotvrzují, protože střed ligy rostl v letech 2010–2019 jen asi o 6,4 %. Ve stálých cenách vzrostl maďarský výkon na pracujícího v letech 2010–2024 asi o 15 %, střed ligy asi o 11 % a průměr EU podle kontroly scénáře Střední Evropy asi o 8,5 %; maďarská produktivita tedy reálně na místě nestála, rostla o něco rychleji než střed ligy (od krizového roku 2009 zhruba stejně rychle), i když pomaleji než ostatní východní členové EU (jejich střed asi +29 %). Maďarská národní banka rozlišuje tři fáze: od roku 2013 růst počtem
+pracujících, v letech 2017–2019 růst produktivity asi o 3,3 % ročně, víc než v Česku, Polsku a na Slovensku (2,7 %),
+a v letech 2020–2023 jen 0,8 % ročně (Maďarská národní banka 2024 [19]). Slabé roky 2023 a 2024, kdy HDP kleslo o 0,7 %
+a vzrostlo o 0,7 % (Eurostat 2026 [2]), vysvětluje Evropská komise hlavně prudkým poklesem investic kvůli nejistému
+podnikatelskému a politickému prostředí a slabou zahraniční poptávkou (posoudila Evropská komise 2026 [17]); Mezinárodní
+měnový fond jmenuje jako dlouhodobé brzdy produktivity silnou roli státních podniků, slabiny správy věcí veřejných
+a pomalou digitalizaci (posoudil Mezinárodní měnový fond 2024, podle rešerše ekonomů projektu [25]).
+
+### Proč Maďarsko dohánělo pomaleji než Polsko
+
+Rozdíl nevznikl v 90. letech ani po vstupu do EU, ale po roce 2008. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* to platí jen v kupní síle; ve stálých cenách rostl polský výkon na pracujícího rychleji už v letech 1996–2008 (asi o 59 % proti 46 %, jak uvádí i tento odstavec níže) a po roce 2008 se rozdíl výrazně prohloubil. Do roku 2008 rostl výkon vůči střední zemi ligy
+v Maďarsku dokonce o něco víc než v Polsku (o 16,6 proti 14,2 bodu), po roce 2008 Maďarsko přidalo 4,0 bodu a Polsko
+22,4 bodu [1]; ve stálých cenách vzrostl výkon na pracujícího v letech 2008–2024 v Maďarsku asi o 12 % a v Polsku asi
+o 53 % (Eurostat 2026 [2, 3]; můj přepočet). Ve stálých cenách rostl polský výkon na pracujícího rychleji už v letech
+1996–2008, asi o 59 % proti 46 % (Eurostat 2026 [2, 3]; můj přepočet); že měřítko projektu v kupní síle ukazuje do roku 2008 opak,
+způsobují podle mě změny cen a přepočtů kupní síly (můj úsudek). Doložené příčiny pomalejšího maďarského dohánění jsou
+čtyři:
+
+1. **Krize zasáhla Maďarsko oslabené, Polsko ne.** Maďarsko vstoupilo do krize s vysokým veřejným i zahraničním dluhem
+   a s úvěry domácností v cizích měnách, takže muselo škrtat a jeho HDP v roce 2009 kleslo o 6,7 % (posoudil Mezinárodní
+   měnový fond 2011 [13]; Eurostat 2026 [2]). Polsko nemělo velké nerovnováhy, mohlo nechat rozpočet a měnový kurz působit
+   proti krizi a rostlo o 2,6 % (posoudil Mezinárodní měnový fond 2010 [27]; Eurostat 2026 [2]).
+2. **Po krizi rostlo Maďarsko hlavně počtem pracujících.** Nová místa obsadili hlavně málo kvalifikovaní a produktivita
+   vůči EU stála, zatímco srovnatelné země ji zvýšily (posoudila Evropská komise 2025 a 2026 [16, 17]); v letech 2010–2019
+   přibylo v Maďarsku 19 % pracujících, v Polsku 9 % (Eurostat 2026 [3]). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* že produktivita vůči EU stála, platí jen v kupní síle; ve stálých cenách vzrostl maďarský výkon na pracujícího v letech 2010–2024 asi o 15 %, o něco rychleji než střed ligy (asi 11 %), ale pomaleji než srovnatelné východní země (viz opravu v oddílu 2).
+3. **Montáž s nízkou domácí přidanou hodnotou.** Maďarský vývoz obsahuje 54,1 % domácí přidané hodnoty, polský asi 71,1 %,
+   a maďarská centrální banka sama označuje polské dohánění za úspěšnější (posoudila Maďarská národní banka 2024 [19]);
+   Komise popisuje maďarskou specializaci na nákladově citlivou montáž (posoudila Evropská komise 2023 [14]).
+4. **Investiční prostředí.** Komise vysvětluje slabý výkon posledních let poklesem investic kvůli nejistému podnikatelskému
+   a politickému prostředí (posoudila Evropská komise 2026 [17]).
+
+Co rozdíl nevysvětluje: vstup do EU a fondy (u Maďarska vyšel přínos vstupu 12,3 % a průkazný, u Polska 5,9 %
+a neprůkazný [10]; fondy zvedly HDP v roce 2015 v Maďarsku o 5,3 % a v Polsku o 4,3 % [11]), objem investic (soukromé
+investice dosáhly v roce 2022 22,8 % HDP v Maďarsku proti 12,7 % v Polsku, Evropská komise 2024 [15]), dovednosti dospělých
+(podle šetření OECD z roku 2023 jsou maďarské vyšší než polské, 248 proti 236 bodům v gramotnosti [24]), odchod lidí
+(Maďarsko je podle své centrální banky zemí mírné emigrace [18]) ani ceny (cenová hladina 68,9 % průměru EU proti 69,9 %
+v Polsku [23]). Vyšší start a menší zemědělství daly Maďarsku méně prostoru pro snadné dohánění (můj úsudek podle
+mechanismu, který popsali Caselli a Tenreyro [9]); sám start to ale nevysvětluje, protože Slovensko startovalo na 52,8 %
+a výkon zvětšilo 1,56krát (data projektu [1]).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Podle měření projektu odvede stát u svobodného zaměstnance s průměrnou maďarskou mzdou 41,15 % toho, co za něj firma celkem
+zaplatí [1], a stejné číslo dává OECD (OECD 2026 [20]). Systém je jednoduchý: zaměstnavatel platí sociální příspěvek 13 %
+hrubé mzdy, zaměstnanec odvody 18,5 % a daň z příjmu jednotnou sazbou 15 % (Maďarská národní banka 2023 [18]; OECD 2026
+[20]); svobodný bez dětí přitom nemá žádnou nezdanitelnou částku, protože průměrná sazba daně je podle dat OECD přesně
+15 % hrubé mzdy [20]. Z hrubé mzdy tak stát vezme 33,5 % a k tomu 13 % navíc od zaměstnavatele, tedy 46,5 ze 113 jednotek
+nákladů práce, což je 41,15 % (můj přepočet ze sazeb OECD [20], shodný s OECD i s projektem [1]). Protože sazba je jednotná, je zátěž stejná při
+každé výši mzdy, u nízkých mezd proto vysoká a u vysokých nízká (posoudila Evropská komise 2026 [17]).
+
+**Vývoj od roku 2000.** Řada OECD v kontextu ukazuje 54,7 % v roce 2000, 54,1 % v roce 2008, 49,0 % v roce 2013, 44,6 %
+v roce 2019 a 41,2 % v roce 2024 [1]; zátěž tedy klesla o 13,5 bodu, nejvíc díky odvodům zaměstnavatele, které podle OECD
+klesly ze 41,8 % hrubé mzdy v roce 2000 na 28,5 % v letech 2010–2016 a na 13 % od roku 2022 [20]. Po jednotlivých krocích:
+- **2007:** ozdravný program zvýšil odvody zaměstnance ze 14,3 na 17 % hrubé mzdy a zátěž stoupla z 51,9 na 54,5 % [20].
+- **2010:** zátěž klesla z 53,1 na 46,6 %, protože odvody zaměstnavatele klesly z 32,7 na 28,5 % hrubé mzdy a průměrná daň
+  z příjmu z 20,8 na 14,4 % [20]; o jaké zákony šlo, jsem v otevřeném zdroji neověřil.
+- **2011:** jednotná daň z příjmu 16 %, od roku 2016 15 % (Maďarská národní banka 2023 [18]). U svobodného s průměrnou mzdou
+  zátěž nejdřív vzrostla ze 46,6 na 49,5 %, protože průměrná daň stoupla ze 14,4 na 17,6 % hrubé mzdy a odvody zaměstnance
+  ze 17 na 17,5 % (v roce 2012 na 18,5 %) [20]; proč daň u průměrné mzdy v prvních letech stoupla, otevřené zdroje, které
+  jsem měl, nevysvětlují. Od roku 2013 dělá daň 16 % a od roku 2016 15 % hrubé mzdy, zátěž 49,0 % a 48,2 % [20]. Maďarská
+  národní banka hodnotí přestavbu daní po roce 2010 jako přesun zdanění z práce na spotřebu, který snížil průměrnou zátěž
+  (posoudila Maďarská národní banka 2023 [18]).
+- **2017–2022:** sociální příspěvek zaměstnavatele postupně klesl z 27 na 13 % a od roku 2022 zanikl příspěvek na odborné
+  vzdělávání 1,5 % (Maďarská národní banka 2023 [18]); odvody zaměstnavatele u průměrné mzdy klesly z 28,5 na 13 % hrubé
+  mzdy a zátěž ze 48,2 na 41,15 % [20]. Snížení bylo součástí šestileté mzdové dohody z roku 2016 se zástupci zaměstnavatelů
+  a zaměstnanců (Maďarská národní banka 2023 [18]).
+
+**Test protipříkladem.**
+- *„Zátěž klesla, protože se snížily odvody zaměstnavatele.“* Kdyby zaměstnavatel platil dál 28,5 % jako v roce 2016, byla
+  by zátěž při dnešní dani a odvodech zaměstnance 48,2 % místo 41,15 % (můj přepočet ze sazeb OECD [20]); příčina obstojí.
+  Jestli se ale celé snížení promítlo do vyšších mezd, doložené není: podíl příjmů z kapitálu na přidané hodnotě vzrostl
+  mezi lety 2011 a 2021 z asi 43 na 48 % a Komise píše, že k tomu nižší zdanění práce spolu s uvolněnou ochranou
+  zaměstnanců „mohlo“ přispět (posoudila Evropská komise 2023 [14]); studie z jiných zemí ukazují, že snížené odvody
+  zaměstnavatele bez vazby na budoucí dávky zůstávají roky hlavně zaměstnavatelům (rešerše studií projektu [26]).
+- *„Zátěž je vyšší než v Polsku, protože daň z příjmu je rovná a bez nezdanitelné částky.“* S polskou výší daně u průměrné
+  mzdy (asi 6,2 % hrubé mzdy) by maďarská zátěž byla asi 33,4 % místo 41,15 % (můj přepočet ze sazeb OECD [20]); příčina
+  obstojí a je hlavním důvodem rozdílu proti Polsku, protože odvody jsou v Maďarsku nižší: zaměstnavatel odvádí 13 % proti
+  asi 16,4 % hrubé mzdy v Polsku [20] a zaměstnanec 18,5 %, kdežto polský podle zákonných sazeb asi 21,5 % (13,71 %
+  sociálního a asi 7,8 % zdravotního pojištění; výpočet projektu podle pravidel roku 2024 [1]).
+- *Kdo platí formálně:* posun mezi odvody zaměstnavatele a zaměstnance (zaměstnavatel o 28,8 bodu hrubé mzdy méně,
+  zaměstnanec o 6 bodů víc než v roce 2000 [20]) je zčásti jen změnou toho, kdo platí; rozhoduje celková zátěž vůči
+  nákladům práce, která klesla o 13,5 bodu [1, 20]. Rodinné slevy, se kterými byla zátěž rodiny se dvěma dětmi v roce 2022
+  35,6 % (Maďarská národní banka 2023 [18]), se měřeného svobodného zaměstnance netýkají.
+
+## 4. Další faktory země
+
+**Minimální mzda.** Vláda zvedala minimální mzdu prudce už v roce 2001; tehdejší velké a trvalé zvýšení snížilo
+zaměstnanost jen málo a asi ze 75 % ho zaplatili spotřebitelé ve vyšších cenách a z 25 % vlastníci firem (změřeno,
+Harasztosi a Lindner 2019, srovnání firem podle toho, jak silně je zvýšení zasáhlo [21]). Od dohody z roku 2016 roste
+minimální mzda rychle znovu, o 19,4 % v roce 2022 a o 16 % v roce 2023, což podle Komise spolu s uvolněným rozpočtem
+přiživovalo inflaci (posoudila Evropská komise 2023 [14]); mezi lednem 2022 a lednem 2025 vzrostla o víc než 45,4 %, po
+odečtení inflace asi o 5,1 % (Evropská komise 2025 [16]), a mezi lednem 2022 a červencem 2026 o 61,4 %, reálně o 14,0 %
+(Evropská komise 2026 [17]). Maďarská národní banka řadí zvyšování minimální mzdy a zaručeného minima, platy ve veřejném
+sektoru a napjatý trh práce mezi hlavní důvody mzdového dohánění od poloviny 2010. let (posoudila Maďarská národní banka
+2023 [18]).
+
+**Slabé vyjednávání a nízký podíl mezd.** Evropská komise vysvětluje nízké maďarské mzdy nízkou produktivitou a „poměrně
+nízkým podílem mezd na národním důchodu“ (posoudila Evropská komise 2026 [17]). Kolektivní smlouvy kryjí 14,8 % zaměstnanců
+podle vlastního hlášení země (2023) nebo 20,4 % podle OECD (2022; v roce 2010 25,5 %), odbory sdružují 7,4 % zaměstnanců
+(2022), od října 2023 uzavírání smluv podle Komise fakticky brzdí zákonný práh 10% reprezentativnosti a ve zdravotnictví
+a veřejné správě jsou kolektivní smlouvy zakázané (Evropská komise 2026 [17]). Komise už v roce 2023 psala, že pravidla
+dovolují firmám řídit mzdy „z pozice síly“ (posoudila Evropská komise 2023 [14]); o kolik to snižuje průměrnou mzdu,
+nikdo nevyčíslil.
+
+**Odchod lidí do ciziny.** Komise píše, že mnoho vysoce kvalifikovaných Maďarů odchází, protože slabé podnikatelské
+prostředí nepřitahuje investice s vysokou přidanou hodnotou (posoudila Evropská komise 2025 [16]). Celkově je ale Maďarsko
+podle své centrální banky zemí „mírné emigrace“: v cizině žije 7,3 % Maďarů, nejméně ve střední a východní Evropě, proti
+11,8 % v průměru EU (Maďarská národní banka 2023 [18]); podle OSN žilo v roce 2024 v cizině 5,6 % lidí narozených
+v Maďarsku proti 11,9 % u Polska (OSN 2024 [22]). Vliv odchodu na průměrnou mzdu v Maďarsku nikdo nevyčíslil.
+
+**Veřejně prospěšné práce.** Veřejně prospěšné práce spotřebovaly v roce 2023 75 % rozpočtu aktivní politiky zaměstnanosti
+a méně než třetina účastníků programů má práci ještě šest měsíců po nich (Evropská komise 2026 [17]). Že takové práce
+přispěly k tomu, že pracujících přibývalo rychleji než výkonu, je můj úsudek bez vyčíslení.
+
+**Ceny a kupní síla.** Cenová hladina skutečné individuální spotřeby byla v roce 2024 68,9 % průměru EU, v Polsku 69,9 %
+(Eurostat 2026 [23]); nízké ceny zvedají maďarskou mzdu v kupní síle proti mzdě v eurech, rozdíl proti Polsku ale nedělají
+(můj úsudek z těchto dat). Maďarská národní banka uvádí, že průměrná mzda dosahovala v roce 2022 jen 46 % průměru EU
+v eurech, ale 71 % v kupní síle (Maďarská národní banka 2023, podle rešerše ekonomů projektu [25]).
+
+## 5. Co říkají ekonomové
+
+Evropská komise (2026) píše, že mzdy v Maďarsku zůstávají mezi nejnižšími v EU, „což odráží nízkou produktivitu a poměrně
+nízký podíl mezd na národním důchodu“ [25], a o rok dřív (2025), že „produktivita práce je jedna z nejnižších v EU a je na
+stejné úrovni jako před 15 lety“. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* výrok stojí na srovnání v kupní síle; ve stálých cenách maďarská produktivita v letech 2010–2024 rostla, asi o 15 % proti 11 % u středu ligy (viz opravu v oddílu 2). Maďarská národní banka (2024) vysvětluje, že produktivita velkých podniků je pod průměrem
+EU „hlavně kvůli nízkému podílu domácí přidané hodnoty ve výrobě“ (citace podle rešerše ekonomů projektu [25]).
+
+## 6. Zdroje
+
+1. Projekt Ekonomické hry (2026): data a listy této složky: [`data/kontext_kroky.json`](../data/kontext_kroky.json) (výkon na
+   pracujícího vůči střední zemi ligy z Eurostatu, zátěž 2024, řada OECD, čistá mzda),
+   [`KOLA_TABULKA.md`](../KOLA_TABULKA.md) (hodnoty kol ostatních zemí regionu) a
+   [`data/overeni_cista_mzda_2024.md`](../data/overeni_cista_mzda_2024.md) (polské odvody podle pravidel roku 2024 z modelu
+   EUROMOD), 17. 10. 2026.
+2. Eurostat (2026): HDP ve stálých cenách, meziroční změna (nama_10_gdp), staženo 17. 10. 2026:
+   https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&unit=CLV_PCH_PRE&na_item=B1GQ&geo=PL&geo=HU&sinceTimePeriod=1996
+   a všechny země v roce 2009:
+   https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?format=JSON&lang=EN&unit=CLV_PCH_PRE&na_item=B1GQ&time=2009
+3. Eurostat (2026): pracující podle národních účtů (nama_10_pe, EMP_DC), staženo 17. 10. 2026:
+   https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&geo=PL&geo=HU&sinceTimePeriod=1996
+4. Eurostat (2026): saldo a dluh veřejných financí (gov_10dd_edpt1), staženo 17. 10. 2026:
+   https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&lang=EN&unit=PC_GDP&sector=S13&na_item=B9&na_item=GD&geo=PL&geo=HU&sinceTimePeriod=2000
+5. Světová banka (2026): World Development Indicators, staženo 17. 10. 2026: zaměstnanost v zemědělství, odhad Mezinárodní
+   organizace práce
+   https://api.worldbank.org/v2/country/POL;HUN;CZE;SVK/indicator/SL.AGR.EMPL.ZS?format=json&date=1991:2024&per_page=500 ;
+   nezaměstnanost
+   https://api.worldbank.org/v2/country/POL;HUN/indicator/SL.UEM.TOTL.ZS?format=json&date=1991:2024&per_page=500 ;
+   příliv přímých zahraničních investic v % HDP
+   https://api.worldbank.org/v2/country/POL;HUN/indicator/BX.KLT.DINV.WD.GD.ZS?format=json&date=1991:1996&per_page=100 ;
+   HDP ve stálých cenách
+   https://api.worldbank.org/v2/country/POL;HUN/indicator/NY.GDP.MKTP.KD?format=json&date=1985:2000&per_page=500
+6. Fazekas, K., Koltay, J. (eds.) (2003): The Hungarian Labour Market: Review and Analysis 2003, předmluva editorů. Ústav
+   ekonomie Maďarské akademie věd a Národní nadace zaměstnanosti, Budapešť:
+   https://kti.krtk.hu/file/download/HLM2003/TheHungarianLabourMarket_2003_onefile.pdf
+7. Szanyi, M. (2003): An FDI-based development model for Hungary – new challenges? Ústav světové ekonomiky Maďarské akademie
+   věd, Working Paper 141: https://vgi.krtk.hu/files/wp-141.pdf
+8. Earle, J. S., Telegdy, Á., Antal, G. (2012): FDI and Wages: Evidence from Firm-Level and Linked Employer-Employee Data in
+   Hungary, 1986-2008. IZA Discussion Paper 7095 (verze v ILR Review 2018):
+   https://ideas.repec.org/p/iza/izadps/dp7095.html
+9. Caselli, F., Tenreyro, S. (2005): Is Poland the Next Spain? NBER Working Paper 11045:
+   https://www.nber.org/system/files/working_papers/w11045/w11045.pdf
+10. Campos, N. F., Coricelli, F., Moretti, L. (2014): Economic Growth and Political Integration: Estimating the Benefits from
+    Membership in the European Union Using the Synthetic Counterfactuals Method. IZA Discussion Paper 8162, tabulky 2 a 3:
+    https://www.iza.org/publications/dp/8162 ; plný text https://epflicht.ulb.uni-bonn.de/download/pdf/149785
+11. Evropská komise (2016): The impact of cohesion policy 2007-2013: model simulations with Quest III. Ex post evaluation,
+    Work Package 14a: https://ec.europa.eu/regional_policy/sources/evaluation/expost2013/wp14a_final_report_en.pdf
+12. Mezinárodní měnový fond (2008): Press Release No. 08/275, 6. 11. 2008 (úvěr 12,3 miliardy eur, s EU a Světovou bankou
+    20 miliard eur): https://www.imf.org/en/News/Articles/2015/09/14/01/49/pr08275
+13. Mezinárodní měnový fond (2011): Hungary: Ex Post Evaluation of Exceptional Access Under the 2008 Stand-By Arrangement.
+    IMF Country Report No. 11/145: https://www.imf.org/external/pubs/ft/scr/2011/cr11145.pdf
+14. Evropská komise (2023): 2023 Country Report – Hungary, SWD(2023) 617:
+    https://economy-finance.ec.europa.eu/document/download/6623051a-f0a8-4937-9c11-8b2dc9a98b21_en?filename=ip241_en.pdf
+15. Evropská komise (2024): 2024 Country Report – Poland, SWD(2024) 621 (srovnání soukromých investic):
+    https://economy-finance.ec.europa.eu/document/download/869bf64a-a2f1-4059-a991-66da32de8c7d_en?filename=SWD_2024_621_1_EN_Poland.pdf
+16. Evropská komise (2025): 2025 Country Report – Hungary, SWD(2025) 217:
+    https://economy-finance.ec.europa.eu/document/download/2cbf7c79-d190-466f-818a-35e6c4da42b1_en?filename=HU_CR_SWD_2025_217_1_EN_autre_document_travail_service_part1_v3.pdf
+17. Evropská komise (2026): 2026 Country Report – Hungary, SWD(2026) 217:
+    https://economy-finance.ec.europa.eu/document/download/5d1d6502-7eb9-4f3a-a6e5-59a4037cea6d_en?filename=HU_SWD_2026_217_1_EN_autre_document_travail_service_part1_v3.pdf
+18. Maďarská národní banka (2023): Competitiveness Report 2023: https://www.mnb.hu/letoltes/competitiveness-report-2023.pdf
+19. Maďarská národní banka (2024): Productivity Report, prosinec 2024:
+    https://www.mnb.hu/letoltes/termelekenysegi-jelentes-2024-december-eng.pdf
+20. OECD (2026): Taxing Wages, svobodný bez dětí při průměrné mzdě (zátěž, průměrná daň z příjmu, odvody zaměstnance
+    a zaměstnavatele), staženo 17. 10. 2026:
+    https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/POL+HUN.AV_TW+AV_ITR+AV_R_EMPEE_SSC+AV_R_EMPER_SSC..S_C0.AW100..A?startPeriod=2000&endPeriod=2024&format=csvfilewithlabels
+21. Harasztosi, P., Lindner, A. (2019): Who Pays for the Minimum Wage? American Economic Review 109(8), 2693–2727:
+    https://ideas.repec.org/a/aea/aecrev/v109y2019i8p2693-2727.html
+22. OSN, Oddělení pro hospodářské a sociální záležitosti (2024): International Migrant Stock 2024; staženo projektem
+    (`data/raw_faktory/doplnena_data.json`) z
+    https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_ims_stock_by_sex_destination_and_origin.xlsx
+23. Eurostat (2026): cenové hladiny skutečné individuální spotřeby, EU = 100 (prc_ppp_ind_1), staženo 17. 10. 2026:
+    https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=PLI_EU27_2020&ppp_cat18=A01&geo=PL&geo=HU&time=2024
+24. OECD (2024): Survey of Adult Skills 2023 (DOI 10.1787/b263dc5d-en); čísla převzal projekt z tabulky irského
+    statistického úřadu (`data/raw_faktory/doplnena_data.json`):
+    https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/PIAAC01/CSV/1.0/en
+25. Rešerše ekonomů projektu: [`ekonomove/HU.md`](../ekonomove/HU.md) (výroky Evropské komise 2025 a 2026, Maďarské
+    národní banky 2023 a 2024 a Mezinárodního měnového fondu 2024 v překladu, s odkazy na originály).
+26. Rešerše studií projektu: [`studie/UCINKY.md`](../studie/UCINKY.md), oddíl o tom, kdo nese daně a odvody z práce.
+27. Mezinárodní měnový fond (2010): IMF Survey: Poland: European Success Story but Challenges Ahead (26. 3. 2010):
+    https://www.imf.org/external/pubs/ft/survey/so/2010/CAR032610A.htm
+
+## 7. Doplnění rešerše 26. 10. 2026 (tvrzení zlatého vzoru Střední Evropy)
+
+*Ondřej 26. 10. 2026: tvrzení scénáře bez opory se doplní rešerší. Úplná tabulka verdiktů a zdrojů: `RESERSE_ZLATY_VZOR_2026-10-26.md`. U každé položky je, do kterého oddílu patří (1 = dědictví do roku 1989, 2 = tah země po roce 1990, 3 = daně, 4 = další faktory).*
+
+- **Oddíl 1–2, platí:** soukromý sektor 1989 asi 20 % HDP; nejvyšší zahraniční dluh na obyvatele v regionu (asi 2 800 USD v roce 1995 proti asi 900 v Česku a na Slovensku), včasné splácení pomohlo přilákat zahraniční investory; podniky prodávalo jednotlivě strategickým investorům, zhruba dvě třetiny aktiv privatizovaných 1991–97 koupili cizinci za asi 6,4 mld. USD (Kaminski a Riboud 2000, sekundární citace).
+- **Oddíl 4:** asi 60 % bankovních aktiv v domácích rukou; Erste má 11,7 % retailových úvěrů.
