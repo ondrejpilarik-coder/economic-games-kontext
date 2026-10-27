@@ -62,7 +62,7 @@ A vítězem regionu v evropské špičce je Švýcarsko s více než čtyřiceti
 
 ### Automatická kontrola scénáře: Západní Evropa
 
-Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_2026_10\gemini\ZAPADNI_EVROPA\SCENAR_GEMINI.md`; mluvený text 1487 slov (asi 10.6 minuty při 140 slovech za minutu).
+Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_2026_10\gemini\ZAPADNI_EVROPA\SCENAR_GEMINI.md`; mluvený text 1343 slov (asi 9.6 minuty při 140 slovech za minutu).
 Čísel psaných číslicemi: 0, z toho bez opory v datech: **0**.
 
 ### Čísla
@@ -73,7 +73,7 @@ Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_
 ### Pravidla
 
 - „u nás“ ×1 (bez českého patriotismu)
-- délka 1487 slov mimo cíl 1 050–1 150
+- délka 1343 slov mimo cíl 1 050–1 150
 
 ### Co automatická kontrola nepozná (ručně, Claude)
 
