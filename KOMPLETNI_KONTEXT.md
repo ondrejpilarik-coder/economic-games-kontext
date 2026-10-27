@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 27. 10. 2026 17:20 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `c5c866b0`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 27. 10. 2026 17:21 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `c5c866b0`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -99,6 +99,16 @@ Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_
 
 - čísla psaná slovy, tvrzení o pořadí („nejlepší“, „poslední“, „předběhlo“), kauzální závěry proti výkladům zemí,
 - fakta navíc (značky, historie) – smějí jen ilustrovat mechanismus doložený ve výkladu země.
+
+### Ruční kontrola (nezávislý kontrolor + Claude, 27. 10. 2026)
+
+Poznámka k běhu: Argon odpověděl za 6 minut, ale Antigravity CLI po odpovědi neskončilo a skript čekal do limitu 35 minut (třikrát); scénář je uložený ze záznamu `agy_vystup.jsonl`. Skript nyní agy ukončí hned po hotové odpovědi.
+
+**Sedí:** všechny hodnoty, body a místa kol, dohánění, zátěž všech pěti zemí a mechanismy kola 3 (pojistné, britská a irská pravidla, švýcarské fondy, francouzská past nízkých mezd, německé pojistné), čisté mzdy v kupní síle i v eurech, ceny, „co kola nevysvětlí“ (+15,7 / +7,3 / +4,6 / +4,2 / −6,6), podíly mezd a zaměstnanců, pořadí v regionu, patra, štítky; falešný nález „u nás“ (řetězec „mu náskok“).
+
+**Bodově opraveno (23 míst; původní text Argona v `SCENAR_GEMINI_PUVODNI.md`):** prozrazené první místo Švýcarska v celé lize („vrchol celé sedmadvacítky“, „trůn ligy“); Francie a Německo nejsou na chvostu daní (24. a 25., za nimi Rakousko a Belgie) a doplněna hlavní příčina francouzské zátěže; 85 % přidané hodnoty patří všem velkým nadnárodním firmám, ne Roche a Novartis; obrácený mechanismus u Francie (nízká zaměstnanost produktivitu na pracujícího netlumí); britské investice jen jako souvislost; farmacie po roce 2015 Švýcarsko nepodržela; Německo: období 1996–2024, reforma jen přispěla, energetický šok od 2022, bez Volkswagenu; ve finále příčiny „co kola nevysvětlí“ podle rozkladu (Německo, Irsko obráceným směrem, Británie, Francie bez minimální mzdy); drobnosti (o víc než čtvrtinu, Big Mac z roku 2003, irský záchranný balík, Pfizer vypuštěn, učni vysvětlí pětinu propadu).
+
+**Bez opory, ponecháno jako obecně známé:** Roche, Novartis, Renault, Airbus, Apple, soustružník v Lipsku, švýcarská neutralita, londýnská City.
 
 
 ---
