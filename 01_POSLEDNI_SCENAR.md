@@ -1,11 +1,11 @@
 # Poslední scénář – Střední Evropa
 
-*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 27. 10. 2026 19:42.*
+*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 27. 10. 2026 19:50.*
 
 
 ## Předstartovní showcase
 
-Do středoevropské rozjížďky o čistou výplatu v kupní síle nastupuje pět sousedů mířících do opačných pater pelotonu. Favoritem na vítězství v regionu i evropskou špičku je alpské Rakousko, země silného sociálního státu a vyspělých služeb, kde vysoké výplaty provází drahý život. O druhé a třetí místo v regionu i střed ligy se porve průmyslové Česko s plnou zaměstnaností a dražším životem proti Polsku, těžícímu z velkého trhu a nízkých cen. Naopak Slovensku, závislému na výrobě aut při drahých cenách v eurech, i Maďarsku s levnými montovnami a lácí v obchodech hrozí dno regionu a chvost sedmadvacítky.
+Do středoevropské rozjížďky o čistou výplatu v kupní síle nastupuje pět sousedů mířících do opačných pater pelotonu. Favoritem na vítězství v regionu i evropskou špičku je alpské Rakousko, země silného sociálního státu, kde vysoké výplaty provází drahý život. O druhé a třetí místo v regionu i střed ligy se porve průmyslové Česko s plnou zaměstnaností a dražším životem proti Polsku, s levným životem. Naopak Slovensku, závislému na výrobě aut a s cenami jako v Česku, i Maďarsku s levnými montovnami a lácí v obchodech hrozí dno regionu a chvost sedmadvacítky.
 
 ## Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
 
@@ -13,31 +13,31 @@ Do středoevropské rozjížďky o čistou výplatu v kupní síle nastupuje pě
 
 První kolo rozdává startovní karty roku devatenáct set devadesát šest podle zděděné produktivity. Rakousko se už roku devatenáct set padesát pět zbavilo okupace, na svobodném trhu vybudovalo strojírny, ocelárny Voestalpine i alpský turismus a startovalo čtvrté v celé Evropě o pětinu nad středem ligy, zatímco zbylá čtveřice po čtyřiceti letech plánování ztrácela třetinu až polovinu produktivity.
 
-Nejlepší karty z východní čtveřice drželo Česko na dvou třetinách středu ligy. Před válkou bylo stejně bohaté jako Rakousko a díky strojírenskému jádru se Škodou či Tatrou měl český soustružník v halách o sedm procent více strojů a budov než průměrný Evropan. Opouštělo ale socialismus jako nejzestátněnější země bloku se soukromým sektorem pod pěti procenty výkonu a státními kolosy vyrábějícími zboží nízké tržní hodnoty.
+Nejlepší karty z východní čtveřice drželo Česko na dvou třetinách středu ligy. Před válkou bylo stejně bohaté jako Rakousko a díky strojírenskému jádru se Škodou či Tatrou měl český soustružník ještě roku devatenáct set devadesát šest v halách o sedm procent více strojů a budov než průměrný Evropan. Opouštělo ale socialismus jako nejzestátněnější země bloku se soukromým sektorem pod pěti procenty výkonu a státními kolosy vyrábějícími zboží nízké tržní hodnoty.
 
-Těsně nad polovinou středu ligy začínalo Maďarsko se Slovenskem. Maďarsko mělo z gulášového komunismu volnější podniky, malé zemědělství a nejvýkonnější průmysl na východě. Naopak dříve agrární Slovensko komunisté osázeli zbrojovkami a hutěmi pro sovětskou armádu; po zániku východních trhů se slovenský výkon propadl o čtvrtinu a chyběla třetina kapitálu. Ze dna na dvaadvacátém místě v celé Evropě vyráželo Polsko, kde komunisté roku devatenáct set padesát šest vzdali kolektivizaci: tři čtvrtiny půdy zůstaly soukromým rolníkům a skoro čtvrtina Poláků pracovala na políčkách s ani ne desetinovým výkonem oproti farmáři ve Francii.
+Těsně nad polovinou středu ligy začínalo Maďarsko se Slovenskem. Maďarsko mělo z gulášového komunismu volnější podniky, málo lidí v zemědělství a nejvýkonnější průmysl na východě. Naopak dříve agrární Slovensko komunisté osázeli zbrojovkami a hutěmi pro sovětskou armádu; po zániku východních trhů se slovenský výkon propadl o čtvrtinu a chyběla třetina kapitálu. Ze dna na dvaadvacátém místě v celé Evropě vyráželo Polsko, kde komunisté roku devatenáct set padesát šest vzdali kolektivizaci: tři čtvrtiny půdy zůstaly soukromým rolníkům a skoro čtvrtina pracujících Poláků dřela na políčkách s ani ne desetinovým výkonem oproti farmáři ve Francii.
 
 ## Kolo 2 – Tah země: Vývoj produktivity 1996–2024
 
 [VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 a body): 1. Polsko (1,76×, +39,9 b., 5. v Evropě), 2. Slovensko (1,56×, +28,4 b., 7. v Evropě), 3. Maďarsko a 4. Česko (shodně 1,38×, +16,6 b., 9. a 10. v Evropě – Maďarsko pod úrovní běžného dohánění), 5. Rakousko (0,98×, −17,0 b., 21. v Evropě).]
 
-Druhé kolo měří růst produktivity do roku dva tisíce dvacet čtyři, přes čtyři pětiny daný prostým doháněním: převzít západní linku je totiž snazší než vymýšlet patenty.
+Druhé kolo měří růst produktivity do roku dva tisíce dvacet čtyři, jehož rozdíly mezi zeměmi z víc než čtyř pětin vysvětlí prosté dohánění: převzít západní linku je totiž snazší než vymýšlet patenty.
 
-Bohaté Rakousko proto vůči středu ligy o dvě procenta ztratilo, špičku ale ubránilo: jeho banky ovládly slovenský a velkou část českého trhu a čtrnáctiprocentní prémií zvedlo výzkum z půldruhého na přes tři procenta výkonu. Nejrychleji dohánělo Polsko, jeden a třičtvrtěkrát a páté v celé Evropě, a Slovensko jedenapůlkrát. Polsko po šokové terapii přesunulo miliony rolníků do osmkrát výkonnějšího průmyslu a desetkrát výkonnějších služeb, v ekonomických zónách udrželo přes sedmdesát procent hodnoty vývozu doma a jediné v Unii rostlo i roku dva tisíce devět díky slabšímu zlotému, domácímu trhu a sedmiprocentnímu schodku. Školská reforma zlepšila žáky, dovednosti dospělých ale zaostávají, více v epizodě o školství.
+Bohaté Rakousko proto vůči středu ligy o dvě procenta ztratilo, špičku ale ubránilo; jeho banky přitom ovládly slovenský a velkou část českého bankovního trhu a prémií za firemní výzkum, dnes čtrnáctiprocentní, zvedlo výzkum z půldruhého na přes tři procenta výkonu. Nejrychleji dohánělo Polsko, jeden a třičtvrtěkrát a páté v celé Evropě, a Slovensko jedenapůlkrát. Polsko po šokové terapii přesunulo miliony rolníků do osmkrát výkonnějšího průmyslu a desetkrát výkonnějších služeb, lákalo investory do ekonomických zón, z celého vývozu udrželo přes sedmdesát procent hodnoty doma a jediné v Unii rostlo i roku dva tisíce devět díky slabšímu zlotému, domácímu trhu a sedmiprocentnímu schodku. Školská reforma zlepšila výsledky žáků, dovednosti dospělých ale zaostávají, více v epizodě o školství.
 
-Česko s Maďarskem vyrostly o necelé dvě pětiny. Maďarsko prodalo podniky západním koncernům jako General Electric či Audi, kdežto česká kuponová privatizace nechala firmy fondům a polostátním bankám bez kapitálu, což roku devatenáct set devadesát sedm vyústilo v měnovou krizi a recesi. Od roku dva tisíce vsadily Česko se Slovenskem na automobilky se Škodou a bratislavským Volkswagenem a Slovensku přidal deset procent vstup do eurozóny.
+Česko s Maďarskem vyrostly o necelé dvě pětiny. Maďarsko prodalo podniky západním koncernům jako General Electric či Audi, kdežto Česko muselo skoro celou státní ekonomiku rychle rozdat v kuponech, které nechaly firmy fondům a polostátním bankám bez kapitálu, což roku devatenáct set devadesát sedm vyústilo v měnovou krizi a recesi. Od roku dva tisíce vsadily Česko se Slovenskem na automobilky se Škodou a bratislavským Volkswagenem a Slovensku přidalo euro do roku dva tisíce jedenáct asi desetinu výkonu.
 
-Po roce dva tisíce šestnáct ale levná montáž narazila na strop. Maďarsko rostlo pod úrovní dohánění: po kolapsu roku dva tisíce osm s cizoměnovými hypotékami a úvěrem dvacet miliard eur hnala vláda zaměstnanost jen veřejnými pracemi a montovnami s poloviční domácí přidanou hodnotou a výzkumem pod procentem výkonu. Česko přibrzdily škrty po roce dva tisíce deset, které prodloužily recesi, byť udržely nízký dluh pro epizodu o zadlužení, a oslabení koruny roku dva tisíce třináct, jež podle kritiků tlumilo inovace, což centrální banka odmítá a nikdo nezměřil. Z nových zahraničních investic šla v Česku na výzkum jen čtyři procenta a celkově na něj dává Česko pod půldruhého a Slovensko jen tři čtvrtě procenta výkonu, více v epizodě o produktivitě.
+Po roce dva tisíce šestnáct ale levná montáž narazila na strop. Maďarsko rostlo pod úrovní dohánění: po kolapsu roku dva tisíce osm s cizoměnovými hypotékami a záchranným úvěrem dvacet miliard eur hnala vláda zaměstnanost jen veřejnými pracemi a montovnami s poloviční domácí přidanou hodnotou a výzkumem pod procentem výkonu. Česko přibrzdily škrty po roce dva tisíce deset, které prodloužily recesi, byť udržely nízký dluh, k čemuž se vrátí epizoda o zadlužení, a oslabení koruny roku dva tisíce třináct, jež podle kritiků tlumilo inovace, což centrální banka odmítá a nikdo nezměřil. Z nových zahraničních investic šla v Česku na výzkum jen čtyři procenta a v průměru na něj dávalo Česko pod půldruhého a Slovensko jen tři čtvrtě procenta výkonu, více v epizodě o produktivitě.
 
 ## Kolo 3 – Tah země: Daňový klín
 
 [VIZUÁL: Grafické schéma „Daňového klínu“ (součet daní a odvodů zaměstnance z hrubé mzdy + odvodů zaměstnavatele nad hrubou mzdu vůči celkovým nákladům práce) a tabulka Kola 3: 1. Polsko (39,6 %, +1,8 b., 9. v Evropě), 2. Maďarsko (41,15 %, 0,0 b.), 3. Česko (41,18 %, 0,0 b.), 4. Slovensko (44,6 %, −4,0 b., 22. v Evropě), 5. Rakousko (47,0 %, −6,9 b., 26. v Evropě).]
 
-Třetí kolo měří daňový klín, tedy součet daní a odvodů zaměstnance i firmy vůči celkovým nákladům práce. Státy zátěž různě schovávají: Polsko a Maďarsko strhávají většinu z hrubé mzdy, kdežto v Česku a na Slovensku vidí člověk na pásce jen dvacet až čtyřiadvacet procent a další třetinu odvádí potichu firma nad hrubou mzdu. Podle studií přitom dvě třetiny zátěže dlouhodobě nese zaměstnanec v nižší výplatě.
+Třetí kolo měří daňový klín, tedy součet daní a odvodů zaměstnance i firmy vůči celkovým nákladům práce. Státy zátěž různě schovávají: Polsko a Maďarsko strhávají většinu odvodů přímo z hrubé mzdy, kdežto v Česku a na Slovensku vidí člověk na pásce jen kolem dvaceti až čtyřiadvaceti procent a další třetinu odvádí potichu firma nad hrubou mzdu. Dlouhodobě přitom dvě třetiny zátěže nese zaměstnanec v nižší výplatě.
 
 Nejmenší díl bere Polsko pod čtyřiceti procenty díky nezdanitelné částce třicet tisíc zlotých, oslabené zrušením odpočtu zdravotního pojištění. Na středu ligy kolem jednačtyřiceti procent leží Maďarsko s Českem: Maďarsko má nízké odvody firem, bezdětným ale bere třetinu hrubé mzdy od prvního forintu, zatímco Česko drží nízkou daň po zrušení superhrubé mzdy roku dva tisíce dvacet jedna.
 
-Nejtěžší klín nesou Slovensko se skoro pětačtyřiceti a Rakousko se sedmačtyřiceti procenty. V bohatém Rakousku, které daní třináctý a čtrnáctý plat šesti procenty a od roku dva tisíce dvacet tři zvedá pásma o většinu inflace, ale lidé dostávají lépe fungující stát a neodcházejí. Naopak dohánějící Slovensko vysokými odvody látá důchody a druhý pilíř bez západních institucí: drahá kvalifikovaná práce brzdí nové firmy, lidé utíkají do švarcsystému s nejvyšším podílem závislých živnostníků v Unii a pětina vysokoškoláků studuje v cizině, hlavně v Česku. Zda to zachrání penze, ukáže epizoda o důchodech.
+Nejtěžší klín nesou Slovensko se skoro pětačtyřiceti a Rakousko se sedmačtyřiceti procenty. V bohatém Rakousku, které daní třináctý a čtrnáctý plat šesti procenty a od roku dva tisíce dvacet tři zvedá pásma o většinu inflace, dostávají lidé lépe fungující stát a nemají důvod odcházet. Naopak dohánějící Slovensko vysokými odvody látá důchody a druhý pilíř, západní instituce ale za to nedává: drahá kvalifikovaná práce brzdí nové firmy, lidé utíkají do švarcsystému s nejvyšším podílem závislých živnostníků v Unii a pětina vysokoškoláků studuje v cizině, hlavně v Česku. Zda to zachrání penze, ukáže epizoda o důchodech.
 
 ## Finále regionu: Odhalení pořadí od posledního po vítěze
 
@@ -45,33 +45,32 @@ Nejtěžší klín nesou Slovensko se skoro pětačtyřiceti a Rakousko se sedma
 
 Cíl roku dva tisíce dvacet čtyři leží se středem ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
 
-Páté v regionu a v evropském suterénu končí Maďarsko. Výplatu jen dvanáct tisíc tři sta eur sice třetinová láce zvedne na sedmnáct tisíc osm set jednotek, přesto oproti kolům ztrácí čtrnáct bodů: slabé odbory v montovnách totiž vyjednají na mzdy jen necelých dvaačtyřicet procent výkonu pro devadesát dva procenta zaměstnanců. Bere štítek „Chybami si přitížilo“.
+Páté v regionu a v evropském suterénu končí Maďarsko. Výplatu jen dvanáct tisíc tři sta eur sice třetinová láce zvedne na sedmnáct tisíc osm set jednotek, přesto oproti kolům ztrácí čtrnáct bodů: slabé odbory v montovnách totiž vyjednají na mzdy jen necelých dvaačtyřicet procent výkonu, ačkoli zaměstnanci tvoří skoro dvaadevadesát procent pracujících. Bere štítek „Chybami si přitížilo“.
 
 Čtvrté v regionu a rovněž v suterénu Evropy je Slovensko s necelými devatenácti tisíci jednotkami. Slovák bere patnáct tisíc tři sta eur, ale nakupuje za osmdesát procent unijních cen jako v Česku. Kvůli slabým odborům a švarcsystému ztrácí jedenáct bodů se štítkem „Vyčerpaný montážní model“.
 
-Třetí v regionu, těsně pod středem Evropy, končí po skoku ze dna Polsko s dvaadvaceti tisíci jednotkami. V eurech bere Polák patnáct tisíc čtyři sta jako Slovák, díky velkému trhu, levným potravinám a vlastní měně ale nakupuje o třetinu levněji než Unie a o šestinu výhodněji než soused, což rozklíčuje epizoda o cenové hladině. Pětina Poláků navíc fakturuje jako živnostníci a země bere štítek „Dělá to dobře a je to vidět“.
+Třetí v regionu, těsně pod středem Evropy, končí po skoku ze dna Polsko s dvaadvaceti tisíci jednotkami. V eurech bere Polák patnáct tisíc čtyři sta jako Slovák, díky velkému trhu, levným potravinám a vlastní měně ale nakupuje o třetinu levněji než Unie a o šestinu výhodněji než soused, což rozklíčuje epizoda o cenové hladině. Pětina pracujících Poláků navíc nepracuje jako zaměstnanci, proti kolům ztrácí jen tři body a země bere štítek „Dělá to dobře a je to vidět“.
 
-Druhé v regionu, těsně pod středem Evropy, uhájilo Česko s třiadvaceti tisíci třemi sty jednotkami a necelými devatenácti tisíci eury. V ekonomice dceřiných závodů a slabých odborů jde na mzdy jen necelých čtyřiačtyřicet procent výkonu a roku 2025 odteklo přes pět procent výkonu na dividendách do ciziny, takže ztrácí čtyři body se štítkem „Dobrý motor, ale s vlastními brzdami“.
+Druhé v regionu, těsně pod středem Evropy, uhájilo Česko s třiadvaceti tisíci třemi sty jednotkami a necelými devatenácti tisíci eury. V ekonomice dceřiných závodů a slabých odborů jde na mzdy jen necelých čtyřiačtyřicet procent výkonu a roku dva tisíce dvacet čtyři odteklo přes čtyři procenta výkonu ekonomiky na výnosech do ciziny a ztrácí čtyři body se štítkem „Dobrý motor, ale s vlastními brzdami“.
 
-Vítězem v regionu vysoko v evropské špičce je Rakousko se čtyřiatřiceti tisíci jednotkami a přes čtyřicet tisíc eur, krácených nejvyššími cenami regionu. Kolům uteklo o šestnáct bodů: centrály firem sídlí doma a povinné členství v Hospodářské komoře drží kolektivní smlouvy pro osmadevadesát procent pracujících, jimž jde do výplat skoro polovina výkonu. Se štítkem „Dělá to dobře a je to vidět“ vede závod – sesadí ho Západ či Skandinávie?
+Vítězem v regionu a v evropské špičce je Rakousko se čtyřiatřiceti tisíci jednotkami a přes čtyřicet tisíc eur, krácených nejvyššími cenami regionu. Kolům uteklo o šestnáct bodů: centrály firem sídlí doma a povinné členství v Hospodářské komoře drží kolektivní smlouvy pro osmadevadesát procent zaměstnanců, jimž jde do výplat skoro polovina výkonu. Se štítkem „Dělá to dobře a je to vidět“ vede závod – sesadí ho Západ či Skandinávie?
 
 
 # Kontrola čísel a opravy (Claude)
 
 ### Automatická kontrola scénáře: Střední Evropa
 
-Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_2026_10\gemini\STREDNI_EVROPA\SCENAR_GEMINI.md`; mluvený text 1146 slov (asi 8.2 minuty při 140 slovech za minutu).
-Čísel psaných číslicemi: 1, z toho bez opory v datech: **0**.
+Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_2026_10\gemini\STREDNI_EVROPA\SCENAR_GEMINI.md`; mluvený text 1201 slov (asi 8.6 minuty při 140 slovech za minutu).
+Čísel psaných číslicemi: 0, z toho bez opory v datech: **0**.
 
 ### Čísla
 
 | Ve scénáři | Opora v datech |
 |---|---|
-| 2025 | přesně |
 
 ### Pravidla
 
-- bez nálezu
+- délka 1201 slov mimo cíl 1 050–1 150
 
 ### Co automatická kontrola nepozná (ručně, Claude)
 
@@ -105,6 +104,12 @@ privatizace, rok 2009 v Polsku, záchranný úvěr Maďarsku, sanace slovinskýc
 **Pro Ondřeje (ne chyby faktů):** délka 1 056 mluvených slov je nad zadaným cílem 750–950 (asi 7,5 minuty); značky
 (Škoda, Volkswagen) a obrazy (rolník, soustružník) jen ilustrují doložené mechanismy; „rozklíčujeme / rozebereme
 v epizodě“ je hlas pořadu, ne „my“ o Česku.
+
+### Zkrácení zlatého vzoru a nový showcase (27. 10. 2026)
+
+Ondřej: „nech Argona zkrátit i Střední Evropu stejným způsobem a zkontroluj fakta.“ Argon zkrátil opravený zlatý vzor (`SCENAR_PRED_ZKRACENIM.md`, asi 1 580 slov) v novém rozhovoru s kuchařkou a aktuálními podklady na 1 146 slov a přepsal showcase podle pravidla 9; jeho starší scénář z 25. 10. je v `SCENAR_GEMINI_ARGON_2026-10-25.md`. Nezávislý kontrolor porovnal zkrácenou verzi s opraveným vzorem a podklady. **Bodově opraveno 26 míst:** vypadlá omezující slova („odvodů“, „bankovního“, rok 1996, „v průměru“, „záchranný“, „kolem“), čtyři pětiny dohánění vztažené k růstu místo k rozdílům mezi zeměmi, 71 % domácí hodnoty pro celý polský vývoz, 92 % je podíl zaměstnanců mezi pracujícími (ne pokrytí smlouvami), odliv výnosů 4,3 % HDP v roce 2024 místo údaje za 2025 a bez „takže“, výchozí pozice u kupónové privatizace vrácena, 98 % zaměstnanců (ne pracujících), pětina Poláků mimo zaměstnance (ne „živnostníci“) a doplněné body Polska, showcase (Slovensko „drahé ceny v eurech“ → ceny jako v Česku, bez „vyspělých služeb“, bez opakování polských cen), „vysoko v evropské špičce“ → „v evropské špičce“, bez zmínky o studiích, gramatika. Všechna pořadí v celé Evropě sedí.
+
+**Otevřené (zděděné ze vzoru):** štítky Maďarska, Slovenska a Česka ve vzoru („Chybami si přitížilo“, „Vyčerpaný montážní model“, „Dobrý motor, ale s vlastními brzdami“) neodpovídají datům hodnocení z 18. 10. (všech pět „Dělá to dobře a je to vidět“), přehodnocení podle pojistky výchozí pozice čeká; showcase rozdává očekávání shodné s konečným pořadím v regionu, i když Polsko je podle rozdaných karet páté.
 
 
 # Dosavadní konzultace s Gemini 4 Argonem
