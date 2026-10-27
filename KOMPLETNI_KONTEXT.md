@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 27. 10. 2026 18:18 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `eb19a19c`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 27. 10. 2026 18:26 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `eb19a19c`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -20,14 +20,14 @@ Aktualizováno 27. 10. 2026 18:18 automaticky ze soukromého repozitáře projek
 
 # Poslední scénář – Západní Evropa
 
-*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 27. 10. 2026 18:18.*
+*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 27. 10. 2026 18:26.*
 
 
 ## Předstartovní showcase
 
 [VIZUÁL: Startovní rošt západoevropské rozjížďky – pět ekonomických těžkých vah: alpská pevnost Švýcarsko, průmyslový motor Německo, státem řízená Francie, finanční ostrov Británie a korporátní tygr Irsko.]
 
-Do západoevropské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupuje pět těžkých vah. Favoritem na triumf v regionu i čelo evropské špičky je Švýcarsko, kde obří platy globálních centrál narážejí na nejdražší život kontinentu. O medaile a špičku ligy bojují i průmyslové Německo s mírnějšími cenami a drahá Británie opřená o služby. Černým koněm na hraně špičky je Irsko, kde výdělky v zámořských korporacích krotí drahota, zatímco cenově dostupné Francii se stlačenými mzdami hrozí chvost regionu a střed ligy.
+Do západoevropské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupuje pět těžkých vah. Favoritem na triumf v regionu i místo v evropské špičce je Švýcarsko, kde obří výplaty narážejí na nejdražší život v celé Evropě. O medaile a špičku ligy bojují i průmyslové Německo s mírnějšími cenami a drahá Británie opřená o služby. Černým koněm na hraně špičky je Irsko, kde výdělky v zámořských korporacích krotí drahota, zatímco levnější Francii se stlačenými mzdami hrozí chvost regionu a střed ligy.
 
 ## Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
 
@@ -35,11 +35,11 @@ Do západoevropské rozjížďky o nejvyšší čistou výplatu v kupní síle n
 
 Karty roku devatenáct set devadesát šest ukazují zděděnou produktivitu, s níž celá pětice začínala nad středem ligy.
 
-Třetí v celé Evropě startovalo Švýcarsko, o víc než čtvrtinu nad středem. Vyhnulo se válkám, před tou druhou bylo dvakrát bohatší než střed Evropy a pracovníci měli o dvě pětiny více kapitálu. Produktivitu táhnou nadnárodní firmy jako Roche a Novartis s více než pětaosmdesáti procenty přidané hodnoty, zatímco celá ekonomika rostla od sedmdesátých let pomalu, což vláda přičítala chráněnému trhu.
+Třetí v celé Evropě startovalo Švýcarsko, o víc než čtvrtinu nad středem. Vyhnulo se válkám, před tou druhou bylo dvakrát bohatší než střed Evropy a pracovníci měli o dvě pětiny více kapitálu. Produktivitu táhnou velké nadnárodní firmy od Roche a Novartisu po strojírny a banky, dohromady s více než pětaosmdesáti procenty přidané hodnoty, zatímco celá ekonomika rostla od sedmdesátých let pomalu, což vláda přičítala chráněnému trhu.
 
 Necelou pětinu a šestinu nad středem vyjížděly Francie s Německem. Průmyslová Francie s Renaultem sice v hodinové produktivitě dohnala Spojené státy, na pracujícího ji ale tlumilo o sto padesát odpracovaných hodin méně než v Unii. Německo mělo o pětinu více kapitálu, jenže průměr srazilo sjednocení: východoněmecký soustružník dosahoval necelých tří čtvrtin západní produktivity, kde dohánění zamrzlo.
 
-Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie investuje nejméně ze sedmi největších vyspělých ekonomik a šestnáctiprocentní hodinové manko na Francii doháněla delší prací. Chudé Irsko s šestnáctiprocentní nezaměstnaností v osmdesátých letech sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
+Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie investuje nejméně ze sedmi největších vyspělých ekonomik a šestnáctiprocentní hodinové manko na Francii doháněla delší prací. Irsko, v osmdesátých letech chudé a s šestnáctiprocentní nezaměstnaností, teprve sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
 
 ## Kolo 2 – Tah země: Vývoj produktivity 1996–2024
 
@@ -47,9 +47,9 @@ Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie in
 
 Druhé kolo sleduje vývoj do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění z nízkého základu, protože převzít linku je snazší než vymýšlet patenty.
 
-Vítězem je proto Švýcarsko: vůči středu sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo běžné dohánění. Od roku dva tisíce dva otevřelo trh odborníkům z Unie a farmacie rostla skoro o desetinu ročně, obstarala čtvrtinu růstu a po letech se silným frankem pomohla projít pandemií. První v kole skončilo Irsko s růstem o sedmnáct procent, jehož nadrůst nad dohánění je však po započtení cen nejistý. Měříme ho přes očištěný důchod: když korporace jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt roku dva tisíce patnáct bez nové výroby vyskočil o čtvrtinu. I po očištění však produktivita rostla, zčásti díky technologiím a lékům – ačkoliv po roce dva tisíce osm praskla úvěrová bublina, investice spadly o dvě pětiny a stát čerpal pětaosmdesátimiliardový záchranný balík.
+Skutečným vítězem je proto Švýcarsko: vůči středu sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo běžné dohánění. Od roku dva tisíce dva otevřelo trh odborníkům z Unie a farmacie rostla skoro o desetinu ročně, obstarala čtvrtinu růstu a po letech se silným frankem pomohla projít pandemií. První v kole skončilo Irsko s růstem o sedmnáct procent, jehož nadrůst nad dohánění je však po započtení cen nejistý. Měříme ho přes očištěný důchod: když korporace jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt roku dva tisíce patnáct bez nové výroby vyskočil o čtvrtinu. I po očištění však produktivita rostla, zčásti díky technologiím a lékům – ačkoliv po roce dva tisíce osm praskla úvěrová bublina, investice spadly o dvě pětiny a stát čerpal pětaosmdesátimiliardový záchranný balík.
 
-Zbylá trojice ztratila kolem dvaceti bodů: u Francie to odpovídá zpomalení bohaté země, u Británie s Německem je čistý tah nejistý. Británii táhl rozmach londýnské City a severomořská ropa; krize roku dva tisíce osm ale obojí vypnula a nejistota odchodu z Unie srazila investice firem o desetinu. Francie zkrátila týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů počítaných jako plní pracující, což vysvětlí asi pětinu propadu po pandemii. Německo nabralo o pětinu víc pracujících i díky reformě podpor roku dva tisíce pět, s kratšími úvazky ale Němec odpracoval o jedenáct procent méně hodin a od roku dva tisíce dvacet dva průmysl zasáhl energetický šok. Motor neroztočily ani výdaje na výzkum přes tři procenta výkonu ekonomiky – proč, ukáže epizoda o produktivitě a sektorech.
+Zbylá trojice ztratila kolem dvaceti bodů: u Francie to odpovídá zpomalení bohaté země, u Británie s Německem je čistý tah nejistý. Británii táhl rozmach londýnské City a severomořská ropa; krize roku dva tisíce osm ale obojí vypnula a nejistota odchodu z Unie srazila investice firem o desetinu. Francie zkrátila týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů počítaných jako plní pracující, což vysvětlí asi pětinu propadu po pandemii. Německo od roku devadesát šest nabralo o pětinu víc pracujících i díky reformě podpor roku dva tisíce pět, s kratšími úvazky ale Němec odpracoval o jedenáct procent méně hodin a od roku dva tisíce dvacet dva průmysl zasáhl energetický šok. Motor neroztočily ani výdaje na výzkum přes tři procenta výkonu ekonomiky – proč, ukáže epizoda o produktivitě a sektorech.
 
 ## Kolo 3 – Tah země: Daňový klín
 
@@ -59,7 +59,7 @@ Třetí kolo měří daňový klín – podíl daní, odvodů a povinných plate
 
 Nízkou zátěž má i Švýcarsko se šestatřiceti a půl procenty. Běžné přehledy přehlížejí povinné soukromé fondy, jenže Švýcar posílá přes pět tisíc franků ročně zdravotní pojišťovně – jejíž pojistné od konce devadesátých let stouplo dvaapůlkrát – a přes pětapůl tisíce do penzijní kasy.
 
-Na chvostu Evropy odevzdají Francie a Německo přes šestačtyřicet procent; hůř dopadají jen Rakousko a Belgie. Francouzské firmy odvádějí nad hrubou mzdu přes třetinu; u minimální mzdy jim stát čtyři pětiny odpouští, při povýšení ale úlevy mizí a v pasti nízkých mezd bere stát až osmdesát centů z přidaného eura. V Německu leží důchody a zdravotnictví na páskách, kde pojistné roku dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Německo dříve udrželo odvody seškrtáním budoucích penzí, kdežto Švýcarsko sází na zmíněné kasy – čí model vyhraje, ukáže epizoda o penzích.
+Mezi posledními v Evropě odevzdají Francie a Německo přes šestačtyřicet procent; hůř dopadají jen Rakousko a Belgie. Francouzské firmy odvádějí nad hrubou mzdu přes třetinu; u minimální mzdy jim stát čtyři pětiny odpouští, při povýšení ale úlevy mizí a v pasti nízkých mezd bere stát až osmdesát centů z přidaného eura. V Německu leží důchody a zdravotnictví na páskách, kde pojistné roku dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Německo dříve udrželo odvody seškrtáním budoucích penzí, kdežto Švýcarsko sází na zmíněné kasy – čí model vyhraje, ukáže epizoda o penzích.
 
 ## Finále regionu: Odhalení pořadí od posledního po vítěze
 
@@ -67,15 +67,15 @@ Na chvostu Evropy odevzdají Francie a Německo přes šestačtyřicet procent; 
 
 V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
 
-Pátá v regionu a nad středem Evropy končí Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Pomáhají jí nejnižší ceny regionu osm procent nad Unií a kola překonává o čtyři a půl bodu: kolektivní smlouvy kryjí osmadevadesát procent zaměstnanců a jednapadesátiprocentní podíl výplat na výkonu vysvětlí skoro celý náskok. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+Pátá v regionu a nad středem Evropy končí Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Pomáhají jí spolu s Německem nejnižší ceny regionu, osm procent nad Unií a kola překonává o čtyři a půl bodu: kolektivní smlouvy kryjí osmadevadesát procent zaměstnanců a jednapadesátiprocentní podíl výplat na výkonu vysvětlí skoro celý náskok. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
 
 Čtvrté a rovněž nad středem Evropy je Německo s jednatřiceti tisíci čtyřmi sty jednotkami a přes čtyřiatřiceti tisíci eury, krácenými o devět procent vyššími cenami. Kola přeskočilo o šestnáct bodů, ale třiapadesátiprocentní podíl mezd na výkonu a zmíněné kratší úvazky vysvětlí jen menší část; většina zůstává otevřená. Německo bere štítek „Dělá to dobře a je to vidět“.
 
 Třetí nad středem Evropy končí Irsko s jednatřiceti tisíci šesti sty jednotkami. Skoro pětačtyřicet tisíc eur srážejí o dvě pětiny vyšší ceny než v Unii, které mažou náskok před Británií, a oproti kolům ztrácí sedm bodů. Proč, data spolehlivě neřeknou: i očištěný důchod nese část příjmů korporací, což může produktivitu v kolech nadhodnocovat, a průměr míchá vysoké platy v amerických firmách s nižšími ve většině domácích. Irsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
 
-Druhá a v evropské špičce je Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, tlumenými skoro o třetinu vyššími cenami. Kola překonává o čtyři body a skoro vše vysvětlí patnáctiprocentní podíl živnostníků, díky němuž se výkon dělí mezi méně zaměstnanců; průměr nejspíš zvedá i vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
+Druhá v regionu a v evropské špičce je Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, tlumenými skoro o třetinu vyššími cenami. Kola překonává o čtyři body a skoro vše vysvětlí patnáctiprocentní podíl živnostníků, díky němuž se výkon dělí mezi méně zaměstnanců; průměr nejspíš zvedá i vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
 
-Vítězem v evropské špičce je Švýcarsko s více než čtyřiceti tisíci jednotkami. Sedmdesát tři tisíce eur krátí ceny o čtyři pětiny nad Unií, kde už počátkem tisíciletí stál Big Mac o dvě třetiny víc než v Americe – proč se cenovky liší, ukáže epizoda o cenové hladině. Kola přesto překonává o sedm bodů díky sedmapadesátiprocentnímu podílu výplat na výkonu i přílivu vysokoškoláků a se štítkem „Dělá to dobře a je to vidět“ ovládá region.
+Vítězem regionu, pevně usazeným v evropské špičce, je Švýcarsko s více než čtyřiceti tisíci jednotkami. Sedmdesát tři tisíce eur krátí ceny o čtyři pětiny nad Unií; už počátkem tisíciletí tam stál Big Mac o dvě třetiny víc než v Americe – proč se cenovky liší, ukáže epizoda o cenové hladině. Kola přesto překonává o sedm bodů díky sedmapadesátiprocentnímu podílu výplat na výkonu i přílivu vysokoškoláků a se štítkem „Dělá to dobře a je to vidět“ ovládá region.
 
 
 # Kontrola čísel a opravy (Claude)
@@ -108,6 +108,10 @@ Poznámka k běhu: Argon odpověděl za 6 minut, ale Antigravity CLI po odpověd
 **Bodově opraveno (23 míst; původní text Argona v `SCENAR_GEMINI_PUVODNI.md`):** prozrazené první místo Švýcarska v celé lize („vrchol celé sedmadvacítky“, „trůn ligy“); Francie a Německo nejsou na chvostu daní (24. a 25., za nimi Rakousko a Belgie) a doplněna hlavní příčina francouzské zátěže; 85 % přidané hodnoty patří všem velkým nadnárodním firmám, ne Roche a Novartis; obrácený mechanismus u Francie (nízká zaměstnanost produktivitu na pracujícího netlumí); britské investice jen jako souvislost; farmacie po roce 2015 Švýcarsko nepodržela; Německo: období 1996–2024, reforma jen přispěla, energetický šok od 2022, bez Volkswagenu; ve finále příčiny „co kola nevysvětlí“ podle rozkladu (Německo, Irsko obráceným směrem, Británie, Francie bez minimální mzdy); drobnosti (o víc než čtvrtinu, Big Mac z roku 2003, irský záchranný balík, Pfizer vypuštěn, učni vysvětlí pětinu propadu).
 
 **Bez opory, ponecháno jako obecně známé:** Roche, Novartis, Renault, Airbus, Apple, soustružník v Lipsku, švýcarská neutralita, londýnská City.
+
+### Zkrácení a nový showcase (27. 10. 2026)
+
+Ondřej: zkrátit, nic neříkat dvakrát, showcase bez věcí z kol a s charakteristikou a očekáváním každé země (pravidlo 9 kuchařky). Argon zkracoval ve dvou kolech ve svém rozhovoru regionu (záznam `ROZHOVOR.md`); verze před zkrácením je `SCENAR_PRED_ZKRACENIM.md`. Nezávislý kontrolor porovnal zkrácenou verzi větu po větě s verzí před zkrácením a showcase s podklady. **Bodově opraveno 12 míst:** nové tvrzení showcase bez opory nebo jen pro sousední zemi, prozrazený nebo zesílený výsledek ve showcase, krajní tvrzení u těsných rozdílů a opravené formulace, které zkrácení vypustilo („na pracujícího“, „vůči středu ligy“, „v regionu“, „jen“, „v průměru“, období). Pořadí v celé Evropě, která scénář zmiňuje, jsou ověřená proti tabulkám kol.
 
 
 # Dosavadní konzultace s Gemini 4 Argonem
