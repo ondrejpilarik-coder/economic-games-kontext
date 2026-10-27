@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 27. 10. 2026 17:21 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `c5c866b0`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 27. 10. 2026 17:44 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `c5c866b0`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -227,6 +227,12 @@ stejný („asi 66 procent“ za 66,08 %), a u zaokrouhlení použij „asi“ n
 8. **Cenová hladina stručně a s udičkou:** rozdíl cenových hladin (například Polsko proti Slovensku) nesváděj jen na
    vlastní měnu; shrň ho kombinací příčin, které podklady uvádějí (velký konkurenční trh, levné domácí potraviny,
    vlastní měna), a hned uzavři odkazem na chystanou epizodu o cenové hladině.
+9. **Showcase s očekáváním a nic dvakrát (Ondřej 27. 10. 2026).** Ve showcase dostane každá země krátkou
+   charakteristiku v kontextu měřeného ukazatele (u mezd: co v zemi určuje výplaty dnes, čím se živí, jak drahý je
+   život) a předstartovní očekávání: jak asi dopadne v celé soutěži (evropská špička, střed, chvost) i uvnitř regionu.
+   Showcase neříká nic, co patří až do kol: žádná čísla ani pořadí z kol, žádná historie ani příčiny vývoje.
+   Celý scénář říká každou věc jen jednou; co zaznělo v jednom kole, se v dalším kole ani ve finále neopakuje, jen se
+   na to krátce odkáže.
 
 ## Formát odpovědi
 
@@ -14186,6 +14192,12 @@ Příklady čísel níže ověřil Claude proti datům mezd (`analyza_regiony_20
    nesvádí jen na vlastní měnu; shrne se kombinací velkého konkurenčního trhu, levných domácích potravin a vlastní měny
    (každé jen s oporou v podkladu, analytický skill krok 8, oddíl 4) a hned se uzavře odkazem na chystanou epizodu
    o cenové hladině.
+9. **Showcase s očekáváním a nic dvakrát (Ondřej 27. 10. 2026).** Ve showcase dostane každá země krátkou
+   charakteristiku v kontextu měřeného ukazatele (u mezd: co v zemi určuje výplaty dnes, čím se živí, jak drahý je
+   život) a předstartovní očekávání: jak asi dopadne v celé soutěži (evropská špička, střed, chvost) i uvnitř regionu.
+   Showcase neříká nic, co patří až do kol: žádná čísla ani pořadí z kol, žádná historie ani příčiny vývoje.
+   Celý scénář říká každou věc jen jednou; co zaznělo v jednom kole, se v dalším kole ani ve finále neopakuje, jen se
+   na to krátce odkáže.
 
 ### 1. Účel a vstupy
 
