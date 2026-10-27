@@ -1,6 +1,6 @@
 # Aktivní skilly Ekonomických her
 
-Obsah (27 skillů):
+Obsah (28 skillů):
 
 - pipeline-orchestration-SKILL-v3.md
 - data-collection-SKILL-v1.0.md
@@ -17,6 +17,7 @@ Obsah (27 skillů):
 - voiceover-creative-control-v2_3.md
 - voiceover-to-factor-cards-stage-SKILL-v1.0.md
 - section-14-1-elevenlabs-tts.md
+- remotion-skutecny-obraz-sport-SKILL-v1.0.md
 - remotion-skill-v7_4.md
 - intro-part1-trademark-startlist-SKILL-v1.0.md
 - intro-part2-teaser-storywindow-SKILL-v1.0.md
@@ -8998,6 +8999,90 @@ Tento format je vstupem pro:
 ```
 
 Krok 4 (ElevenLabs TTS) je nyni explicitne definovany. Edit agent presne vi kde v pipeline bezi a co ocekavat na vstupu i vystupu.
+
+
+# Skill: remotion-skutecny-obraz-sport-SKILL-v1.0.md
+
+## Remotion skill: start země ve skutečném obraze se sportovní grafikou (v1.0, 8. 10. 2026)
+
+**Stav:** aktivní pro edit zemí v epizodách s fotorealistickým stylem (skutečné fotky a videa). Vzniklo z prototypu Belgie (ep_001 mzdy, kompozice `be6-real`) a z Ondřejových připomínek 23. 9. – 8. 10. 2026. Navazuje na skill `remotion-skill-v7_4.md` (snímková přesnost, synchronizace na časové značky slov), ale **nahrazuje** v něm grafiku bloků zemí: generované kartičky a AI panoramata se v tomto stylu nepoužívají (Ondřej 23. 9.: působily jako „AI slop“). Diorama z kódu je odložené na později (Ondřej 6. 10.), viz `10_documents/active/2026-10-05_diorama_z_kodu/`.
+
+**Referenční implementace:** `ekonomicke-hry-remotion/src/skutecny-obraz/` (segment `sport/SportSegment.tsx`, grafika `sport/SportV5.tsx` a `sport/SportUI.tsx`, záběry `shots/*.tsx`), skripty `scripts/skutecny_obraz/` (`tts_zeme.py`, `data_zeme.py`, `strih_timeline.py`). Jiná země = jiný scénář záběrů (`data/<cc>_shotlist.json`), data a podklady; žádný ručně psaný komponent pro zemi.
+
+### 1. Postup pro jednu zemi
+
+1. **Hlas:** `py scripts/skutecny_obraz/tts_zeme.py --country CC --voiceover <FINAL_voiceover.md> --out-dir public/episodes/<cc> --target-wpm 0` — klon Ondřejova hlasu a Eleven v4 (`scripts/tts_hlas.py`), **přirozené tempo bez umělého zrychlení** (zrychlování znělo roboticky), hlasitost hlasu se srovná na −16 LUFS.
+2. **Data grafiky:** `py scripts/skutecny_obraz/data_zeme.py --country CC --neighbor NB --out src/skutecny-obraz/data` — vše z finální analýzy (`podklady_autoru/CC.json`, `rozklady/vahy_kol.json`, `production_factor_selection.yaml`, `tipy_ondrej_2026_09_26/tipy.json`, pořadí startů z FINAL voiceoveru). Editor nic nepočítá.
+3. **Podklady obrazu:** sběr do `public/episodes/<cc>/real/` s manifestem licencí (viz §5).
+4. **Scénář záběrů:** `data/<cc>_shotlist.json` — každý záběr a každá grafika visí na slově hlasu (`at`, `marks`, `until`).
+5. **Časový plán:** `py scripts/skutecny_obraz/strih_timeline.py --shotlist … --public … --episode-dir episodes/<cc> --out …_timeline.json`; hlídá, že fotka/video trvá nejvýš 2 s, a hlásí chybějící podklady a zvuky.
+6. **Kontrola:** snímky z renderu, náhled pro telefon (pod 15 MB, kvůli nahrávání i pod 10 MB), hlasitost výsledku.
+
+### 2. Tempo a pozornost
+
+- Obraz se mění zhruba po 1–2 s; **fotka i video nejvýš 2 s**. Grafika smí trvat déle, ale hýbe se.
+- **Jedna nová informační věc naráz.** B-roll je podkres; informaci nese vždy jen jeden grafický prvek.
+- Hlas říká význam, obraz nese čísla a pořadí; co hlas řekne, má být v obraze vidět ve stejné chvíli (nikdy dřív).
+- **Co nejméně textu** (video se bude překládat): žádné dlouhé popisky, štítky na fotkách jen výjimečně (konkrétně jmenované místo, např. Pfizer Puurs), místo slov **ikony, vlajky a čísla**.
+
+### 3. Obraz: skutečné záběry
+
+- **Jen konkrétní záběry probírané země** (místa, firmy, instituce, krajina). Obecné záběry z fotobanek, které by šly použít u kterékoli země, se nepoužívají.
+- **Fotky vždy přes celý obraz** s pohybem „jako video“: výrazné plynulé přiblížení s posunem, jemné chvění ruční kamery, odlesk, zrno. **Žádné koláže zmenšených fotek v rámečku.**
+- **Archivní záběry** také přes celý obraz se sépií a silnějším zrnem.
+- **Preferovat autentická videa** (dokumentární a zpravodajský B-roll, např. Audiovizuální služba EU) před vyumělkovanými klipy z knihoven.
+- **Neopakovat záběry**, zvlášť ve výsledcích; záměrná ozvěna jen výjimečně.
+- Fotka s ohniskem (`focus`): přiblížení a kruh fixem kolem toho, o čem se mluví.
+
+### 4. Grafika (sportovní přenos: biatlon, skoky na lyžích, sjezd, atletika — ne F1)
+
+Každá zóna obrazovky má jeden význam a je stejná ve všech zemích:
+
+| Zóna | Prvek |
+|---|---|
+| vlevo dole | lišta země: startovní číslo, vlajka, JMÉNO + třípísmenný kód; nad ní krátký čip běžícího bloku („ROUND 2“, „RESULT“); po odhalení výsledku „STANDING n“ |
+| vpravo nahoře | LIVE + logo |
+| uprostřed | karta kola, ve výsledcích velký panel |
+| vlevo nahoře | graf míst v kolech (jen na konci kola) |
+| vpravo | faktory kola pod sebou |
+
+- **Karta kola:** před každým kolem 1,8 s (hlas kola začne až po ní, s úderem ve zvuku), **velká uprostřed, jen „ROUND n“ (s ikonou) a název kola** („POTENTIAL“, „SHORT-TERM STRATEGY“, „LONG-TERM STRATEGY“). Žádné „OF 3“, počty zemí ani podtitulky.
+- **Graf míst v kolech (vlevo nahoře):** vysune se, když hlas říká místo na konci kola, a drží se do konce bloku.
+  - Svislá osa místa 1 (nahoře) až 27 (dole), vodorovně kola 1–3 s ikonou a číslem.
+  - Čáry: **průběžný lídr živého pořadí** (země s nejlepším výsledkem mezi těmi, které už startovaly — ne vítěz daného kola) **žlutě**, **probíraná země červeně a silněji**, **průběžně poslední modře** (jen když už startovaly aspoň dvě jiné země).
+  - **Vlajky jen na začátku osy X**; v grafu jen čáry a u každého kola kroužek s pořadím. Ukazují se **přesná místa** (Ondřej 4. 10.), i když analýza nabízí rozmezí.
+  - Zelená přerušovaná čára cíle podle Ondřejova tipu (nejhorší místo, které ještě splní očekávání) s ikonou terče a „TOP n“; když cíl padne na 1. nebo poslední místo, nekreslí se.
+  - Kola se nesčítají: nic nesmí vypadat jako body přenesené mezi koly.
+- **Faktory (vpravo, pod sebou):** každý vybraný faktor se objeví na slovo, kde o něm hlas mluví, a **zůstává do konce kola**; další přibude pod něj.
+  - Obdélník **celý v barvě pásma**, ikona, krátký název, **ryska 0–100** a číslo = **body faktoru z analýzy** (smíšená škála 0–100, vstupují do indexu kola).
+  - Pásma bodů (hranice 15, 30, 45, 55, 70, 85): červená, oranžová, žlutá, šedá, světle zelená, zelená, tyrkysová — stejné pořadí odstínů jako sedm pásem analýzy.
+  - Faktor, který se v kole neboduje, je šedý s přerušovanou ryskou a pomlčkou.
+- **Mapy:** probíraná země **žlutě bez vlajky**; státy, o kterých se mluví, **vyplněné celou svou vlajkou v hranicích státu** (Ondřej 8. 10.: „v německých hranicích německá vlajka“; jednoduché pruhové vlajky se kreslí ostře vektorově, ostatní z obrázku vlajky); bez jmen států (vlajka je identifikuje). Když se mluví o pohoří nebo nalezišti, zvýrazní se přímo to místo, ne celé státy.
+- **Výsledky:** pod grafikou běží B-roll k tomu, o čem se mluví; grafika je **velký průhledný panel uprostřed (asi 70 % obrazu)**:
+  - živé pořadí s **místem pro 10 zemí** (prázdné řádky pro další starty), země dopadne na své místo, když hlas řekne body;
+  - čekaný výsledek podle kol proti skutečnosti (nad průměrem ligy, ikony terče a poháru);
+  - co rozhodlo souboj se sousedem: obě vlajky, faktory s ikonou a sloupci vedle sebe (zelená lepší, červená horší).
+
+Písma: Montserrat (lišty, čísla) a Barlow Condensed Italic (čipy), obojí SIL OFL v `public/fonts`.
+
+### 5. Zvuk
+
+- **Hudba po blocích podle nálady:** showcase s **charakterem země** (u Belgie jazz/saxofon), kola podle toho, jak se zemi daří (sebevědomá × napjatá × neutrální), výsledky energické (UK garage, moderní house). **Moderní sportovní / produktový styl, ne dokumentární orchestr** (odlišit se od Johnnyho Harrise a Maxinomics).
+- Krátký blok nesmí skončit useknutou hudbou: hudba bloku doznívá do dalšího bloku (`music.tail`).
+- Hlas −16 LUFS, hudba pod hlasem asi o 15–18 dB níž, pod kartou kola hlasitěji; výsledek se pro náhled srovná na −14 LUFS.
+- Zvuky grafiky (švih, náraz, tik, pípnutí časomíry) a potichu zvuky k záběrům (loď v přístavu, továrna, pokladna); krátký národní motiv (u Belgie zvonkohra z Mechelenu).
+- Zdroj hudby: licence pro kanál s reklamou (CC0, CC BY s kreditem v popisu, YouTube Audio Library). Kredity hudby a obrazu do popisu videa.
+
+### 6. Licence a právní minimum
+
+- Jen licence pro zpeněžené video: volné dílo, CC0, CC BY, CC BY-SA (autor v obraze), Audiovizuální služba EU (CC BY 4.0, „© European Union“). Nikdy NC, ND ani snímky z Google, Bing, Esri, Mapbox.
+- Žádná loga firem jako grafika; názvy firem jen tam, kde firma doložitelně působí.
+- Doklady (snímky webů) jen z oficiálních zdrojů, bez obcházení ochran proti robotům.
+
+### 7. Otevřené (k doladění s Ondřejem)
+
+- Výběr moderní hudby (YouTube Audio Library stahuje Ondřej).
+- Vzhled grafů ve výsledcích a délky panelů podle dalších připomínek.
 
 
 # Skill: remotion-skill-v7_4.md
