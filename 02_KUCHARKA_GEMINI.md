@@ -5,6 +5,8 @@
 > Oddíly 1–6 jsou Ondřejovo zadání; oddíl 7 doplňuje závazná pravidla projektu, která už platila dřív.
 > **25. 10. 2026:** oddíl 8 = pravidla ze zlatého vzoru Střední Evropy (Ondřej s webovým Gemini); má přednost
 > před oddíly 1 a 3 (délka, úvod, finále). Vzor: `05_epizode_packs/_skills/references/voiceover-regiony-zlaty-vzor-stredni-evropa-2026-10-25.md`.
+> **27. 10. 2026:** pravidlo 10 (jádro země, metodika mimo hlas) podle doplňku
+> `05_epizode_packs/_skills/voiceover-jadro-zeme-ADDENDUM-2026-10-27.md` (na zkoušku).
 
 ## 1. Role a styl
 
@@ -26,7 +28,7 @@ Scénář každého regionu členíš striktně takto (nadpis každé části ja
   pracujícího“. Porovnej startovní pozice všech zemí regionu najednou a vysvětli je přes historický režim (komunismus,
   válka, diktatura proti svobodnému trhu) a zděděné vybavení stroji a kapitálem či školství.
 - **Kolo 2 – Tah země: Vývoj produktivity (1996–2024).** Ukaž násobek růstu a body, ale vždy je vysvětli i očima
-  „růstu nad rámec běžného dohánění“ (z tabulky dohánění). Vysvětli, na jaký hospodářský model země vsadila (například
+  „růstu nad rámec běžného dohánění“ (z tabulky dohánění), obyčejnými slovy podle pravidla 10 v oddílu 8. Vysvětli, na jaký hospodářský model země vsadila (například
   vlastní vývoj a farmacie proti montovnám s odlivem zisků proti realitním bublinám po přijetí eura).
 - **Kolo 3 – Tah země: Daně, odvody a povinné platby (2024).** Souvisle a příběhově vysvětli, kolik si z celkových
   nákladů práce ukousne stát a fondy, jaké triky státy používají (schovávání odvodů za zaměstnavatele, nevalorizovaná
@@ -116,6 +118,17 @@ stejný („asi 66 procent“ za 66,08 %), a u zaokrouhlení použij „asi“ n
    Showcase neříká nic, co patří až do kol: žádná čísla ani pořadí z kol, žádná historie ani příčiny vývoje.
    Celý scénář říká každou věc jen jednou; co zaznělo v jednom kole, se v dalším kole ani ve finále neopakuje, jen se
    na to krátce odkáže.
+
+10. **Jádro země musí zaznít, metodika do hlasu nepatří (Ondřej 27. 10. 2026).** Podklady začínají oddílem
+   „Jádro země: musí zaznít“. U každé země je tam mechanismus mimo tři kola (například dánský pružný trh práce,
+   belgická automatická indexace mezd), bez kterého divák zemi nepochopí. Řekni ho jednou, obyčejně a svým stylem:
+   v kole 2, je-li to tah země, v kole 3, týká-li se daní, jinak ve finále jako vysvětlení toho, co kola nevysvětlí.
+   Drž se uvedeného směru a nikdy neřekni, co je u jádra zakázané; číslo dopadu říkej jen, když ho jádro uvádí.
+   Mluvený text naopak neříká, jak se počítalo: žádné „nejisté zařazení“, „podle způsobu výpočtu“, „nad doháněním“
+   ani „ve stálých cenách“. Dohánění řekni obyčejně (chudší země rostou rychleji samy od sebe, kolo hodnotí, kdo
+   vyrostl víc nebo míň, než se dalo čekat); kde je zařazení nejisté, srovnání s očekáváním neříkej a nech ho obrazu.
+   Jádru dej přednost před vedlejší podrobností, když se do délky nevejde všechno. Když ti kontrolor (Claude) pošle
+   seznam oprav, oprav jen zadaná místa svým stylem a ostatní text ponech.
 
 ## Formát odpovědi
 

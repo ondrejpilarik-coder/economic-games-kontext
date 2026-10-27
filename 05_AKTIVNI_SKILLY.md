@@ -12465,6 +12465,20 @@ Příklady čísel níže ověřil Claude proti datům mezd (`analyza_regiony_20
    Celý scénář říká každou věc jen jednou; co zaznělo v jednom kole, se v dalším kole ani ve finále neopakuje, jen se
    na to krátce odkáže.
 
+10. **Jádro země musí zaznít, metodika do hlasu nepatří (Ondřej 27. 10. 2026).** Podklady začínají oddílem
+   „Jádro země: musí zaznít“. U každé země je tam mechanismus mimo tři kola (například dánský pružný trh práce,
+   belgická automatická indexace mezd), bez kterého divák zemi nepochopí. Řekni ho jednou, obyčejně a svým stylem:
+   v kole 2, je-li to tah země, v kole 3, týká-li se daní, jinak ve finále jako vysvětlení toho, co kola nevysvětlí.
+   Drž se uvedeného směru a nikdy neřekni, co je u jádra zakázané; číslo dopadu říkej jen, když ho jádro uvádí.
+   Mluvený text naopak neříká, jak se počítalo: žádné „nejisté zařazení“, „podle způsobu výpočtu“, „nad doháněním“
+   ani „ve stálých cenách“. Dohánění řekni obyčejně (chudší země rostou rychleji samy od sebe, kolo hodnotí, kdo
+   vyrostl víc nebo míň, než se dalo čekat); kde je zařazení nejisté, srovnání s očekáváním neříkej a nech ho obrazu.
+   Jádru dej přednost před vedlejší podrobností, když se do délky nevejde všechno. Když ti kontrolor (Claude) pošle
+   seznam oprav, oprav jen zadaná místa svým stylem a ostatní text ponech.
+
+   Postup výběru jader, jejich zápis a dělba práce (Argon píše, Claude kontroluje a posílá seznam oprav, sám
+   přepisuje jen drobnosti) jsou v doplňku `voiceover-jadro-zeme-ADDENDUM-2026-10-27.md` (na zkoušku).
+
 ### 1. Účel a vstupy
 
 Skill píše blok jednoho regionu. Epizoda má úvod, regiony v pevném pořadí a finále; úvod a finále se píšou zvlášť
