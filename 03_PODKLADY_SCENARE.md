@@ -68,10 +68,11 @@ Vysoký podíl vysvětlených rozdílů je zčásti účetní vazba: náklady pr
 | Lotyšsko | 42,03 | 18 | 3 | −1,0 |  |  |
 
 
-| --- | ---: | --- | ---: | ---: | ---: | --- | ---: |
-| Litva | 17 | pod středem Evropy | 22 678 | −10,4 % | −1,9 | 25 → 18 → 16 | -1 |
-| Estonsko | 21 | evropský suterén | 21 558 | −14,8 % | −3,0 | 24 → 20 → 19 | -2 |
-| Lotyšsko | 24 | evropský suterén | 19 989 | −21,0 % | +5,6 | 26 → 25 → 26 | +2 |
+| Země | Místo v lize | Patro | Čistá mzda PPS | Proti středu ligy | Co kola nevysvětlí (body) |
+| --- | ---: | --- | ---: | ---: | ---: |
+| Litva | 17 | pod středem Evropy | 22 678 | −10,4 % | −1,9 |
+| Estonsko | 21 | evropský suterén | 21 558 | −14,8 % | −3,0 |
+| Lotyšsko | 24 | evropský suterén | 19 989 | −21,0 % | +5,6 |
 
 Papírové pořadí podle rozdaných karet: Estonsko (−102,0), Litva (−104,0), Lotyšsko (−108,1). Průměrný zbytek regionu +0,2 bodu.
 
