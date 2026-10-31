@@ -2,34 +2,24 @@
 
 # Ekonomické hry antigravity
 
-## TVRDÉ PRAVIDLO PRO SCÉNÁŘE (VOICEOVER) — Ondřej 23. 10. 2026
+## SCÉNÁŘE REGIONŮ: FAKTICKOU VERZI PÍŠE CLAUDE, ČTIVOU GEMINI NA WEBU — Ondřej 31. 10. 2026
 
-Scénáře píše **vždy a jen Gemini 4 Argon** (`gemini-4-argon-high`) přes **Antigravity CLI** (příkaz `agy`);
-Claude je datový analytik, přípravář podkladů a přísný kontrolor faktů. Jiný model nemá smysl (Ondřej 23. 10. 2026)
-a skript ho odmítne. Gemini CLI s předplatným Ultra od 18. 6. 2026 nefunguje (Google ho nahradil Antigravity CLI).
+Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
+webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
 
-- **Claude má zakázáno psát finální texty scénářů (voiceoverů) sám.**
-- Kdykoliv Ondřej požádá o napsání, vygenerování nebo přepsání scénáře či voiceoveru, Claude automaticky:
-  1. **sestaví balík podkladů:** instrukce z `PROMPT_GEMINI_SCENARISTA.md` (jdou jako závazná instrukce v čele zprávy), kompletní
-     tabulky regionu z `KOLA_TABULKA.md` (včetně tabulky dohánění a tabulky podílu mezd na výkonu, bez čekaného místa),
-     výsledek v cíli z `data/vysledek.json`, štítky z hodnocení a plné texty `vyklad/{KOD}.md` všech zemí regionu;
-  2. **odešle ho Gemini 4 Argonu** přes Antigravity CLI (Argon běží v prázdné složce bez povolení nástrojů);
-  3. **převezme hotový scénář a udělá audit faktické přesnosti** proti `data/vysledek.json` a `data/kola.json`
-     (automatická kontrola čísel a ruční kontrola čísel psaných slovy, pořadí a příčin proti výkladům zemí). Číselnou
-     chybu Claude opraví bodově a v auditu ji označí, nebo scénář vrátí Geminimu k přepsání; styl Geminiho nepřepisuje.
-- Nástroj: `py scripts/gemini_scenarista.py vse --region "Střední Evropa"` (kroky `sestav`, `posli`, `audit`
-  i zvlášť; výstupy v `05_epizode_packs/ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/gemini/{REGION}/`).
-  Antigravity CLI je přihlášené Ondřejovým účtem Google (předplatné Google AI Ultra). **Ondřej terminál nepoužívá
-  a komunikuje jen přes chat (25. 10. 2026):** všechny příkazy spouští Claude sám na pozadí. Když přihlášení vyprší,
-  Claude ho sám spustí tak, aby se Ondřejovi otevřelo okno Googlu v prohlížeči (nebo mu do chatu dá jen klikací
-  odkaz), řekne mu jen, co má odkliknout, a po jeho „Hotovo“ přihlášení sám ověří. Když `agy models` Argon nenabídne,
-  scénář se nepíše a Claude to Ondřejovi řekne; náhradní model se nepoužívá.
-- **Přímá konzultace s Argonem (Ondřej 25. 10. 2026: „chci to přímo konzultovat s Gemini 4 Argon“):** když Ondřej
-  píše Argonovi, Claude jeho zprávu pošle **doslova** do Argonova rozhovoru regionu (krok `rozhovor --zprava "…"`;
-  rozhovor obsahuje kuchařku, všechny podklady i platnou verzi scénáře) a Argonovu odpověď vloží do chatu **beze
-  změny**, bez vlastního komentáře a bez úprav. Claude do konzultace nevstupuje; ozve se až tehdy, když Argon
-  vrátí nový text scénáře: ten uloží a znovu zkontroluje čísla. Záznam rozhovoru je v `{REGION}/ROZHOVOR.md`.
-- Platí dál: sloh v souvislých větách, žádné „my“ o Česku, žádné čekané místo, žádné kódy (vše je i v kuchařce, oddíl 7).
+- **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.0.md` postaví mapu příběhu
+  (kostra `py scripts/kostra_mapy_pribehu.py --region "…"`) a napíše **faktickou verzi** scénáře regionu se zámkem
+  faktů (tučně = pevné jádro, `{volitelné: …}`, seznam NEŘÍKEJ, rozpočet slov). Fakta nechá nezávisle zkontrolovat.
+- **Ondřej** ji vloží do **Gemini na webu** spolu se skillem `05_epizode_packs/_skills/gemini-web-ctiva-verze-SKILL-v1.0.md`
+  (Ondřej ho dál ladí); Gemini napíše čtivou sportovní verzi a nemění fakta.
+- **Claude** čtivou verzi zkontroluje jen na pět druhů odchylek (číslo, omezující slovo, směr příčiny, pořadí/štítek/tip,
+  nový fakt; skill mapy příběhu oddíl 4). Styl Gemini nepřepisuje.
+- Platí dál: sloh v souvislých větách, žádné „my“ o Česku, žádné kódy.
+
+**Historie (23.–31. 10. 2026, nahrazeno):** dřív psal scénáře jen Gemini 4 Argon přes Antigravity CLI (`agy`,
+`scripts/gemini_scenarista.py`) a Claude měl psaní finálních textů zakázané. Nástroj i přímá konzultace s Argonem
+(`rozhovor --zprava "…"`, záznam `{REGION}/ROZHOVOR.md`) zůstávají k dispozici, když o ně Ondřej požádá; Ondřej
+terminál nepoužívá, příkazy spouští Claude sám na pozadí.
 
 ## KONTEXT PRO WEBOVÉ GEMINI: VEŘEJNÝ REPOZITÁŘ A DISK GOOGLE — Ondřej 25. 10. 2026
 
@@ -314,6 +304,8 @@ Instrukční dokumenty pro generování obsahu jsou v `05_epizode_packs/_skills/
 - **`european-economy-analysis-v20-capacity-first.md`** — Podklad v22: platí z něj §1.2, §4, §5, §7.1, §8, §9 (v22 na ně odkazuje); konstrukce indexu z v20 §2–3 je nahrazená.
 - **`european-economy-analysis-v19-causal-first.md`** — Předchozí causal-first rámec (nahrazen v20→v22); kauzální kontrakt žije dál ve v22 §5 odkazem.
 - **`voiceover-skill-v10-live-race.md` (v10.3) + `voiceover-styl-ondrej-SKILL-v1.0.md`** — AKTIVNÍ writer kontrakt (Ondřej, laděno 2026-07-24→28; závazné i pro ep_001). Formát „živý závod": abecední startovní listina, PAPER FORM/OČEKÁVÁNÍ před výsledkem, GAME PLAN + TARGET BAND, živá tabulka se zásuny, checkpointy po 10/20, vyhlášení §7. Stylová vrstva styl-ondrej v1.0 při konfliktu vyhrává. Kauzalita se vynucuje NAVRCH přes `causal-claim-repair-ADDENDUM-v1.0.md` (bodové opravy à la cr/cr2 vzorky — styl se při nich zachovává). Kanonický vzor: `output/v14/FINAL_voiceover_v14.md` + cr2 segmenty.
+- **`voiceover-mapa-pribehu-SKILL-v1.0.md`** — AKTIVNÍ hlavní postup scénářů regionů (Ondřej 31. 10. 2026): kostra (`scripts/kostra_mapy_pribehu.py`), mapa příběhu (tip, hlavní scéna kola, otázka diváka, průběžné pořadí po každém kole, finále = skutečné pořadí proti pořadí po kolech a zvláštnosti zemí při posunu aspoň o dvě místa), faktická verze se zámkem faktů a zpětná kontrola čtivé verze z Gemini (jen pět druhů odchylek). Nahrazuje psaní Argonem a doplněk o jádru země.
+- **`gemini-web-ctiva-verze-SKILL-v1.0.md`** — malý skill pro Gemini na webu (Ondřej ho ladí): z faktické verze čtivý sportovní komentář, pevné jádro a omezující slova zůstávají, žádné nové fakty, limit slov.
 - **`voiceover-uvod-SKILL-v1.0.md`** — AKTIVNÍ skill mluveného úvodu (Ondřej 8. 10. 2026), nahrazuje §9 writer skillu: trademark „Vítejte u {první} epizody {Evropských/Amerických/Globálních} ekonomických her.“, hned disciplína, bez otázky a výčtu zemí; část „Pojďme se podívat na to, co v dnešní disciplíně uvidíme.“ (favoriti, černí koně a outsideři vždy od Ondřeje — bez nich se FINAL nepíše, trikoty, pořadí startu, tři kola s faktory a vahami, nesčítání kol se smyšleným příkladem, zdroje); nakonec co přesně měříme a rok dat ověřený u zdroje.
 - **`voiceover-cestina-SKILL-v1.0.md`** — ČESKÁ JAZYKOVÁ VRSTVA, NA ZKOUŠKU (Ondřej rozhoduje vkus; 2026-09-15, z rešerší R1/R2 a ze slepého porovnání dvou verzí voiceoveru ep_003). Není to writer ani přepis: **omezený druhý průchod** nad hotovou skillovou verzí — mapa bodových oprav jazyka (`scripts/voiceover_apply_replacements.py`), zámek číslovek a hedgí (`scripts/voiceover_cestina_detektory.py --pred`, exit 0), INFO rozdíly kvalifikátorů/první osoby/zesilovačů, čerstvá kontrola, pak standardní slepé čtení + viewer review. §15.1 = pravidla, která obstála (nominalizace → sloveso, aktér místo pasiva, réma na konec, dvojtečka → spojka ne tečka, „kam“, genitiv po „dost“ a u kvantity, statistická jednotka není fyzický objekt); §15.2 = tvrdé zákazy (hodnotící přívlastek u čísla, první osoba u verdiktu, škrtnutý kvalifikátor, změněná kauzální spojka, přidaný fakt, přejmenovaný pojem série, dvojtečka → tečka); §15.4 = otázky vkusu pro Ondřeje (vrstva postoje, první osoba, průvodcovské vazby, nocleh/startér).
 - **`voiceover_skill_v_9_2.md`** — LEGACY craft base (v9.x formát bez živého závodu). ⚠ v19/v20 voiceovery napsané podle v9.2 (FINAL_voiceover_v19, první FINAL_voiceover_v20) NEJSOU stylový kanon — Ondřej 2026-07-31: „absolutně nepoužitelný styl"; slouží jen jako zdroj kauzálních formulací.

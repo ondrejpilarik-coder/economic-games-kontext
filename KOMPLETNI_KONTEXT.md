@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 31. 10. 2026 16:22 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `fb93ec50`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 31. 10. 2026 23:24 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `fb93ec50`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -10,7 +10,7 @@ Aktualizováno 31. 10. 2026 16:22 automaticky ze soukromého repozitáře projek
 | 02_KUCHARKA_GEMINI | instrukce, podle kterých Gemini scénář napsal |
 | 03_PODKLADY_SCENARE | data a výklady zemí, ze kterých scénář vznikl (jediný zdroj čísel) |
 | 04_CLAUDE_MD | závazná pravidla projektu |
-| 05_AKTIVNI_SKILLY | 28 aktivních skillů (analýza, scénáře, úvod, čeština, střih, hlas) |
+| 05_AKTIVNI_SKILLY | 30 aktivních skillů (analýza, scénáře, úvod, čeština, střih, hlas) |
 
 Čísla ve scénáři se smějí opírat jen o soubor 03; skilly a pravidla určují formu.
 
@@ -1552,34 +1552,24 @@ nízkým investicím a slabé dynamice podnikání (vše podle rešerše `ekonom
 
 # Ekonomické hry antigravity
 
-## TVRDÉ PRAVIDLO PRO SCÉNÁŘE (VOICEOVER) — Ondřej 23. 10. 2026
+## SCÉNÁŘE REGIONŮ: FAKTICKOU VERZI PÍŠE CLAUDE, ČTIVOU GEMINI NA WEBU — Ondřej 31. 10. 2026
 
-Scénáře píše **vždy a jen Gemini 4 Argon** (`gemini-4-argon-high`) přes **Antigravity CLI** (příkaz `agy`);
-Claude je datový analytik, přípravář podkladů a přísný kontrolor faktů. Jiný model nemá smysl (Ondřej 23. 10. 2026)
-a skript ho odmítne. Gemini CLI s předplatným Ultra od 18. 6. 2026 nefunguje (Google ho nahradil Antigravity CLI).
+Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
+webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
 
-- **Claude má zakázáno psát finální texty scénářů (voiceoverů) sám.**
-- Kdykoliv Ondřej požádá o napsání, vygenerování nebo přepsání scénáře či voiceoveru, Claude automaticky:
-  1. **sestaví balík podkladů:** instrukce z `PROMPT_GEMINI_SCENARISTA.md` (jdou jako závazná instrukce v čele zprávy), kompletní
-     tabulky regionu z `KOLA_TABULKA.md` (včetně tabulky dohánění a tabulky podílu mezd na výkonu, bez čekaného místa),
-     výsledek v cíli z `data/vysledek.json`, štítky z hodnocení a plné texty `vyklad/{KOD}.md` všech zemí regionu;
-  2. **odešle ho Gemini 4 Argonu** přes Antigravity CLI (Argon běží v prázdné složce bez povolení nástrojů);
-  3. **převezme hotový scénář a udělá audit faktické přesnosti** proti `data/vysledek.json` a `data/kola.json`
-     (automatická kontrola čísel a ruční kontrola čísel psaných slovy, pořadí a příčin proti výkladům zemí). Číselnou
-     chybu Claude opraví bodově a v auditu ji označí, nebo scénář vrátí Geminimu k přepsání; styl Geminiho nepřepisuje.
-- Nástroj: `py scripts/gemini_scenarista.py vse --region "Střední Evropa"` (kroky `sestav`, `posli`, `audit`
-  i zvlášť; výstupy v `05_epizode_packs/ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/gemini/{REGION}/`).
-  Antigravity CLI je přihlášené Ondřejovým účtem Google (předplatné Google AI Ultra). **Ondřej terminál nepoužívá
-  a komunikuje jen přes chat (25. 10. 2026):** všechny příkazy spouští Claude sám na pozadí. Když přihlášení vyprší,
-  Claude ho sám spustí tak, aby se Ondřejovi otevřelo okno Googlu v prohlížeči (nebo mu do chatu dá jen klikací
-  odkaz), řekne mu jen, co má odkliknout, a po jeho „Hotovo“ přihlášení sám ověří. Když `agy models` Argon nenabídne,
-  scénář se nepíše a Claude to Ondřejovi řekne; náhradní model se nepoužívá.
-- **Přímá konzultace s Argonem (Ondřej 25. 10. 2026: „chci to přímo konzultovat s Gemini 4 Argon“):** když Ondřej
-  píše Argonovi, Claude jeho zprávu pošle **doslova** do Argonova rozhovoru regionu (krok `rozhovor --zprava "…"`;
-  rozhovor obsahuje kuchařku, všechny podklady i platnou verzi scénáře) a Argonovu odpověď vloží do chatu **beze
-  změny**, bez vlastního komentáře a bez úprav. Claude do konzultace nevstupuje; ozve se až tehdy, když Argon
-  vrátí nový text scénáře: ten uloží a znovu zkontroluje čísla. Záznam rozhovoru je v `{REGION}/ROZHOVOR.md`.
-- Platí dál: sloh v souvislých větách, žádné „my“ o Česku, žádné čekané místo, žádné kódy (vše je i v kuchařce, oddíl 7).
+- **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.0.md` postaví mapu příběhu
+  (kostra `py scripts/kostra_mapy_pribehu.py --region "…"`) a napíše **faktickou verzi** scénáře regionu se zámkem
+  faktů (tučně = pevné jádro, `{volitelné: …}`, seznam NEŘÍKEJ, rozpočet slov). Fakta nechá nezávisle zkontrolovat.
+- **Ondřej** ji vloží do **Gemini na webu** spolu se skillem `05_epizode_packs/_skills/gemini-web-ctiva-verze-SKILL-v1.0.md`
+  (Ondřej ho dál ladí); Gemini napíše čtivou sportovní verzi a nemění fakta.
+- **Claude** čtivou verzi zkontroluje jen na pět druhů odchylek (číslo, omezující slovo, směr příčiny, pořadí/štítek/tip,
+  nový fakt; skill mapy příběhu oddíl 4). Styl Gemini nepřepisuje.
+- Platí dál: sloh v souvislých větách, žádné „my“ o Česku, žádné kódy.
+
+**Historie (23.–31. 10. 2026, nahrazeno):** dřív psal scénáře jen Gemini 4 Argon přes Antigravity CLI (`agy`,
+`scripts/gemini_scenarista.py`) a Claude měl psaní finálních textů zakázané. Nástroj i přímá konzultace s Argonem
+(`rozhovor --zprava "…"`, záznam `{REGION}/ROZHOVOR.md`) zůstávají k dispozici, když o ně Ondřej požádá; Ondřej
+terminál nepoužívá, příkazy spouští Claude sám na pozadí.
 
 ## KONTEXT PRO WEBOVÉ GEMINI: VEŘEJNÝ REPOZITÁŘ A DISK GOOGLE — Ondřej 25. 10. 2026
 
@@ -1864,6 +1854,8 @@ Instrukční dokumenty pro generování obsahu jsou v `05_epizode_packs/_skills/
 - **`european-economy-analysis-v20-capacity-first.md`** — Podklad v22: platí z něj §1.2, §4, §5, §7.1, §8, §9 (v22 na ně odkazuje); konstrukce indexu z v20 §2–3 je nahrazená.
 - **`european-economy-analysis-v19-causal-first.md`** — Předchozí causal-first rámec (nahrazen v20→v22); kauzální kontrakt žije dál ve v22 §5 odkazem.
 - **`voiceover-skill-v10-live-race.md` (v10.3) + `voiceover-styl-ondrej-SKILL-v1.0.md`** — AKTIVNÍ writer kontrakt (Ondřej, laděno 2026-07-24→28; závazné i pro ep_001). Formát „živý závod": abecední startovní listina, PAPER FORM/OČEKÁVÁNÍ před výsledkem, GAME PLAN + TARGET BAND, živá tabulka se zásuny, checkpointy po 10/20, vyhlášení §7. Stylová vrstva styl-ondrej v1.0 při konfliktu vyhrává. Kauzalita se vynucuje NAVRCH přes `causal-claim-repair-ADDENDUM-v1.0.md` (bodové opravy à la cr/cr2 vzorky — styl se při nich zachovává). Kanonický vzor: `output/v14/FINAL_voiceover_v14.md` + cr2 segmenty.
+- **`voiceover-mapa-pribehu-SKILL-v1.0.md`** — AKTIVNÍ hlavní postup scénářů regionů (Ondřej 31. 10. 2026): kostra (`scripts/kostra_mapy_pribehu.py`), mapa příběhu (tip, hlavní scéna kola, otázka diváka, průběžné pořadí po každém kole, finále = skutečné pořadí proti pořadí po kolech a zvláštnosti zemí při posunu aspoň o dvě místa), faktická verze se zámkem faktů a zpětná kontrola čtivé verze z Gemini (jen pět druhů odchylek). Nahrazuje psaní Argonem a doplněk o jádru země.
+- **`gemini-web-ctiva-verze-SKILL-v1.0.md`** — malý skill pro Gemini na webu (Ondřej ho ladí): z faktické verze čtivý sportovní komentář, pevné jádro a omezující slova zůstávají, žádné nové fakty, limit slov.
 - **`voiceover-uvod-SKILL-v1.0.md`** — AKTIVNÍ skill mluveného úvodu (Ondřej 8. 10. 2026), nahrazuje §9 writer skillu: trademark „Vítejte u {první} epizody {Evropských/Amerických/Globálních} ekonomických her.“, hned disciplína, bez otázky a výčtu zemí; část „Pojďme se podívat na to, co v dnešní disciplíně uvidíme.“ (favoriti, černí koně a outsideři vždy od Ondřeje — bez nich se FINAL nepíše, trikoty, pořadí startu, tři kola s faktory a vahami, nesčítání kol se smyšleným příkladem, zdroje); nakonec co přesně měříme a rok dat ověřený u zdroje.
 - **`voiceover-cestina-SKILL-v1.0.md`** — ČESKÁ JAZYKOVÁ VRSTVA, NA ZKOUŠKU (Ondřej rozhoduje vkus; 2026-09-15, z rešerší R1/R2 a ze slepého porovnání dvou verzí voiceoveru ep_003). Není to writer ani přepis: **omezený druhý průchod** nad hotovou skillovou verzí — mapa bodových oprav jazyka (`scripts/voiceover_apply_replacements.py`), zámek číslovek a hedgí (`scripts/voiceover_cestina_detektory.py --pred`, exit 0), INFO rozdíly kvalifikátorů/první osoby/zesilovačů, čerstvá kontrola, pak standardní slepé čtení + viewer review. §15.1 = pravidla, která obstála (nominalizace → sloveso, aktér místo pasiva, réma na konec, dvojtečka → spojka ne tečka, „kam“, genitiv po „dost“ a u kvantity, statistická jednotka není fyzický objekt); §15.2 = tvrdé zákazy (hodnotící přívlastek u čísla, první osoba u verdiktu, škrtnutý kvalifikátor, změněná kauzální spojka, přidaný fakt, přejmenovaný pojem série, dvojtečka → tečka); §15.4 = otázky vkusu pro Ondřeje (vrstva postoje, první osoba, průvodcovské vazby, nocleh/startér).
 - **`voiceover_skill_v_9_2.md`** — LEGACY craft base (v9.x formát bez živého závodu). ⚠ v19/v20 voiceovery napsané podle v9.2 (FINAL_voiceover_v19, první FINAL_voiceover_v20) NEJSOU stylový kanon — Ondřej 2026-07-31: „absolutně nepoužitelný styl"; slouží jen jako zdroj kauzálních formulací.
@@ -1950,7 +1942,7 @@ Stručně:
 
 # Aktivní skilly Ekonomických her
 
-Obsah (28 skillů):
+Obsah (30 skillů):
 
 - pipeline-orchestration-SKILL-v3.md
 - data-collection-SKILL-v1.0.md
@@ -1961,6 +1953,8 @@ Obsah (28 skillů):
 - potencial-index-produktove-svazky-ADDENDUM-v1.0.md
 - european-economy-analysis-v20-capacity-first.md
 - voiceover-skill-v10-live-race.md
+- voiceover-mapa-pribehu-SKILL-v1.0.md
+- gemini-web-ctiva-verze-SKILL-v1.0.md
 - voiceover-uvod-SKILL-v1.0.md
 - voiceover-cestina-SKILL-v1.0.md
 - voiceover-review-skill-v2_4.md
@@ -7709,6 +7703,234 @@ vysvětlení lze přidat podle §4; nevypouštěj význam jen kvůli délce. Zdr
 **Doplnění 24. 9. 2026 (v10.9):** pro komentátorský formát platí postup §3.9, kroky 1–8. Body 1–6 výše zůstávají. Krok 3 §3.9 zpřesňuje bod 2, kroky 5 a 7 bod 5 a krok 8 bod 6.
 
 **Doplnění kroku 1 (23. 9. 2026):** režijní plán obsahuje mapu příčin napříč ligou (§3.7), u každé země nový prvek segmentu (§4) a předem spočítaná pásma kol, pokud se mají použít (§3.6). Slovník kol (§3.6) a kolize názvů kol (§5d) hlídá `scripts/validate_voiceover_five_blocks.py`; směr kol, test záměny, odkazy místo opakování a pravidla §5d ověřuje dramaturgická evaluace a slepé čtení.
+
+
+# Skill: voiceover-mapa-pribehu-SKILL-v1.0.md
+
+## Mapa příběhu a faktická verze scénáře regionu (skill pro Claude, v1.0, 31. 10. 2026)
+
+*Stav: **AKTIVNÍ, hlavní postup pro scénáře regionů** (Ondřej 31. 10. 2026: „zapiš postup mapy příběhu, ale obecně…
+co nejkonkrétnější, ale zároveň obecný, aby se to dalo uplatnit na všechny regiony, všechny indikátory“). Vznikl
+z prototypu Jižní Evropy (mzdy, 31. 10. 2026), kde slepý divák poprvé správně pochopil celý příběh regionu.*
+
+**Co nahrazuje:** psaní scénářů regionů Argonem přes `scripts/gemini_scenarista.py` (23. 10. 2026) a doplněk
+o jádru země (`voiceover-jadro-zeme-ADDENDUM-2026-10-27.md`). Jeho výběr jader (doklad, test záměny, sdílený
+mechanismus regionu) žije dál v oddílu 2.6. Pravidla slohu, globálního pohledu a srozumitelnosti z CLAUDE.md platí
+dál.
+
+### 0. Dělba práce
+
+| Kdo | Co dělá | Co nedělá |
+|---|---|---|
+| **Claude (tento skill)** | mapu příběhu, faktickou verzi scénáře se zámkem faktů a zpětnou kontrolu čtivé verze | nepíše „hezky“, nesoutěží o styl |
+| **Gemini na webu** (skill `gemini-web-ctiva-verze-SKILL-v1.0.md`) | přepíše faktickou verzi do čtivého sportovního komentáře | nemění fakta, nepřidává fakta, neanalyzuje |
+| **Ondřej** | tipy před startem, vkus a dramaturgii, štítky; vkládá text do Gemini a vrací výsledek | nerozhoduje dílčí fakta |
+
+Postup: kostra (skript) → mapa příběhu → faktická verze → Ondřej ji vloží do Gemini → čtivou verzi vrátí →
+zpětná kontrola (oddíl 4) → hotovo.
+
+### 1. Vstupy
+
+Pro každý ukazatel a region:
+- **výsledek** každé země (hodnota, místo v celé lize, patro Evropy);
+- **kola**, tedy části výsledku, ve kterých se závod hraje: hodnota země v kole, místo v kole, body (vliv na výsledek);
+- **průběžné pořadí** po každém kole (kde by země stála, kdyby rozhodovala jen dosud odehraná kola);
+- **tipy** Ondřeje před startem (text a rozmezí míst);
+- **štítky** (hodnocení kroků vlády vůči výchozí pozici, rok zlomu, vedlejší štítek);
+- **výklady zemí** (proč má země v kolech takové hodnoty, další faktory, co říkají ekonomové) a **rešerše ekonomů**
+  (důvody od největšího vlivu, síla dokladu);
+- **co kola nevysvětlí** (rozdíl mezi výsledkem a pořadím po kolech) a jeho rozklad, pokud ho analýza má (u mezd:
+  podíl mezd na výkonu, podíl zaměstnanců, hodiny), a **typická odchylka** výpočtu.
+
+U mezd (epizoda 1) je dává `scripts/kostra_mapy_pribehu.py`. U jiného ukazatele se kostra postaví ze stejných
+druhů údajů jeho analýzy; když některý chybí, zapíše se to do mapy a nevymýšlí se.
+
+### 2. Mapa příběhu (postup, ne dojem)
+
+#### 2.1 Kostra
+Spusť `py scripts/kostra_mapy_pribehu.py --region "<region>"` (jiný ukazatel: stejná tabulka ručně z jeho dat).
+Kostra dá místa v kolech, průběžné pořadí, cíl, posun proti pořadí po kolech, prohození v regionu, tip a jeho
+splnění, štítek a chybějící podklady. **Z kostry se neodchyluj;** úsudek začíná až u příčin.
+
+#### 2.2 Očekávání (showcase)
+- Očekávání je **Ondřejův tip**, převyprávěný věrně (favorit, outsider, černý kůň, rozmezí míst). Nepřidávej mu
+  důvod, který Ondřej neřekl a podklady nedokládají („díky nižším cenám“).
+- K tipu patří **charakter země vůči ukazateli** (z čeho žije, co určuje výsledek, jak drahý je život), jen z výkladu
+  země. Žádná čísla z kol, žádné příčiny výsledku.
+- Když chybí tip, scénář se nepíše (skill úvodu: tipy vždy od Ondřeje).
+
+#### 2.3 Kola
+Pro každé kolo a zemi:
+1. **Hodnota a místo v kole** z kostry.
+2. **Hlavní scéna kola** patří zemi s největším vlivem kola v regionu (největší body v absolutní hodnotě). Když jsou dvě
+   země blízko, dostane ji ta, která víc mění průběžné pořadí nebo jde nejvíc proti svým kartám. Ostatní země stručně.
+3. **Jedna až dvě příčiny** na zemi: nejsilnější doklad podle rešerše (změřeno nebo posouzeno institucí), správný směr,
+   **test záměny** (kdyby šlo říct totéž o sousedovi v regionu, není to příčina této země; sdílený mechanismus se
+   vysvětlí jednou u země s nejsilnějším dokladem a u ostatních se jen připomene).
+4. **Co se jen stalo, ale nikdo neměřil účinek** (časová souvislost), se zapíše jako událost, ne jako příčina.
+5. **Definice veličiny kola** jednou v epizodě, obyčejně a s obrazem z dat (u produktivity: číšník proti dělníkovi
+   v průmyslu). V dalších regionech jen jednovětá připomínka. Dohánění se řekne obyčejně: chudší země rostou rychleji
+   samy od sebe. Kde je zařazení „nad / pod dohánění“ nejisté, hlas ho neříká. Zemi se smí přičíst jen růst nad
+   rámec dohánění: když reálně rostla pomaleji, než odpovídá jejímu startu, neříká se „nejlepší tah“ ani
+   „polepšila si“, i kdyby byla v kole nejvýš z regionu (poučení: Portugalsko, 31. 10. 2026).
+
+#### 2.4 Otázka diváka
+- **Jedna na region**, u hlavní scény regionu (země, kterou kola pohnula nejvíc nebo jejíž výsledek nejvíc překvapí).
+- Je to rozpor, na který by se zeptal běžný divák: slavné značky a slabý výsledek, euro a chudoba, boom a pořád dno.
+- **Odpověď musí mít oporu.** Když ji podklady nemají, zadej cílenou rešerši (vzor: `ekonomove/IT_PARADOX_LUXUSU.md`:
+  čísla s institucí a rokem, co nepoužít). Bez odpovědi se otázka nepokládá.
+
+#### 2.5 Průběžné pořadí
+- Po každém kole se řekne krátce jako stav závodu: kdo vede region a kde je v celé lize.
+- **Vždy odliš** místo v samotném kole („v tomto kole je šestadvacátá“) od průběžného pořadí („v průběžném pořadí
+  je desátá“). Při první zmínce v epizodě jednou vysvětli, co průběžné pořadí znamená.
+- Nikdy „by měla skončit“: průběžné pořadí je stav, ne předpověď.
+
+#### 2.6 Finále: skutečné pořadí a zvláštnosti
+Odhaluje se od posledního v regionu po vítěze, s výsledkem a patrem. U každé země: dojela tam, kam ji poslala kola,
+nebo jinam, a proč.
+1. **Vykládá se** u země, která se proti pořadí po všech kolech posunula aspoň o dvě místa v lize nebo prohodila
+   pořadí v regionu. Ostatní krátce („dojela skoro přesně tam, kam ji poslala kola“) a jedna zvláštnost, je-li silná.
+2. **Pořadí důvodů:** nejdřív to, co analýza spočítala (například podíl výplat na tom, co ekonomika vytvoří, podíl
+   zaměstnanců mezi pracujícími, odpracované hodiny), s tím, **jakou část** rozdílu to vysvětluje („zčásti“, „asi
+   třetinu“). Pak doložené instituce se správným směrem (kolektivní smlouvy, minimální mzda, reformy). Každý důvod
+   projde testem záměny a má doklad aspoň „posoudila instituce“.
+3. **Malý rozdíl se nevykládá institucemi.** Když je to, co kola nevysvětlí, v mezích typické odchylky výpočtu,
+   smí zaznít jen to, co analýza spočítala, se slovem „zčásti“ (například vyšší podíl výplat), nebo těsné pole
+   („sousedé jsou od sebe jen pár set jednotek a předjelo ji…“). Instituce a reformy se jako důvod posunu neříkají.
+4. **Ceny jako obraz:** rozdíl mezi výsledkem v eurech a v kupní síle je dobrý obraz („v eurech má víc než soused,
+   v kupní síle méně, protože život je dražší“). Je to obraz, ne příčina posunu proti kolům, pokud to analýza
+   nedoložila.
+5. **NEŘÍKEJ** zapiš ke každé zemi: důvody proti směru, důvody bez dokladu, „celý rozdíl vysvětluje…“, když doklad
+   vysvětluje jen část, a vysvětlení, která analýza vyvrátila (u Itálie: chudý jih a šedá ekonomika jako příčina
+   ztráty ve finále).
+6. **Pozor na směr skladby pracujících:** málo zaměstnanců mezi pracujícími snižuje podíl výplat na vytvořené
+   hodnotě, ale mzdu na jednoho zaměstnance zvedá (Bulharsko). Nikdy neříkej, že víc zaměstnanců zvedá mzdu.
+
+#### 2.7 Štítky a tipy
+- **Štítek** v uvozovkách, s rokem zlomu a vedlejším štítkem, samostatnou větou (nikdy „takže štítek…“ jako důsledek
+  jiné věty). Při prvním výskytu v epizodě půlvětné vysvětlení: hodnotí kroky vlády vůči výchozí pozici země, ne
+  výsledek.
+- **Tip** se vyhodnotí proti aktuálním datům a rozmezí: splněn, líp, hůř; těsně mimo rozmezí „o kousek líp/hůř“.
+  Starší rozhodnutí o tipech platí jen pro data, ke kterým vznikla.
+
+#### 2.8 Konec regionu
+Jedna věta zápletky (kdo vedl po kolech, kdo vyhrál, splnily se tipy) a jedna věta předávky dalšímu regionu.
+
+Mapa se ukládá jako `MAPA_PRIBEHU.md` ve složce regionu. Každé číslo v ní má zdroj v datech nebo výkladu země.
+
+### 3. Faktická verze scénáře
+
+Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost dodá Gemini. Přesto platí:
+
+1. **Stavba:** `# Region`, pak `## Předstartovní showcase`, `## Kolo 1 – …` až `## Kolo N – …`, `## Finále: cíl`.
+   Každá část začíná řádkem `[VIZUÁL: …]` s přesnými čísly (sem patří čísla, která v hlase nejsou).
+2. **Věty:** souvislé, nejvýš dvě čísla ve větě, nejvýš dvě vedlejší věty, jeden odstavec = jedna otázka a odpověď.
+   Žádné staccato, žádné odrážky v mluveném textu, žádná metodika (body, výpočet, odchylka, tabulka, data).
+3. **Značení pro Gemini:**
+   - **tučně** = pevné jádro: musí zaznít v hlase, číslo a omezující slovo přesně tak;
+   - `{volitelné: …}` = smí zkrátit, vynechat nebo nechat jen v obraze;
+   - ostatní text = smí volně přeformulovat, ale ne vynechat.
+   Pevné je jen to, bez čeho se příběh rozpadne: asi 15–25 faktů na region (tip a jeho splnění, hlavní scény a jejich
+   příčina, otázka diváka a odpověď, průběžné pořadí, výsledky v cíli, důvody finále, štítky). Méně pevného = víc
+   prostoru pro čtivost.
+4. **Zámek faktů** na konci souboru: číslovaný seznam pevných faktů v krátké podobě (číslo, omezující slovo, směr
+   příčiny, místo, štítek). Podle něj se dělá zpětná kontrola.
+5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
+6. **Délka:** výchozí asi 250 slov na zemi plus 300 slov na rámec regionu (showcase, definice, předávka). Rozpočet
+   napiš do hlavičky souboru. Ondřej ho smí změnit.
+7. **Kontrola před předáním:** každé číslo proti datům a výkladům zemí (nejlépe nezávislý kontrolor, který mapu
+   nepsal), ověř směr každého „protože / díky / kvůli“ a že žádné omezující slovo z mapy nevypadlo.
+
+Soubor se ukládá jako `FAKTICKA_VERZE.md` ve složce regionu a Ondřejovi se posílá přes SendUserFile.
+
+### 4. Zpětná kontrola čtivé verze
+
+Ondřej vloží čtivou verzi z Gemini zpět. Kontroluje se **jen uzavřený seznam pěti odchylek** proti zámku faktů:
+1. změněné nebo nově zaokrouhlené číslo, rok, místo;
+2. vypadlé omezující slovo („jen“, „asi“, „skoro“, „zčásti“, „reálně“, „v kupní síle“);
+3. obrácený nebo zesílený směr příčiny („díky“ místo „kvůli“, „proto“ místo „zčásti proto“);
+4. změněný štítek, tip nebo pořadí;
+5. nový fakt, který ve faktické verzi není (značka s číslem, historie, citát).
+
+Plus: chybí-li pevný fakt ze zámku, je to odchylka.
+
+**Všechno ostatní je volnost Gemini** (obrazy, pořadí vět, tón, vtip, rytmus, délka vět) a nekomentuje se. Drobnost
+(jedno slovo, číslo) opraví Claude rovnou a zapíše. Když je špatně celá věta, dostane Ondřej tu jednu větu se správným
+faktem, aby ji vrátil Gemini; nikdy celý seznam stylových připomínek. Výsledek: krátký seznam „co jsem opravil“ a hotový
+soubor `CTIVA_VERZE.md`.
+
+### 5. Slepá zkouška diváka (u nového ukazatele nebo velké změny)
+
+Model, který analýzu neviděl, dostane jen mluvený text a odpoví na otázky příběhu (co je veličina kola, jak se měnilo
+pořadí, proč hlavní scéna, odpověď na otázku diváka, proč je země v cíli jinde než po kolech, splnily se tipy) a dá
+čtivost 1–10 s místy, kde se ztratil. Chybná odpověď = vada mapy nebo faktické verze, ne stylu.
+
+### 6. Obecnost: jak postup použít na jiný ukazatel
+
+Postup nezávisí na mzdách. Kola jsou části výsledku daného ukazatele (u bydlení pět kol: výplata, lidé, zděděné byty,
+úroky, výstavba); definice veličiny se řekne u kola, kde je poprvé potřeba; rozklad „co kola nevysvětlí“ se bere
+z analýzy toho ukazatele, a když ho nemá, finále vykládá jen doložené instituce a těsnost pole. Výběr hlavní scény,
+otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez výkladu, štítky a zámek faktů platí beze změny.
+
+### 7. Historie
+
+- 31. 10. 2026: v1.0 z prototypu Jižní Evropy (`ep_001…/scenar_regiony_2026_10/gemini/JIZNI_EVROPA_PROTOTYP/`) a
+  Ondřejovy dramaturgie (showcase s tipy, průběžné pořadí po každém kole, finále = rozdíl proti pořadí po kolech).
+  Poučení z prototypu: Argon psal hezky, ale dělal faktické chyby (poměr „pětatřicetkrát“ místo skoro třistakrát,
+  vypadlé „zčásti“) a při plném zákazu vypouštění zůstal text hustý (čtivost 4–6/10). Proto dělba: fakta Claude,
+  čtivost Gemini na webu, zpětná kontrola jen pěti odchylek.
+
+
+# Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
+
+## Skill pro Gemini na webu: čtivá verze scénáře regionu (v1.0, 31. 10. 2026)
+
+*Základ od Clauda podle toho, na čem se Ondřej a Claude 31. 10. 2026 shodli. Ondřej ho dál ladí (sportovní tón,
+emoce, obraty). Vkládá se do Gemini na začátek konverzace, pak faktická verze jednoho regionu.*
+
+---
+
+Jsi komentátor dokumentární série **Ekonomické hry**: evropské země soutěží jako v závodě a ty komentuješ jeden
+region. Dostaneš **faktickou verzi scénáře**, kterou připravil analytik. Fakta jsou ověřená a správně seřazená, ale
+text je suchý. Tvoje práce je jediná: **přepsat ho do čtivého, živého sportovního komentáře v češtině**, který se
+dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
+
+### Co smíš
+- Měnit pořadí vět uvnitř části, délku vět, slovosled, obrazy, přirovnání, rytmus, napětí a sportovní tón.
+- Zkrátit nebo vynechat text označený `{volitelné: …}`, nebo ho nechat jen v obraze (řádek `[VIZUÁL: …]`).
+- Volně přeformulovat neoznačený text, ale jeho obsah musí zůstat.
+
+### Co nesmíš (fakta)
+1. **Tučný text je pevné jádro.** Musí zaznít v hlase, i když jinými slovy. Čísla, roky, místa a jména z něj neměň
+   ani znovu nezaokrouhluj.
+2. **Omezující slova zůstávají:** jen, asi, skoro, přes, zčásti, reálně, po odečtení zdražování, v kupní síle.
+3. **Směr příčiny zůstává.** Nezaměňuj „kvůli“ a „díky“, z „zčásti proto“ nedělej „proto“, ze „souvisí“ nedělej
+   „způsobilo“.
+4. **Pořadí, tipy a štítky** zůstávají přesně. Štítek vždy v uvozovkách a jako samostatné tvrzení, ne jako důsledek
+   jiné věty.
+5. **Žádné nové fakty:** žádná čísla, značky, historky, citáty ani srovnání, která ve faktické verzi nejsou. Sedí-li ti
+   obraz bez nového faktu („luxus je malý ostrov“), je to v pořádku.
+6. Nic ze seznamu **NEŘÍKEJ** na konci faktické verze.
+7. Řádky `[VIZUÁL: …]` a nadpisy `##` nech beze změny (smíš do VIZUÁLU přesunout volitelné číslo).
+
+### Jak psát
+- **Sportovní komentář, ne přednáška:** závod, souboje, předjíždění, napětí před odhalením, radost a zklamání podle
+  toho, jak se zemi daří. Emoce odpovídají faktům (propad není „skvělý výkon“).
+- **Souvislé, plynulé věty**, jak člověk mluví. Žádné staccato (řetězení krátkých úderných vět a fragmentů), žádné
+  odrážky. Krátká věta jen výjimečně na pointu.
+- **Nejvýš dvě čísla ve větě**, raději obraz („skoro třistakrát víc“, „každý čtvrtý“).
+- **Vykřičník nejvýš dvakrát za region.** Nahlas položená otázka jen tam, kde ji má faktická verze.
+- Místo v samotném kole a **průběžné pořadí** pořád jasně odlišuj.
+- Žádné „my“, „u nás“ o Česku. Žádná metodika (body, výpočet, data, tabulky).
+
+### Délka
+Drž se rozpočtu slov v hlavičce faktické verze (mluvený text bez nadpisů a řádků VIZUÁL), odchylka nejvýš 5 %.
+Když se nevejdeš, krať volitelné, ne pevné.
+
+### Výstup
+Vrať jen hotový scénář v Markdownu se stejnými nadpisy a řádky VIZUÁL. Bez komentáře a bez značek tučně
+a `{volitelné}`. Na úplný konec připiš řádek `Počet slov: N`.
 
 
 # Skill: voiceover-uvod-SKILL-v1.0.md
