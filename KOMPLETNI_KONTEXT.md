@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 01. 11. 2026 19:00 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `7cad8150`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 01. 11. 2026 20:01 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `418a77e3`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -7718,6 +7718,22 @@ o jádru země (`voiceover-jadro-zeme-ADDENDUM-2026-10-27.md`). Jeho výběr jad
 mechanismus regionu) žije dál v oddílu 2.6. Pravidla slohu, globálního pohledu a srozumitelnosti z CLAUDE.md platí
 dál.
 
+### Nejvyšší priorita: divák musí rozumět (Ondřej 1. 11. 2026, opakovaně)
+> „Ty jsi strašně analytický… potřebuju, aby to bylo pochopitelné pro každého. A fakt tomu chci dát co největší
+> důraz.“
+
+Každý mechanismus se ve faktické verzi řekne tak, **aby si ho divák uměl představit**: co to znamená pro konkrétního
+člověka, jeho výplatu, jeho firmu, jeho nákup. Ne „opožděné kolektivní smlouvy srazily mzdy“, ale „Italové nemají
+zákonnou minimální mzdu, výplaty určují smlouvy odborů s firmami. Jenže když smlouva vyprší, nová se rok a půl
+vyjednává a celou tu dobu výplata stojí, zatímco ceny v obchodě rostou.“
+- **Test představy:** u každé věty s příčinou si polož otázku, zda by ji pochopil a převyprávěl člověk bez
+  ekonomického vzdělání. Když ne, přidej obraz (člověk, firma, nákup, srovnání se sousedem), ne další číslo.
+- **Zakázané v hlase:** abstraktní pojmy bez obrazu (podíl na vytvořené hodnotě, daňový klín, dvojí trh práce,
+  skladba ekonomiky, přidaná hodnota, dynamika podnikání). Smí zaznít jen s obrazem v téže větě.
+- **Zábavnost:** konkrétní srovnání a překvapení (Ital a Němec ve dvaceti berou stejně, za deset let má Němec
+  dvojnásobek) mají přednost před výčtem. Gemini dodá tón, ale obraz musí dodat faktická verze.
+- Toto pravidlo má přednost před stručností: radši méně příčin vysvětlených pořádně než víc příčin heslovitě.
+
 ### 0. Dělba práce
 
 | Kdo | Co dělá | Co nedělá |
@@ -7771,6 +7787,13 @@ Pro každé kolo a zemi:
 3. **Jedna až dvě příčiny** na zemi: nejsilnější doklad podle rešerše (změřeno nebo posouzeno institucí), správný směr,
    **test záměny** (kdyby šlo říct totéž o sousedovi v regionu, není to příčina této země; sdílený mechanismus se
    vysvětlí jednou u země s nejsilnějším dokladem a u ostatních se jen připomene).
+3a. **Vlastní důvod od ekonomů (Ondřej 1. 11. 2026: „víc pracovat s faktory od ekonomů“).** Každá země dostane
+   v kole, kam důvod patří, aspoň jeden **svůj** důvod z rešerše ekonomů (`analyza_regiony_2026_10/ekonomove/{ISO}.md`,
+   deset důvodů seřazených podle vlivu): nejvýš řazený důvod, který vysvětluje dané kolo. Sdílený mechanismus
+   (malé firmy u celého jihu) se naplno vysvětlí jednou, ale u ostatních zemí zazní **jejich vlastní podoba**
+   s vlastním číslem (Portugalsko: firem se rodí hodně, ale nerostou; Španělsko: čtyři z pěti nových míst v levných
+   službách). Nesmí se stát, že země má v kole jen společný důvod připomenutý jinde (poučení 1. 11.: Španělsko
+   a Portugalsko měly ve scénáři 2–3 z deseti důvodů ekonomů).
 4. **Co se jen stalo, ale nikdo neměřil účinek** (časová souvislost), se zapíše jako událost, ne jako příčina.
 5. **Definice veličiny kola** jednou v epizodě, obyčejně a s obrazem z dat (u produktivity: číšník proti dělníkovi
    v průmyslu). V dalších regionech jen jednovětá připomínka. Dohánění se řekne obyčejně: chudší země rostou rychleji
@@ -7796,7 +7819,9 @@ pochopitelné… u toho divák usne“).** Dřívější pravidlo vykládalo pos
 (podíl výplat na vytvořené hodnotě, podíl zaměstnanců). To je otázka analytika, ne diváka, a odpověď je pro diváka
 nesrozumitelná. Divák se ptá: **proč je tahle země před tou druhou?**
 
-Odhaluje se od posledního v regionu po vítěze, s výsledkem a patrem. U každé země zazní dvě věci:
+Odhaluje se od posledního v regionu po vítěze, s výsledkem. **Ve finále se neříká místo v celé lize** (Ondřej
+1. 11. 2026: ne „Španělsko skončilo dvanácté“, ale „Španělsko se umístilo nejlépe v jižní Evropě“); místo v lize
+a patro jen v řádku VIZUÁL. U každé země zazní:
 
 0. **Účet za třicet let (rozsudek).** Jednou až dvěma větami spoj klíčový tah nebo chybu z kol s výsledkem: co zemi za
    období pomohlo, co ji potopilo („Itálie promarnila nejlepší start v Evropě: výkon třicet let stál, protože firmy
@@ -7819,6 +7844,21 @@ Pak pro každou dvojici sousedů v cíli:
    kterou je třeba vysvětlit čísly modelu. Pojmy jako podíl výplat na vytvořené hodnotě, podíl zaměstnanců mezi
    pracujícími nebo hodiny se smí použít jen jako „proč“ v bodě 2 a jen převedené do obrazu („v Itálii je každý
    čtvrtý pracující živnostník nebo majitel malé firmy a jeho výdělek se do výplaty zaměstnance nepočítá“).
+4a. **Co kola nevysvětlí: kolik prostoru dát dalším faktorům.** Kostra uvádí u každé země, kolik výsledku tři kola
+   nevysvětlí (`co_kola_nevysvetli_body`; obvyklá chyba výpočtu asi 9 bodů).
+   - **Velký zbytek (víc než asi 9 bodů):** jeden až dva faktory od ekonomů, které jdou **stejným směrem** jako zbytek
+     a působí **cestou, kterou kola neměří** (jak se z vytvořené hodnoty stává výplata: vyjednávání o mzdách,
+     minimální mzda, skladba pracujících, odchod lidí). Pořadí podle rešerše ekonomů. Faktory, které působí přes
+     výkon (malé firmy, vzdělání), patří do kol, ne sem.
+   - **Střední zbytek (asi 5 až 9 bodů):** nejvýš jeden takový faktor, se slovem „zčásti“ nebo s poctivým účinkem
+     z rešerše.
+   - **Malý zbytek (pod asi 5 bodů):** žádný další faktor jako příčina; kola vysvětlí skoro všechno.
+   Přesný podíl jednoho faktoru se neříká (nikdo ho nezměřil); říká se směr a obraz.
+4b. **Zvláštnost země (povinné):** každá země má ve scénáři aspoň jednu zvláštnost mimo tři kola, kterou by o sousedovi
+   říct nešlo (přistěhovalci ve Španělsku, ploché mzdy mladých Italů, portugalské firmy, které vznikají a nerostou).
+   Patří do kola, kam věcně spadá, nebo do finále. Síla dokladu se řekne poctivě; když účinek na mzdy nikdo nezměřil,
+   řekne se, co se děje, ne že to mzdy zvedlo nebo srazilo. Kontrola před odesláním: země bez zvláštnosti = scénář
+   se neodesílá.
 5. **NEŘÍKEJ** zapiš ke každé zemi: důvody proti směru, důvody bez dokladu, „celý rozdíl vysvětluje…“, když doklad
    vysvětluje jen část, a vysvětlení, která analýza vyvrátila (u Itálie: chudý jih a šedá ekonomika jako příčina
    ztráty ve finále).
@@ -7826,9 +7866,8 @@ Pak pro každou dvojici sousedů v cíli:
    hodnotě, ale mzdu na jednoho zaměstnance zvedá (Bulharsko). Nikdy neříkej, že víc zaměstnanců zvedá mzdu.
 
 #### 2.7 Štítky a tipy
-- **Štítek** v uvozovkách, s rokem zlomu a vedlejším štítkem, samostatnou větou (nikdy „takže štítek…“ jako důsledek
-  jiné věty). Při prvním výskytu v epizodě půlvětné vysvětlení: hodnotí kroky vlády vůči výchozí pozici země, ne
-  výsledek.
+- **Štítky se ve scénáři neříkají** (Ondřej 1. 11. 2026: „ty štítky končí“). Hodnocení země nese rozsudek za třicet
+  let (2.6 bod 0) a vysvětlené příčiny. Štítky zůstávají jen v podkladech analýzy.
 - **Tip** se vyhodnotí proti aktuálním datům a rozmezí: splněn, líp, hůř; těsně mimo rozmezí „o kousek líp/hůř“.
   Starší rozhodnutí o tipech platí jen pro data, ke kterým vznikla.
 
@@ -7927,14 +7966,16 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 2. **Omezující slova zůstávají:** jen, asi, skoro, přes, zčásti, reálně, po odečtení zdražování, v kupní síle.
 3. **Směr příčiny zůstává.** Nezaměňuj „kvůli“ a „díky“, z „zčásti proto“ nedělej „proto“, ze „souvisí“ nedělej
    „způsobilo“.
-4. **Pořadí, tipy a štítky** zůstávají přesně. Štítek vždy v uvozovkách a jako samostatné tvrzení, ne jako důsledek
-   jiné věty.
+4. **Pořadí a tipy** zůstávají přesně. Ve finále neříkej místo v celé lize, jen pořadí v regionu (Ondřej 1. 11. 2026).
+   Štítky (hodnocení vlád nálepkou) do scénáře nepatří.
 5. **Žádné nové fakty:** žádná čísla, značky, historky, citáty ani srovnání, která ve faktické verzi nejsou. Sedí-li ti
    obraz bez nového faktu („luxus je malý ostrov“), je to v pořádku.
 6. Nic ze seznamu **NEŘÍKEJ** na konci faktické verze.
 7. Řádky `[VIZUÁL: …]` a nadpisy `##` nech beze změny (smíš do VIZUÁLU přesunout volitelné číslo).
 
 ### Jak psát
+- **Divák si to musí umět představit.** Obrazy z faktické verze (člověk, výplata, firma, nákup) zachovej a rozviň,
+  nikdy je nenahrazuj abstraktním pojmem.
 - **Sportovní komentář, ne přednáška:** závod, souboje, předjíždění, napětí před odhalením, radost a zklamání podle
   toho, jak se zemi daří. Emoce odpovídají faktům (propad není „skvělý výkon“).
 - **Souvislé, plynulé věty**, jak člověk mluví. Žádné staccato (řetězení krátkých úderných vět a fragmentů), žádné
