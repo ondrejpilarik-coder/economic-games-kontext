@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 01. 11. 2026 15:22 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `f75c7dd9`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 01. 11. 2026 19:00 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `7cad8150`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -7790,21 +7790,35 @@ Pro každé kolo a zemi:
   je desátá“). Při první zmínce v epizodě jednou vysvětli, co průběžné pořadí znamená.
 - Nikdy „by měla skončit“: průběžné pořadí je stav, ne předpověď.
 
-#### 2.6 Finále: skutečné pořadí a zvláštnosti
-Odhaluje se od posledního v regionu po vítěze, s výsledkem a patrem. U každé země: dojela tam, kam ji poslala kola,
-nebo jinam, a proč.
-1. **Vykládá se** u země, která se proti pořadí po všech kolech posunula aspoň o dvě místa v lize nebo prohodila
-   pořadí v regionu. Ostatní krátce („dojela skoro přesně tam, kam ji poslala kola“) a jedna zvláštnost, je-li silná.
-2. **Pořadí důvodů:** nejdřív to, co analýza spočítala (například podíl výplat na tom, co ekonomika vytvoří, podíl
-   zaměstnanců mezi pracujícími, odpracované hodiny), s tím, **jakou část** rozdílu to vysvětluje („zčásti“, „asi
-   třetinu“). Pak doložené instituce se správným směrem (kolektivní smlouvy, minimální mzda, reformy). Každý důvod
-   projde testem záměny a má doklad aspoň „posoudila instituce“.
-3. **Malý rozdíl se nevykládá institucemi.** Když je to, co kola nevysvětlí, v mezích typické odchylky výpočtu,
-   smí zaznít jen to, co analýza spočítala, se slovem „zčásti“ (například vyšší podíl výplat), nebo těsné pole
-   („sousedé jsou od sebe jen pár set jednotek a předjelo ji…“). Instituce a reformy se jako důvod posunu neříkají.
-4. **Ceny jako obraz:** rozdíl mezi výsledkem v eurech a v kupní síle je dobrý obraz („v eurech má víc než soused,
-   v kupní síle méně, protože život je dražší“). Je to obraz, ne příčina posunu proti kolům, pokud to analýza
-   nedoložila.
+#### 2.6 Finále: skutečné pořadí a proč je soused před sousedem
+**Oprava 1. 11. 2026 (Ondřej: „proč skončilo Portugalsko třetí, Itálie druhá a Španělsko první, důvody jsou blbě
+pochopitelné… u toho divák usne“).** Dřívější pravidlo vykládalo posun proti pořadí po kolech pomocí čísel modelu
+(podíl výplat na vytvořené hodnotě, podíl zaměstnanců). To je otázka analytika, ne diváka, a odpověď je pro diváka
+nesrozumitelná. Divák se ptá: **proč je tahle země před tou druhou?**
+
+Odhaluje se od posledního v regionu po vítěze, s výsledkem a patrem. U každé země zazní dvě věci:
+
+0. **Účet za třicet let (rozsudek).** Jednou až dvěma větami spoj klíčový tah nebo chybu z kol s výsledkem: co zemi za
+   období pomohlo, co ji potopilo („Itálie promarnila nejlepší start v Evropě: výkon třicet let stál, protože firmy
+   zůstaly malé“; „Španělsko nevyhrálo růstem; rozhodlo, že z italského náskoku ve výkonu nedojde do výplat skoro nic“). Smí použít jen příčiny, které už
+   v kolech zazněly s dokladem, se stejnou silou slov („zčásti“, „mohla“). Rozsudek je o tom, co se stalo, ne
+   o tom, kdo měl lepší kroky, když to doklad neříká. Rozsudek musí sedět i s průběžným pořadím: když podle kol vede jiná země, než vyhrála, rozhodnutí přišlo až v cíli (cesta výplaty), ne v kolech. (Návrh Gemini 1. 11. 2026, převzatý bez jeho faktických chyb.)
+
+Pak pro každou dvojici sousedů v cíli:
+1. **Cesta výplaty.** Kostra (`scripts/kostra_mapy_pribehu.py`, oddíl „proč je soused před sousedem“) rozloží rozdíl
+   sousedů na tři kroky, kterým rozumí každý: **kolik firma za zaměstnance zaplatí** → **kolik si z toho vezme stát** →
+   **kolik se za zbytek koupí (ceny)**. Hlavní krok (označený HLAVNÍ) zazní první a jako hlavní důvod; druhý jen
+   tehdy, když je velký nebo jde proti (například „levnější život to dožene jen zčásti“).
+2. **Jedno „proč“ pod hlavním krokem**, jen když je doložené a srozumitelné: firma platí víc, protože pracující
+   vytvoří víc (odkaz na kola o výkonu); stát si bere víc kvůli vysokým odvodům; život je levnější, protože… (jen
+   s dokladem, jinak bez „protože“). Nejvýš jedna věta.
+3. **Test převyprávění:** důvod musí jít říct jednou větou bez procent z vytvořené hodnoty, bez „modelu“, „kol, která
+   slibovala“ a bez odborných pojmů („Španělská i italská firma zaplatí za zaměstnance skoro stejně, jenže ve
+   Španělsku je život levnější“). Neprojde-li, přeformuluj, ne přidej číslo.
+4. **Pořadí po kolech** smí zaznít jen jako překvapení („Itálie vedla po všech kolech, a přesto…“), ne jako otázka,
+   kterou je třeba vysvětlit čísly modelu. Pojmy jako podíl výplat na vytvořené hodnotě, podíl zaměstnanců mezi
+   pracujícími nebo hodiny se smí použít jen jako „proč“ v bodě 2 a jen převedené do obrazu („v Itálii je každý
+   čtvrtý pracující živnostník nebo majitel malé firmy a jeho výdělek se do výplaty zaměstnance nepočítá“).
 5. **NEŘÍKEJ** zapiš ke každé zemi: důvody proti směru, důvody bez dokladu, „celý rozdíl vysvětluje…“, když doklad
    vysvětluje jen část, a vysvětlení, která analýza vyvrátila (u Itálie: chudý jih a šedá ekonomika jako příčina
    ztráty ve finále).
