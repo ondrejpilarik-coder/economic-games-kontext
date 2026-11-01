@@ -5813,8 +5813,12 @@ splnění, štítek a chybějící podklady. **Z kostry se neodchyluj;** úsudek
 #### 2.2 Očekávání (showcase)
 - Očekávání je **Ondřejův tip**, převyprávěný věrně (favorit, outsider, černý kůň, rozmezí míst). Nepřidávej mu
   důvod, který Ondřej neřekl a podklady nedokládají („díky nižším cenám“).
-- K tipu patří **charakter země vůči ukazateli** (z čeho žije, co určuje výsledek, jak drahý je život), jen z výkladu
-  země. Žádná čísla z kol, žádné příčiny výsledku.
+- Showcase je **jen Ondřejův tip a nejvýš krátké pojmenování země** („velká země jihu“, „malá alpská země“). Co je
+  v Ondřejově textu tipu (například „vzpamatovává se z finanční krize“), zůstává; nic dalšího se nepřidává.
+- **Test spoileru:** co se později vykládá v kole nebo ve finále (ceny a drahota života, kolektivní smlouvy, turismus,
+  hotely, značky, odvětví), do showcase nepatří, i když je to „charakter země“. Divák to má slyšet poprvé tam, kde
+  se to vysvětluje. Žádná čísla z kol, žádné příčiny výsledku. (Poučení 1. 11. 2026: Jih měl v úvodu kolektivní
+  smlouvy, ceny a Ferrari, Gemini to správně označilo jako spoiler; Balkán, psaný jen z tipů, byl čistý.)
 - Když chybí tip, scénář se nepíše (skill úvodu: tipy vždy od Ondřeje).
 
 #### 2.3 Kola
@@ -5896,7 +5900,9 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    příčiny, místo, štítek). Podle něj se dělá zpětná kontrola.
 5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
 6. **Délka:** výchozí asi 250 slov na zemi plus 300 slov na rámec regionu (showcase, definice, předávka). Rozpočet
-   napiš do hlavičky souboru. Ondřej ho smí změnit.
+   napiš do hlavičky souboru. Ondřej ho smí změnit. **Rozpočet musí ležet mezi délkou textu bez volitelných a s nimi**
+   (spočítej obojí a uveď to v hlavičce); když text na výchozí rozpočet nestačí, rozpočet se sníží, Gemini nesmí
+   přidávat. (Poučení 1. 11.: Balkán měl rozpočet 1 450 při textu 1 220–1 420 slov.)
 7. **Kontrola před předáním:** každé číslo proti datům a výkladům zemí (nejlépe nezávislý kontrolor, který mapu
    nepsal), ověř směr každého „protože / díky / kvůli“ a že žádné omezující slovo z mapy nevypadlo.
 
