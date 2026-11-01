@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 01. 11. 2026 15:16 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `f09734ac`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 01. 11. 2026 15:22 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `f75c7dd9`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -7926,7 +7926,9 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 - **Souvislé, plynulé věty**, jak člověk mluví. Žádné staccato (řetězení krátkých úderných vět a fragmentů), žádné
   odrážky. Krátká věta jen výjimečně na pointu.
 - **Nejvýš dvě čísla ve větě**, raději obraz („skoro třistakrát víc“, „každý čtvrtý“).
-- **Vykřičník nejvýš dvakrát za region.** Nahlas položená otázka jen tam, kde ji má faktická verze.
+- **Vykřičník nejvýš dvakrát za region.** Otázky z faktické verze zůstávají. Navíc smíš položit **nejvýš tři krátké
+  komentátorské otázky na region** (například na přechodu mezi zeměmi: „A co Portugalsko?“), ale otázka nesmí
+  obsahovat ani naznačovat nový fakt, číslo nebo příčinu. (Ondřej 1. 11. 2026)
 - Místo v samotném kole a **průběžné pořadí** pořád jasně odlišuj.
 - Žádné „my“, „u nás“ o Česku. Žádná metodika (body, výpočet, data, tabulky).
 
