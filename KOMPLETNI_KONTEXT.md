@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 02. 11. 2026 12:50 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `b94d0257`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 02. 11. 2026 13:04 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `633454b5`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -7734,6 +7734,29 @@ vyjednává a celou tu dobu výplata stojí, zatímco ceny v obchodě rostou.“
   dvojnásobek) mají přednost před výčtem. Gemini dodá tón, ale obraz musí dodat faktická verze.
 - Toto pravidlo má přednost před stručností: radši méně příčin vysvětlených pořádně než víc příčin heslovitě.
 
+#### Pravidlo „Co za tím stálo“ (Ondřej 2. 11. 2026, pro všechny ukazatele)
+> „Potřebuju, aby se divák dozvěděl, proč měla Itálie do roku 1996 nejlepší produktivitu v celé Evropě. Co za tím
+> stálo? … aby si lidé pod tím uměli představit konkrétní věci.“
+
+Test představy hlídá mechanismy, ale propouštěl **holé stavy** („Itálie měla nejvyšší produktivitu“) a **holé kroky**
+(„provedla školskou reformu“), protože vypadají jako fakt s číslem. Proto platí dvě povinnosti:
+1. **Stav (úroveň, výchozí pozice, výsledek):** když scénář řekne, že země měla hodně nebo málo měřené veličiny,
+   musí hned říct, **co za tím stálo, na jedné až dvou konkrétních věcech z té země**, které si divák umí představit:
+   firmy, výrobky, místa, povolání, továrny, zvyky („kolem Sassuola přes tři sta továren na dlaždice“, „Portugalsko
+   šilo oblečení a boty“). Číslo samo není vysvětlení.
+2. **Krok (reforma, zákon, rozhodnutí vlády nebo firem):** jednou až dvěma větami **co se lidem změnilo** (předtím →
+   potom), **jak to bylo provedeno** (kdo, kdy, jakým nástrojem, jedna vedlejší věta) a **jak to doputovalo
+   k ukazateli** (přes co: víc lidí v práci, vyšší kvalifikace, levnější úvěr…), s doloženým účinkem nebo poctivým
+   „účinek nikdo nezměřil“. Ne dějiny reformy, jen tyto tři kroky.
+3. **Test nosnosti příkladu:** příklad musí stát tam, kde účinek opravdu vzniká, tedy tam, kde pracuje hodně lidí nebo
+   kde je většina hodnoty. Slavná výjimka není vysvětlení průměru (Ferrari má asi 5 400 zaměstnanců, italské bary
+   a restaurace 1,5 milionu, takže Ferrari italskou produktivitu neudělalo). Slavnou značku smí scénář použít jako
+   obraz, jen když projde tímto testem, nebo právě jako vyvrácený mýtus.
+4. **Odkud příklady:** výklady zemí a rešerše ekonomů jsou psané jazykem mechanismů a konkrétní příklady často nemají.
+   Když chybějí, Claude je při psaní mapy příběhu **dohledá sám** (několik vyhledávání, zdroj ke každému), zapíše je
+   do řádku VIZUÁL a zdroje na konec faktické verze. Bez zdroje se příklad nepoužije.
+5. **Délka:** příklady se vejdou do rozpočtu země tak, že se jiná příčina přesune do volitelných částí.
+
 ### 0. Dělba práce
 
 | Kdo | Co dělá | Co nedělá |
@@ -7954,6 +7977,9 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
 - 2. 11. 2026: délka na zemi (250 × počet zemí + 300), vyváženost částí, charakteristika zemí v showcase a obraz
   výchozí pozice v kole 1, finále bez „sčítá“. Podnět: Gemini (holý showcase a kolo 1, věta „v cíli se sčítá účet“)
   a Ondřej (Jih se třemi zeměmi delší než Balkán s pěti). Jih zkrácen z 1 500 na 1 050 slov.
+- 2. 11. 2026 (odpoledne): pravidlo „Co za tím stálo“ pro stavy a kroky, test nosnosti příkladu, dohledání příkladů.
+  Podnět: Ondřej (Itálie „měla nejvyšší produktivitu“ bez vysvětlení proč). Jih: kolo 1 doplněno o továrny na dlaždice
+  v Sassuolu, stroje na balení u Bologni, automobilky ve Španělsku a portugalský textil a obuv.
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
@@ -7990,7 +8016,8 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 
 ### Jak psát
 - **Divák si to musí umět představit.** Obrazy z faktické verze (člověk, výplata, firma, nákup) zachovej a rozviň,
-  nikdy je nenahrazuj abstraktním pojmem.
+  nikdy je nenahrazuj abstraktním pojmem. Konkrétní firmy, výrobky, místa a povolání z faktické verze, které vysvětlují, co za
+  stavem nebo krokem stálo, nikdy nevypouštěj ani nezobecňuj a nepřidávej vlastní (jiné značky, slavné výjimky).
 - **Sportovní komentář, ne přednáška:** závod, souboje, předjíždění, napětí před odhalením, radost a zklamání podle
   toho, jak se zemi daří. Emoce odpovídají faktům (propad není „skvělý výkon“).
 - **Souvislé, plynulé věty**, jak člověk mluví. Žádné staccato (řetězení krátkých úderných vět a fragmentů), žádné
