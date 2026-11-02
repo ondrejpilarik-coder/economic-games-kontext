@@ -1,6 +1,6 @@
 # Aktivní skilly Ekonomických her
 
-Obsah (30 skillů):
+Obsah (31 skillů):
 
 - pipeline-orchestration-SKILL-v3.md
 - data-collection-SKILL-v1.0.md
@@ -13,6 +13,7 @@ Obsah (30 skillů):
 - voiceover-skill-v10-live-race.md
 - voiceover-mapa-pribehu-SKILL-v1.0.md
 - gemini-web-ctiva-verze-SKILL-v1.0.md
+- ekonomie-lidskou-reci-ZASADA-v1.0.md
 - voiceover-uvod-SKILL-v1.0.md
 - voiceover-cestina-SKILL-v1.0.md
 - voiceover-review-skill-v2_4.md
@@ -4771,6 +4772,10 @@ platí ruční kontrola proti tomuto skillu — a neshody do registru.
 
 ## Voiceover — živý závod v10.10 (situace kol, stejné se stejným, tempo a osud; zlatý vzor a postup, komentátorská vrstva, návaznost, vysvětlení, hodnocení výkonu a směr kol)
 
+> **Zásada série od 2. 11. 2026:** Ekonomie lidskou řečí (`05_epizode_packs/_skills/ekonomie-lidskou-reci-ZASADA-v1.0.md`). Každý stav s konkrétní věcí ze země,
+> každý krok jako příběh (co se lidem změnilo, jak, kudy k ukazateli), méně příčin, ale pořádně; při rozporu o tom,
+> jak se věc řekne divákovi, má zásada přednost.
+
 > **Aktivní doplnění 13. 10. 2026 (Ondřejova připomínka k nesrozumitelným výrazům):** nový bod 10 v §5d zakazuje pracovní názvy z analýzy (výsledek bydlení se jmenuje „dostupnost bydlení“ a říká se čísly, očekávání celou větou v podmiňovacím způsobu) a zavádí tvrdou bránu `scripts/kontrola_srozumitelnosti.py --divak`. Vzorové věty, které pracovní název výsledku samy používaly, jsou opravené.
 
 > **Aktivní doplnění 30. 9. 2026 (v10.10, Ondřejovy připomínky k FINAL mezd, schváleno slovy „určitě ano“):** nový §3.10 převádí dvanáct vzorců z Ondřejových připomínek na mechanismy. Konec kola hodnotí situaci (vůči očekávání, předchozímu kolu nebo soupeři), tempo se ohlásí ve showcase a vyhodnotí v Results, čekaný výsledek podle kol se srovnává jen s vlastní skutečností a se soupeři stejné se stejným (nahrazuje §3.8 bod 4 „vůči zemím, které už dojely“), tvrzení o soupeřích souhlasí s grafikou kol, kroky mají rok a nepocházejí z doby po měřeném roce, rozhodnutý souboj proti očekávání dostane reakci úměrnou odchylce, klíčové třetí kolo má napětí i pointu, zazní motiv osudu, doložené vedlejší účinky a návrat k rychlým pákám a první výklad sdíleného mechanismu musí projít slepým čtením. Podklady počítá builder listů a detektor je hlídá. Ostatní pravidla v10.9 platí beze změny.
@@ -5776,7 +5781,10 @@ o jádru země (`voiceover-jadro-zeme-ADDENDUM-2026-10-27.md`). Jeho výběr jad
 mechanismus regionu) žije dál v oddílu 2.6. Pravidla slohu, globálního pohledu a srozumitelnosti z CLAUDE.md platí
 dál.
 
-### Nejvyšší priorita: divák musí rozumět (Ondřej 1. 11. 2026, opakovaně)
+### Nejvyšší priorita: ekonomie lidskou řečí (Ondřej 1. a 2. 11. 2026, opakovaně)
+> Zásada celé série je samostatně v `05_epizode_packs/_skills/ekonomie-lidskou-reci-ZASADA-v1.0.md` (tři body: nejdřív věc, pak číslo; každý krok jako příběh;
+> méně, ale pořádně; plus rešerše lidských příkladů `priklady/{kód}.md`). Níže je její podoba pro scénáře regionů.
+
 > „Ty jsi strašně analytický… potřebuju, aby to bylo pochopitelné pro každého. A fakt tomu chci dát co největší
 > důraz.“
 
@@ -5810,8 +5818,8 @@ Test představy hlídá mechanismy, ale propouštěl **holé stavy** („Itálie
    kde je většina hodnoty. Slavná výjimka není vysvětlení průměru (Ferrari má asi 5 400 zaměstnanců, italské bary
    a restaurace 1,5 milionu, takže Ferrari italskou produktivitu neudělalo). Slavnou značku smí scénář použít jako
    obraz, jen když projde tímto testem, nebo právě jako vyvrácený mýtus.
-4. **Odkud příklady:** výklady zemí a rešerše ekonomů jsou psané jazykem mechanismů a konkrétní příklady často nemají.
-   Když chybějí, Claude je při psaní mapy příběhu **dohledá sám** (několik vyhledávání, zdroj ke každému), zapíše je
+4. **Odkud příklady:** primárně ze souboru `priklady/{kód}.md` (rešerše lidských příkladů podle zásady Ekonomie lidskou
+   řečí). Když chybí nebo nemá dané kolo, Claude je při psaní mapy příběhu **dohledá sám** (několik vyhledávání, zdroj ke každému), zapíše je
    do řádku VIZUÁL a zdroje na konec faktické verze. Bez zdroje se příklad nepoužije.
 5. **Délka:** příklady se vejdou do rozpočtu země tak, že se jiná příčina přesune do volitelných částí.
 
@@ -6073,6 +6081,7 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 7. Řádky `[VIZUÁL: …]` a nadpisy `##` nech beze změny (smíš do VIZUÁLU přesunout volitelné číslo).
 
 ### Jak psát
+- **Ekonomie lidskou řečí** (zásada série, `05_epizode_packs/_skills/ekonomie-lidskou-reci-ZASADA-v1.0.md`): divák se má bavit a něco si odnést, ne poslouchat ekonomy.
 - **Divák si to musí umět představit.** Obrazy z faktické verze (člověk, výplata, firma, nákup) zachovej a rozviň,
   nikdy je nenahrazuj abstraktním pojmem. Konkrétní firmy, výrobky, místa a povolání z faktické verze, které vysvětlují, co za
   stavem nebo krokem stálo, nikdy nevypouštěj ani nezobecňuj a nepřidávej vlastní (jiné značky, slavné výjimky).
@@ -6094,6 +6103,97 @@ Když se nevejdeš, krať volitelné, ne pevné.
 ### Výstup
 Vrať jen hotový scénář v Markdownu se stejnými nadpisy a řádky VIZUÁL. Bez komentáře a bez značek tučně
 a `{volitelné}`. Na úplný konec připiš řádek `Počet slov: N`.
+
+
+# Skill: ekonomie-lidskou-reci-ZASADA-v1.0.md
+
+## Ekonomie lidskou řečí (zásada celé série, v1.0, 2. 11. 2026)
+
+> Ondřej 2. 11. 2026: „Cílem není analytiku jen rozebrat. Cílem je podat ji lidským způsobem, aby to lidi bavilo
+> a zároveň si z toho něco odnesli.“ „Bojím se toho, že když diváka zahltíme odbornými popisy, tak jako to mluví
+> ekonomové, tak že ho to nebude bavit.“
+
+Platí pro **všechny ukazatele, epizody a ligy** a pro každý krok, který na scénář míří: rešerši, analýzu, podklad
+pro scénář, faktickou verzi, čtivou verzi i kontroly. Při rozporu s jiným skillem o tom, *jak se věc řekne divákovi*,
+má tato zásada přednost; na faktech, číslech a síle důkazu nic nemění (ty dál řídí analytické skilly).
+
+### Tři body
+
+1. **Nejdřív věc, pak číslo.** Za každým stavem (vysoká produktivita, drahé bydlení, nízká výplata) stojí jedna až
+   dvě konkrétní věci ze země, které si divák umí představit: firmy, výrobky, místa, povolání, zvyky, situace ze
+   života. Ne „Itálie měla nejvyšší produktivitu“, ale „kolem Sassuola stojí přes tři sta továren na dlaždice a kolem
+   Bologni se staví stroje, které balí potraviny a léky pro celý svět“. Číslo potvrdí, co divák už vidí.
+2. **Každý krok jako příběh.** U reformy, zákona nebo rozhodnutí vlády, firem či společnosti zazní jednou až dvěma
+   větami: **co se lidem změnilo** (předtím → potom), **jak to bylo provedeno** (kdo, kdy, čím, jedna vedlejší věta)
+   a **jak to doputovalo k ukazateli** (přes co), s doloženým účinkem, nebo poctivě „účinek nikdo nezměřil“. Ne
+   dějiny reformy.
+3. **Méně, ale pořádně.** Raději tři příčiny, kterým divák rozumí, než deset odborných. Odborný pojem (daňový klín,
+   přidaná hodnota, dvojí trh práce) smí zaznít jen s obrazem v téže větě. Délka se kvůli příkladům nezvyšuje;
+   ustoupí méně důležitá příčina.
+
+### Dvě pojistky
+
+- **Test nosnosti příkladu:** příklad musí stát tam, kde účinek opravdu vzniká, tedy kde pracuje hodně lidí nebo je
+  většina hodnoty, výdajů či bytů. Slavná výjimka průměr nevysvětlí (Ferrari má asi 5 400 zaměstnanců, italské bary
+  a restaurace 1,5 milionu). Slavnou značku smí scénář použít jen tehdy, když testem projde, nebo jako vyvrácený mýtus.
+- **Každý příklad má zdroj.** Bez zdroje se nepoužije. Konkrétnost nesmí přinést nepřesnost: číslo, rok a omezující
+  slovo platí stejně jako u ostatních faktů. Odvětví se nepojmenovává šířeji, než říká zdroj (poučení 2. 11.:
+  zdroj říkal textil a oděvy, ne obuv).
+
+### Rešerše lidských příkladů (povinný výstup rešerše)
+
+Výklady zemí a rešerše ekonomů jsou psané jazykem mechanismů a konkrétní příklady skoro nemají. Proto má každá
+analýza, ze které vzniká scénář, ještě jeden soubor na zemi: **`priklady/{kód země}.md`** vedle `ekonomove/`
+a `vyklad/`. Je to doplněk, ne nová velká rešerše: několik cílených vyhledávání na zemi.
+
+Pro každou zemi a **každé kolo** (každý hlavní faktor) a pro každou **zvláštnost země**, kterou scénář nese:
+- **2–3 konkrétní příklady** (firma, výrobek, místo, povolání, situace ze života), u každého:
+  zdroj s odkazem, rok, **nosnost** (kolik lidí nebo jaký podíl to představuje, aby šel udělat test nosnosti)
+  a jednou větou, co z toho divák pochopí;
+- u každého **kroku**, který scénář zmíní: co se lidem změnilo, jak to bylo provedeno, jak to doputovalo
+  k ukazateli, doložený účinek (nebo „nezměřeno“), se zdrojem;
+- **mýtus, který neplatí** (volitelně): slavná věc, kterou si divák se zemí spojí, ale výsledek nevysvětlí, s čísly.
+
+Šablona:
+
+```markdown
+## Lidské příklady: {země} ({ukazatel}, {datum})
+
+### Kolo {n}: {faktor}
+- **{příklad}** — {co to je, jednou větou}. Nosnost: {lidé / podíl}. Zdroj: {instituce, rok, URL}.
+  Divák pochopí: {jedna věta}.
+- **Krok: {reforma / rozhodnutí}** — předtím → potom: {…}; provedení: {kdo, kdy, čím}; cesta k ukazateli: {…};
+  účinek: {doložený, nebo „nezměřeno“}. Zdroj: {…}.
+- **Mýtus:** {…} (volitelné)
+
+### Zvláštnost země: {…}
+- …
+```
+
+Kdo ho dělá: rešeršní agent nebo analytik při analýze (analytický skill pro regiony, krok 2); když chybí, dohledá
+ho Claude při psaní mapy příběhu dřív, než začne psát faktickou verzi. Pomocný skript kostry scénáře
+(`scripts/kostra_mapy_pribehu.py`) vypíše u každé země, zda soubor existuje a které kolo v něm chybí.
+
+### Kontrola před odesláním (každá faktická verze)
+
+1. Každá země má v každém kole aspoň jednu konkrétní věc, ne jen místo a číslo.
+2. Každý zmíněný krok má „co se změnilo, jak, kudy k ukazateli“.
+3. Každý příklad prošel testem nosnosti a má zdroj.
+4. Žádný odborný pojem bez obrazu v téže větě.
+5. Délka podle počtu zemí zůstala (skill mapy příběhu, oddíl 3 bod 6).
+
+### Kde se zásada uplatňuje
+
+- `analyza-pricin-regiony-SKILL-v1.4.md` (krok 2 a 9a): rešerše příkladů a výklad hodnot s příklady.
+- `voiceover-mapa-pribehu-SKILL-v1.0.md`: oddíl Nejvyšší priorita a pravidlo „Co za tím stálo“.
+- `gemini-web-ctiva-verze-SKILL-v1.0.md`: konkrétní příklady se nevypouštějí ani nenahrazují.
+- `voiceover-skill-v10-live-race.md` a `voiceover-regiony-SKILL-v1.0.md`: odkaz na tuto zásadu.
+- Role agentů `.claude/agents/analyst.md`, `research-agent.md`, `writer.md`.
+
+### Historie
+- 2. 11. 2026: v1.0. Sjednocuje pravidla z 1. a 2. 11. (srozumitelnost obrazem, „Co za tím stálo“, test nosnosti)
+  pod jeden název a přidává rešerši lidských příkladů. Podnět: Ondřej u Jihu (Itálie „měla nejvyšší produktivitu“
+  bez vysvětlení, co za tím stálo).
 
 
 # Skill: voiceover-uvod-SKILL-v1.0.md
@@ -12720,6 +12820,10 @@ Do not reuse ep1's columns/curve for ep2. **Derive ep2's graphics from its card.
 
 ## Writer skill pro epizody po regionech: tři fáze, rozdané karty a tah země (návrh v1.0, 16. 10. 2026)
 
+> **Zásada série od 2. 11. 2026:** Ekonomie lidskou řečí (`05_epizode_packs/_skills/ekonomie-lidskou-reci-ZASADA-v1.0.md`). Každý stav s konkrétní věcí ze země,
+> každý krok jako příběh (co se lidem změnilo, jak, kudy k ukazateli), méně příčin, ale pořádně; při rozporu o tom,
+> jak se věc řekne divákovi, má zásada přednost.
+
 *Stav: **NÁVRH, NEAKTIVNÍ.** Aktivuje se jen s Ondřejovým souhlasem, společně s návrhem analytického skillu pro regiony
 (`analyza-pricin-regiony-SKILL-v1.4.md`). Vznikl ze zadání, které 16. 10. 2026 napsal Gemini 4 a Ondřej ho předal
 („Myslíš, že bude možné psát script přesně ve stylu Gemini 4? Je to mnohem čtivější.“), a z pravidel, která série
@@ -13578,6 +13682,11 @@ Před hledáním příčin se zapíše list ukazatele:
 
 1. **Pevný seznam kategorií příčin** (10–12) a jejich přiřazení ke kandidátům se zapíše do gitu **před rešerší** („předem“ = zapsáno v commitu dřív, než se stáhla data faktoru).
 2. **Ekonomové v každé zemi:** rešerše všech 27 zemí (formát `ekonomove/{kód}.md`). Evidují se zdroje (instituce, rok, dokument) a jen **výslovné výroky s citací** („hlavní příčina“, „klíčový faktor“, uvedené pořadí), zvlášť pro úroveň a pro vývoj.
+2a. *(nové 2. 11. 2026, Ondřej)* **Rešerše lidských příkladů** podle zásady `05_epizode_packs/_skills/ekonomie-lidskou-reci-ZASADA-v1.0.md`: pro každou zemi
+   `priklady/{kód}.md`, u každého hlavního faktoru a zvláštnosti 2–3 konkrétní příklady (firma, výrobek, místo,
+   povolání, situace ze života) se zdrojem a nosností a u každého kroku „co se lidem změnilo, jak to bylo provedeno,
+   kudy to doputovalo k ukazateli, doložený účinek“. Do vah ani výpočtů nevstupuje; slouží výkladu (krok 9a)
+   a scénáři. Dělá se po výběru kol (krok 7), jen pro faktory, které ve scénáři zazní.
 3. **Váha podle ekonomů:** podíl zemí, kde kategorii mezi třemi hlavními příčinami uvádějí **aspoň dvě nezávislé instituce** (příloha Komise je jedna rodina zdrojů; MMF; OECD; centrální banka; národní ústav). Body za pořadí se nepoužívají. Druhý agent naslepo vytáhne výroky aspoň u pěti zemí a zapíše se shoda. Váha se uvádí s rozpětím z bootstrapu přes země. Pozor na šablony: přílohy Komise mají pro všechny členy stejnou strukturu, takže kategorie, na kterou se šablona ptá, se objeví všude.
 4. **Srovnávací studie** pro Evropu a síly účinků se způsobem měření (`studie/`).
 5. **Tabulka kandidátů:** mechanismus, směr, horizont, riziko obráceného směru, překryv, aritmetika, štítek páky, váha podle ekonomů. Kandidát s váhou aspoň třetiny zemí (nebo dvě instituce v aspoň pěti zemích) se nesmí vyřadit bez rozboru podle kroku 5.
@@ -13886,7 +13995,8 @@ dává materiál na dlouhou verzi a u každé země označí jádro pro hlavní 
 3. **Kola v pořadí podle kroku 7.5.** *(doplněno po nezávislé kontrole 13. 10. 2026)* U každého kola: obvyklý vliv
    s intervalem, příznak „menší než chyba měření“, **síla důkazu kola** a **měřítko ligy** (výstup kroků 7.4–7.5).
    U každé země regionu: hodnota, místo v kole z celé ligy, body a **výklad hodnoty**: 1–3 věty pro laika, proč má
-   země hodnotu takovou, jakou má, a u druhé a další země, čím je způsobeno, že je na tom hůř než předchozí.
+   země hodnotu takovou, jakou má, **na konkrétních věcech ze souboru `priklady/{kód}.md`** (zásada Ekonomie lidskou
+   řečí: nejdřív věc, pak číslo; 2. 11. 2026), a u druhé a další země, čím je způsobeno, že je na tom hůř než předchozí.
    *(Ondřej 13. 10. 2026 v noci: čekané místo po kole, které tu dřív bylo, do podkladu nepatří a zůstává jen v datech
    pro analytika; nejsilnější kolo se zmíní hodně, ale pořadí podle něj se nevydává za očekávaný výsledek.)* *(opraveno po druhé nezávislé kontrole 14. 10. 2026: nejsilnější kolo se zmíní
    hodně a ne jako předpoklad. Jakým číslem, je otevřená otázka 2, takže podklad uvede jen návrh: podíl rozdílů, který
