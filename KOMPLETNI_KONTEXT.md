@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 01. 11. 2026 20:01 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `418a77e3`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 02. 11. 2026 12:50 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `b94d0257`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -7771,8 +7771,11 @@ splnění, štítek a chybějící podklady. **Z kostry se neodchyluj;** úsudek
 #### 2.2 Očekávání (showcase)
 - Očekávání je **Ondřejův tip**, převyprávěný věrně (favorit, outsider, černý kůň, rozmezí míst). Nepřidávej mu
   důvod, který Ondřej neřekl a podklady nedokládají („díky nižším cenám“).
-- Showcase je **jen Ondřejův tip a nejvýš krátké pojmenování země** („velká země jihu“, „malá alpská země“). Co je
-  v Ondřejově textu tipu (například „vzpamatovává se z finanční krize“), zůstává; nic dalšího se nepřidává.
+- Showcase je **Ondřejův tip a krátká charakteristika každé země**: jedna vedlejší věta o tom, co divák o zemi zná
+  nebo si snadno představí (velikost, poloha, čím je známá: „třetí největší ekonomika eurozóny s průmyslovým severem“).
+  Co je v Ondřejově textu tipu (například „vzpamatovává se z finanční krize“), zůstává. Charakteristika nesmí
+  vynechat žádnou zemi a nesmí prozradit nic z testu spoileru níže. (Ondřej 2. 11. 2026 podle Gemini: holý tip bez
+  charakteristiky byl proti ostatním částem chudý; charakteristiky se nevynechávají.)
 - **Test spoileru:** co se později vykládá v kole nebo ve finále (ceny a drahota života, kolektivní smlouvy, turismus,
   hotely, značky, odvětví), do showcase nepatří, i když je to „charakter země“. Divák to má slyšet poprvé tam, kde
   se to vysvětluje. Žádná čísla z kol, žádné příčiny výsledku. (Poučení 1. 11. 2026: Jih měl v úvodu kolektivní
@@ -7826,7 +7829,8 @@ a patro jen v řádku VIZUÁL. U každé země zazní:
 0. **Účet za třicet let (rozsudek).** Jednou až dvěma větami spoj klíčový tah nebo chybu z kol s výsledkem: co zemi za
    období pomohlo, co ji potopilo („Itálie promarnila nejlepší start v Evropě: výkon třicet let stál, protože firmy
    zůstaly malé“; „Španělsko nevyhrálo růstem; rozhodlo, že z italského náskoku ve výkonu nedojde do výplat skoro nic“). Smí použít jen příčiny, které už
-   v kolech zazněly s dokladem, se stejnou silou slov („zčásti“, „mohla“). Rozsudek je o tom, co se stalo, ne
+   v kolech zazněly s dokladem, se stejnou silou slov („zčásti“, „mohla“). Úvodní věta finále neříká, že se v cíli něco „sčítá“
+   (kola se nesčítají): „V cíli už nerozhoduje žádné kolo, ale skutečná čistá mzda v kupní síle.“ Rozsudek je o tom, co se stalo, ne
    o tom, kdo měl lepší kroky, když to doklad neříká. Rozsudek musí sedět i s průběžným pořadím: když podle kol vede jiná země, než vyhrála, rozhodnutí přišlo až v cíli (cesta výplaty), ne v kolech. (Návrh Gemini 1. 11. 2026, převzatý bez jeho faktických chyb.)
 
 Pak pro každou dvojici sousedů v cíli:
@@ -7894,8 +7898,16 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
 4. **Zámek faktů** na konci souboru: číslovaný seznam pevných faktů v krátké podobě (číslo, omezující slovo, směr
    příčiny, místo, štítek). Podle něj se dělá zpětná kontrola.
 5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
-6. **Délka:** výchozí asi 250 slov na zemi plus 300 slov na rámec regionu (showcase, definice, předávka). Rozpočet
-   napiš do hlavičky souboru. Ondřej ho smí změnit. **Rozpočet musí ležet mezi délkou textu bez volitelných a s nimi**
+6. **Délka se počítá na zemi, ne na region:** rozpočet = **250 slov × počet zemí + 300 slov** na rámec regionu
+   (úvodní věta showcase, definice, průběžná pořadí, předávka). Region se třemi zeměmi má tedy asi 1 050 slov
+   (kolem sedmi minut), s pěti zeměmi 1 550, se šesti 1 800; celá epizoda 27 zemí v šesti regionech asi 8 550 slov.
+   Rozpočet napiš do hlavičky souboru i s výpočtem. Ondřej ho smí změnit, Claude ne: **bohatší vysvětlení se
+   nezískává přidáním slov, ale méně příčinami** (oddíl Nejvyšší priorita). (Poučení 2. 11. 2026: Jih se třemi
+   zeměmi dostal 1 500 slov a byl delší než Balkán s pěti; Ondřej to správně označil za nesmysl.)
+   **Vyváženost:** orientační podíl rozpočtu je showcase asi 10 %, kolo 1 asi 15 %, kolo 2 asi 30 %, kolo 3 asi 10 %,
+   finále asi 35 %. Žádná část nesmí být holá: každá země dostane v showcase charakteristiku a v kole 1 jeden
+   konkrétní obraz své výchozí pozice (co měla nebo neměla: stroje, školy, odchod z polí do továren), ne jen místo
+   a číslo. Žádná země nesmí mít v celém textu víc než asi dvojnásobek slov jiné země z regionu. **Rozpočet musí ležet mezi délkou textu bez volitelných a s nimi**
    (spočítej obojí a uveď to v hlavičce); když text na výchozí rozpočet nestačí, rozpočet se sníží, Gemini nesmí
    přidávat. (Poučení 1. 11.: Balkán měl rozpočet 1 450 při textu 1 220–1 420 slov.)
 7. **Kontrola před předáním:** každé číslo proti datům a výkladům zemí (nejlépe nezávislý kontrolor, který mapu
@@ -7939,6 +7951,9 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
   Poučení z prototypu: Argon psal hezky, ale dělal faktické chyby (poměr „pětatřicetkrát“ místo skoro třistakrát,
   vypadlé „zčásti“) a při plném zákazu vypouštění zůstal text hustý (čtivost 4–6/10). Proto dělba: fakta Claude,
   čtivost Gemini na webu, zpětná kontrola jen pěti odchylek.
+- 2. 11. 2026: délka na zemi (250 × počet zemí + 300), vyváženost částí, charakteristika zemí v showcase a obraz
+  výchozí pozice v kole 1, finále bez „sčítá“. Podnět: Gemini (holý showcase a kolo 1, věta „v cíli se sčítá účet“)
+  a Ondřej (Jih se třemi zeměmi delší než Balkán s pěti). Jih zkrácen z 1 500 na 1 050 slov.
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
@@ -7988,7 +8003,7 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 - Žádné „my“, „u nás“ o Česku. Žádná metodika (body, výpočet, data, tabulky).
 
 ### Délka
-Drž se rozpočtu slov v hlavičce faktické verze (mluvený text bez nadpisů a řádků VIZUÁL), odchylka nejvýš 5 %.
+Drž se rozpočtu slov v hlavičce faktické verze (mluvený text bez nadpisů a řádků VIZUÁL), odchylka nejvýš 5 %. Rozpočet se počítá podle počtu zemí v regionu, proto má každý region jinou délku. Když krátíš, krať volitelné části a nikdy charakteristiku zemí ve showcase ani obraz výchozí pozice v kole 1; každá část scénáře má zůstat stejně barvitá.
 Když se nevejdeš, krať volitelné, ne pevné.
 
 ### Výstup
@@ -14651,7 +14666,9 @@ Příklady čísel níže ověřil Claude proti datům mezd (`analyza_regiony_20
    1989 ani zděděné továrny, to patří do kola 1. Představí pětici zemí na startovní čáře přes jejich dnešní ekonomický
    charakter a rozdá jim předstartovní očekávání v pelotonu: kdo je favoritem na medaile a evropskou špičku, kdo bojuje
    o střed pelotonu nebo roli skokana a komu hrozí pád na chvost.
-2. **Rozpočet délky regionu 1 050–1 150 slov (asi 7–7,5 minuty):** showcase asi 110, kolo 1 asi 230, kolo 2 asi 295,
+2. *(Nahrazeno 2. 11. 2026, Ondřej: délka se počítá na zemi, ne na region, 250 slov × počet zemí + 300; platí
+   `voiceover-mapa-pribehu-SKILL-v1.0.md` §3 bod 6. Pevný rozpočet níže byl stavěný na pětičlennou střední Evropu.)*
+   **Rozpočet délky regionu 1 050–1 150 slov (asi 7–7,5 minuty):** showcase asi 110, kolo 1 asi 230, kolo 2 asi 295,
    kolo 3 asi 210, finále asi 305 slov. Přesná desetinná čísla a úplné výčty pěti zemí patří do řádku `[VIZUÁL: …]`.
    Hlas seskupuje země do pater, zaokrouhluje na zlomky, říká nejvýš 2 čísla ve větě a 45–55 čísel na region a drží
    souvětí nejvýš o 3 větných členech. Pořadí z 27 zemí říká jen u krajností, se slovní kotvou „v celé Evropě“ nebo
