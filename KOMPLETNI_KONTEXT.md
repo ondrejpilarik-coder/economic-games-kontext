@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 02. 11. 2026 13:27 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `dbfcbf08`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 02. 11. 2026 18:12 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `eee90533`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -7751,8 +7751,13 @@ Test představy hlídá mechanismy, ale propouštěl **holé stavy** („Itálie
 („provedla školskou reformu“), protože vypadají jako fakt s číslem. Proto platí dvě povinnosti:
 1. **Stav (úroveň, výchozí pozice, výsledek):** když scénář řekne, že země měla hodně nebo málo měřené veličiny,
    musí hned říct, **co za tím stálo, na jedné až dvou konkrétních věcech z té země**, které si divák umí představit:
-   firmy, výrobky, místa, povolání, továrny, zvyky („kolem Sassuola přes tři sta továren na dlaždice“, „Portugalsko
-   šilo oblečení a boty“). Číslo samo není vysvětlení.
+   firmy, výrobky, místa, povolání, továrny, zvyky („zahraniční automobilky postavily velké závody, třeba Ford
+   u Valencie, a Volkswagen převzal barcelonský SEAT“). Číslo samo není vysvětlení.
+1a. **Známé firmy a značky (Ondřej 2. 11. 2026 večer):** příkladem má být přednostně **firma nebo značka, kterou divák
+   zná a se zemí si ji spojí** (Ford a SEAT ve Španělsku), ne místo nebo odvětví, které mu nic neřekne („dlažební
+   kostky ze Sassuola“ Ondřej odmítl: pro Itálii nejsou signifikantní). Známost nepřebije test nosnosti (bod 3):
+   hledá se firma, která je známá **a zároveň** stojí tam, kde pracuje hodně lidí, nebo poctivě zastupuje celé velké
+   odvětví. Když taková není, smí zaznít méně známý příklad, ale rešerše to musí výslovně napsat.
 2. **Krok (reforma, zákon, rozhodnutí vlády nebo firem):** jednou až dvěma větami **co se lidem změnilo** (předtím →
    potom), **jak to bylo provedeno** (kdo, kdy, jakým nástrojem, jedna vedlejší věta) a **jak to doputovalo
    k ukazateli** (přes co: víc lidí v práci, vyšší kvalifikace, levnější úvěr…), s doloženým účinkem nebo poctivým
@@ -7854,6 +7859,16 @@ pochopitelné… u toho divák usne“).** Dřívější pravidlo vykládalo pos
 (podíl výplat na vytvořené hodnotě, podíl zaměstnanců). To je otázka analytika, ne diváka, a odpověď je pro diváka
 nesrozumitelná. Divák se ptá: **proč je tahle země před tou druhou?**
 
+**Podoba finále (Ondřej 2. 11. 2026 večer, nahrazuje bod 4 níže tam, kde je s ním v rozporu):**
+- **a) Nejdřív pořadí podle kol.** Grafika ukáže pořadí regionu po všech třech kolech a scénář ho jednou krátkou
+  větou řekne podmiňovacím způsobem („Kdyby rozhodovala jen tři kola, vyhrála by jih Itálie před Španělskem
+  a Portugalskem.“). Bez míst v lize a bez bodů.
+- **b) Pak odhalení od posledního v regionu po prvního** ve skutečné čisté mzdě v kupní síle.
+- **c) U každé země rozdíl proti kolům a čím to je.** Když země dojela tam, kam ji poslala kola, stačí to říct
+  a krátce, proč (rozsudek a cesta výplaty). Když dojela jinam, je to **hlavní místo pro zvláštnosti země mimo
+  hlavní kola**: zazní, co ji posunulo nahoru nebo dolů, s obrazem a dokladem (u Španělska nižší cenová hladina,
+  u Itálie vyjednávání mezd, které nedrží krok s cenami). Prostor podle bodu 4a (velikost toho, co kola nevysvětlí).
+
 Odhaluje se od posledního v regionu po vítěze, s výsledkem. **Ve finále se neříká místo v celé lize** (Ondřej
 1. 11. 2026: ne „Španělsko skončilo dvanácté“, ale „Španělsko se umístilo nejlépe v jižní Evropě“); místo v lize
 a patro jen v řádku VIZUÁL. U každé země zazní:
@@ -7876,8 +7891,8 @@ Pak pro každou dvojici sousedů v cíli:
 3. **Test převyprávění:** důvod musí jít říct jednou větou bez procent z vytvořené hodnoty, bez „modelu“, „kol, která
    slibovala“ a bez odborných pojmů („Španělská i italská firma zaplatí za zaměstnance skoro stejně, jenže ve
    Španělsku je život levnější“). Neprojde-li, přeformuluj, ne přidej číslo.
-4. **Pořadí po kolech** smí zaznít jen jako překvapení („Itálie vedla po všech kolech, a přesto…“), ne jako otázka,
-   kterou je třeba vysvětlit čísly modelu. Pojmy jako podíl výplat na vytvořené hodnotě, podíl zaměstnanců mezi
+4. **Pořadí po kolech** zazní na začátku finále (bod a) a u každé země jako srovnání (bod c); rozdíl se ale
+   vysvětluje věcí, kterou si divák představí, ne čísly modelu. Pojmy jako podíl výplat na vytvořené hodnotě, podíl zaměstnanců mezi
    pracujícími nebo hodiny se smí použít jen jako „proč“ v bodě 2 a jen převedené do obrazu („v Itálii je každý
    čtvrtý pracující živnostník nebo majitel malé firmy a jeho výdělek se do výplaty zaměstnance nepočítá“).
 4a. **Co kola nevysvětlí: kolik prostoru dát dalším faktorům.** Kostra uvádí u každé země, kolik výsledku tři kola
@@ -7989,6 +8004,10 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
 - 2. 11. 2026 (odpoledne): pravidlo „Co za tím stálo“ pro stavy a kroky, test nosnosti příkladu, dohledání příkladů.
   Podnět: Ondřej (Itálie „měla nejvyšší produktivitu“ bez vysvětlení proč). Jih: kolo 1 doplněno o továrny na dlaždice
   v Sassuolu, stroje na balení u Bologni, automobilky ve Španělsku a portugalský textil a obuv.
+- 2. 11. 2026 (večer): podoba finále (nejdřív pořadí podle kol, pak odhalení od posledního a u každé země rozdíl proti
+  kolům a čím to je, prostor pro zvláštnosti) a známé firmy jako přednostní příklady. Podnět: Ondřej u Jihu
+  (Sassuolo mu nic neřeklo, u Španělska chtěl jako hlavní důvod nižší ceny). Zkouší se na Balkánu a Jihu, pak
+  finální skill.
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
@@ -8064,8 +8083,8 @@ má tato zásada přednost; na faktech, číslech a síle důkazu nic nemění (
 
 1. **Nejdřív věc, pak číslo.** Za každým stavem (vysoká produktivita, drahé bydlení, nízká výplata) stojí jedna až
    dvě konkrétní věci ze země, které si divák umí představit: firmy, výrobky, místa, povolání, zvyky, situace ze
-   života. Ne „Itálie měla nejvyšší produktivitu“, ale „kolem Sassuola stojí přes tři sta továren na dlaždice a kolem
-   Bologni se staví stroje, které balí potraviny a léky pro celý svět“. Číslo potvrdí, co divák už vidí.
+   života. Přednostně **známé firmy a značky**, které si divák se zemí spojí (Ondřej 2. 11. 2026: „chci nějaké fakt
+   známé firmy“; Ford u Valencie a SEAT ano, dlaždice ze Sassuola ne). Číslo potvrdí, co divák už vidí.
 2. **Každý krok jako příběh.** U reformy, zákona nebo rozhodnutí vlády, firem či společnosti zazní jednou až dvěma
    větami: **co se lidem změnilo** (předtím → potom), **jak to bylo provedeno** (kdo, kdy, čím, jedna vedlejší věta)
    a **jak to doputovalo k ukazateli** (přes co), s doloženým účinkem, nebo poctivě „účinek nikdo nezměřil“. Ne
@@ -8079,6 +8098,7 @@ má tato zásada přednost; na faktech, číslech a síle důkazu nic nemění (
 - **Test nosnosti příkladu:** příklad musí stát tam, kde účinek opravdu vzniká, tedy kde pracuje hodně lidí nebo je
   většina hodnoty, výdajů či bytů. Slavná výjimka průměr nevysvětlí (Ferrari má asi 5 400 zaměstnanců, italské bary
   a restaurace 1,5 milionu). Slavnou značku smí scénář použít jen tehdy, když testem projde, nebo jako vyvrácený mýtus.
+  Hledá se tedy firma známá **a zároveň** nosná; rešerše u každého příkladu uvede obojí.
 - **Každý příklad má zdroj.** Bez zdroje se nepoužije. Konkrétnost nesmí přinést nepřesnost: číslo, rok a omezující
   slovo platí stejně jako u ostatních faktů. Odvětví se nepojmenovává šířeji, než říká zdroj (poučení 2. 11.:
   zdroj říkal textil a oděvy, ne obuv).
@@ -8137,6 +8157,7 @@ ho Claude při psaní mapy příběhu dřív, než začne psát faktickou verzi.
 - 2. 11. 2026: v1.0. Sjednocuje pravidla z 1. a 2. 11. (srozumitelnost obrazem, „Co za tím stálo“, test nosnosti)
   pod jeden název a přidává rešerši lidských příkladů. Podnět: Ondřej u Jihu (Itálie „měla nejvyšší produktivitu“
   bez vysvětlení, co za tím stálo).
+- 2. 11. 2026 (večer): přednost známým firmám a značkám, které zároveň projdou testem nosnosti (Ondřej u Jihu).
 
 
 # Skill: voiceover-uvod-SKILL-v1.0.md
