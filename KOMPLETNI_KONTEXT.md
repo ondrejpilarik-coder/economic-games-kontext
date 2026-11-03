@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 03. 11. 2026 21:26 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `c9673089`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 03. 11. 2026 21:53 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `cb922df5`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -20,7 +20,7 @@ Aktualizováno 03. 11. 2026 21:26 automaticky ze soukromého repozitáře projek
 
 # Poslední scénář – Západní Evropa
 
-*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 03. 11. 2026 20:06.*
+*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 03. 11. 2026 21:53.*
 
 
 ## Předstartovní showcase
