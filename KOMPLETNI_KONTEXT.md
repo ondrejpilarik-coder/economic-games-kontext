@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 04. 11. 2026 20:16 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `398b7306`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 04. 11. 2026 21:34 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `f8eafcb8`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8185,9 +8185,32 @@ Pro každé kolo a zemi:
 1. **Hodnota a místo v kole** z kostry.
 2. **Hlavní scéna kola** patří zemi s největším vlivem kola v regionu (největší body v absolutní hodnotě). Když jsou dvě
    země blízko, dostane ji ta, která víc mění průběžné pořadí nebo jde nejvíc proti svým kartám. Ostatní země stručně.
+2a. **Osa kola a proč je soused před sousedem (Ondřej 4. 11. 2026, NEJVYŠŠÍ PRIORITA kola).** Kolo se nepíše jako
+   pět samostatných popisů stavu, ale jako vysvětlené pořadí, jako ve sportu: „sedmý je Fin a ztrácí na Francouze,
+   protože má hůř namazané lyže“.
+   - **Osa kola:** před psaním zemí najdi jednu až dvě věci, podle kterých se region v kole seřadil (u Balkánu
+     v kole 1: jak tvrdě vládla plánovaná ekonomika, tři patra), a řekni ji na začátku kola jednou větou s obrazem.
+     Najdi ji z dat (faktory potenciálu a strategie v analýze, výklady zemí), ne z dojmu, a ověř, kde osa nesedí:
+     tam je výjimka, kterou musí kolo vysvětlit (válka v Chorvatsku).
+   - **Každý pár sousedů v kole má svou příčinu:** u každé země zazní, proč je **za** zemí před sebou a proč je **před**
+     zemí za sebou. Když popis země zní hůř než u země pod ní (válka, prázdné pláže), musí zaznít, co ji přesto drží
+     výš (poučení 4. 11.: Chorvatsko slyšelo jen válku a divák nechápal, proč je třetí před Bulharskem). Srovnání
+     dvou zemí se stejným startem je nejsilnější doklad („před válkou byly Chorvatsko a Bulharsko zhruba stejně
+     chudé, pak čtyřicet let žily v jiném systému“).
+   - **Kontrola:** pro každou dvojici sousedů v kole odpověz jednou větou „X je před Y, protože…“. Když věta nejde
+     sestavit z textu kola, kolo se neodesílá.
+2b. **Od příkladu k ukazateli (Ondřej 4. 11. 2026: „co to znamená pro ekonomiku, že se tam vyrábějí špatná auta,
+   že tam jsou lidi na poli“).** Konkrétní příklad (pravidlo „Co za tím stálo“) nestačí: hned za ním zazní, **jak se
+   promítne do měřené veličiny**, nejlépe s jedním číslem nebo poměrem („41 % Rumunů pracovalo na polích, ale
+   vytvořili necelou pětinu výroby: rolník vytvořil asi třetinu toho co Rumun v továrně“; „co se neprodá, nevytvoří
+   žádnou hodnotu“). Když se dá spočítat, jak velkou část rozdílu proti sousedovi příčina vysvětluje, spočítej to
+   a řekni to slovy („zhruba polovinu“) s poznámkou v zámku faktů, že jde o výpočet Clauda.
 3. **Jedna až dvě příčiny** na zemi: nejsilnější doklad podle rešerše (změřeno nebo posouzeno institucí), správný směr,
    **test záměny** (kdyby šlo říct totéž o sousedovi v regionu, není to příčina této země; sdílený mechanismus se
-   vysvětlí jednou u země s nejsilnějším dokladem a u ostatních se jen připomene).
+   vysvětlí jednou u země s nejsilnějším dokladem a u ostatních se jen připomene). **Pozor (4. 11. 2026):** test
+   záměny platí jen uvnitř skupiny, která mechanismus sdílí. Když sdílený mechanismus vysvětluje, proč je země
+   **před** zeměmi, které ho nemají, musí u ní zaznít aspoň jednou větou (jugoslávský systém u Chorvatska proti
+   Bulharsku a Rumunsku). Jinak test záměny vymaže právě tu příčinu, na kterou se divák ptá.
 3a. **Vlastní důvod od ekonomů (Ondřej 1. 11. 2026: „víc pracovat s faktory od ekonomů“).** Každá země dostane
    v kole, kam důvod patří, aspoň jeden **svůj** důvod z rešerše ekonomů (`analyza_regiony_2026_10/ekonomove/{ISO}.md`,
    deset důvodů seřazených podle vlivu): nejvýš řazený důvod, který vysvětluje dané kolo. Sdílený mechanismus
@@ -8295,6 +8318,10 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
 
 1. **Stavba:** `# Region`, pak `## Předstartovní showcase`, `## Kolo 1 – …` až `## Kolo N – …`, `## Finále: cíl`.
    Každá část začíná řádkem `[VIZUÁL: …]` s přesnými čísly (sem patří čísla, která v hlase nejsou).
+1a. **Uvedení země jako ve sportovním přenosu (Ondřej 4. 11. 2026):** první věta země v kole i ve finále začíná tím,
+   **kdo to je a na jakém je místě** („Třetí v regionu a v kole devatenácté je Chorvatsko…“), hned další věta říká
+   proč. Nikdy řečnická otázka, ve které jméno země zazní až na konci („A proč skončilo úplně poslední… Rumunsko?“):
+   divák v té chvíli vidí v obraze novou krajinu a neví, o kom se mluví.
 2. **Věty:** souvislé, nejvýš dvě čísla ve větě, nejvýš dvě vedlejší věty, jeden odstavec = jedna otázka a odpověď.
    Žádné staccato, žádné odrážky v mluveném textu, žádná metodika (body, výpočet, odchylka, tabulka, data).
 3. **Značení pro Gemini:**
@@ -8370,6 +8397,13 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
   kolům a čím to je, prostor pro zvláštnosti) a známé firmy jako přednostní příklady. Podnět: Ondřej u Jihu
   (Sassuolo mu nic neřeklo, u Španělska chtěl jako hlavní důvod nižší ceny). Zkouší se na Balkánu a Jihu, pak
   finální skill.
+- 4. 11. 2026: osa kola a příčina pro každý pár sousedů (§2.3 bod 2a), od příkladu k ukazateli (2b), výjimka z testu
+  záměny (bod 3), uvedení země jako ve sportovním přenosu (§3 bod 1a). Podnět: Ondřej u Balkánu („Chorvatsko popsané
+  jako katastrofa, a přesto třetí z pěti“; „proč je Rumunsko poslední, když Bulharsko mělo taky těžké časy“; „pořád
+  se jen popisuje stav“). Proč to skill nedělal: kolo se psalo po zemích (stav, příčina, příklad), žádné pravidlo
+  nechtělo srovnání se sousedem v kole (jen ve finále), test záměny sdílený jugoslávský systém u Chorvatska vyškrtl
+  a pravidlo „Co za tím stálo“ chtělo příklad, ale ne jeho dopad na ukazatel. Balkán: kolo 1 přepsáno na tři patra
+  podle plánované ekonomiky; opravena vlastní chyba „Slovinsko plánovalo jen 23 let“ (vážené číslo projektu).
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
@@ -8417,6 +8451,12 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 - **Vykřičník nejvýš dvakrát za region.** Otázky z faktické verze zůstávají. Navíc smíš položit **nejvýš tři krátké
   komentátorské otázky na region** (například na přechodu mezi zeměmi: „A co Portugalsko?“), ale otázka nesmí
   obsahovat ani naznačovat nový fakt, číslo nebo příčinu. (Ondřej 1. 11. 2026)
+- **Uvedení země jako ve sportovním přenosu** (Ondřej 4. 11. 2026): když přechází řeč na novou zemi, první věta řekne
+  **jméno země a její místo** („Na pátém místě v regionu je Rumunsko…“), teprve pak proč. Nikdy řečnická otázka, ve
+  které jméno zazní až na konci („A proč skončilo úplně poslední… Rumunsko?“): divák vidí novou krajinu a neví, o kom
+  je řeč. Komentátorské otázky smíš klást jen mezi zeměmi, ne místo uvedení země.
+- **Srovnání se sousedem nevypouštěj:** věty typu „před Bulharskem ale zůstalo daleko, protože…“ jsou jádro závodu,
+  ne výplň. Nezesiluj je („přesně“, „skoro dvojnásobek“) a nepřidávej vlastní příčiny.
 - Místo v samotném kole a **průběžné pořadí** pořád jasně odlišuj.
 - Žádné „my“, „u nás“ o Česku. Žádná metodika (body, výpočet, data, tabulky).
 
