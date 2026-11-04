@@ -6286,8 +6286,16 @@ sleduje. Název série se píše s velkým prvním písmenem.
 **Věta 2, hned po ní: disciplína.** Řekne, v čem a kolik zemí dnes soutěží, například: „V dnešní
 disciplíně se sedmadvacet evropských zemí utká v průměrné mzdě v paritě kupní síly.“
 
+**Věta 3, jen v první epizodě Evropských ekonomických her: složení ligy** (Ondřej 4. 11. 2026,
+protože by divák mohl sedmadvacítku zaměnit za Evropskou unii a výměnu zemí považovat za chybu).
+Hned po větě o disciplíně jedna věta, že liga není Evropská unie a proč: „Nejde přitom o sedmadvacet
+zemí Evropské unie: Kypr, Maltu a Lucembursko jsme vyměnili za Švýcarsko, Norsko a Velkou Británii,
+které jsou větší a v globální ekonomice hrají mnohem větší roli.“ Znění smí být přeformulované, obsah
+(které tři země ven, které tři dovnitř a proč) ne. V dalších epizodách a jiných ligách se věta vynechává,
+pokud Ondřej neurčí jinak. Je to jediná výjimka ze zákazu vyjmenovávat země níže.
+
 V části 1 je **zakázané**:
-- vyjmenovávat jednotlivé země ligy;
+- vyjmenovávat jednotlivé země ligy (kromě věty 3);
 - klást divákovi otázku nebo hádanku, na kterou má odpovědět;
 - přidávat cokoli dalšího. Hned po těchto dvou větách začíná část 2.
 
