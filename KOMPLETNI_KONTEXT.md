@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 04. 11. 2026 13:36 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `d6d339ff`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 04. 11. 2026 14:17 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `b4a94fd6`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8209,6 +8209,7 @@ Pro každé kolo a zemi:
   čísla s institucí a rokem, co nepoužít). Bez odpovědi se otázka nepokládá.
 
 #### 2.5 Průběžné pořadí
+- **První region epizody vysvětlí pravidla odhalování** (Ondřej 4. 11. 2026, přesunuto z úvodu): když po kole poprvé zazní průběžné pořadí, jednou větou se řekne, že body kol se nesčítají a ukazují jen, kde by země stála, kdyby rozhodovala dosud odehraná kola; v cíli prvního regionu se jednou řekne, že rozhoduje jen změřená hodnota, v cíli se ukazuje jen pořadí v týmu a celé pořadí ligy přijde ve velkém finále. Vysvětluje se na skutečných vlajkách regionu, ne na vymyšlených zemích; v dalších regionech už se to neopakuje.
 - Po každém kole se řekne krátce jako stav závodu: kdo vede region a kde je v celé lize.
 - **Vždy odliš** místo v samotném kole („v tomto kole je šestadvacátá“) od průběžného pořadí („v průběžném pořadí
   je desátá“). Při první zmínce v epizodě jednou vysvětli, co průběžné pořadí znamená.
@@ -8640,8 +8641,14 @@ vždy vážou na to, na co se může těšit. Body jdou v tomto pořadí:
    jednoho až dvou let. Dál stejně jako u potenciálu: faktory, jejich počet a váha kola.
 10. **Dlouhodobá strategie.** Schopnosti budované roky. Dál stejně: faktory, jejich počet a váha
     kola. Když je kolo nejtěžší nebo nejpomalejší, smí zaznít proč (writer skill §3.8).
-11. **Kola se nesčítají.** Tento bod musí být vysvětlen dobře, protože jinak divák nepochopí
-    výsledky. Obsah:
+11. **Kola se nesčítají — PŘESUNUTO Z ÚVODU (Ondřej 4. 11. 2026 podle kritiky Gemini k prototypu).**
+    Teoretický výklad na vymyšlených zemích byl v úvodu příliš abstraktní a natahoval čtyřminutový
+    „manuál pravidel“ před prvním závodem. Úvod tento bod **neobsahuje**. Vysvětlí se jednou, prakticky
+    na skutečných vlajkách, v **prvním regionu epizody** (Balkán) ve chvíli, kdy se to poprvé stane:
+    průběžné pořadí po kole (skill mapy příběhu §2.5) a v cíli regionu, proč rozhoduje jen změřená
+    hodnota a proč se v cíli ukazuje jen pořadí v týmu. Celé pořadí ligy až ve velkém finále. Obsah níže
+    platí pro ten výklad v regionu (příklad se tam bere ze skutečných zemí regionu, protože už
+    neprozrazuje nic dopředu). Původní obsah:
     - kola jsou orientační: ukazují, jak si země vede ve faktorech, které ovlivňují hlavní
       výsledek, ale jejich body se do výsledku nesčítají a pořadí určí jen skutečně změřená
       hodnota;
@@ -8654,6 +8661,9 @@ vždy vážou na to, na co se může těšit. Body jdou v tomto pořadí:
       a výsledek ověření zapíše do předání;
     - závěrečná věta propojí bod s komentářem u výsledku: u každé země řekneme, kam ji kola
       posílala a kam skutečně dojela.
+11a. **Poslední věta úvodu neopakuje start regionu** (Ondřej 4. 11. 2026): showcase prvního regionu
+    začíná větou o tom, kdo stojí na startu, proto úvod končí jen přechodem bez jména regionu, např.
+    „Pravidla máme, tak pojďme na start!“.
 12. **Zdroje a důvěryhodnost.** Hlavní výsledek a momentum přebíráme beze změny z oficiálních
     institucí. Zazní jen ty, ze kterých epizoda skutečně čerpá (Eurostat, OECD, MMF…), u záložních
     zdrojů se počet zemí řekne slovy. Indexy kol jsou náš vlastní experimentální výpočet z veřejně
