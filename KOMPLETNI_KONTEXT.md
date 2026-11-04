@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 03. 11. 2026 23:12 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `cb922df5`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 04. 11. 2026 12:25 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `277441b6`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8160,6 +8160,13 @@ Kostra dá místa v kolech, průběžné pořadí, cíl, posun proti pořadí po
 splnění, štítek a chybějící podklady. **Z kostry se neodchyluj;** úsudek začíná až u příčin.
 
 #### 2.2 Očekávání (showcase)
+- **Nová stavba showcase (Ondřej 4. 11. 2026 po zhlédnutí prototypu Balkánu):** představování všech zemí regionu
+  působilo jako výplň a zdržování. Showcase je teď krátký (asi 90 slov): jedna věta, kde region v hlavní
+  tabulce čekáme, a pak **jen země, které hrají o něco zajímavého** — o medaile nebo vítězství v lize, o žlutý
+  trikot, o zelený trikot (země dohánějící z nízké základny), případně o poslední místo. Ostatní země se jmenovat
+  nemusí; v obraze je vidí divák v tabulce regionu. Vzor Balkán: dolní polovina tabulky, nejvýš Slovinsko 15.–20.,
+  pak boj o zelený trikot Rumunska, Chorvatska a Bulharska. Pravidla níže (věrný tip, charakteristika, test
+  spoileru) platí pro jmenované země.
 - Očekávání je **Ondřejův tip**, převyprávěný věrně (favorit, outsider, černý kůň, rozmezí míst). Nepřidávej mu
   důvod, který Ondřej neřekl a podklady nedokládají („díky nižším cenám“).
 - Showcase je **Ondřejův tip a krátká charakteristika každé země**: jedna vedlejší věta o tom, co divák o zemi zná
@@ -8591,7 +8598,12 @@ vždy vážou na to, na co se může těšit. Body jdou v tomto pořadí:
    Smí se přidat druhá strana žebříčku, nejnižší hodnota, nebo u vícedílného indikátoru to, kde
    se části rozcházejí. Formulace vychází z měřítka, ne z interpretace: „nejvyšší průměrnou mzdu
    v paritě kupní síly“, „nejnižší nezaměstnanost“, „největší zásoby nerostného bohatství“.
-3. **Favoriti.** Začíná větou, vždy doslova: „Pojďme si představit největší favority této
+3. **Favoriti.** (Doplněno 4. 11. 2026, Ondřej po zhlédnutí prototypu: „u každé země krátce
+   zmínit, proč by měla být favorit nebo outsider“.) Každá jmenovaná země dostane jednu krátkou
+   vedlejší větu s důvodem tipu: čím je známá a proč od ní divák čeká vítězství, překvapení
+   nebo dno (vzor: „Norsko, které zbohatlo na ropě a plynu ze Severního moře“; „Bulharsko, nejchudší
+   zemi Unie“). Důvod je pověst nebo známý rys země, ne vysvětlení výsledku z kol a finále; čísla
+   z kol nepatří sem. Délka asi 150 slov. Začíná větou, vždy doslova: „Pojďme si představit největší favority této
    disciplíny.“ Pak zazní 4–5 favoritů, 2–3 černí koně a nakonec 3–4 outsideři, vše podle
    Ondřejova seznamu (§0). Jména se řadí v souvislých větách, ne heslovitě. Každá země smí mít
    nejvýš krátkou přívlastkovou charakteristiku, podrobnost patří do showcase. Volitelně následuje
