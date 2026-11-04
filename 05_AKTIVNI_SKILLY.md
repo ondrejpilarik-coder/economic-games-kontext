@@ -6025,6 +6025,15 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    **kdo to je a na jakém je místě** („Třetí v regionu a v kole devatenácté je Chorvatsko…“), hned další věta říká
    proč. Nikdy řečnická otázka, ve které jméno země zazní až na konci („A proč skončilo úplně poslední… Rumunsko?“):
    divák v té chvíli vidí v obraze novou krajinu a neví, o kom se mluví.
+1b. **Pojem s přívlastkem, který ho odlišuje (Ondřej 4. 11. 2026):** pojem z analýzy se do věty přenáší celý, včetně
+   slova, které říká, čím se země liší. Název faktoru v analýze je vzor: „délka vnuceného **centrálního** plánování“
+   se nesmí zkrátit na „plánovalo 23 let“, protože plánují všechny země (Německo i Švýcarsko), jen ne centrálně.
+   Test u každé věty se zemí a pojmem: **platila by věta i o zemi, o které to neplatí?** Když ano, chybí přívlastek
+   („centrální plánování sovětského vzoru“, „regulace nájmů“, „dotace na nákup prvního bytu“) nebo obraz („státní úřad
+   rozhodoval, co se vyrobí“). Totéž u čísel: číslo z analýzy, které je vážené nebo přepočtené, se nikdy neříká jako
+   skutečná délka, počet nebo částka. Přívlastek patří do tučného jádra a do zámku faktů, aby ho Gemini nevypustil.
+   Mechanicky to hlídá `py scripts/kontrola_srozumitelnosti.py --divak` (seznam holých pojmů je ukázka typu; každý
+   nový pojem, který Ondřej musel opravit, se do něj přidá).
 2. **Věty:** souvislé, nejvýš dvě čísla ve větě, nejvýš dvě vedlejší věty, jeden odstavec = jedna otázka a odpověď.
    Žádné staccato, žádné odrážky v mluveném textu, žádná metodika (body, výpočet, odchylka, tabulka, data).
 3. **Značení pro Gemini:**
@@ -6050,7 +6059,9 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    (spočítej obojí a uveď to v hlavičce); když text na výchozí rozpočet nestačí, rozpočet se sníží, Gemini nesmí
    přidávat. (Poučení 1. 11.: Balkán měl rozpočet 1 450 při textu 1 220–1 420 slov.)
 7. **Kontrola před předáním:** každé číslo proti datům a výkladům zemí (nejlépe nezávislý kontrolor, který mapu
-   nepsal), ověř směr každého „protože / díky / kvůli“ a že žádné omezující slovo z mapy nevypadlo.
+   nepsal), ověř směr každého „protože / díky / kvůli“ a že žádné omezující slovo z mapy nevypadlo. Pak
+   `py scripts/kontrola_srozumitelnosti.py --divak FAKTICKA_VERZE.md` bez nálezu holého pojmu (bod 1b); Ondřej nesmí
+   opravovat slova, která chytí kontrola.
 
 Soubor se ukládá jako `FAKTICKA_VERZE.md` ve složce regionu a Ondřejovi se posílá přes SendUserFile.
 
@@ -6058,7 +6069,9 @@ Soubor se ukládá jako `FAKTICKA_VERZE.md` ve složce regionu a Ondřejovi se p
 
 Ondřej vloží čtivou verzi z Gemini zpět. Kontroluje se **jen uzavřený seznam pěti odchylek** proti zámku faktů:
 1. změněné nebo nově zaokrouhlené číslo, rok, místo;
-2. vypadlé omezující slovo („jen“, „asi“, „skoro“, „zčásti“, „reálně“, „v kupní síle“);
+2. vypadlé omezující slovo („jen“, „asi“, „skoro“, „zčásti“, „reálně“, „v kupní síle“) nebo přívlastek, který odlišuje
+   pojem („centrální“ plánování, „sovětského vzoru“); čtivou verzi proto vždy proženeš i kontrolou srozumitelnosti
+   `--divak` a holý pojem opravíš rovnou sám;
 3. obrácený nebo zesílený směr příčiny („díky“ místo „kvůli“, „proto“ místo „zčásti proto“);
 4. změněný štítek, tip nebo pořadí;
 5. nový fakt, který ve faktické verzi není (značka s číslem, historie, citát).
@@ -6107,6 +6120,12 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
   nechtělo srovnání se sousedem v kole (jen ve finále), test záměny sdílený jugoslávský systém u Chorvatska vyškrtl
   a pravidlo „Co za tím stálo“ chtělo příklad, ale ne jeho dopad na ukazatel. Balkán: kolo 1 přepsáno na tři patra
   podle plánované ekonomiky; opravena vlastní chyba „Slovinsko plánovalo jen 23 let“ (vážené číslo projektu).
+- 4. 11. 2026 (večer): pojem s přívlastkem, který ho odlišuje (§3 bod 1b), a mechanická kontrola holých pojmů.
+  Podnět: Ondřej („Slovinsko plánovalo jen 23 let“ vytrhává kontext, plánuje i Německo a Švýcarsko, jen ne centrálně;
+  „mě strašně zdržuje, že musím každé jedno slovo opravovat“). Proč se to dělo: při zkracování na mluvenou větu se
+  z názvu faktoru („délka vnuceného centrálního plánování“) zahodil přívlastek jako zdánlivě zbytečný, zámek faktů
+  hlídal čísla a omezující slova, ale ne přívlastky pojmů, a Gemini zkracoval dál. Opraveno v Balkánu (osa kola,
+  Řecko, Chorvatsko, Bulharsko, Rumunsko) a ve Skandinávii a Beneluxu („centrálně plánované hospodářství“).
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
@@ -6132,6 +6151,9 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 1. **Tučný text je pevné jádro.** Musí zaznít v hlase, i když jinými slovy. Čísla, roky, místa a jména z něj neměň
    ani znovu nezaokrouhluj.
 2. **Omezující slova zůstávají:** jen, asi, skoro, přes, zčásti, reálně, po odečtení zdražování, v kupní síle.
+   Stejně tak **přívlastek, který odlišuje pojem** (Ondřej 4. 11. 2026): „centrální plánování“ nikdy nezkracuj na
+   „plánování“ nebo „plánovalo“, „centrální plánování sovětského vzoru“ na „sovětský vzor“, „regulace nájmů“ na
+   „regulace“. Plánují všechny země, i Německo a Švýcarsko, jen ne centrálně; bez přívlastku věta tvrdí něco jiného.
 3. **Směr příčiny zůstává.** Nezaměňuj „kvůli“ a „díky“, z „zčásti proto“ nedělej „proto“, ze „souvisí“ nedělej
    „způsobilo“.
 4. **Pořadí a tipy** zůstávají přesně. Ve finále neříkej místo v celé lize, jen pořadí v regionu (Ondřej 1. 11. 2026).
