@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 05. 11. 2026 13:31 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `0bd81059`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 05. 11. 2026 14:10 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `0bd81059`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8181,6 +8181,22 @@ splnění, štítek a chybějící podklady. **Z kostry se neodchyluj;** úsudek
 - Když chybí tip, scénář se nepíše (skill úvodu: tipy vždy od Ondřeje).
 
 #### 2.3 Kola
+**Páteř epizody a pointa kola (Ondřej 5. 11. 2026: „chybí tam to, proč je produktivita tak důležitá pro mzdy…
+já tam vidím jenom popis situace“; podobu schválil týž den).** Před psaním regionů vznikne pro ukazatel **páteř
+epizody** (vzor: `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/PATER_EPIZODY.md`): jedna myšlenka celé
+epizody (u mezd cesta výplaty: co pracující vytvoří → kolik dostane → kolik vezme stát → co si koupí) a pro každé kolo
+obecná lekce z analýzy (síla kol, rozklad výsledku) a z rešerše, nezávisle zkontrolovaná. V kole se pak lekce
+**nikdy neříká jako přednáška na začátku**:
+- **otevření:** jedna věta jako sázka závodu, ve které je lekce schovaná jako otázka („První kolo ukáže, co víc
+  zvedá výplatu: jak tvrdě lidé pracují, nebo s čím pracují a co prodávají.“);
+- **země** jako dosud (body níže), každý příklad lekci dokládá, ale nevyslovuje;
+- **pointa po průběžném pořadí:** dvě až tři věty, které z právě viděných zemí vyvodí obecné pravidlo a jmenují je
+  jako doklady, včetně druhé strany věci (nízké daně: co pak stát nemá); v obraze ikonka u každé vlajky. V prvním
+  regionu epizody celá, v dalších jedna věta s novým dokladem z regionu.
+Pointa nesmí tvrdit víc než doklady: řetězec příčin, který žádná instituce netvrdí, se nespojuje do jedné věty
+(„nízké daně, proto slabé školy“), a kde test napříč ligou nic nenašel (objem investic), řekne se jen to, co doklady
+zemí nesou (kam peníze šly).
+
 Pro každé kolo a zemi:
 1. **Hodnota a místo v kole** z kostry.
 2. **Hlavní scéna kola** patří zemi s největším vlivem kola v regionu (největší body v absolutní hodnotě). Když jsou dvě
@@ -8197,6 +8213,9 @@ Pro každé kolo a zemi:
      výš (poučení 4. 11.: Chorvatsko slyšelo jen válku a divák nechápal, proč je třetí před Bulharskem). Srovnání
      dvou zemí se stejným startem je nejsilnější doklad („před válkou byly Chorvatsko a Bulharsko zhruba stejně
      chudé, pak čtyřicet let žily v jiném systému“).
+   - **Srovnání patří k nižší zemi (Ondřej 5. 11. 2026):** „proč je Bulharsko tak daleko za Chorvatskem, které prošlo
+     válkou“ zazní až u Bulharska. Neprozradí pořadí dřív, než zazní, a v obraze je krajina země, o které se mluví.
+     Vyšší země dostane, co ji drží nahoře, z vlastních sil (Chorvatsko: Pliva, stejný volnější socialismus).
    - **Kontrola:** pro každou dvojici sousedů v kole odpověz jednou větou „X je před Y, protože…“. Když věta nejde
      sestavit z textu kola, kolo se neodesílá.
 2b. **Od příkladu k ukazateli (Ondřej 4. 11. 2026: „co to znamená pro ekonomiku, že se tam vyrábějí špatná auta,
@@ -8423,6 +8442,12 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
   z názvu faktoru („délka vnuceného centrálního plánování“) zahodil přívlastek jako zdánlivě zbytečný, zámek faktů
   hlídal čísla a omezující slova, ale ne přívlastky pojmů, a Gemini zkracoval dál. Opraveno v Balkánu (osa kola,
   Řecko, Chorvatsko, Bulharsko, Rumunsko) a ve Skandinávii a Beneluxu („centrálně plánované hospodářství“).
+- 5. 11. 2026: páteř epizody, otevření kola sázkou a pointa po průběžném pořadí (§2.3 úvod), srovnání se sousedem
+  u nižší země (§2.3 bod 2a). Podnět: Ondřej („chybí základní vysvětlení, proč má produktivita tak zásadní vliv na plat…
+  proč sis sám nešel po tomto patternu“; podobu „lekce na konci kola, ne přednáška na začátku“ navrhl a schválil
+  týž den). Proč to skill nedělal: všechna pravidla vznikla z oprav u jednotlivých zemí, žádné nechtělo obecnou
+  lekci kola, i když ji analýza měla v číslech (výkon vysvětlí většinu rozdílů, podíl mezd je v Evropě podobný,
+  daně jsou nejslabší kolo). Balkán přepsán jako první zkouška (1 545 slov).
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
@@ -8479,6 +8504,9 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
   je řeč. Komentátorské otázky smíš klást jen mezi zeměmi, ne místo uvedení země.
 - **Srovnání se sousedem nevypouštěj:** věty typu „před Bulharskem ale zůstalo daleko, protože…“ jsou jádro závodu,
   ne výplň. Nezesiluj je („přesně“, „skoro dvojnásobek“) a nepřidávej vlastní příčiny.
+- **Otevření a pointa kola zůstávají na svém místě** (Ondřej 5. 11. 2026): první věta kola je sázka závodu, pointa
+  (co z kola plyne pro výplatu) přijde až po průběžném pořadí. Nepřesouvej pointu na začátek, nedělej z ní přednášku
+  a nespojuj její věty do silnější příčiny („proto“), než stojí ve faktické verzi.
 - Místo v samotném kole a **průběžné pořadí** pořád jasně odlišuj.
 - Žádné „my“, „u nás“ o Česku. Žádná metodika (body, výpočet, data, tabulky).
 
