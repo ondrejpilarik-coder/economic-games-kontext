@@ -5979,6 +5979,23 @@ Pro každé kolo a zemi:
 - Nikdy „by měla skončit“: průběžné pořadí je stav, ne předpověď.
 
 #### 2.6 Finále: skutečné pořadí a proč je soused před sousedem
+**Vedlejší faktory jménem (Ondřej 5. 11. 2026: „v tom finále vůbec nepracuješ s vedlejšími faktory… v úvodu se
+hezky graficky vyjmenovaly a líbilo by se mi, kdyby se ta loga pak používala u jednotlivých států“).** Úvod epizody
+představí vedlejší faktory jako kategorie s ikonou (u mezd osm kategorií:
+`10_documents/active/2026-11-03_prototyp_noc_uvod_balkan_recko/KATEGORIE_VEDLEJSICH_FAKTORU.md`, v kódu
+`KATEGORIE_VEDLEJSICH` v `ekonomicke-hry-remotion/src/prototyp-noc/uvod/data.ts`). V cíli pak platí:
+- cíl připomene pořadí po hlavních faktorech a řekne, že teď přicházejí ke slovu vedlejší faktory z úvodu
+  (v prvním regionu výslovně „které jsme představili v úvodu“);
+- u každé země, která se proti pořadí po hlavních faktorech posunula, se **jménem kategorie** řekne, který vedlejší
+  faktor rozhodl, a hned konkrétní doložený fakt („Proti očekávání po hlavních faktorech končí Řecko až páté.
+  Zásadní roli hrály vedlejší faktory vyjednávání o mzdách a mzdy určené státem: v dluhové krizi klesla minimální
+  mzda o pětinu…“). U země, která zůstala, se řekne, co ji drželo na místě;
+- hlavní faktory (kola) se v cíli jen připomenou, **nevykládají se znovu jako důvod posunu**: posun proti kolům
+  dělají vedlejší faktory;
+- řádek VIZUÁL v cíli uvede u každé země ikonu kategorie, aby střih mohl dát logo k vlajce;
+- vedlejší faktor, který do žádné kategorie nepatří, se doplní do kategorií i do kódu (a Ondřej se dozví, že vznikla
+  nová kategorie);
+- pointa cíle řekne, které vedlejší faktory v regionu míchaly nejvíc.
 **Oprava 1. 11. 2026 (Ondřej: „proč skončilo Portugalsko třetí, Itálie druhá a Španělsko první, důvody jsou blbě
 pochopitelné… u toho divák usne“).** Dřívější pravidlo vykládalo posun proti pořadí po kolech pomocí čísel modelu
 (podíl výplat na vytvořené hodnotě, podíl zaměstnanců). To je otázka analytika, ne diváka, a odpověď je pro diváka
@@ -6083,7 +6100,10 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    - ostatní text = smí volně přeformulovat, ale ne vynechat.
    Pevné je jen to, bez čeho se příběh rozpadne: asi 15–25 faktů na region (tip a jeho splnění, hlavní scény a jejich
    příčina, otázka diváka a odpověď, průběžné pořadí, výsledky v cíli, důvody finále, štítky). Méně pevného = víc
-   prostoru pro čtivost.
+   prostoru pro čtivost. **Tučně jsou jen krátké úseky s klíčovým faktem** (místo a jméno země, číslo, omezující
+   slovo, směr příčiny, Ondřejův tip, průběžné pořadí), **nikdy celé věty a odstavce; tučně nejvýš asi 40 % slov**
+   (hlídá brána `kontrola_paru_sousedu.py`). Netučný text je prostor Gemini pro sportovní styl. (Poučení 5. 11. 2026:
+   v Balkánu bylo tučně 97 % slov, Gemini proto nemohl nic přepsat a sportovní styl zmizel; Ondřej si toho všiml.)
 4. **Zámek faktů** na konci souboru: číslovaný seznam pevných faktů v krátké podobě (číslo, omezující slovo, směr
    příčiny, místo, štítek). Podle něj se dělá zpětná kontrola.
 4a. **Páry sousedů** na konci souboru (před zámkem faktů): pro každé kolo a každou dvojici sousedů v kole jedna věta
@@ -6093,7 +6113,8 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    skillu): showcase jen sportovní očekávání; otevření každého kola jedna věta; páry sousedů ve všech kolech;
    největší důvod země řečený jako největší; co divák nemusí znát, vysvětleno při první zmínce (stát, blok, válka,
    režim, čí je firma); žádný holý pojem (`kontrola_srozumitelnosti.py --divak`); u cizích firem, co z hodnoty
-   zůstává v zemi; v kole daní proč je zátěž taková; pointa po průběžném pořadí s osou kola; délka. Kdo pravidlo
+   zůstává v zemi; v kole daní proč je zátěž taková; pointa po průběžném pořadí s osou kola; cíl s vedlejšími faktory
+   jménem kategorie a ikonou (§2.6); tučně jen klíčová fakta (nejvýš asi 40 % slov); délka. Kdo pravidlo
    ruší, smaže ve skillu i to staré, které mu odporuje.
 5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
 6. **Délka se počítá na zemi, ne na region:** rozpočet = **250 slov × počet zemí + 300 slov** na rámec regionu
@@ -6200,6 +6221,9 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
   a krátila na rozpočet; pravidlo se kontrolovalo po paměti a nezávislý kontrolor dostal úkol jen obecně. Krácení
   tak potichu smazalo právě vysvětlení párů. Oprava: páry se píšou do souboru, hlídá je brána
   `scripts/kontrola_paru_sousedu.py`, kontrolor ověřuje každé kolo zvlášť a rozpočet nikdy nesmí vzít pár (§3 bod 6).
+- 5. 11. 2026 (noc): cíl s vedlejšími faktory jménem kategorie z úvodu a ikonou (§2.6), tučně nejvýš asi 40 % slov
+  (§3 bod 3), obojí v bráně. Podnět: Ondřej (cíl vykládal posuny hlavními faktory a vedlejší nejmenoval; sportovní styl
+  Gemini zmizel). Příčina druhého: v Balkánu bylo tučně 97 % slov, takže Gemini neměl co přepsat.
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
