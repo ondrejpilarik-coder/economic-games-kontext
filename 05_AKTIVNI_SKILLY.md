@@ -5872,11 +5872,11 @@ splnění, štítek a chybějící podklady. **Z kostry se neodchyluj;** úsudek
   spoileru) platí pro jmenované země.
 - Očekávání je **Ondřejův tip**, převyprávěný věrně (favorit, outsider, černý kůň, rozmezí míst). Nepřidávej mu
   důvod, který Ondřej neřekl a podklady nedokládají („díky nižším cenám“).
-- Showcase je **Ondřejův tip a krátká charakteristika každé země**: jedna vedlejší věta o tom, co divák o zemi zná
-  nebo si snadno představí (velikost, poloha, čím je známá: „třetí největší ekonomika eurozóny s průmyslovým severem“).
-  Co je v Ondřejově textu tipu (například „vzpamatovává se z finanční krize“), zůstává. Charakteristika nesmí
-  vynechat žádnou zemi a nesmí prozradit nic z testu spoileru níže. (Ondřej 2. 11. 2026 podle Gemini: holý tip bez
-  charakteristiky byl proti ostatním částem chudý; charakteristiky se nevynechávají.)
+- **Bez charakteristik zemí (Ondřej 5. 11. 2026, nahrazuje pravidlo z 2. 11.):** v showcase zazní jen sportovní
+  očekávání, tedy o co země bojuje: medaile, trikot, únik ze dna, poslední místo. Firmy, výrobky a „čím je země
+  známá“ sem nepatří, patří do kola, kde vysvětlují výsledek. Pravidlo z 2. 11. („krátká charakteristika každé
+  země“) je zrušené; v Balkánu 5. 11. zůstalo omylem v platnosti vedle novějšího pravidla výše, a proto ho Ondřej
+  musel připomínat znovu. Co je v Ondřejově textu tipu, zůstává.
 - **Test spoileru:** co se později vykládá v kole nebo ve finále (ceny a drahota života, kolektivní smlouvy, turismus,
   hotely, značky, odvětví), do showcase nepatří, i když je to „charakter země“. Divák to má slyšet poprvé tam, kde
   se to vysvětluje. Žádná čísla z kol, žádné příčiny výsledku. (Poučení 1. 11. 2026: Jih měl v úvodu kolektivní
@@ -5890,8 +5890,9 @@ epizody** (vzor: `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/PAT
 epizody (u mezd cesta výplaty: co pracující vytvoří → kolik dostane → kolik vezme stát → co si koupí) a pro každé kolo
 obecná lekce z analýzy (síla kol, rozklad výsledku) a z rešerše, nezávisle zkontrolovaná. V kole se pak lekce
 **nikdy neříká jako přednáška na začátku**:
-- **otevření:** jedna věta jako sázka závodu, ve které je lekce schovaná jako otázka („První kolo ukáže, co víc
-  zvedá výplatu: jak tvrdě lidé pracují, nebo s čím pracují a co prodávají.“);
+- **otevření: jedna věta, co kolo měří** (v prvním regionu „První kolo rozdává karty podle toho, kolik hodnoty
+  vytvořil jeden pracující v roce 1996.“, v dalších ještě kratší připomínka). Nic víc: žádná sázka, žádná osa,
+  žádná lekce (Ondřej 5. 11. 2026 zrušil sázku ze stejného dne jako výplň; osa i lekce zazní v pointě);
 - **země** jako dosud (body níže), každý příklad lekci dokládá, ale nevyslovuje;
 - **pointa po průběžném pořadí:** dvě až tři věty, které z právě viděných zemí vyvodí obecné pravidlo a jmenují je
   jako doklady, včetně druhé strany věci (nízké daně: co pak stát nemá); v obraze ikonka u každé vlajky. V prvním
@@ -5908,7 +5909,8 @@ Pro každé kolo a zemi:
    pět samostatných popisů stavu, ale jako vysvětlené pořadí, jako ve sportu: „sedmý je Fin a ztrácí na Francouze,
    protože má hůř namazané lyže“.
    - **Osa kola:** před psaním zemí najdi jednu až dvě věci, podle kterých se region v kole seřadil (u Balkánu
-     v kole 1: jak tvrdě vládla plánovaná ekonomika, tři patra), a řekni ji na začátku kola jednou větou s obrazem.
+     v kole 1: jak tvrdě vládlo centrální plánování, tři patra). **Řekne se v pointě na konci kola, ne na začátku**
+     (Ondřej 5. 11. 2026: úvod kola s osou a sázkou je „zbytečná vata, vyplyne to v závěru“).
      Najdi ji z dat (faktory potenciálu a strategie v analýze, výklady zemí), ne z dojmu, a ověř, kde osa nesedí:
      tam je výjimka, kterou musí kolo vysvětlit (válka v Chorvatsku).
    - **Každý pár sousedů v kole má svou příčinu:** u každé země zazní, proč je **za** zemí před sebou a proč je **před**
@@ -5920,7 +5922,23 @@ Pro každé kolo a zemi:
      válkou“ zazní až u Bulharska. Neprozradí pořadí dřív, než zazní, a v obraze je krajina země, o které se mluví.
      Vyšší země dostane, co ji drží nahoře, z vlastních sil (Chorvatsko: Pliva, stejný volnější socialismus).
    - **Kontrola:** pro každou dvojici sousedů v kole odpověz jednou větou „X je před Y, protože…“. Když věta nejde
-     sestavit z textu kola, kolo se neodesílá.
+     sestavit z textu kola, kolo se neodesílá. **Platí pro každé kolo, i pro druhé a třetí** (Ondřej 5. 11. 2026:
+     v kole 1 byly páry vysvětlené, v kolech 2 a 3 zmizely, „to musím všechno říkat“). Věty se zapisují do oddílu
+     „Páry sousedů“ ve faktické verzi (§3 bod 4a), takže je nejde vynechat potichu.
+   - **Vzor dobře vysvětleného páru (Ondřej 5. 11. 2026: „takhle by to mohlo vypadat… dává to hlavu a patu“):**
+     Bulharsko v kole 1 Balkánu: jméno a místo, otázka diváka („jak to, že je tak daleko za Chorvatskem, které
+     prošlo válkou?“), stejný start obou zemí, pak odlišná cesta (Chorvatsko prodávalo i na Západ, o bulharské
+     výrobě rozhodoval centrální plán a skoro dvě třetiny vývozu šly do Sovětského svazu) a dopad na ukazatel („co
+     se neprodá, nevytvoří hodnotu: přišlo i bez války o přes čtvrtinu výroby“).
+   - **Váha důvodů (Ondřej 5. 11. 2026):** když má postavení země víc zdrojů, nevyjmenovávej je jako rovnocenné.
+     Řekni, který je největší, a podle dat jak velký („nejvíc vydělávalo na službách: obchod, doprava a turisté
+     dělaly X % výroby“), ostatní jen doplň. Pořadí důvodů ve větě odpovídá jejich váze.
+   - **Domácí podíl na hodnotě u zahraničních firem:** když je příkladem cizí firma (Dacia, Revoz), řekni, co
+     z hodnoty vzniká v zemi, pokud je to doložené (vývojové centrum, zkušebna, centrála pro region), nebo že vývoj
+     a zisk jsou jinde. Bez toho divák nepozná, proč montovna zvedá výkon méně nebo víc.
+   - **Kolo daní se vykládá stejně jako ostatní kola:** u každé země nejen číslo, ale i **proč** je zátěž taková (jak
+     je systém stavěný: rovná daň, strop odvodů, vysoké odvody zaměstnance, nejvyšší sazba) a u pointy druhá strana
+     věci. Číslo bez příčiny je popis, ne výklad.
 2b. **Od příkladu k ukazateli (Ondřej 4. 11. 2026: „co to znamená pro ekonomiku, že se tam vyrábějí špatná auta,
    že tam jsou lidi na poli“).** Konkrétní příklad (pravidlo „Co za tím stálo“) nestačí: hned za ním zazní, **jak se
    promítne do měřené veličiny**, nejlépe s jedním číslem nebo poměrem („41 % Rumunů pracovalo na polích, ale
@@ -6050,7 +6068,11 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    Test u každé věty se zemí a pojmem: **platila by věta i o zemi, o které to neplatí?** Když ano, chybí přívlastek
    („centrální plánování sovětského vzoru“, „regulace nájmů“, „dotace na nákup prvního bytu“) nebo obraz („státní úřad
    rozhodoval, co se vyrobí“). Totéž u čísel: číslo z analýzy, které je vážené nebo přepočtené, se nikdy neříká jako
-   skutečná délka, počet nebo částka. Přívlastek patří do tučného jádra a do zámku faktů, aby ho Gemini nevypustil.
+   skutečná délka, počet nebo částka. **Další případy z 5. 11. 2026:** „budovy“ bez určení (divák si představí byty;
+   řekni továrny a kanceláře, nebo přiznej, že jde i o obytné domy), „před válkou“ bez určení (v regionu, kde se
+   mluví o chorvatské válce v 90. letech, divák neví, že jde o druhou světovou; vždy „před druhou světovou válkou“),
+   „Jugoslávie“ bez vysvětlení, že Slovinsko a Chorvatsko byly jejími republikami. **Co divák nemusí znát, se řekne
+   při první zmínce**: příslušnost k státu nebo bloku, která válka, který režim, čí je firma. Přívlastek patří do tučného jádra a do zámku faktů, aby ho Gemini nevypustil.
    Mechanicky to hlídá `py scripts/kontrola_srozumitelnosti.py --divak` (seznam holých pojmů je ukázka typu; každý
    nový pojem, který Ondřej musel opravit, se do něj přidá).
 2. **Věty:** souvislé, nejvýš dvě čísla ve větě, nejvýš dvě vedlejší věty, jeden odstavec = jedna otázka a odpověď.
@@ -6064,6 +6086,15 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    prostoru pro čtivost.
 4. **Zámek faktů** na konci souboru: číslovaný seznam pevných faktů v krátké podobě (číslo, omezující slovo, směr
    příčiny, místo, štítek). Podle něj se dělá zpětná kontrola.
+4a. **Páry sousedů** na konci souboru (před zámkem faktů): pro každé kolo a každou dvojici sousedů v kole jedna věta
+   „X je před Y, protože…“ s odkazem na větu v textu kola. Prázdný řádek = kolo se neodesílá.
+4b. **Kontrolní list** na konci souboru, vyplněný ano/ne u každého bodu (Ondřej 5. 11. 2026: „nechci, aby se to
+   opakovalo“; pravidla se dřív ztrácela, protože se kontrolovala po paměti a starší rozporná pravidla zůstala ve
+   skillu): showcase jen sportovní očekávání; otevření každého kola jedna věta; páry sousedů ve všech kolech;
+   největší důvod země řečený jako největší; co divák nemusí znát, vysvětleno při první zmínce (stát, blok, válka,
+   režim, čí je firma); žádný holý pojem (`kontrola_srozumitelnosti.py --divak`); u cizích firem, co z hodnoty
+   zůstává v zemi; v kole daní proč je zátěž taková; pointa po průběžném pořadí s osou kola; délka. Kdo pravidlo
+   ruší, smaže ve skillu i to staré, které mu odporuje.
 5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
 6. **Délka se počítá na zemi, ne na region:** rozpočet = **250 slov × počet zemí + 300 slov** na rámec regionu
    (úvodní věta showcase, definice, průběžná pořadí, předávka). Region se třemi zeměmi má tedy asi 1 050 slov
@@ -6072,7 +6103,10 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    nezískává přidáním slov, ale méně příčinami** (oddíl Nejvyšší priorita). (Poučení 2. 11. 2026: Jih se třemi
    zeměmi dostal 1 500 slov a byl delší než Balkán s pěti; Ondřej to správně označil za nesmysl.)
    **Vyváženost:** orientační podíl rozpočtu je showcase asi 10 %, kolo 1 asi 15 %, kolo 2 asi 30 %, kolo 3 asi 10 %,
-   finále asi 35 %. Žádná část nesmí být holá: každá země dostane v showcase charakteristiku a v kole 1 jeden
+   finále asi 35 %. **Na čem šetřit (Ondřej 5. 11. 2026):** na showcase (jen sportovní očekávání) a na otevření kol
+   (jedna věta), nikdy na párech sousedů a příčinách v kolech 2 a 3. Když se vysvětlení párů nevejde, nejdřív se
+   krátí detaily příkladů; když ani to nestačí, Claude to řekne Ondřejovi s návrhem rozpočtu, nevynechá pár potichu.
+   Žádná část nesmí být holá: každá země dostane v kole 1 jeden
    konkrétní obraz své výchozí pozice (co měla nebo neměla: stroje, školy, odchod z polí do továren), ne jen místo
    a číslo. Žádná země nesmí mít v celém textu víc než asi dvojnásobek slov jiné země z regionu. **Rozpočet musí ležet mezi délkou textu bez volitelných a s nimi**
    (spočítej obojí a uveď to v hlavičce); když text na výchozí rozpočet nestačí, rozpočet se sníží, Gemini nesmí
@@ -6151,6 +6185,12 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
   týž den). Proč to skill nedělal: všechna pravidla vznikla z oprav u jednotlivých zemí, žádné nechtělo obecnou
   lekci kola, i když ji analýza měla v číslech (výkon vysvětlí většinu rozdílů, podíl mezd je v Evropě podobný,
   daně jsou nejslabší kolo). Balkán přepsán jako první zkouška (1 545 slov).
+- 5. 11. 2026 (večer): showcase bez charakteristik (zrušeno pravidlo z 2. 11., které omylem zůstalo vedle novějšího
+  ze 4. 11.), otevření kola jedna věta (sázka zrušena, osa do pointy), páry sousedů povinně ve všech kolech
+  s oddílem „Páry sousedů“, váha důvodů, domácí podíl u cizích firem, kolo daní s příčinami, kontext pro diváka
+  (která válka, Jugoslávie, které budovy), kontrolní list ve faktické verzi, na čem šetřit. Podnět: Ondřej
+  u Balkánu („kolo 1 je dobré, protože jsem to babysitoval… ve druhém a třetím kole analytický řetěz upadá“;
+  Bulharsko v kole 1 pochválil jako vzor).
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
@@ -6207,14 +6247,16 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
   je řeč. Komentátorské otázky smíš klást jen mezi zeměmi, ne místo uvedení země.
 - **Srovnání se sousedem nevypouštěj:** věty typu „před Bulharskem ale zůstalo daleko, protože…“ jsou jádro závodu,
   ne výplň. Nezesiluj je („přesně“, „skoro dvojnásobek“) a nepřidávej vlastní příčiny.
-- **Otevření a pointa kola zůstávají na svém místě** (Ondřej 5. 11. 2026): první věta kola je sázka závodu, pointa
+- **Showcase jen sportovně** (Ondřej 5. 11. 2026): o co země bojuje (medaile, trikot, únik ze dna); nepřidávej firmy
+  ani „čím je země známá“. Kolo otevírá jedna věta o tom, co měří, nic víc.
+- **Otevření a pointa kola zůstávají na svém místě** (Ondřej 5. 11. 2026): první věta kola řekne, co kolo měří, pointa
   (co z kola plyne pro výplatu) přijde až po průběžném pořadí. Nepřesouvej pointu na začátek, nedělej z ní přednášku
   a nespojuj její věty do silnější příčiny („proto“), než stojí ve faktické verzi.
 - Místo v samotném kole a **průběžné pořadí** pořád jasně odlišuj.
 - Žádné „my“, „u nás“ o Česku. Žádná metodika (body, výpočet, data, tabulky).
 
 ### Délka
-Drž se rozpočtu slov v hlavičce faktické verze (mluvený text bez nadpisů a řádků VIZUÁL), odchylka nejvýš 5 %. Rozpočet se počítá podle počtu zemí v regionu, proto má každý region jinou délku. Když krátíš, krať volitelné části a nikdy charakteristiku zemí ve showcase ani obraz výchozí pozice v kole 1; každá část scénáře má zůstat stejně barvitá.
+Drž se rozpočtu slov v hlavičce faktické verze (mluvený text bez nadpisů a řádků VIZUÁL), odchylka nejvýš 5 %. Rozpočet se počítá podle počtu zemí v regionu, proto má každý region jinou délku. Když krátíš, krať volitelné části a nikdy obraz výchozí pozice v kole 1 ani vysvětlení, proč je země před sousedem nebo za ním (v každém kole); každá část scénáře má zůstat stejně barvitá.
 Když se nevejdeš, krať volitelné, ne pevné.
 
 ### Výstup
