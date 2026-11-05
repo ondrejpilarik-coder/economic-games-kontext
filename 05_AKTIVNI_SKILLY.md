@@ -6106,6 +6106,13 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    v Balkánu bylo tučně 97 % slov, Gemini proto nemohl nic přepsat a sportovní styl zmizel; Ondřej si toho všiml.)
 4. **Zámek faktů** na konci souboru: číslovaný seznam pevných faktů v krátké podobě (číslo, omezující slovo, směr
    příčiny, místo, štítek). Podle něj se dělá zpětná kontrola.
+3a. **Ondřejova připomínka k detailu není nové téma (Ondřej 5. 11. 2026: „mně něco zarazí a ty s toho hned uděláš
+   hlavní téma… ale to jsem tak nemyslel“).** Když se Ondřej pozastaví nad slovem nebo větou („jakých budov?“),
+   odpověď na jeho otázku patří do chatu. Ve scénáři se jen opraví ta věta: nahradí se nejjednodušší pravdivou verzí,
+   nebo se vypustí. Výsledek rešerše k detailu (měřicí jemnosti, rozklad čísla) se do hlasu **nepřidává jako nový
+   výklad**; o tom, co zazní, dál rozhoduje váha důvodů a zájem diváka (§2.3), ne to, na co se Ondřej ptal. Patří do
+   zámku faktů a do odpovědi v chatu. (Poučení: z otázky na „budovy“ vznikl u Řecka odstavec o dílu pracujících,
+   který Ondřej označil za nudný a mimo hlavní příčiny.)
 4a. **Páry sousedů** na konci souboru (před zámkem faktů): pro každé kolo a každou dvojici sousedů v kole jedna věta
    „X je před Y, protože…“ s odkazem na větu v textu kola. Prázdný řádek = kolo se neodesílá.
 4b. **Kontrolní list** na konci souboru, vyplněný ano/ne u každého bodu (Ondřej 5. 11. 2026: „nechci, aby se to
@@ -6114,7 +6121,8 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    největší důvod země řečený jako největší; co divák nemusí znát, vysvětleno při první zmínce (stát, blok, válka,
    režim, čí je firma); žádný holý pojem (`kontrola_srozumitelnosti.py --divak`); u cizích firem, co z hodnoty
    zůstává v zemi; v kole daní proč je zátěž taková; pointa po průběžném pořadí s osou kola; cíl s vedlejšími faktory
-   jménem kategorie a ikonou (§2.6); tučně jen klíčová fakta (nejvýš asi 40 % slov); délka. Kdo pravidlo
+   jménem kategorie a ikonou (§2.6); tučně jen klíčová fakta (nejvýš asi 40 % slov); oprava detailu z Ondřejovy
+   připomínky nepřidala do hlasu nové téma (bod 3a); délka. Kdo pravidlo
    ruší, smaže ve skillu i to staré, které mu odporuje.
 5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
 6. **Délka se počítá na zemi, ne na region:** rozpočet = **250 slov × počet zemí + 300 slov** na rámec regionu
