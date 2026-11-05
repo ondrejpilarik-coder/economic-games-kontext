@@ -5913,8 +5913,10 @@ Pro každé kolo a zemi:
      (Ondřej 5. 11. 2026: úvod kola s osou a sázkou je „zbytečná vata, vyplyne to v závěru“).
      Najdi ji z dat (faktory potenciálu a strategie v analýze, výklady zemí), ne z dojmu, a ověř, kde osa nesedí:
      tam je výjimka, kterou musí kolo vysvětlit (válka v Chorvatsku).
-   - **Každý pár sousedů v kole má svou příčinu:** u každé země zazní, proč je **za** zemí před sebou a proč je **před**
-     zemí za sebou. Když popis země zní hůř než u země pod ní (válka, prázdné pláže), musí zaznít, co ji přesto drží
+   - **Každý pár sousedů v kole má svou příčinu, řečenou jednou** (oprava 5. 11. 2026, Ondřej: „u Řecka říkáš důvod,
+     proč je před Slovinskem, a u Slovinska to opakuješ… já něco povolím a ty to přeženeš do druhého extrému“):
+     důvod páru zazní **jen u nižší země**; vyšší země ho neopakuje a vypráví svůj vlastní příběh. Dřívější znění
+     („u každé země zazní, proč je za zemí před sebou i před zemí za sebou“) vedlo k opakování a je zrušené. Když popis země zní hůř než u země pod ní (válka, prázdné pláže), musí zaznít, co ji přesto drží
      výš (poučení 4. 11.: Chorvatsko slyšelo jen válku a divák nechápal, proč je třetí před Bulharskem). Srovnání
      dvou zemí se stejným startem je nejsilnější doklad („před válkou byly Chorvatsko a Bulharsko zhruba stejně
      chudé, pak čtyřicet let žily v jiném systému“).
@@ -6287,7 +6289,8 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
   které jméno zazní až na konci („A proč skončilo úplně poslední… Rumunsko?“): divák vidí novou krajinu a neví, o kom
   je řeč. Komentátorské otázky smíš klást jen mezi zeměmi, ne místo uvedení země.
 - **Srovnání se sousedem nevypouštěj:** věty typu „před Bulharskem ale zůstalo daleko, protože…“ jsou jádro závodu,
-  ne výplň. Nezesiluj je („přesně“, „skoro dvojnásobek“) a nepřidávej vlastní příčiny.
+  ne výplň. Nezesiluj je („přesně“, „skoro dvojnásobek“), nepřidávej vlastní příčiny a **neopakuj** stejný důvod
+  u obou zemí: srovnání zazní jednou, u nižší země (Ondřej 5. 11. 2026).
 - **Showcase jen sportovně** (Ondřej 5. 11. 2026): o co země bojuje (medaile, trikot, únik ze dna); nepřidávej firmy
   ani „čím je země známá“. Kolo otevírá jedna věta o tom, co měří, nic víc.
 - **Otevření a pointa kola zůstávají na svém místě** (Ondřej 5. 11. 2026): první věta kola řekne, co kolo měří, pointa
