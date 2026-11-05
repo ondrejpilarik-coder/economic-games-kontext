@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 05. 11. 2026 14:59 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `20588afc`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 05. 11. 2026 15:09 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `20588afc`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8411,7 +8411,12 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
 7. **Kontrola před předáním:** každé číslo proti datům a výkladům zemí (nejlépe nezávislý kontrolor, který mapu
    nepsal), ověř směr každého „protože / díky / kvůli“ a že žádné omezující slovo z mapy nevypadlo. Pak
    `py scripts/kontrola_srozumitelnosti.py --divak FAKTICKA_VERZE.md` bez nálezu holého pojmu (bod 1b); Ondřej nesmí
-   opravovat slova, která chytí kontrola.
+   opravovat slova, která chytí kontrola. **Povinná brána:** `py scripts/kontrola_paru_sousedu.py FAKTICKA_VERZE.md`
+   musí skončit „PROŠLO“ (páry sousedů ve všech kolech a v cíli, každá země zmíněná, kontrolní list bez „ne“).
+   Brána nepozná, jestli věta z párů opravdu zazní v hlase; proto ji vždy následuje **nezávislý kontrolor**, který
+   text nepsal, s výslovným zadáním: pro každé kolo zvlášť ověř, že každý pár slyší divák v textu kola, a hledej
+   kolo, kde výklad upadl do popisu (Ondřej 5. 11. 2026: „není zásadní, že jsi to teď opravil, ale abys to psal
+   automaticky vždy“).
 
 Soubor se ukládá jako `FAKTICKA_VERZE.md` ve složce regionu a Ondřejovi se posílá přes SendUserFile.
 
@@ -8487,7 +8492,11 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
   s oddílem „Páry sousedů“, váha důvodů, domácí podíl u cizích firem, kolo daní s příčinami, kontext pro diváka
   (která válka, Jugoslávie, které budovy), kontrolní list ve faktické verzi, na čem šetřit. Podnět: Ondřej
   u Balkánu („kolo 1 je dobré, protože jsem to babysitoval… ve druhém a třetím kole analytický řetěz upadá“;
-  Bulharsko v kole 1 pochválil jako vzor).
+  Bulharsko v kole 1 pochválil jako vzor). **Proč výklad v kolech 2 a 3 upadl, i když pravidlo 2a platilo pro
+  všechna kola už od 4. 11.:** kolo 1 se psalo znovu s novou rešerší, kola 2 a 3 se jen převzala ze starší verze
+  a krátila na rozpočet; pravidlo se kontrolovalo po paměti a nezávislý kontrolor dostal úkol jen obecně. Krácení
+  tak potichu smazalo právě vysvětlení párů. Oprava: páry se píšou do souboru, hlídá je brána
+  `scripts/kontrola_paru_sousedu.py`, kontrolor ověřuje každé kolo zvlášť a rozpočet nikdy nesmí vzít pár (§3 bod 6).
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
