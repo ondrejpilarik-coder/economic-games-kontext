@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 06. 11. 2026 18:08 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `07da764a`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 06. 11. 2026 21:13 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `9e85d2d9`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8095,7 +8095,11 @@ vyjednává a celou tu dobu výplata stojí, zatímco ceny v obchodě rostou.“
   skladba ekonomiky, přidaná hodnota, dynamika podnikání). Smí zaznít jen s obrazem v téže větě.
 - **Zábavnost:** konkrétní srovnání a překvapení (Ital a Němec ve dvaceti berou stejně, za deset let má Němec
   dvojnásobek) mají přednost před výčtem. Gemini dodá tón, ale obraz musí dodat faktická verze.
+- **Soud vždy s důvodem, a důvod je důsledek pro lidi** (Ondřej 6. 11. 2026 v noci): za „dobře“, „špatně“ nebo
+  „napůl“ hned zazní, co kvůli tomu lidé, firmy nebo stát dělají nebo nemohou, až k výplatě. Jméno úřadu, vlastnost
+  systému ani rada vládě důvod nejsou; úřad je doklad v zámku faktů (podrobně §2.3, odrážka „Důvod soudu“).
 - Toto pravidlo má přednost před stručností: radši méně příčin vysvětlených pořádně než víc příčin heslovitě.
+  Stručnost ale hlídá strop času (§3 bod 6): pořádné vysvětlení se platí méně příčinami, ne delším textem.
 
 #### Pravidlo „Co za tím stálo“ (Ondřej 2. 11. 2026, pro všechny ukazatele)
 > „Potřebuju, aby se divák dozvěděl, proč měla Itálie do roku 1996 nejlepší produktivitu v celé Evropě. Co za tím
@@ -8147,7 +8151,16 @@ Pro každý ukazatel a region:
 - **výklady zemí** (proč má země v kolech takové hodnoty, další faktory, co říkají ekonomové) a **rešerše ekonomů**
   (důvody od největšího vlivu, síla dokladu);
 - **co kola nevysvětlí** (rozdíl mezi výsledkem a pořadím po kolech) a jeho rozklad, pokud ho analýza má (u mezd:
-  podíl mezd na výkonu, podíl zaměstnanců, hodiny), a **typická odchylka** výpočtu.
+  podíl mezd na výkonu, podíl zaměstnanců, hodiny), a **typická odchylka** výpočtu;
+- **podklad pro soud** u každého kola, kde se hodnotí pravidlo nebo krok státu (daně, regulace, dávky, reforma):
+  soubor na zemi (u Balkánu `soudy_dane/{kód}.md`), který sbírá **důsledky pro lidi na obou stranách**, každý se
+  zdrojem: (1) komu to hned přidá a kolik (peněženka, cena práce pro firmu); (2) kdo a čím to platí jinde nebo
+  později (co stát kvůli tomu nemá nebo čeho má víc: školy, nemocnice, silnice, důchody; co si lidé platí sami);
+  (3) jak na to lidé a firmy reagují (zůstávají, odcházejí, pracují načerno); (4) protipříklad v lize (kdo má stejné
+  nastavení a dopadl jinak), aby nezaznělo „proto“ tam, kde neplatí; (5) co říkají instituce, jen jako doklad
+  k bodům 1 až 4; (6) návrh soudu jednou větou **bez jména instituce**. Podklad, který má jen bod 5, dá scénáři jen
+  posudky úřadů (poučení z kola 3 Balkánu, 6. 11. 2026: zadání rešerše začínalo oddílem „Co říkají instituce“).
+  Když body 1 až 4 chybí, Claude je před psaním dohledá stejně jako lidské příklady.
 
 U mezd (epizoda 1) je dává `scripts/kostra_mapy_pribehu.py`. U jiného ukazatele se kostra postaví ze stejných
 druhů údajů jeho analýzy; když některý chybí, zapíše se to do mapy a nevymýšlí se.
@@ -8192,14 +8205,27 @@ obecná lekce z analýzy (síla kol, rozklad výsledku) a z rešerše, nezávisl
   žádná lekce (Ondřej 5. 11. 2026 zrušil sázku ze stejného dne jako výplň; osa i lekce zazní v pointě);
 - **země** jako dosud (body níže), každý příklad lekci dokládá, ale nevyslovuje;
 - **pointa po průběžném pořadí:** dvě až tři věty, které z právě viděných zemí vyvodí obecné pravidlo a jmenují je
-  jako doklady, včetně druhé strany věci (nízké daně: co pak stát nemá); v obraze ikonka u každé vlajky.
+  jako doklady; v obraze ikonka u každé vlajky. Druhá strana věci (nízké daně: co pak stát nemá) patří přednostně
+  hned k soudu u země (odrážka „Důvod soudu“ níže); pointa ji smí shrnout jednou větou, opakovat ji nemusí.
+  V kole, které měří přímo nastavení státu (daně), se region řadí podle měřené veličiny sám a zvláštní osa se
+  nehledá: pointa tu říká, co nastavení s výplatou dělá a co ne.
   **Pointa vždy končí výplatou** (Ondřej 6. 11. 2026: „myslel jsem si, že to bude aspoň v závěru, ale ani tam to
   nezaznělo“): poslední věta pravidla řekne, co vzorec dělá s výplatou („výplaty mají z čeho růst tam, kde lidé
   přejdou k práci, za kterou svět zaplatí víc“). Pravidlo bez výplaty je popis vzorce, ne pointa. V prvním
   regionu epizody celá, v dalších jedna věta s novým dokladem z regionu.
-Pointa nesmí tvrdit víc než doklady: řetězec příčin, který žádná instituce netvrdí, se nespojuje do jedné věty
-(„nízké daně, proto slabé školy“), a kde test napříč ligou nic nenašel (objem investic), řekne se jen to, co doklady
-zemí nesou (kam peníze šly).
+Pointa nesmí tvrdit víc než doklady, ale **druhou stranu věci kvůli tomu nevypouští** (oprava 6. 11. 2026 v noci:
+dřívější znění tu jako zakázaný příklad uvádělo „nízké daně, proto slabé školy“ a spolu s nezávislou kontrolou faktů
+tak ze scénáře vymazalo právě to, co chtěl Ondřej slyšet). Rozlišuj tři věci:
+- **dvě strany téže mince** (počty, ne příčina): co stát nevybere, nemůže utratit za školy a nemocnice; co vybere
+  z výplat, nemusí vybírat v cenách. Smí zaznít vždy, když je každá strana doložená vlastním číslem (číslo patří do
+  zámku faktů a řádku VIZUÁL; v hlase stačí jedno, nebo žádné, když je obraz jasný);
+- **doložený článek** (změřila ho nebo výslovně posoudila instituce): „slabé dovednosti brzdí výkon“. Zazní se silou
+  slov podle dokladu;
+- **nedoložený skok** („nízké daně způsobily slabé školy“, když jiná země ligy vybírá ještě méně a školy má lepší):
+  neříká se jako příčina. Věty se postaví vedle sebe („a právě tam Bulharsko ztrácí“) nebo je spojí slovo, které
+  měření netvrdí („má na to méně“).
+Nález kontroly „tenhle řetězec nikdo netvrdí“ proto znamená **oslabit spojku, ne škrtnout druhou stranu**. Kde test
+napříč ligou nic nenašel (objem investic), řekne se jen to, co doklady zemí nesou (kam peníze šly).
 
 Pro každé kolo a zemi:
 1. **Hodnota a místo v kole** z kostry.
@@ -8226,7 +8252,9 @@ Pro každé kolo a zemi:
    - **Kontrola:** pro každou dvojici sousedů v kole odpověz jednou větou „X je před Y, protože…“. Když věta nejde
      sestavit z textu kola, kolo se neodesílá. **Platí pro každé kolo, i pro druhé a třetí** (Ondřej 5. 11. 2026:
      v kole 1 byly páry vysvětlené, v kolech 2 a 3 zmizely, „to musím všechno říkat“). Věty se zapisují do oddílu
-     „Páry sousedů“ ve faktické verzi (§3 bod 4a), takže je nejde vynechat potichu.
+     „Páry sousedů“ ve faktické verzi (§3 bod 4a), takže je nejde vynechat potichu. Když jsou dvě země skoro
+     stejně (rozdíl uvnitř chyby měření), příčina se nevymýšlí a řekne se „skoro vedle sebe“; brána to počítá
+     jako vysvětlený pár.
    - **Vzor dobře vysvětleného páru (Ondřej 5. 11. 2026: „takhle by to mohlo vypadat… dává to hlavu a patu“):**
      Bulharsko v kole 1 Balkánu: jméno a místo, otázka diváka („jak to, že je tak daleko za Chorvatskem, které
      prošlo válkou?“), stejný start obou zemí, pak odlišná cesta (Chorvatsko prodávalo i na Západ, o bulharské
@@ -8254,15 +8282,53 @@ Pro každé kolo a zemi:
         zaměstnance zaplatí, s poznámkou, jestli se náskok do výplat dostal celý, nebo jen zčásti; místo v pořadí
         až potom; sem patří i pár sousedů (bod 2a). **Chyba 6. 11. 2026:** dopad byl popsaný jen jako „eura do ruky
         ze sta“, a tak se v kolech výkonu tiše vynechával;
-     3. **soud**: dobře / špatně / dobře, ale za jakou cenu, vždy proti realisticky lepší možnosti (ne proti ideálu;
-        paměť „hodnocení kroků podle výchozí pozice“), opřený o instituci (Evropská komise, OECD, MMF), kde to jde;
-        vlastní úsudek pořadu se řekne jako úsudek („podle všeho“, „vyplatilo se to jen napůl“). Neovlivnitelné věci
-        (geologie, vnější šok) se nesoudí jako chyba státu, jen se řekne, že to bylo štěstí nebo smůla.
-     Ve faktické verzi se oba kroky 2 a 3 zapisují do oddílu „## Soudy a dopad na výplatu“ (bod 4c) a Gemini je nesmí
-     vypustit. **Při krácení se škrtá jen popis** (názvy firem bez následku, roky, kulisy), nikdy kudy k výplatě,
-     soud, dopad ani pár sousedů. **Krátká verze** (8–9 minut na region): celý řetěz fakt → kudy k výplatě → dopad →
-     soud dostane hlavní scéna kola (dvojice zemí s největším příběhem, u Balkánu v kole 2 Rumunsko a Bulharsko);
-     ostatní země jednu větu, ve které je fakt i kudy k výplatě. Krátká verze prochází stejnými branami jako dlouhá.
+     3. **soud a hned jeho důvod**: dobře / špatně / napůl, vždy proti realisticky lepší možnosti (ne proti ideálu;
+        paměť „hodnocení kroků podle výchozí pozice“), a ve stejné nebo hned další větě **proč, řečeno důsledkem
+        pro lidi** (odrážka „Důvod soudu“ níže). Soud bez důvodu je nálepka a nepočítá se. Vlastní úsudek pořadu
+        se řekne jako úsudek („vyplatilo se to jen napůl“). Neovlivnitelné věci (geologie, vnější šok) se nesoudí
+        jako chyba státu, jen se řekne, že to bylo štěstí nebo smůla.
+     Ve faktické verzi se kroky 2 a 3 zapisují do oddílu „## Soudy a dopad na výplatu“ (bod 4c) a Gemini je nesmí
+     vypustit. **Při krácení se škrtá jen popis** (názvy firem bez následku, roky, kulisy) **a náhražky důvodu**
+     (jméno úřadu, vlastnost systému, rada vládě; viz níže), nikdy kudy k výplatě, soud s důvodem, dopad ani pár
+     sousedů. **Krátká verze** (cíl 9 minut na region, nejvýš 9,5; §3 bod 6): celý řetěz fakt → kudy k výplatě →
+     dopad → soud s důvodem dostane hlavní scéna kola (země nebo dvojice s největším vlivem kola podle bodu 2,
+     u Balkánu v kole 2 Rumunsko a Bulharsko, v kole 3 Bulharsko); ostatní země **jednu až dvě věty**, ve kterých je
+     fakt, důvod páru, soud i jeho důvod (jedna věta by musela mít víc než dvě vedlejší věty, §3 bod 2). Země se
+     stejným příběhem smějí dostat společný soud jednou větou („obě země zátěž snižují a dělají dobře, protože…“).
+     Krátká verze prochází stejnými branami jako dlouhá.
+   - **Důvod soudu je důsledek pro lidi, ne názor úřadu (Ondřej 6. 11. 2026 v noci: „napsal, že je to dobře napůl,
+     a místo aby řekl proč, začal mluvit o Evropské komisi a OECD… nudné analytické popisy pro panel expertů, ne
+     pro běžného diváka“).** Dřívější znění chtělo soud „opřený o instituci“. Model proto od institucí převzal
+     i jejich otázku (je daňový systém spravedlivý a dobře namíchaný?) a divákova otázka (je to pro lidi a jejich
+     výplatu dobře, a proč?) zůstala bez odpovědi. Platí:
+     - **Měřítkem soudu je ukazatel epizody** (u mezd výplata, dnešní i zítřejší), ne měřítko zdroje (spravedlnost
+       systému, skladba daní, výnos pro rozpočet). Co se na ukazatel převést nedá, do hlasu nepatří.
+     - **Test „a co z toho?“** Za větu se soudem si polož divákovu otázku „a co z toho?“ a odpovídej na ni tak
+       dlouho, až dojdeš k tomu, **co kvůli tomu lidé, firmy nebo stát dělají nebo nemohou** (zůstávají, odcházejí,
+       pracují načerno, nemají na školy, platí u lékaře ze svého) a co to znamená pro výplatu. Tahle odpověď je
+       důvod a patří do hlasu hned za soud. Vzor tvaru od
+       Ondřeje: „dobře, protože firmy nic nevyhání jinam; špatně, protože státu zbývá málo na to, co v zemi drží
+       vzdělané lidi“. Je to vzor tvaru, ne obsahu: každá polovina musí mít v podkladech vlastní doklad.
+     - **Tři náhražky důvodu**, které testem neprojdou, a škrtají se proto jako první (ukázka typu, ne výčet):
+       *autorita* („podle Komise je to špatně namíchané“, „tenhle směr chválí MMF i OECD“), *vlastnost systému*
+       („jediná země Unie, kde člověk s výplatou o dvě třetiny nad průměrem odvede menší díl než člověk s polovinou
+       průměrné mzdy“) a *rada vládě* („Komise radí přidat nezdanitelné minimum a sazbu zvednout“).
+     - **Pravidlo nebo nastavení má vždy dvě strany.** V kolech výkonu je fakt událost (lidé odešli z polí do
+       továren) a jeho popis už sám říká, co se lidem stalo. Daň, regulace nebo dávka je nastavení a podrobnější
+       popis dá jen další parametry (sazby, stropy, minima). Před soudem se proto vždy zeptej na obě strany: **komu
+       to hned přidá** a **kdo a čím to zaplatí jinde nebo později** (co stát nemá, co si lidé platí sami, kdo
+       odchází, kdo pracuje načerno). Do hlasu jde každá strana, která má doklad řečený důsledkem pro lidi. Mají-li
+       ho obě, je soud „napůl“ a obě poloviny zazní hned za sebou: „dobře, protože…, špatně, protože…“. Má-li ho
+       jen jedna, je soud jednostranný („je to špatně, protože…“) a druhá strana se nedomýšlí. Jak druhou stranu
+       říct poctivě, určuje rozlišení mince, doloženého článku a nedoloženého skoku v úvodu §2.3.
+     - **Úřad je doklad, ne věta.** Instituce se v hlase nejmenuje, patří se zdrojem do zámku faktů. **Hranice:**
+       jmenovat ji smíš nejvýš jednou za kolo, a jen když je zprávou právě to, kdo to říká (odhad, kterému by divák
+       jinak nevěřil), nikdy jako důvod soudu. Sílu dokladu dál hlídají slova („zčásti“, „i proto“, „může“), ne
+       jméno úřadu.
+     - **Délku to nezvyšuje:** důvod stojí místo náhražky, ne vedle ní; věta s důsledkem pro lidi je kratší než
+       věta s úřadem, jeho kritériem a jeho radou.
+     - **Odkud důvody brát:** z podkladu pro soud (§1), který sbírá důsledky pro lidi na obou stranách; posudky
+       institucí jsou v něm doklad, ne obsah.
 2b. **Od příkladu k ukazateli (Ondřej 4. 11. 2026: „co to znamená pro ekonomiku, že se tam vyrábějí špatná auta,
    že tam jsou lidi na poli“).** Konkrétní příklad (pravidlo „Co za tím stálo“) nestačí: hned za ním zazní, **jak se
    promítne do měřené veličiny**, nejlépe s jedním číslem nebo poměrem („41 % Rumunů pracovalo na polích, ale
@@ -8275,6 +8341,12 @@ Pro každé kolo a zemi:
    záměny platí jen uvnitř skupiny, která mechanismus sdílí. Když sdílený mechanismus vysvětluje, proč je země
    **před** zeměmi, které ho nemají, musí u ní zaznít aspoň jednou větou (jugoslávský systém u Chorvatska proti
    Bulharsku a Rumunsku). Jinak test záměny vymaže právě tu příčinu, na kterou se divák ptá.
+   **Síla dokladu rozhoduje, co se smí říct; co z toho zazní, rozhoduje divák** (Ondřej 6. 11. 2026 v noci: „pálí
+   čas na věcech, které diváka nezajímají“). Mezi doloženými příčinami podobné váhy má přednost ta, kterou si divák
+   představí a kamarádovi převypráví, ne ta s nejpřesnějším číslem nebo nejváženějším zdrojem. Přesný a dobře
+   doložený údaj, který by divák nepřevyprávěl (jak je systém technicky stavěný, co kdo doporučuje vládě), patří do
+   zámku faktů nebo do řádku VIZUÁL, ne do hlasu. **Hranice:** neplatí pro čísla, na kterých stojí pořadí a dopad na
+   výplatu, a největší důvod země zazní vždy (váha důvodů, bod 2a).
 3a. **Vlastní důvod od ekonomů (Ondřej 1. 11. 2026: „víc pracovat s faktory od ekonomů“).** Každá země dostane
    v kole, kam důvod patří, aspoň jeden **svůj** důvod z rešerše ekonomů (`analyza_regiony_2026_10/ekonomove/{ISO}.md`,
    deset důvodů seřazených podle vlivu): nejvýš řazený důvod, který vysvětluje dané kolo. Sdílený mechanismus
@@ -8444,16 +8516,23 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    skillu): showcase jen sportovní očekávání; otevření každého kola jedna věta; páry sousedů ve všech kolech;
    největší důvod země řečený jako největší; co divák nemusí znát, vysvětleno při první zmínce (stát, blok, válka,
    režim, čí je firma); žádný holý pojem (`kontrola_srozumitelnosti.py --divak`); u cizích firem, co z hodnoty
-   zůstává v zemi; u každé země v každém kole dopad na výplatu a soud (bod 4c); pointa po průběžném pořadí s osou kola; cíl s vedlejšími faktory
+   zůstává v zemi; u každé země v každém kole dopad na výplatu a soud, který má hned za sebou důvod řečený důsledkem
+   pro lidi (bod 4c a odrážka „Důvod soudu“ v §2.3); instituce v hlase nejvýš jednou za kolo a nikdy jako důvod soudu;
+   pointa po průběžném pořadí s osou kola; cíl s vedlejšími faktory
    jménem kategorie a ikonou (§2.6); tučně jen klíčová fakta (nejvýš asi 40 % slov); oprava detailu z Ondřejovy
-   připomínky nepřidala do hlasu nové téma (bod 3a); délka. Kdo pravidlo
+   připomínky nepřidala do hlasu nové téma (bod 3a); délka nejvýš 9,5 minuty (bod 6). Kdo pravidlo
    ruší, smaže ve skillu i to staré, které mu odporuje.
 4c. **Soudy a dopad na výplatu** na konci souboru (před párem sousedů): pro každé kolo řádek **Kolo N:** a pod ním
-   u každé země regionu jedna odrážka `- Země — kudy: … — dopad: … — soud: … — v textu: „doslovný úryvek“`
-   (kudy = proč fakt mění, kolik člověk vytvoří nebo kolik mu zůstane, bod 2a krok 1a) a na konci kola odrážka
-   `- Pointa — výplata: … — v textu: „doslovný úryvek“`, jejíž úryvek mluví o výplatě nebo mzdě. Úryvek musí doslova
-   stát v mluveném textu kola, takže brána `scripts/kontrola_paru_sousedu.py` pozná, že soud opravdu zazní (Ondřej
-   6. 11. 2026: dřív kontrolní list hlásil „ano“, i když soud v textu nebyl).
+   u každé země regionu jedna odrážka
+   `- Země — kudy: … — dopad: … — soud: … — proč: „doslovný úryvek důvodu“ — v textu: „doslovný úryvek soudu“`
+   (kudy = proč fakt mění, kolik člověk vytvoří nebo kolik mu zůstane, bod 2a krok 1a; proč = důvod soudu jako
+   důsledek pro lidi, u soudu „napůl“ obě poloviny, odrážka „Důvod soudu“ v §2.3) a na konci kola odrážka
+   `- Pointa — výplata: … — v textu: „doslovný úryvek“`, jejíž úryvek mluví o výplatě nebo mzdě. Oba úryvky musí
+   doslova stát v mluveném textu kola a úryvek důvodu nesmí jmenovat instituci, takže brána
+   `scripts/kontrola_paru_sousedu.py` pozná, že soud i důvod opravdu zazní (Ondřej 6. 11. 2026: dřív kontrolní list
+   hlásil „ano“, i když soud v textu nebyl; večer téhož dne prošel soud „dobře je to jen napůl“ bez důvodu, protože
+   brána hlídala jen tahle slova). Oddíl je zároveň **přehled pro Ondřeje**: u každé země vidí vedle sebe soud a jeho
+   důvod a během minuty pozná, jestli jsou důvody lidské.
 5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
 6. **Délka se počítá na zemi, ne na region:** rozpočet = **250 slov × počet zemí + 300 slov** na rámec regionu
    (úvodní věta showcase, definice, průběžná pořadí, předávka). Region se třemi zeměmi má tedy asi 1 050 slov
@@ -8461,8 +8540,18 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    Rozpočet napiš do hlavičky souboru i s výpočtem. Ondřej ho smí změnit, Claude ne: **bohatší vysvětlení se
    nezískává přidáním slov, ale méně příčinami** (oddíl Nejvyšší priorita). (Poučení 2. 11. 2026: Jih se třemi
    zeměmi dostal 1 500 slov a byl delší než Balkán s pěti; Ondřej to správně označil za nesmysl.)
-   **Vyváženost:** orientační podíl rozpočtu je showcase asi 10 %, kolo 1 asi 15 %, kolo 2 asi 30 %, kolo 3 asi 10 %,
-   finále asi 35 %. **Na čem šetřit (Ondřej 5. 11. 2026):** na showcase (jen sportovní očekávání) a na otevření kol
+   **Strop času (Ondřej 6. 11. 2026 v noci: „potřebuju, aby to zůstalo maximálně 9,5 minuty, spíš po 9 minutách
+   jeden region“):** verze, která jde do hlasu, má **cíl 9 minut a nejvýš 9,5 minuty na region**, při změřeném tempu
+   hlasu 150 slov za minutu tedy cíl 1 350 a nejvýš 1 425 slov. Vzorec podle počtu zemí platí dál tam, kde vyjde méně
+   (tři země 1 050 slov). Vyšší rozpočty z dřívějška (Balkán 1 550 a 1 800 slov) tím končí. Strop hlídá brána
+   `kontrola_paru_sousedu.py`: spočítá slova mluveného textu po částech a nad stropem neprojde. Nový povinný prvek se
+   proto do textu nedostane přidáním slov: nejdřív ustoupí náhražky důvodu (§2.3, odrážka „Důvod soudu“), pak kulisy,
+   a teprve když ani to nestačí, méně důležitá příčina. (Poučení 6. 11. 2026: po doplnění soudů mělo kolo 3 Balkánu
+   660 slov místo 280 a nic to nezastavilo.)
+   **Vyváženost:** ve verzi do 9,5 minuty (vzor: krátká verze Balkánu z 6. 11. 2026) je orientační podíl showcase
+   asi 5 %, kolo 1 asi 25 %, kolo 2 asi 30 %, kolo 3 asi 20 %, finále asi 20 %. Kolo s pěti soudy s důvodem, čtyřmi
+   páry a pointou se pod asi 280 slov nevejde (zkouška 6. 11. 2026); dřívější podíly z dlouhé verze (showcase 10 %,
+   kolo 1 15 %, kolo 2 30 %, kolo 3 10 %, finále 35 %) už neplatí. **Na čem šetřit (Ondřej 5. 11. 2026):** na showcase (jen sportovní očekávání) a na otevření kol
    (jedna věta), nikdy na párech sousedů a příčinách v kolech 2 a 3. Když se vysvětlení párů nevejde, nejdřív se
    krátí detaily příkladů; když ani to nestačí, Claude to řekne Ondřejovi s návrhem rozpočtu, nevynechá pár potichu.
    Žádná část nesmí být holá: každá země dostane v kole 1 jeden
@@ -8478,7 +8567,11 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    Brána nepozná, jestli věta z párů opravdu zazní v hlase; proto ji vždy následuje **nezávislý kontrolor**, který
    text nepsal, s výslovným zadáním: pro každé kolo zvlášť ověř, že každý pár slyší divák v textu kola, a hledej
    kolo, kde výklad upadl do popisu (Ondřej 5. 11. 2026: „není zásadní, že jsi to teď opravil, ale abys to psal
-   automaticky vždy“).
+   automaticky vždy“). **Druhý úkol kontrolora, který stroj neumí (6. 11. 2026 v noci):** dostane jen mluvený text
+   a u každého soudu odpoví jednou větou vlastními slovy, proč je to pro lidi v té zemi dobře nebo špatně. Když
+   odpověď z textu dát nejde, nebo zní „protože to říká úřad“, je to nález. Vypíše také věty, které by divák
+   kamarádovi nepřevyprávěl (kandidáti na škrt). Kontrola faktů se přitom řídí rozlišením v úvodu §2.3: nedoložený
+   skok se opravuje oslabením spojky, ne škrtnutím druhé strany mince.
 
 Soubor se ukládá jako `FAKTICKA_VERZE.md` ve složce regionu a Ondřejovi se posílá přes SendUserFile.
 
@@ -8511,7 +8604,7 @@ pořadí, proč hlavní scéna, odpověď na otázku diváka, proč je země v c
 Postup nezávisí na mzdách. Kola jsou části výsledku daného ukazatele (u bydlení pět kol: výplata, lidé, zděděné byty,
 úroky, výstavba); definice veličiny se řekne u kola, kde je poprvé potřeba; rozklad „co kola nevysvětlí“ se bere
 z analýzy toho ukazatele, a když ho nemá, finále vykládá jen doložené instituce a těsnost pole. Výběr hlavní scény,
-otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez výkladu, štítky a zámek faktů platí beze změny.
+otázka diváka, průběžné pořadí, páry sousedů, soud s důvodem a zámek faktů platí beze změny.
 
 ### 7. Historie
 
@@ -8548,6 +8641,20 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
   fakt → dopad → soud definovalo dopad jako „eura do ruky ze sta“, takže sedělo jen na kolo daní; v kolech výkonu
   se mechanismus (proč vývojové středisko zvedá platy) tiše vynechával a brána ho nehlídala, krátká verze navíc
   branou vůbec neprošla (Ondřej: „proč to tam zas nebylo? Už jsem z toho unavenej“).
+- 6. 11. 2026 (noc): soud má hned za sebou důvod řečený důsledkem pro lidi (§2.3, odrážka „Důvod soudu“, test
+  „a co z toho?“); instituce je doklad v zámku faktů, v hlase nejvýš jednou za kolo; rozlišení mince, doloženého
+  článku a nedoloženého skoku místo zákazu „nízké daně, proto slabé školy“ (úvod §2.3); podklad pro soud sbírá
+  důsledky pro lidi na obou stranách (§1); strop 9,5 minuty hlídaný branou (§3 bod 6); brána chce u každé země
+  doslovný úryvek důvodu a počítá zmínky institucí. Podnět: Ondřej u kola 3 krátké verze Balkánu („napsal, že je
+  to dobře napůl, a místo aby řekl proč, začal mluvit o Evropské komisi a OECD“; „když to už vyřeší, zásadně
+  protáhne skript“). **Proč to skill nedělal:** (1) krok soud byl zapsaný jako „opřený o instituci“, takže model
+  převzal od institucí i jejich měřítko (spravedlnost a skladba daní) místo měřítka epizody (výplata); (2) zadání
+  rešerše pro kolo daní začínalo „Co říkají instituce“ a důsledky pro lidi (výplaty v obálkách, práce načerno,
+  placení u lékaře ze svého) v ní zůstaly jako poznámky; (3) druhá strana nízkých daní stála jen v pointě dlouhé
+  verze, daleko od soudu, a úvod §2.3 ji po kontrole faktů uváděl jako zakázaný řetězec, takže při krácení vypadla
+  celá; (4) brána ověřovala jen to, že v textu stojí slova soudu, ne jeho důvod, a délku nehlídala vůbec; (5) v kolech
+  výkonu je fakt událost a jeho popis sám říká, co se lidem stalo, kdežto daň je nastavení, takže vzor z kol 1 a 2
+  se do kola 3 nepřenesl.
 - 5. 11. 2026: páteř epizody, otevření kola sázkou a pointa po průběžném pořadí (§2.3 úvod), srovnání se sousedem
   u nižší země (§2.3 bod 2a). Podnět: Ondřej („chybí základní vysvětlení, proč má produktivita tak zásadní vliv na plat…
   proč sis sám nešel po tomto patternu“; podobu „lekce na konci kola, ne přednáška na začátku“ navrhl a schválil
@@ -8629,11 +8736,14 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 - **Otevření a pointa kola zůstávají na svém místě** (Ondřej 5. 11. 2026): první věta kola řekne, co kolo měří, pointa
   (co z kola plyne pro výplatu) přijde až po průběžném pořadí. Nepřesouvej pointu na začátek, nedělej z ní přednášku
   a nespojuj její věty do silnější příčiny („proto“), než stojí ve faktické verzi.
-- **Soud a dopad na výplatu nevypouštěj** (Ondřej 6. 11. 2026: „příliš mnoho popisu, málo soudů“): u každé země
-  zůstane, co to udělalo s výplatou („zbude X eur ze sta“, o kolik víc či méně než soused) a soud (dobře / špatně /
-  za jakou cenu) s institucí, o kterou se opírá. Soud nezesiluj: když faktická verze říká „podle Komise“, nedělej
-  z toho „všichni ekonomové“; když říká „může odrazovat“, nepiš „odrazuje“. Seznam soudů je v oddílu „Soudy a dopad
-  na výplatu“ na konci faktické verze.
+- **Soud, jeho důvod a dopad na výplatu nevypouštěj** (Ondřej 6. 11. 2026: „příliš mnoho popisu, málo soudů“):
+  u každé země zůstane, co to udělalo s výplatou („zbude X eur ze sta“, o kolik víc či méně než soused), soud (dobře /
+  špatně / napůl) a hned za ním **důvod řečený důsledkem pro lidi**: co kvůli tomu lidé, firmy nebo stát dělají nebo
+  nemohou. U soudu „napůl“ zůstávají obě poloviny („dobře, protože…, špatně, protože…“). **Úřady nepřidávej**
+  (Ondřej 6. 11. 2026: „nudné analytické popisy pro panel expertů“): Evropskou komisi, OECD ani MMF nejmenuj, pokud
+  ve faktické verzi v hlase nejsou, a důvod nikdy nenahrazuj tím, kdo to říká. Soud nezesiluj: když faktická verze
+  říká „může odrazovat“, nepiš „odrazuje“, a z „i proto“ nedělej „proto“. Seznam soudů a jejich důvodů je v oddílu
+  „Soudy a dopad na výplatu“ na konci faktické verze.
 - Místo v samotném kole a **průběžné pořadí** pořád jasně odlišuj.
 - Žádné „my“, „u nás“ o Česku. Žádná metodika (body, výpočet, data, tabulky).
 
@@ -16252,6 +16362,16 @@ Před hledáním příčin se zapíše list ukazatele:
    povolání, situace ze života) se zdrojem a nosností a u každého kroku „co se lidem změnilo, jak to bylo provedeno,
    kudy to doputovalo k ukazateli, doložený účinek“. Do vah ani výpočtů nevstupuje; slouží výkladu (krok 9a)
    a scénáři. Dělá se po výběru kol (krok 7), jen pro faktory, které ve scénáři zazní.
+2b. *(nové 6. 11. 2026, Ondřej)* **Podklad pro soud** u každého faktoru, který je pravidlem nebo krokem státu (daně,
+   regulace, dávky, reforma) a ve scénáři se hodnotí: pro každou zemi soubor `soudy_{faktor}/{kód}.md` podle skillu
+   mapy příběhu (`voiceover-mapa-pribehu-SKILL-v1.0.md`, oddíl 1, „podklad pro soud“). Sbírá **důsledky pro lidi na
+   obou stranách**, každý se zdrojem: komu to hned přidá a kolik; kdo a čím to platí jinde nebo později (co stát
+   kvůli tomu nemá, co si lidé platí sami); jak na to lidé a firmy reagují; protipříklad v lize; výroky institucí
+   jen jako doklad k těmto bodům; návrh soudu jednou větou bez jména instituce. Důvod: výroky ekonomů z bodu 2
+   hodnotí stavbu systému (spravedlnost, skladbu daní, výnos pro rozpočet), kdežto divák se ptá, co to dělá s lidmi
+   a jejich výplatou; bez tohoto podkladu scénář soud jen připíše úřadu (poučení z kola daní Balkánu, 6. 11. 2026:
+   „nudné analytické popisy pro panel expertů“). Do vah ani výpočtů nevstupuje. Dělá se po výběru kol (krok 7),
+   jen pro faktory, které ve scénáři zazní.
 3. **Váha podle ekonomů:** podíl zemí, kde kategorii mezi třemi hlavními příčinami uvádějí **aspoň dvě nezávislé instituce** (příloha Komise je jedna rodina zdrojů; MMF; OECD; centrální banka; národní ústav). Body za pořadí se nepoužívají. Druhý agent naslepo vytáhne výroky aspoň u pěti zemí a zapíše se shoda. Váha se uvádí s rozpětím z bootstrapu přes země. Pozor na šablony: přílohy Komise mají pro všechny členy stejnou strukturu, takže kategorie, na kterou se šablona ptá, se objeví všude.
 4. **Srovnávací studie** pro Evropu a síly účinků se způsobem měření (`studie/`).
 5. **Tabulka kandidátů:** mechanismus, směr, horizont, riziko obráceného směru, překryv, aritmetika, štítek páky, váha podle ekonomů. Kandidát s váhou aspoň třetiny zemí (nebo dvě instituce v aspoň pěti zemích) se nesmí vyřadit bez rozboru podle kroku 5.
