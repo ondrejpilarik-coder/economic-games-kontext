@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 06. 11. 2026 21:14 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `56afbbee`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 06. 11. 2026 21:23 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `56afbbee`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8320,7 +8320,12 @@ Pro každé kolo a zemi:
        odchází, kdo pracuje načerno). Do hlasu jde každá strana, která má doklad řečený důsledkem pro lidi. Mají-li
        ho obě, je soud „napůl“ a obě poloviny zazní hned za sebou: „dobře, protože…, špatně, protože…“. Má-li ho
        jen jedna, je soud jednostranný („je to špatně, protože…“) a druhá strana se nedomýšlí. Jak druhou stranu
-       říct poctivě, určuje rozlišení mince, doloženého článku a nedoloženého skoku v úvodu §2.3.
+       říct poctivě, určuje rozlišení mince, doloženého článku a nedoloženého skoku v úvodu §2.3. Když druhá
+       strana platí pro celý region stejně (sever: stát si víc bere v cenách v obchodě), zazní jednou v pointě,
+       ne u každé země (test záměny). Kde pořadí v kole vzniká vlastností měření (co se počítá do odvodů: finské
+       povinné důchodové pojištění ano, dánské penze ze smluv odborů ne), divák slyší jen to, co pro něj platí
+       („Fin platí ze zákona skoro čtvrtinu mzdy na důchod, Dán si spoří přes smlouvy odborů“), a poznámka
+       o měření jde do zámku faktů, ne do hlasu (poučení ze zkoušky na severu, 6. 11. 2026).
      - **Úřad je doklad, ne věta.** Instituce se v hlase nejmenuje, patří se zdrojem do zámku faktů. **Hranice:**
        jmenovat ji smíš nejvýš jednou za kolo, a jen když je zprávou právě to, kdo to říká (odhad, kterému by divák
        jinak nevěřil), nikdy jako důvod soudu. Sílu dokladu dál hlídají slova („zčásti“, „i proto“, „může“), ne
