@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 05. 11. 2026 22:51 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `4e85703a`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 06. 11. 2026 14:40 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `9180b8d5`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8235,9 +8235,19 @@ Pro každé kolo a zemi:
    - **Domácí podíl na hodnotě u zahraničních firem:** když je příkladem cizí firma (Dacia, Revoz), řekni, co
      z hodnoty vzniká v zemi, pokud je to doložené (vývojové centrum, zkušebna, centrála pro region), nebo že vývoj
      a zisk jsou jinde. Bez toho divák nepozná, proč montovna zvedá výkon méně nebo víc.
-   - **Kolo daní se vykládá stejně jako ostatní kola:** u každé země nejen číslo, ale i **proč** je zátěž taková (jak
-     je systém stavěný: rovná daň, strop odvodů, vysoké odvody zaměstnance, nejvyšší sazba) a u pointy druhá strana
-     věci. Číslo bez příčiny je popis, ne výklad.
+   - **Fakt → dopad na výplatu → soud, u každé země v každém kole (Ondřej 5.–6. 11. 2026: „příliš mnoho popisu,
+     málo soudů… divák si řekne: no super, ale co to znamená pro ty mzdy?“).** Nahrazuje dřívější „v kole daní proč je
+     zátěž taková“, které vedlo jen k podrobnějšímu popisu. Každá země v každém kole má tři kroky:
+     1. **fakt** krátce (co země má nebo udělala; jak je systém stavěný jen tolik, kolik soud potřebuje);
+     2. **dopad na výplatu** v číslech, kterým divák rozumí (eura do ruky ze sta, o kolik víc či méně než soused,
+        místo v pořadí); sem patří i pár sousedů (bod 2a);
+     3. **soud**: dobře / špatně / dobře, ale za jakou cenu, vždy proti realisticky lepší možnosti (ne proti ideálu;
+        paměť „hodnocení kroků podle výchozí pozice“), opřený o instituci (Evropská komise, OECD, MMF), kde to jde;
+        vlastní úsudek pořadu se řekne jako úsudek („podle všeho“, „vyplatilo se to jen napůl“). Neovlivnitelné věci
+        (geologie, vnější šok) se nesoudí jako chyba státu, jen se řekne, že to bylo štěstí nebo smůla.
+     Ve faktické verzi se oba kroky 2 a 3 zapisují do oddílu „## Soudy a dopad na výplatu“ (bod 4c) a Gemini je nesmí
+     vypustit. **Při krácení se škrtá jen popis** (názvy firem bez následku, roky, kulisy), nikdy soud, dopad ani pár
+     sousedů.
 2b. **Od příkladu k ukazateli (Ondřej 4. 11. 2026: „co to znamená pro ekonomiku, že se tam vyrábějí špatná auta,
    že tam jsou lidi na poli“).** Konkrétní příklad (pravidlo „Co za tím stálo“) nestačí: hned za ním zazní, **jak se
    promítne do měřené veličiny**, nejlépe s jedním číslem nebo poměrem („41 % Rumunů pracovalo na polích, ale
@@ -8419,10 +8429,14 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    skillu): showcase jen sportovní očekávání; otevření každého kola jedna věta; páry sousedů ve všech kolech;
    největší důvod země řečený jako největší; co divák nemusí znát, vysvětleno při první zmínce (stát, blok, válka,
    režim, čí je firma); žádný holý pojem (`kontrola_srozumitelnosti.py --divak`); u cizích firem, co z hodnoty
-   zůstává v zemi; v kole daní proč je zátěž taková; pointa po průběžném pořadí s osou kola; cíl s vedlejšími faktory
+   zůstává v zemi; u každé země v každém kole dopad na výplatu a soud (bod 4c); pointa po průběžném pořadí s osou kola; cíl s vedlejšími faktory
    jménem kategorie a ikonou (§2.6); tučně jen klíčová fakta (nejvýš asi 40 % slov); oprava detailu z Ondřejovy
    připomínky nepřidala do hlasu nové téma (bod 3a); délka. Kdo pravidlo
    ruší, smaže ve skillu i to staré, které mu odporuje.
+4c. **Soudy a dopad na výplatu** na konci souboru (před párem sousedů): pro každé kolo řádek **Kolo N:** a pod ním
+   u každé země regionu jedna odrážka `- Země — dopad: … — soud: … — v textu: „doslovný úryvek“`. Úryvek musí doslova
+   stát v mluveném textu kola, takže brána `scripts/kontrola_paru_sousedu.py` pozná, že soud opravdu zazní (Ondřej
+   6. 11. 2026: dřív kontrolní list hlásil „ano“, i když soud v textu nebyl).
 5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
 6. **Délka se počítá na zemi, ne na region:** rozpočet = **250 slov × počet zemí + 300 slov** na rámec regionu
    (úvodní věta showcase, definice, průběžná pořadí, předávka). Region se třemi zeměmi má tedy asi 1 050 slov
@@ -8593,6 +8607,11 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 - **Otevření a pointa kola zůstávají na svém místě** (Ondřej 5. 11. 2026): první věta kola řekne, co kolo měří, pointa
   (co z kola plyne pro výplatu) přijde až po průběžném pořadí. Nepřesouvej pointu na začátek, nedělej z ní přednášku
   a nespojuj její věty do silnější příčiny („proto“), než stojí ve faktické verzi.
+- **Soud a dopad na výplatu nevypouštěj** (Ondřej 6. 11. 2026: „příliš mnoho popisu, málo soudů“): u každé země
+  zůstane, co to udělalo s výplatou („zbude X eur ze sta“, o kolik víc či méně než soused) a soud (dobře / špatně /
+  za jakou cenu) s institucí, o kterou se opírá. Soud nezesiluj: když faktická verze říká „podle Komise“, nedělej
+  z toho „všichni ekonomové“; když říká „může odrazovat“, nepiš „odrazuje“. Seznam soudů je v oddílu „Soudy a dopad
+  na výplatu“ na konci faktické verze.
 - Místo v samotném kole a **průběžné pořadí** pořád jasně odlišuj.
 - Žádné „my“, „u nás“ o Česku. Žádná metodika (body, výpočet, data, tabulky).
 
