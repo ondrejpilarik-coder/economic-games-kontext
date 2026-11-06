@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 06. 11. 2026 14:41 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `b2e1be5b`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 06. 11. 2026 18:08 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `1a9879ea`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -20,7 +20,7 @@ Aktualizováno 06. 11. 2026 14:41 automaticky ze soukromého repozitáře projek
 
 # Poslední scénář – Západní Evropa
 
-*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 03. 11. 2026 21:53.*
+*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 06. 11. 2026 14:57.*
 
 
 ## Předstartovní showcase
@@ -8192,7 +8192,10 @@ obecná lekce z analýzy (síla kol, rozklad výsledku) a z rešerše, nezávisl
   žádná lekce (Ondřej 5. 11. 2026 zrušil sázku ze stejného dne jako výplň; osa i lekce zazní v pointě);
 - **země** jako dosud (body níže), každý příklad lekci dokládá, ale nevyslovuje;
 - **pointa po průběžném pořadí:** dvě až tři věty, které z právě viděných zemí vyvodí obecné pravidlo a jmenují je
-  jako doklady, včetně druhé strany věci (nízké daně: co pak stát nemá); v obraze ikonka u každé vlajky. V prvním
+  jako doklady, včetně druhé strany věci (nízké daně: co pak stát nemá); v obraze ikonka u každé vlajky.
+  **Pointa vždy končí výplatou** (Ondřej 6. 11. 2026: „myslel jsem si, že to bude aspoň v závěru, ale ani tam to
+  nezaznělo“): poslední věta pravidla řekne, co vzorec dělá s výplatou („výplaty mají z čeho růst tam, kde lidé
+  přejdou k práci, za kterou svět zaplatí víc“). Pravidlo bez výplaty je popis vzorce, ne pointa. V prvním
   regionu epizody celá, v dalších jedna věta s novým dokladem z regionu.
 Pointa nesmí tvrdit víc než doklady: řetězec příčin, který žádná instituce netvrdí, se nespojuje do jedné věty
 („nízké daně, proto slabé školy“), a kde test napříč ligou nic nenašel (objem investic), řekne se jen to, co doklady
@@ -8237,17 +8240,29 @@ Pro každé kolo a zemi:
      a zisk jsou jinde. Bez toho divák nepozná, proč montovna zvedá výkon méně nebo víc.
    - **Fakt → dopad na výplatu → soud, u každé země v každém kole (Ondřej 5.–6. 11. 2026: „příliš mnoho popisu,
      málo soudů… divák si řekne: no super, ale co to znamená pro ty mzdy?“).** Nahrazuje dřívější „v kole daní proč je
-     zátěž taková“, které vedlo jen k podrobnějšímu popisu. Každá země v každém kole má tři kroky:
+     zátěž taková“, které vedlo jen k podrobnějšímu popisu. Každá země v každém kole má čtyři kroky:
      1. **fakt** krátce (co země má nebo udělala; jak je systém stavěný jen tolik, kolik soud potřebuje);
-     2. **dopad na výplatu** v číslech, kterým divák rozumí (eura do ruky ze sta, o kolik víc či méně než soused,
-        místo v pořadí); sem patří i pár sousedů (bod 2a);
+     1a. **kudy k výplatě** (Ondřej 6. 11. 2026 večer, u Rumunska: „člověk, který se v ekonomii nevyzná, tam nevidí,
+        že vývojové středisko potřebuje vzdělané lidi, kteří vytvoří vyšší přidanou hodnotu, a za to jsou vyšší
+        platy“): jedna až dvě věty, **proč tenhle fakt mění, kolik člověk vytvoří nebo kolik mu z toho zůstane**
+        (z pole do továrny: rolník vytvořil třetinu; vývoj místo montáže: inženýr vytvoří za hodinu víc než dělník,
+        firma mu může víc zaplatit; stavby na dluh: práce přibylo, výkonu ne). Fakt bez tohoto kroku je popis
+        a nepočítá se. Mechanismus musí být doložený (výklad země, instituce) a projít testem nosnosti (slavná
+        firma průměr nevysvětlí, řekni, že je to příklad širšího jevu, a jakého);
+     2. **dopad na výplatu** v číslech, kterým divák rozumí, **v každém kole, ne jen v kole daní**: v kole daní eura
+        do ruky ze sta; v kolech výkonu kolik pracující vytvoří proti sousedovi (dřív a teď) a kolik firma za
+        zaměstnance zaplatí, s poznámkou, jestli se náskok do výplat dostal celý, nebo jen zčásti; místo v pořadí
+        až potom; sem patří i pár sousedů (bod 2a). **Chyba 6. 11. 2026:** dopad byl popsaný jen jako „eura do ruky
+        ze sta“, a tak se v kolech výkonu tiše vynechával;
      3. **soud**: dobře / špatně / dobře, ale za jakou cenu, vždy proti realisticky lepší možnosti (ne proti ideálu;
         paměť „hodnocení kroků podle výchozí pozice“), opřený o instituci (Evropská komise, OECD, MMF), kde to jde;
         vlastní úsudek pořadu se řekne jako úsudek („podle všeho“, „vyplatilo se to jen napůl“). Neovlivnitelné věci
         (geologie, vnější šok) se nesoudí jako chyba státu, jen se řekne, že to bylo štěstí nebo smůla.
      Ve faktické verzi se oba kroky 2 a 3 zapisují do oddílu „## Soudy a dopad na výplatu“ (bod 4c) a Gemini je nesmí
-     vypustit. **Při krácení se škrtá jen popis** (názvy firem bez následku, roky, kulisy), nikdy soud, dopad ani pár
-     sousedů.
+     vypustit. **Při krácení se škrtá jen popis** (názvy firem bez následku, roky, kulisy), nikdy kudy k výplatě,
+     soud, dopad ani pár sousedů. **Krátká verze** (8–9 minut na region): celý řetěz fakt → kudy k výplatě → dopad →
+     soud dostane hlavní scéna kola (dvojice zemí s největším příběhem, u Balkánu v kole 2 Rumunsko a Bulharsko);
+     ostatní země jednu větu, ve které je fakt i kudy k výplatě. Krátká verze prochází stejnými branami jako dlouhá.
 2b. **Od příkladu k ukazateli (Ondřej 4. 11. 2026: „co to znamená pro ekonomiku, že se tam vyrábějí špatná auta,
    že tam jsou lidi na poli“).** Konkrétní příklad (pravidlo „Co za tím stálo“) nestačí: hned za ním zazní, **jak se
    promítne do měřené veličiny**, nejlépe s jedním číslem nebo poměrem („41 % Rumunů pracovalo na polích, ale
@@ -8434,7 +8449,9 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    připomínky nepřidala do hlasu nové téma (bod 3a); délka. Kdo pravidlo
    ruší, smaže ve skillu i to staré, které mu odporuje.
 4c. **Soudy a dopad na výplatu** na konci souboru (před párem sousedů): pro každé kolo řádek **Kolo N:** a pod ním
-   u každé země regionu jedna odrážka `- Země — dopad: … — soud: … — v textu: „doslovný úryvek“`. Úryvek musí doslova
+   u každé země regionu jedna odrážka `- Země — kudy: … — dopad: … — soud: … — v textu: „doslovný úryvek“`
+   (kudy = proč fakt mění, kolik člověk vytvoří nebo kolik mu zůstane, bod 2a krok 1a) a na konci kola odrážka
+   `- Pointa — výplata: … — v textu: „doslovný úryvek“`, jejíž úryvek mluví o výplatě nebo mzdě. Úryvek musí doslova
    stát v mluveném textu kola, takže brána `scripts/kontrola_paru_sousedu.py` pozná, že soud opravdu zazní (Ondřej
    6. 11. 2026: dřív kontrolní list hlásil „ano“, i když soud v textu nebyl).
 5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
@@ -8526,6 +8543,11 @@ otázka diváka, průběžné pořadí, pravidlo dvou míst, malý rozdíl bez v
   z názvu faktoru („délka vnuceného centrálního plánování“) zahodil přívlastek jako zdánlivě zbytečný, zámek faktů
   hlídal čísla a omezující slova, ale ne přívlastky pojmů, a Gemini zkracoval dál. Opraveno v Balkánu (osa kola,
   Řecko, Chorvatsko, Bulharsko, Rumunsko) a ve Skandinávii a Beneluxu („centrálně plánované hospodářství“).
+- 6. 11. 2026 večer: krok „kudy k výplatě“ (§2.3 bod 2a krok 1a), dopad na výplatu i v kolech výkonu, pointa vždy
+  končí výplatou, krátká verze s hlavní scénou kola; brána hlídá pole „kudy“ a odrážku Pointa. Příčina: pravidlo
+  fakt → dopad → soud definovalo dopad jako „eura do ruky ze sta“, takže sedělo jen na kolo daní; v kolech výkonu
+  se mechanismus (proč vývojové středisko zvedá platy) tiše vynechával a brána ho nehlídala, krátká verze navíc
+  branou vůbec neprošla (Ondřej: „proč to tam zas nebylo? Už jsem z toho unavenej“).
 - 5. 11. 2026: páteř epizody, otevření kola sázkou a pointa po průběžném pořadí (§2.3 úvod), srovnání se sousedem
   u nižší země (§2.3 bod 2a). Podnět: Ondřej („chybí základní vysvětlení, proč má produktivita tak zásadní vliv na plat…
   proč sis sám nešel po tomto patternu“; podobu „lekce na konci kola, ne přednáška na začátku“ navrhl a schválil

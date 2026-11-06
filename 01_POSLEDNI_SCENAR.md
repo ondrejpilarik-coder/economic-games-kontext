@@ -1,6 +1,6 @@
 # Poslední scénář – Západní Evropa
 
-*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 03. 11. 2026 21:53.*
+*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 06. 11. 2026 14:57.*
 
 
 ## Předstartovní showcase
