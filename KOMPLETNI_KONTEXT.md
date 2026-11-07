@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 07. 11. 2026 17:43 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `ff7e00be`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 07. 11. 2026 18:46 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `dc422e4c`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8332,8 +8332,19 @@ Pro každé kolo a zemi:
        2. **test:** číslo téhle země proti sousedům v regionu a průměru Unie, se zdrojem;
        3. **nález:** domněnka **platí** (země v čísle vyčnívá) → důvod zazní oznamovacím způsobem s tím číslem nebo
           obrazem; **neplatí** (země se chová jako sousedé nebo opačně) → důvod se neříká a hledá se, co skutečný
-          stav vysvětluje, čímž se změní i soud („může si to dovolit, protože…“); **nezjištěno** → soud jen o tom,
-          co je změřené (kolik zbude), bez důvodu z domněnky;
+          stav vysvětluje, čímž se změní i soud („může si to dovolit, protože…“); **nezjištěno** není výsledek,
+          ale pokyn jít o příčku níž po **žebříku dokladu** (Ondřej 7. 11. 2026 večer, k Estonsku: „vždyť tohleto
+          není zas tak těžký zjistit… proč by se divák na to koukal, když tam pořád je, že něco nejde zjistit“):
+          (a) změřeno v téhle zemi proti sousedům; (b) když první domněnky padnou, vezmou se **obecně známé výklady**
+          ze zpráv o zemi (OECD, MMF, Komise, centrální banka, `ekonomove/{kód}.md`) a otestují se stejně;
+          (c) co změřit nejde, ale ekonomové se na tom shodují, se řekne se silou dokladu („ekonomové se shodují“,
+          „zčásti“), ne vypustí; (d) teprve když chybí i shoda, zůstane soud jen o změřeném a v hlase se o příčině
+          mlčí. **V hlase nikdy nezazní „nejde zjistit“, „čísla neřeknou“, „nevíme“** (brána to hlásí): díra
+          v podkladu je úkol pro rešerši, ne věta pro diváka. **Vnější šok se nesoudí, ale říká:** drahá energie,
+          stagnace hlavního odběratele, sankce nebo propad cen vývozu nejsou chyba státu, jsou to ale příčiny, a divák
+          je slyší jako smůlu („od roku 2022 Estonsko dusí nejdražší energie…“), ne jako mlčení (zkouška Pobaltí:
+          agent energetický šok „nesoudil“, a proto ho ani neřekl, a estonské zpomalení zůstalo „nezjištěno“, ačkoli
+          jeho známé příčiny jsou měřitelné);
        4. **test záměny důvodu:** kdyby se věta se soudem a důvodem dala přilepit k jiné zemi se stejným číslem,
           je to šablona, ne nález; nález má v sobě to, čím se země od sousedů liší.
        Z toho plyne: **tvar soudu je volný** (dobře / špatně / napůl / může si to dovolit / platí jen pro někoho /
@@ -16468,7 +16479,15 @@ Před hledáním příčin se zapíše list ukazatele:
       cena práce pro firmu) a kdo a čím to platí jinde nebo později (stát nemá na školy a nemocnice, lidé si platí
       sami, odcházejí, pracují načerno, firmy se stěhují) — a u každé domněnky **co by bylo vidět, kdyby platila**
       (odchody občanů na tisíc obyvatel, saldo migrace, podíl obálkových mezd, příliv investic, výdaje na školy
-      a zdravotnictví, PISA, zaměstnanost lidí se základním vzděláním).
+      a zdravotnictví, PISA, zaměstnanost lidí se základním vzděláním). **Odkud domněnky brát (doplněno 7. 11. 2026
+      večer po zkoušce Pobaltí):** ze tří zdrojů vždy, ne jen z prvního: (a) z dosavadního scénáře a výkladu země;
+      (b) z rešerše ekonomů (`ekonomove/{kód}.md`) a zpráv o zemi (OECD Economic Survey, MMF článek IV, zpráva Komise
+      o zemi, centrální banka); (c) z **obecně známého výkladu**, který by model dal v běžném rozhovoru (u Estonska:
+      úvěrová bublina před rokem 2008 a vnitřní devalvace, dohánění se zpomaluje, úbytek pracovní síly, subdodávky pro
+      severské firmy, stagnace Finska 2012–2015, sankce po roce 2014, inflace 2022 a tři roky poklesu). Zkouška
+      Pobaltí: agent testoval jen domněnky ze starého scénáře, a když padly, zapsal „nezjištěno“, ačkoli výklad (c)
+      je známý a měřitelný. **„Nezjištěno“ smí stát v podkladu až po otestování všech tří zdrojů**, a i pak se v něm
+      uvede, na čem se ekonomové shodují (síla dokladu „doložený svědky“), aby scénář měl co říct.
    3. **Test každé domněnky:** číslo pro tuhle zemi **proti sousedům v regionu a průměru Unie**, rok, zdroj
       (Eurostat, národní úřad, Eurobarometr, OECD data), a výsledek: **platí** (země v čísle vyčnívá tím směrem),
       **neplatí** (chová se jako sousedé nebo opačně), **nezjištěno** (co by rozhodlo). Výroky institucí sem patří
