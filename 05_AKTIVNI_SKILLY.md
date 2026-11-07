@@ -6301,7 +6301,13 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    a u každého soudu odpoví jednou větou vlastními slovy, proč je to pro lidi v té zemi dobře nebo špatně. Když
    odpověď z textu dát nejde, nebo zní „protože to říká úřad“, je to nález. Vypíše také věty, které by divák
    kamarádovi nepřevyprávěl (kandidáti na škrt). Kontrola faktů se přitom řídí rozlišením v úvodu §2.3: nedoložený
-   skok se opravuje oslabením spojky, ne škrtnutím druhé strany mince.
+   skok se opravuje oslabením spojky, ne škrtnutím druhé strany mince. **Třetí úkol kontrolora (7. 11. 2026):** čte
+   i podklady pro soud a u každého testu se ptá, zda měří správnou věc (ukazatel odpovídá domněnce, srovnání se
+   správnými sousedy a rokem dat, protipříklad v lize), a zda nález v hlase netvrdí víc, než test ukázal (u Balkánu:
+   „odchází nejméně“ platilo jen přes diasporu, úřední roční čísla Bulharska jsou podhodnocená → „odešlo“;
+   „nejvíc v Unii“ platilo pro rok 2023, v roce dat 2024 bylo Bulharsko druhé → „skoro nejvíc“). Brána hlídá jen to,
+   že pole „test“ s číslem existuje a že důvod není v podmiňovacím způsobu; jestli test měří správnou věc, pozná jen
+   kontrolor.
 
 Soubor se ukládá jako `FAKTICKA_VERZE.md` ve složce regionu a Ondřejovi se posílá přes SendUserFile.
 
