@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 07. 11. 2026 21:00 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `2b39b01c`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 07. 11. 2026 23:05 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `ce55b1d2`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8281,7 +8281,15 @@ Pro každé kolo a zemi:
         (z pole do továrny: rolník vytvořil třetinu; vývoj místo montáže: inženýr vytvoří za hodinu víc než dělník,
         firma mu může víc zaplatit; stavby na dluh: práce přibylo, výkonu ne). Fakt bez tohoto kroku je popis
         a nepočítá se. Mechanismus musí být doložený (výklad země, instituce) a projít testem nosnosti (slavná
-        firma průměr nevysvětlí, řekni, že je to příklad širšího jevu, a jakého);
+        firma průměr nevysvětlí, řekni, že je to příklad širšího jevu, a jakého). **Kudy musí být v hlase, ne jen
+        v oddílu Soudů, i v krátké verzi a i u vedlejších zemí, aspoň vedlejší větou** (Ondřej 7. 11. 2026 večer,
+        Lotyšsko v kole 2: „mluví se o velké finanční krizi, a to má takový vliv na produktivitu, nebo spíš jen na
+        mzdy? Chybí mi přímý vztah důvodů k faktoru“): soud s cenou (nezaměstnanost, ztracené roky) bez kudy divák
+        s měřenou veličinou nespojí. Zvlášť u krizí: krize sama snižuje výrobu a bere místa, takže výkon na
+        pracujícího často i zvedne; jako příčina nižšího výkonu se říká to, co krize vzala **na dlouho** (roky bez
+        růstu, investice, odvětví, které se nevrátilo) a co před ní bylo špatně postavené („byt se postaví jednou,
+        kdežto továrna vyrábí každý rok“), ne krize sama. Test diváka: po větě musí umět říct, **jak to mění, kolik
+        jeden pracující vytvoří** (nebo kolik mu zůstane); když ne, kudy chybí;
      2. **dopad na výplatu** v číslech, kterým divák rozumí, **v každém kole, ne jen v kole daní**: v kole daní eura
         do ruky ze sta; v kolech výkonu kolik pracující vytvoří proti sousedovi (dřív a teď) a kolik firma za
         zaměstnance zaplatí, s poznámkou, jestli se náskok do výplat dostal celý, nebo jen zčásti; místo v pořadí
