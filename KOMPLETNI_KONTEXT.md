@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 07. 11. 2026 19:18 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `091f8220`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 07. 11. 2026 20:12 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `f7037b17`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -8565,11 +8565,15 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    jménem kategorie a ikonou (§2.6); tučně jen klíčová fakta (nejvýš asi 40 % slov); oprava detailu z Ondřejovy
    připomínky nepřidala do hlasu nové téma (bod 3a); délka nejvýš 9,5 minuty (bod 6). Kdo pravidlo
    ruší, smaže ve skillu i to staré, které mu odporuje.
-4c. **Soudy a dopad na výplatu** na konci souboru (před párem sousedů): pro každé kolo řádek **Kolo N:** a pod ním
-   u každé země regionu jedna odrážka
-   `- Země — kudy: … — dopad: … — soud: … — proč: „doslovný úryvek důvodu“ — v textu: „doslovný úryvek soudu“`
-   (kudy = proč fakt mění, kolik člověk vytvoří nebo kolik mu zůstane, bod 2a krok 1a; proč = důvod soudu jako
-   důsledek pro lidi, u soudu „napůl“ obě poloviny, odrážka „Důvod soudu“ v §2.3) a na konci kola odrážka
+4c. **Soudy a dopad na výplatu** na konci souboru (před párem sousedů): pro každé kolo řádek **Kolo N:** **a pro
+   finále řádek **Cíl:**** (Ondřej 7. 11. 2026 večer: „všechna kola… nestačí jenom druhý a třetí“) a pod ním u každé
+   země regionu jedna odrážka
+   `- Země — kudy: … — dopad: … — test: … — soud: … — proč: „doslovný úryvek důvodu“ — v textu: „doslovný úryvek soudu“`
+   (kudy = proč fakt mění, kolik člověk vytvoří nebo kolik mu zůstane, bod 2a krok 1a; **test = číslo země proti
+   sousedům z podkladu pro soud**, `soudy_karty/` v kole 1, `soudy_rust/` v kole 2, `soudy_dane/` v kole 3,
+   `soudy_cil/` ve finále, s výsledkem platí / neplatí; brána bez čísla v poli test neprojde; proč = důvod soudu jako
+   důsledek pro lidi, odrážka „Soud je nález z testu“ v §2.3; v kole 1 je soud dědictví, štěstí nebo smůla, ve finále
+   rozdíl proti pořadí po kolech a čím to je) a na konci kola odrážka
    `- Pointa — výplata: … — v textu: „doslovný úryvek“`, jejíž úryvek mluví o výplatě nebo mzdě. Oba úryvky musí
    doslova stát v mluveném textu kola a úryvek důvodu nesmí jmenovat instituci, takže brána
    `scripts/kontrola_paru_sousedu.py` pozná, že soud i důvod opravdu zazní (Ondřej 6. 11. 2026: dřív kontrolní list
