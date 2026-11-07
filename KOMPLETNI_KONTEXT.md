@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 07. 11. 2026 20:12 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `f7037b17`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 07. 11. 2026 21:00 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `2b39b01c`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -16467,9 +16467,14 @@ Před hledáním příčin se zapíše list ukazatele:
    kudy to doputovalo k ukazateli, doložený účinek“. Do vah ani výpočtů nevstupuje; slouží výkladu (krok 9a)
    a scénáři. Dělá se po výběru kol (krok 7), jen pro faktory, které ve scénáři zazní.
 2b. *(nové 6. 11. 2026, Ondřej; přestavěno 7. 11. 2026)* **Podklad pro soud = test domněnky proti datům země.**
-   U každého kola **tahu země** (oddíl 0: kolo 2 cesta, kterou země od roku 1996 šla; kolo 3 nastavení daní) a u každého
-   faktoru, který je pravidlem nebo krokem státu (daně, regulace, dávky, reforma) a ve scénáři se hodnotí, pro každou
-   zemi soubor `soudy_{faktor}/{kód}.md` (u růstu výkonu `soudy_rust/`, u daní `soudy_dane/`) v tomto pořadí oddílů.
+   U každého kola a finále (Ondřej 7. 11. 2026 večer: „všechna kola… nestačí jenom druhý a třetí“): kolo 1 rozdané karty
+   `soudy_karty/` (soudí se dědictví, štěstí nebo smůla, a tvrzení o příčinách úrovně 1996 se testují stejně; rozdíl
+   pod prahem „skoro stejně“ se nevysvětluje), kolo 2 `soudy_rust/`, kolo 3 `soudy_dane/`, finále `soudy_cil/` (rozdíl
+   proti pořadí po kolech a čím to je: cenové hladiny po druzích, podíl mezd na výkonu, vyjednávání, dojíždění), a dále
+   u každého faktoru, který je pravidlem nebo krokem státu a ve scénáři se hodnotí; pro každou zemi soubor
+   `soudy_{…}/{kód}.md` v tomto pořadí oddílů. **Pozor u podílu mezd na výkonu (zkouška Pobaltí):** jako důvod ve finále
+   se smí použít až po testu skladby výkonu: Lotyšsko „dává víc“ než Estonsko jen proto, že estonský výkon má větší díl
+   v nájmech z bytů; bez toho je podíl mezd účetní věc, ne důvod (tvrdé pravidlo 4).
    *(Ondřej 7. 11. 2026 odpoledne: „chtěl jsem, abys ověřil celý ten princip i celý ten mechanismus u těch analýz,
    celou tu interpretaci dat… vyzkoušej to u produktivity od roku 96 do roku 2024“: test platí pro každý soud
    a každou příčinu, ne jen pro daně.)* V kole růstu je domněnka obvykle příběh cesty („Litva rostla díky nábytku
