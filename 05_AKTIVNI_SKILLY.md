@@ -6041,7 +6041,12 @@ Pro každé kolo a zemi:
           je to šablona, ne nález; nález má v sobě to, čím se země od sousedů liší.
        Z toho plyne: **tvar soudu je volný** (dobře / špatně / napůl / může si to dovolit / platí jen pro někoho /
        nevadí, protože…); „napůl“ a tvar „dobře, protože…, špatně, protože…“ jen tam, kde test potvrdil obě
-       strany, ne jako rámec pro každou zemi. **Podmiňovací a možnostní způsob je otisk neotestované domněnky:**
+       strany, ne jako rámec pro každou zemi. **Ani stejný obal s různým obsahem** („šla nejlepší / slabší /
+       nejdražší cestou z Pobaltí“ třikrát za sebou) divák nebere jako tři myšlenky (slepé čtení Pobaltí 7. 11.
+       2026); obal soudu se u sousedů střídá (věta, srovnání se sousedem, číslo, otázka) a země se zrcadlovým
+       soudem („obrácená Litva“) dostane vlastní obraz (firma, výrobek, místo), ne jen opačná čísla. Nálezy, které
+       stojí na dělení (výkon na pracujícího vzrostl, protože pracujících ubylo), se řeknou obrazem dělení
+       („stejný výkon dělí méně lidí“), jinak jim divák nevěří. **Podmiňovací a možnostní způsob je otisk neotestované domněnky:**
        „můžou hledat práci jinde“, „hrozí“, „může odrazovat“, „svádí“ nic netvrdí, proto to žádná kontrola nechytí
        a proto to model píše, když test neudělal; brána `scripts/kontrola_paru_sousedu.py` taková slova v poli
        „proč“ hlásí. Obě strany nastavení se vždy **ptají**, **říká se jen to, co test potvrdil**. Když potvrzená
@@ -6414,7 +6419,21 @@ otázka diváka, průběžné pořadí, páry sousedů, soud s důvodem a zámek
   na zdraví, nejvíc v Unii); Chorvatsko: snížení daní 2024 přidá průměrné výplatě jen asi 6 eur měsíčně, čisté
   výplaty rostou díky hrubým mzdám → „správný směr, malý krok“; Řecko: odvody klesly o 5,4 bodu, ale daň z příjmu
   vzala asi 70 % úlevy zpět (pásma bez valorizace), ze sta eur zbývá jen asi o euro víc než 2019 → „napůl“. Všech
-  pět soudů se testem změnilo a žádný nemá tvar „dobře, protože…, špatně, protože…“; kolo zůstalo na 324 slovech.
+  pět soudů se testem změnilo a žádný nemá tvar „dobře, protože…, špatně, protože…“; kolo zůstalo na 322 slovech.
+- 7. 11. 2026 (večer), **zkouška univerzálnosti na Pobaltí, kolo 2 (růst výkonu 1996–2024)**: Ondřej („když to
+  uděláš jenom u daní, kde jsem ti trošku řekl, jak to chci, tak já nepoznám, jestli ten systém je univerzálně dobře
+  nastaven“). Opus dostal jen skilly, analýzu a starý scénář: stáhl přes dvacet sad dat, otestoval jedenáct domněnek
+  u tří zemí, osm vyřadil (Litvu nevytáhly zahraniční investice ani vyšší investice; Estonsko netáhnou Skype, Bolt
+  a Wise; Lotyšsko není za Estonskem kvůli krizi ani odchodu lidí, test záměny s Litvou), jeden nález nahradil
+  domněnku (Lotyšsko dohání Estonsko jen úbytkem pracujících o osminu), jednu příčinu nechal poctivě nezjištěnou
+  (estonské zpomalení po roce 2008) a jednu otázku poslal Ondřejovi (Estonsko před Lotyšskem jen v kupní síle).
+  Nezávislý kontrolor rozdíl obou měření rozložil na příčinu (směnné relace: ceny estonského vývozu proti dovozu +34 %,
+  lotyšské +7,5 %) a chytil dvě věty silnější než test (vazba „nejvíc cizích peněz, a přesto pokles“; nominální
+  výplaty proti reálnému výkonu). Divák 6 z 10. **Co z toho přibylo do skillů:** test i v kolech výkonu (analytický
+  skill krok 2b, §1), jedno měřítko kola a postup při rozporu dvou měření, pásmo chyby ne z rozporu dvou pojetí
+  (analytický skill krok 9a.3), obal soudu se u sousedů neopakuje a nálezy z dělení se říkají obrazem (§2.3);
+  brána umí jedno kolo (`--jen-kolo`), vyžaduje pole „test“ s číslem a odmítá pár bez nalezené příčiny. Zkouška:
+  `POBALTI/ZKOUSKA_KOLO2_2026-11-07/` (KOLO2_POBALTI.md verze 4, soudy_rust, ZPRAVA.md oddíl 9).
 - 5. 11. 2026: páteř epizody, otevření kola sázkou a pointa po průběžném pořadí (§2.3 úvod), srovnání se sousedem
   u nižší země (§2.3 bod 2a). Podnět: Ondřej („chybí základní vysvětlení, proč má produktivita tak zásadní vliv na plat…
   proč sis sám nešel po tomto patternu“; podobu „lekce na konci kola, ne přednáška na začátku“ navrhl a schválil
@@ -14504,7 +14523,21 @@ dává materiál na dlouhou verzi a u každé země označí jádro pro hlavní 
    hodnoty, tedy medián pásma chyby výsledku. U veličin v procentech nebo procentních bodech (změna počtu obyvatel,
    sazba po odečtení inflace) je to rozdíl menší než 0,5 procentního bodu. Výstup kroků 7.4–7.5 ho u každé země proti
    předchozí zemi v regionu označí. U bydlení je tak „skoro stejně“ úroková sazba všech čtyř balkánských zemí
-   a výplata Bulharska a Rumunska.
+   a výplata Bulharska a Rumunska. *(doplněno po zkoušce Pobaltí 7. 11. 2026)* Odhad pásma chyby smí vycházet jen
+   z nejistoty hodnoty samé (revize dat, rozdíl zdrojů téže veličiny), **nikdy z rozporu dvou různých pojetí
+   veličiny** (růst v kupní síle proti růstu ve stálých cenách): takový rozpor není nepřesnost, ale jiná otázka,
+   a jako „pásmo chyby“ by smazal i rozdíly, které se vykládají (zkouška Pobaltí: odhad 28 % z rozporu obou měření
+   neobstál u kontrolora, platí výchozích 5 %).
+   **Jedno měřítko kola, a co dělat, když se dvě měření rozcházejí** *(nové po zkoušce Pobaltí 7. 11. 2026)*:
+   hodnotou kola je měření, kterým se kolo počítá pro celou ligu (u růstu výkonu kupní síla proti středu ligy,
+   `KOLA_TABULKA.md`); do hlasu scénáře jde jen ono a věci, které platí i v kontrolním měření (reálný růst). Zařazení
+   „nad / pod rámec dohánění“ se u země říká jen tam, kde se obě měření shodují; jinak soud o cestě země stojí na
+   jiných otestovaných rysech (vývoz, investice, bublina, propad, úbytek pracujících), ne na zařazení. Když dvě
+   měření seřadí dvojici sousedů opačně a test nenajde jinou příčinu pořadí než přepočet, podklad to zapíše jako
+   nevyřešený pár a otázku pro Ondřeje (mění pořadí v kole, brána eskalace); scénář se bez toho neodesílá. Vlastnost
+   měření sama o sobě se v hlase nevysvětluje (skill mapy příběhu, poučení ze severu), ale rozdíl kupní síly
+   a objemu může být obsah, ne artefakt (co země vytvoří, se v Unii prodává za lepší nebo horší ceny); rozhodne
+   nezávislý kontrolor s výkladem, co rozdíl způsobuje.
    **Test protipříkladem** *(Ondřej 13. 10. 2026 v noci; navazuje na tvrdé pravidlo 4: aritmetika není příčina)*:
    u každého „protože X“ se analytik zeptá, zda by hodnota byla jiná, kdyby X nebylo. Když by byla stejná, X příčinou
    není a do výkladu nepatří; typicky jde o účetní nebo definiční věc (kdo platí odvody, jak se něco počítá, do které
