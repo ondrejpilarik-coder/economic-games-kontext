@@ -1,6 +1,6 @@
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 07. 11. 2026 23:07 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `c7e746a5`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 08. 11. 2026 23:01 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `56be9b97`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
