@@ -11,7 +11,8 @@ Obsah (31 skillů):
 - potencial-index-produktove-svazky-ADDENDUM-v1.0.md
 - european-economy-analysis-v20-capacity-first.md
 - voiceover-skill-v10-live-race.md
-- voiceover-mapa-pribehu-SKILL-v1.0.md
+- voiceover-mapa-pribehu-SKILL-v1.1.md
+- analyza-pricin-regiony-SKILL-v1.5.md
 - gemini-web-ctiva-verze-SKILL-v1.0.md
 - ekonomie-lidskou-reci-ZASADA-v1.0.md
 - voiceover-uvod-SKILL-v1.0.md
@@ -29,7 +30,6 @@ Obsah (31 skillů):
 - voiceover-regiony-SKILL-v1.0.md
 - references/voiceover-regiony-zlaty-vzor-gemini-2026-10-16.md
 - references/voiceover-regiony-zlaty-vzor-stredni-evropa-2026-10-25.md
-- analyza-pricin-regiony-SKILL-v1.4.md
 - voiceover-styl-ondrej-SKILL-v1.0.md
 - references/voiceover-komentar-zlaty-vzor-2026-09-24.md
 - causal-claim-repair-ADDENDUM-v1.0.md
@@ -5768,18 +5768,39 @@ vysvětlení lze přidat podle §4; nevypouštěj význam jen kvůli délce. Zdr
 **Doplnění kroku 1 (23. 9. 2026):** režijní plán obsahuje mapu příčin napříč ligou (§3.7), u každé země nový prvek segmentu (§4) a předem spočítaná pásma kol, pokud se mají použít (§3.6). Slovník kol (§3.6) a kolize názvů kol (§5d) hlídá `scripts/validate_voiceover_five_blocks.py`; směr kol, test záměny, odkazy místo opakování a pravidla §5d ověřuje dramaturgická evaluace a slepé čtení.
 
 
-# Skill: voiceover-mapa-pribehu-SKILL-v1.0.md
+# Skill: voiceover-mapa-pribehu-SKILL-v1.1.md
 
-## Mapa příběhu a faktická verze scénáře regionu (skill pro Claude, v1.0, 31. 10. 2026)
+## Mapa příběhu a faktická verze scénáře regionu (skill pro Claude, v1.1, 9. 11. 2026)
 
 *Stav: **AKTIVNÍ, hlavní postup pro scénáře regionů** (Ondřej 31. 10. 2026: „zapiš postup mapy příběhu, ale obecně…
 co nejkonkrétnější, ale zároveň obecný, aby se to dalo uplatnit na všechny regiony, všechny indikátory“). Vznikl
 z prototypu Jižní Evropy (mzdy, 31. 10. 2026), kde slepý divák poprvé správně pochopil celý příběh regionu.*
 
+**Co se změnilo ve verzi 1.1 (9. 11. 2026).** Ondřej poslal k provedení audit „Proč se z dobrých podkladů ztrácí
+hlavní vysvětlení“: „Má opravit rozhodovací pravidla a sjednotit jejich platné znění… Chceme, aby příště správně
+posoudil i úplně jinou zemi a jiný ukazatel.“ Proto:
+1. příčina se nevyřazuje údajem, který ji nevyvrací (podobnost se sousedem, čistá změna počtu, dnešní podíl);
+   dřívější „test záměny“ a „neplatí, když se země chová jako sousedé“ jsou v postupu regionů zrušené (§2.3);
+2. pořadí a váhu důvodů bere scénář ze záznamu pořadí příčin v analýze, zvlášť pro to, proč je země taková,
+   a pro to, proč je před sousedem nebo za ním (§1, §2.3);
+3. dohánění je kontext, ne růst „sám od sebe“ (§2.3 bod 5);
+4. komentátorské hodnocení je povinné u každé země (co se povedlo nebo nepovedlo, proč a jak to ovlivnilo výsledek);
+   síla soudu se řídí tím, co se hodnotí (výkon, rozhodnutí, „zbytečná chyba“), a doklady (§2.3, §3 bod 4c;
+   doplněk Ondřeje 9. 11. 2026: „mělo by to být takové zhodnocení toho, jestli si ta země vede dobře“);
+5. páteř epizody a osa kola jsou pracovní návrh, příklad ilustruje hlavní důvod země, ne lekci (§2.3);
+6. vyřazené příklady (mimo jiné „byt se postaví jednou, kdežto továrna vyrábí každý rok“) zmizely z pravidel;
+7. kontroly chrání i to, co je hlavní a co doplněk (§3 bod 7, §4 bod 6, §5);
+8. délka se počítá nejdřív pro celou epizodu, strop regionu zůstává (§3 bod 6).
+
+**Co zůstalo:** celý postup mapy příběhu, dělba práce, srozumitelnost a ekonomie lidskou řečí, páry sousedů,
+průběžné pořadí, finále s vedlejšími faktory, brány a strop 9,5 minuty na region. Analytické kroky (testy
+domněnek, pořadí příčin, závěr a soud) mají jedno platné znění v analytickém skillu
+`analyza-pricin-regiony-SKILL-v1.5.md`, krok 2b; tento skill z nich vypráví. Předchozí znění:
+`voiceover-mapa-pribehu-SKILL-v1.0.md` (beze změny); záznam změn a důvodů: `voiceover-mapa-pribehu-HISTORIE.md`.
+
 **Co nahrazuje:** psaní scénářů regionů Argonem přes `scripts/gemini_scenarista.py` (23. 10. 2026) a doplněk
-o jádru země (`voiceover-jadro-zeme-ADDENDUM-2026-10-27.md`). Jeho výběr jader (doklad, test záměny, sdílený
-mechanismus regionu) žije dál v oddílu 2.6. Pravidla slohu, globálního pohledu a srozumitelnosti z CLAUDE.md platí
-dál.
+o jádru země (`voiceover-jadro-zeme-ADDENDUM-2026-10-27.md`). Jeho výběr jader (doklad, sdílený mechanismus
+regionu) žije dál v oddílu 2.3. Pravidla slohu, globálního pohledu a srozumitelnosti z CLAUDE.md platí dál.
 
 ### Nejvyšší priorita: ekonomie lidskou řečí (Ondřej 1. a 2. 11. 2026, opakovaně)
 > Zásada celé série je samostatně v `05_epizode_packs/_skills/ekonomie-lidskou-reci-ZASADA-v1.0.md` (tři body: nejdřív věc, pak číslo; každý krok jako příběh;
@@ -5798,12 +5819,17 @@ vyjednává a celou tu dobu výplata stojí, zatímco ceny v obchodě rostou.“
   skladba ekonomiky, přidaná hodnota, dynamika podnikání). Smí zaznít jen s obrazem v téže větě.
 - **Zábavnost:** konkrétní srovnání a překvapení (Ital a Němec ve dvaceti berou stejně, za deset let má Němec
   dvojnásobek) mají přednost před výčtem. Gemini dodá tón, ale obraz musí dodat faktická verze.
-- **Soud vždy s důvodem, důvod je důsledek pro lidi a je otestovaný na téhle zemi** (Ondřej 6. a 7. 11. 2026):
-  za soudem hned zazní, co kvůli tomu lidé, firmy nebo stát dělají nebo nemohou, až k výplatě, a říká se jen to, co
-  data země potvrdila (Slovinci při nejvyšších daních regionu odcházejí nejméně → „může si to dovolit“, ne „špatně,
-  protože můžou odejít“). Jméno úřadu, vlastnost systému, rada vládě ani učebnicový mechanismus bez testu důvod
-  nejsou; tvar soudu je volný, „dobře, protože…, špatně, protože…“ u každé země je šablona (podrobně §2.3, odrážky
-  „Důvod soudu“ a „Soud je nález z testu“).
+- **Každá země dostane komentátorské hodnocení; důvod je důsledek pro lidi a je otestovaný na téhle zemi**
+  (Ondřej 6. a 7. 11. 2026; 9. 11. 2026: „mělo by to být takové zhodnocení toho, jestli si ta země vede dobře“):
+  u každé země zazní, co se jí povedlo nebo nepovedlo, proč je to důležité a jak to ovlivnilo výsledek, s hlavním
+  důvodem na prvním místě, a hned za tím, co kvůli tomu lidé, firmy nebo stát dělají nebo nemohou, až k ukazateli
+  epizody (u mezd k výplatě). Říká se jen to, co test v analýze podpořil (Slovinci při nejvyšších daních regionu
+  odcházejí nejméně → „může si to dovolit“, ne „špatně, protože můžou odejít“). Síla soudu se řídí tím, co se
+  hodnotí: výkon země jde hodnotit vždy, konkrétní rozhodnutí s doloženým účinkem, „zbytečnou chybu“ jen s tehdy
+  dostupnou lepší možností (analytický skill krok 2b bod 6). Opatrnost nesmí vést k pouhému popisu. Jméno úřadu,
+  vlastnost systému, rada vládě ani učebnicový mechanismus bez testu důvod nejsou; tvar je volný, „dobře, protože…,
+  špatně, protože…“ u každé země je šablona (podrobně §2.3, odrážky „Důvod soudu“ a „Závěr i soud jsou nález
+  z testu“).
 - Toto pravidlo má přednost před stručností: radši méně příčin vysvětlených pořádně než víc příčin heslovitě.
   Stručnost ale hlídá strop času (§3 bod 6): pořádné vysvětlení se platí méně příčinami, ne delším textem.
 
@@ -5834,6 +5860,9 @@ Test představy hlídá mechanismy, ale propouštěl **holé stavy** („Itálie
    řečí). Když chybí nebo nemá dané kolo, Claude je při psaní mapy příběhu **dohledá sám** (několik vyhledávání, zdroj ke každému), zapíše je
    do řádku VIZUÁL a zdroje na konec faktické verze. Bez zdroje se příklad nepoužije.
 5. **Délka:** příklady se vejdou do rozpočtu země tak, že se jiná příčina přesune do volitelných částí.
+6. **Příklad k hlavnímu důvodu (9. 11. 2026):** příklad se vybírá podle hlavního důvodu země ze záznamu pořadí příčin
+   v analýze (analytický skill krok 2b bod 4), ne podle lekce kola ani podle toho, který příklad je nejbarvitější.
+   Slavný příklad vedlejšího důvodu nesmí v textu přerůst hlavní důvod.
 
 ### 0. Dělba práce
 
@@ -5858,17 +5887,18 @@ Pro každý ukazatel a region:
   (důvody od největšího vlivu, síla dokladu);
 - **co kola nevysvětlí** (rozdíl mezi výsledkem a pořadím po kolech) a jeho rozklad, pokud ho analýza má (u mezd:
   podíl mezd na výkonu, podíl zaměstnanců, hodiny), a **typická odchylka** výpočtu;
-- **podklad pro soud** u každého kola tahu země (kolo 2: cesta od roku 1996; kolo 3: daně) a všude, kde se hodnotí
-  pravidlo nebo krok státu: soubor na zemi (`soudy_rust/{kód}.md`, `soudy_dane/{kód}.md`) se stavbou podle analytického skillu
-  (`analyza-pricin-regiony-SKILL-v1.4.md`, krok 2b): (1) fakt; (2) **domněnky na obou stranách** (komu to hned
-  přidá; kdo a čím to platí jinde nebo později) a u každé, **co by bylo vidět, kdyby platila**; (3) **test** každé
-  domněnky číslem téhle země proti sousedům a průměru Unie, se zdrojem, s výsledkem platí / neplatí / nezjištěno;
-  (4) **nález**, a když domněnka neplatí, co skutečný stav země vysvětluje; protipříklad v lize; (5) věta soudu
-  **bez jména instituce**, oznamovacím způsobem, s číslem z testu. Výroky institucí jsou v něm jen jeden z dokladů
-  v bodě 3. Podklad, který má jen výroky institucí, dá scénáři posudky úřadů (6. 11. 2026); podklad, který má
-  domněnky bez testu, dá scénáři šablonu „dobře, protože…, špatně, protože…“ s důvody, které pro tuhle zemi
-  nemusí platit (7. 11. 2026, Slovinsko). Když test chybí, Claude ho před psaním udělá stejně jako rešerši
-  lidských příkladů; nedosazuje.
+- **podklad pro výklad a soud** u každého kola a finále: soubor na zemi (`soudy_karty/`, `soudy_rust/`,
+  `soudy_dane/`, `soudy_cil/` a v nich `{kód}.md`) podle analytického skillu (`analyza-pricin-regiony-SKILL-v1.5.md`,
+  krok 2b, jediné platné znění postupu): (1) otázka a fakt; (2) domněnky ze tří zdrojů a u každé, **co by bylo
+  vidět, kdyby platila**; (3) **test** číslem země proti sousedům a průměru Unie s výsledkem podporuje / odporuje /
+  nerozlišuje; (4) **pořadí příčin** (hlavní, vedlejší, nerozlišená část s dokladem velikosti) zvlášť pro vlastní
+  hodnotu země a pro rozdíl proti sousedovi; (5) nález; (6) hodnoticí závěr (komentátorský soud) bez jména
+  instituce, se silou podle předmětu a dokladů; NEŘÍKEJ. Podklad, který má jen výroky institucí, dá scénáři posudky úřadů (6. 11. 2026); podklad s domněnkami
+  bez testu dá šablonu „dobře, protože…, špatně, protože…“ s důvody, které pro tuhle zemi nemusí platit (7. 11.
+  2026); podklad bez pořadí příčin dá správné důvody se špatnou vahou (9. 11. 2026). Když některá část chybí
+  (hlavně pořadí příčin), Claude ji před psaním doplní podle analytického skillu stejně jako rešerši lidských
+  příkladů; nedosazuje z dojmu. Podklad ze starší verze skillu (s výsledky „platí / neplatí“) se před použitím
+  přetestuje podle kroku 2b a jeho NEŘÍKEJ se do té doby nepoužívá (analytický skill krok 10.6).
 
 U mezd (epizoda 1) je dává `scripts/kostra_mapy_pribehu.py`. U jiného ukazatele se kostra postaví ze stejných
 druhů údajů jeho analýzy; když některý chybí, zapíše se to do mapy a nevymýšlí se.
@@ -5906,20 +5936,23 @@ splnění, štítek a chybějící podklady. **Z kostry se neodchyluj;** úsudek
 já tam vidím jenom popis situace“; podobu schválil týž den).** Před psaním regionů vznikne pro ukazatel **páteř
 epizody** (vzor: `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/PATER_EPIZODY.md`): jedna myšlenka celé
 epizody (u mezd cesta výplaty: co pracující vytvoří → kolik dostane → kolik vezme stát → co si koupí) a pro každé kolo
-obecná lekce z analýzy (síla kol, rozklad výsledku) a z rešerše, nezávisle zkontrolovaná. V kole se pak lekce
-**nikdy neříká jako přednáška na začátku**:
+obecná lekce z analýzy (síla kol, rozklad výsledku) a z rešerše, nezávisle zkontrolovaná. **Páteř je pracovní
+návrh:** po srovnání zemí regionu se smí změnit; země, která lekci neodpovídá, je výjimka, kterou kolo vysvětlí,
+a výjimka smí změnit i pointu. Lekce neurčuje, jaké příčiny země dostane; ty určuje analýza (analytický skill krok
+2b). V kole se lekce **nikdy neříká jako přednáška na začátku**:
 - **otevření: jedna věta, co kolo měří** (v prvním regionu „První kolo rozdává karty podle toho, kolik hodnoty
   vytvořil jeden pracující v roce 1996.“, v dalších ještě kratší připomínka). Nic víc: žádná sázka, žádná osa,
   žádná lekce (Ondřej 5. 11. 2026 zrušil sázku ze stejného dne jako výplň; osa i lekce zazní v pointě);
-- **země** jako dosud (body níže), každý příklad lekci dokládá, ale nevyslovuje;
+- **země** jako dosud (body níže); příklad u země ilustruje její hlavní důvod z analýzy, ne lekci, a lekce se
+  u země nevyslovuje;
 - **pointa po průběžném pořadí:** dvě až tři věty, které z právě viděných zemí vyvodí obecné pravidlo a jmenují je
   jako doklady; v obraze ikonka u každé vlajky. Druhá strana věci (nízké daně: co pak stát nemá) patří přednostně
   hned k soudu u země (odrážka „Důvod soudu“ níže); pointa ji smí shrnout jednou větou, opakovat ji nemusí.
   V kole, které měří přímo nastavení státu (daně), se region řadí podle měřené veličiny sám a zvláštní osa se
   nehledá: pointa tu říká, co nastavení s výplatou dělá a co ne.
   **Pointa vždy končí výplatou** (Ondřej 6. 11. 2026: „myslel jsem si, že to bude aspoň v závěru, ale ani tam to
-  nezaznělo“): poslední věta pravidla řekne, co vzorec dělá s výplatou („výplaty mají z čeho růst tam, kde lidé
-  přejdou k práci, za kterou svět zaplatí víc“). Pravidlo bez výplaty je popis vzorce, ne pointa. V prvním
+  nezaznělo“): poslední věta pravidla řekne, co vzorec dělá s výplatou (tvar: „…a proto má z čeho růst
+  i výplata“; obsah určuje analýza). Pravidlo bez výplaty je popis vzorce, ne pointa. V prvním
   regionu epizody celá, v dalších jedna věta s novým dokladem z regionu.
 Pointa nesmí tvrdit víc než doklady, ale **druhou stranu věci kvůli tomu nevypouští** (oprava 6. 11. 2026 v noci:
 dřívější znění tu jako zakázaný příklad uvádělo „nízké daně, proto slabé školy“ a spolu s nezávislou kontrolou faktů
@@ -5945,8 +5978,9 @@ Pro každé kolo a zemi:
    - **Osa kola:** před psaním zemí najdi jednu až dvě věci, podle kterých se region v kole seřadil (u Balkánu
      v kole 1: jak tvrdě vládlo centrální plánování, tři patra). **Řekne se v pointě na konci kola, ne na začátku**
      (Ondřej 5. 11. 2026: úvod kola s osou a sázkou je „zbytečná vata, vyplyne to v závěru“).
-     Najdi ji z dat (faktory potenciálu a strategie v analýze, výklady zemí), ne z dojmu, a ověř, kde osa nesedí:
-     tam je výjimka, kterou musí kolo vysvětlit (válka v Chorvatsku).
+     Najdi ji z dat (záznamy pořadí příčin v analýze, výklady zemí), ne z dojmu: osa je věc, která u co nejvíc zemí
+     stojí mezi hlavními důvody jejich místa. Ověř, kde osa nesedí: tam je výjimka, kterou musí kolo vysvětlit
+     (válka v Chorvatsku). Osa je pracovní návrh jako páteř: když ji země nepotvrdí, změní se osa, ne výklad země.
    - **Každý pár sousedů v kole má svou příčinu, řečenou jednou** (oprava 5. 11. 2026, Ondřej: „u Řecka říkáš důvod,
      proč je před Slovinskem, a u Slovinska to opakuješ… já něco povolím a ty to přeženeš do druhého extrému“):
      důvod páru zazní **jen u nižší země**; vyšší země ho neopakuje a vypráví svůj vlastní příběh. Dřívější znění
@@ -5954,6 +5988,10 @@ Pro každé kolo a zemi:
      výš (poučení 4. 11.: Chorvatsko slyšelo jen válku a divák nechápal, proč je třetí před Bulharskem). Srovnání
      dvou zemí se stejným startem je nejsilnější doklad („před válkou byly Chorvatsko a Bulharsko zhruba stejně
      chudé, pak čtyřicet let žily v jiném systému“).
+     **Příčina páru odpovídá na jinou otázku než příčina země:** že nižší země sama rostla nebo klesala kvůli X,
+     ještě neříká, že je za sousedem kvůli X; rozhoduje, v čem se od něj liší, a váhu bere scénář ze záznamu pořadí
+     příčin pro rozdíl proti sousedovi (analytický skill krok 2b bod 4). Jev, který mají obě země, vysvětlí rozdíl
+     jen tou částí, ve které se liší (síla, načasování, provedení).
    - **Srovnání patří k nižší zemi (Ondřej 5. 11. 2026):** „proč je Bulharsko tak daleko za Chorvatskem, které prošlo
      válkou“ zazní až u Bulharska. Neprozradí pořadí dřív, než zazní, a v obraze je krajina země, o které se mluví.
      Vyšší země dostane, co ji drží nahoře, z vlastních sil (Chorvatsko: Pliva, stejný volnější socialismus).
@@ -5968,21 +6006,27 @@ Pro každé kolo a zemi:
      prošlo válkou?“), stejný start obou zemí, pak odlišná cesta (Chorvatsko prodávalo i na Západ, o bulharské
      výrobě rozhodoval centrální plán a skoro dvě třetiny vývozu šly do Sovětského svazu) a dopad na ukazatel („co
      se neprodá, nevytvoří hodnotu: přišlo i bez války o přes čtvrtinu výroby“).
-   - **Váha důvodů (Ondřej 5. 11. 2026):** když má postavení země víc zdrojů, nevyjmenovávej je jako rovnocenné.
-     Řekni, který je největší, a podle dat jak velký („nejvíc vydělávalo na službách: obchod, doprava a turisté
-     dělaly X % výroby“), ostatní jen doplň. Pořadí důvodů ve větě odpovídá jejich váze.
+   - **Váha důvodů (Ondřej 5. 11. 2026; postup 9. 11. 2026):** když má postavení země víc zdrojů, nevyjmenovávej je
+     jako rovnocenné. Pořadí a váhu bere scénář ze záznamu pořadí příčin v analýze (analytický skill krok 2b bod 4),
+     nikdy z dojmu ani z toho, o čem je víc podkladů. Hlavní důvod zazní první, dostane nejvíc místa a obraz;
+     vedlejší jen vedlejší větou („pomohlo i…“, „k tomu…“). Nerozlišenou část neříkej jako jistou příčinu; doložený
+     proces bez přesného podílu (investice, stroje, organizace) řekni slovy váhy, nevynechávej ho. Když analýza
+     zapsala „hlavní: nerozlišeno, X spolu s Y“, řeknou se oba bez „hlavně“.
+     „Hlavně“, „proto“ a „díky“ jen u důvodu, který je v záznamu hlavní. Váhu nese stavba věty, ne čísla ani výklad
+     kontrol: číslo v hlase jen tehdy, když je pointou; rozklady a testy zůstávají v analýze a v zámku faktů.
+     Když záznam pořadí příčin v podkladu chybí, Claude ho před psaním doplní podle analytického skillu.
    - **Domácí podíl na hodnotě u zahraničních firem:** když je příkladem cizí firma (Dacia, Revoz), řekni, co
      z hodnoty vzniká v zemi, pokud je to doložené (vývojové centrum, zkušebna, centrála pro region), nebo že vývoj
      a zisk jsou jinde. Bez toho divák nepozná, proč montovna zvedá výkon méně nebo víc.
-   - **Fakt → dopad na výplatu → soud, u každé země v každém kole (Ondřej 5.–6. 11. 2026: „příliš mnoho popisu,
-     málo soudů… divák si řekne: no super, ale co to znamená pro ty mzdy?“).** Nahrazuje dřívější „v kole daní proč je
-     zátěž taková“, které vedlo jen k podrobnějšímu popisu. Každá země v každém kole má čtyři kroky:
-     1. **fakt** krátce (co země má nebo udělala; jak je systém stavěný jen tolik, kolik soud potřebuje);
-     1a. **kudy k výplatě** (Ondřej 6. 11. 2026 večer, u Rumunska: „člověk, který se v ekonomii nevyzná, tam nevidí,
-        že vývojové středisko potřebuje vzdělané lidi, kteří vytvoří vyšší přidanou hodnotu, a za to jsou vyšší
-        platy“): jedna až dvě věty, **proč tenhle fakt mění, kolik člověk vytvoří nebo kolik mu z toho zůstane**
-        (z pole do továrny: rolník vytvořil třetinu; vývoj místo montáže: inženýr vytvoří za hodinu víc než dělník,
-        firma mu může víc zaplatit; stavby na dluh: práce přibylo, výkonu ne). Fakt bez tohoto kroku je popis
+   - **Fakt → kudy k výplatě → hodnocení, u každé země v každém kole (Ondřej 5.–6. 11. 2026: „příliš mnoho popisu,
+     málo soudů… divák si řekne: no super, ale co to znamená pro ty mzdy?“; 9. 11. 2026: „mělo by to být takové
+     zhodnocení toho, jestli si ta země vede dobře“).** Každá země v každém kole má tyto kroky:
+     1. **fakt** krátce (co země má nebo udělala; jak je systém stavěný jen tolik, kolik hodnocení potřebuje);
+     1a. **kudy k výplatě** (Ondřej 6. 11. 2026 večer: „člověk, který se v ekonomii nevyzná, tam nevidí, že vývojové
+        středisko potřebuje vzdělané lidi, kteří vytvoří vyšší přidanou hodnotu, a za to jsou vyšší platy“): vedlejší
+        věta až dvě věty, **proč tenhle fakt mění, kolik člověk vytvoří nebo kolik mu z toho zůstane** (ilustrace typu,
+        ne data žádné země: inženýr ve vývoji vytvoří za hodinu víc než dělník u montáže, a firma mu proto může víc
+        zaplatit; dělník u nové linky vyrobí za směnu víc než u staré). Fakt bez tohoto kroku je popis
         a nepočítá se. Mechanismus musí být doložený (výklad země, instituce) a projít testem nosnosti (slavná
         firma průměr nevysvětlí, řekni, že je to příklad širšího jevu, a jakého). **Kudy musí být v hlase, ne jen
         v oddílu Soudů, i v krátké verzi a i u vedlejších zemí, aspoň vedlejší větou** (Ondřej 7. 11. 2026 večer,
@@ -5990,28 +6034,37 @@ Pro každé kolo a zemi:
         mzdy? Chybí mi přímý vztah důvodů k faktoru“): soud s cenou (nezaměstnanost, ztracené roky) bez kudy divák
         s měřenou veličinou nespojí. Zvlášť u krizí: krize sama snižuje výrobu a bere místa, takže výkon na
         pracujícího často i zvedne; jako příčina nižšího výkonu se říká to, co krize vzala **na dlouho** (roky bez
-        růstu, investice, odvětví, které se nevrátilo) a co před ní bylo špatně postavené („byt se postaví jednou,
-        kdežto továrna vyrábí každý rok“), ne krize sama. Test diváka: po větě musí umět říct, **jak to mění, kolik
+        růstu, investice, odvětví, které se nevrátilo) a co před ní bylo doloženě špatně postavené, ne krize sama.
+        Test diváka: po větě musí umět říct, **jak to mění, kolik
         jeden pracující vytvoří** (nebo kolik mu zůstane); když ne, kudy chybí;
-     2. **dopad na výplatu** v číslech, kterým divák rozumí, **v každém kole, ne jen v kole daní**: v kole daní eura
-        do ruky ze sta; v kolech výkonu kolik pracující vytvoří proti sousedovi (dřív a teď) a kolik firma za
-        zaměstnance zaplatí, s poznámkou, jestli se náskok do výplat dostal celý, nebo jen zčásti; místo v pořadí
-        až potom; sem patří i pár sousedů (bod 2a). **Chyba 6. 11. 2026:** dopad byl popsaný jen jako „eura do ruky
-        ze sta“, a tak se v kolech výkonu tiše vynechával;
-     3. **soud a hned jeho důvod**: dobře / špatně / napůl, vždy proti realisticky lepší možnosti (ne proti ideálu;
-        paměť „hodnocení kroků podle výchozí pozice“), a ve stejné nebo hned další větě **proč, řečeno důsledkem
-        pro lidi** (odrážka „Důvod soudu“ níže). Soud bez důvodu je nálepka a nepočítá se. Vlastní úsudek pořadu
-        se řekne jako úsudek („vyplatilo se to jen napůl“). Neovlivnitelné věci (geologie, vnější šok) se nesoudí
-        jako chyba státu, jen se řekne, že to bylo štěstí nebo smůla.
-     Ve faktické verzi se kroky 2 a 3 zapisují do oddílu „## Soudy a dopad na výplatu“ (bod 4c) a Gemini je nesmí
-     vypustit. **Při krácení se škrtá jen popis** (názvy firem bez následku, roky, kulisy) **a náhražky důvodu**
-     (jméno úřadu, vlastnost systému, rada vládě; viz níže), nikdy kudy k výplatě, soud s důvodem, dopad ani pár
-     sousedů. **Krátká verze** (cíl 9 minut na region, nejvýš 9,5; §3 bod 6): celý řetěz fakt → kudy k výplatě →
-     dopad → soud s důvodem dostane hlavní scéna kola (země nebo dvojice s největším vlivem kola podle bodu 2,
-     u Balkánu v kole 2 Rumunsko a Bulharsko, v kole 3 Bulharsko); ostatní země **jednu až dvě věty**, ve kterých je
-     fakt, důvod páru, soud i jeho důvod (jedna věta by musela mít víc než dvě vedlejší věty, §3 bod 2). Země se
-     stejným příběhem smějí dostat společný soud jednou větou („obě země zátěž snižují a dělají dobře, protože…“).
-     Krátká verze prochází stejnými branami jako dlouhá.
+     2. **dopad na výplatu** se zapíše v každém kole, ne jen v kole daní, do řádku VIZUÁL a do oddílu Soudů: v kole
+        daní eura do ruky ze sta; v kolech výkonu kolik pracující vytvoří proti sousedovi a kolik firma za
+        zaměstnance zaplatí, s poznámkou, jestli se náskok do výplat dostal celý, nebo jen zčásti. V hlase zazní
+        slovy tam, kde nese pointu: u hlavní scény kola a v pointě, která vždy končí výplatou; u vedlejší země stačí
+        kudy k výplatě. Číslo v hlase jen tehdy, když je pointou (8. 11. 2026: věta „pracující vytvoří o čtvrtinu
+        víc“ u každé země diváka unaví a nic nevysvětlí);
+     3. **hodnocení s důvodem (komentátorský soud):** u každé země zazní **co se jí povedlo nebo nepovedlo, proč je
+        to důležité a jak to ovlivnilo výsledek**, s hlavním důvodem z analýzy (odrážka „Váha důvodů“ výše) a ve
+        stejné nebo hned další větě **proč, řečeno důsledkem pro lidi** (odrážka „Důvod soudu“ níže). Síla soudu
+        podle předmětu (analytický skill krok 2b bod 6): výkon země (proti vlastní minulosti, srovnatelnému soupeři
+        nebo doloženému cíli) jde hodnotit vždy; konkrétní rozhodnutí (dobře / špatně / napůl) s doloženým účinkem;
+        „zbytečná chyba“ jen s tehdy dostupnou možností problému předejít, nikdy proti ideálu. Odůvodněný úsudek
+        pořadu je dovolený a řekne se jako úsudek („vyplatilo se to jen napůl“), ne jako změřený fakt. Samotné místo
+        zásluhu ani vinu nedokazuje; tvrzení, že kvůli něčemu země skončila na konkrétním místě, potřebuje výpočet.
+        Nevyžaduje se pochvala i výtka zároveň; hlavní brzda se odliší od drobnosti. Neovlivnitelné věci (geologie,
+        vnější šok) se nesoudí jako chyba státu, řekne se, že to bylo štěstí nebo smůla, a hodnotí se, jak si s tím
+        země poradila. Soud bez důvodu je nálepka a nepočítá se; pouhý popis bez hodnocení také ne.
+     Ve faktické verzi se kroky zapisují do oddílu „## Soudy a dopad na výplatu“ (bod 4c) a Gemini je nesmí
+     vypustit. **Při krácení se chrání společné jádro: hlavní důvod, hodnocení a následek** (obvykle jedna až dvě
+     přirozené věty, které nahradí část popisu); škrtají se nejdřív doplňky: popis (názvy firem bez následku, roky,
+     kulisy), náhražky důvodu (jméno úřadu, vlastnost systému, rada vládě; viz níže) a vedlejší důvody vedlejších
+     zemí; **nikdy hlavní důvod země, jeho váha, hodnocení, kudy k výplatě a pár sousedů.** Omezení, které mění
+     smysl soudu, zůstává i v hlase; podrobné doklady zůstávají v podkladu. **Krátká verze** (cíl 9 minut na
+     region, nejvýš 9,5; §3 bod 6): celý řetěz fakt → kudy k výplatě → dopad → hodnocení dostane hlavní scéna kola
+     (země nebo dvojice s největším vlivem kola podle bodu 2); ostatní země **jednu až dvě věty** s hlavním
+     důvodem, kudy k výplatě, hodnocením a důvodem páru, pokud jsou nižší ze dvojice (jedna věta by musela mít víc
+     než dvě vedlejší věty, §3 bod 2). Země se stejným příběhem smějí dostat společné hodnocení jednou větou,
+     s tím, v čem se liší. Krátká verze prochází stejnými branami jako dlouhá.
    - **Důvod soudu je důsledek pro lidi, ne názor úřadu (Ondřej 6. 11. 2026 v noci: „napsal, že je to dobře napůl,
      a místo aby řekl proč, začal mluvit o Evropské komisi a OECD… nudné analytické popisy pro panel expertů, ne
      pro běžného diváka“).** Dřívější znění chtělo soud „opřený o instituci“. Model proto od institucí převzal
@@ -6022,55 +6075,51 @@ Pro každé kolo a zemi:
      - **Test „a co z toho?“** Za větu se soudem si polož divákovu otázku „a co z toho?“ a odpovídej na ni tak
        dlouho, až dojdeš k tomu, **co kvůli tomu lidé, firmy nebo stát dělají nebo nemohou** (zůstávají, odcházejí,
        pracují načerno, nemají na školy, platí u lékaře ze svého) a co to znamená pro výplatu. Tahle odpověď je
-       důvod a patří do hlasu hned za soud. Vzor tvaru od
+       důvod a patří do hlasu hned za závěr nebo soud. Vzor tvaru od
        Ondřeje: „dobře, protože firmy nic nevyhání jinam; špatně, protože státu zbývá málo na to, co v zemi drží
        vzdělané lidi“. Je to vzor tvaru, ne obsahu: každá polovina musí mít v podkladech vlastní doklad.
      - **Tři náhražky důvodu**, které testem neprojdou, a škrtají se proto jako první (ukázka typu, ne výčet):
        *autorita* („podle Komise je to špatně namíchané“, „tenhle směr chválí MMF i OECD“), *vlastnost systému*
        („jediná země Unie, kde člověk s výplatou o dvě třetiny nad průměrem odvede menší díl než člověk s polovinou
        průměrné mzdy“) a *rada vládě* („Komise radí přidat nezdanitelné minimum a sazbu zvednout“).
-     - **Soud je nález z testu, ne tvar s dosazeným důvodem (Ondřej 7. 11. 2026).** Ondřejův popis, jak soud
-       vzniká: „kdyby mi vyšlo, že Slovinsko má nejvyšší daňovou zátěž, a napsal, že to je špatně, protože Slovinci
-       si mohou hledat práci jinde, tak bych se podíval, jestli Slovinci utíkají z těchto zemí nejvíce na Balkáně.
-       Pokud ano, nechal bych to tam… pokud odcházejí stejně jako ostatní, nebo méně, řekl bych si: možná si to
-       Slovinsko může dovolit, protože má lepší instituce, lepší životní úroveň.“ A o tvaru: „když takhle napíšeš
-       ‚A, ale B‘, vždycky je to dobře, nebo je to špatně. Tak co? To je zas strašně šablonovitý.“ Důvod soudu je
-       tvrzení o téhle zemi, a tvrzení se před vyslovením ověří, v analýze (podklad pro soud, §1) nebo před psaním:
-       1. **domněnka:** co by nastavení podle učebnice s lidmi dělalo, na obou stranách (komu to hned přidá; kdo
-          a čím to platí jinde nebo později: stát nemá na školy, lidé si platí sami, odcházejí, pracují načerno,
-          firmy se stěhují) a **co by bylo vidět, kdyby to platilo** (odchody občanů na tisíc obyvatel, obálkové
-          mzdy, příliv investic, výdaje na školy);
-       2. **test:** číslo téhle země proti sousedům v regionu a průměru Unie, se zdrojem;
-       3. **nález:** domněnka **platí** (země v čísle vyčnívá) → důvod zazní oznamovacím způsobem s tím číslem nebo
-          obrazem; **neplatí** (země se chová jako sousedé nebo opačně) → důvod se neříká a hledá se, co skutečný
-          stav vysvětluje, čímž se změní i soud („může si to dovolit, protože…“); **nezjištěno** není výsledek,
-          ale pokyn jít o příčku níž po **žebříku dokladu** (Ondřej 7. 11. 2026 večer, k Estonsku: „vždyť tohleto
-          není zas tak těžký zjistit… proč by se divák na to koukal, když tam pořád je, že něco nejde zjistit“):
-          (a) změřeno v téhle zemi proti sousedům; (b) když první domněnky padnou, vezmou se **obecně známé výklady**
-          ze zpráv o zemi (OECD, MMF, Komise, centrální banka, `ekonomove/{kód}.md`) a otestují se stejně;
-          (c) co změřit nejde, ale ekonomové se na tom shodují, se řekne se silou dokladu („ekonomové se shodují“,
-          „zčásti“), ne vypustí; (d) teprve když chybí i shoda, zůstane soud jen o změřeném a v hlase se o příčině
-          mlčí. **V hlase nikdy nezazní „nejde zjistit“, „čísla neřeknou“, „nevíme“** (brána to hlásí): díra
-          v podkladu je úkol pro rešerši, ne věta pro diváka. **Vnější šok se nesoudí, ale říká:** drahá energie,
-          stagnace hlavního odběratele, sankce nebo propad cen vývozu nejsou chyba státu, jsou to ale příčiny, a divák
-          je slyší jako smůlu („od roku 2022 Estonsko dusí nejdražší energie…“), ne jako mlčení (zkouška Pobaltí:
-          agent energetický šok „nesoudil“, a proto ho ani neřekl, a estonské zpomalení zůstalo „nezjištěno“, ačkoli
-          jeho známé příčiny jsou měřitelné);
-       4. **test záměny důvodu:** kdyby se věta se soudem a důvodem dala přilepit k jiné zemi se stejným číslem,
-          je to šablona, ne nález; nález má v sobě to, čím se země od sousedů liší.
+     - **Závěr i soud jsou nález z testu, ne tvar s dosazeným důvodem (Ondřej 7. 11. 2026).** Ondřejův popis, jak
+       soud vzniká: „kdyby mi vyšlo, že Slovinsko má nejvyšší daňovou zátěž, a napsal, že to je špatně, protože
+       Slovinci si mohou hledat práci jinde, tak bych se podíval, jestli Slovinci utíkají z těchto zemí nejvíce na
+       Balkáně. Pokud ano, nechal bych to tam… pokud odcházejí stejně jako ostatní, nebo méně, řekl bych si: možná
+       si to Slovinsko může dovolit, protože má lepší instituce, lepší životní úroveň.“ A o tvaru: „když takhle
+       napíšeš ‚A, ale B‘, vždycky je to dobře, nebo je to špatně. Tak co? To je zas strašně šablonovitý.“ Důvod
+       závěru i soudu je tvrzení o téhle zemi a před vyslovením se ověří **podle analytického skillu, krok 2b**
+       (jediné platné znění postupu: otázka, domněnky ze tří zdrojů, test s výsledkem podporuje / odporuje /
+       nerozlišuje, pořadí příčin, nález, závěr a soud); když ho podklad nemá, Claude ho udělá před psaním. Pro hlas
+       z toho plyne:
+       1. **říká se jen to, co test podpořil,** se silou slov podle pořadí příčin; co test nerozlišil, se neříká
+          jako vyvrácené ani jako potvrzené; co odporuje, patří do NEŘÍKEJ;
+       2. **podobnost se sousedem příčinu z hlasu nevyřadí:** jev, který mají obě země, se vysvětlí jednou a u další
+          země se řekne, v čem se liší jeho síla, načasování nebo provedení;
+       3. **v hlase nikdy nezazní „nejde zjistit“, „čísla neřeknou“, „nevíme“** (Ondřej 7. 11. 2026 večer, k Estonsku:
+          „proč by se divák na to koukal, když tam pořád je, že něco nejde zjistit“; brána to hlásí): díra v podkladu
+          je úkol pro rešerši po žebříku dokladu (analytický skill krok 2b bod 3). Poctivé omezení se ale kvůli tomu
+          neodstraňuje: řekne se slovy váhy („zčásti“, „pomohlo i“, „spolu s“), ne větou o tom, co se neví;
+       4. **vnější šok se nesoudí, ale říká:** drahá energie, stagnace hlavního odběratele, sankce nebo propad cen
+          vývozu nejsou chyba státu, jsou to ale příčiny, a divák je slyší jako smůlu („od roku 2022 Estonsko dusí
+          nejdražší energie…“), ne jako mlčení;
+       5. **test šablony:** kdyby se věta se závěrem a důvodem dala beze změny přilepit k jiné zemi, je to šablona,
+          ne nález; nález má v sobě to, čím se země od sousedů liší (i u sdíleného jevu: jak silně, kdy, jak
+          provedený).
        Z toho plyne: **tvar soudu je volný** (dobře / špatně / napůl / může si to dovolit / platí jen pro někoho /
        nevadí, protože…); „napůl“ a tvar „dobře, protože…, špatně, protože…“ jen tam, kde test potvrdil obě
        strany, ne jako rámec pro každou zemi. **Ani stejný obal s různým obsahem** („šla nejlepší / slabší /
        nejdražší cestou z Pobaltí“ třikrát za sebou) divák nebere jako tři myšlenky (slepé čtení Pobaltí 7. 11.
        2026); obal soudu se u sousedů střídá (věta, srovnání se sousedem, číslo, otázka) a země se zrcadlovým
-       soudem („obrácená Litva“) dostane vlastní obraz (firma, výrobek, místo), ne jen opačná čísla. Nálezy, které
-       stojí na dělení (výkon na pracujícího vzrostl, protože pracujících ubylo), se řeknou obrazem dělení
-       („stejný výkon dělí méně lidí“), jinak jim divák nevěří. **Podmiňovací a možnostní způsob je otisk neotestované domněnky:**
+       soudem („obrácená Litva“) dostane vlastní obraz (firma, výrobek, místo), ne jen opačná čísla. Když záznam
+       pořadí příčin přiřadí část změny výkonu na pracujícího úbytku pracujících, smí se to říct obrazem dělení
+       („stejný výkon dělí méně lidí“) s vahou ze záznamu: jako hlavní důvod jen tehdy, když je to podle záznamu
+       největší část. **Podmiňovací a možnostní způsob je otisk neotestované domněnky:**
        „můžou hledat práci jinde“, „hrozí“, „může odrazovat“, „svádí“ nic netvrdí, proto to žádná kontrola nechytí
        a proto to model píše, když test neudělal; brána `scripts/kontrola_paru_sousedu.py` taková slova v poli
        „proč“ hlásí. Obě strany nastavení se vždy **ptají**, **říká se jen to, co test potvrdil**. Když potvrzená
        druhá strana platí pro celý region stejně (sever: stát si víc bere v cenách v obchodě), zazní jednou
-       v pointě, ne u každé země (test záměny). Kde pořadí v kole vzniká vlastností měření (co se počítá do odvodů:
+       v pointě, ne u každé země. Kde pořadí v kole vzniká vlastností měření (co se počítá do odvodů:
        finské povinné důchodové pojištění ano, dánské penze ze smluv odborů ne), divák slyší jen to, co pro něj
        platí („Fin platí ze zákona skoro čtvrtinu mzdy na důchod, Dán si spoří přes smlouvy odborů“), a poznámka
        o měření jde do zámku faktů, ne do hlasu (poučení ze zkoušky na severu, 6. 11. 2026). Jak druhou stranu
@@ -6085,35 +6134,46 @@ Pro každé kolo a zemi:
        institucí jsou v něm doklad, ne obsah.
 2b. **Od příkladu k ukazateli (Ondřej 4. 11. 2026: „co to znamená pro ekonomiku, že se tam vyrábějí špatná auta,
    že tam jsou lidi na poli“).** Konkrétní příklad (pravidlo „Co za tím stálo“) nestačí: hned za ním zazní, **jak se
-   promítne do měřené veličiny**, nejlépe s jedním číslem nebo poměrem („41 % Rumunů pracovalo na polích, ale
-   vytvořili necelou pětinu výroby: rolník vytvořil asi třetinu toho co Rumun v továrně“; „co se neprodá, nevytvoří
-   žádnou hodnotu“). Když se dá spočítat, jak velkou část rozdílu proti sousedovi příčina vysvětluje, spočítej to
-   a řekni to slovy („zhruba polovinu“) s poznámkou v zámku faktů, že jde o výpočet Clauda.
-3. **Jedna až dvě příčiny** na zemi: nejsilnější doklad podle rešerše (změřeno nebo posouzeno institucí), správný směr,
-   **test záměny** (kdyby šlo říct totéž o sousedovi v regionu, není to příčina této země; sdílený mechanismus se
-   vysvětlí jednou u země s nejsilnějším dokladem a u ostatních se jen připomene). **Pozor (4. 11. 2026):** test
-   záměny platí jen uvnitř skupiny, která mechanismus sdílí. Když sdílený mechanismus vysvětluje, proč je země
-   **před** zeměmi, které ho nemají, musí u ní zaznít aspoň jednou větou (jugoslávský systém u Chorvatska proti
-   Bulharsku a Rumunsku). Jinak test záměny vymaže právě tu příčinu, na kterou se divák ptá.
+   promítne do měřené veličiny**, obrazem nebo nejvýš jedním poměrem (ilustrace typu: „kde chybějí stroje, vyrobí
+   člověk za směnu méně“; „co se neprodá, nevytvoří žádnou hodnotu“). Když se dá spočítat, jak velkou část rozdílu
+   proti sousedovi příčina vysvětluje, spočítá se to v analýze pro tuto otázku (rozdíl proti sousedovi, ne vlastní
+   růst země; analytický skill krok 2b bod 4). Slovy („zhruba polovinu“) to smí zaznít jen u hlavní scény nebo
+   v pointě, a jen když je podíl v záznamu přiřazený příčině, ne jen početní část rozkladu; jinak patří do zámku
+   faktů a řádku VIZUÁL.
+3. **Jedna až dvě příčiny** na zemi podle záznamu pořadí příčin v analýze (analytický skill krok 2b bod 4): hlavní
+   vždy (u „nerozlišeno, X spolu s Y“ oba bez „hlavně“), vedlejší, když se vejde; správný směr. **Sdílený
+   mechanismus** se vysvětlí naplno jednou, u země s nejsilnějším dokladem; u ostatních zemí, kde je také hlavní,
+   zazní také první a jako hlavní (odkazem a s tím, v čem se v té zemi liší: síla, načasování, provedení). Vlastní
+   důvod od ekonomů a zvláštnost země dostanou místo podle své váhy, ne na úkor hlavního důvodu.
+   Podobnost se sousedem příčinu nevyřazuje (analytický skill krok 2b bod 3). Když sdílený mechanismus vysvětluje,
+   proč je země **před** zeměmi, které ho nemají, musí u ní zaznít aspoň jednou větou (jugoslávský systém
+   u Chorvatska proti Bulharsku a Rumunsku).
    **Síla dokladu rozhoduje, co se smí říct; co z toho zazní, rozhoduje divák** (Ondřej 6. 11. 2026 v noci: „pálí
-   čas na věcech, které diváka nezajímají“). Mezi doloženými příčinami podobné váhy má přednost ta, kterou si divák
-   představí a kamarádovi převypráví, ne ta s nejpřesnějším číslem nebo nejváženějším zdrojem. Přesný a dobře
+   čas na věcech, které diváka nezajímají“). Mezi doloženými příčinami **podobné váhy** má přednost ta, kterou si
+   divák představí a kamarádovi převypráví, ne ta s nejpřesnějším číslem nebo nejváženějším zdrojem. Přesný a dobře
    doložený údaj, který by divák nepřevyprávěl (jak je systém technicky stavěný, co kdo doporučuje vládě), patří do
-   zámku faktů nebo do řádku VIZUÁL, ne do hlasu. **Hranice:** neplatí pro čísla, na kterých stojí pořadí a dopad na
-   výplatu, a největší důvod země zazní vždy (váha důvodů, bod 2a).
+   zámku faktů nebo do řádku VIZUÁL, ne do hlasu. Čísla, na kterých stojí pořadí, ukazuje obraz (řádek VIZUÁL)
+   a hlídá zámek faktů. **Hranice:** největší důvod země zazní vždy a jako největší (váha důvodů, bod 2a):
+   zajímavější doplněk ho nesmí odsunout.
 3a. **Vlastní důvod od ekonomů (Ondřej 1. 11. 2026: „víc pracovat s faktory od ekonomů“).** Každá země dostane
    v kole, kam důvod patří, aspoň jeden **svůj** důvod z rešerše ekonomů (`analyza_regiony_2026_10/ekonomove/{ISO}.md`,
-   deset důvodů seřazených podle vlivu): nejvýš řazený důvod, který vysvětluje dané kolo. Sdílený mechanismus
+   deset důvodů seřazených podle vlivu): nejvýš řazený důvod, který vysvětluje dané kolo; jakou váhu ve scénáři
+   dostane, určuje záznam pořadí příčin v analýze, ne pořadí v rešerši. Sdílený mechanismus
    (malé firmy u celého jihu) se naplno vysvětlí jednou, ale u ostatních zemí zazní **jejich vlastní podoba**
    s vlastním číslem (Portugalsko: firem se rodí hodně, ale nerostou; Španělsko: čtyři z pěti nových míst v levných
    službách). Nesmí se stát, že země má v kole jen společný důvod připomenutý jinde (poučení 1. 11.: Španělsko
    a Portugalsko měly ve scénáři 2–3 z deseti důvodů ekonomů).
 4. **Co se jen stalo, ale nikdo neměřil účinek** (časová souvislost), se zapíše jako událost, ne jako příčina.
 5. **Definice veličiny kola** jednou v epizodě, obyčejně a s obrazem z dat (u produktivity: číšník proti dělníkovi
-   v průmyslu). V dalších regionech jen jednovětá připomínka. Dohánění se řekne obyčejně: chudší země rostou rychleji
-   samy od sebe. Kde je zařazení „nad / pod dohánění“ nejisté, hlas ho neříká. Zemi se smí přičíst jen růst nad
-   rámec dohánění: když reálně rostla pomaleji, než odpovídá jejímu startu, neříká se „nejlepší tah“ ani
-   „polepšila si“, i kdyby byla v kole nejvýš z regionu (poučení: Portugalsko, 31. 10. 2026).
+   v průmyslu). V dalších regionech jen jednovětá připomínka. **Dohánění se řekne jako kontext, ne jako příčina:**
+   země s nižším startem mohou růst rychleji, protože mají co dohánět (stroje, postupy a trhy, které bohatší země už
+   mají), ale samo se to nestane; kolo vypráví, **jak** to země dělala, konkrétními procesy z analýzy. Nikdy „samy od
+   sebe“, „zadarmo“ ani „jen díky nízkému startu“. Kde je zařazení „nad / pod dohánění“ nejisté (měření se
+   neshodují), hlas ho neříká. Když země reálně rostla pomaleji, než odpovídá jejímu startu, neříká se „nejlepší tah“
+   ani „polepšila si“, i kdyby byla v kole nejvýš z regionu (poučení: Portugalsko, 31. 10. 2026); pomalejší růst
+   je ale otázka, co zemi brzdilo, ne sám o sobě doklad chyby. Hodnocení výkonu (vede si dobře, ztratila tempo) stojí
+   na srovnání s vlastní minulostí, soupeřem a tím, co odpovídá startu; pochvala nebo výtka za rozhodnutí stojí na
+   jeho doloženém účinku (analytický skill krok 2b bod 6). Místo v kole ani odchylka od dohánění samy zásluhou nejsou.
 
 #### 2.4 Otázka diváka
 - **Jedna na region**, u hlavní scény regionu (země, kterou kola pohnula nejvíc nebo jejíž výsledek nejvíc překvapí).
@@ -6165,8 +6225,9 @@ Odhaluje se od posledního v regionu po vítěze, s výsledkem. **Ve finále se 
 1. 11. 2026: ne „Španělsko skončilo dvanácté“, ale „Španělsko se umístilo nejlépe v jižní Evropě“); místo v lize
 a patro jen v řádku VIZUÁL. U každé země zazní:
 
-0. **Účet za třicet let (rozsudek).** Jednou až dvěma větami spoj klíčový tah nebo chybu z kol s výsledkem: co zemi za
-   období pomohlo, co ji potopilo („Itálie promarnila nejlepší start v Evropě: výkon třicet let stál, protože firmy
+0. **Účet za třicet let (hodnocení).** Jednou až dvěma větami spoj s výsledkem, co zemi za období pomohlo a co ji
+   brzdilo; slovo „chyba“ jen se silou podle analytického skillu (krok 2b bod 6: rozhodnutí s doloženým účinkem,
+   „zbytečná chyba“ jen s tehdy dostupnou možností) („Itálie promarnila nejlepší start v Evropě: výkon třicet let stál, protože firmy
    zůstaly malé“; „Španělsko nevyhrálo růstem; rozhodlo, že z italského náskoku ve výkonu nedojde do výplat skoro nic“). Smí použít jen příčiny, které už
    v kolech zazněly s dokladem, se stejnou silou slov („zčásti“, „mohla“). Úvodní věta finále neříká, že se v cíli něco „sčítá“
    (kola se nesčítají): „V cíli už nerozhoduje žádné kolo, ale skutečná čistá mzda v kupní síle.“ Rozsudek je o tom, co se stalo, ne
@@ -6175,8 +6236,9 @@ a patro jen v řádku VIZUÁL. U každé země zazní:
 Pak pro každou dvojici sousedů v cíli:
 1. **Cesta výplaty.** Kostra (`scripts/kostra_mapy_pribehu.py`, oddíl „proč je soused před sousedem“) rozloží rozdíl
    sousedů na tři kroky, kterým rozumí každý: **kolik firma za zaměstnance zaplatí** → **kolik si z toho vezme stát** →
-   **kolik se za zbytek koupí (ceny)**. Hlavní krok (označený HLAVNÍ) zazní první a jako hlavní důvod; druhý jen
-   tehdy, když je velký nebo jde proti (například „levnější život to dožene jen zčásti“).
+   **kolik se za zbytek koupí (ceny)**. Krok označený HLAVNÍ říká, kde rozdíl vzniká (největší početní část); hlavní
+   důvod je ten ze záznamu pořadí příčin v `soudy_cil/` a při rozporu platí záznam. Hlavní důvod zazní první; druhý
+   jen tehdy, když je velký nebo jde proti (například „levnější život to dožene jen zčásti“).
 2. **Jedno „proč“ pod hlavním krokem**, jen když je doložené a srozumitelné: firma platí víc, protože pracující
    vytvoří víc (odkaz na kola o výkonu); stát si bere víc kvůli vysokým odvodům; život je levnější, protože… (jen
    s dokladem, jinak bez „protože“). Nejvýš jedna věta.
@@ -6188,10 +6250,12 @@ Pak pro každou dvojici sousedů v cíli:
    pracujícími nebo hodiny se smí použít jen jako „proč“ v bodě 2 a jen převedené do obrazu („v Itálii je každý
    čtvrtý pracující živnostník nebo majitel malé firmy a jeho výdělek se do výplaty zaměstnance nepočítá“).
 4a. **Co kola nevysvětlí: kolik prostoru dát dalším faktorům.** Kostra uvádí u každé země, kolik výsledku tři kola
-   nevysvětlí (`co_kola_nevysvetli_body`; obvyklá chyba výpočtu asi 9 bodů).
+   nevysvětlí (`co_kola_nevysvetli_body`) a typickou odchylku výpočtu daného ukazatele (u mezd asi 9 bodů). Hranice
+   níže jsou pro mzdy; u jiného ukazatele platí jeho typická odchylka a střední pásmo od její poloviny.
    - **Velký zbytek (víc než asi 9 bodů):** jeden až dva faktory od ekonomů, které jdou **stejným směrem** jako zbytek
      a působí **cestou, kterou kola neměří** (jak se z vytvořené hodnoty stává výplata: vyjednávání o mzdách,
-     minimální mzda, skladba pracujících, odchod lidí). Pořadí podle rešerše ekonomů. Faktory, které působí přes
+     minimální mzda, skladba pracujících, odchod lidí). Pořadí podle záznamu pořadí příčin v podkladu pro cíl
+     (`soudy_cil/`, analytický skill krok 2b bod 4); rešerše ekonomů je jeden z dokladů. Faktory, které působí přes
      výkon (malé firmy, vzdělání), patří do kol, ne sem.
    - **Střední zbytek (asi 5 až 9 bodů):** nejvýš jeden takový faktor, se slovem „zčásti“ nebo s poctivým účinkem
      z rešerše.
@@ -6202,7 +6266,8 @@ Pak pro každou dvojici sousedů v cíli:
    Patří do kola, kam věcně spadá, nebo do finále. Síla dokladu se řekne poctivě; když účinek na mzdy nikdo nezměřil,
    řekne se, co se děje, ne že to mzdy zvedlo nebo srazilo. Kontrola před odesláním: země bez zvláštnosti = scénář
    se neodesílá.
-5. **NEŘÍKEJ** zapiš ke každé zemi: důvody proti směru, důvody bez dokladu, „celý rozdíl vysvětluje…“, když doklad
+5. **NEŘÍKEJ** zapiš ke každé zemi: důvody proti směru, důvody bez dokladu, „hlavně“ u důvodu, který podle analýzy
+   hlavní není, „celý rozdíl vysvětluje…“, když doklad
    vysvětluje jen část, a vysvětlení, která analýza vyvrátila (u Itálie: chudý jih a šedá ekonomika jako příčina
    ztráty ve finále).
 6. **Pozor na směr skladby pracujících:** málo zaměstnanců mezi pracujícími snižuje podíl výplat na vytvořené
@@ -6248,14 +6313,19 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    - **tučně** = pevné jádro: musí zaznít v hlase, číslo a omezující slovo přesně tak;
    - `{volitelné: …}` = smí zkrátit, vynechat nebo nechat jen v obraze;
    - ostatní text = smí volně přeformulovat, ale ne vynechat.
-   Pevné je jen to, bez čeho se příběh rozpadne: asi 15–25 faktů na region (tip a jeho splnění, hlavní scény a jejich
-   příčina, otázka diváka a odpověď, průběžné pořadí, výsledky v cíli, důvody finále, štítky). Méně pevného = víc
+   **Pevné jádro každé země v každém kole (jediný seznam, ostatní místa skillu i skill pro Gemini na něj odkazují):**
+   hlavní důvod a jeho váha, hodnocení, kudy k ukazateli epizody (u mezd k výplatě) a u nižší země páru důvod
+   páru. Vše ostatní smí být volitelné: co zaznít nemusí (doplňky, kulisy, vedlejší důvody vedlejších zemí), Claude
+   do faktické verze buď vůbec nepíše, nebo ho označí `{volitelné: …}`.
+   Pevné je jen to, bez čeho se příběh rozpadne: asi 15–25 faktů na region (tip a jeho splnění, hlavní důvod každé
+   země a jeho váha, otázka diváka a odpověď, průběžné pořadí, výsledky v cíli, důvody finále). Méně pevného = víc
    prostoru pro čtivost. **Tučně jsou jen krátké úseky s klíčovým faktem** (místo a jméno země, číslo, omezující
    slovo, směr příčiny, Ondřejův tip, průběžné pořadí), **nikdy celé věty a odstavce; tučně nejvýš asi 40 % slov**
    (hlídá brána `kontrola_paru_sousedu.py`). Netučný text je prostor Gemini pro sportovní styl. (Poučení 5. 11. 2026:
    v Balkánu bylo tučně 97 % slov, Gemini proto nemohl nic přepsat a sportovní styl zmizel; Ondřej si toho všiml.)
 4. **Zámek faktů** na konci souboru: číslovaný seznam pevných faktů v krátké podobě (číslo, omezující slovo, směr
-   příčiny, místo, štítek). Podle něj se dělá zpětná kontrola.
+   příčiny, místo) a u každé země **pořadí důvodů** (hlavní → doplněk) a protiváha, kterou poctivý závěr potřebuje.
+   Podle něj se dělá zpětná kontrola.
 3a. **Ondřejova připomínka k detailu není nové téma (Ondřej 5. 11. 2026: „mně něco zarazí a ty s toho hned uděláš
    hlavní téma… ale to jsem tak nemyslel“).** Když se Ondřej pozastaví nad slovem nebo větou („jakých budov?“),
    odpověď na jeho otázku patří do chatu. Ve scénáři se jen opraví ta věta: nahradí se nejjednodušší pravdivou verzí,
@@ -6267,24 +6337,34 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    „X je před Y, protože…“ s odkazem na větu v textu kola. Prázdný řádek = kolo se neodesílá.
 4b. **Kontrolní list** na konci souboru, vyplněný ano/ne u každého bodu (Ondřej 5. 11. 2026: „nechci, aby se to
    opakovalo“; pravidla se dřív ztrácela, protože se kontrolovala po paměti a starší rozporná pravidla zůstala ve
-   skillu): showcase jen sportovní očekávání; otevření každého kola jedna věta; páry sousedů ve všech kolech;
-   největší důvod země řečený jako největší; co divák nemusí znát, vysvětleno při první zmínce (stát, blok, válka,
-   režim, čí je firma); žádný holý pojem (`kontrola_srozumitelnosti.py --divak`); u cizích firem, co z hodnoty
-   zůstává v zemi; u každé země v každém kole dopad na výplatu a soud, který má hned za sebou důvod řečený důsledkem
-   pro lidi (bod 4c a odrážka „Důvod soudu“ v §2.3); instituce v hlase nejvýš jednou za kolo a nikdy jako důvod soudu;
-   pointa po průběžném pořadí s osou kola; cíl s vedlejšími faktory
+   skillu): showcase jen sportovní očekávání; otevření každého kola jedna věta; páry sousedů ve všech kolech
+   a příčina páru jako rozdíl proti sousedovi, ne vlastní růst; pořadí důvodů u každé země podle záznamu pořadí
+   příčin v analýze (hlavní první a nejdelší, vedlejší jen vedlejší větou, „hlavně“ jen u hlavního); žádná příčina
+   vyřazená údajem, který nerozlišuje (podobnost se sousedem, čistá změna počtu, dnešní podíl); dohánění jako
+   kontext, ne „samy od sebe“; co divák nemusí znát, vysvětleno při první zmínce (stát, blok, válka, režim, čí je
+   firma); žádný holý pojem (`kontrola_srozumitelnosti.py --divak`); u cizích firem, co z hodnoty zůstává v zemi;
+   u každé země v každém kole hodnocení (co se povedlo nebo nepovedlo, proč, jak to ovlivnilo výsledek) s hlavním
+   důvodem, kudy k výplatě a důvodem řečeným důsledkem pro lidi, se silou podle předmětu a dokladů (bod 4c
+   a odrážka „Důvod soudu“ v §2.3); instituce v hlase nejvýš jednou za kolo a nikdy
+   jako důvod soudu; pointa po průběžném pořadí s osou kola a páteř upravená podle výjimek; cíl s vedlejšími faktory
    jménem kategorie a ikonou (§2.6); tučně jen klíčová fakta (nejvýš asi 40 % slov); oprava detailu z Ondřejovy
-   připomínky nepřidala do hlasu nové téma (bod 3a); délka nejvýš 9,5 minuty (bod 6). Kdo pravidlo
-   ruší, smaže ve skillu i to staré, které mu odporuje.
+   připomínky nepřidala do hlasu nové téma (bod 3a); délka podle rozpočtu (bod 6); hlavička uvádí verze skillů
+   a zadání, podle kterých text vznikl. Kdo pravidlo ruší, smaže ve skillu i to staré, které mu odporuje, a důvod
+   zapíše do souboru historie.
 4c. **Soudy a dopad na výplatu** na konci souboru (před párem sousedů): pro každé kolo řádek **Kolo N:** **a pro
    finále řádek **Cíl:**** (Ondřej 7. 11. 2026 večer: „všechna kola… nestačí jenom druhý a třetí“) a pod ním u každé
    země regionu jedna odrážka
-   `- Země — kudy: … — dopad: … — test: … — soud: … — proč: „doslovný úryvek důvodu“ — v textu: „doslovný úryvek soudu“`
-   (kudy = proč fakt mění, kolik člověk vytvoří nebo kolik mu zůstane, bod 2a krok 1a; **test = číslo země proti
-   sousedům z podkladu pro soud**, `soudy_karty/` v kole 1, `soudy_rust/` v kole 2, `soudy_dane/` v kole 3,
-   `soudy_cil/` ve finále, s výsledkem platí / neplatí; brána bez čísla v poli test neprojde; proč = důvod soudu jako
-   důsledek pro lidi, odrážka „Soud je nález z testu“ v §2.3; v kole 1 je soud dědictví, štěstí nebo smůla, ve finále
-   rozdíl proti pořadí po kolech a čím to je) a na konci kola odrážka
+   `- Země — hlavní: … — kudy: … — dopad: … — test: … — soud: … — proč: „doslovný úryvek důvodu“ — v textu: „doslovný úryvek závěru nebo soudu“`
+   (hlavní = hlavní důvod a za středníkem vedlejší podle záznamu pořadí příčin v analýze, analytický skill krok 2b
+   bod 4; kudy = proč fakt mění, kolik člověk vytvoří nebo kolik mu zůstane, bod 2a krok 1a; **test = číslo země
+   proti sousedům z podkladu**, `soudy_karty/` v kole 1, `soudy_rust/` v kole 2, `soudy_dane/` v kole 3,
+   `soudy_cil/` ve finále, s výsledkem podporuje / odporuje / nerozlišuje; brána bez čísla v poli test neprojde;
+   soud = hodnocení a jeho předmět, nikdy prázdné (výkon: „dohání nejrychleji v lize“, „ztratila tempo“;
+   rozhodnutí: dobře / špatně / napůl s doloženým účinkem; „zbytečná chyba“ jen s tehdy dostupnou lepší možností;
+   u neovlivnitelných věcí štěstí nebo smůla a jak si s nimi země poradila); proč = důvod hodnocení jako důsledek
+   pro lidi, odrážka „Závěr i soud jsou nález z testu“
+   v §2.3; v kole 1 jde o dědictví, štěstí nebo smůlu, ve finále o rozdíl proti pořadí po kolech a čím to je) a na
+   konci kola odrážka
    `- Pointa — výplata: … — v textu: „doslovný úryvek“`, jejíž úryvek mluví o výplatě nebo mzdě. Oba úryvky musí
    doslova stát v mluveném textu kola a úryvek důvodu nesmí jmenovat instituci, takže brána
    `scripts/kontrola_paru_sousedu.py` pozná, že soud i důvod opravdu zazní (Ondřej 6. 11. 2026: dřív kontrolní list
@@ -6292,28 +6372,28 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    brána hlídala jen tahle slova). Oddíl je zároveň **přehled pro Ondřeje**: u každé země vidí vedle sebe soud a jeho
    důvod a během minuty pozná, jestli jsou důvody lidské.
 5. **NEŘÍKEJ** na konci souboru: z mapy, krátce, pro Gemini.
-6. **Délka se počítá na zemi, ne na region:** rozpočet = **250 slov × počet zemí + 300 slov** na rámec regionu
-   (úvodní věta showcase, definice, průběžná pořadí, předávka). Region se třemi zeměmi má tedy asi 1 050 slov
-   (kolem sedmi minut), s pěti zeměmi 1 550, se šesti 1 800; celá epizoda 27 zemí v šesti regionech asi 8 550 slov.
-   Rozpočet napiš do hlavičky souboru i s výpočtem. Ondřej ho smí změnit, Claude ne: **bohatší vysvětlení se
-   nezískává přidáním slov, ale méně příčinami** (oddíl Nejvyšší priorita). (Poučení 2. 11. 2026: Jih se třemi
-   zeměmi dostal 1 500 slov a byl delší než Balkán s pěti; Ondřej to správně označil za nesmysl.)
-   **Strop času (Ondřej 6. 11. 2026 v noci: „potřebuju, aby to zůstalo maximálně 9,5 minuty, spíš po 9 minutách
-   jeden region“):** verze, která jde do hlasu, má **cíl 9 minut a nejvýš 9,5 minuty na region**, při změřeném tempu
-   hlasu 150 slov za minutu tedy cíl 1 350 a nejvýš 1 425 slov. Vzorec podle počtu zemí platí dál tam, kde vyjde méně
-   (tři země 1 050 slov). Vyšší rozpočty z dřívějška (Balkán 1 550 a 1 800 slov) tím končí. Strop hlídá brána
-   `kontrola_paru_sousedu.py`: spočítá slova mluveného textu po částech a nad stropem neprojde. Nový povinný prvek se
-   proto do textu nedostane přidáním slov: nejdřív ustoupí náhražky důvodu (§2.3, odrážka „Důvod soudu“), pak kulisy,
-   a teprve když ani to nestačí, méně důležitá příčina. (Poučení 6. 11. 2026: po doplnění soudů mělo kolo 3 Balkánu
-   660 slov místo 280 a nic to nezastavilo.)
-   **Vyváženost:** ve verzi do 9,5 minuty (vzor: krátká verze Balkánu z 6. 11. 2026) je orientační podíl showcase
-   asi 5 %, kolo 1 asi 25 %, kolo 2 asi 30 %, kolo 3 asi 20 %, finále asi 20 %. Kolo s pěti soudy s důvodem, čtyřmi
-   páry a pointou se pod asi 280 slov nevejde (zkouška 6. 11. 2026); dřívější podíly z dlouhé verze (showcase 10 %,
-   kolo 1 15 %, kolo 2 30 %, kolo 3 10 %, finále 35 %) už neplatí. **Na čem šetřit (Ondřej 5. 11. 2026):** na showcase (jen sportovní očekávání) a na otevření kol
-   (jedna věta), nikdy na párech sousedů a příčinách v kolech 2 a 3. Když se vysvětlení párů nevejde, nejdřív se
+6. **Délka: nejdřív rozpočet celé epizody, pak regiony (9. 11. 2026).** Cíl délky celé epizody stanoví Ondřej
+   a zapíše se do hlavičky páteře epizody. Z něj se odečtou samostatný úvod, velké finále a pauzy a zbytek se rozdělí
+   regionům podle počtu zemí (při tempu hlasu 150 slov za minutu: například cíl 50 minut a tři minuty mimo regiony
+   nechají regionům asi 7 050 slov, tedy asi 260 slov na zemi). **Strop regionu platí vždy** (Ondřej 6. 11. 2026
+   v noci: „potřebuju, aby to zůstalo maximálně 9,5 minuty, spíš po 9 minutách jeden region“): cíl 9 minut a nejvýš
+   9,5 minuty, tedy cíl 1 350 a nejvýš 1 425 slov, a u menšího regionu nejvýš 250 slov × počet zemí + 300, když vyjde
+   méně (tři země 1 050 slov). Dokud Ondřej cíl celé epizody nestanoví, platí tyto stropy a hlavička faktické verze
+   uvede, kolik podle nich vychází celá epizoda (šest regionů asi 7 500 až 7 800 slov, tedy 50 až 52 minut bez úvodu,
+   finále a pauz). Konečná délka se ověří nahrávkou. Rozpočet napiš do hlavičky souboru i s výpočtem. Ondřej ho smí
+   změnit, Claude ne: **bohatší vysvětlení se nezískává přidáním slov, ale méně příčinami** (oddíl Nejvyšší priorita).
+   Strop hlídá brána `kontrola_paru_sousedu.py`: spočítá slova mluveného textu po částech a nad stropem neprojde.
+   Nový povinný prvek se proto do textu nedostane přidáním slov: nejdřív ustoupí náhražky důvodu (§2.3, odrážka
+   „Důvod soudu“), pak kulisy, pak vedlejší důvody vedlejších zemí; pevné jádro (§3 bod 3) nikdy.
+   **Vyváženost:** ve verzi do 9,5 minuty je orientační podíl showcase asi 5 %, kolo 1 asi 25 %, kolo 2 asi 30 %,
+   kolo 3 asi 20 %, finále asi 20 % (u mezd se třemi koly a cílem; u jiného počtu kol obdobně). Kolo s pěti
+   hodnoceními s důvodem, čtyřmi páry a pointou se pod asi 280 slov nevejde (zkouška 6. 11. 2026; hodnocení se vejde
+   do věty, která nahradí část popisu). **Na čem šetřit (Ondřej 5. 11. 2026):** na showcase (jen sportovní
+   očekávání), na otevření kol (jedna věta) a na doplňcích, nikdy na pevném jádru (§3 bod 3). Když se vysvětlení
+   párů nevejde, nejdřív se
    krátí detaily příkladů; když ani to nestačí, Claude to řekne Ondřejovi s návrhem rozpočtu, nevynechá pár potichu.
    Žádná část nesmí být holá: každá země dostane v kole 1 jeden
-   konkrétní obraz své výchozí pozice (co měla nebo neměla: stroje, školy, odchod z polí do továren), ne jen místo
+   konkrétní obraz své výchozí pozice (co měla nebo neměla: stroje, školy, kolik lidí pracovalo na polích), ne jen místo
    a číslo. Žádná země nesmí mít v celém textu víc než asi dvojnásobek slov jiné země z regionu. **Rozpočet musí ležet mezi délkou textu bez volitelných a s nimi**
    (spočítej obojí a uveď to v hlavičce); když text na výchozí rozpočet nestačí, rozpočet se sníží, Gemini nesmí
    přidávat. (Poučení 1. 11.: Balkán měl rozpočet 1 450 při textu 1 220–1 420 slov.)
@@ -6333,26 +6413,40 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    i podklady pro soud a u každého testu se ptá, zda měří správnou věc (ukazatel odpovídá domněnce, srovnání se
    správnými sousedy a rokem dat, protipříklad v lize), a zda nález v hlase netvrdí víc, než test ukázal (u Balkánu:
    „odchází nejméně“ platilo jen přes diasporu, úřední roční čísla Bulharska jsou podhodnocená → „odešlo“;
-   „nejvíc v Unii“ platilo pro rok 2023, v roce dat 2024 bylo Bulharsko druhé → „skoro nejvíc“). Brána hlídá jen to,
-   že pole „test“ s číslem existuje a že důvod není v podmiňovacím způsobu; jestli test měří správnou věc, pozná jen
-   kontrolor.
+   „nejvíc v Unii“ platilo pro rok 2023, v roce dat 2024 bylo Bulharsko druhé → „skoro nejvíc“) a zda žádné
+   „odporuje“ nestojí na údaji, který nerozlišuje (analytický skill krok 2b bod 3). Brána hlídá jen to, že pole
+   „test“ s číslem existuje a že důvod není v podmiňovacím způsobu; jestli test měří správnou věc, pozná jen
+   kontrolor. **Čtvrtý úkol kontrolora (9. 11. 2026): váha důvodů.** Z mluveného textu u každé země jednou větou
+   napíše, co si divák odnese jako hlavní důvod a co jako doplněk, a porovná to se záznamem pořadí příčin v analýze
+   (analytický skill krok 2b bod 4). Nálezem je doplněk, který dostal víc místa než hlavní důvod, „hlavně“
+   u vedlejšího důvodu, pár vysvětlený vlastním růstem místo rozdílu proti sousedovi, čistá změna počtu vydaná za to,
+   kam lidé šli, dnešní podíl vydaný za příspěvek za celé období a dohánění řečené jako růst, který přišel sám.
+   Každá věta může být pravdivá, a celek přesto zavádějící; proto se kontroluje celek. **Pátý úkol kontrolora
+   (9. 11. 2026): hodnocení.** Hlídá obě vady: **chybějící hodnocení** (země má jen popis nebo výčet údajů, divák
+   nepozná, jestli si vede dobře; doplní se věcný hodnoticí závěr) a **nepodložený soud** (soud silnější, než
+   doklady unesou, nebo rozhodnutí odsouzené bez doloženého účinku; upraví se na rozsah, který doklady unesou,
+   třeba na hodnocení výkonu).
 
 Soubor se ukládá jako `FAKTICKA_VERZE.md` ve složce regionu a Ondřejovi se posílá přes SendUserFile.
 
 ### 4. Zpětná kontrola čtivé verze
 
-Ondřej vloží čtivou verzi z Gemini zpět. Kontroluje se **jen uzavřený seznam pěti odchylek** proti zámku faktů:
+Ondřej vloží čtivou verzi z Gemini zpět. Kontroluje se **jen uzavřený seznam šesti odchylek** proti zámku faktů:
 1. změněné nebo nově zaokrouhlené číslo, rok, místo;
 2. vypadlé omezující slovo („jen“, „asi“, „skoro“, „zčásti“, „reálně“, „v kupní síle“) nebo přívlastek, který odlišuje
    pojem („centrální“ plánování, „sovětského vzoru“); čtivou verzi proto vždy proženeš i kontrolou srozumitelnosti
    `--divak` a holý pojem opravíš rovnou sám;
 3. obrácený nebo zesílený směr příčiny („díky“ místo „kvůli“, „proto“ místo „zčásti proto“);
 4. změněný štítek, tip nebo pořadí;
-5. nový fakt, který ve faktické verzi není (značka s číslem, historie, citát).
+5. nový fakt, který ve faktické verzi není (značka s číslem, historie, citát);
+6. **změněná váha důvodů** (9. 11. 2026): hlavní důvod země zkrácený na dovětek, doplněk rozvedený víc než hlavní
+   důvod, nebo vypadlá protiváha, kterou závěr potřebuje. Kontrola: u každé země si přečti jen čtivou verzi, napiš
+   jednou větou, co si divák odnese jako hlavní důvod, a porovnej to se zámkem faktů.
 
 Plus: chybí-li pevný fakt ze zámku, je to odchylka.
 
-**Všechno ostatní je volnost Gemini** (obrazy, pořadí vět, tón, vtip, rytmus, délka vět) a nekomentuje se. Drobnost
+**Všechno ostatní je volnost Gemini** (obrazy, pořadí vět, pokud hlavní důvod zůstane hlavní, tón, vtip, rytmus,
+délka vět) a nekomentuje se. Drobnost
 (jedno slovo, číslo) opraví Claude rovnou a zapíše. Když je špatně celá věta, dostane Ondřej tu jednu větu se správným
 faktem, aby ji vrátil Gemini; nikdy celý seznam stylových připomínek. Výsledek: krátký seznam „co jsem opravil“ a hotový
 soubor `CTIVA_VERZE.md`.
@@ -6360,122 +6454,1024 @@ soubor `CTIVA_VERZE.md`.
 ### 5. Slepá zkouška diváka (u nového ukazatele nebo velké změny)
 
 Model, který analýzu neviděl, dostane jen mluvený text a odpoví na otázky příběhu (co je veličina kola, jak se měnilo
-pořadí, proč hlavní scéna, odpověď na otázku diváka, proč je země v cíli jinde než po kolech, splnily se tipy) a dá
-čtivost 1–10 s místy, kde se ztratil. Chybná odpověď = vada mapy nebo faktické verze, ne stylu.
+pořadí, proč hlavní scéna, odpověď na otázku diváka, proč je země v cíli jinde než po kolech, splnily se tipy),
+u zemí hlavní scény jednou větou, proč je země taková, druhou, v čem se lišila od souseda, a co je hlavní důvod
+a co doplněk, u každé země, **co se jí povedlo nebo nepovedlo, proč a jak významně to ovlivnilo výsledek**, a dá
+čtivost 1–10 s místy, kde se ztratil. Odpovědi se porovnají se záznamy pořadí příčin a hodnocením v analýze.
+Chybná odpověď = vada mapy nebo faktické verze, ne stylu.
 
 ### 6. Obecnost: jak postup použít na jiný ukazatel
 
 Postup nezávisí na mzdách. Kola jsou části výsledku daného ukazatele (u bydlení pět kol: výplata, lidé, zděděné byty,
 úroky, výstavba); definice veličiny se řekne u kola, kde je poprvé potřeba; rozklad „co kola nevysvětlí“ se bere
 z analýzy toho ukazatele, a když ho nemá, finále vykládá jen doložené instituce a těsnost pole. Výběr hlavní scény,
-otázka diváka, průběžné pořadí, páry sousedů, soud s důvodem a zámek faktů platí beze změny.
+otázka diváka, průběžné pořadí, páry sousedů, dvě otázky výkladu (proč je země taková a proč je před sousedem nebo
+za ním) s pořadím příčin, komentátorské hodnocení se silou podle předmětu a dokladů a zámek faktů platí beze
+změny. Kde skill mluví o výplatě (kudy k výplatě, pointa končí výplatou), u jiné epizody platí její ukazatel.
 
 ### 7. Historie
 
-- 31. 10. 2026: v1.0 z prototypu Jižní Evropy (`ep_001…/scenar_regiony_2026_10/gemini/JIZNI_EVROPA_PROTOTYP/`) a
-  Ondřejovy dramaturgie (showcase s tipy, průběžné pořadí po každém kole, finále = rozdíl proti pořadí po kolech).
-  Poučení z prototypu: Argon psal hezky, ale dělal faktické chyby (poměr „pětatřicetkrát“ místo skoro třistakrát,
-  vypadlé „zčásti“) a při plném zákazu vypouštění zůstal text hustý (čtivost 4–6/10). Proto dělba: fakta Claude,
-  čtivost Gemini na webu, zpětná kontrola jen pěti odchylek.
-- 2. 11. 2026: délka na zemi (250 × počet zemí + 300), vyváženost částí, charakteristika zemí v showcase a obraz
-  výchozí pozice v kole 1, finále bez „sčítá“. Podnět: Gemini (holý showcase a kolo 1, věta „v cíli se sčítá účet“)
-  a Ondřej (Jih se třemi zeměmi delší než Balkán s pěti). Jih zkrácen z 1 500 na 1 050 slov.
-- 2. 11. 2026 (odpoledne): pravidlo „Co za tím stálo“ pro stavy a kroky, test nosnosti příkladu, dohledání příkladů.
-  Podnět: Ondřej (Itálie „měla nejvyšší produktivitu“ bez vysvětlení proč). Jih: kolo 1 doplněno o továrny na dlaždice
-  v Sassuolu, stroje na balení u Bologni, automobilky ve Španělsku a portugalský textil a obuv.
-- 2. 11. 2026 (večer): podoba finále (nejdřív pořadí podle kol, pak odhalení od posledního a u každé země rozdíl proti
-  kolům a čím to je, prostor pro zvláštnosti) a známé firmy jako přednostní příklady. Podnět: Ondřej u Jihu
-  (Sassuolo mu nic neřeklo, u Španělska chtěl jako hlavní důvod nižší ceny). Zkouší se na Balkánu a Jihu, pak
-  finální skill.
-- 4. 11. 2026: osa kola a příčina pro každý pár sousedů (§2.3 bod 2a), od příkladu k ukazateli (2b), výjimka z testu
-  záměny (bod 3), uvedení země jako ve sportovním přenosu (§3 bod 1a). Podnět: Ondřej u Balkánu („Chorvatsko popsané
-  jako katastrofa, a přesto třetí z pěti“; „proč je Rumunsko poslední, když Bulharsko mělo taky těžké časy“; „pořád
-  se jen popisuje stav“). Proč to skill nedělal: kolo se psalo po zemích (stav, příčina, příklad), žádné pravidlo
-  nechtělo srovnání se sousedem v kole (jen ve finále), test záměny sdílený jugoslávský systém u Chorvatska vyškrtl
-  a pravidlo „Co za tím stálo“ chtělo příklad, ale ne jeho dopad na ukazatel. Balkán: kolo 1 přepsáno na tři patra
-  podle plánované ekonomiky; opravena vlastní chyba „Slovinsko plánovalo jen 23 let“ (vážené číslo projektu).
-- 4. 11. 2026 (večer): pojem s přívlastkem, který ho odlišuje (§3 bod 1b), a mechanická kontrola holých pojmů.
-  Podnět: Ondřej („Slovinsko plánovalo jen 23 let“ vytrhává kontext, plánuje i Německo a Švýcarsko, jen ne centrálně;
-  „mě strašně zdržuje, že musím každé jedno slovo opravovat“). Proč se to dělo: při zkracování na mluvenou větu se
-  z názvu faktoru („délka vnuceného centrálního plánování“) zahodil přívlastek jako zdánlivě zbytečný, zámek faktů
-  hlídal čísla a omezující slova, ale ne přívlastky pojmů, a Gemini zkracoval dál. Opraveno v Balkánu (osa kola,
-  Řecko, Chorvatsko, Bulharsko, Rumunsko) a ve Skandinávii a Beneluxu („centrálně plánované hospodářství“).
-- 6. 11. 2026 večer: krok „kudy k výplatě“ (§2.3 bod 2a krok 1a), dopad na výplatu i v kolech výkonu, pointa vždy
-  končí výplatou, krátká verze s hlavní scénou kola; brána hlídá pole „kudy“ a odrážku Pointa. Příčina: pravidlo
-  fakt → dopad → soud definovalo dopad jako „eura do ruky ze sta“, takže sedělo jen na kolo daní; v kolech výkonu
-  se mechanismus (proč vývojové středisko zvedá platy) tiše vynechával a brána ho nehlídala, krátká verze navíc
-  branou vůbec neprošla (Ondřej: „proč to tam zas nebylo? Už jsem z toho unavenej“).
-- 6. 11. 2026 (noc): soud má hned za sebou důvod řečený důsledkem pro lidi (§2.3, odrážka „Důvod soudu“, test
-  „a co z toho?“); instituce je doklad v zámku faktů, v hlase nejvýš jednou za kolo; rozlišení mince, doloženého
-  článku a nedoloženého skoku místo zákazu „nízké daně, proto slabé školy“ (úvod §2.3); podklad pro soud sbírá
-  důsledky pro lidi na obou stranách (§1); strop 9,5 minuty hlídaný branou (§3 bod 6); brána chce u každé země
-  doslovný úryvek důvodu a počítá zmínky institucí. Podnět: Ondřej u kola 3 krátké verze Balkánu („napsal, že je
-  to dobře napůl, a místo aby řekl proč, začal mluvit o Evropské komisi a OECD“; „když to už vyřeší, zásadně
-  protáhne skript“). **Proč to skill nedělal:** (1) krok soud byl zapsaný jako „opřený o instituci“, takže model
-  převzal od institucí i jejich měřítko (spravedlnost a skladba daní) místo měřítka epizody (výplata); (2) zadání
-  rešerše pro kolo daní začínalo „Co říkají instituce“ a důsledky pro lidi (výplaty v obálkách, práce načerno,
-  placení u lékaře ze svého) v ní zůstaly jako poznámky; (3) druhá strana nízkých daní stála jen v pointě dlouhé
-  verze, daleko od soudu, a úvod §2.3 ji po kontrole faktů uváděl jako zakázaný řetězec, takže při krácení vypadla
-  celá; (4) brána ověřovala jen to, že v textu stojí slova soudu, ne jeho důvod, a délku nehlídala vůbec; (5) v kolech
-  výkonu je fakt událost a jeho popis sám říká, co se lidem stalo, kdežto daň je nastavení, takže vzor z kol 1 a 2
-  se do kola 3 nepřenesl.
-- 7. 11. 2026: soud je nález z testu domněnky proti datům země (§2.3, odrážka „Soud je nález z testu“ místo „vždy
-  dvě strany“), tvar soudu volný, podmiňovací způsob v důvodu jako otisk neotestované domněnky, test záměny důvodu;
-  podklad pro soud přestavěn na fakt → domněnky obou stran → test číslem země proti sousedům → nález → věta soudu
-  (§1 a analytický skill krok 2b); brána hlásí v poli „proč“ slova „můžou, hrozí, svádí, by“. Podnět: Ondřej
-  u kola 3 Balkánu z 6. 11. („kdyby mi vyšlo, že Slovinsko má nejvyšší daňovou zátěž, a napsal, že to je špatně,
-  protože Slovinci si mohou hledat práci jinde, tak bych se podíval, jestli Slovinci utíkají… možná si to Slovinsko
-  může dovolit“; „‚A, ale B‘… to je zas strašně šablonovitý“; „ty myšlenkové řetězce, tu interpretaci dat, to se má
-  dělat v analýze hlavně“; instituce nikdy nepožadoval). **Proč to skill nedělal, i když 6. 11. chtěl důvod jako
-  důsledek pro lidi:** (1) do skillu se třikrát za sebou zapsal tvar Ondřejovy ukázky (soud + důvod; důsledek pro
-  lidi; dvě strany), ne postup, kterým ukázka vznikla (domněnka → pohled do dat → závěr), a model tvar vyplnil
-  prvním učebnicovým mechanismem; (2) analýza sbírala jen výroky institucí (`ekonomove/`: „snížení klínu by odradilo
-  odliv mozků“, MMF) a podklad pro soud začínal oddílem „Co říkají instituce“, nikdo se neptal, zda se důsledek
-  v zemi děje; (3) brány hlídaly tvar (úryvek, úřad, délka), ne pravdivost, takže se udělalo to, co šlo ověřit bránou
-  do hodiny, a test po zemích ne; (4) podmiňovací způsob („můžou hledat práci jinde“) nic netvrdí, proto prošel
-  i nezávislou kontrolou faktů. **Test pěti soudů kola 3 Balkánu (agenti s daty Eurostatu, SURS, DZS, ELA):**
-  Slovinsko: domněnka neplatí (odchody občanů 2,4 na tisíc, nejméně z regionu; diaspora 2,8 % proti 15 % chorvatské;
-  vysokoškoláci 2024 odešlo 1 459, vrátilo se 1 412; cíle Rakousko a Německo mají zátěž vyšší) → soud „může si to
-  dovolit“; Rumunsko: „svádí k práci načerno“ neplatí (Bulharsko s nejnižší zátěží má nehlášené práce skoro stejně,
-  Slovinsko se stejnou zátěží polovinu, napříč Unií vztah nulový) → nález „Rumun s poloviční výplatou si nechá 58 eur
-  ze sta, Chorvat 67“; Bulharsko: „nízká daň drží firmy“ slabé, „stát má méně“ platí (z vlastní kapsy 35,5 % výdajů
-  na zdraví, nejvíc v Unii); Chorvatsko: snížení daní 2024 přidá průměrné výplatě jen asi 6 eur měsíčně, čisté
-  výplaty rostou díky hrubým mzdám → „správný směr, malý krok“; Řecko: odvody klesly o 5,4 bodu, ale daň z příjmu
-  vzala asi 70 % úlevy zpět (pásma bez valorizace), ze sta eur zbývá jen asi o euro víc než 2019 → „napůl“. Všech
-  pět soudů se testem změnilo a žádný nemá tvar „dobře, protože…, špatně, protože…“; kolo zůstalo na 322 slovech.
-- 7. 11. 2026 (večer), **zkouška univerzálnosti na Pobaltí, kolo 2 (růst výkonu 1996–2024)**: Ondřej („když to
-  uděláš jenom u daní, kde jsem ti trošku řekl, jak to chci, tak já nepoznám, jestli ten systém je univerzálně dobře
-  nastaven“). Opus dostal jen skilly, analýzu a starý scénář: stáhl přes dvacet sad dat, otestoval jedenáct domněnek
-  u tří zemí, osm vyřadil (Litvu nevytáhly zahraniční investice ani vyšší investice; Estonsko netáhnou Skype, Bolt
-  a Wise; Lotyšsko není za Estonskem kvůli krizi ani odchodu lidí, test záměny s Litvou), jeden nález nahradil
-  domněnku (Lotyšsko dohání Estonsko jen úbytkem pracujících o osminu), jednu příčinu nechal poctivě nezjištěnou
-  (estonské zpomalení po roce 2008) a jednu otázku poslal Ondřejovi (Estonsko před Lotyšskem jen v kupní síle).
-  Nezávislý kontrolor rozdíl obou měření rozložil na příčinu (směnné relace: ceny estonského vývozu proti dovozu +34 %,
-  lotyšské +7,5 %) a chytil dvě věty silnější než test (vazba „nejvíc cizích peněz, a přesto pokles“; nominální
-  výplaty proti reálnému výkonu). Divák 6 z 10. **Co z toho přibylo do skillů:** test i v kolech výkonu (analytický
-  skill krok 2b, §1), jedno měřítko kola a postup při rozporu dvou měření, pásmo chyby ne z rozporu dvou pojetí
-  (analytický skill krok 9a.3), obal soudu se u sousedů neopakuje a nálezy z dělení se říkají obrazem (§2.3);
-  brána umí jedno kolo (`--jen-kolo`), vyžaduje pole „test“ s číslem a odmítá pár bez nalezené příčiny. Zkouška:
-  `POBALTI/ZKOUSKA_KOLO2_2026-11-07/` (KOLO2_POBALTI.md verze 4, soudy_rust, ZPRAVA.md oddíl 9).
-- 5. 11. 2026: páteř epizody, otevření kola sázkou a pointa po průběžném pořadí (§2.3 úvod), srovnání se sousedem
-  u nižší země (§2.3 bod 2a). Podnět: Ondřej („chybí základní vysvětlení, proč má produktivita tak zásadní vliv na plat…
-  proč sis sám nešel po tomto patternu“; podobu „lekce na konci kola, ne přednáška na začátku“ navrhl a schválil
-  týž den). Proč to skill nedělal: všechna pravidla vznikla z oprav u jednotlivých zemí, žádné nechtělo obecnou
-  lekci kola, i když ji analýza měla v číslech (výkon vysvětlí většinu rozdílů, podíl mezd je v Evropě podobný,
-  daně jsou nejslabší kolo). Balkán přepsán jako první zkouška (1 545 slov).
-- 5. 11. 2026 (večer): showcase bez charakteristik (zrušeno pravidlo z 2. 11., které omylem zůstalo vedle novějšího
-  ze 4. 11.), otevření kola jedna věta (sázka zrušena, osa do pointy), páry sousedů povinně ve všech kolech
-  s oddílem „Páry sousedů“, váha důvodů, domácí podíl u cizích firem, kolo daní s příčinami, kontext pro diváka
-  (která válka, Jugoslávie, které budovy), kontrolní list ve faktické verzi, na čem šetřit. Podnět: Ondřej
-  u Balkánu („kolo 1 je dobré, protože jsem to babysitoval… ve druhém a třetím kole analytický řetěz upadá“;
-  Bulharsko v kole 1 pochválil jako vzor). **Proč výklad v kolech 2 a 3 upadl, i když pravidlo 2a platilo pro
-  všechna kola už od 4. 11.:** kolo 1 se psalo znovu s novou rešerší, kola 2 a 3 se jen převzala ze starší verze
-  a krátila na rozpočet; pravidlo se kontrolovalo po paměti a nezávislý kontrolor dostal úkol jen obecně. Krácení
-  tak potichu smazalo právě vysvětlení párů. Oprava: páry se píšou do souboru, hlídá je brána
-  `scripts/kontrola_paru_sousedu.py`, kontrolor ověřuje každé kolo zvlášť a rozpočet nikdy nesmí vzít pár (§3 bod 6).
-- 5. 11. 2026 (noc): cíl s vedlejšími faktory jménem kategorie z úvodu a ikonou (§2.6), tučně nejvýš asi 40 % slov
-  (§3 bod 3), obojí v bráně. Podnět: Ondřej (cíl vykládal posuny hlavními faktory a vedlejší nejmenoval; sportovní styl
-  Gemini zmizel). Příčina druhého: v Balkánu bylo tučně 97 % slov, takže Gemini neměl co přepsat.
+Záznam změn a jejich důvodů je v `voiceover-mapa-pribehu-HISTORIE.md`; předchozí znění
+v `voiceover-mapa-pribehu-SKILL-v1.0.md`. Kdo pravidlo mění, přepíše platné znění na jeho místě, smaže
+to, co mu odporuje, a důvod zapíše do souboru historie.
+
+
+# Skill: analyza-pricin-regiony-SKILL-v1.5.md
+
+## Analýza příčin pro regionový systém (skill v1.5)
+
+*Verze 1.5, 9. 11. 2026. Stav: podle tohoto skillu vznikají analýzy regionů (mzdy od 23. 10. 2026) a aktivní skill
+mapy příběhu (`voiceover-mapa-pribehu-SKILL-v1.1.md`) na něj odkazuje jako na jediné platné znění postupu výkladu;
+formální aktivaci potvrzuje Ondřej (oddíl 6, otevřená otázka 6). Každý výstup zapíše do hlavičky, podle které verze
+vznikl (krok 10.7).*
+
+**Co se změnilo proti verzi 1.4** (Ondřej 9. 11. 2026 poslal k provedení audit „Proč se z dobrých podkladů ztrácí
+hlavní vysvětlení“):
+1. **Test domněnek má tři výsledky** (podporuje / odporuje / nerozlišuje) a před každým „odporuje“ otázku, zda by údaj
+   mohl vypadat stejně i při platné domněnce. Podobnost se sousedem, čistá změna počtu ani dnešní podíl příčinu samy
+   nevyřadí (krok 2b bod 3, tvrdé pravidlo 15). Dřívější „neplatí, když se země chová jako sousedé“ a „test záměny“
+   jsou v postupu regionů zrušené.
+2. **Pořadí příčin (váhy)** se určuje mezi testy a nálezem, zvlášť pro vlastní hodnotu země a pro rozdíl proti
+   sousedovi, s dokladem velikosti pro stejné měřítko a období; neznámá velikost není malá velikost a jeden proces se
+   nerozdrobí na soupeřící drobnosti (krok 2b bod 4, tvrdé pravidlo 16).
+3. **Výběr kol a výklad hodnot jsou dvě rozhodnutí:** přísná pravidla ligy rozhodují jen o tom, co je kolo; proč má
+   země v kole svou hodnotu, posuzují doklady o zemi (krok 7.6).
+4. **Dohánění je kontext, ne příčina ani zásluha** (krok 9a.3; kalibrace štítků v kroku 9b).
+5. **Komentátorské hodnocení je povinné u každé země** (co se povedlo nebo nepovedlo, proč je to důležité a jak to
+   ovlivnilo výsledek); síla soudu se řídí předmětem (výkon, konkrétní rozhodnutí, „zbytečná chyba“) a doklady,
+   odůvodněný úsudek je dovolený (krok 2b bod 6; doplněk z 9. 11. 2026, protože první znění bylo příliš opatrné).
+6. **Kontroly:** kontrola vah a testů nezávislým kontrolorem, oprava čísla otevírá odvozené závěry, záznam použitých
+   verzí (krok 10.5–10.7).
+7. **Jedno platné znění:** doplňky, které dřív platily „místo“ těla skillu (verze 1.4, doplňky z 25. 10. a 7. 11.
+   2026), jsou zapracované na svá místa (krok 4.3, 7.4, 7.5, 8, 9a, 9b, slovník, oddíl 6) a jejich hlavičky i záznamy
+   změn verzí 1.2–1.4 se přesunuly do `analyza-pricin-regiony-HISTORIE.md`. Předchozí znění zůstává beze změny
+   v `analyza-pricin-regiony-SKILL-v1.4.md`.
+
+**Co zůstalo:** cíl, kroky 1–10, svědci a pojistky, výpočet kol, rozdané karty a tah země, hodnocení na dvou osách,
+podklad pro scénář, tvrdá pravidla 1–14 a Ondřejova rozhodnutí. Ukázky v pravidlech jsou ukázky typu: skill žádné
+zemi nepředepisuje odpověď ani to, která příčina má vyhrát.
+
+### 0. Rozdané karty a tah země
+
+#### 0.1 K čemu to je
+
+Divák má u každé země poznat, zda výsledek dělají těžké nebo lehké výchozí podmínky, nebo dobrá či špatná práce státu,
+obcí, firem a stavitelů. Dřívější dělení na potenciál a strategie se mělo totéž, ale stálo na samostatných indexech
+s vlastními katalogy a výsledku samo nic nevysvětlilo; tady se dělí faktory jednoho modelu kol, takže se karty a tah
+dají postavit proti skutečnému výsledku a scénář může říct, jak země se svými kartami hrála.
+
+#### 0.2 Pravidlo zařazení faktoru
+
+1. **Rozdané karty:** stav na začátku hodnoceného období, vnější podmínky a rámec z vyšší úrovně, které aktéři
+   hodnoceného odvětví (u bydlení stát v bytové politice, obce, stavitelé) v hodnoceném období přímo nezmění. U bydlení
+   čistá výplata (výsledek celé ekonomiky za desetiletí), změna počtu obyvatel (demografie, migrace, uprchlíci),
+   zděděná zásoba bytů ze sčítání na začátku období, úroky hypoték po odečtení inflace (v eurozóně měnová politika ECB).
+2. **Tah země:** činnost, pravidla, investice a změny v hodnoceném období, které aktéři odvětví mají v rukou. U bydlení
+   tempo výstavby a s ním povolování, výstavba v hlavním městě, sociální a neziskové byty, regulace nájmů, dotace
+   kupujícím a daňová zvýhodnění, zlatá víza a zdanění krátkodobých pronájmů.
+3. **Rozhoduje pravidlo, ne pohodlí výkladu:** faktor, který aktéři odvětví zčásti ovlivní, ale hlavní tahoun je
+   mimo ně (přírůstek lidí přes migrační politiku), zůstává kartou. Skupina se zapíše u kola (pole `skupina`).
+4. **Faktor, který je zčásti výsledkem** (výstavba reaguje na ceny; cena nového bytu vůči ceně stavby obsahuje cenu),
+   se v tahu země používá jako stopa a doklad, ne jako samostatná příčina, dokud ho nepodpoří svědci (krok 5).
+5. **Obecně pro další disciplíny** (příklady, ne seznam; u každé disciplíny se zařazení posoudí znovu): u mezd rozdané
+   karty historický start po roce 1990 (zděděný kapitál, výkon na začátku období), přírodní bohatství, zeměpisná poloha
+   a sousedství bohatých trhů, věková stavba obyvatel; tah země růst výkonu pracujícího za období, zátěž daní a odvodů,
+   přesun ekonomiky do oborů s vyšší přidanou hodnotou, investice firem do výzkumu a strojů.
+
+#### 0.3 Co z toho smí do scénáře
+
+1. **Papírové pořadí podle rozdaných karet smí do scénáře** (Ondřej 16. 10. 2026: „Vyřadil jsem to ale z toho důvodu, že do papírových předpokladů jsi počítal jen čistou mzdu, a to bylo velmi neúplné. Teď, když je potenciál kompletní, tak to dává smysl. A naopak to velmi pomůže vysvětlení, co země dělá dobře a co ne.“): kdo je podle
+   karet papírový favorit regionu, kdo by byl poslední a která země je proti kartám překvapení nebo zklamání; vždy
+   jako papírový předpoklad a se skutečností zvlášť. Zákaz z 13. 10. 2026 platí dál pro čekané místo po jednotlivých
+   kolech a pro očekávání podle samotné výplaty. Karty jsou jen část výsledku; zbytek dělá tah země a to, co kola
+   nevysvětlí, a když velkou část rozdílu kola nevysvětlí, řekne se to.
+2. U tahu země jen kroky s doloženým účinkem (instituce ho změřila nebo výslovně posoudila).
+
+#### 0.4 Hodnocení na dvou osách
+
+**Osa 1, evropská realita:** výsledek země proti středu ligy (u bydlení koupě v letech výplaty a nájem v procentech
+výplaty proti mediánům ligy, necelých 11 let a 58 %) a patro evropské reality. Patra (schválil Ondřej 16. 10. 2026):
+1.–6. místo evropská špička, 7.–15. nad středem až kolem středu Evropy, 16.–20. pod středem Evropy, 21.–27. evropský
+suterén.
+
+**Osa 2, tah země a směr jízdy:** co země se svými kartami udělala, ukazatel směru za hodnocené období (u bydlení změna
+poměru cen bytů k příjmům 2010–2024; Eurostat `tipsho60`, u Švýcarska, Norska a Británie OECD, srovnatelné přibližně)
+a štítek politiky. Štítky a kritéria jsou v kroku 9b (ve scénáři se štítky neříkají, skill mapy příběhu §2.7); štítek
+**„snaží se v těžkých podmínkách“** dostane země s doloženým velkým úsilím v tahu (u bydlení výstavba výrazně nad
+demografickou potřebou), jejíž směr se lepší, ale karty nebo dědictví ji drží ve spodní části ligy; osa 1 se u ní ukáže
+vždy a jasně (v obraze; v hlase bez čísla místa v lize, skill mapy příběhu §2.6), aby země ze spodku tabulky
+nevyzněla jako vítěz.
+
+### 1. K čemu skill je
+
+Skill vytvoří analýzu jednoho ukazatele pro 27 zemí ligy tak, aby z ní šla postavit epizoda v regionovém systému. Odpovídá na tři otázky:
+1. **Které faktory o ukazateli rozhodují**, jak velkou část rozdílů mezi zeměmi každý vysvětluje a jak silně působí. Nejvýš pět jsou hlavní faktory (kola), ostatní plynule navazují jako vedlejší faktory.
+2. **Kolik každý faktor přidá nebo ubere každé zemi** proti měřítku ligy, a které faktory jsou u jednotlivých zemí výjimečně silné, i když celkově mají malý vliv.
+3. **Co země v čase udělaly** a jak se to projevilo.
+
+**Cíl (Ondřej 13. 10. 2026 v noci):** „Pokud bych zadal indikátor, autonomně se mi vytvořila dobrá analýza a hned na to
+script. Tak já už si to doladím.“ Skill proto z indikátoru autonomně vytvoří analýzu a podklad pro scénář (krok 9a), ze
+kterého writer rovnou píše; Ondřej jen dolaďuje. Pravidla writera pro regiony se doplní podle vzoru, který Ondřej
+schválí (první blok scénáře podle konceptu, krok 9a).
+
+Ondřejovo zadání (11. 10. 2026):
+1. Vybrat všechny faktory, které mají vliv na ukazatel, a spočítat vliv každého v procentech. Pět největších jsou hlavní faktory; ostatní navazují jako vedlejší (Ondřejovými slovy `pod čarou`); faktor s malým celkovým vlivem může mít u jedné země velký vliv.
+2. Konec dělení na potenciál, krátkodobou a dlouhodobou strategii. Prostě všechny faktory s vlivem.
+3. Výpočet vlivu musí být důkladný a data musí vystihovat příčinu u všech ukazatelů. Nikdy nesmí ukazatel, který se buduje desítky let, vysvětlovat jeden rok dat.
+4. Měřítkem u každého faktoru je průměr všech zemí ligy (žádné „potřebné hladiny“). *(Ondřej 12. 10. 2026 změnil na medián ligy.)*
+5. Regiony, kola s místem v regionu i v celé lize, výsledek i proti čekanému výsledku, kroky zemí doložené vývojem v čase. *(Ondřej 13. 10. 2026 v noci: čekaný výsledek se dál počítá uvnitř analýzy, ale divákovi se neříká, ani po kolech, ani v cíli; oddíl 6.)*
+6. Ekonomové jsou vodítko; procenta počítá skill; výpočty nesmějí být v rozporu s ekonomy.
+
+Ondřejův koncept bloku regionu (13. 10. 2026): kola od nejvlivnějšího faktoru po nejméně vlivný (dnes uvnitř skupin rozdaných karet a tahu země, krok 7.5);
+zděděný stav a tok zvlášť (u bydlení zásoba bytů a tempo výstavby), aby šlo vysvětlit, co vlády, firmy a společnost
+dělají dobře nebo špatně; v každém kole země regionu od nejlepší hodnoty po nejhorší a u každé výklad, proč má hodnotu
+takovou, jakou má; po kolech další faktory, které hrají velkou roli jen v některých zemích; odhalení pořadí od
+posledního po nejlepšího, krátké zopakování příčin a hodnocení výkonu země (víc typů hodnocení než dva). Analýza dodává
+text uzpůsobený pro psaní scénáře (krok 9a), ne jen tabulky. Kola jsou všechny zařazené faktory v pořadí obvyklého vlivu, nejvýš pět (krok 7.5); `zděděný stav` znamená to, co země měla na začátku horizontu, `tok` to, co přibylo za horizont (krok 7.4); citace a kdo co rozhodl jsou v oddílu 6.
+
+### 2. Slovník
+
+| Pojem | Význam |
+|---|---|
+| ukazatel (výsledek) | to, v čem země soutěží (např. dostupnost bydlení), jedno číslo za zemi a rok; u složeného ukazatele i jeho složky (u bydlení koupě a nájem) |
+| faktor | věc, která ukazatel ovlivňuje (přírůstek lidí, výplata, výstavba…) |
+| **podíl na rozdílech** („vliv v procentech“) | jakou část rozdílů mezi zeměmi faktor vysvětluje v modelu na našich datech. **Není to síla účinku.** Uvádí se ve třech podobách: sám, přidaný jako poslední a průměr přes všechna pořadí (`Shapleyho metoda`). U faktorů, které spolu souvisejí, se uvádí i jejich společná část |
+| **síla účinku** | o kolik procent se změní výsledek, když se faktor změní o 10 % nebo o typický rozdíl v lize; z našich dat, nebo ze studií |
+| příspěvek země | o kolik faktor posouvá výsledek dané země proti měřítku ligy; v `logaritmickém` modelu se příspěvky sčítají v `logaritmických bodech` a na procenta se převádí až součet |
+| hlavní faktor | jeden z nejvýš pěti faktorů; v epizodě kolo; stejné pro všechny země; jeden hlavní faktor může dát dvě kola, když se rozdělí podle kroku 7.4 (u bydlení nabídka bytů na zásobu a tempo výstavby); kol je vždy nejvýš pět |
+| vedlejší faktor (dřív `pod čarou`) | ostatní faktory; rozebere se jen u zemí, kde mají velký příspěvek |
+| měřítko ligy | hodnota, se kterou se země v kole srovnává; **medián ligy** (Ondřej 12. 10. 2026, dříve průměr); jedno měřítko platí pro všechny faktory i pro výsledek |
+| čekaný výsledek (dřív `čára ligy`) | výsledek, který by země měla podle dosud odjetých kol; **po prvním kole** podle prvního hlavního faktoru, **po každém dalším kole** podle všech dosavadních; v cíli se skutečný výsledek porovná s čekaným po posledním kole a rozdíl je „co kola nevysvětlila“ Počítá se uvnitř analýzy pro šetření toho, co kola nevysvětlí, detektory a zvláštnosti zemí. Divákovi se jako předpověď neříká a pořadí podle hlavního faktoru se nevydává za očekávaný výsledek; scénář smí ukázat průběžné pořadí po kolech jako stav závodu a papírové pořadí podle rozdaných karet (krok 7.5, oddíl 0.3) |
+| horizont | doba, za kterou se ukazatel buduje; určuje se testem (krok 1) |
+| obrácený směr | výsledek ovlivňuje faktor; nejdřív se ověří v datech (krok 3) |
+| aritmetika | faktor je ve vzorci ukazatele (výplata ve jmenovateli dostupnosti) |
+| síla důkazu | **potvrzený daty** / **doložený svědky** (zařazen podle kroku 5 bez podpory srovnání zemí; dřív „doložený studiemi“ a „doložený uvnitř zemí“) / **zvláštnost zemí** / **hypotéza**; každému stupni odpovídají povolená slovesa (oddíl 4, pravidlo 10; upraveno ve v1.2) |
+| svědek | samostatný druh dokladu o vlivu faktoru: studie, ekonomové v lize, srovnání zemí ligy, vývoj v čase, případy; mechanismus je podmínka. Každý svědek vypoví „podporuje / odporuje / mlčí“ a je, nebo není spolehlivý (krok 5) |
+| rodina zdrojů | svědci, kteří stojí na stejném podkladu, se počítají jednou (případ rozebraný studií je jen studie; přílohy Evropské komise jsou jedna rodina) |
+| zvláštnost zemí (dřív `specifikum`) | faktor, který má dost svědků jen v některých zemích; rozebere se u nich (krok 7.3), do čekaného výsledku nevstupuje |
+| hypotéza | faktor s mechanismem, ale bez dvou nezávislých svědků; uvede se mezi vedlejšími faktory s tím, který svědek chybí („co by rozhodlo“) |
+| časový profil | jak rychle výsledek na změnu faktoru reaguje a jak dlouho účinek trvá; určuje, jak se tok měří (váhy podle stáří, krok 3.11) |
+| region | **od 25. 10. 2026 (Ondřej, 1. epizoda mzdy):** Skandinávie a Benelux (NO, SE, FI, DK, NL, BE); západní Evropa (DE, CH, FR, GB, IE); jižní Evropa (ES, PT, IT); Balkán a jihovýchodní Evropa (SI, HR, RO, BG, GR); střední Evropa (AT, CZ, PL, SK, HU); Pobaltí (EE, LV, LT). **Platí pro celou sérii, i pro bydlení (Ondřej 26. 10. 2026); bydlení se přepočítá na jeho pokyn.** *Dříve (11. 10. 2026, zatím v hotových scénářích bydlení): západní Evropa i s AT, Balkán a východní Evropa (HR, RO, BG, GR), střední Evropa i se SI.* |
+| kolo | jeden zařazený faktor (krok 5), nebo jedna jeho část podle kroku 7.4, který se v epizodě ukáže všem zemím regionu najednou; kola jdou nejdřív rozdané karty, pak tah země, uvnitř skupiny od největšího obvyklého vlivu po nejmenší; je jich nejvýš pět a stejná pro všechny země (krok 7.5) |
+| bod | jednotka příspěvku faktoru: 1 bod ≈ bydlení o 1 % dostupnější než u typické země ligy. Přesně to platí jen u malých hodnot, protože se počítá v `logaritmech`: 20 bodů je asi 18–22 %, 33 bodů asi 28–39 % |
+| typická země | pomyslná země, která má u všech faktorů hodnotu měřítka ligy; body se počítají proti ní |
+| obvyklý vliv (dřív `typický posun`) | o kolik bodů faktor obvykle posune zemi proti typické zemi: medián absolutních bodů 27 zemí, s 90% intervalem z převzorkování zemí (země se losují s opakováním a výpočet se zopakuje). Podle něj se řadí kola (krok 7.1 a 7.5) |
+| podíl na obvyklém vlivu | obvyklý vliv faktoru dělený součtem obvyklých vlivů všech kol (u bydlení podíl čisté výplaty podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Říká, jak velký kus toho, co kola obvykle udělají, připadá na jedno kolo. **Není to podíl vysvětlených rozdílů** mezi zeměmi a nesčítá se na celý výsledek: kola asi třetinu rozdílů mezi zeměmi nevysvětlí (u bydlení vysvětlí 68,9 %). **Podíl roste, když se faktor rozdělí**, protože obvyklé vlivy částí se sčítají v absolutních hodnotách (čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Podíly rozděleného faktoru se proto se staršími nebo nerozdělenými výpočty nesrovnávají. |
+| podíl rozdílů, který faktor vysvětlí sám | jakou část rozdílů výsledku mezi zeměmi vysvětlí výpočet, ve kterém je jen tento faktor, se stejnou silou jako v kolech (síla z dat ligy, nebo ze studií podle kroku 6.2). Je to první z podob podílu na rozdílech („sám“). U čisté výplaty u bydlení podle posledního výpočtu (`KOLA_KONCEPT_TABULKA.md`). U faktoru ve jmenovateli ukazatele (aritmetika, krok 1.2) obsahuje početní i ekonomický účinek a podává se ve dvou částech: „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší (o 1 % vyšší výplata = nový byt o 0,72 % a nájem o 0,56 % dražší)“. Divákovi se říká jen podle rozhodnutí o otevřené otázce 2 |
+| čekané místo | místo, na kterém by země byla podle dosud odjetých kol, vždy podmiňovacím způsobem. Do scénáře smí jen jako průběžné pořadí po kolech (stav závodu, ne předpověď) a jako papírové pořadí podle rozdaných karet; rozdíl skutečného místa proti čekanému („o tolik míst lépe, než se čekalo“) zůstává jen v datech pro analytika (krok 7.5, 9a.5) |
+| další faktory zemí | faktory mimo kola, které v některé zemi hrají velkou roli: zvláštnosti země (krok 7.3) a vedlejší faktory, jejichž příspěvek u země přesahuje typickou odchylku výpočtu; rozeberou se jen u těch zemí (krok 9a.4). Patří sem i zařazený faktor, který z kol vyřadil Ondřej rozhodnutím o dramaturgii; jeho body ale zůstávají v čekaném výsledku |
+| co země měla na začátku (`zděděný stav`; nové po nezávislé kontrole 13. 10. 2026) | část faktoru, kterou země měla na začátku horizontu (u bydlení byty, které země měla na začátku, podle sčítání 2011) |
+| co přibylo za horizont (`tok`; nové po nezávislé kontrole 13. 10. 2026) | část faktoru, která přibyla od začátku horizontu do dneška (u bydlení byty dokončené od dne sčítání 2011 do konce roku 2024); rozdělení podle kroku 7.4 |
+| páka | věc, kterou může stát, firmy nebo společnost změnit (zákon, program, výstavba, sazba). Štítek páky z listu měření (krok 3.9) říká, jak moc: **dané** (nejde změnit: poloha, podnebí), **vystavené** (přichází zvenku: sazby v eurozóně, příliv lidí), **pomalu ovlivnitelné** (změní se jen za léta: zásoba bytů, výplata, výstavba), **řiditelné** (změní se rozhodnutím: daň, regulace) |
+| typická odchylka | o kolik se země obvykle liší od středu. U hodnot faktoru je to směrodatná odchylka 27 zemí kolem měřítka ligy (u bydlení třeba výplata asi 1 390 € čistého měsíčně, změna počtu obyvatel asi 8,7 procentního bodu). U výpočtu je to typický rozdíl skutečného a čekaného výsledku země (u bydlení orientačně ±15 %, krok 6.5) |
+| vyčnívající hodnota | hodnota země v kole, která patří mezi pět nejlepších nebo pět nejhorších v lize, nebo je od měřítka ligy vzdálená aspoň o typickou odchylku hodnot (krok 7.3); dostane podrobný výklad (krok 9a.3) |
+| otázka výkladu | co přesně se u země vysvětluje: (a) její vlastní hodnota nebo změna v kole, nebo (b) rozdíl proti sousedovi v pořadí kola; každá otázka má své příčiny a váhy (krok 2b) |
+| pořadí příčin (váhy) | hlavní, vedlejší a nerozlišená část mechanismů pro jednu otázku výkladu, s dokladem velikosti pro stejné měřítko a období (krok 2b bod 4) |
+| podporuje / odporuje / nerozlišuje | výsledky testu domněnky; „nerozlišuje“ znamená, že údaj by vypadal stejně, ať domněnka platí, nebo ne, takže ji nevyvrací (krok 2b bod 3) |
+| dohánění | rychlejší růst zemí s nižším startem, které mají co dohánět; kontext srovnání, ne příčina ani zásluha; vysvětlují ho konkrétní procesy, kterými země doháněla (krok 9a.3) |
+
+### 3. Postup
+
+#### Krok 1. Rozbor ukazatele
+
+Před hledáním příčin se zapíše list ukazatele:
+1. **Vzorec a složky.** U bydlení: polovina let čisté výplaty na nový byt 70 m² vůči měřítku ligy a polovina podílu nájmu na čisté výplatě. **U složeného ukazatele se modeluje každá složka zvlášť** (koupě: cena za m², nájem: nájem za m²) a složený výsledek se z nich skládá; faktor s opačným účinkem na složky se uvede jako takový.
+2. **Aritmetika.** Faktor ve jmenovateli (výplata) se nevkládá do podílu na rozdílech jako jedna položka. Model stojí nad čitateli (cena, nájem) a výplata v něm vystupuje jako faktor poptávky; divák dostane „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: bohatší země mají dražší byty o X %“.
+3. **Horizont testem setrvačnosti.** Dnešní hodnota ukazatele (nebo nejbližší dostupné náhrady) se vysvětlí vlastní hodnotou před 5, 10, 15, 20 a 30 lety. Horizont je nejdelší zpoždění s daty pro aspoň 24 zemí, při kterém vlastní minulost vysvětlí aspoň polovinu dnešních rozdílů. Potom se výsledek rozloží na start a změnu za horizont. Když data horizont nepokrývají, platí krok 3, pravidlo 10.
+4. **Srovnatelnost a pásmo chyby.** U každé země se zapíše definice (celá země, nebo města; s DPH, nebo bez; nabídková, nebo transakční cena; pojem mzdy) a **pásmo chyby** z definičních rozdílů v procentech. Rozdíly se opraví; co opravit nejde, nese příznak v datech pro edit.
+   - Druh obydlí, geografie a druh ceny se ověří v původní tabulce zdroje, ne podle nálepky („celostátní cena nového bytu“ byla u Norska a Irska cena rodinných domů a u Rumunska všech obydlí; poučení 7). Složení výstavby (kde se staví) je součást definice a u výkladu odchylky země se řekne (poučení 8).
+   - Každý příznak měření se vyčíslí: o kolik by se odchylka země změnila po opravě. „Jen měření“ smí zaznít, jen když po opravě odchylka spadne pod práh šetření (Česko: +27 % → +18 %, tedy jen asi třetina; poučení 12).
+   - **Nezávislé měření téhož jevu** (jiný zdroj nebo metoda) se sebere vždy; když s výsledkem nesouhlasí, je srovnání zemí nespolehlivé u všech faktorů, dokud se měření výsledku neopraví (zdravé roky: shoda s nadějí dožití jen 0,40; poučení 21).
+5. **Krok 1 se uzavře dřív, než začne výběr faktorů.** Opravy výsledku mění i výběr (přírůstek lidí přidal po opravě cen 18,5 % rozdílů místo 13 %; poučení 9). Náhrada ukazatele pro test horizontu se musí s ukazatelem shodovat aspoň z 0,8 a u každého zpoždění se uvede počet zemí (poučení 2).
+
+#### Krok 2. Kandidáti na faktory
+
+1. **Pevný seznam kategorií příčin** (10–12) a jejich přiřazení ke kandidátům se zapíše do gitu **před rešerší** („předem“ = zapsáno v commitu dřív, než se stáhla data faktoru).
+2. **Ekonomové v každé zemi:** rešerše všech 27 zemí (formát `ekonomove/{kód}.md`). Evidují se zdroje (instituce, rok, dokument) a jen **výslovné výroky s citací** („hlavní příčina“, „klíčový faktor“, uvedené pořadí), zvlášť pro úroveň a pro vývoj.
+2a. **Rešerše lidských příkladů** podle zásady `05_epizode_packs/_skills/ekonomie-lidskou-reci-ZASADA-v1.0.md`: pro každou zemi
+   `priklady/{kód}.md`, u každého hlavního faktoru a zvláštnosti 2–3 konkrétní příklady (firma, výrobek, místo,
+   povolání, situace ze života) se zdrojem a nosností a u každého kroku „co se lidem změnilo, jak to bylo provedeno,
+   kudy to doputovalo k ukazateli, doložený účinek“. Do vah ani výpočtů nevstupuje; slouží výkladu (krok 9a)
+   a scénáři. Dělá se po výběru kol (krok 7), jen pro faktory, které ve scénáři zazní.
+2b. **Výklad hodnot v kole: test domněnek, pořadí příčin, závěr a soud.** Dělá se pro každé kolo a pro finále
+   (Ondřej 7. 11. 2026 večer: „všechna kola… nestačí jenom druhý a třetí“): kolo 1 rozdané karty `soudy_karty/`
+   (dědictví, štěstí nebo smůla; tvrzení o příčinách výchozí úrovně se testují stejně; rozdíl pod prahem „skoro
+   stejně“ se nevysvětluje), kolo 2 `soudy_rust/`, kolo 3 `soudy_dane/`, finále `soudy_cil/` (rozdíl proti pořadí
+   po kolech a čím to je: cenové hladiny po druzích, podíl mezd na výkonu, vyjednávání, dojíždění), a dále u každého
+   faktoru, který je pravidlem nebo krokem státu a ve scénáři se hodnotí. Pro každou zemi vznikne soubor
+   `soudy_{…}/{kód}.md` s oddíly v pořadí bodů 1–6 níže. Postup platí pro každou příčinu a každý soud, ne jen pro
+   daně (Ondřej 7. 11. 2026: „ty myšlenkové řetězce, tu interpretaci dat, to se má dělat v analýze hlavně“). Do vah
+   ani výpočtů kol nevstupuje a dělá se po výběru kol (krok 7), jen pro faktory, které ve scénáři zazní. Je to jiné
+   rozhodnutí než výběr kol (krok 7.6): přísná pravidla ligy pro zařazení faktoru se na výklad hodnoty země
+   nepoužívají. V kole růstu je domněnka obvykle příběh cesty (země rostla díky určitým odvětvím, zaostala kvůli
+   krizi, ztratila tempo, protože…) a co by bylo vidět, je rozklad růstu na výrobu a počet pracujících, podíl
+   odvětví na přírůstku výroby za celé období proti sousedům, hloubka a délka propadu, investice, ceny vývozu proti
+   dovozu, odchody lidí.
+   **Pozor u podílu mezd na výkonu:** jako důvod ve finále se smí použít až po testu skladby výkonu (část výkonu
+   může tvořit například nájemné z vlastních bytů, které se do mezd nedostane); bez toho je podíl mezd účetní věc,
+   ne důvod (tvrdé pravidlo 4).
+   1. **Otázka a fakt.** Nejdřív se zapíše, **co se vysvětluje**, protože každá otázka má jiné odpovědi a jiné váhy:
+      (a) **vlastní hodnota nebo změna země** v kole (proč je výkon země takový, proč rostl, proč je zátěž taková),
+      (b) **rozdíl proti sousedovi** v pořadí kola (proč je země před zemí pod sebou nebo za zemí nad sebou). U každé
+      otázky se uvede měřítko a období přesně tak, jak je divák uvidí v grafu (u kola růstu pozice v kupní síle
+      proti středu ligy; reálný růst ve stálých cenách je jen kontrola). Fakt: hodnota, místo v lize a v regionu,
+      čím se země nebo její nastavení liší od sousedů, jen tolik, kolik výklad potřebuje.
+   2. **Domněnky** jsou možné příčiny na obou stranách: co zemi pomohlo a co ji brzdilo; u nastavení státu i komu
+      to hned přidá (peněženka, cena práce pro firmu) a kdo a čím to platí jinde nebo později (stát nemá na školy
+      a nemocnice, lidé si platí sami, odcházejí, pracují načerno, firmy se stěhují). Berou se vždy ze tří zdrojů,
+      ne jen z prvního: (a) z dosavadního scénáře a výkladu země; (b) z rešerše ekonomů (`ekonomove/{kód}.md`)
+      a zpráv o zemi (OECD Economic Survey, MMF článek IV, zpráva Komise o zemi, centrální banka); (c) z **obecně
+      známého výkladu**, který by model dal v běžném rozhovoru bez podkladů. U každé domněnky se zapíše, **co by
+      bylo vidět, kdyby platila** (odchody občanů na tisíc obyvatel, saldo migrace, podíl obálkových mezd, příliv
+      investic, výdaje na školy, rozklad růstu, přírůstek výroby v odvětví), a ověří se, že to **z domněnky opravdu
+      musí plynout a měří to totéž** (stejná veličina, období a skupina lidí): pohyby lidí se nepoznají z čisté změny
+      počtu, příspěvek odvětví k růstu za celé období ne z jeho dnešního podílu, výsledek konkrétní firmy ne
+      z průměru odvětví a velikost účinku ne ze síly dokladu.
+   3. **Test každé domněnky** číslem země **proti sousedům v regionu a průměru Unie** (rok, zdroj: Eurostat, národní
+      úřad, Eurobarometr, OECD data) s jedním ze tří výsledků:
+      - **podporuje:** údaj vypadá tak, jak by vypadal, kdyby domněnka platila, a bez ní by pravděpodobně vypadal
+        jinak;
+      - **odporuje:** kdyby přesně vymezená domněnka platila, údaj by pravděpodobně vypadal jinak; zapíše se, co
+        přesně vyvrací (třeba jen „hlavně“, ne celou příčinu);
+      - **nerozlišuje:** údaj by vypadal stejně, ať domněnka platí, nebo ne. Domněnka se pak nevyřazuje a hledá se
+        údaj, který rozliší.
+
+      Před každým „odporuje“ se položí otázka: **„Mohla by domněnka být pravdivá a tento údaj přesto vypadat právě
+      takto?“** Když ano, údaj ji nevyvrací a výsledek je „nerozlišuje“. Typické údaje, které nerozlišují (ukázka
+      typu, ne výčet):
+      - **čistá změna počtu** neukazuje pohyby jednotlivých lidí. Ilustrace, ne data žádné země: továrna má 100
+        pracovníků, třicet odejde a dvacet přijde z polí; na konci jich má 90, zaměstnanost klesla, a přesto do
+        továrny lidé z polí přešli. Stejně tak stálý počet zaměstnaných nevyvrací odchod konkrétních dovedností;
+      - **podobnost se sousedem:** země může mít stejnou brzdu jako soused, jiná silná výhoda může její účinek
+        zakrýt (země s nejvyšší zátěží v regionu může mít nejmenší odliv lidí, protože převáží vyšší výplata;
+        takový údaj vyvrací tvrzení „zátěž vyhání víc lidí než u sousedů“, ale nerozliší, zda zátěž odliv trochu
+        nezvyšuje) a dvě země mohou růst díky stejnému procesu, jen různě rychle.
+        Podobnost je podnět porovnat sílu, načasování a provedení téhož jevu, ne důvod příčinu vyřadit; rozdíl
+        mezi sousedy ale vysvětlí jen ta část jevu, ve které se liší;
+      - **dnešní podíl nebo stav** nerozhodne o příspěvku za celé období (odvětví může mít dnes u dvou zemí stejný
+        podíl a přesto k jejich růstu přispět různě);
+      - **mlčení srovnání zemí** neprokazuje, že příčina nepůsobí (tvrdé pravidlo 11).
+
+      Výroky institucí jsou jen jeden z dokladů, nikdy místo čísla. **„Nezjištěno“** není výsledek, ale pokyn jít po
+      žebříku dokladu (Ondřej 7. 11. 2026 večer: „vždyť tohleto není zas tak těžký zjistit“): (a) změřeno v téhle
+      zemi proti sousedům; (b) když test prvním domněnkám odporuje nebo je nerozliší, obecně známé výklady ze zpráv
+      o zemi, otestované stejně;
+      (c) co změřit nejde, ale ekonomové se na tom shodují, zůstane se silou dokladu („ekonomové se shodují“,
+      „zčásti“); (d) teprve když chybí i shoda, stojí v podkladu „nezjištěno“ s tím, co by rozhodlo, a scénář
+      o příčině mlčí.
+   4. **Pořadí příčin (váhy), zvlášť pro otázku (a) a (b).** Mezi testy a nálezem se zapíše záznam:
+
+      | Co vysvětluji (otázka, měřítko, období) | Hlavní mechanismus | Vedlejší | Nerozlišená část | Doklad velikosti | Názorný příklad |
+      |---|---|---|---|---|---|
+
+      - **Rozklad podle vzorce říká, kde změna vznikla, ne proč.** Každá část rozkladu se přiřadí mechanismu, který ji
+        způsobil: část „víc výroby“ procesu, kterým výroba rostla (jeden mechanismus, i když jeho články nejdou
+        oddělit); část „méně pracujících“ důvodům, proč lidé ubyli (odchod z drobného zemědělství, do ciziny, do
+        důchodu), a jen v rozsahu, v jakém jejich odchod výrobu nesnížil. **Nerozlišená** je jen ta část, kterou nejde
+        přiřadit žádnému doloženému mechanismu.
+      - **Hlavní** je mechanismus, který podle dokladu velikosti nese větší část než kterýkoli jiný, včetně
+        nerozlišené části; **vedlejší** mají doloženě menší část; nerozlišená část se zapíše, nezamlčí se. U pořadí
+        stojí jednou větou, proč je takové. **Když doklady pořadí nerozliší,** zapíše se „hlavní: nerozlišeno,
+        X spolu s Y“ a závěr řekne oba bez „hlavně“; pár sousedů pak smí znít „stejnou cestou, X rychleji / víc /
+        dřív“, když je doložená jen síla (i to je vysvětlený pár).
+      - **Doklad velikosti** je údaj, který měří právě tuto otázku, toto měřítko a toto období: (1) rozklad ukazatele
+        podle vzorce z kroku 1.1 (říká kde: u výkonu třeba výroba proti počtu pracujících, odvětví za celé období);
+        (2) účinek ze studie přenesený na zemi podle kroku 4.3; (3) srovnání se zemí se stejným startem nebo přirozený
+        pokus; (4) výslovné pořadí příčin od ekonomů pro tutéž zemi a otázku. Procento se uvede jen tam, kde je
+        obhajitelné; jinak slovy (asi polovina, menší část). Vymyšlená přesná procenta se nepíšou.
+      - **Neznámá velikost není malá velikost.** Příčina, kterou nejde přesně oddělit (investice, nové technologie,
+        lepší organizace, zlepšení uvnitř odvětví), se nevyřazuje jen proto, že se špatně měří: dostane místo podle
+        dokladů, které má, a co přiřadit nejde, patří do nerozlišené části. První místo jí to automaticky nezaručuje.
+      - **Proces je jeden mechanismus:** zahraniční investice, nové stroje, technologie, organizace výroby nebo vstup
+        na nové trhy bývají články jednoho procesu. Nerozdělují se na soupeřící drobnosti a nesčítají se jako
+        nezávislé příspěvky.
+      - **Početní podíl není příčinný podíl:** část rozkladu (například úbytek pracujících) říká, kolik změny jde
+        početně na tuto položku, ne proč se stala ani co by bylo bez ní.
+      - **Otázky (a) a (b) mají každá své váhy:** podíl z rozkladu rozdílu dvou zemí se nesmí přenést na vysvětlení
+        vlastního růstu a naopak; že země sama rostla díky X, neříká, že je díky X před sousedem. Rozklad spočítaný
+        pro jedno měřítko (reálný růst) se bez přepočtu nevydává za rozklad druhého (pozice v kupní síle proti středu
+        ligy). Přepočet: změna pozice v kupní síle se přibližně skládá z reálného růstu proti středu ligy a ze změny
+        relativních cen toho, co země vyrábí (například ceny vývozu proti dovozu); reálný rozklad dokládá první část,
+        druhá se vykládá zvlášť.
+      - **Kontrola slov:** „hlavně“, „proto“ a „díky“ smí nález použít jen u mechanismu, který je v záznamu hlavní;
+        když doklad velikosti říká menší část, nález to řekne („zčásti“, „pomohlo i“).
+   5. **Nález:** co z testů a pořadí příčin plyne. Když test domněnce odporuje, hledá se, **co skutečný stav země
+      vysvětluje**. Protipříklad v lize (kdo má stejné nastavení a dopadl jinak) vyvrací jen tvrzení, že příčina
+      stačí nebo působí vždy; je podnět hledat, co se liší, ne důvod příčinu u země vyřadit.
+   6. **Hodnoticí závěr (komentátorský soud).** Komentátorské hodnocení je očekávaná součást pořadu (Ondřej
+      9. 11. 2026: „mělo by to být takové zhodnocení toho, jestli si ta země vede dobře“; soudy musí být správné).
+      Každá země dostane v každém kole jasný hodnoticí závěr: **co se jí povedlo nebo nepovedlo, proč je to důležité
+      a jak to ovlivňuje výsledek**, s hlavním důvodem na prvním místě, oznamovacím způsobem, s číslem nebo obrazem
+      z testu a bez jména instituce. Opatrnost nesmí vést k odstranění soudu a pouhému popisu. Jak silný soud smí být:
+      - **předmět soudu se rozlišuje.** *Výkon země* (jak si vede) se hodnotí proti její vlastní minulosti,
+        srovnatelnému soupeři nebo doloženému cíli, a to jde vždy; v kole růstu i proti tomu, co odpovídá startu
+        (rychlý růst z nízkého startu je „vede si dobře“, ne „polepšila si nad očekávání“, dokud to nepotvrdí obě
+        měření, kupní síla i reálné ceny). *Konkrétní rozhodnutí* (státu, firem,
+        společnosti) potřebuje oporu pro svůj účinek. Silnější výrok **„zbytečná chyba“** navíc vyžaduje, aby tehdy
+        existovala dostupná možnost problému předejít (krok 9b, pojistka výchozí pozice); popis žádoucího výsledku
+        („růst stejně rychle a udržet lidi doma“) takovou možností není. Samotné umístění zásluhu ani vinu nedokazuje;
+      - **odůvodněný úsudek je dovolený:** smí stát na souběhu dat, mechanismu a věrohodných srovnání; zdroj nemusí
+        obsahovat hodnoticí větu ani procento účinku. Dobře doložený úspěch nebo chyba zazní přímo; úsudek se ale
+        nevydává za přímo změřený fakt (řekne se jako úsudek pořadu, ne jako výsledek měření);
+      - **přiměřená síla a rozsah:** kde zásluhu konkrétní volby doložit nejde, hodnotí se doložený výkon, vývoj nebo
+        slabina. Hlavní brzda se odliší od drobnosti. U země se nevyžaduje současně pochvala i výtka;
+      - **dopad na soutěž:** rozlišuje se dopad na ukazatel a změna konkrétního místa; tvrzení o místě („proto je až
+        čtvrtá“) potřebuje oporu ve výpočtu. Budoucí dopad se řekne s podmínkou a časovým horizontem. Hodnocení se
+        vztahuje k ukazateli epizody (u mezd čistá mzda v kupní síle), u jiné epizody k jejímu ukazateli;
+      - **neovlivnitelné věci** (geologie, vnější šok) se nesoudí jako chyba, řeknou se jako štěstí nebo smůla; jak si
+        s nimi země poradila, se hodnotit smí.
+      Nejistota se řekne krátce slovy váhy („zčásti“, „pomohlo i“, „spolu s“); omezení, které mění smysl soudu,
+      zůstává i v hlase, ale nemění se ve větu o tom, co se neví. **NEŘÍKEJ** zapiš ke každé zemi ve dvou částech:
+      **vyvráceno** (test odporuje; co přesně, s číslem) a **neříkat jako zjištěné** (test nerozlišil, není
+      vyvráceno; „hlavně“ u příčiny, která podle záznamu hlavní není; soud silnější, než doklady unesou). Jako
+      vyřazené vysvětlení se do dalších zadání šíří jen první část.
+
+   Test domněnky je totéž, co test protipříkladem u příčin (krok 9a.3): ptá se, zda by se země chovala jinak bez
+   dané příčiny, a odpovídá číslem země, ne výrokem úřadu. Když se změní číslo nebo tabulka, ze které záznam
+   vychází, otevře se znovu nález, závěr, soud i NEŘÍKEJ (krok 10.6).
+3. **Váha podle ekonomů:** podíl zemí, kde kategorii mezi třemi hlavními příčinami uvádějí **aspoň dvě nezávislé instituce** (příloha Komise je jedna rodina zdrojů; MMF; OECD; centrální banka; národní ústav). Body za pořadí se nepoužívají. Druhý agent naslepo vytáhne výroky aspoň u pěti zemí a zapíše se shoda. Váha se uvádí s rozpětím z bootstrapu přes země. Pozor na šablony: přílohy Komise mají pro všechny členy stejnou strukturu, takže kategorie, na kterou se šablona ptá, se objeví všude.
+4. **Srovnávací studie** pro Evropu a síly účinků se způsobem měření (`studie/`).
+5. **Tabulka kandidátů:** mechanismus, směr, horizont, riziko obráceného směru, překryv, aritmetika, štítek páky, váha podle ekonomů. Kandidát s váhou aspoň třetiny zemí (nebo dvě instituce v aspoň pěti zemích) se nesmí vyřadit bez rozboru podle kroku 5.
+
+6. **Mapa mechanismů (doplněno 12. 10. 2026):** ukazatel se rozloží na části a u každé se projde sedm obecných otázek: co země zdědila (stav budovaný desetiletí), co se změnilo za horizont (toky), kdo a kolik (poptávka a složení lidí), za kolik a jak efektivně, jaká pravidla to řídí, co přichází zvenku, jak se to měří (a jaké je nezávislé měření téhož jevu). Ke každé otázce aspoň jeden kandidát z rešerše, nebo písemně „netýká se, protože…“. Kandidáti z mapy jsou předem zapsané hypotézy. Podrobně: `10_documents/active/2026-10-12_system_proti_zapomenutym_faktorum/SYSTEM.md`; poučení 22.
+7. **Hypotézy předem jednotlivě.** Kategorie jsou široké a pokrývají všechny kandidáty, proto se předem zapíše i konkrétní proměnná každé hypotézy se směrem a zdrojem (studie, ekonomové). Jen pro ni platí hranice pro jednoho kandidáta; ostatní proměnné jsou průzkumné a platí pro ně hranice pro celý seznam (poučení 10).
+8. **Podklady pro svědky** (krok 5), zapsané u každého kandidáta: u studií síla účinku s rozpětím, způsob měření, kvalita určení příčiny (přirozený pokus, nástroj, panel, průřez) a podmínky přenosu (a)–(c) z kroku 4.3; u ekonomů výroky se směrem „zdražuje / zlevňuje“ (poučení 6) a výslovné popření; u případů epizoda v zemi ligy (co se změnilo, kdy, s čím se srovnává, zdroj).
+
+#### Krok 3. Měření faktorů
+
+Každý kandidát dostane strojově čitelný **list měření** (`mereni.json`: `horizont_let`, `obdobi_mereni`, `druh` tok/stav/opatření, `prepocet`, `riziko_obraceneho_smeru` s dokladem z dat, `predem_zapsano` s commitem, `pokryti_zemi`). Pravidla:
+
+1. **Horizont dat odpovídá horizontu ukazatele.** Toky se berou jako průměr nebo součet za horizont, stavy na začátku horizontu, opatření s dobou platnosti. Faktor musí výsledku předcházet; údaj z roku výsledku nebo pozdější je zakázaný, pokud faktor nepůsobí okamžitě a není to zdůvodněno.
+2. **Přepočet na velikost země** podle mechanismu (na 1 000 obyvatel, na dospělého, % HDP…).
+3. **Srovnatelnost:** jedna definice pro všechny země (u dostupnosti čistá mzda), zlomy řad po sčítáních, uprchlíci v počtu obyvatel (Ondřej 10. 10.), ceny celé země, nebo měst, DPH, parita.
+   - **Lidé, které statistika nepočítá.** U počtu obyvatel se ověří, koho úřad nepočítá: uprchlíky s dočasnou ochranou (podle metadat Eurostatu) a cizince bez trvalého pobytu. Polsko kromě asi 1 milionu uprchlíků nepočítá ani asi 0,9–1,1 milionu dalších cizinců (GUS, experimentální statistika „stopy života“: 2,3 milionu cizinců na konci roku 2025, z toho 73 % Ukrajinců); jeho oficiální čisté stěhování je 2010–2024 skoro nulové. Skrytý přírůstek se přičte jako varianta s pásmem chyby.
+   - **Kam lidé přicházejí.** Přistěhovalci se soustředí do velkých měst (Varšava 14,5 % a Vratislav 19,5 % cizinců na konci roku 2025), kde se často měří i výsledek (nájmy z velkých měst); celostátní přírůstek je pak slabou náhradou. Platí pravidlo 8 tohoto kroku (stejná geografie jako výsledek).
+   - Index nájmů v indexu spotřebitelských cen (HICP) podle definice měří všechny placené nájmy včetně regulovaných a starých smluv, ne tržní nájmy nových smluv; jako měřítko tlaku na tržní nájmy se nepoužívá (nabídkové nájmy v Krakově a Varšavě vzrostly v březnu a dubnu 2022 o 16,5 a 14 %, což HICP nezachytí).
+4. **Překryv s číselným prahem:** korelace nad 0,7 mezi dvěma faktory = sloučit, nebo jeden očistit; 0,5–0,7 = uvést společnou část. Složená proměnná postavená z jiného faktoru je zakázaná (výstavba „proti potřebě“ obsahovala přírůstek lidí). Automatická kontrola počítá korelace a inflaci rozptylu.
+   - Očišťuje se faktor, který je v příčinném řetězci později (přírůstek lidí od výplaty: bohaté země lákají lidi; poučení 1).
+   - Očištění platí pro výběr faktorů a pro podíl na
+     rozdílech mezi zeměmi. **Body kol, místo v kole a výklad pro diváka berou hodnotu tak, jak je.** Je to **výchozí
+     volba analytika, kterou Ondřej může změnit** (oddíl 6). Opírá se o Ondřejovu větu z 13. 10. 2026 „U Bulharska je
+     jednoznačný faktor úbytek obyvatel a velký rezervoár bytů“. Jeho věta z téhož dne „U změny počtu obyvatel to
+     potřeba není. Tam stačí trend poslední doby…“ se týká toho, že se přírůstek lidí nedělí na to, co země měla na
+     začátku, a co přibylo (krok 7.4); o očištění Ondřej nerozhodl. Očištěná hodnota by divákovi ukázala nesmysly
+     (Rumunsko by za úbytek 6 % lidí body ztrácelo, Švýcarsko za přírůstek 16 % body získávalo).
+     - **Kdy se čekaný výsledek nemění:** (a) faktor, o který se očišťuje (u bydlení výplata), je ve stejném výpočtu
+       a jeho síla se odhaduje z dat ve stejném výpočtu; (b) očištění je přímka v téže podobě, v jaké ten faktor do
+       výpočtu vstupuje (u výplaty v `logaritmu`); (c) obě podoby mají stejné země a stejná data. Pak se síla
+       očištěného faktoru nemění, síla výplaty se odhadne bez části, kterou přináší pohyb lidí (u bydlení je síla výplaty na cenu menší než bez tohoto odečtení; čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`), změní se
+       rozdělení bodů mezi výplatu a lidi a typická země, se kterou se srovnává (u bydlení o 3,0 bodu u všech zemí),
+       a čekaný výsledek i čekaná místa zůstanou stejné. Když síla výplaty pochází zvenku (ze
+       studií), nebo se očišťuje jinak, čekaný výsledek se změní a obě podoby se musí přepočítat. Hlídá to automatická
+       kontrola (krok 10.3).
+     - **Obě podoby výpočtu:** pořadí kol a příznak „menší než chyba měření“ se spočítají v obou podobách a musí v nich
+       platit; když se liší, podklad to řekne. U bydlení (`kola_koncept.py`) je pořadí kol v obou podobách stejné, jen jistota, že změna počtu obyvatel je před zásobou bytů, se v obou podobách liší (čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Příznak se liší: změna počtu obyvatel má tak, jak je, obvyklý vliv 7,1 bodu, očištěná 4,0 bodu, tedy méně než chyba měření výsledku (5 %). Podle pravidla 6 má proto změna počtu obyvatel stav „doložený svědky“, ne „potvrzený daty“.
+     - **Podíl na rozdílech** neočištěného faktoru může vyjít záporný (faktor rozdíly zmenšuje: bohaté země lákají lidi
+       a to jim bydlení zdražuje; u bydlení záporný, očištěný kladný; čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Co o velikosti vlivu uslyší divák, je otevřená
+       otázka 2 (dramaturgie); návrh je podíl na obvyklém vlivu (slovník), ne podíl na rozdílech. *(Ondřej 13. 10. 2026 v noci mluví u čisté výplaty o „cca 50 %“ rozdílů. To odpovídá podílu, který výplata vysvětlí sama (číslo podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`); průměr přes všechna pořadí by v podobě tak, jak je, dal podstatně víc, protože přírůstek lidí rozdíly zmenšuje. Že se u nejsilnějšího kola říká podíl, který vysvětlí samo, je jen návrh pro otevřenou otázku 2, ne pravidlo; u výplaty se podává ve dvou částech, početně a ekonomicky, slovník „podíl rozdílů, který faktor vysvětlí sám“. Ondřejův odhad „cca 50 %“ tak smí zaznít, když se odliší početní a ekonomický účinek.)*
+   - **Jeden mechanismus = jeden faktor.** Složená proměnná spočítaná z jiného faktoru zůstává zakázaná. Dovolené je měřit jeden mechanismus po složkách, které mají sílu z jednoho rámce a nepočítají totéž dvakrát: u bydlení „lidé na byt“ (studie: +1 % lidí = ceny +1,5 %, +1 % bytů = ceny −1,5 %) se skládá ze zděděné zásoby a výstavby (nabídka) a z přírůstku lidí (poptávka); každá složka je změřená zvlášť, síla každé se ověří testem přenosu (krok 4.3) a žádná se nepočítá podruhé uvnitř jiné (proto „byty na obyvatele dnes“ s odečteným přírůstkem lidí nesmí stát vedle přírůstku lidí).
+5. **Obrácený směr nejdřív ověřit v datech:** korelace faktoru s výchozí úrovní výsledku a s jeho změnou. Je-li doložený, pro úroveň se použije měřítko, které cenám předchází (strukturální, nebo před obdobím), a tok za horizont jde jen do testu vývoje. Není-li doložený, tok za horizont smí do testu úrovně s označením „obrácený směr v datech neprokázán“.
+6. **Zdroj s odkazem, rok a pokrytí** u každého údaje; chybějící země ze srovnatelného zdroje, jinak příznak.
+7. **Okno a výchozí rok předem** podle mechanismu; povinná citlivost na sousední okno a jiný výchozí rok; když vliv stojí na volbě roku, řekne se to.
+8. **Stejná geografie jako výsledek:** měří-li výsledek města, faktor se měří i pro tatáž města (kraje), ne jen za celou zemi.
+9. **Štítek páky:** dané / vystavené / pomalu ovlivnitelné / řiditelné; u pravidel rok zavedení a změn.
+10. **Data kratší než horizont:** faktor nemůže být „potvrzený daty“, jen „částečně potvrzený (data pokrývají X z Y let)“.
+11. **Časový profil faktoru.** U každého toku se **předem** podle studií o rychlosti odezvy zapíše, jak rychle výsledek reaguje a jak dlouho účinek trvá, a z toho váhy let podle stáří (poločas). Průměr za celý horizont dává stejnou váhu roku před 15 lety i loňskému roku; to sedí jen tam, kde se účinek nevstřebává.
+   - **Bydlení:** nájmy reagují na příliv lidí během měsíců (Varšava a Krakov 2022: lidí přibylo 15 a 23 %, nabídkové nájmy vzrostly o 14 a 16,5 % za dva měsíce), ceny za jeden až tři roky, výstavba dorovná za pět až deset let. Zkouška na 27 zemích (`CASOVY_PROFIL.md`): přírůstek posledních 5 let působí na 1 bod asi dvakrát až třikrát silněji než přírůstek 2010–2020 (jen 88–89 % opakování bootstrapu, pod hranicí náhody), váhy podle stáří zmenší nevysvětlené rozdíly asi o 5 % a nejlepší poločas se liší podle vzorku (10 let celá liga, 5 let bez Portugalska a Dánska). **U bydlení se profil nezapsal předem**, proto v analýze zůstává přírůstek za 15 let rovnoměrně a váhy podle stáří jsou jen citlivost (Litva a Portugalsko: odchylka asi na polovinu); v další epizodě se profil zapíše předem ze studií.
+   - **Jiné ukazatele:** profil může být opačný. Kouření působí na zdraví se zpožděním 20–30 let, schodky se v dluhu hromadí. Pravidlo je stejné: profil podle mechanismu a studií, zapsaný předem.
+   - **Zkouška:** porovná rovnoměrný průměr, předem určený profil a jen poslední roky. Použije se předem určený profil, pokud mu data neodporují nad hranicí náhody. Hledat v datech nejlepší poločas je zakázané (bylo by to další hledání v datech, pro které by musela platit hranice pro celý seznam).
+
+#### Krok 4. Doklady o síle vlivu
+
+1. **Úroveň (srovnání zemí):** podíl na rozdílech ve třech podobách, síla účinku, stálost znaménka při vynechání každé země. **Hranice náhody permutací:** výsledek se zpřehází mezi zeměmi a zopakuje se celý výběr ze skutečné matice kandidátů (ne náhodný šum); hypotézy zapsané předem se srovnávají s hranicí pro jednoho kandidáta, ostatní s hranicí pro celý seznam.
+2. **Vývoj v čase (opravený test):** změna ukazatele za horizont podle faktoru změřeného na začátku. Výchozí stav se měří **proti průměru z let před obdobím** (např. 2000–2009), ne proti průměru, do kterého spadá i sledované období (dřívější test byl tím zčásti mechanický: náhodné řady bez návratu k průměru daly stejnou souvislost). Model se uvádí s výchozím stavem i bez něj; hranice náhody se simuluje na stejně upravených náhodných řadách. Test vývoje běží na stejném ukazateli jako úroveň, nebo se náhrada výslovně označí a zdůvodní.
+   - **Povinná podoba se sbližováním:** k výchozímu stavu se přidá výchozí úroveň příjmu, protože chudší země měly rychlejší růst a každý „východní“ faktor by jinak ve vývoji zdánlivě vyšel (poučení 3). Svědek „vývoj“ (krok 5) bere tuto podobu.
+   - **Panel uvnitř zemí:** roční změna výsledku (nebo jeho náhrady) podle změny faktoru v předchozích letech, s pevnými efekty zemí (odstraní trvalé rozdíly a vlastní tempo země) a let (odstraní společné šoky, např. sazby v eurozóně), interval z bootstrapu přes země. Dvě povinné pojistky: **časování** (změna ročního průměru výsledku leží mezi polovinou předchozího a polovinou daného roku, takže ji vysvětluje změna faktoru v předchozím roce) a **placebo** (budoucí změna faktoru nesmí „působit“; když působí, souvislost vytváří obrácený směr nebo společná příčina a panel se nepočítá). Bydlení: u přírůstku lidí panel placebem neprošel (minulý přírůstek +0,7 % cen, v rámci náhody; budoucí +2,7 %, lidé míří tam, kde se daří); u úroků prošel (sazba hypoték o 1 bod vyšší = ceny za dva roky −2,7 %, interval −5,3 až −1,6; budoucí změna sazby +0,3 %, v rámci náhody).
+   - **Přirozený pokus** (např. příliv uprchlíků 2022) se počítá jen tehdy, když jde oddělit od souběžných šoků; v celostátních ročních datech ligy to u uprchlíků nejde (podíl uprchlíků souvisí s inflací 0,58 a po její kontrole účinek zmizí).
+   - U faktoru, na který výsledek zpětně působí i v čase (výstavba roste po zdražení se zpožděním), je svědek „vývoj“ nespolehlivý stejně jako srovnání zemí.
+3. **Studie a ekonomové:** síla účinku ze studií se smí převzít jen při splnění **čtyř podmínek přenosu**: (a) proměnná je u nás měřená stejně jako ve studii; (b) studie měří rozdíly úrovně mezi jednotkami, nebo mechanismus působí na úroveň; (c) účinek vstupuje v tvaru, jaký studie uvádí (u nepružné nabídky násobení s růstem poptávky, ne prostý součet); (d) **test přenosu**: rozptyl zbytku po odečtení příspěvků ze studií nevzroste a znaménko souhlasí s testem vývoje. Jako kontrola souladu se počítá i odhad, který spojí střed a rozpětí ze studií s našimi daty (apriorní odhad zpřesněný daty): leží-li výsledek mimo rozpětí studií, je to rozpor.
+   - **Protokol podmínek (a)–(c):** (a) „ano“ = stejná proměnná a jednotka; „zčásti“ = stejný mechanismus, jiné měření (byty na domácnost proti bytům na obyvatele, disponibilní příjem proti čisté mzdě), síla smí do modelu s širším rozpětím; „ne“ = jiná proměnná (podíl bytů v krátkodobém pronájmu proti nocím turistů), síla ne. (b) „ano“ = studie měří rozdíly úrovně, nebo mechanismus působí na úroveň (lidé na byt, kapitalizace sazeb a daní, příjem); „ne“ = jen přechodný nebo objemový účinek (dočasný šok sazeb, počet prodejů). (c) „ano“ = stejný tvar (pružnost v `logaritmech`); „zčásti“ = přibližný (procentní body proti procentům); „ne“ = účinek podmíněný něčím, co model nemá. Podmínky (b) nebo (c) „ne“ = studie měří jinou otázku a mlčí; sílu smí studie dát jen při (a) „ano“ nebo „zčásti“. Protichůdné studie se zapisují vedle (např. studie Komise s kladným znaménkem investic do bydlení, kterou autoři sami vykládají obráceným směrem).
+   - **Test přenosu (d) s hranicí náhody:** síla ze studií se dosadí pevně a hodnoty faktoru se tisíckrát přehází mezi zeměmi. Výsledek je jeden ze tří: **síla sedí** (čekaný výsledek s faktorem sedí na skutečnost lépe než bez něj a lépe než u 95 % přeházení), **směr sedí, síla přestřelená** (skutečné hodnoty jsou lepší než 95 % přeházení, ale čekaný výsledek s nimi sedí hůř než bez nich; síla ze studií pak do čekaného výsledku nesmí a bere se z dat ligy nebo ze spojeného odhadu), **mlčí** (nic nad náhodu). Zkouší se v celé lize i bez zemí s vadou měření a ve sadě s ostatními faktory se silou zvenku, **vynecháním faktoru po jednom** (srovnání se samotnou výplatou by schovalo faktor, který čekaný výsledek kazí). Zkouší se v úplném modelu kol: když se zkouší síla ze studií pro jeden faktor, ostatní kola v modelu zůstávají, u rozděleného faktoru (krok 7.4) i druhá část dvojice (test výstavby bez zásoby bytů vyšel dřív hůř jen proto, že zásoba v modelu chyběla). Výsledky u bydlení jsou v následujících dvou bodech (zásoba bytů po řecké opravě, ostatní faktory podle výpočtu ze 16. 10. 2026).
+   - **Síla, se kterou čekaný výsledek sedí hůř, se nepřebírá ani při výsledku „mlčí“.** „Mlčí“ znamená jen, že srovnání zemí nic neprokázalo. Když přitom čekaný výsledek se silou ze studií sedí hůř než bez ní (v celé lize, nebo bez zemí s vadou měření), síla ze studií se nepoužije a bere se síla z dat ligy (v limitu tří sil z dat, krok 6.1), nebo spojený odhad. Když čekaný výsledek se silou ze studií sedí lépe, jen ne nad náhodu (úroky), síla ze studií se převzít smí (krok 6.2). Výpočet vypisuje zdroj síly podle výsledku testu, ne pevným textem.
+     - **Bydlení po řecké opravě:** zásoba bytů mlčí, ale čekaný výsledek se silou ze studií sedí hůř než bez ní. Proto síla z dat ligy: na ceny skoro nulová (znaménko se překlopí po vynechání některé země), na nájmy záporná. Se silou ze studií by zásoba byla druhé kolo a kola by vysvětlila méně rozdílů než 68,9 %, které vysvětlí dnes. Čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`.
+     - **Ostatní:** výstavba sama mlčí (38–47 %), v úplném modelu kol (výpočet ze 16. 10. 2026) ale čekaný výsledek s její silou ze studií sedí o 3 % lépe (bez Portugalska a Dánska stejně), a proto se síla výstavby ze studií přebírá; přírůstek lidí: síla sedí (0,3 %); úroky mlčí (13 %), ale čekaný výsledek se silou ze studií sedí o 4,7 % lépe.
+4. **Doplňkové zkoušky** před větou „neukázal se“: na složkách výsledku (koupě, nájem), na jiných projevech (přelidnění, mladí u rodičů, s vědomím, že jsou zčásti výsledkem), na výsledku zprůměrovaném za dva až tři roky (fáze cyklu).
+
+#### Krok 5. Rozhodnutí podle svědků, síla důkazu a soulad s ekonomy
+
+**Proč (12. 10. 2026):** ve verzi 1.1 rozhodovala o zařazení hlavně zkouška v datech 27 zemí. Ta u řady faktorů ze své podstaty nic nepozná: 27 zemí unese spolehlivě jeden až dva silné faktory, hranice náhody roste s počtem poctivě zkoušených kandidátů, zásluhu za společnou část bere faktor, který vstoupí dřív, a nabídka se mezi zeměmi schová za poptávku. Pravidla proto opakovaně vyřadila faktory, které se pak ukázaly jako důležité (výstavba 10. 10., zásoba bytů 11. 10.) a odporovala zadání „vybrat všechny faktory, které mají vliv“. Rozbor: `10_documents/active/2026-10-12_system_proti_zapomenutym_faktorum/PRAVIDLA_VYBERU.md`.
+
+**Svědci.** U každého kandidáta z kroku 2 vypoví pět svědků; mechanismus je podmínka. Výpovědi skládá a rozhoduje `05_epizode_packs/_skills/analyza-pricin-regiony/svedci.py` (stejný kód pro každý ukazatel).
+
+| Svědek | Odkud | Podporuje, když | Odporuje, když | Nespolehlivý (jeho výpověď se nepočítá), když |
+|---|---|---|---|---|
+| studie | krok 2.4, 4.3 | účinek dokládají a podmínky přenosu (b) a (c) nejsou „ne“ | studie ukazují opačný směr | měří jinou otázku (podmínka (b) nebo (c) „ne“) |
+| ekonomové v lize | krok 2.2–2.3, přísný protokol, **jen výroky o téže otázce jako ukazatel** (u úrovně o úrovni; výroky o vývoji se zapíšou, ale nepočítají) | kategorii řadí mezi tři hlavní příčiny aspoň dvě nezávislé rodiny zdrojů v aspoň třetině zemí nebo v pěti zemích (pro celou ligu); v méně zemích jen pro jmenované země | aspoň dvě rodiny výslovně popírají aspoň v pěti zemích a ve víc zemích, než kolik jich kategorii uvádí | volné zmínky (jedna instituce, šablona) se nepočítají vůbec |
+| srovnání zemí ligy | krok 4.1 a 4.3 | u faktoru se silou zvenku: test přenosu s hranicí náhody („síla sedí“, nebo „směr sedí, síla přestřelená“); u faktoru bez síly zvenku: odhad z dat nad hranicí náhody (pro jednoho kandidáta jen se zápisem předem v commitu, jinak pro celý seznam), i bez zemí s vadou měření, **se stálým znaménkem po vynechání každé země**, směr podle mechanismu | totéž s opačným směrem (u testu přenosu: skutečné hodnoty sedí hůř než 95 % přeházení) | obrácený směr (krok 3.5), propletení s faktorem v modelu spočítané z dat (korelace při stejné výplatě aspoň 0,5, krok 3.4; nebo překlopený závěr v registru), vadné měření faktoru nebo výsledku (krok 1.4, 3.3), jiná geografie (krok 3.8) |
+| vývoj v čase | krok 4.2 | opravený test se sbližováním nad hranicí (pro jednoho kandidáta jen se zápisem předem), nebo panel uvnitř zemí se správným časováním, intervalem bez nuly **a prošlým placebem**, směr podle mechanismu | totéž s opačným směrem | řady kratší, než trvá odezva mechanismu (krok 3.11), náhrada neměří totéž (HICP nájmy), obrácený směr i v čase, souběžné šoky v přirozeném pokusu |
+| případy zvenku | krok 2.8 | epizoda v zemi ligy doložená vnější analýzou se srovnáním (jiné země, kontrolní skupina, trend) | totéž s opačným směrem | bez srovnání; případ rozebraný studií se počítá jen jako studie; **případ spočítaný z dat ligy je svědek dat ligy, ne zvenku** |
+
+**Rozhodnutí** (jedno pravidlo pro všechny ukazatele; liší se jen vstupy):
+1. **Bez mechanismu** se faktor nezařadí; objev z dat bez mechanismu zůstává hypotézou, dokud se mechanismus nenajde.
+2. **Odporuje-li spolehlivý svědek**, je to spor a jde postupem při rozporu (níže). Nevyřešený spor jde Ondřejovi, jen když citlivostní test ukáže hmotný dopad (brána eskalace).
+3. **Zařazen:** pro celou ligu ho podporují aspoň dvě nezávislé rodiny spolehlivých svědků, z toho aspoň jedna zvenku (studie, ekonomové, případy), a nikdo spolehlivý neodporuje. Podpora jen z dat ligy (srovnání a vývoj) nestačí: obojí stojí na stejných 27 zemích.
+4. **Zařazen jako objev z dat** (cesta z verze 1.1 zůstává, i pro kandidáty zapsané předem): odhad z dat nad hranicí pro celý seznam, i bez zemí s vadou měření, se stálým znaménkem, spolehlivý, vývoj neodporuje.
+5. **Zvláštnost zemí:** v konkrétní zemi ho podporují aspoň dvě rodiny, z toho aspoň jedna zvenku (např. ekonomové v té zemi a studie, které pro ni platí); počítá se země po zemi, ne sjednocením zemí různých svědků. Rozebere se u těch zemí (krok 7.3) a do čekaného výsledku nevstupuje.
+6. **Hypotéza:** ostatní. Uvede se mezi vedlejšími faktory s tím, který svědek chybí („co by rozhodlo“); síla jen s označením („podle studií by posouval o X %, v lize neověřeno“, „podle dat ligy náznak, zvenku nepotvrzeno“).
+
+**Na čem pravidlo stojí.** Pojistky z verze 1.1 zůstávají, protože bez nich by svědci vypovídali špatně. Zkouška vypnutí na bydlení (`SVEDCI.md`):
+
+| Pojistka (krok verze 1.1) | Co by se stalo bez ní |
+|---|---|
+| hranice náhody pro celý seznam (4.1, pravidlo 7) | jako objevy z dat by prošly čtyři průzkumné proměnné: dvě jiná měření přírůstku lidí, úspory 2020–2024 (souběžné s výsledkem) a byty na 1 000 obyvatel 2021 včetně prázdných (o 0,01 bodu) |
+| zápis předem v commitu (2.1, 2.7) | úspory by ve srovnání zemí prošly hranicí pro jednoho kandidáta (13,7 % proti 8,4 %), ačkoli se na stejných datech zkoušely dřív, než se zapsaly (hranice pro celý seznam 18,1 %) |
+| přísný protokol ekonomů jen o úrovni (2.2–2.3) | ekonomové by podporovali 9 z 12 kategorií pro celou ligu (s ním jen nabídku bytů) a daně i stavební náklady by se zařadily podle šablon |
+| obrácený směr (3.1, 3.5), u vývoje placebo | panel přírůstku lidí by se počítal jako svědek, ačkoli budoucí přírůstek „působí“ víc (+2,7 %) než minulý (+0,7 %, v rámci náhody) |
+| aritmetika není příčina (1.2, pravidlo 4) | přirážka ceny nad cenou stavby (obsahuje cenu bytu) by „vysvětlila“ 34,6 % rozdílů a stala se hlavním faktorem |
+| jeden mechanismus = jeden faktor (3.4, pravidlo 5) | nabídka bytů by vstoupila až šestkrát a poptávka dvakrát (bilance bytů a lidí obsahuje přírůstek lidí) |
+| srovnatelné měření (1.4, 3.3) | rozhodnutí by se nezměnila (surový přírůstek lidí 17,7 %, srovnatelný 18,3 % rozdílů), ale země by měly špatná čísla: Polsko −4,0 % místo −1,4 %, Slovensko +0,5 % místo +3,0 % |
+| stálost znaménka po vynechání země (4.1) | srovnání zemí by „vypovídalo“ i o výstavbě, dani z nemovitostí a sociálních bytech, u kterých se znaménko po vynechání jedné země překlopí |
+| nejvýš tři síly z dat (6.1) | s deseti silami z dat se chyba předpovědi vynechané země zvětší ze 16–17 na 22 log. bodů a u šesti faktorů se po vynechání jediné země překlopí znaménko |
+| test přenosu (4.3 d), nově s hranicí náhody a vynecháním po jednom | se silou nabídky ze studií by čekaný výsledek seděl hůř (rozptyl +23 %) a překroutila by země: Polsko −14 %, Slovensko −18 %, Slovinsko −18 %, Rumunsko −19 %, Portugalsko +42 %, Chorvatsko +25 % |
+| opravený test vývoje se sbližováním (4.2) | bez sbližování projde šest faktorů, se sbližováním dva; neopravený test z 11. 10. souhlasil i s náhodnými řadami |
+| registr závěrů a detektory (10.2a–b) | překlopení závěru o zásobě bytů (11. 10. „nic“, 12. 10. „vysvětluje střední Evropu“) by zůstalo bez povšimnutí |
+
+**Stav síly důkazu a slova** (upraveno ve v1.2; navazuje na pravidlo 10):
+
+| Stav | Kdy | Co se uvádí |
+|---|---|---|
+| **potvrzený daty** | zařazen a srovnání zemí podporuje nad hranicí; síla z dat (nejvýš tři faktory, krok 6.1); obvyklý vliv je nad pásmem chyby výsledku v obou podobách výpočtu (krok 3.4, pravidlo 6), jinak nejvýš „doložený svědky“ | podíl na rozdílech (tři podoby, interval z bootstrapu), síla účinku, příspěvky zemí |
+| **doložený svědky** | zařazen bez podpory srovnání zemí; síla od nejspolehlivějšího svědka se silou (studie, panel, vývoj) s rozpětím | „podle studií posouvá o X %; ekonomové ho v N zemích řadí mezi hlavní příčiny; srovnání zemí ho nezměří, protože…“; bez podílu na rozdílech ligy |
+| **zvláštnost zemí** | rozhodnutí 5 | rozbor u jmenovaných zemí s institucemi a čísly |
+| **hypotéza** | rozhodnutí 6 | mechanismus, chybějící svědek, síla jen s označením |
+
+Dřívější stavy „doložený studiemi“ a „doložený uvnitř zemí, mezi zeměmi neměřitelný“ se převádějí podle svědků: faktor, který dřív stál „bez procenta“, dostane sílu od studie s podmínkou (a) „ano“ nebo „zčásti“, pokud test přenosu nehlásí přestřelenou sílu; jinak sílu z dat ligy (nejvýš tři faktory), nebo zůstane bez procenta s vysvětlením.
+
+**Rozpor s ekonomy** (definice z verze 1.1; ekonomové se počítají přísným protokolem): kategorie, kterou ekonomové řadí mezi tři hlavní příčiny **úrovně** aspoň v třetině zemí, má v datech ligy (a) nulový nebo opačný podíl na úrovni, (b) opačné nebo nestálé znaménko v opraveném testu vývoje a (c) nesplní podmínky přenosu. Rozpor se posuzuje zvlášť pro úroveň a pro vývoj; shoda ekonomů o vývoji není rozporem s nulovým podílem na úrovni. **Soulad** = znaménko souhlasí a faktor se objeví aspoň v jednom doložení.
+
+Postup při rozporu: (1) najít důvod (obrácený směr, měření, horizont, souběh s jiným faktorem, jiná otázka); (2) opravit měření, nebo použít vrstvu studií; nebo doložit, že odporující svědek je u tohoto faktoru nespolehlivý (s daty, ne odhadem), a rozhodnout znovu; (3) zbylý rozpor jde Ondřejovi jako otázka s rozborem, jen s hmotným dopadem podle citlivostního testu. Nikdy se nesmí napsat, že faktor nepůsobí, jen proto, že se neukázal ve srovnání zemí.
+
+#### Krok 6. Výpočet
+
+1. **Datová vrstva:** z dat se společně odhadují **nejvýš tři faktory** (s 27 zeměmi 10–15 zemí na faktor). Výjimka pro čtvrtý jen s permutační hranicí, kterou překročí. Podíl na rozdílech: sám, přidaný jako poslední, `Shapley`, společné části dvojic; **90% interval z bootstrapu** (1 000 opakování přes země). Nejmenší a největší hodnota z vynechání země slouží jen jako kontrola znaménka.
+   - Síla z dat se odhaduje jen u zařazených faktorů (krok 5), u kterých je srovnání zemí spolehlivé, v pořadí podle příčinného řetězce (výplata první). Odhad z dat se porovná s rozpětím studií (apriorní odhad zpřesněný daty, krok 4.3): opačné znaménko s intervalem, který nulu nezahrnuje, je rozpor (svědek „srovnání“ odporuje); stejné znaménko mimo rozpětí je rozpor v síle, který rozhoduje jen o tom, odkud se síla vezme. U bydlení: přírůstek lidí z dat +2,6 % na bod nad rozpětím studií 1–2 % (síla ze studií, test přenosu sedí); zásoba bytů z dat po řecké opravě na ceny neprůkazná a na nájmy záporná (čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`) proti −1,5 a −1,0 ze studií; síla na ceny je mezi zeměmi neprůkazná a se silou ze studií sedí čekaný výsledek hůř, proto síla z dat podle kroku 4.3 (studie přestřelené).
+2. **Vrstva studií:** příspěvky „podle studií“ se počítají zvlášť a do podílů datové vrstvy se nesčítají. Součet podílů datové vrstvy a zbytku dává 100 %.
+   - **Síla ostatních zařazených faktorů** se bere od nejspolehlivějšího svědka, který ji dává pro naši proměnnou: studie s podmínkou (a) „ano“ nebo „zčásti“, pokud test přenosu nehlásí přestřelenou sílu; jinak data ligy (v rámci limitu tří sil z dat) nebo spojený odhad; vždy s rozpětím. Síla ze studií data nespotřebuje: model tak unese osm až deset faktorů, když většina má sílu zvenku a data ligy jen kontrolují směr a sílu (test přenosu s vynecháním po jednom). „Test přenosu nehlásí přestřelenou sílu“ znamená, že čekaný výsledek se silou ze studií nesedí hůř, ani když test „mlčí“ (krok 4.3). Zdroj síly a jeho důvod se ve výstupu vypisují podle výsledku testu.
+   - Zařazený faktor bez síly pro naši proměnnou (studie měří něco jiného, data nestačí) zůstane bez procenta s vysvětlením a stane se cílem rešerše („chybí podíl bytů v krátkodobém pronájmu pro 27 zemí“).
+3. **Čekaný výsledek po kolech:** sekvenční rozklad (`Gelbach`): po každém kole se ukáže, jak se čekaný výsledek posune a jak se změní zbytek každé země. Divák tak neuslyší o téže zemi opačné věci (dřív: Irsko o 23 % hůř, než se podle výplaty čekalo, ale o 10 % lépe, než se čekalo podle dvou faktorů). *(Ondřej 13. 10. 2026 v noci: čekaný výsledek po kolech se počítá dál, ale jen pro analytika; divák ho neuslyší vůbec, takže ani opačné věci o téže zemi.)*
+4. **Složky a složený výsledek:** příspěvek faktoru k výsledku se spočítá jako rozdíl skutečného výsledku a výsledku, kdyby faktor měl v obou složkách hodnotu měřítka ligy.
+5. **Zbytky zemí:** zbytek nad typickou odchylkou modelu (orientačně ±15 %) spouští šetření v tomto pořadí: srovnatelnost výsledku u země (pásmo chyby), doložená specifická příčina, jinak výslovně „nevysvětleno“. Zbytek uvnitř pásma chyby se nevykládá.
+
+#### Krok 7. Hlavní faktory, vedlejší faktory a zvláštnosti zemí
+
+1. **Hlavní faktory (nejvýš pět, stejné pro všechny země; přepracováno ve v1.2):** ze zařazených faktorů (krok 5, rozhodnutí 3 a 4) se vybere nejvýš pět s největším **obvyklým vlivem na výsledek** (medián absolutních příspěvků zemí v procentech, s intervalem; dřív `typický posun`). O tom, kdo je hlavní, rozhoduje velikost vlivu, ne cesta, kterou faktor prošel. Každý zařazený faktor, který patří mezi pět s největším obvyklým vlivem, je kolo (po rozdělení podle kroku 7.4 obě jeho části); z kol smí vypadnout jen Ondřejovým rozhodnutím o dramaturgii, zapsaným doslovnou citací v oddílu 6, a jeho body pak zůstávají v čekaném výsledku (krok 7.5). Zařazený faktor bez procenta se řadí za faktory s procentem podle váhy ekonomů (záložní pravidlo verze 1.1). Faktor, jehož obvyklý vliv je menší než medián pásma chyby výsledku (pravidlo 6; u bydlení 5 %), dostane příznak „menší než chyba měření“; u bydlení to podle výpočtu ze 16. 10. 2026 (`kola_koncept.py`, verze dat 16. 10.; tabulka `KOLA_KONCEPT_TABULKA.md`) jsou zásoba bytů (3,4 bodu; zhoršení u Polska a Slovenska podle tabulky), úroky hypoték (1,7 bodu) a tempo výstavby (3,9 bodu); změna počtu obyvatel (7,1 bodu) ho dostane jen v podobě očištěné o výplatu (4,0 bodu, krok 3.4). S 27 zeměmi je čekaný stav dvě až tři kola potvrzená daty a zbytek doložený svědky; skill to musí říct, ne tlačit na pět potvrzených. **Když je zařazených pro celou ligu méně než pět**, skill to řekne a počet kol předloží Ondřejovi jako otázku dramaturgie; pátý se nedoplňuje zvláštností zemí ani hypotézou. **Kontrola souladu:** kategorie, kterou podle přísného protokolu ekonomové řadí mezi tři hlavní příčiny aspoň ve třetině zemí a která mezi hlavními faktory chybí, se zdůvodní podle kroku 5 (volné zmínky se nepočítají; analýza bydlení verze 3 je tu omylem počítala a nájemní bydlení tak dostala mezi hlavní).
+2. **Vedlejší faktory:** ostatní zařazené faktory podle obvyklého vlivu, pak zvláštnosti zemí, pak hypotézy (s tím, co by rozhodlo).
+3. **Zvláštnosti země:** faktor (i vedlejší, nebo typický jen pro jednu zemi), jehož příspěvek u země přesahuje typickou odchylku modelu, nebo který v dané zemi aspoň dvě instituce řadí mezi tři hlavní příčiny; rozebere se u ní. Patří sem i faktory s rozhodnutím „zvláštnost zemí“ (krok 5). Vyčnívá-li země v hlavním faktoru (aspoň jednu typickou odchylku od měřítka nebo pět nejlepších či nejhorších), rozebere se i hlavní faktor. *(doplněno po nezávislé kontrole 13. 10. 2026: typická odchylka a vyčnívající hodnota jsou vysvětlené ve slovníku; u hodnot faktoru je typická odchylka směrodatná odchylka 27 zemí kolem měřítka ligy. Tato definice platí i pro výklad hodnot v kroku 9a.3.)*
+4. **Rozklad faktoru na to, co země měla na začátku, a co přibylo za horizont (doplněno ve v1.3, Ondřej 13. 10. 2026).** Ondřej: „…počet bytů na
+   tisíc obyvatel rozdělil na 2 faktory… z toho důvodu, že chceme vysvětlovat i to, co vlády, firmy a společnost dělají
+   dobře nebo špatně…“ Zařazený faktor se pro výklad rozdělí na dvě kola, **co země měla na začátku horizontu**
+   (`zděděný stav`; u bydlení byty, které země měla na začátku, podle sčítání 2011) a **co přibylo za horizont** (`tok`;
+   u bydlení byty dokončené od dne sčítání 2011 do konce roku 2024), jen
+   když platí všechny čtyři podmínky:
+   1. **Dnešní stav = stav na začátku + co přibylo − úbytky** (u bydlení dnešní byty = byty 2011 + dokončené byty −
+      zbourané a zaniklé byty; obdobně kapitál a investice, dluh a nové půjčky).
+   2. **Faktor není samotný ukazatel** ani jeho část (u ukazatele zadlužení se dluh takto nerozděluje, je to výsledek).
+   3. **Obě části se vejdou do pěti kol** (krok 7.1 a 7.5); jinak faktor zůstane celý.
+   4. **Části se nepřekrývají a mají stejný základ:** co přibylo, se počítá až od dne, ke kterému se měří stav na
+      začátku; obě části se vztahují ke stejnému počtu obyvatel; úbytky se odečtou, nebo se označí jako známá
+      nepřesnost.
+
+   - **Síla obou částí.** Část, která přibyla, dostane sílu ze studií, když ji test přenosu v úplném modelu kol
+     připustí (krok 4.3 d), a stav na začátku sílu z dat ligy zvlášť. **Stejná síla na jednotku** (obě části se silou
+     odhadnutou na jejich součtu podle kroků 4–6; byt je byt, ať je starý, nebo nový) je náhrada, když test neprojde,
+     a povinná citlivost. Samostatný odhad části, která přibyla, bývá nestálý: u bydlení vyšla (po řecké opravě a s výstavbou od sčítání 2011) samostatná síla výstavby na cenu s opačným znaménkem než ze studií a u ceny i nájmu s nulou v 90% intervalu (čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Proto jsou **povinné dvě citlivosti**:
+     (a) samostatný odhad obou sil z dat ligy (v limitu tří sil z dat, krok 6.1) a (b) síla odhadnutá jen ze stavu před
+     obdobím (u bydlení ze zásoby 2011), použitá pro obě části. U každé se zapíše, zda mění pořadí kol a čekaná místa.
+     Když citlivost změní pořadí kol nebo čekané místo země o víc než dvě místa, analytik to zapíše do poznámek pro editora (krok 9a.7) a rozhodnutí jde branou eskalace. Výpočet tato upozornění zapisuje sám (`kola_koncept.py`, oddíl „Do poznámek pro editora“). U bydlení jsou výsledky obou citlivostí (zda mění pořadí kol, kolik zemí a o kolik míst posunou) podle posledního výpočtu v `KOLA_KONCEPT_TABULKA.md`, oddíl „Do poznámek pro editora“.
+   - **Čekaný výsledek se rozdělením nemění** a výběr faktorů se kvůli němu neopakuje; změní se jen typická země, se
+     kterou se srovnává, u všech zemí o stejný počet bodů (u bydlení o 0,04 bodu). Body
+     zásoby a výstavby dávají dohromady body celé nabídky bytů; obojí hlídá automatická kontrola (krok 10.3). Body kola
+     s tím, co přibylo, se počítají z toho, o kolik to zvětšilo stav na začátku; divákovi se hodnota ukazuje v jednotce,
+     které rozumí (u výstavby dokončené byty na 1 000 obyvatel roku 2011, tedy na stejný základ jako zásoba; změnu počtu lidí ukazuje samostatné kolo).
+   - **Síla důkazu, páka a obrácený směr.** Část, která přibyla, nese stav důkazu spojeného faktoru s dovětkem
+     „samostatně v datech ligy neověřen“ (u výstavby: test přenosu samotné výstavby mlčí, náhodné přeházení sedí stejně
+     dobře ve 38–47 % případů, krok 4.3); v úplném modelu kol se ale síla
+     výstavby ze studií přebírá (krok 4.3, výpočet ze 16. 10. 2026). Štítek páky se bere z listu
+     měření (krok 3.9; u výstavby „pomalu ovlivnitelné“). Obrácený směr se
+     neopisuje z listu měření, ale ověří podle kroku 3.5. U bydlení ho data neprokazují:
+     - souvislost výstavby s výchozím stavem výsledku je 0,10 a s jeho změnou 0,09;
+     - s cenou při stejné výplatě a přírůstku lidí je −0,04 (hranice náhody asi 0,38);
+     - výstavba ale souvisí s přírůstkem lidí (0,51) a s výplatou (0,54).
+
+     Říká se proto: **víc se staví tam, kde lidí přibývá a mají vyšší výplaty, proto se výstavba mezi zeměmi schová
+     za poptávku.** Údaj „ano“ v listu měření se opraví. Má-li část, která přibyla, malý obvyklý vliv, řekne se to
+     otevřeně: stav mění jen pomalu (u bydlení to po výpočtu ze 16. 10. 2026 neplatí: tempo výstavby 3,9 bodu proti
+     3,4 u zásoby).
+   - **Proč to verze 1.2 nerozdělila:** výstavba sama mezi zeměmi nic nevysvětlila (víc se staví tam, kde lidí
+     přibývá a mají vyšší výplaty, takže se výstavba schová za poptávku) a pravidlo „jeden mechanismus = jeden faktor“
+     ji spojilo se zásobou. Pro výběr faktorů to platí dál; rozdělení je výkladové.
+   - **Výstavba od sčítání 2011 (podmínka 4 je u bydlení splněná):**
+     - dokončené byty se počítají od dne sčítání 2011 (v roce sčítání jen část roku po něm) do konce roku 2024;
+     - den sčítání je podle přehledu OSN, Irsko 10. 4. 2011, Francie 1. 1. 2011;
+     - výstavba je vůči zásobě podle téhož sčítání a v absolutních počtech, takže obě části mají stejný základ obyvatel;
+     - proti výstavbě 2010–2024 se body změnily nejvýš o 0,41 bodu a čekaný výsledek nejvýš o 0,39 bodu;
+     - čekaná místa se nezměnila.
+
+     Označené zůstávají tyto nepřesnosti:
+     - Belgie, Francie, Řecko a Itálie mají výstavbu ze sčítání 2021 (byty postavené 2011–2021, které v roce 2021
+       stály), prodlouženou stejným tempem do konce roku 2024;
+     - zbourané byty se u zemí s řadou dokončených bytů neodečítají;
+     - u Chorvatska je zásoba 2011 dopočtená ze sčítání 2021, výstavba proto od 1. 1. 2011;
+     - Británie má finanční roky, počítané poměrně podle dnů.
+   - **Zatím vyzkoušeno jen na bydlení.** Před použitím na jiný ukazatel (například kapitál a investice u mezd, dluh
+     a nové půjčky) se rozdělení musí stejně vyzkoušet: čtyři podmínky, obě citlivosti a automatická kontrola.
+5. **Pořadí kol a zemí v kole.** Kola jsou všechny zařazené faktory (krok 5, rozhodnutí 3 a 4) po rozdělení podle
+   kroku 7.4, nejvýš pět, v pořadí: nejdřív rozdané karty, potom tah země (oddíl 0.2), uvnitř skupiny od největšího
+   obvyklého vlivu po nejmenší (Ondřej 13. 10. 2026: „Pak bych postupoval od nejdůležitějšího faktoru po nejméně
+   důležitý.“; skupiny od 16. 10. 2026).
+   U bydlení (`kola_koncept.py`, verze dat 16. 10. 2026; tabulka `KOLA_KONCEPT_TABULKA.md`): čistá výplata 21,6, změna počtu obyvatel 7,1, zásoba bytů 3,4, úroky hypoték 1,7 a tempo výstavby 3,9 bodu, tedy pět kol. Zařazený faktor smí z kol vypadnout jen
+   Ondřejovým rozhodnutím o dramaturgii zapsaným doslovnou citací v oddílu 6; jeho body pak zůstávají v čekaném výsledku,
+   který se počítá pro analytika, a scénář ho zmíní u zemí, kde hraje roli, jako faktor, který se jako kolo neukazuje.
+   U bydlení je to otevřená otázka 5; do rozhodnutí platí pět kol. Kola ukazují místo země v kole a výklad hodnoty.
+   Po každém kole smí scénář ukázat **průběžné pořadí** (kde by země stála, kdyby rozhodovala jen dosud odehraná
+   kola) jako stav závodu a na začátku papírové pořadí podle rozdaných karet (oddíl 0.3); nikdy jako předpověď
+   konečného místa a nikdy jako „o tolik míst lépe, než se čekalo“ (Ondřej 13. 10. 2026 v noci a 16. 10. 2026;
+   skill mapy příběhu §2.5). Nejsilnější kolo se zmíní hodně, ale ne jako předpoklad.
+   Je to Ondřejův pokyn. Jak velký vliv se řekne, je otevřená otázka 2. Návrh: podíl rozdílů, který kolo vysvětlí samo (slovník), u výplaty ve dvou částech, početně a ekonomicky. Pořadí kol nese jistotu z převzorkování zemí (u bydlení podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`); pod dvě třetiny se pořadí označí jako nejisté. Štítek „nejisté“ je ve výstupu u každého takového pořadí a nejisté pořadí jde do
+   poznámek pro editora. Pořadí kol a jeho jistota se zapisují do registru závěrů (krok 10.2b), aby přepočet ohlásil
+   každé překlopení. V každém kole se země regionu řadí od hodnoty pro výsledek nejlepší po nejhorší (u úroků je
+   lepší vyšší sazba po odečtení inflace, protože drží ceny níž; kupující na hypotéku ale platí víc a podklad musí říct
+   obojí). Když „lepší“ znamená něco, co lidé jako úspěch nevnímají (úbytek obyvatel, drahá hypotéka), podklad to
+   výslovně označí, aby to scénář řekl citlivě. **Kolo se řadí i boduje podle stejné veličiny,** kterou divák vidí
+   jako hodnotu kola; automatická kontrola hlídá, že body jdou s hodnotou (u bydlení páté kolo podle růstu zásoby
+   bytů v procentech, byty ročně na 1 000 obyvatel jen jako doplňující údaj).
+6. **Dvě různá rozhodnutí: co je kolo a proč má země v kole svou hodnotu.** Kroky 5 a 7.1–7.5 rozhodují, **které
+   veličiny tvoří soutěž**: tady platí přísná pravidla pro celou ligu (svědci, hranice náhody, obvyklý vliv). Proč
+   má konkrétní země v už vybraném kole svou hodnotu, je **jiná otázka** a řeší ji krok 2b a výklad hodnoty v kroku
+   9a.3. Doklady jsou tu hlavně o téhle zemi a jejích sousedech: rozklady, odvětví za celé období, počty pracujících,
+   ceny vývozu proti dovozu, případy, ekonomové o zemi, studie mechanismu. Příčina hodnoty kola, která v datech
+   27 zemí nepřekročí hranici náhody (příčiny úrovně a růstu výkonu bývají propletené se startem a s obráceným
+   směrem, takže v lize nepřekročí hranici skoro žádná), se proto u země nevyřazuje ani neoznačuje „v lize
+   neověřeno“, když ji podporují doklady o zemi; slova pak řídí síla dokladu o zemi. Platí to i obráceně: že je
+   faktor kolem, ještě neříká, co jeho hodnotu u země způsobilo (že výkon rozhoduje o mzdě, nevysvětluje, proč výkon
+   rostl). Investice, stroje, technologie a organizace proto nemusejí dostat vlastní kolo, aby byly hlavním důvodem
+   růstu výkonu některé země.
+
+#### Krok 8. Vývoj v čase a kroky zemí
+
+Pro každou zemi: vývoj ukazatele a faktorů za horizont proti měřítku ligy; kroky vlád, firem a institucí s datem a zdrojem; jak se vývoj po kroku změnil. Časová souvislost není důkaz; jako příčina se krok uvede jen s dokladem z kroku 4.
+
+**Pojistka 25. 10. 2026 (Ondřej): stavba výkladu země `vyklad/{KOD}.md`.**
+- **Oddíl 1 (výchozí stav, rozdané karty)** popisuje jen to, co země zdědila před začátkem hodnoceného období:
+  zděděnou strukturu ekonomiky (zemědělství, těžký průmysl, orientace výroby na trhy bývalého východního bloku),
+  vlastnictví v roce 1990 (například v Česku tvořily soukromé firmy méně než 5 % HDP, tedy stát vlastnil skoro vše),
+  předválečné bohatství, zděděný kapitál a vzdělání. U zemí bez plánované ekonomiky obdobně poválečné dědictví.
+- **Oddíl 2 (růst, tah země)** obsahuje všechna rozhodnutí od roku 1990: metody privatizace (kupónová privatizace,
+  prodej podniků cizincům), šokovou terapii, měnové krize a reakce na ně, investiční pobídky, vstup do EU a eura.
+  Transformace je tah země, ne rozdaná karta, i když se odehrála před rokem 1996.
+- **Oddíl 4 (další faktory), ceny:** u zemí, kde cenová hladina výrazně mění pořadí mezi eury a kupní silou (například
+  Polsko 69,9 % proti Slovensku 80,8 % průměru EU), uvede podklad vedle měnového režimu stručně i velikost vnitřního
+  trhu a konkurenci a soběstačnost v potravinách, každé se zdrojem; je to podklad pro krátkou zmínku a odkaz na
+  epizodu o cenové hladině, ne kolo.
+- Výklady zemí z 17.–18. 10. 2026 jsou podle starší stavby; při další revizi se přeskupí, obsah se nemaže.
+- **Tvrzení scénáře bez opory se doplní rešerší** (Ondřej 26. 10. 2026: „pokud tam není opora, tak určitě je dobrý
+  doplnit rešerši“): co Ondřej nebo webový model doplní do scénáře a výklad země to nedokládá, analytik dohledá se
+  zdrojem a zapíše do výkladu země; co se doložit nepodaří, z textu vypadne. Ondřejův pohled a kontext jsou vítaný
+  vstup, ne chyba.
+
+#### Krok 9. Výstup pro regionový systém
+
+Pro každý region (pořadí regionů určuje průběžné pořadí týmové soutěže):
+- **kola:** u každé země hodnota faktoru, měřítko ligy, místo v lize, místo v regionu, příspěvek a síla důkazu kola;
+- **čekaný výsledek po každém kole** a skutečný výsledek: hodnota, místo v lize a v regionu, rozdíl proti čekanému výsledku po posledním kole; *(Ondřej 13. 10. 2026 v noci: čekaný výsledek a čekané místo jsou jen v datech pro analytika, do podkladu pro scénář ani do hlasu nejdou; skutečný výsledek a místo ano, krok 9a)*
+- **zvláštnosti zemí** a **kroky v čase**;
+- **co říkají ekonomové** v každé zemi, stručně, a kde se s daty rozcházejí.
+- **přehledová stránka (doplněno 12. 10. 2026 podle Ondřejových připomínek; poučení 11, 15, 17, 19):** pořadí ligy s hlavní příčinou každé země; karta každé země, která začíná hlavní příčinou napsanou analytikem jako odpověď na přímou otázku (co pořadí určuje, nejpravděpodobnější příčina se jmenovanými institucemi a čísly, síla dokladu, podíl měření) a pokračuje rozborem s čísly; **grafy faktorů** podle součástky `05_epizode_packs/_skills/analysis-review/grafy_faktoru/` (každý faktor pro všechny země s pořadím před zemí, středem ligy a barvou regionu, v každém regionu grafy jeho zemí); úplné tabulky všech faktorů se zdroji; test všech zkoušených kandidátů; přepočet jedné země krok za krokem.
+- **kontrola shlukování odchylek:** průměrná odchylka od čekaného výsledku v každém regionu; když se region odchyluje víc než typická odchylka země, modelu chybí faktor a hledá se (příklad: bydlení 12. 10. 2026, střední Evropa +17 %, Balkán −12 %, zásoba bytů na obyvatele; poučení 18).
+- **nabídka a podobné faktory se posuzují kombinací znaků**, ne jedním zástupným ukazatelem: u nabídky bytů čtyři znaky nedostatku (povolování, byty na obyvatele, výstavba, výstavba v hlavním městě) a přirážka ceny nad cenou stavby, s protipříkladem (Belgie: znaky bez přirážky, nedostatek se do cen nepromítá; poučení 16).
+- **tabulka svědků** u každého kandidáta: výpověď a spolehlivost každého svědka, rozhodnutí podle kroku 5, co by rozhodlo (výstup `SVEDCI.md`).
+
+#### Krok 9a. Podklad pro scénář regionu
+
+Pro každý region vznikne `PODKLAD_SCENAR_{region}.md` podle šablony na konci tohoto kroku, psaný tak, aby z něj writer
+psal přímo. Pořadí odpovídá stavbě bloku (Ondřej 13. 10. 2026). **Rozpočet slov** scénáře určuje skill mapy příběhu
+(§3 bod 6). Podklad dává materiál a u každé země označí jádro (hlavní důvod, jeho váhu a hodnocení).
+1. **Otázka regionu** jednou větou: nejpřekvapivější pravdivý rozpor regionu (Balkán: staví se málo, ale lidé odešli
+   a byty zůstaly, takže tři ze čtyř zemí mají dnes na obyvatele nejvíc bytů v lize; jedna z nich má bydlení
+   dostupnější než většina ligy, dvě patří k nejméně dostupné třetině ligy). Otázka nesmí dovolit odvodit pořadí zemí v regionu, kontrast se proto vztahuje k lize, ne k regionu. Míra složená z více kol smí v otázce
+   zaznít jen výslovně jako složená, nikdy jako samostatná příčina vedle kol, ze kterých je složená (krok 3.4: jeden
+   mechanismus = jeden faktor). Byty na obyvatele dnes (zásoba a výstavba dělené dnešním počtem lidí) obsahují i úbytek
+   lidí z kola změny počtu obyvatel, proto se o nich mluví jen jako o tom, že „lidé odešli a byty zůstaly“.
+2. **Kořen regionu:** společná historie nebo pravidla (Balkán: rozprodané státní byty, odchod lidí, skoro žádné nájemní
+   a státní byty), se zdroji. Podle tvrdého pravidla 9 (skupiny ani regiony nejsou důkaz) se kořen jako příčina výsledku regionu podá, jen když (a) má stav důkazu podle kroku 5 a (b) projde
+   srovnáním se zeměmi mimo region, které mají stejný rys: dopadly-li jinak, kořen sám výsledek nevysvětluje (rozprodej
+   státních bytů mají i střední Evropa a Pobaltí, a dopadly jinak než Balkán); pak se hledá, co je odlišilo, a kořen
+   smí zůstat jednou z příčin, když ho podporují doklady o zemích regionu (podobnost ani jiný výsledek jinde příčinu
+   samy nevyřazují, krok 2b bod 3). Jinak se podá jen jako možné vysvětlení nebo společný rys regionu.
+3. **Kola v pořadí podle kroku 7.5.** U každého kola: obvyklý vliv
+   s intervalem, příznak „menší než chyba měření“, **síla důkazu kola** a **měřítko ligy** (výstup kroků 7.4–7.5).
+   U každé země regionu: hodnota, místo v kole z celé ligy, body a **výklad hodnoty**: 1–3 věty pro laika, proč má
+   země hodnotu takovou, jakou má, **na konkrétních věcech ze souboru `priklady/{kód}.md`** (zásada Ekonomie lidskou
+   řečí: nejdřív věc, pak číslo; 2. 11. 2026), a u druhé a další země, čím je na tom hůř než předchozí, podle záznamu
+   pořadí příčin pro rozdíl proti sousedovi (krok 2b bod 4, otázka b), ne podle jejího vlastního růstu.
+   Nejsilnější kolo se zmíní hodně, ale pořadí podle něj se nevydává za očekávaný výsledek; průběžné pořadí po kolech
+   je stav závodu, ne předpověď (krok 7.5). Jakým číslem se velikost vlivu řekne, je otevřená otázka 2, takže podklad uvede jen návrh: podíl rozdílů, který kolo vysvětlí samo (slovník). U výplaty ve dvou částech: „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší“. Ondřejův odhad „asi polovina“ tak smí zaznít. Výklad stojí na
+   doložených příčinách (struktura ekonomiky, daně a odvody u čisté
+   výplaty, porodnost, úmrtnost, stěhování a uprchlíci, historie výstavby, povolování, krize, státní programy)
+   s odkazem na zdroj a používá slova podle síly důkazu (tvrdé
+   pravidlo 10). *(Ondřej 13. 10. 2026 v noci: u daní a odvodů jde o jejich celkovou výši, ne o to, kdo je platí; test
+   protipříkladem níže.)* U nevýrazné hodnoty stačí jedna věta, delší výklad patří vyčnívajícím hodnotám *(doplněno
+   po nezávislé kontrole 13. 10. 2026: vyčnívající hodnota podle kroku 7.3 a slovníku, tedy mezi pěti nejlepšími nebo
+   nejhoršími v lize, nebo od měřítka ligy aspoň o typickou odchylku hodnot; výstup kroků 7.4–7.5 ji u každé země
+   označí)*.
+   Povolená odpověď podkladu je **„příčina není doložena“**: když doklad chybí, podklad to tak napíše a příčinu
+   nevymýšlí; do hlasu tahle věta nejde, scénář řekne jen doloženou část slovy váhy (skill mapy příběhu §2.3). **Práh „skoro stejně“:** rozdíl hodnot dvou zemí, který je menší než
+   chyba měření faktoru (pásmo chyby z listu měření, krok 1.4 a 3.3; kde chybí, analytik ho odhadne a zapíše se
+   zdrojem), se nevysvětluje a podklad napíše „skoro stejně“.
+   **Výchozí pravidlo**, dokud list měření pásmo chyby faktoru nemá (výchozí volba analytika): rozdíl menší než 5 %
+   hodnoty, tedy medián pásma chyby výsledku. U veličin v procentech nebo procentních bodech (změna počtu obyvatel,
+   sazba po odečtení inflace) je to rozdíl menší než 0,5 procentního bodu. Výstup kroků 7.4–7.5 ho u každé země proti
+   předchozí zemi v regionu označí. U bydlení je tak „skoro stejně“ úroková sazba všech čtyř balkánských zemí
+   a výplata Bulharska a Rumunska. Odhad pásma chyby smí vycházet jen
+   z nejistoty hodnoty samé (revize dat, rozdíl zdrojů téže veličiny), **nikdy z rozporu dvou různých pojetí
+   veličiny** (růst v kupní síle proti růstu ve stálých cenách): takový rozpor není nepřesnost, ale jiná otázka,
+   a jako „pásmo chyby“ by smazal i rozdíly, které se vykládají (zkouška Pobaltí: odhad 28 % z rozporu obou měření
+   neobstál u kontrolora, platí výchozích 5 %).
+   **Jedno měřítko kola, a co dělat, když se dvě měření rozcházejí**:
+   hodnotou kola je měření, kterým se kolo počítá pro celou ligu (u růstu výkonu kupní síla proti středu ligy,
+   `KOLA_TABULKA.md`); do hlasu scénáře jde jen ono a věci, které platí i v kontrolním měření (reálný růst). Zařazení
+   „nad / pod rámec dohánění“ se u země říká jen tam, kde se obě měření shodují; jinak soud o cestě země stojí na
+   jiných otestovaných rysech (vývoz, investice, bublina, propad, úbytek pracujících), ne na zařazení. Když dvě
+   měření seřadí dvojici sousedů opačně a test nenajde jinou příčinu pořadí než přepočet, podklad to zapíše jako
+   nevyřešený pár a otázku pro Ondřeje (mění pořadí v kole, brána eskalace); scénář se bez toho neodesílá. Vlastnost
+   měření sama o sobě se v hlase nevysvětluje (skill mapy příběhu, poučení ze severu), ale rozdíl kupní síly
+   a objemu může být obsah, ne artefakt (co země vytvoří, se v Unii prodává za lepší nebo horší ceny); rozhodne
+   nezávislý kontrolor s výkladem, co rozdíl způsobuje. Rozklad spočítaný pro jedno měřítko (reálný růst) se bez
+   přepočtu nevydává za rozklad druhého (pozice v kupní síle proti středu ligy).
+   **Dohánění je kontext srovnání, ne příčina ani zásluha:** nízký start pomáhá vysvětlit rychlé tempo, ale neříká,
+   jak se růst uskutečnil. Konkrétní procesy, kterými země doháněla (nové stroje a postupy, zahraniční investice,
+   vstup na trhy, přesun lidí do výkonnějších oborů), jsou samotné vysvětlení růstu a mají v záznamu pořadí příčin
+   své místo. Statisticky očekávaný růst není důkaz, že se stal bez rozhodnutí lidí, firem a státu, a odchylka od něj
+   není čistá zásluha ani vina vlády: hodnocení rozhodnutí stojí na jejich doloženém účinku a proveditelných
+   možnostech (krok 9b). Soutěžní výsledek, ekonomická příčina a zásluha nejsou totéž.
+   **Test protipříkladem** *(Ondřej 13. 10. 2026 v noci; navazuje na tvrdé pravidlo 4: aritmetika není příčina)*:
+   u každého „protože X“ se analytik zeptá, zda by hodnota byla jiná, kdyby X nebylo. Když by byla stejná, X příčinou
+   není a do výkladu nepatří; typicky jde o účetní nebo definiční věc (kdo platí odvody, jak se něco počítá, do které
+   kolonky statistika co zapíše). Výklad jmenuje ekonomickou příčinu (u výplaty produktivita, struktura ekonomiky,
+   kapitál, vzdělání, trh práce), ne účetní rozdělení. **Poučení z Rumunska:** podklad psal, že Rumunsko má nízkou
+   čistou výplatu kvůli přesunu odvodů na zaměstnance. Ondřej: „Tím to není. Kdyby vše platil zaměstnavatel, tak jen
+   bude velmi nízká hrubá mzda… čistá bude na úrovni hrubé víceméně. Je to jen účetní trik. Problém je
+   produktivita.“ Přesun odvodů změnil hrubou mzdu, ne čistou výplatu; příčinou nízké čisté výplaty je produktivita.
+   Stejný test se dělá při kontrole faktů (krok 10.4).
+   **Míra produktivity se volí testem protipříkladem, ne zvykem.**
+   U bydlení výplatu (roční mzda na plný úvazek) vysvětluje líp výkon jednoho pracujícího za rok (hrubý domácí produkt
+   na pracujícího) než výkon za hodinu: za hodinu vytvoří Rumunsko a Řecko skoro totéž, ale rumunská výplata je o 12 %
+   nižší, a Maďarsko vytvoří za hodinu víc než Polsko a má nižší výplatu; za rok seřadí výplaty stejně dobře nebo lépe ve
+   všech šesti regionech (v lize shoda pořadí 0,98 proti 0,96). V jedné epizodě se používá jedna míra pro všechny
+   regiony, aby divák neslyšel dvě různé věci pod stejným jménem.
+   **Zátěž daní a odvodů** se měří vůči celkovým nákladům práce,
+   tedy hrubé mzdě plus odvodům zaměstnavatele (podíl daní a odvodů na nákladech práce, `tax wedge` podle OECD).
+   Podíl čisté výplaty na hrubé mzdě se jako doklad nepoužívá, protože závisí na tom, kdo odvody formálně platí
+   (u Rumunska a Litvy ho posunul přesun odvodů na zaměstnance v letech 2018 a 2019, tedy účetní změna, pravidlo 6).
+   Věta typu „z hrubé mzdy si nechá jen X %“ proto výklad zátěže není; kontrola faktů ji zachytí (krok 10.4).
+4. **Další faktory zemí:** u každé země faktory mimo kola, které tam hrají velkou roli (zvláštnosti země z kroku 7.3
+   a vedlejší faktory, jejichž příspěvek u země přesahuje typickou odchylku), s mechanismem, velikostí (body, pokud jsou
+   spočítané), silou dokladu a tím, **komu dostupnost platí** (lidé uvnitř proti nováčkům, pořadníky, podnájmy, mladí
+   u rodičů). Příklady z bydlení: Maďarsko dotace kupujícím (zvláštnost země podle kroku 5; ekonomové a data ligy),
+   Chorvatsko tlak turismu, Rakousko neziskové a obecní bydlení, Nizozemsko a Švédsko pořadníky a nedostupnost pro
+   nováčky. Vysoká nominální sazba hypoték v Rumunsku není další faktor země: kolo úroků měří sazbu po odečtení inflace a v ní je Rumunsko na úrovni Balkánu, skoro stejně jako Chorvatsko, Řecko a Bulharsko; vysokou sazbu dělá inflace a patří do výkladu kola úroků (krok 7.5). **Co říkají
+   ekonomové a kde se s daty rozcházejí**: u každé země
+   stručně výroky institucí s citací (krok 2.2) a kde se s daty ligy rozcházejí (rozpor podle kroku 5, nebo jiná síla
+   než v datech).
+5. **Odhalení pořadí** od posledního po nejlepšího v regionu (skutečné místo v lize), u každé země dvě až tři věty:
+   hlavní příčiny výsledku (z kol a dalších faktorů) a **hodnoticí závěr** podle kroku 2b bod 6 (štítek politiky
+   podle kroku 9b zůstává v datech). *(doplněno po nezávislé
+   kontrole 13. 10. 2026; upraveno podle Ondřeje 13. 10. 2026 v noci)* Rozdíl skutečného místa proti čekanému místu po
+   posledním kole se povinně spočítá, ale zapíše se jen do poznámek pro editora: analytikovi ukazuje, co kola
+   nevysvětlí a co je potřeba vyšetřit. Do podkladu místo něj patří, **co zemi pomohlo a co ji brzdilo** (z kol
+   a dalších faktorů), ne „o tolik míst lépe, než se čekalo“. Štítek politiky se zapíše na obou osách s hodnoceným
+   obdobím (krok 9b, oddíl 0.4).
+   **Co důvody nevysvětlí:** když rozdíl skutečného a čekaného
+   výsledku země přesáhne typickou odchylku výpočtu (u bydlení 15,2 bodu po opravě čisté výplaty 14. 10. 2026), podklad slovy, bez míst a bez čísel
+   čekaného výsledku, řekne, že část výsledku země důvody v tomto videu nevysvětlí (poznámka pro writera; do hlasu
+   jde jen doložená část slovy váhy). Pak doplní, co se o tom ví:
+   doloženou zvláštnost země (krok 7.3), nebo „příčina není doložena“. Vada měření se řeší podle pravidla 13. Výstup
+   kroků 7.4–7.5 takové země označí; u bydlení (stav 14. 10. 2026) Belgie, Bulharsko, Portugalsko, Dánsko, Francie,
+   Česko, Rumunsko, Chorvatsko a Rakousko. U Portugalska stojí velká část rozdílu na sporné ceně nového bytu, proto se
+   podle pravidla 13 v hlase neříká, dokud se cena nevyjasní.
+6. **Ponaučení regionu** jednou až dvěma větami.
+7. **Poznámky pro editora (nečtou se):** vady měření a citlivosti, které by změnily místo (tvrdé pravidlo 13), a předpoklady, které čekají na Ondřeje. Patří sem i výsledky citlivostí z kroků 3.4 a 7.4 a *(Ondřej 13. 10. 2026
+   v noci)* čekané místo po kolech a rozdíl skutečného místa proti čekanému místu. Stojí v samostatném souboru
+   `PODKLAD_SCENAR_{region}_EDITOR.md`. Povinně sem patří
+   i každé nejisté pořadí kol (jistota pod dvě třetiny) a každé upozornění z citlivostí, které mění pořadí kol nebo
+   posouvá čekané místo o víc než dvě místa. Výpočet je připraví v oddílu „Do poznámek pro editora“
+   (`KOLA_KONCEPT_TABULKA.md`), analytik je převezme pro země regionu.
+8. **Navíc z dat** (generuje skript, u bydlení `scenar_regiony_2026_10/podklady_v2/sestav_podklady.py`): rozdané
+   karty regionu (součet bodů kol karet a papírové pořadí podle oddílu 0.3), průběžné pořadí zemí v cíli před
+   regionem a po něm, patro evropské reality, směr od začátku období, těsná krajní pořadí (do 5 % od sousední země)
+   a most do dalšího regionu. Výsledek se nepřepočítává na střed 1,00, když by zaokrouhlení změnilo pořadí.
+
+Podklad prochází `scripts/kontrola_srozumitelnosti.py --divak`, u každého čísla nese zdroj a nepoužívá pracovní názvy.
+Kontrola `--divak` se nevztahuje na poznámky pro editora: smějí
+obsahovat odborná slova analýzy, proto stojí v samostatném souboru, který prochází kontrolou bez `--divak`.
+Přehledová stránka (krok 9) řadí grafy podle týchž kol: v každém regionu graf každého kola pro všech 27 zemí se
+zvýrazněním zemí regionu a grafy dalších faktorů, které region vysvětlují. Podklad `10_documents/active/2026-10-13_dramaturgie_regionu/BALKAN_PRO_SCENAR.md` vznikl před úpravou podle bodů 1–7 a šablony, je řazený po zemích a nemá kola s místy v kole ani srovnání kořene se zeměmi mimo region; vzorem pro formu se stane až po úpravě. První blok scénáře podle konceptu se po Ondřejově schválení stane vzorem pro writera.
+
+**Šablona souboru**:
+
+```markdown
+## Podklad pro scénář: {region}
+
+*Výpočet: {skript a datum}; kola podle `KOLA_KONCEPT_TABULKA.md`; poznámky pro editora
+v `PODKLAD_SCENAR_{region}_EDITOR.md`. Rozpočet: podle skillu mapy příběhu §3 bod 6.*
+
+### 1. Otázka regionu
+{jedna věta; míra složená z více kol jen výslovně jako složená}
+
+### 2. Kořen regionu
+{společná historie nebo pravidla se zdroji}
+- Stav důkazu: {podle kroku 5}
+- Země mimo region se stejným rysem a jak dopadly: {…}
+- Podání: příčina / možné vysvětlení / společný rys
+
+### 3. Kola
+#### Kolo {n}: {faktor} ({jednotka})
+Obvyklý vliv {x} bodu ({interval}); menší než chyba měření: {ano/ne}; síla důkazu: {…}; měřítko ligy: {…}
+
+| Země | Hodnota | Místo v lize | Body |
+|---|---|---|---|
+
+- **{země}** ({vyčnívá / nevýrazná}): {výklad se zdrojem slovy podle síly důkazu a po testu protipříkladem, nebo
+  „příčina není doložena“; u další země, čím je na tom hůř než předchozí, nebo „skoro stejně“}
+- U nejsilnějšího kola: {zmínit hodně, ne jako předpoklad; číslo jen podle rozhodnutí o otázce 2, návrh: podíl rozdílů,
+  který vysvětlí samo, u výplaty „početně…; ekonomicky…“}
+
+### 4. Další faktory zemí
+- **{země}:** {faktor}: mechanismus, velikost v bodech, síla dokladu; komu dostupnost platí: {…}
+- **{země}, co říkají ekonomové a kde se s daty rozcházejí:** {instituce, rok, výrok s citací; shoda, nebo rozpor}
+
+### 5. Odhalení pořadí (od posledního po nejlepšího)
+- **{země}, {skutečné místo}. v lize, {místo v regionu}. v regionu:** co pomohlo: {…}; co brzdilo: {…}; co důvody
+  nevysvětlí: {jen u země nad typickou odchylkou výpočtu, slovy bez míst}; výkon politiky: {typ} ({hodnocené období});
+  komu dostupnost platí: {…}; jádro pro hlavní video: {…}
+
+### 6. Ponaučení regionu
+{jedna až dvě věty}
+```
+
+#### Krok 9b. Štítek politiky (tah země; do scénáře nejde)
+
+Štítek hodnotí, co s ukazatelem dělal stát, firmy a společnost (u bydlení s dostupností), ne kde země skončila.
+Komentátorské hodnocení, které zazní ve scénáři, řídí krok 2b bod 6; štítek zůstává v datech. Stupnice (návrh ze 13. 10. 2026,
+čeká na Ondřejovo schválení, otevřená otázka 4). Typy osy 1 i druhá osa jsou zatím vyzkoušené jen na bydlení; před použitím na jiný ukazatel se musí vyzkoušet stejně jako rozdělení v kroku 7.4. Štítek výkonu politiky říká, jak se politika snažila; samostatný vedlejší štítek říká, komu
+výsledek slouží. V hodnocení na dvou osách z oddílu 0.4 patří oba k ose 2 (tah země).
+
+**Štítek výkonu politiky.** Čísla typů neznamenají pořadí.
+1. **Dělá to dobře a je to vidět:** doložená politika s doloženým účinkem.
+2. **Snaží se, ale má to těžké:** doložená snaha proti silným okolnostem (příliv lidí, turismus, zděděný nedostatek, krize).
+3. **Chybami si přitížil:** doložená rozhodnutí, která dostupnost zhoršila (dotace kupujícím bez nabídky, daňové výhody
+   pro pronájem turistům, zrušené plány nebo instituce).
+4. **Zaspal:** jen když jsou doložené tři věci: (a) problém byl zjevný
+   a doložený v době, kdy se dal řešit; (b) země měla páku se štítkem „řiditelné“ nebo „pomalu ovlivnitelné“ (krok 3.9);
+   (c) účinek té páky dokládá studie nebo případ (krok 2.4 a 2.8). Nepřijatý dokument (strategie, plán, zákon, který
+   neprošel) sám doklad není; dokladem je problém a nevyužitá páka s doloženým účinkem. Příklady „nepřijatá strategie, program bez peněz“ jsou jen stopa, kde doklad hledat.
+5. **Těží z okolností:** dostupnost z věcí, které nejsou zásluhou politiky (úbytek lidí, zděděné byty, levná stavba).
+6. **Nedá se posoudit:** bez dokladu účinku se krok neoznačí za úspěch ani chybu; hodnocení zní „nedá se posoudit,
+   protože…“.
+
+**Pojistka 25. 10. 2026 (Ondřej): kalibrace štítků s výsledkem a s růstem nad rámec dohánění.** Hlavní štítek
+„Dělá to dobře a je to vidět“ nesmí dostat země, která (a) v kole růstu rostla prokazatelně pomaleji, než odpovídá
+běžnému dohánění (u mezd zařazení „rostla pomaleji“ v kupní síle i v reálných cenách), nebo (b)
+u které instituce v podkladu konstatují vyčerpání růstového modelu a zároveň skončila v suterénu (21.–27. místo).
+Kritérium (a) je kalibrace štítku, ne měřítko zásluhy: pomalejší růst, než odpovídá dohánění, je podnět vysvětlit,
+co zemi brzdilo a zda to bylo v jejích rukou, a rychlejší růst sám zásluhou není (krok 9a.3, dohánění).
+Slepý agent dostane tato dvě kritéria spolu s kroky země; místo v lize nadále nevidí, kritérium (b) doplní koordinátor
+po slepém hodnocení. Přesnější štítky výkonu politiky:
+7. **Dobrý motor, ale s vlastními brzdami:** doložená politika s doloženým účinkem a zároveň doložená vlastní
+   rozhodnutí, která růst brzdila (například doložené přímé investice a vstup do EU proti škrtům veřejných investic
+   nebo výzkumu; náklad volby z horší výchozí pozice se posoudí podle pojistky 26. 10. níže).
+8. **Vyčerpaný montážní model:** růst stál na zahraničních montážních investicích bez vlastního vývoje, instituce
+   konstatují, že model ztratil dech, a země skončila v suterénu.
+Hodnocení mezd z 17.–18. 10. 2026 (`data/hodnoceni/`) vzniklo před touto pojistkou; Česko, Maďarsko a Slovensko se
+podle ní přehodnotí.
+
+**Pojistka 26. 10. 2026 (Ondřej): výchozí pozice.** Doklad chyby (typ 3 „Chybami si přitížil“ a brzdy u typu 7)
+potřebuje navíc posouzení, zda země měla při své výchozí pozici realisticky proveditelnou lepší možnost: míra
+zestátnění a soukromého sektoru na začátku, zahraniční dluh, domácí kapitál a zájem zahraničních kupců, politická
+průchodnost. Kde instituce krok kritizují, ale lepší proveditelná možnost doložená není, zapíše se krok jako
+„kontroverzní, s doloženými náklady“ a do štítku se jako chyba nepočítá. Příklad: kupónová privatizace v Česku
+(skoro celá ekonomika ve vlastnictví státu, na rozdíl od Polska se soukromým zemědělstvím a Maďarska s dřívější
+liberalizací); náklady (slabá správa podniků, měnová krize 1997) se uvedou, ale jako cena volby z horší výchozí
+pozice, ne jako zjevná chyba.
+
+**Vedlejší štítek: komu dostupnost platí** (do výkonu politiky se nepočítá): **dostupné jen pro někoho**, když
+čísla vypadají dobře, ale nováčci se k bydlení nedostanou (pořadníky, regulace, podnájmy, mladí u rodičů), s dokladem;
+jinak se štítek nedává.
+
+**Hodnocené období**: horizont ukazatele (u bydlení 2010–2024). Při zlomu
+(nová vláda, reforma) se uvede rok změny a hodnocení se rozdělí, například „do roku 2024 zaspal, od té doby napravuje;
+účinek zatím nikdo nezměřil“.
+
+**Postup**: hodnotí se naslepo jen z kroku 8 (kroky zemí s doklady), dřív
+než analytik uvidí místo země v lize a rozdíl proti čekanému výsledku. Aspoň u pěti zemí hodnotí naslepo i druhý
+agent a zapíše se shoda (jako u výroků ekonomů v kroku 2.3); při neshodě rozhodnou doklady, jinak zůstane „nedá se
+posoudit“. Hodnotí samostatný agent s čerstvým kontextem.
+Dostane jen záznamy z kroku 8 (kroky zemí s daty a zdroji, doklady účinku, štítky pák z listu měření). Nedostane místa
+v lize ani v kolech, body, čekaný výsledek, výpočet ani rozbor analytika. Stejně čerstvý a stejně omezený je druhý
+slepý agent; nevidí ani hodnocení prvního. Analytik jejich hodnocení jen přebírá a slučuje podle dokladů.
+
+Země dostane hlavní hodnocení a nejvýš jedno vedlejší. Hodnocení stojí na krocích z kroku 8 s doloženým účinkem
+(tvrdé pravidlo 10: „zaspala“ jen u páky s doloženým účinkem); bez dokladu účinku se krok neoznačí za úspěch ani chybu
+a hodnocení zní „nedá se posoudit, protože…“. Hodnocení se nikdy neodvozuje jen z místa v lize ani z rozdílu proti
+čekanému výsledku. Když se stupnice na zemi nehodí, analytik navrhne novou kategorii a zapíše ji jako otázku pro
+Ondřeje.
+
+**Návrhy z rešerší regionů (13. 10. 2026), otázka pro Ondřeje**: sedmý typ **„léčí příznaky“**, tedy podpora kupujících místo nabídky (státní záruky, dotace hypoték
+a daňové úlevy při nepružné nabídce; mechanismus popisují Banco de España, MMF a OECD;
+`10_documents/active/2026-10-14_podklady_regionu/jizni_evropa.md`), a typ **„dlouho zaspal, teď napravuje“** (Británie,
+Irsko, Německo; `zapadni_evropa.md`). Do rozhodnutí platí šest typů osy 1: podpora kupujících bez nabídky se hodnotí
+jako „chybami si přitížil“, když je doložené, že dostupnost zhoršila (jinak „nedá se posoudit“), a zlom se zapíše
+hodnoceným obdobím.
+
+#### Krok 10. Kontroly
+
+1. **Sedm kontrol** před každým závěrem o vlivu faktoru (`10_documents/active/2026-10-11_podklady_noveho_skillu/kontrola_zaveru_dodatek.md`).
+2. **Nezávislý oponent** zkontroluje výběr faktorů, listy měření a výpočet dřív, než výsledek dostane Ondřej.
+2a. **Detektory chybějícího faktoru (doplněno 12. 10. 2026; poučení 21):** po každém výpočtu a po každé změně dat nebo modelu se pustí `05_epizode_packs/_skills/analyza-pricin-regiony/diagnostika_modelu.py` (shlukování odchylek podle regionů, stálost hlavního faktoru v polovinách ligy, stopy ve zbytku včetně vyřazených proměnných, sousední země, neobvyklé složky, nezávislé měření téhož jevu, čekané vztahy). Každý signál se vyřeší: nový faktor, propletený s faktorem v modelu, chyba měření, nebo nevysvětleno se jmenovanými zeměmi. Výsledek patří do výstupu (`DIAGNOSTIKA.md`).
+2b. **Registr závěrů:** každý závěr „faktor přidá / nepřidá“ se zapíše s podobou modelu a verzí dat (`registr_zaveru.py`) a při každé změně se přepočítá; závěr se zkouší ve více podobách modelu a když se mezi nimi liší, faktor je propletený a nesmí se tvrdit „nepřidává“ ani „vysvětluje“. U propletených faktorů se v modelu použije kombinace stavu a toku. O zařazení faktoru rozhodují tato pravidla, ne Ondřej (Ondřej 12. 10.: „Já potřebuji tu analýzu plně automatizovat… Proč jsi tam nedal zásobu bytů sám?“). Do registru se zapisují i výpovědi svědků a rozhodnutí podle kroku 5; když se po změně dat nebo modelu rozhodnutí změní, je to signál stejně jako překlopený závěr (poučení 20). Do registru se zapisuje i **pořadí kol a jeho jistota** (u bydlení záznam `bydleni_poradi_peti_kol`, zapisuje ho `kola_koncept.py`); verdikt je kategorie (pořadí a nejistá dvojice), takže přepočet ohlásí každé překlopení pořadí i změnu toho, co je nejisté.
+3. **Automatická kontrola** nad strojovými poli: horizont proti období měření každého toku; přepočet na velikost země; korelace a inflace rozptylu nad prahem; podíly datové vrstvy a zbytek dávají 100 % a příspěvky studií se nesčítají; nejvýš tři faktory odhadované z dat a nejvýš pět hlavních; každý hlavní faktor má stav síly důkazu; u každého kola je měřítko ligy; pásmo chyby u každé země. U výstupu kol (kroky 7.4–7.5, vzor `kola_koncept.py`): nejvýš pět kol a každé je zařazený faktor; každé kolo má obvyklý vliv s intervalem, příznak „menší než chyba měření“ (u faktoru se dvěma podobami výpočtu v obou), jistotu pořadí proti dalšímu kolu, sílu důkazu, zdroj síly, štítek páky a měřítko ligy; body obou částí rozděleného faktoru (u bydlení zásoby a výstavby) dávají dohromady body celého faktoru a rozdíl smí být jen změna typické země, stejná u všech zemí; body ostatních kol a síla výplaty se rozdělením nezmění; čekaný výsledek a čekaná místa se nezmění ani rozdělením, ani podobou přírůstku lidí (krok 3.4). Když kontrola neprojde, výstupy se nezapíšou. Navíc kontrola hlídá:
+   - stav důkazu podle pravidla 6: „potvrzený daty“ jen se srovnáním zemí a s obvyklým vlivem nad pásmem chyby výsledku v obou podobách výpočtu;
+   - zdroj síly podle testu přenosu: síla ze studií jen tam, kde s ní čekaný výsledek nesedí hůř (krok 4.3, 6.2);
+   - výstavbu od dne sčítání vůči zásobě téhož sčítání v absolutních počtech (krok 7.4, podmínka 4);
+   - štítek „nejisté“ u každého pořadí kol s jistotou pod dvě třetiny;
+   - že každé upozornění z citlivostí (změna pořadí kol, posun čekaného místa o víc než dvě místa) je v poznámkách pro editora.
+
+   Pořadí kol a jeho jistota se po kontrole zapíšou do registru závěrů (krok 10.2b).
+4. **Kontrola faktů podkladu pro scénář**: každé číslo se ověří proti zdroji a každé „protože X“ projde testem protipříkladem (krok 9a.3). Výklad, který místo ekonomické příčiny jmenuje účetní nebo definiční věc, se vrací k přepsání. Kontrola ověří i to, že podklad neobsahuje čekané místo po kolech a nevydává pořadí podle hlavního faktoru za očekávaný výsledek. Kontrola zachytí v podkladu i ve scénáři každou větu, která jako doklad zátěže daní a odvodů používá podíl čisté výplaty na hrubé mzdě („z hrubé mzdy si nechá jen X %“, „čistá mzda je jen X % hrubé“). Takovou větu vrátí k přepsání na zátěž vůči celkovým nákladům práce (krok 9a.3).
+5. **Kontrola vah a testů** (nezávislý kontrolor, který podklad nepsal, s přístupem k datům): u každého záznamu
+   pořadí příčin (krok 2b bod 4) ověří, že (a) čistá změna počtu není vydaná za pohyby lidí, (b) dnešní podíl za
+   příspěvek za celé období, (c) vlastní růst za náskok před sousedem nebo rozklad rozdílu dvou zemí za rozklad
+   vlastního růstu a (d) očekávané dohánění za růst, který přišel sám; že „hlavně“ a „proto“ mají doklad velikosti
+   pro tutéž otázku, měřítko a období; že žádné „odporuje“ nestojí na údaji, který nerozlišuje; a úplnost: výrazný
+   růst výroby nezůstal bez vysvětlení a investice, technologie, změny odvětví a zlepšení uvnitř odvětví nebyly
+   vyřazeny jen proto, že se špatně oddělují (což jim nezaručuje první místo). Hlídá obě vady hodnocení:
+   **chybějící hodnocení** (pouhý výčet údajů se doplní o věcný hodnoticí závěr) i **nepodložený soud** (příliš
+   silný soud se upraví na rozsah, který doklady unesou, například z „zbytečná chyba“ na hodnocení výkonu). Každá
+   věta podkladu může být pravdivá, a celek přesto zavádějící; proto se kontroluje i pořadí příčin. Nález vrací
+   podklad k opravě.
+6. **Oprava čísla nebo pravidla otevírá odvozené závěry.** Po změně pravidla testu se podklad `soudy_*` ze starší
+   verze skillu před použitím přetestuje (každé „platí / neplatí“ se přeřadí na podporuje / odporuje / nerozlišuje
+   a doplní se pořadí příčin); jeho NEŘÍKEJ se do té doby nepoužívá. Když se změní číslo, tabulka nebo rozklad, ze
+   kterého vychází nález,
+   projdou se znovu všechny věci z něj odvozené: nález, závěr, soud, seznam NEŘÍKEJ, zámek faktů, páteř epizody,
+   krátká zadání a vzory, podle kterých se píše. Vyřazené vysvětlení se odstraní ze všech pracovních instrukcí
+   a zadání, ne jen z výzkumu; důvod se zapíše do souboru historie.
+7. **Záznam použitých verzí:** každý výstup (analýza, podklad pro výklad a soud, scénář) má v hlavičce verze skillů
+   a zadání, podle kterých skutečně vznikl.
+
+### 4. Tvrdá pravidla (nesmí se porušit)
+
+1. **Jeden rok nevysvětlí ukazatel, který se buduje léta.** Horizont určuje test setrvačnosti; toky za horizont. (Příklad: jednoroční výstavba v analýze bydlení v22 z 3. 8. 2026.)
+2. **„Nemá vliv“ smí zaznít jen po sedmi kontrolách**; jinak „v datech ligy se neukázal, protože…“.
+3. **Výpočty nesmějí být v rozporu s ekonomy** podle definice v kroku 5; co nejde vysvětlit, jde Ondřejovi.
+4. **Aritmetika není příčina:** model nad čitateli, výplata jako faktor poptávky. Totéž platí ve výkladu hodnot: účetní nebo definiční rozdělení (kdo platí odvody, jak se něco počítá) příčinou není; rozhoduje test protipříkladem (krok 9a.3, poučení z Rumunska).
+5. **Žádné dvojí započtení:** číselné prahy překryvu, zákaz složených proměnných z jiného faktoru.
+6. **Srovnatelná data a pásmo chyby:** faktor smí být potvrzený daty jen, když jeho účinek na typický rozdíl v lize převyšuje medián pásma chyby výsledku. Statistická změna definice (přesun odvodů v Rumunsku 2018 a Litvě 2019) nesmí vypadat jako výsledek. Účinkem se rozumí obvyklý vliv faktoru, a to v obou podobách výpočtu (krok 3.4); když je v kterékoli z nich pod pásmem chyby, faktor je nejvýš „doložený svědky“. U bydlení je proto „potvrzená daty“ jen čistá výplata (21,6 bodu; v druhé podobě výpočtu podle `KOLA_KONCEPT_TABULKA.md`); změna počtu obyvatel má očištěná 4,0 bodu, a je tedy „doložená svědky“. Výpočet to kontroluje (krok 10.3).
+7. **Hranice náhody permutací** podle skutečného počtu zkoušených kandidátů a variant.
+8. **Stejné hlavní faktory pro všechny země a jedno měřítko ligy** pro faktory i výsledek. Žádné „potřebné hladiny“.
+9. **Skupiny ani regiony nejsou důkaz.** Příčiny se hledají na celé lize.
+10. **Slova podle síly důkazu:** potvrzený daty „vysvětluje“; doložený studiemi „podle studií posouvá“; doložený uvnitř zemí „uvnitř zemí rozhoduje, mezi zeměmi se schová za…“; nepotvrzený „ekonomové uvádějí, v datech ligy se neukázal“. „Zaspala“ jen u kroku, který je páka a má doložený účinek. Doložený svědky „podle studií posouvá o X %, ekonomové ho v N zemích řadí mezi hlavní příčiny; srovnání zemí ho nezměří, protože…“; zvláštnost zemí „v zemi X podle [instituce] rozhoduje…“; hypotéza „možná působí…, v lize neověřeno; rozhodlo by…“. U výkladu hodnoty země v už vybraném kole (krok 7.6) řídí slova síla dokladu o zemi, ne stav faktoru v lize.
+11. **Žádný svědek nemá právo veta, kde je nespolehlivý, a nic se nezařadí jen podle jednoho svědka.** Mlčení srovnání zemí není důkaz, že faktor nepůsobí; podpora jen z dat ligy pod hranicí pro celý seznam není důkaz, že působí.
+12. **Časový profil předem:** jak rychle výsledek na faktor reaguje, se určí ze studií dřív, než se změří; nejlepší profil se v datech nehledá.
+13. **Měření se opravuje v datech, ne v příběhu (doplněno ve v1.3).** Ondřej 13. 10. 2026: „U všech zemí říkat, že Deloitte to pravděpodobně vypočítal špatně, je
+    nuda.“ Vadu měření, která mění místo země, analytik doloží (krok 1.4 a 3.3), opraví podle pravidla srovnatelnosti
+    u všech zemí stejně a rozhodnutí s hmotným dopadem předloží Ondřejovi jako otázku; do podkladu pro scénář jde jen
+    poznámka pro editora, s jedinou výjimkou níže. **Vada, kterou
+    opravit nejde, a má hmotný dopad** (podle citlivostního testu brány eskalace: překlopí verdikt nebo mluvenou větu,
+    nebo posune pořadí asi o víc než dvě místa) nese v datech příznak; výklad ani hodnocení výkonu země se o tuto část
+    odchylky neopírají a scénář ji smí jednou krátce zmínit (jednou větou, například že cena bytu je v datech země
+    nejspíš podhodnocená). Ostatní vady měření patří jen do poznámek pro editora. Scénář vysvětluje příčiny, které
+    diváka zajímají (výplata, lidé, byty, výstavba, státní byty, turismus…). Rozbor zbytku po hlavních faktorech je ze
+    své podstaty plný měření; proto nikdy nenahrazuje výklad příčin z kol a dalších faktorů.
+14. **Žádná hodnota v kole bez výkladu (doplněno ve v1.3).** Každá hodnota, kterou divák v kole uvidí, má v podkladu výklad, proč taková je; „je taková“
+    nestačí. Poctivá odpověď „příčina není doložena“ výkladem v podkladu je (v hlase se řekne jen doložená část
+    slovy váhy); rozdíl
+    dvou zemí uvnitř chyby měření faktoru se nevysvětluje a řekne se „skoro stejně“ (krok 9a.3).
+15. **Údaj, který nerozlišuje, příčinu nevyvrací.** Podobnost se sousedem, čistá změna počtu, dnešní podíl ani
+    mlčení srovnání zemí samy příčinu nevyřadí; před každým „odporuje“ se ověří, že údaj mohl přesné tvrzení vyvrátit
+    (krok 2b bod 3).
+16. **Váhy jen z dokladu velikosti pro tutéž otázku.** „Hlavně“ a „proto“ jen s dokladem velikosti pro stejnou otázku,
+    měřítko a období (krok 2b bod 4). Vlastní hodnota země a rozdíl proti sousedovi mají každý své váhy; neznámá
+    velikost není malá velikost; soutěžní výsledek, ekonomická příčina a zásluha nejsou totéž (dohánění je kontext,
+    krok 9a.3).
+
+### 5. Výstupní soubory
+
+| Soubor | Obsah |
+|---|---|
+| `LIST_UKAZATELE.md` | krok 1 včetně testu horizontu a pásem chyby |
+| `KANDIDATI.md`, `kandidati.json` | krok 2: kategorie zapsané předem, výroky ekonomů, váhy s rozpětím |
+| `LISTY_MERENI.md`, `mereni.json` | krok 3 se strojovými poli |
+| `VLIV_FAKTORU.md`, `vliv.json` | kroky 4–7: korelační matice, podíly ve třech podobách s intervaly, síly účinku, vrstva studií s testy přenosu, stav síly důkazu, čekaný výsledek po kolech, příspěvky zemí, zbytky a jejich šetření |
+| `REGIONY.md`, `regiony.json` | krok 9 |
+| `KONTROLY.md` | krok 10 |
+| `ANALYZA_*.html` (přehledová stránka) | krok 9: pořadí s hlavními příčinami, karty zemí, grafy faktorů (součástka `analysis-review/grafy_faktoru/`), úplné tabulky, přepočet jedné země |
+| `SVEDCI.md`, `svedci.json` | krok 5: výpovědi svědků u každého kandidáta, rozhodnutí, co by rozhodlo, zkouška vypnutí pojistek |
+| `CASOVY_PROFIL.md`, `casovy_profil.json` | krok 3.11 a 4.2: přírůstek po úsecích, podoby s vahami podle stáří, panel uvnitř zemí, přirozené pokusy |
+| `DIAGNOSTIKA.md`, `registr_zaveru.json` | krok 10.2a–b: detektory a registr závěrů |
+| `KOLA_KONCEPT_TABULKA.md`, `kola_koncept.json` | kroky 3.4 a 7.4–7.5: kola v pořadí podle vlivu (nejvýš pět), zvlášť to, co země měla na začátku, a co přibylo; u každého kola obvyklý vliv s 90% intervalem, podíl na obvyklém vlivu, příznak „menší než chyba měření“ (v obou podobách výpočtu přírůstku lidí), jistota pořadí proti dalšímu kolu, síla důkazu, zdroj síly, štítek páky, obrácený směr, měřítko ligy a typická odchylka hodnot; obě citlivosti rozdělení (krok 7.4); známé nepřesnosti; výsledky automatické kontroly (krok 10.3); u každé země hodnota, místo v kole, zda vyčnívá, body a čekané místo po kole (Ondřej 13. 10. 2026 v noci: čekané místo jen pro analytika), po regionech *(doplněno po druhé nezávislé kontrole 14. 10. 2026: štítek „nejisté“ u pořadí kol, oddíl „Do poznámek pro editora“, výsledek testu přenosu a zdroj síly podle něj, stálost znaménka síly, ověření obráceného směru podle kroku 3.5, výstavba od sčítání 2011 se změnou proti výstavbě 2010–2024, návrh „výplata sama“ ve dvou částech, „skoro stejně“ proti předchozí zemi v regionu, co kola nevysvětlí u zemí nad typickou odchylkou výpočtu; záznam pořadí kol v `registr_zaveru.json`)* |
+| `PODKLAD_SCENAR_{region}.md` | kroky 9a a 9b: podklad pro writera s výkladem hodnot, dalšími faktory, odhalením pořadí a hodnocením výkonu země. Podle šablony v kroku 9a, s tím, co říkají ekonomové, a s tím, co zemi pomohlo a co ji brzdilo; bez čekaného místa (Ondřej 13. 10. 2026 v noci). |
+| `PODKLAD_SCENAR_{region}_EDITOR.md` | krok 9a.7: poznámky pro editora (vady měření, citlivosti, čekané místo po kolech a rozdíl proti němu, předpoklady čekající na Ondřeje); kontrola srozumitelnosti bez `--divak` |
+
+JSON pro edit nese u každého faktoru a země hodnotu, měřítko ligy, místo v lize a v regionu, příspěvek, sílu důkazu a příznaky srovnatelnosti.
+
+### 6. Ondřejova rozhodnutí a otevřené otázky
+
+**Ekonomové jako vodítko (Ondřej 11. 10. 2026):** „Podle mě je možné brát vliv podle ekonomů, ale myslím, že oni to nebudou mít procentuálně vypočítané. Mělo by to být ale vodítko a naše výpočty by neměly být v rozporu s ekonomy.“ → váha podle ekonomů (krok 2), vrstva studií s testem přenosu (krok 4), definice rozporu (krok 5).
+
+**Rozhodnutí z 12. 10. 2026:**
+- **Měřítko ligy je medián** (dřívější otázka 1 je uzavřená). U dostupnosti bydlení čistá mzda; ceny Deloitte beze změny (Portugalsko a Dánsko s poznámkou). *(záznam doplněn po nezávislé kontrole 13. 10. 2026: rozhodl Ondřej 12. 10. 2026 večer; k čisté mzdě doslovně „čistá mzda je mnohem více vypovídající“; k mediánu a k cenám Deloitte se doslovná citace v záznamech nezachovala, rozhodnutí je zapsané v `PREKLADOVY_MUSTEK.md`)*
+- **O zařazení faktoru rozhodují pravidla, ne Ondřej:** „Já potřebuji tu analýzu plně automatizovat… Proč jsi tam nedal zásobu bytů sám?“ Ondřej rozhoduje definice ukazatele, ligu, dramaturgii a vkus. *(rozhodl Ondřej 12. 10. 2026)*
+- **Systém svědků:** „Ano, do zkoušky na datech přidej systém svědků, ale ne tak, že vše předchozí zahodíš… aby se nestalo, že z předchozího systému zahodíš i funkční věci, bez kterých by nový systém se svědky také nefungoval.“ → krok 5 a tabulka pojistek v něm. *(rozhodl Ondřej 12. 10. 2026)*
+- **Časová osa:** „Má smysl pracovat i s časovou osou, a nebo to nehraje roli?“ → krok 3.11 a panel v kroku 4.2. *(záznam doplněn po nezávislé kontrole 13. 10. 2026: citace je Ondřejova otázka z 12. 10. 2026; způsob zapracování do kroků 3.11 a 4.2 je výchozí volba analytika, čeká na Ondřejovu námitku)*
+
+**Rozhodnutí ze 13. 10. 2026 (doplněno ve v1.3; u každého bodu doslovná citace a kdo rozhodl):**
+- **Koncept bloku regionu** (zadání v oddílu 1 a kroky 7.4, 7.5, 9a, 9b). Rozhodl Ondřej 13. 10. 2026: „V každém kole se začne státem, který má ve skupině nejlepší hodnotu… a vždy se vysvětlí, proč má stát hodnotu takovou, jakou má… Je hodně potřeba vysvětlovat, proč je faktor takový, a ne jen že je takový… Pak se odhalí pořadí od posledního po nejlepšího ve skupině, krátce se zopakují příčiny výsledku a zhodnotí se výkon země.“ a k pořadí kol „Pak bych postupoval od nejdůležitějšího faktoru po nejméně důležitý.“
+- **Zásoba bytů a výstavba zvlášť** (krok 7.4). Rozhodl Ondřej 13. 10. 2026: „První řadě bych počet bytů na tisíc obyvatel rozdělil na 2 faktory. První by byla zásoba bytů … a pak počet průměrně postavených bytů na 1000 obyvatel od 2010 do 2024, a to z toho důvodu, že chceme vysvětlovat i to, co vlády, firmy a společnost dělají dobře nebo špatně…“ Stejná síla na byt pro obě části je **výchozí volba analytika** (předpoklad s povinnou citlivostí), čeká na Ondřejovu námitku.
+- **Přírůstek lidí v kolech tak, jak je** („stačí trend poslední doby tak, jak to je“; krok 3.4). Ondřejova věta z 13. 10. 2026 „U změny počtu obyvatel to potřeba není. Tam stačí trend poslední doby…“ rozhodla, že se přírůstek lidí **nedělí** na to, co země měla na začátku, a co přibylo; o očištění Ondřej nerozhodl. Použití neočištěné hodnoty v kolech je **výchozí volba analytika, čeká na Ondřejovu námitku**; opírá se o Ondřejovu větu z 13. 10. 2026 „U Bulharska je jednoznačný faktor úbytek obyvatel a velký rezervoár bytů“.
+- **Měření do příběhu nepatří** (tvrdé pravidlo 13). Rozhodl Ondřej 13. 10. 2026: „U všech zemí říkat, že Deloitte to pravděpodobně vypočítal špatně, je nuda.“ Jedna krátká zmínka neopravitelné vady s hmotným dopadem je **výchozí volba analytika** podle nezávislé kontroly, čeká na Ondřejovu námitku.
+- **Skill má nést i text pro scénář.** Ondřej 13. 10. 2026: „Pokud zapíšeš nový koncept do skillu, tak by to tím mělo být vyřešeno.“ → krok 9a.
+- **Stupnice hodnocení výkonu země** (krok 9b) je návrh analytika, ne rozhodnutí; otevřená otázka 4.
+
+**Rozhodnutí z 13. 10. 2026 v noci (Ondřej; doplněno do znění po nezávislé kontrole):**
+- **Čekaný výsledek se divákovi neříká.** Ondřej: „Pořadí po čisté mzdě bych nebral jako očekávaný výsledek. Je to cca 50 % a zbylých 50 % to může hodně změnit. Pokud ale indikátor bude mít takto významný faktor, tak je to určitě potřeba hodně zmiňovat, ale nemělo by se o tom mluvit jako o předpokladu… Úplně bych vynechal tu změnu pořadí po jednotlivých kolech.“ → čekaný výsledek a čekané místo po kolech jen v datech pro analytika; nejsilnější faktor se zmiňuje hodně, ne jako předpoklad; při odhalení se řekne, co zemi pomohlo a co ji brzdilo (oddíl 1, slovník, kroky 6.3, 7.5, 9, 9a, výstupy). Ondřej 16. 10. 2026 povolil papírové pořadí podle rozdaných karet (oddíl 0.3) a dramaturgie regionů ukazuje průběžné pořadí po kolech jako stav závodu (krok 7.5); předpověď místa a rozdíl „o tolik míst lépe, než se čekalo“ se dál neříkají.
+- **Výklad jmenuje ekonomickou příčinu, ne účetní věc.** Ondřej: „U Rumunska píšeš, že má nízkou čistou mzdu kvůli přesunu daňové odpovědnosti na zaměstnance. Tím to není. Kdyby vše platil zaměstnavatel, tak jen bude velmi nízká hrubá mzda… čistá bude na úrovni hrubé víceméně. Je to jen účetní trik. Problém je produktivita.“ → test protipříkladem (krok 9a.3), tvrdé pravidlo 4, kontrola faktů (krok 10.4).
+- **Cíl skillu.** Ondřej: „Pokud bych zadal indikátor, autonomně se mi vytvořila dobrá analýza a hned na to script. Tak já už si to doladím.“ → oddíl 1.
+
+**Rozhodnutí ze 14. 10. 2026 (Ondřej; doplněno po druhé nezávislé kontrole):**
+- **Srovnatelná řecká cena nového bytu.** Ondřej: „K tomu Řecku ano a až se dokončí analytické podklady, tak mi rovnou udělej script pro všechny země. Pokud to bude v pořádku, se nový analytický skill a script aktivuje a otestujeme to na první disciplíně průměrná mzda.“
+  - V datech bydlení je místo ceny Deloitte 1 792 €/m² srovnatelný odhad 2 900 €/m² a analýza je přepočítaná; čísla v krocích 4.3, 6.1, 7.1, 7.4 a 7.5 jsou ze 14. 10. 2026, u kol bydlení podle výpočtu ze 16. 10. 2026.
+  - Aktivace skillu a writera přijde podle Ondřejovy věty až po podkladech a scénáři všech regionů, pokud budou v pořádku, a zkouška proběhne na průměrné mzdě. Dnešní stav: otevřená otázka 6.
+
+**Zadání z 9. 11. 2026 (Ondřej):** provést ve skillech audit „Proč se z dobrých podkladů ztrácí hlavní vysvětlení“:
+„Má opravit rozhodovací pravidla a sjednotit jejich platné znění… Oprava musí fungovat obecně pro všechny země…
+Chceme, aby příště správně posoudil i úplně jinou zemi a jiný ukazatel.“ → verze 1.5 (krok 2b, 7.6, 9a.3, 10.5–10.7,
+tvrdá pravidla 15 a 16, slovník); záznam změn verzí v `analyza-pricin-regiony-HISTORIE.md`.
+
+**Otevřené otázky pro Ondřeje:**
+1. *(uzavřeno 12. 10.: medián)*
+2. **Co uslyší divák o síle kola:** podíl na rozdílech (pořadí kol), nebo sílu účinku (o kolik procent posune výsledek typický rozdíl), nebo obojí. Otázka zůstává otevřená, je to dramaturgie. Z Ondřejova konceptu plyne jen pořadí kol podle obvyklého vlivu. Ondřej 13. 10. 2026 v noci dodal, že nejsilnější faktor se má hodně zmiňovat, ale ne jako předpoklad, a mluvil o „cca 50 %“ rozdílů. Návrh: u nejsilnějšího kola podíl rozdílů mezi zeměmi, který vysvětlí samo (u čisté výplaty asi polovina; číslo podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`); u ostatních kol obvyklý vliv slovy (například „změna počtu obyvatel obvykle posune dostupnost asi o 7 %“), nebo podíl na obvyklém vlivu; vždy s větou, že kola dohromady asi třetinu rozdílů nevysvětlí. Podíl na rozdílech v podobě tak, jak je, se divákovi neříká, protože u přírůstku lidí vychází záporný. Návrh zůstává návrhem.
+   - **Míra podle principu:** podíl rozdílů výsledku mezi zeměmi, který vysvětlí výpočet jen s tímto faktorem a se stejnou silou jako v kolech (slovník). U bydlení u čisté výplaty i u kol dohromady podle posledního výpočtu (`KOLA_KONCEPT_TABULKA.md`; kola dohromady vysvětlí 68,9 %).
+   - **U výplaty ve dvou částech**, protože je ve jmenovateli ukazatele (krok 1.2): „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší, o 1 % vyšší výplata = nový byt o 0,72 % a nájem o 0,56 % dražší“.
+   - **Ondřejův odhad** „cca 50 %“ tak smí zaznít slovy („výplata vysvětlí asi polovinu rozdílů“), když se početní a ekonomický účinek odliší.
+   - Kroky 7.5 a 9a.3 a šablona to uvádějí jen jako návrh.
+3. **Méně než pět hlavních faktorů:** když pravidlo najde pro celou ligu méně zařazených faktorů, má epizoda méně kol, nebo se páté kolo doplní jinak? Je to otázka dramaturgie, ne metodiky. U bydlení otázka odpadla: Ondřejovo rozdělení nabídky bytů na zásobu a výstavbu (13. 10. 2026) dává pět zařazených částí, tedy pět kol; o úrocích je otázka 5. Pro jiné ukazatele otázka platí dál. (Dřívější zápisy a čísla k této otázce jsou v `analyza-pricin-regiony-HISTORIE.md`.)
+4. **Stupnice hodnocení výkonu země** (krok 9b): sedí šest typů, nebo něco chybí? Návrh má dvě osy: výkon politiky se šesti typy a samostatný štítek „dostupné jen pro někoho“, s hodnoceným obdobím a slepým hodnocením. Otázky: (a) sedí dvě osy? (b) přidat sedmý typ „léčí příznaky“ (podpora kupujících místo nabídky, z rešerše jižní Evropy) a typ „dlouho zaspal, teď napravuje“ (z rešerše západní Evropy)? Doporučení analytika: dvě osy ano; „léčí příznaky“ zatím ne, protože se kryje s typem „chybami si přitížil“ (dotace kupujícím bez nabídky); „dlouho zaspal, teď napravuje“ ne, zlom se zapíše hodnoceným obdobím. Typy i druhá osa jsou zatím vyzkoušené jen na bydlení; slepé hodnocení dělá samostatný agent s čerstvým kontextem (krok 9b).
+5. **Úroky jako kolo u bydlení** (dramaturgie): podle pravidla (kroky 7.1 a 7.5) jsou úroky zařazený faktor s obvyklým vlivem 1,7 bodu (výpočet ze 16. 10. 2026; tempo výstavby 3,9, zásoba bytů 3,4) a jsou poslední z rozdaných karet před tahem země. Vyřadit je z kol může jen Ondřej. Pro vyřazení mluví malý vliv (menší než chyba měření) a to, že vliv je pro diváka obrácený: vyšší úroky drží ceny níž, hypotéka je ale dražší. Proti vyřazení mluví, že by divák neslyšel o faktoru, který některým zemím přidává čtyři až pět bodů. **Doporučení: pět kol**; u úroků jednou větou říct obě strany. Kdyby Ondřej úroky z kol vyřadil, jejich body zůstanou v čekaném výsledku pro analytika a scénář je zmíní u zemí, kde hrají roli (u bydlení hlavně Řecko, Chorvatsko, Irsko, Rumunsko a Bulharsko, každé asi +4 až +5 bodů).
+   - **Záznam přesunutý z rozhodnutí ze 13. 10. 2026:** „Úroky nejsou kolo; patří mezi další faktory zemí, kde hrají velkou roli (Rumunsko).“ Nebylo to Ondřejovo výslovné rozhodnutí. Ondřejův koncept úroky nezmínil a vyřazení navrhl analytik, dřív už v dramaturgii verze 2 s poznámkou „pokud Ondřej nenamítne“. Proto patří sem, mezi otevřené otázky.
+   - **Čísla:** podle výpočtu ze 16. 10. 2026 (`kola_koncept.py`, verze dat 16. 10.) úroky 1,7 bodu; jistota pořadí a ostatní čísla v `KOLA_KONCEPT_TABULKA.md`. Úroky jsou kolo i při jiném pořadí karet.
+   - **Rumunsko není důvodem úroky vyřadit:** v sazbě po odečtení inflace je na úrovni Balkánu, skoro stejně jako Chorvatsko, Řecko a Bulharsko.
+6. **Stav skillu:** podle tohoto skillu vznikají analýzy regionů (mzdy od 23. 10. 2026) a aktivní skill mapy příběhu
+   na něj odkazuje jako na jediné platné znění postupu výkladu, formálně je ale veden jako návrh. Zapsat ho jako
+   aktivní? (Otázka položena Ondřejovi v chatu 9. 11. 2026.)
+
+### 7. Vztah ke starým skillům
+
+Podle rozboru `10_documents/active/2026-10-11_podklady_noveho_skillu/ANALYZA_SOUCASNEHO_SKILLU.md` (11. 10. 2026):
+- **Nahrazuje:** rozdělení faktorů na potenciál, krátkodobou a dlouhodobou strategii; tři indexy s průměrem 100 a bodování 0–100; potenciál jako měřítko výsledku (nahradí čekaný výsledek po kolech); výběr karet 3 + 1–2 + 3; zákaz vybírat faktory podle vlivu (nahradí kandidáti zapsaní předem, permutační hranice, vynechání zemí, opravený test vývoje); „nejnovější společný rok“ jako výchozí období dat.
+- **Přebírá:** stupně důkazu a slovník jistoty, bránu způsobilosti faktoru, srovnatelnost dat, strojové ověření čísel, kartu příčiny s kronikou rozhodnutí, vedlejší účinky, slepé kontroly, odlišující příčiny a odkaz místo opakování, bránu eskalace; výpočet čekaného výsledku (přímka, nálepky nad/pod) pro čekaný výsledek po kolech.
+- **Rozbije:** přes sto souborů závisí na staré struktuře; nový skill potřebuje vlastní větev nástrojů; aktivace vyžaduje novelu ústavy (mění jen Ondřej) a nový registr sekcí.
+- **Vztah k předchozím verzím:** platí jen tato verze. Verze 1.1–1.4 zůstávají v samostatných souborech jako
+  historie a záznamy jejich změn (hlavičky a doplňky) jsou v `analyza-pricin-regiony-HISTORIE.md`. Detektory
+  a registr závěrů jsou záchranná síť, která chybějící faktor najde až dodatečně; pravidlo svědků opravuje samotný
+  výběr.
+- **Upřesnění k chybě s výstavbou:** jednoroční výstavba byla jen v analýze v22 z 3. 8. 2026. Mylný závěr z 10. 10. vznikl ze srovnání zemí v jednom roce, z vývoje v čase bez výchozího stavu a z nebrání rozporu s ekonomy jako varování. Test vývoje z 11. 10. (o 10 % víc výstavby zlepší poměr cen k příjmům asi o 1 % za 15 let; výstavba, turisté a úspory „prošly v čase“) byl zčásti mechanický a **do opravy podle kroku 4.2 neplatí**. V datech ligy navíc výstavba souvisí s přírůstkem lidí (0,51) a s výplatou (0,54), ne s výchozím stavem výsledku (0,10) ani s jeho změnou (0,09); s cenou při stejné výplatě a přírůstku lidí je −0,04 (krok 3.5 a 7.4, s výstavbou od sčítání 2011): nabídka se mezi zeměmi schová za poptávku, ne za obrácený směr.
+
+### Příloha A. Horizont u dalších ukazatelů (podle kritiky)
+
+| Ukazatel | Druh | Co by jednoroční měření udělalo špatně | Doporučené měření faktorů |
+|---|---|---|---|
+| Zadlužení (% HDP) | stav z desítek let (dluh 2007 vysvětlí 65–67 %) | schodek a růst jednoho roku jsou část výsledku | start + změna; průměrná salda, krize a pravidla za období; růst měřený před obdobím |
+| Obnovitelné zdroje | stav kapacit (podíl 2005 vysvětlí 86 %; cíle EU se dělily podle startu) | roční výroba a podpora jsou čitatel výsledku | příroda a dědictví na začátku; politika jako změna od 2005 |
+| Průměrná mzda | produktivita a kapitál budované desítky let | jednoroční příliv investic, dnešní výsledky školáků | kapitál a investice za 15–20 let, vzdělání dnešních pracujících, instituce s dobou platnosti |
+| Naděje dožití | expozice celého života | letošní výdaje na zdravotnictví | kouření a alkohol zpožděné 20–30 let, příjem a vzdělání kohort |
+| Hustota dálnic | stav stavěný od 30.–60. let | letošní kilometry | stav na začátku, výstavba za 20 let, fondy EU s dobou platnosti, hustota osídlení a terén |
+| Zbrojní průmysl | kapacity z desítek let; roky kolísají | rok 2024 (válka) | pětileté průměry (SIPRI), výdaje na obranu za 20 let |
+| Dostupnost bydlení | ceny z desítek let; data 10–15 let | dokončené byty jednoho roku | příloha B; přírůstek lidí za 10–15 let; příjem a sazby jako úroveň i změna |
+
+### Příloha B. Nabídka bytů u dostupnosti bydlení (podle kritiky)
+
+Bytový fond na obyvatele měří prázdné, rekreační a venkovské byty a velikost domácností (ta je sama zčásti výsledkem cen); fond na domácnost je ve sčítání skoro jen podíl prázdných bytů. Ani jedno se jako příčina nepoužije. Místo toho tři vrstvy, zapsané do gitu před stažením dat:
+- **A. Nabídka za poptávkou ve městech 2011–2021:** pro kraje měst z cenového koše přírůstek bytového fondu minus přírůstek dospělých obyvatel (20–64 let), v `logaritmech` (sčítání 2021 podle období výstavby, obyvatelé krajů). Hlavní měřítko nabídky; přírůstek lidí celé země zůstává samostatným faktorem poptávky se společnou částí.
+- **B. Nepružnost nabídky:** odhady pružnosti nabídky (OECD, BIS), náhrady (cenová hladina stavby, podíl netržního nájmu, délka povolování), vstupující jako **násobení s růstem poptávky**.
+- **C. Zděděný fond:** byty postavené před rokem 2001 na dospělého v krajích měst z koše (nemohly vzniknout jako reakce na dnešní ceny); podíl prázdných bytů jen jako kontrola.
+
+**Obydlené byty místo všech bytů jen jako citlivost:** počet obydlených bytů na obyvatele odráží hlavně velikost
+domácností, která sama závisí na dostupnosti (obrácený směr); síla zásoby z nich vychází obráceně.
+
+Je legitimní výsledek, že se nabídka mezi 27 zeměmi ukáže jen přes přírůstek lidí, zatímco uvnitř zemí rozhoduje; pak má stav „doložený uvnitř zemí, mezi zeměmi neměřitelný“ a writer o ní mluví s příklady uvnitř zemí.
+
+**Výsledek zkoušky přenosu na bydlení (12. 10. 2026):** výstavba 2010–2024 mezi zeměmi nenese žádnou informaci (náhodné přeházení sedí stejně dobře ve 47–58 % případů); zděděná zásoba bytů na obyvatele (byty 2011 × růst fondu) má správný směr (lepší než 95 % přeházení), ale síla ze studií (−1,5 % cen na 1 % bytů) je na ligu přestřelená a data ligy dávají −0,42 % cen a −0,60 % nájmů. Fond na obyvatele počítá i prázdné a rekreační byty a velikost domácností, proto je jeho síla mezi zeměmi menší než ve studiích uvnitř zemí. Přírůstek lidí je složka téhož rámce „lidé na byt“ (krok 3.4) a jeho síla ze studií na ligu sedí. Podle kroku 5 je nabídka zařazená (studie a ekonomové v 15 zemích) se silou z dat ligy.
 
 
 # Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
@@ -6483,7 +7479,8 @@ otázka diváka, průběžné pořadí, páry sousedů, soud s důvodem a zámek
 ## Skill pro Gemini na webu: čtivá verze scénáře regionu (v1.0, 31. 10. 2026)
 
 *Základ od Clauda podle toho, na čem se Ondřej a Claude 31. 10. 2026 shodli. Ondřej ho dál ladí (sportovní tón,
-emoce, obraty). Vkládá se do Gemini na začátek konverzace, pak faktická verze jednoho regionu.*
+emoce, obraty). Vkládá se do Gemini na začátek konverzace, pak faktická verze jednoho regionu. Doplněno 9. 11. 2026
+podle auditu výkladu: hlavní důvod zůstává hlavní a soud jen tam, kde ho faktická verze má.*
 
 ---
 
@@ -6512,6 +7509,9 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
    obraz bez nového faktu („luxus je malý ostrov“), je to v pořádku.
 6. Nic ze seznamu **NEŘÍKEJ** na konci faktické verze.
 7. Řádky `[VIZUÁL: …]` a nadpisy `##` nech beze změny (smíš do VIZUÁLU přesunout volitelné číslo).
+8. **Váha důvodů zůstává** (9. 11. 2026): důvod, který je ve faktické verzi u země hlavní (první a nejdelší,
+   v zámku faktů označený jako hlavní), nezkracuj na dovětek a doplněk nerozváděj víc než hlavní důvod. Pořadí vět
+   smíš měnit, jen když hlavní důvod zůstane hlavní.
 
 ### Jak psát
 - **Ekonomie lidskou řečí** (zásada série, `05_epizode_packs/_skills/ekonomie-lidskou-reci-ZASADA-v1.0.md`): divák se má bavit a něco si odnést, ne poslouchat ekonomy.
@@ -6538,10 +7538,12 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 - **Otevření a pointa kola zůstávají na svém místě** (Ondřej 5. 11. 2026): první věta kola řekne, co kolo měří, pointa
   (co z kola plyne pro výplatu) přijde až po průběžném pořadí. Nepřesouvej pointu na začátek, nedělej z ní přednášku
   a nespojuj její věty do silnější příčiny („proto“), než stojí ve faktické verzi.
-- **Soud, jeho důvod a dopad na výplatu nevypouštěj** (Ondřej 6. 11. 2026: „příliš mnoho popisu, málo soudů“):
-  u každé země zůstane, co to udělalo s výplatou („zbude X eur ze sta“, o kolik víc či méně než soused), soud (dobře /
-  špatně / napůl) a hned za ním **důvod řečený důsledkem pro lidi**: co kvůli tomu lidé, firmy nebo stát dělají nebo
-  nemohou. Tvar soudu zachovej tak, jak ho faktická verze má (dobře / špatně / napůl / může si to dovolit / správný
+- **Hodnocení, jeho důvod a dopad na výplatu nevypouštěj** (Ondřej 6. 11. 2026: „příliš mnoho popisu, málo
+  soudů“; 9. 11. 2026: „zhodnocení toho, jestli si ta země vede dobře“): u každé země zůstane hodnocení (co se jí
+  povedlo nebo nepovedlo a jak to ovlivnilo výsledek) s hlavním důvodem a hned za ním **důvod řečený důsledkem pro
+  lidi** (co kvůli tomu lidé, firmy nebo stát dělají nebo nemohou); dopad na výplatu („zbude X eur ze sta“) tam,
+  kde ho faktická verze má. Hodnocení nepřidávej nad rámec faktické verze a nezesiluj ho.
+  Tvar soudu zachovej tak, jak ho faktická verze má (dobře / špatně / napůl / může si to dovolit / správný
   směr, ale malý krok…); nesrovnávej soudy všech zemí do jednoho vzoru „dobře, protože…, špatně, protože…“ (Ondřej
   7. 11. 2026: „to je zas strašně šablonovitý“). **Úřady nepřidávej**
   (Ondřej 6. 11. 2026: „nudné analytické popisy pro panel expertů“): Evropskou komisi, OECD ani MMF nejmenuj, pokud
@@ -6553,7 +7555,7 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
 - Žádné „my“, „u nás“ o Česku. Žádná metodika (body, výpočet, data, tabulky).
 
 ### Délka
-Drž se rozpočtu slov v hlavičce faktické verze (mluvený text bez nadpisů a řádků VIZUÁL), odchylka nejvýš 5 %. Rozpočet se počítá podle počtu zemí v regionu, proto má každý region jinou délku. Když krátíš, krať volitelné části a nikdy obraz výchozí pozice v kole 1 ani vysvětlení, proč je země před sousedem nebo za ním (v každém kole); každá část scénáře má zůstat stejně barvitá.
+Drž se rozpočtu slov v hlavičce faktické verze (mluvený text bez nadpisů a řádků VIZUÁL), odchylka nejvýš 5 %. Rozpočet se počítá podle počtu zemí v regionu, proto má každý region jinou délku. Když krátíš, krať volitelné části a nikdy pevné jádro země v kole: hlavní důvod a jeho váhu, hodnocení, kudy to vede k výplatě a vysvětlení, proč je země před sousedem nebo za ním (v každém kole), ani obraz výchozí pozice v kole 1; každá část scénáře má zůstat stejně barvitá.
 Když se nevejdeš, krať volitelné, ne pevné.
 
 ### Výstup
@@ -6641,8 +7643,8 @@ ho Claude při psaní mapy příběhu dřív, než začne psát faktickou verzi.
 
 ### Kde se zásada uplatňuje
 
-- `analyza-pricin-regiony-SKILL-v1.4.md` (krok 2 a 9a): rešerše příkladů a výklad hodnot s příklady.
-- `voiceover-mapa-pribehu-SKILL-v1.0.md`: oddíl Nejvyšší priorita a pravidlo „Co za tím stálo“.
+- `analyza-pricin-regiony-SKILL-v1.5.md` (krok 2 a 9a): rešerše příkladů a výklad hodnot s příklady.
+- `voiceover-mapa-pribehu-SKILL-v1.1.md`: oddíl Nejvyšší priorita a pravidlo „Co za tím stálo“.
 - `gemini-web-ctiva-verze-SKILL-v1.0.md`: konkrétní příklady se nevypouštějí ani nenahrazují.
 - `voiceover-skill-v10-live-race.md` a `voiceover-regiony-SKILL-v1.0.md`: odkaz na tuto zásadu.
 - Role agentů `.claude/agents/analyst.md`, `research-agent.md`, `writer.md`.
@@ -13392,8 +14394,9 @@ Příklady čísel níže ověřil Claude proti datům mezd (`analyza_regiony_20
    v kole 2, je-li to tah země, v kole 3, týká-li se daní, jinak ve finále jako vysvětlení toho, co kola nevysvětlí.
    Drž se uvedeného směru a nikdy neřekni, co je u jádra zakázané; číslo dopadu říkej jen, když ho jádro uvádí.
    Mluvený text naopak neříká, jak se počítalo: žádné „nejisté zařazení“, „podle způsobu výpočtu“, „nad doháněním“
-   ani „ve stálých cenách“. Dohánění řekni obyčejně (chudší země rostou rychleji samy od sebe, kolo hodnotí, kdo
-   vyrostl víc nebo míň, než se dalo čekat); kde je zařazení nejisté, srovnání s očekáváním neříkej a nech ho obrazu.
+   ani „ve stálých cenách“. Dohánění řekni obyčejně jako kontext, ne příčinu (chudší země mohou růst rychleji,
+   protože mají co dohánět, ale samo se to nestane; vypráví se, jak to země dělala; opraveno 9. 11. 2026); kde je
+   zařazení nejisté, srovnání s očekáváním neříkej a nech ho obrazu.
    Jádru dej přednost před vedlejší podrobností, když se do délky nevejde všechno. Když ti kontrolor (Claude) pošle
    seznam oprav, oprav jen zadaná místa svým stylem a ostatní text ponech.
 
@@ -13810,1093 +14813,6 @@ Na třetí místo těsně pod evropský střed vyskočilo z úplného dna Polsko
 Druhé místo těsně pod středem Evropy uhájilo Česko s třiadvaceti tisíci třemi sty jednotkami, v eurech necelými devatenácti tisíci. Kola mu přitom díky růstu produktivity a nižším daním slibovala o kus víc. Jenže v ekonomice dceřiných montoven a slabých odborů jde na české mzdy jen necelých čtyřiačtyřicet procent výkonu a v roce 2025 odteklo přes pět procent hrubého domácího produktu na dividendách do ciziny. Česko proto o čtyři body klesá a bere štítek „Dobrý motor, ale s vlastními brzdami“.
 
 A suverénním vítězem vysoko v evropské špičce se stává Rakousko se čtyřiatřiceti tisíci jednotkami kupní síly a s více než čtyřiceti tisíci eury, které mu ovšem ukrajují nejdražší ceny regionu. Rakousko vystřelilo o šestnáct bodů nad úroveň svých tří kol: centrály firem tam totiž sídlí doma a povinné členství podniků v Hospodářské komoře zajišťuje kolektivní smlouvy pro osmadevadesát procent pracujících, kterým tak do výplat putuje skoro polovina vytvořeného výkonu. S čistým štítkem „Dělá to dobře a je to vidět“ usedá Rakousko do horkého křesla lídra závodu – sesadí ho dravci ze Západní Evropy a Skandinávie?
-
-
-# Skill: analyza-pricin-regiony-SKILL-v1.4.md
-
-## Analýza příčin pro regionový systém (skill v1.4)
-
-> **Doplněk 7. 11. 2026 (Ondřej): soud o nastavení státu je nález z testu, a test patří do analýzy.** Ondřej:
-> „ty myšlenkové řetězce, tu interpretaci dat, to se má dělat v analýze hlavně. Předpokládám, že to v analýze
-> nebylo, tak sis to rychle nějak vymyslel, ale špatně.“ Měl pravdu: rešerše ekonomů (krok 2) sbírá, co instituce
-> o systému říkají, ale nikdo neověřil, zda se předpovídaný důsledek v zemi děje (Slovinci při nejvyšší zátěži
-> regionu odcházejí nejméně; Rumuni při nejplošší zátěži nepracují načerno víc než Bulhaři s nejnižší). Krok 2b je
-> proto přestavěný: podklad pro soud = fakt → domněnky na obou stranách a co by bylo vidět → test číslem země
-> proti sousedům a Unii → nález (při neplatné domněnce co stav vysvětluje) → věta soudu. Instituce jsou v něm jen
-> jeden z dokladů; podmínkou soudu nikdy nebyly („pokud na to bude opřena zpráva od institucí, tak to tam může
-> být“). Z verze 1.4 se nic nemaže.
-
-> **Doplněk 25. 10. 2026 (Ondřej, ze zlatého vzoru Střední Evropy z webového Gemini 4 Argon). Z verze 1.4 se nic
-> nemaže; kde se liší, platí doplněk:**
-> 1. **Regiony 5–5–5** (slovník, řádek „region“): střední Evropa AT, CZ, PL, SK, HU; Balkán a jihovýchodní Evropa
->    SI, HR, RO, BG, GR; západní Evropa DE, CH, FR, GB, IE. Ve skriptech mezd `analyza_regiony_2026_10/data_mzdy.py`
->    (`REGIONY`); kola přepočítána, změnilo se jen zařazení zemí, žádné číslo.
-> 2. **Kalibrace štítků s výsledkem a s růstem nad rámec dohánění** (krok 9b, pojistka níže).
-> 3. **Výklad zemí odděluje dědictví od transformace a u cen uvádí víc než měnu** (krok 8, pojistka níže).
-> 4. **Regiony 5–5–5 platí pro celou sérii** (Ondřej 26. 10. 2026: „je to možný už zapsat tak, že by se měly sjednotit
->    ty regionální týmy na režim pět, pět, pět“), tedy i pro bydlení. Přepočet a přestavba hotových scénářů bydlení
->    proběhne, až to Ondřej zadá („to ještě budu řešit“).
-> 5. **Výchozí pozice při hodnocení kroků země** (Ondřej 26. 10. 2026, krok 9b, pojistka níže): krok transformace se
->    neoznačí za chybu jen proto, že ho instituce kritizují; nejdřív se posoudí, jakou realisticky lepší možnost země
->    při své výchozí pozici měla. Ondřejův příklad: Česko mělo v roce 1990 zestátněnou skoro celou ekonomiku (soukromé
->    firmy pod 5 % HDP), mnohem víc než Polsko a Maďarsko, takže kupónovou privatizaci nelze bez dalšího hodnotit jako
->    chybu, kterou šlo snadno udělat lépe.
-> 6. **Tvrzení scénáře bez opory v podkladu se doplní rešerší** (Ondřej 26. 10. 2026: „pokud tam není opora, tak určitě je
->    dobrý doplnit rešerši“): co Ondřej nebo webové Gemini doplní do scénáře a výklad země to nedokládá, analytik dohledá
->    se zdrojem a zapíše do výkladu země (krok 8); co se doložit nepodaří, z textu vypadne. Ondřejův pohled a kontext jsou
->    vítaný vstup, ne chyba: analytický pohled jim často chybí.
-
-> **Verze 1.4, 16. 10. 2026: rozdané karty a tah země, oprava síly výstavby, hodnocení na dvou osách. NÁVRH,
-> NEAKTIVNÍ.** Ondřej 16. 10. 2026 předal zadání, které napsal Gemini 4, s poznámkou: „A ty chyby v analýze taky půjde
-> nedělat. Gemini dokonce velmi dobře rozdělil potenciál na strategii, což se nám za celý rok nepovedlo.“ Doslovný
-> záznam zadání a posouzení: `10_documents/active/2026-10-16_gemini_zadani/`. Writer pro scénáře regionů má vlastní
-> návrh `voiceover-regiony-SKILL-v1.0.md`.
->
-> **Co přibylo proti verzi 1.3 (z verze 1.3 se nic nemaže; kde se verze 1.4 liší, platí 1.4):**
-> 1. **Rozdané karty a tah země** (oddíl 0 níže): každý faktor kol dostane skupinu podle pravidla, kola se řadí nejdřív
->    rozdané karty, potom tah země, uvnitř skupiny podle obvyklého vlivu (mění krok 7.1 a 7.5). Skupina je pomůcka
->    výkladu, ne nový index: kola se počítají stejným modelem jako dřív.
-> 2. **Test přenosu síly ze studií se dělá v úplném modelu kol** (doplňuje krok 4.3 d a 6.2): když se zkouší síla ze
->    studií pro jeden faktor, ostatní kola v modelu zůstávají, u rozkladu zděděný stav a tok i ten druhý z dvojice.
->    Dřívější test výstavby bydlení přidával výstavbu do modelu bez zásoby bytů, a proto vyšel hůř; v úplném modelu
->    s ní čekaný výsledek sedí o 3 % lépe a bez Portugalska a Dánska stejně, takže se přebírá.
-> 3. **Stejná síla na jednotku pro zděděný stav a tok už není výchozí předpoklad** (mění krok 7.4): tok dostane sílu ze
->    studií, když ji test přenosu v úplném modelu připustí, zděděný stav sílu z dat ligy zvlášť; stejná síla zůstává
->    náhradou, když test neprojde, a povinnou citlivostí.
-> 4. **Kolo se řadí i boduje podle stejné veličiny** (doplňuje krok 7.5): co divák vidí jako hodnotu kola, z toho se
->    počítají body; automatická kontrola hlídá, že body jdou s hodnotou (u bydlení páté kolo podle růstu zásoby bytů
->    v procentech, byty ročně na 1 000 obyvatel jen jako doplňující údaj).
-> 5. **Hodnocení na dvou osách s evropským kontextem** (oddíl 0.4; doplňuje krok 9b): osa 1 = výsledek proti středu ligy
->    a patro evropské reality, osa 2 = tah země, směr od začátku období a štítek, nově i „snaží se v těžkých
->    podmínkách“.
-> 6. **Podklad pro scénář** (doplňuje krok 9a) má navíc rozdané karty regionu (součet bodů kol karet), průběžné pořadí
->    zemí v cíli před regionem a po něm, patro, směr od začátku období, těsná krajní pořadí (do 5 % od sousední země)
->    a most do dalšího regionu. Generuje ho skript z dat (u bydlení `scenar_regiony_2026_10/podklady_v2/sestav_podklady.py`).
-> 7. **Výsledek se nepřepočítává na střed 1,00, když by zaokrouhlení změnilo pořadí.** U bydlení je střední země
->    (Estonsko) na 1,03, protože výsledek je poměr k mediánu koupě a k mediánu nájmu zvlášť; vydělení mediánem by při
->    pravidle pořadí na dvě desetinná místa posunulo Finsko o tři místa jen zaokrouhlením.
-> 8. **Obydlené byty místo všech bytů jen jako citlivost:** počet obydlených bytů na obyvatele odráží hlavně velikost
->    domácností, která sama závisí na dostupnosti (obrácený směr); síla zásoby z nich vychází obráceně.
-> 9. **Papírové pořadí podle rozdaných karet smí do scénáře** (Ondřej 16. 10. 2026, oddíl 0.3); mění pravidlo
->    „Čekaný výsledek se divákovi neříká“ z oddílu 6 verze 1.3 jen pro součet rozdaných karet. Ondřej téhož dne
->    schválil patra evropské reality a průběžné pořadí v cíli.
->
-> **Zkouška:** bydlení, `05_epizode_packs/ep_002_dostupnost_bydleni/output/analyza_regiony_2026_10/kola_koncept.py`
-> (verze dat 16. 10. 2026, automatická kontrola 14 ze 14): výplata 21,6 bodu, změna počtu obyvatel 7,1, zásoba bytů 3,4,
-> úroky 1,7, tempo výstavby 3,9 (dřív 1,1); kola vysvětlí 68,9 % rozdílů (dřív 68,5 %). Scénáře regionů ve druhé verzi
-> `05_epizode_packs/ep_002_dostupnost_bydleni/output/scenar_regiony_2026_10/SCENAR_*_V2.md`.
-
-### 0. Rozdané karty a tah země (vrstva verze 1.4)
-
-#### 0.1 K čemu to je
-
-Divák má u každé země poznat, zda výsledek dělají těžké nebo lehké výchozí podmínky, nebo dobrá či špatná práce státu,
-obcí, firem a stavitelů. Dřívější dělení na potenciál a strategie se mělo totéž, ale stálo na samostatných indexech
-s vlastními katalogy a výsledku samo nic nevysvětlilo; tady se dělí faktory jednoho modelu kol, takže se karty a tah
-dají postavit proti skutečnému výsledku a scénář může říct, jak země se svými kartami hrála.
-
-#### 0.2 Pravidlo zařazení faktoru
-
-1. **Rozdané karty:** stav na začátku hodnoceného období, vnější podmínky a rámec z vyšší úrovně, které aktéři
-   hodnoceného odvětví (u bydlení stát v bytové politice, obce, stavitelé) v hodnoceném období přímo nezmění. U bydlení
-   čistá výplata (výsledek celé ekonomiky za desetiletí), změna počtu obyvatel (demografie, migrace, uprchlíci),
-   zděděná zásoba bytů ze sčítání na začátku období, úroky hypoték po odečtení inflace (v eurozóně měnová politika ECB).
-2. **Tah země:** činnost, pravidla, investice a změny v hodnoceném období, které aktéři odvětví mají v rukou. U bydlení
-   tempo výstavby a s ním povolování, výstavba v hlavním městě, sociální a neziskové byty, regulace nájmů, dotace
-   kupujícím a daňová zvýhodnění, zlatá víza a zdanění krátkodobých pronájmů.
-3. **Rozhoduje pravidlo, ne pohodlí výkladu:** faktor, který aktéři odvětví zčásti ovlivní, ale hlavní tahoun je
-   mimo ně (přírůstek lidí přes migrační politiku), zůstává kartou. Skupina se zapíše u kola (pole `skupina`).
-4. **Faktor, který je zčásti výsledkem** (výstavba reaguje na ceny; cena nového bytu vůči ceně stavby obsahuje cenu),
-   se v tahu země používá jako stopa a doklad, ne jako samostatná příčina, dokud ho nepodpoří svědci (krok 5).
-5. **Obecně pro další disciplíny** (příklady, ne seznam; u každé disciplíny se zařazení posoudí znovu): u mezd rozdané
-   karty historický start po roce 1990 (zděděný kapitál, výkon na začátku období), přírodní bohatství, zeměpisná poloha
-   a sousedství bohatých trhů, věková stavba obyvatel; tah země růst výkonu pracujícího za období, zátěž daní a odvodů,
-   přesun ekonomiky do oborů s vyšší přidanou hodnotou, investice firem do výzkumu a strojů.
-
-#### 0.3 Co z toho smí do scénáře
-
-1. **Papírové pořadí podle rozdaných karet smí do scénáře** (Ondřej 16. 10. 2026: „Vyřadil jsem to ale z toho důvodu, že do papírových předpokladů jsi počítal jen čistou mzdu, a to bylo velmi neúplné. Teď, když je potenciál kompletní, tak to dává smysl. A naopak to velmi pomůže vysvětlení, co země dělá dobře a co ne.“): kdo je podle
-   karet papírový favorit regionu, kdo by byl poslední a která země je proti kartám překvapení nebo zklamání; vždy
-   jako papírový předpoklad a se skutečností zvlášť. Zákaz z 13. 10. 2026 platí dál pro čekané místo po jednotlivých
-   kolech a pro očekávání podle samotné výplaty. Karty jsou jen část výsledku; zbytek dělá tah země a to, co kola
-   nevysvětlí, a když velkou část rozdílu kola nevysvětlí, řekne se to.
-2. U tahu země jen kroky s doloženým účinkem (instituce ho změřila nebo výslovně posoudila).
-
-#### 0.4 Hodnocení na dvou osách
-
-**Osa 1, evropská realita:** výsledek země proti středu ligy (u bydlení koupě v letech výplaty a nájem v procentech
-výplaty proti mediánům ligy, necelých 11 let a 58 %) a patro evropské reality. Patra (schválil Ondřej 16. 10. 2026):
-1.–6. místo evropská špička, 7.–15. nad středem až kolem středu Evropy, 16.–20. pod středem Evropy, 21.–27. evropský
-suterén.
-
-**Osa 2, tah země a směr jízdy:** co země se svými kartami udělala, ukazatel směru za hodnocené období (u bydlení změna
-poměru cen bytů k příjmům 2010–2024; Eurostat `tipsho60`, u Švýcarska, Norska a Británie OECD, srovnatelné přibližně)
-a štítek politiky. Štítky a kritéria jsou v kroku 9b verze 1.3 a ve writer skillu pro regiony (oddíl 4); nový štítek
-**„snaží se v těžkých podmínkách“** dostane země s doloženým velkým úsilím v tahu (u bydlení výstavba výrazně nad
-demografickou potřebou), jejíž směr se lepší, ale karty nebo dědictví ji drží ve spodní části ligy; osa 1 se u ní řekne
-vždy a jasně, aby země ze spodku tabulky nevyzněla jako vítěz.
-
----
-
-### Hlavička verze 1.3
-
-> **Verze 1.3, 13. 10. 2026: Ondřejův koncept bloku regionu. NÁVRH, NEAKTIVNÍ.** Ondřej: „Počet bytů na tisíc obyvatel
-> bych rozdělil na 2 faktory… chceme vysvětlovat i to, co vlády, firmy a společnost dělají dobře nebo špatně… V každém
-> kole se začne státem, který má ve skupině nejlepší hodnotu… a vždy se vysvětlí, proč má stát hodnotu takovou, jakou
-> má… Je hodně potřeba vysvětlovat, proč je faktor takový, a ne jen že je takový… Pak se odhalí pořadí od posledního po
-> nejlepšího ve skupině, krátce se zopakují příčiny výsledku a zhodnotí se výkon země.“ A k rozboru měření: „Lidi zajímá,
-> jestli jejich stát dost staví, jestli nepřišlo nebo neodešlo příliš lidí, jestli má stát dost státních bytů… U všech
-> zemí říkat, že Deloitte to pravděpodobně vypočítal špatně, je nuda.“ Na otázku, zda je skill připravený na nový formát
-> včetně textů uzpůsobených pro psaní scénáře: „Pokud zapíšeš nový koncept do skillu, tak by to tím mělo být vyřešeno.“
->
-> **Co přibylo proti verzi 1.2 (z verze 1.2 se nic nemaže):**
-> 1. **Rozklad zařazeného faktoru na zděděný stav a tok** pro výklad, se stejnou silou na jednotku; čekaný výsledek se
->    nemění (krok 7.4). U bydlení zásoba bytů podle sčítání 2011 a tempo výstavby 2010–2024. *(opraveno po nezávislé
->    kontrole 13. 10. 2026: srozumitelně „co země měla na začátku“ a „co přibylo za horizont“; stejná síla je
->    předpoklad s povinnou citlivostí, rozdělení má čtyři podmínky)*
-> 2. **Pořadí kol podle obvyklého vlivu a v každém kole země regionu od nejlepší hodnoty po nejhorší** (krok 7.5).
->    Body kol a výklad pro diváka berou hodnotu faktoru tak, jak je (u přírůstku lidí celý úbytek; krok 3.4).
->    *(opraveno po nezávislé kontrole 13. 10. 2026: kola jsou všechny zařazené faktory, nejvýš pět, u bydlení pět kol
->    včetně úroků; přírůstek lidí tak, jak je, je výchozí volba analytika)*
-> 3. **Podklad pro scénář regionu psaný rovnou pro writera** (krok 9a): otázka a kořen regionu, kola s výkladem, proč má
->    každá země hodnotu takovou, jakou má, další faktory zemí včetně toho, komu dostupnost platí, odhalení pořadí od
->    posledního po nejlepšího, hodnocení výkonu země, ponaučení, poznámky pro editora.
-> 4. **Hodnocení výkonu země** podle stupnice se šesti typy, vždy s doloženým krokem a účinkem (krok 9b). *(opraveno po
->    nezávislé kontrole 13. 10. 2026: dvě osy, výkon politiky a komu dostupnost platí, s hodnoceným obdobím, naslepo)*
-> 5. **Tvrdá pravidla 13 a 14:** měření se opravuje v datech, do příběhu nepatří; žádná hodnota v kole bez výkladu.
->    *(opraveno po nezávislé kontrole 13. 10. 2026: dřív chybně číslovaná 11 a 12, která verze 1.2 už měla)*
-> 6. **Přehledová stránka s grafy** zůstává (krok 9) a řadí se podle týchž kol; grafy zásoby i výstavby už součástka
->    `analysis-review/grafy_faktoru/` umí.
->
-> **Zkouška:** bydlení, výpočet `05_epizode_packs/ep_002_dostupnost_bydleni/output/analyza_regiony_2026_10/kola_koncept.py`
-> a tabulka všech zemí `KOLA_KONCEPT_TABULKA.md`; podklad pro scénář Balkánu
-> `10_documents/active/2026-10-13_dramaturgie_regionu/BALKAN_PRO_SCENAR.md`. **Zachováno:** všechno z verze 1.2 níže
-> (výběr faktorů podle svědků, pojistky, test přenosu, registr závěrů, detektory, kontroly). *(opraveno po nezávislé
-> kontrole 13. 10. 2026: výpočet má pět kol včetně úroků, intervaly, jistotu pořadí, sílu důkazu, citlivosti rozdělení
-> a automatickou kontrolu; podklad Balkánu vznikl před opravou a vzorem se stane až po úpravě podle kroku 9a)*
->
-> **Opraveno po nezávislé kontrole 13. 10. 2026.** Návrh je dál NEAKTIVNÍ. Z verze 1.2 se ani teď nic nemaže; opravy
-> verze 1.3 jsou bodové a v textu označené „opraveno po nezávislé kontrole 13. 10. 2026“. Čtrnáct nálezů a kde jsou
-> opravené:
-> 1. **Úroky jsou kolo.** Kola jsou všechny zařazené faktory v pořadí obvyklého vlivu, nejvýš pět; u bydlení pět kol
->    (výpočet 13. 10.: čistá výplata 20,8, změna počtu obyvatel 7,2, zásoba bytů 3,5, úroky hypoték 1,8, tempo výstavby
->    1,1 bodu; platná čísla ze 14. 10. jsou v bloku o druhé kontrole níže).
->    Zařazený faktor smí z kol vypadnout jen Ondřejovým rozhodnutím o dramaturgii zapsaným doslovnou citací; vyřazení
->    úroků Ondřejovo rozhodnutí nebylo (krok 7.1, 7.5, oddíl 6, otevřená otázka 5).
-> 2. **Rozdělení na to, co země měla na začátku, a co přibylo za horizont:** stejná síla na jednotku je předpoklad
->    s povinnou citlivostí; rozdělení má čtyři podmínky; část, která přibyla, nese stav důkazu spojeného faktoru
->    s dovětkem „samostatně v datech ligy neověřen“ a štítek páky z listu měření; u bydlení jsou zapsané známé
->    nepřesnosti; pravidlo je zatím vyzkoušené jen na bydlení (krok 7.4).
-> 3. **Nová tvrdá pravidla mají čísla 13 a 14**, protože verze 1.2 už pravidla 11 a 12 měla (oddíl 4 a všechny odkazy).
-> 4. **Měření a výklad:** neopravitelná vada měření s hmotným dopadem nese příznak a scénář ji smí jednou krátce zmínit
->    (pravidlo 13); podklad smí napsat „příčina není doložena“, rozdíl uvnitř chyby měření je „skoro stejně“ a při
->    odhalení pořadí je povinný rozdíl proti čekanému místu (krok 9a). Podle Ondřejova pokynu z 13. 10. 2026 v noci se
->    ten rozdíl spočítá jen pro analytika a divák místo něj uslyší, co zemi pomohlo a co ji brzdilo (níže).
-> 5. **„Zaspal“ jen se třemi doklady** (problém v době, kdy se dal řešit; páka „řiditelné“ nebo „pomalu ovlivnitelné“;
->    účinek páky doložený studií nebo případem); v kolech je zpět síla důkazu a měřítko ligy a výklad používá slova podle
->    pravidla 10 (krok 9a.3, 9b).
-> 6. **Přírůstek lidí v kolech tak, jak je:** podmínky, za kterých se čekaný výsledek nemění, obě podoby výpočtu,
->    „podíl na obvyklém vlivu“ ve slovníku; je to výchozí volba analytika, ne Ondřejovo rozhodnutí (krok 3.4, oddíl 6).
-> 7. **Byty na obyvatele dnes** smějí v otázce regionu zaznít jen výslovně jako složená míra (krok 9a.1).
-> 8. **Výstup kol** nese interval obvyklého vlivu, příznak „menší než chyba měření“, jistotu pořadí, sílu důkazu, měřítko
->    ligy a citlivosti; automatická kontrola hlídá strop pěti kol, součet bodů a nezměněný čekaný výsledek (oddíl 5,
->    krok 10.3).
-> 9. **Kořen regionu** jen se stavem důkazu a po srovnání se zeměmi mimo region, jinak jako možné vysvětlení nebo
->    společný rys (krok 9a.2).
-> 10. **Hodnocení výkonu na dvou osách** (výkon politiky; komu dostupnost platí), s hodnoceným obdobím, naslepo a u části
->     zemí dvakrát; návrhy nových typů z rešerší jsou otázka pro Ondřeje (krok 9b, otevřená otázka 4).
-> 11. **Pevná míra podkladu:** vyčnívající hodnota, rozpočet slov, šablona souboru a „co říkají ekonomové“ (krok 9a).
-> 12. **Čísla podle platného výpočtu** v kroku 7.1 a v otázce 3; slovník doplněný o kolo, bod, obvyklý vliv, podíl na
->     obvyklém vlivu, čekané místo a další faktory zemí; kontrola pro diváka se netýká poznámek pro editora.
-> 13. **Srozumitelné názvy** nových částí a vysvětlené pojmy páka, vyčnívající hodnota a typická odchylka (krok 7.4,
->     slovník).
-> 14. **Záznam rozhodnutí** s doslovnou citací a tím, kdo rozhodl, nebo jako výchozí volba analytika; otázka, co divák
->     uslyší o síle kola, zůstává otevřená a má jen návrh (oddíl 6).
->
-> **Doplněno podle Ondřeje (13. 10. 2026 v noci)**, citace v oddílu 6, v textu označené „Ondřej 13. 10. 2026 v noci“:
-> 1. **Čekaný výsledek se divákovi neříká.** Pořadí podle čisté výplaty ani jiného hlavního faktoru se nevydává za
->    očekávaný výsledek a čekané místo po jednotlivých kolech se neukazuje ani v podkladu pro scénář, ani ve scénáři.
->    Nejsilnější faktor se zmiňuje hodně (kolik rozdílů mezi zeměmi vysvětluje; číslo je podle druhé kontroly jen
->    návrh, otázka 2), ale ne jako předpoklad. Čekaný výsledek
->    se dál počítá uvnitř analýzy (šetření toho, co kola nevysvětlí, detektory, zvláštnosti zemí); při odhalení pořadí
->    se místo „o tolik míst lépe, než se čekalo“ řekne, co zemi pomohlo a co ji brzdilo (oddíl 1, slovník, kroky 6.3,
->    7.5, 9, 9a, výstupy).
-> 2. **Test protipříkladem ve výkladu.** U každého „protože X“ se analytik zeptá, zda by hodnota byla jiná, kdyby X
->    nebylo; účetní nebo definiční věc (kdo platí odvody, jak se něco počítá) příčinou není. Výklad jmenuje ekonomickou
->    příčinu; rumunský příklad je zapsaný jako poučení (tvrdé pravidlo 4, krok 9a.3, kontrola faktů v kroku 10.4).
-> 3. **Cíl skillu:** z indikátoru autonomně analýza a podklad pro scénář, ze kterého writer rovnou píše; Ondřej jen
->    dolaďuje (oddíl 1).
->
-> **Opraveno po druhé nezávislé kontrole 14. 10. 2026** (verdikt „přijmout po opravách“; mezitím Ondřej schválil
-> srovnatelnou řeckou cenu 2 900 €/m² a analýza bydlení je přepočítaná). V textu označené „opraveno po druhé nezávislé
-> kontrole 14. 10. 2026“:
-> 1. **Výstavba podle podmínky 4 kroku 7.4:** dokončené byty až od dne sčítání 2011 do konce roku 2024, vůči zásobě
->    podle téhož sčítání a v absolutních počtech. Belgie, Francie, Řecko a Itálie mají výstavbu ze sčítání 2021
->    a nesou příznak. Body se proti výstavbě 2010–2024 změnily nejvýš o 0,4 bodu, čekaná místa se nezměnila (krok 7.4).
-> 2. **Zdroj síly podle testu přenosu:** síla ze studií, se kterou čekaný výsledek sedí hůř, se nepřebírá ani při
->    výsledku „mlčí“ (krok 4.3, 6.2). U bydlení to po řecké opravě platí pro zásobu: test mlčí a čekaný výsledek by
->    se silou ze studií seděl o 42 % hůř.
-> 3. **Pojistky z přepočtu:** pořadí kol s jistotou pod dvě třetiny nese štítek „nejisté“. Citlivost, která změní pořadí
->    kol nebo čekané místo o víc než dvě místa, jde do poznámek pro editora. Pořadí pěti kol se zapisuje do registru
->    závěrů (krok 7.4, 7.5, 9a.7, 10.2b, 10.3).
-> 4. **Stav důkazu podle pravidla 6:** „potvrzený daty“ jen při obvyklém vlivu nad pásmem chyby výsledku v obou
->    podobách výpočtu, jinak „doložený svědky“ (krok 5, pravidlo 6, krok 10.3).
-> 5. **Obrácený směr u výstavby** se ověřuje podle kroku 3.5. U bydlení ho data neprokazují: víc se staví tam, kde
->    lidí přibývá a mají vyšší výplaty, proto se výstavba mezi zeměmi schová za poptávku (krok 7.4).
-> 6. **„Výplata sama vysvětlí asi polovinu“ je návrh, ne pravidlo.** Míra je definovaná principem a u výplaty se podává
->    ve dvou částech, početně a ekonomicky (slovník, krok 7.5, 9a.3, šablona, otázka 2).
-> 7. **Zátěž daní a odvodů** se měří vůči celkovým nákladům práce. Podíl čisté výplaty na hrubé mzdě dokladem není
->    (krok 9a.3, 10.4).
-> 8. **Slepé hodnocení výkonu** dělá samostatný agent s čerstvým kontextem, jen ze záznamů kroku 8 (krok 9b).
-> 9. **Co důvody nevysvětlí:** u země nad typickou odchylkou výpočtu podklad slovy, bez míst, řekne, že část výsledku
->    důvody nevysvětlí (krok 9a.5).
-> 10. **Drobnosti:**
->     - úroky jsou v oddílu 6 mezi otevřenými otázkami;
->     - rumunské hypotéky už nejsou příkladem dalšího faktoru;
->     - práh „skoro stejně“ má výchozí pravidlo;
->     - hodnocení výkonu je zatím vyzkoušené jen na bydlení;
->     - podíl na obvyklém vlivu roste rozdělením faktoru.
-> 11. **Čísla podle výpočtu ze 14. 10. 2026** (`kola_koncept.py`, tabulka `KOLA_KONCEPT_TABULKA.md`):
->     - obvyklý vliv kol: čistá výplata 22,4, změna počtu obyvatel 7,2, zásoba bytů 2,2, úroky hypoték 1,8, tempo
->       výstavby 0,9 bodu;
->     - zásoba je před úroky jen v 59 % převzorkování (nejisté);
->     - kola vysvětlí 68,4 % rozdílů, výplata sama 53,6 %.
-
----
-
-*Text verze 1.2 s doplňky verze 1.3 (označené „doplněno ve v1.3“ nebo „nové ve v1.3“), s opravami po nezávislé kontrole
-(označené „opraveno po nezávislé kontrole 13. 10. 2026“ nebo „nové po nezávislé kontrole 13. 10. 2026“), s doplňky
-podle Ondřeje (označené „Ondřej 13. 10. 2026 v noci“) a s opravami po druhé kontrole (označené „opraveno po druhé
-nezávislé kontrole 14. 10. 2026“):*
-
-### Hlavička verze 1.2
-
-> **13. 10. 2026 večer, Ondřejova připomínka k nesrozumitelným výrazům:** názvy pro lidi jsou přejmenované (dřív `čára ligy` → čekaný výsledek, `pod čarou` → vedlejší faktory, `specifikum` → zvláštnost zemí, `typický posun` → obvyklý vliv, výsledek bydlení se jmenuje dostupnost bydlení). Metodické názvy (`Shapley`, `logaritmy`) zůstávají jen jako technické názvy. Každý výstup pro lidi (analýza, chat, scénář) musí projít `scripts/kontrola_srozumitelnosti.py` (scénář s volbou `--divak`).
-
-> **Stav: NÁVRH, NEAKTIVNÍ.** Vznikl na Ondřejovo zadání z 11. 10. 2026. Neplatí, dokud ho Ondřej po zkoušce na všech zemích neschválí a nezapíše se do `active_pipeline_stack.json`. Do té doby platí dosavadní analytické skilly.
->
-> **Co se změnilo proti verzi 1.1 (12. 10. 2026):**
-> 1. **Výběr faktorů podle svědků** (Ondřej 12. 10.: „Ano, do zkoušky na datech přidej systém svědků, ale ne tak, že vše předchozí zahodíš… aby se nestalo, že z předchozího systému zahodíš i funkční věci, bez kterých by nový systém se svědky také nefungoval.“). Nový krok 5 nahrazuje jen rozhodovací část dosavadního kroku 5 a řazení hlavních faktorů v kroku 7.1. Zkouška v datech ligy zůstává: je jedním ze svědků, sama rozhoduje o objevech jen z dat (hranice pro celý seznam) a odhaduje sílu nejvýš tří faktorů. Ztrácí jen právo veta u faktorů, které ze své podstaty nepozná. Všechny pojistky verze 1.1, na kterých pravidlo svědků stojí, zůstávají; krok 5 je vyjmenovává i s výsledkem zkoušky jejich vypnutí.
-> 2. **Časový profil faktoru** (Ondřej 12. 10. k Polsku: „Hrálo by roli, kdyby prvních 10 let mělo bilanci −10, ale posledních pět let +6?“): nový krok 3.11, panel uvnitř zemí jako svědek vývoje (krok 4.2) a lidé, které statistika nepočítá (krok 3.3).
-> 3. **Test vývoje povinně se sbližováním chudších zemí** a upozornění, že index nájmů HICP neměří tržní nájmy (krok 4.2).
-> 4. Doplňky z 12. 10. 2026, které verze 1.1 označila „platí pro verzi 1.2“ (mapa mechanismů, detektory, registr závěrů, přehledová stránka, grafy, shlukování odchylek), jsou běžnou součástí. Poučení 1–22 ze zkoušky verze 1.1 (`10_documents/active/2026-10-11_podklady_noveho_skillu/POUCENI_ZE_ZKOUSKY_V1_1.md`) jsou zapracovaná bodově a označená „(poučení N)“.
-> 5. Ondřejova rozhodnutí z 12. 10. 2026 (medián jako měřítko ligy, čistá mzda, o zařazení faktoru rozhodují pravidla) jsou v oddílu 6.
->
-> **Po nezávislé kontrole (12. 10. v noci):** první znění verze 1.2 oslabilo čtyři pojistky verze 1.1 (zápis předem v commitu, stálost znaménka po vynechání země, ekonomové jen s výroky o úrovni, test přenosu vynecháním faktoru ze sady po jednom) a počítalo panel přírůstku lidí, který neprošel placebem. Opraveno v textu i v kódu; test přenosu má nově hranici náhody (krok 4.3).
->
-> **Zachováno:** cíl, kroky 1–10, tvrdá pravidla 1–10, regiony, rozpor s ekonomy a postup při něm, vrstva studií s podmínkami přenosu, nejvýš tři síly z dat, čekaný výsledek po kolech. Zkouška verze 1.2 na bydlení a na zdravých letech: `05_epizode_packs/ep_002_dostupnost_bydleni/output/analyza_regiony_2026_10/SVEDCI.md` a `CASOVY_PROFIL.md`.
->
-> **Historie, změny verze 1.1 proti verzi 1.0 (11. 10. 2026 v noci):** zapracována slepá metodická kritika (`10_documents/active/2026-10-11_podklady_noveho_skillu/KRITIKA_NAVRHU_SKILLU.md`, 28 nálezů) a rozbor starých skillů (`ANALYZA_SOUCASNEHO_SKILLU.md` ve stejné složce). Hlavní změny: „vliv v procentech“ je podíl vysvětlených rozdílů, ne síla účinku, a uvádí se ve třech podobách; účinky ze studií se nemíchají do rozkladu dat, ale tvoří samostatnou vrstvu s testem přenosu; test vývoje v čase se opravil (dřívější verze byla zčásti mechanická); nabídka bytů se měří ve městech a jako nepružnost, ne bytovým fondem na obyvatele; čekaný výsledek se posouvá po kolech; z dat se společně odhadují nejvýš tři faktory; horizont se určuje testem; „rozpor s ekonomy“ je definovaný; váha podle ekonomů má pevný protokol. Zachováno: cíl, kroky 1–10, tvrdá pravidla, regiony, Ondřejova rozhodnutí.
-
-### 1. K čemu skill je
-
-Skill vytvoří analýzu jednoho ukazatele pro 27 zemí ligy tak, aby z ní šla postavit epizoda v regionovém systému. Odpovídá na tři otázky:
-1. **Které faktory o ukazateli rozhodují**, jak velkou část rozdílů mezi zeměmi každý vysvětluje a jak silně působí. Nejvýš pět jsou hlavní faktory (kola), ostatní plynule navazují jako vedlejší faktory.
-2. **Kolik každý faktor přidá nebo ubere každé zemi** proti měřítku ligy, a které faktory jsou u jednotlivých zemí výjimečně silné, i když celkově mají malý vliv.
-3. **Co země v čase udělaly** a jak se to projevilo.
-
-**Cíl (Ondřej 13. 10. 2026 v noci):** „Pokud bych zadal indikátor, autonomně se mi vytvořila dobrá analýza a hned na to
-script. Tak já už si to doladím.“ Skill proto z indikátoru autonomně vytvoří analýzu a podklad pro scénář (krok 9a), ze
-kterého writer rovnou píše; Ondřej jen dolaďuje. Pravidla writera pro regiony se doplní podle vzoru, který Ondřej
-schválí (první blok scénáře podle konceptu, krok 9a).
-
-Ondřejovo zadání (11. 10. 2026):
-1. Vybrat všechny faktory, které mají vliv na ukazatel, a spočítat vliv každého v procentech. Pět největších jsou hlavní faktory; ostatní navazují jako vedlejší (Ondřejovými slovy `pod čarou`); faktor s malým celkovým vlivem může mít u jedné země velký vliv.
-2. Konec dělení na potenciál, krátkodobou a dlouhodobou strategii. Prostě všechny faktory s vlivem.
-3. Výpočet vlivu musí být důkladný a data musí vystihovat příčinu u všech ukazatelů. Nikdy nesmí ukazatel, který se buduje desítky let, vysvětlovat jeden rok dat.
-4. Měřítkem u každého faktoru je průměr všech zemí ligy (žádné „potřebné hladiny“). *(Ondřej 12. 10. 2026 změnil na medián ligy.)*
-5. Regiony, kola s místem v regionu i v celé lize, výsledek i proti čekanému výsledku, kroky zemí doložené vývojem v čase. *(Ondřej 13. 10. 2026 v noci: čekaný výsledek se dál počítá uvnitř analýzy, ale divákovi se neříká, ani po kolech, ani v cíli; oddíl 6.)*
-6. Ekonomové jsou vodítko; procenta počítá skill; výpočty nesmějí být v rozporu s ekonomy.
-
-*(doplněno ve v1.3)* Ondřejův koncept bloku regionu (13. 10. 2026): kola od nejvlivnějšího faktoru po nejméně vlivný;
-zděděný stav a tok zvlášť (u bydlení zásoba bytů a tempo výstavby), aby šlo vysvětlit, co vlády, firmy a společnost
-dělají dobře nebo špatně; v každém kole země regionu od nejlepší hodnoty po nejhorší a u každé výklad, proč má hodnotu
-takovou, jakou má; po kolech další faktory, které hrají velkou roli jen v některých zemích; odhalení pořadí od
-posledního po nejlepšího, krátké zopakování příčin a hodnocení výkonu země (víc typů hodnocení než dva). Analýza dodává
-text uzpůsobený pro psaní scénáře (krok 9a), ne jen tabulky. *(opraveno po nezávislé kontrole 13. 10. 2026: kola jsou
-všechny zařazené faktory v pořadí obvyklého vlivu, nejvýš pět, krok 7.5; `zděděný stav` znamená to, co země měla na
-začátku horizontu, `tok` to, co přibylo za horizont, krok 7.4; citace a kdo co rozhodl jsou v oddílu 6)*
-
-### 2. Slovník
-
-| Pojem | Význam |
-|---|---|
-| ukazatel (výsledek) | to, v čem země soutěží (např. dostupnost bydlení), jedno číslo za zemi a rok; u složeného ukazatele i jeho složky (u bydlení koupě a nájem) |
-| faktor | věc, která ukazatel ovlivňuje (přírůstek lidí, výplata, výstavba…) |
-| **podíl na rozdílech** („vliv v procentech“) | jakou část rozdílů mezi zeměmi faktor vysvětluje v modelu na našich datech. **Není to síla účinku.** Uvádí se ve třech podobách: sám, přidaný jako poslední a průměr přes všechna pořadí (`Shapleyho metoda`). U faktorů, které spolu souvisejí, se uvádí i jejich společná část |
-| **síla účinku** | o kolik procent se změní výsledek, když se faktor změní o 10 % nebo o typický rozdíl v lize; z našich dat, nebo ze studií |
-| příspěvek země | o kolik faktor posouvá výsledek dané země proti měřítku ligy; v `logaritmickém` modelu se příspěvky sčítají v `logaritmických bodech` a na procenta se převádí až součet |
-| hlavní faktor | jeden z nejvýš pěti faktorů; v epizodě kolo; stejné pro všechny země *(opraveno po nezávislé kontrole 13. 10. 2026: jeden hlavní faktor může dát dvě kola, když se rozdělí podle kroku 7.4, u bydlení nabídka bytů na zásobu a tempo výstavby; kol je vždy nejvýš pět)* |
-| vedlejší faktor (dřív `pod čarou`) | ostatní faktory; rozebere se jen u zemí, kde mají velký příspěvek |
-| měřítko ligy | hodnota, se kterou se země v kole srovnává; **medián ligy** (Ondřej 12. 10. 2026, dříve průměr); jedno měřítko platí pro všechny faktory i pro výsledek |
-| čekaný výsledek (dřív `čára ligy`) | výsledek, který by země měla podle dosud odjetých kol; **po prvním kole** podle prvního hlavního faktoru, **po každém dalším kole** podle všech dosavadních; v cíli se skutečný výsledek porovná s čekaným po posledním kole a rozdíl je „co kola nevysvětlila“ *(Ondřej 13. 10. 2026 v noci: počítá se jen uvnitř analýzy pro šetření toho, co kola nevysvětlí, detektory a zvláštnosti zemí; divákovi se neříká a pořadí podle hlavního faktoru se nevydává za očekávaný výsledek)* |
-| horizont | doba, za kterou se ukazatel buduje; určuje se testem (krok 1) |
-| obrácený směr | výsledek ovlivňuje faktor; nejdřív se ověří v datech (krok 3) |
-| aritmetika | faktor je ve vzorci ukazatele (výplata ve jmenovateli dostupnosti) |
-| síla důkazu | **potvrzený daty** / **doložený svědky** (zařazen podle kroku 5 bez podpory srovnání zemí; dřív „doložený studiemi“ a „doložený uvnitř zemí“) / **zvláštnost zemí** / **hypotéza**; každému stupni odpovídají povolená slovesa (oddíl 4, pravidlo 10; upraveno ve v1.2) |
-| svědek (nové ve v1.2) | samostatný druh dokladu o vlivu faktoru: studie, ekonomové v lize, srovnání zemí ligy, vývoj v čase, případy; mechanismus je podmínka. Každý svědek vypoví „podporuje / odporuje / mlčí“ a je, nebo není spolehlivý (krok 5) |
-| rodina zdrojů (nové ve v1.2) | svědci, kteří stojí na stejném podkladu, se počítají jednou (případ rozebraný studií je jen studie; přílohy Evropské komise jsou jedna rodina) |
-| zvláštnost zemí (nové ve v1.2; dřív `specifikum`) | faktor, který má dost svědků jen v některých zemích; rozebere se u nich (krok 7.3), do čekaného výsledku nevstupuje |
-| hypotéza (nové ve v1.2) | faktor s mechanismem, ale bez dvou nezávislých svědků; uvede se mezi vedlejšími faktory s tím, který svědek chybí („co by rozhodlo“) |
-| časový profil (nové ve v1.2) | jak rychle výsledek na změnu faktoru reaguje a jak dlouho účinek trvá; určuje, jak se tok měří (váhy podle stáří, krok 3.11) |
-| region | **od 25. 10. 2026 (Ondřej, 1. epizoda mzdy):** Skandinávie a Benelux (NO, SE, FI, DK, NL, BE); západní Evropa (DE, CH, FR, GB, IE); jižní Evropa (ES, PT, IT); Balkán a jihovýchodní Evropa (SI, HR, RO, BG, GR); střední Evropa (AT, CZ, PL, SK, HU); Pobaltí (EE, LV, LT). **Platí pro celou sérii, i pro bydlení (Ondřej 26. 10. 2026); bydlení se přepočítá na jeho pokyn.** *Dříve (11. 10. 2026, zatím v hotových scénářích bydlení): západní Evropa i s AT, Balkán a východní Evropa (HR, RO, BG, GR), střední Evropa i se SI.* |
-| kolo (nové po nezávislé kontrole 13. 10. 2026) | jeden zařazený faktor (krok 5), nebo jedna jeho část podle kroku 7.4, který se v epizodě ukáže všem zemím regionu najednou; kola jdou od největšího obvyklého vlivu po nejmenší, je jich nejvýš pět a stejná pro všechny země (krok 7.5) |
-| bod (nové po nezávislé kontrole 13. 10. 2026) | jednotka příspěvku faktoru: 1 bod ≈ bydlení o 1 % dostupnější než u typické země ligy. Přesně to platí jen u malých hodnot, protože se počítá v `logaritmech`: 20 bodů je asi 18–22 %, 33 bodů asi 28–39 % |
-| typická země (nové po nezávislé kontrole 13. 10. 2026) | pomyslná země, která má u všech faktorů hodnotu měřítka ligy; body se počítají proti ní |
-| obvyklý vliv (nové po nezávislé kontrole 13. 10. 2026; dřív `typický posun`) | o kolik bodů faktor obvykle posune zemi proti typické zemi: medián absolutních bodů 27 zemí, s 90% intervalem z převzorkování zemí (země se losují s opakováním a výpočet se zopakuje). Podle něj se řadí kola (krok 7.1 a 7.5) |
-| podíl na obvyklém vlivu (nové po nezávislé kontrole 13. 10. 2026) | obvyklý vliv faktoru dělený součtem obvyklých vlivů všech kol (u bydlení čistá výplata asi 60 %). Říká, jak velký kus toho, co kola obvykle udělají, připadá na jedno kolo. **Není to podíl vysvětlených rozdílů** mezi zeměmi a nesčítá se na celý výsledek: kola asi třetinu rozdílů mezi zeměmi nevysvětlí (u bydlení vysvětlí 67 %). *(opraveno po druhé nezávislé kontrole 14. 10. 2026: výpočet ze 14. 10. dává čisté výplatě 65 % a kolům 68,4 % vysvětlených rozdílů. **Podíl roste, když se faktor rozdělí**, protože obvyklé vlivy částí se sčítají v absolutních hodnotách: nabídka bytů celá má 2,4 bodu a 7 %, zásoba a výstavba zvlášť 2,2 + 0,9 = 3,1 bodu a 9 %. Podíly rozděleného faktoru se proto se staršími nebo nerozdělenými výpočty nesrovnávají.)* |
-| podíl rozdílů, který faktor vysvětlí sám (nové po druhé nezávislé kontrole 14. 10. 2026) | jakou část rozdílů výsledku mezi zeměmi vysvětlí výpočet, ve kterém je jen tento faktor, se stejnou silou jako v kolech (síla z dat ligy, nebo ze studií podle kroku 6.2). Je to první z podob podílu na rozdílech („sám“). U čisté výplaty u bydlení 53,6 %. U faktoru ve jmenovateli ukazatele (aritmetika, krok 1.2) obsahuje početní i ekonomický účinek a podává se ve dvou částech: „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší (o 1 % vyšší výplata = nový byt o 0,72 % a nájem o 0,56 % dražší)“. Divákovi se říká jen podle rozhodnutí o otevřené otázce 2 |
-| čekané místo (nové po nezávislé kontrole 13. 10. 2026) | místo, na kterém by země byla podle dosud odjetých kol, vždy podmiňovacím způsobem; **jen v datech pro analytika** (Ondřej 13. 10. 2026 v noci): do podkladu pro scénář ani do hlasu nejde, ani po jednotlivých kolech, ani v cíli |
-| další faktory zemí (nové po nezávislé kontrole 13. 10. 2026) | faktory mimo kola, které v některé zemi hrají velkou roli: zvláštnosti země (krok 7.3) a vedlejší faktory, jejichž příspěvek u země přesahuje typickou odchylku výpočtu; rozeberou se jen u těch zemí (krok 9a.4). Patří sem i zařazený faktor, který z kol vyřadil Ondřej rozhodnutím o dramaturgii; jeho body ale zůstávají v čekaném výsledku |
-| co země měla na začátku (`zděděný stav`; nové po nezávislé kontrole 13. 10. 2026) | část faktoru, kterou země měla na začátku horizontu (u bydlení byty, které země měla na začátku, podle sčítání 2011) |
-| co přibylo za horizont (`tok`; nové po nezávislé kontrole 13. 10. 2026) | část faktoru, která přibyla od začátku horizontu do dneška (u bydlení dokončené byty 2010–2024); rozdělení podle kroku 7.4 |
-| páka (nové po nezávislé kontrole 13. 10. 2026) | věc, kterou může stát, firmy nebo společnost změnit (zákon, program, výstavba, sazba). Štítek páky z listu měření (krok 3.9) říká, jak moc: **dané** (nejde změnit: poloha, podnebí), **vystavené** (přichází zvenku: sazby v eurozóně, příliv lidí), **pomalu ovlivnitelné** (změní se jen za léta: zásoba bytů, výplata, výstavba), **řiditelné** (změní se rozhodnutím: daň, regulace) |
-| typická odchylka (nové po nezávislé kontrole 13. 10. 2026) | o kolik se země obvykle liší od středu. U hodnot faktoru je to směrodatná odchylka 27 zemí kolem měřítka ligy (u bydlení třeba výplata asi 1 390 € čistého měsíčně, změna počtu obyvatel asi 8,7 procentního bodu). U výpočtu je to typický rozdíl skutečného a čekaného výsledku země (u bydlení orientačně ±15 %, krok 6.5) |
-| vyčnívající hodnota (nové po nezávislé kontrole 13. 10. 2026) | hodnota země v kole, která patří mezi pět nejlepších nebo pět nejhorších v lize, nebo je od měřítka ligy vzdálená aspoň o typickou odchylku hodnot (krok 7.3); dostane podrobný výklad (krok 9a.3) |
-
-### 3. Postup
-
-#### Krok 1. Rozbor ukazatele
-
-Před hledáním příčin se zapíše list ukazatele:
-1. **Vzorec a složky.** U bydlení: polovina let čisté výplaty na nový byt 70 m² vůči měřítku ligy a polovina podílu nájmu na čisté výplatě. **U složeného ukazatele se modeluje každá složka zvlášť** (koupě: cena za m², nájem: nájem za m²) a složený výsledek se z nich skládá; faktor s opačným účinkem na složky se uvede jako takový.
-2. **Aritmetika.** Faktor ve jmenovateli (výplata) se nevkládá do podílu na rozdílech jako jedna položka. Model stojí nad čitateli (cena, nájem) a výplata v něm vystupuje jako faktor poptávky; divák dostane „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: bohatší země mají dražší byty o X %“.
-3. **Horizont testem setrvačnosti.** Dnešní hodnota ukazatele (nebo nejbližší dostupné náhrady) se vysvětlí vlastní hodnotou před 5, 10, 15, 20 a 30 lety. Horizont je nejdelší zpoždění s daty pro aspoň 24 zemí, při kterém vlastní minulost vysvětlí aspoň polovinu dnešních rozdílů. Potom se výsledek rozloží na start a změnu za horizont. Když data horizont nepokrývají, platí krok 3, pravidlo 10.
-4. **Srovnatelnost a pásmo chyby.** U každé země se zapíše definice (celá země, nebo města; s DPH, nebo bez; nabídková, nebo transakční cena; pojem mzdy) a **pásmo chyby** z definičních rozdílů v procentech. Rozdíly se opraví; co opravit nejde, nese příznak v datech pro edit.
-   - *(doplněno ve v1.2)* Druh obydlí, geografie a druh ceny se ověří v původní tabulce zdroje, ne podle nálepky („celostátní cena nového bytu“ byla u Norska a Irska cena rodinných domů a u Rumunska všech obydlí; poučení 7). Složení výstavby (kde se staví) je součást definice a u výkladu odchylky země se řekne (poučení 8).
-   - *(doplněno ve v1.2)* Každý příznak měření se vyčíslí: o kolik by se odchylka země změnila po opravě. „Jen měření“ smí zaznít, jen když po opravě odchylka spadne pod práh šetření (Česko: +27 % → +18 %, tedy jen asi třetina; poučení 12).
-   - *(doplněno ve v1.2)* **Nezávislé měření téhož jevu** (jiný zdroj nebo metoda) se sebere vždy; když s výsledkem nesouhlasí, je srovnání zemí nespolehlivé u všech faktorů, dokud se měření výsledku neopraví (zdravé roky: shoda s nadějí dožití jen 0,40; poučení 21).
-5. *(nové ve v1.2)* **Krok 1 se uzavře dřív, než začne výběr faktorů.** Opravy výsledku mění i výběr (přírůstek lidí přidal po opravě cen 18,5 % rozdílů místo 13 %; poučení 9). Náhrada ukazatele pro test horizontu se musí s ukazatelem shodovat aspoň z 0,8 a u každého zpoždění se uvede počet zemí (poučení 2).
-
-#### Krok 2. Kandidáti na faktory
-
-1. **Pevný seznam kategorií příčin** (10–12) a jejich přiřazení ke kandidátům se zapíše do gitu **před rešerší** („předem“ = zapsáno v commitu dřív, než se stáhla data faktoru).
-2. **Ekonomové v každé zemi:** rešerše všech 27 zemí (formát `ekonomove/{kód}.md`). Evidují se zdroje (instituce, rok, dokument) a jen **výslovné výroky s citací** („hlavní příčina“, „klíčový faktor“, uvedené pořadí), zvlášť pro úroveň a pro vývoj.
-2a. *(nové 2. 11. 2026, Ondřej)* **Rešerše lidských příkladů** podle zásady `05_epizode_packs/_skills/ekonomie-lidskou-reci-ZASADA-v1.0.md`: pro každou zemi
-   `priklady/{kód}.md`, u každého hlavního faktoru a zvláštnosti 2–3 konkrétní příklady (firma, výrobek, místo,
-   povolání, situace ze života) se zdrojem a nosností a u každého kroku „co se lidem změnilo, jak to bylo provedeno,
-   kudy to doputovalo k ukazateli, doložený účinek“. Do vah ani výpočtů nevstupuje; slouží výkladu (krok 9a)
-   a scénáři. Dělá se po výběru kol (krok 7), jen pro faktory, které ve scénáři zazní.
-2b. *(nové 6. 11. 2026, Ondřej; přestavěno 7. 11. 2026)* **Podklad pro soud = test domněnky proti datům země.**
-   U každého kola a finále (Ondřej 7. 11. 2026 večer: „všechna kola… nestačí jenom druhý a třetí“): kolo 1 rozdané karty
-   `soudy_karty/` (soudí se dědictví, štěstí nebo smůla, a tvrzení o příčinách úrovně 1996 se testují stejně; rozdíl
-   pod prahem „skoro stejně“ se nevysvětluje), kolo 2 `soudy_rust/`, kolo 3 `soudy_dane/`, finále `soudy_cil/` (rozdíl
-   proti pořadí po kolech a čím to je: cenové hladiny po druzích, podíl mezd na výkonu, vyjednávání, dojíždění), a dále
-   u každého faktoru, který je pravidlem nebo krokem státu a ve scénáři se hodnotí; pro každou zemi soubor
-   `soudy_{…}/{kód}.md` v tomto pořadí oddílů. **Pozor u podílu mezd na výkonu (zkouška Pobaltí):** jako důvod ve finále
-   se smí použít až po testu skladby výkonu: Lotyšsko „dává víc“ než Estonsko jen proto, že estonský výkon má větší díl
-   v nájmech z bytů; bez toho je podíl mezd účetní věc, ne důvod (tvrdé pravidlo 4).
-   *(Ondřej 7. 11. 2026 odpoledne: „chtěl jsem, abys ověřil celý ten princip i celý ten mechanismus u těch analýz,
-   celou tu interpretaci dat… vyzkoušej to u produktivity od roku 96 do roku 2024“: test platí pro každý soud
-   a každou příčinu, ne jen pro daně.)* V kole růstu je domněnka obvykle příběh cesty („Litva rostla díky nábytku
-   a dopravě“, „Lotyšsko zaostalo kvůli krizi 2008“, „Estonsko ztratilo tempo, protože slavné firmy jsou malé“)
-   a co by bylo vidět je podíl těch odvětví na výkonu a jeho přírůstku proti sousedům, hloubka a délka propadu,
-   rozklad růstu po odvětvích, investice, odchody lidí; **test záměny**: co platí pro všechny země regionu stejně
-   (odliv lidí v Litvě i Lotyšsku) jejich pořadí nevysvětlí.
-   1. **Fakt:** hodnota, místo v lize a regionu, čím se nastavení liší od sousedů (sazby, stropy, minima; jen tolik,
-      kolik je k soudu třeba).
-   2. **Domněnky na obou stranách:** co by nastavení podle učebnice s lidmi dělalo — komu to hned přidá (peněženka,
-      cena práce pro firmu) a kdo a čím to platí jinde nebo později (stát nemá na školy a nemocnice, lidé si platí
-      sami, odcházejí, pracují načerno, firmy se stěhují) — a u každé domněnky **co by bylo vidět, kdyby platila**
-      (odchody občanů na tisíc obyvatel, saldo migrace, podíl obálkových mezd, příliv investic, výdaje na školy
-      a zdravotnictví, PISA, zaměstnanost lidí se základním vzděláním). **Odkud domněnky brát (doplněno 7. 11. 2026
-      večer po zkoušce Pobaltí):** ze tří zdrojů vždy, ne jen z prvního: (a) z dosavadního scénáře a výkladu země;
-      (b) z rešerše ekonomů (`ekonomove/{kód}.md`) a zpráv o zemi (OECD Economic Survey, MMF článek IV, zpráva Komise
-      o zemi, centrální banka); (c) z **obecně známého výkladu**, který by model dal v běžném rozhovoru (u Estonska:
-      úvěrová bublina před rokem 2008 a vnitřní devalvace, dohánění se zpomaluje, úbytek pracovní síly, subdodávky pro
-      severské firmy, stagnace Finska 2012–2015, sankce po roce 2014, inflace 2022 a tři roky poklesu). Zkouška
-      Pobaltí: agent testoval jen domněnky ze starého scénáře, a když padly, zapsal „nezjištěno“, ačkoli výklad (c)
-      je známý a měřitelný. **„Nezjištěno“ smí stát v podkladu až po otestování všech tří zdrojů**, a i pak se v něm
-      uvede, na čem se ekonomové shodují (síla dokladu „doložený svědky“), aby scénář měl co říct.
-   3. **Test každé domněnky:** číslo pro tuhle zemi **proti sousedům v regionu a průměru Unie**, rok, zdroj
-      (Eurostat, národní úřad, Eurobarometr, OECD data), a výsledek: **platí** (země v čísle vyčnívá tím směrem),
-      **neplatí** (chová se jako sousedé nebo opačně), **nezjištěno** (co by rozhodlo). Výroky institucí sem patří
-      jen jako jeden z dokladů, nikdy místo čísla.
-   4. **Nález:** co z testů plyne. Když domněnka neplatí, hledá se, **co skutečný stav země vysvětluje** (Slovinci
-      při nejvyšších daních regionu neodcházejí → země si je může dovolit, protože i po daních je výplata nejvyšší
-      v regionu a za daně lidé něco dostávají); protipříklad v lize (kdo má stejné nastavení a dopadl jinak).
-   5. **Věta soudu** bez jména instituce, oznamovacím způsobem, s číslem nebo obrazem z testu; tvar je volný
-      (dobře / špatně / napůl / může si to dovolit / platí jen pro někoho / nevadí, protože…). **NEŘÍKEJ** se slovy,
-      která test nepodepřel.
-   Důvod přestavby (Ondřej 7. 11. 2026: „kdyby mi vyšlo, že Slovinsko má nejvyšší daňovou zátěž, a napsal, že to je
-   špatně, protože Slovinci si mohou hledat práci jinde, tak bych se podíval, jestli Slovinci utíkají… pokud odcházejí
-   stejně jako ostatní, nebo méně… možná si to Slovinsko může dovolit“; „ty myšlenkové řetězce, tu interpretaci dat,
-   to se má dělat v analýze hlavně“): dřívější stavba podkladu začínala oddílem „Co říkají instituce“ a „doložený
-   dopad“ byl zase jen výrok instituce. Rešerše ekonomů (bod 2) sbírá, co instituce o systému **říkají**, nikdo se
-   ale neptal, zda se předpovídaný důsledek v zemi **děje**. Podklad Slovinska tak sám zapsal „nikdo netvrdí, že
-   odvody vyhnaly lidi do Rakouska“, a scénář přesto řekl „Slovinci můžou hledat práci jinde“, protože podmiňovací
-   způsob nic netvrdí a žádná kontrola ho nechytila. Test domněnky je totéž, co test protipříkladem u příčin
-   (krok 9a.3): ptá se, zda by se země chovala jinak bez nastavení, a odpovídá číslem země, ne výrokem úřadu.
-   Do vah ani výpočtů nevstupuje. Dělá se po výběru kol (krok 7), jen pro faktory, které ve scénáři zazní.
-3. **Váha podle ekonomů:** podíl zemí, kde kategorii mezi třemi hlavními příčinami uvádějí **aspoň dvě nezávislé instituce** (příloha Komise je jedna rodina zdrojů; MMF; OECD; centrální banka; národní ústav). Body za pořadí se nepoužívají. Druhý agent naslepo vytáhne výroky aspoň u pěti zemí a zapíše se shoda. Váha se uvádí s rozpětím z bootstrapu přes země. Pozor na šablony: přílohy Komise mají pro všechny členy stejnou strukturu, takže kategorie, na kterou se šablona ptá, se objeví všude.
-4. **Srovnávací studie** pro Evropu a síly účinků se způsobem měření (`studie/`).
-5. **Tabulka kandidátů:** mechanismus, směr, horizont, riziko obráceného směru, překryv, aritmetika, štítek páky, váha podle ekonomů. Kandidát s váhou aspoň třetiny zemí (nebo dvě instituce v aspoň pěti zemích) se nesmí vyřadit bez rozboru podle kroku 5.
-
-6. **Mapa mechanismů (doplněno 12. 10. 2026):** ukazatel se rozloží na části a u každé se projde sedm obecných otázek: co země zdědila (stav budovaný desetiletí), co se změnilo za horizont (toky), kdo a kolik (poptávka a složení lidí), za kolik a jak efektivně, jaká pravidla to řídí, co přichází zvenku, jak se to měří (a jaké je nezávislé měření téhož jevu). Ke každé otázce aspoň jeden kandidát z rešerše, nebo písemně „netýká se, protože…“. Kandidáti z mapy jsou předem zapsané hypotézy. Podrobně: `10_documents/active/2026-10-12_system_proti_zapomenutym_faktorum/SYSTEM.md`; poučení 22.
-7. *(nové ve v1.2)* **Hypotézy předem jednotlivě.** Kategorie jsou široké a pokrývají všechny kandidáty, proto se předem zapíše i konkrétní proměnná každé hypotézy se směrem a zdrojem (studie, ekonomové). Jen pro ni platí hranice pro jednoho kandidáta; ostatní proměnné jsou průzkumné a platí pro ně hranice pro celý seznam (poučení 10).
-8. *(nové ve v1.2)* **Podklady pro svědky** (krok 5), zapsané u každého kandidáta: u studií síla účinku s rozpětím, způsob měření, kvalita určení příčiny (přirozený pokus, nástroj, panel, průřez) a podmínky přenosu (a)–(c) z kroku 4.3; u ekonomů výroky se směrem „zdražuje / zlevňuje“ (poučení 6) a výslovné popření; u případů epizoda v zemi ligy (co se změnilo, kdy, s čím se srovnává, zdroj).
-
-#### Krok 3. Měření faktorů
-
-Každý kandidát dostane strojově čitelný **list měření** (`mereni.json`: `horizont_let`, `obdobi_mereni`, `druh` tok/stav/opatření, `prepocet`, `riziko_obraceneho_smeru` s dokladem z dat, `predem_zapsano` s commitem, `pokryti_zemi`). Pravidla:
-
-1. **Horizont dat odpovídá horizontu ukazatele.** Toky se berou jako průměr nebo součet za horizont, stavy na začátku horizontu, opatření s dobou platnosti. Faktor musí výsledku předcházet; údaj z roku výsledku nebo pozdější je zakázaný, pokud faktor nepůsobí okamžitě a není to zdůvodněno.
-2. **Přepočet na velikost země** podle mechanismu (na 1 000 obyvatel, na dospělého, % HDP…).
-3. **Srovnatelnost:** jedna definice pro všechny země (u dostupnosti čistá mzda), zlomy řad po sčítáních, uprchlíci v počtu obyvatel (Ondřej 10. 10.), ceny celé země, nebo měst, DPH, parita.
-   - *(doplněno ve v1.2)* **Lidé, které statistika nepočítá.** U počtu obyvatel se ověří, koho úřad nepočítá: uprchlíky s dočasnou ochranou (podle metadat Eurostatu) a cizince bez trvalého pobytu. Polsko kromě asi 1 milionu uprchlíků nepočítá ani asi 0,9–1,1 milionu dalších cizinců (GUS, experimentální statistika „stopy života“: 2,3 milionu cizinců na konci roku 2025, z toho 73 % Ukrajinců); jeho oficiální čisté stěhování je 2010–2024 skoro nulové. Skrytý přírůstek se přičte jako varianta s pásmem chyby.
-   - *(doplněno ve v1.2)* **Kam lidé přicházejí.** Přistěhovalci se soustředí do velkých měst (Varšava 14,5 % a Vratislav 19,5 % cizinců na konci roku 2025), kde se často měří i výsledek (nájmy z velkých měst); celostátní přírůstek je pak slabou náhradou. Platí pravidlo 8 tohoto kroku (stejná geografie jako výsledek).
-   - *(doplněno ve v1.2)* Index nájmů v indexu spotřebitelských cen (HICP) podle definice měří všechny placené nájmy včetně regulovaných a starých smluv, ne tržní nájmy nových smluv; jako měřítko tlaku na tržní nájmy se nepoužívá (nabídkové nájmy v Krakově a Varšavě vzrostly v březnu a dubnu 2022 o 16,5 a 14 %, což HICP nezachytí).
-4. **Překryv s číselným prahem:** korelace nad 0,7 mezi dvěma faktory = sloučit, nebo jeden očistit; 0,5–0,7 = uvést společnou část. Složená proměnná postavená z jiného faktoru je zakázaná (výstavba „proti potřebě“ obsahovala přírůstek lidí). Automatická kontrola počítá korelace a inflaci rozptylu.
-   - *(doplněno ve v1.2)* Očišťuje se faktor, který je v příčinném řetězci později (přírůstek lidí od výplaty: bohaté země lákají lidi; poučení 1).
-   - *(doplněno ve v1.3; opraveno po nezávislé kontrole 13. 10. 2026)* Očištění platí pro výběr faktorů a pro podíl na
-     rozdílech mezi zeměmi. **Body kol, místo v kole a výklad pro diváka berou hodnotu tak, jak je.** Je to **výchozí
-     volba analytika, kterou Ondřej může změnit** (oddíl 6). Opírá se o Ondřejovu větu z 13. 10. 2026 „U Bulharska je
-     jednoznačný faktor úbytek obyvatel a velký rezervoár bytů“. Jeho věta z téhož dne „U změny počtu obyvatel to
-     potřeba není. Tam stačí trend poslední doby…“ se týká toho, že se přírůstek lidí nedělí na to, co země měla na
-     začátku, a co přibylo (krok 7.4); o očištění Ondřej nerozhodl. Očištěná hodnota by divákovi ukázala nesmysly
-     (Rumunsko by za úbytek 6 % lidí body ztrácelo, Švýcarsko za přírůstek 16 % body získávalo).
-     - **Kdy se čekaný výsledek nemění:** (a) faktor, o který se očišťuje (u bydlení výplata), je ve stejném výpočtu
-       a jeho síla se odhaduje z dat ve stejném výpočtu; (b) očištění je přímka v téže podobě, v jaké ten faktor do
-       výpočtu vstupuje (u výplaty v `logaritmu`); (c) obě podoby mají stejné země a stejná data. Pak se síla
-       očištěného faktoru nemění, síla výplaty se odhadne bez části, kterou přináší pohyb lidí (u bydlení na cenu 0,53
-       místo 0,75; *opraveno po druhé nezávislé kontrole 14. 10. 2026: po řecké opravě 0,45 místo 0,67*), změní se
-       rozdělení bodů mezi výplatu a lidi a typická země, se kterou se srovnává (u bydlení o 3,0 bodu u všech zemí),
-       a čekaný výsledek i čekaná místa zůstanou stejné. Když síla výplaty pochází zvenku (ze
-       studií), nebo se očišťuje jinak, čekaný výsledek se změní a obě podoby se musí přepočítat. Hlídá to automatická
-       kontrola (krok 10.3).
-     - **Obě podoby výpočtu:** pořadí kol a příznak „menší než chyba měření“ se spočítají v obou podobách a musí v nich
-       platit; když se liší, podklad to řekne. U bydlení (`kola_koncept.py`, 13. 10. 2026) je pořadí kol v obou
-       podobách stejné, jen jistota, že změna počtu obyvatel je před zásobou bytů, je tak, jak je, 97 % a v očištěné
-       podobě 61 %. Příznak se liší: změna počtu obyvatel má tak, jak je, obvyklý vliv 7,2 bodu, očištěná 4,0 bodu,
-       tedy méně než chyba měření výsledku (5 %). *(opraveno po druhé nezávislé kontrole 14. 10. 2026: výpočet ze 14. 10.
-       má jistotu 99 % tak, jak je, a 83 % v očištěné podobě; příznak se liší stejně, 7,2 proti 4,0 bodu. Podle
-       pravidla 6 má proto změna počtu obyvatel stav „doložený svědky“, ne „potvrzený daty“.)*
-     - **Podíl na rozdílech** neočištěného faktoru může vyjít záporný (faktor rozdíly zmenšuje: bohaté země lákají lidi
-       a to jim bydlení zdražuje; u bydlení −15,0 %, očištěný +11,8 %). Co o velikosti vlivu uslyší divák, je otevřená
-       otázka 2 (dramaturgie); návrh je podíl na obvyklém vlivu (slovník), ne podíl na rozdílech. *(Ondřej 13. 10. 2026
-       v noci mluví u čisté výplaty o „cca 50 %“ rozdílů. To odpovídá podílu, který výplata vysvětlí sama, 49,1 %;
-       průměr přes všechna pořadí by v podobě tak, jak je, dal 72,4 %, protože přírůstek lidí rozdíly zmenšuje. Pro
-       nejsilnější kolo se proto říká podíl, který vysvětlí samo.)* *(opraveno po druhé nezávislé kontrole 14. 10. 2026:
-       čísla ze 14. 10. jsou −15,8 % a +11,5 %, výplata sama 53,6 % a průměr přes pořadí 79,3 %. Že se u nejsilnějšího
-       kola říká podíl, který vysvětlí samo, je jen návrh pro otevřenou otázku 2, ne pravidlo; u výplaty se podává ve dvou
-       částech, početně a ekonomicky, slovník „podíl rozdílů, který faktor vysvětlí sám“. Ondřejův odhad „cca 50 %“ tak
-       smí zaznít, když se odliší početní a ekonomický účinek.)*
-   - *(upřesněno ve v1.2)* **Jeden mechanismus = jeden faktor.** Složená proměnná spočítaná z jiného faktoru zůstává zakázaná. Dovolené je měřit jeden mechanismus po složkách, které mají sílu z jednoho rámce a nepočítají totéž dvakrát: u bydlení „lidé na byt“ (studie: +1 % lidí = ceny +1,5 %, +1 % bytů = ceny −1,5 %) se skládá ze zděděné zásoby a výstavby (nabídka) a z přírůstku lidí (poptávka); každá složka je změřená zvlášť, síla každé se ověří testem přenosu (krok 4.3) a žádná se nepočítá podruhé uvnitř jiné (proto „byty na obyvatele dnes“ s odečteným přírůstkem lidí nesmí stát vedle přírůstku lidí).
-5. **Obrácený směr nejdřív ověřit v datech:** korelace faktoru s výchozí úrovní výsledku a s jeho změnou. Je-li doložený, pro úroveň se použije měřítko, které cenám předchází (strukturální, nebo před obdobím), a tok za horizont jde jen do testu vývoje. Není-li doložený, tok za horizont smí do testu úrovně s označením „obrácený směr v datech neprokázán“.
-6. **Zdroj s odkazem, rok a pokrytí** u každého údaje; chybějící země ze srovnatelného zdroje, jinak příznak.
-7. **Okno a výchozí rok předem** podle mechanismu; povinná citlivost na sousední okno a jiný výchozí rok; když vliv stojí na volbě roku, řekne se to.
-8. **Stejná geografie jako výsledek:** měří-li výsledek města, faktor se měří i pro tatáž města (kraje), ne jen za celou zemi.
-9. **Štítek páky:** dané / vystavené / pomalu ovlivnitelné / řiditelné; u pravidel rok zavedení a změn.
-10. **Data kratší než horizont:** faktor nemůže být „potvrzený daty“, jen „částečně potvrzený (data pokrývají X z Y let)“.
-11. *(nové ve v1.2)* **Časový profil faktoru.** U každého toku se **předem** podle studií o rychlosti odezvy zapíše, jak rychle výsledek reaguje a jak dlouho účinek trvá, a z toho váhy let podle stáří (poločas). Průměr za celý horizont dává stejnou váhu roku před 15 lety i loňskému roku; to sedí jen tam, kde se účinek nevstřebává.
-   - **Bydlení:** nájmy reagují na příliv lidí během měsíců (Varšava a Krakov 2022: lidí přibylo 15 a 23 %, nabídkové nájmy vzrostly o 14 a 16,5 % za dva měsíce), ceny za jeden až tři roky, výstavba dorovná za pět až deset let. Zkouška na 27 zemích (`CASOVY_PROFIL.md`): přírůstek posledních 5 let působí na 1 bod asi dvakrát až třikrát silněji než přírůstek 2010–2020 (jen 88–89 % opakování bootstrapu, pod hranicí náhody), váhy podle stáří zmenší nevysvětlené rozdíly asi o 5 % a nejlepší poločas se liší podle vzorku (10 let celá liga, 5 let bez Portugalska a Dánska). **U bydlení se profil nezapsal předem**, proto v analýze zůstává přírůstek za 15 let rovnoměrně a váhy podle stáří jsou jen citlivost (Litva a Portugalsko: odchylka asi na polovinu); v další epizodě se profil zapíše předem ze studií.
-   - **Jiné ukazatele:** profil může být opačný. Kouření působí na zdraví se zpožděním 20–30 let, schodky se v dluhu hromadí. Pravidlo je stejné: profil podle mechanismu a studií, zapsaný předem.
-   - **Zkouška:** porovná rovnoměrný průměr, předem určený profil a jen poslední roky. Použije se předem určený profil, pokud mu data neodporují nad hranicí náhody. Hledat v datech nejlepší poločas je zakázané (bylo by to další hledání v datech, pro které by musela platit hranice pro celý seznam).
-
-#### Krok 4. Doklady o síle vlivu
-
-1. **Úroveň (srovnání zemí):** podíl na rozdílech ve třech podobách, síla účinku, stálost znaménka při vynechání každé země. **Hranice náhody permutací:** výsledek se zpřehází mezi zeměmi a zopakuje se celý výběr ze skutečné matice kandidátů (ne náhodný šum); hypotézy zapsané předem se srovnávají s hranicí pro jednoho kandidáta, ostatní s hranicí pro celý seznam.
-2. **Vývoj v čase (opravený test):** změna ukazatele za horizont podle faktoru změřeného na začátku. Výchozí stav se měří **proti průměru z let před obdobím** (např. 2000–2009), ne proti průměru, do kterého spadá i sledované období (dřívější test byl tím zčásti mechanický: náhodné řady bez návratu k průměru daly stejnou souvislost). Model se uvádí s výchozím stavem i bez něj; hranice náhody se simuluje na stejně upravených náhodných řadách. Test vývoje běží na stejném ukazateli jako úroveň, nebo se náhrada výslovně označí a zdůvodní.
-   - *(doplněno ve v1.2)* **Povinná podoba se sbližováním:** k výchozímu stavu se přidá výchozí úroveň příjmu, protože chudší země měly rychlejší růst a každý „východní“ faktor by jinak ve vývoji zdánlivě vyšel (poučení 3). Svědek „vývoj“ (krok 5) bere tuto podobu.
-   - *(nové ve v1.2)* **Panel uvnitř zemí:** roční změna výsledku (nebo jeho náhrady) podle změny faktoru v předchozích letech, s pevnými efekty zemí (odstraní trvalé rozdíly a vlastní tempo země) a let (odstraní společné šoky, např. sazby v eurozóně), interval z bootstrapu přes země. Dvě povinné pojistky: **časování** (změna ročního průměru výsledku leží mezi polovinou předchozího a polovinou daného roku, takže ji vysvětluje změna faktoru v předchozím roce) a **placebo** (budoucí změna faktoru nesmí „působit“; když působí, souvislost vytváří obrácený směr nebo společná příčina a panel se nepočítá). Bydlení: u přírůstku lidí panel placebem neprošel (minulý přírůstek +0,7 % cen, v rámci náhody; budoucí +2,7 %, lidé míří tam, kde se daří); u úroků prošel (sazba hypoték o 1 bod vyšší = ceny za dva roky −2,7 %, interval −5,3 až −1,6; budoucí změna sazby +0,3 %, v rámci náhody).
-   - *(nové ve v1.2)* **Přirozený pokus** (např. příliv uprchlíků 2022) se počítá jen tehdy, když jde oddělit od souběžných šoků; v celostátních ročních datech ligy to u uprchlíků nejde (podíl uprchlíků souvisí s inflací 0,58 a po její kontrole účinek zmizí).
-   - *(doplněno ve v1.2)* U faktoru, na který výsledek zpětně působí i v čase (výstavba roste po zdražení se zpožděním), je svědek „vývoj“ nespolehlivý stejně jako srovnání zemí.
-3. **Studie a ekonomové:** síla účinku ze studií se smí převzít jen při splnění **čtyř podmínek přenosu**: (a) proměnná je u nás měřená stejně jako ve studii; (b) studie měří rozdíly úrovně mezi jednotkami, nebo mechanismus působí na úroveň; (c) účinek vstupuje v tvaru, jaký studie uvádí (u nepružné nabídky násobení s růstem poptávky, ne prostý součet); (d) **test přenosu**: rozptyl zbytku po odečtení příspěvků ze studií nevzroste a znaménko souhlasí s testem vývoje. Jako kontrola souladu se počítá i odhad, který spojí střed a rozpětí ze studií s našimi daty (apriorní odhad zpřesněný daty): leží-li výsledek mimo rozpětí studií, je to rozpor.
-   - *(upřesněno ve v1.2)* **Protokol podmínek (a)–(c):** (a) „ano“ = stejná proměnná a jednotka; „zčásti“ = stejný mechanismus, jiné měření (byty na domácnost proti bytům na obyvatele, disponibilní příjem proti čisté mzdě), síla smí do modelu s širším rozpětím; „ne“ = jiná proměnná (podíl bytů v krátkodobém pronájmu proti nocím turistů), síla ne. (b) „ano“ = studie měří rozdíly úrovně, nebo mechanismus působí na úroveň (lidé na byt, kapitalizace sazeb a daní, příjem); „ne“ = jen přechodný nebo objemový účinek (dočasný šok sazeb, počet prodejů). (c) „ano“ = stejný tvar (pružnost v `logaritmech`); „zčásti“ = přibližný (procentní body proti procentům); „ne“ = účinek podmíněný něčím, co model nemá. Podmínky (b) nebo (c) „ne“ = studie měří jinou otázku a mlčí; sílu smí studie dát jen při (a) „ano“ nebo „zčásti“. Protichůdné studie se zapisují vedle (např. studie Komise s kladným znaménkem investic do bydlení, kterou autoři sami vykládají obráceným směrem).
-   - *(přepracováno ve v1.2 po nezávislé kontrole)* **Test přenosu (d) s hranicí náhody:** síla ze studií se dosadí pevně a hodnoty faktoru se tisíckrát přehází mezi zeměmi. Výsledek je jeden ze tří: **síla sedí** (čekaný výsledek s faktorem sedí na skutečnost lépe než bez něj a lépe než u 95 % přeházení), **směr sedí, síla přestřelená** (skutečné hodnoty jsou lepší než 95 % přeházení, ale čekaný výsledek s nimi sedí hůř než bez nich; síla ze studií pak do čekaného výsledku nesmí a bere se z dat ligy nebo ze spojeného odhadu), **mlčí** (nic nad náhodu). Zkouší se v celé lize i bez zemí s vadou měření a ve sadě s ostatními faktory se silou zvenku, **vynecháním faktoru po jednom** (srovnání se samotnou výplatou by schovalo faktor, který čekaný výsledek kazí). Bydlení: přírůstek lidí — síla sedí (čekaný výsledek sedí o 27 % lépe, náhodně tak dobře 0,6 % přeházení); zděděná zásoba bytů — směr sedí, síla přestřelená (čekaný výsledek sedí o 18–23 % hůř, ale lepší než 95 % přeházení; data ligy dávají −0,42 % cen a −0,60 % nájmů na 1 % bytů proti −1,5 a −1,0 ze studií); výstavba 2010–2024 — mlčí (náhodně stejně dobře 47–58 % přeházení); úroky — mlčí.
-   - *(nové po druhé nezávislé kontrole 14. 10. 2026)* **Síla, se kterou čekaný výsledek sedí hůř, se nepřebírá ani při výsledku „mlčí“.** „Mlčí“ znamená jen, že srovnání zemí nic neprokázalo. Když přitom čekaný výsledek se silou ze studií sedí hůř než bez ní (v celé lize, nebo bez zemí s vadou měření), síla ze studií se nepoužije a bere se síla z dat ligy (v limitu tří sil z dat, krok 6.1), nebo spojený odhad. Když čekaný výsledek se silou ze studií sedí lépe, jen ne nad náhodu (úroky), síla ze studií se převzít smí (krok 6.2). Výpočet vypisuje zdroj síly podle výsledku testu, ne pevným textem.
-     - **Bydlení po řecké opravě (14. 10. 2026):** zásoba bytů mlčí (náhodně stejně dobře 11 % přeházení, bez Portugalska a Dánska 8 %), ale čekaný výsledek se silou ze studií sedí o 42 % hůř. Proto síla z dat ligy: na ceny skoro nulová (−0,02, znaménko se překlopí po vynechání kterékoli z osmi zemí), na nájmy −0,61. Se silou ze studií by zásoba byla druhé kolo a kola by vysvětlila 52,8 % rozdílů místo 68,4 %.
-     - **Ostatní:** výstavba mlčí (38–47 %); přírůstek lidí: síla sedí (0,3 %); úroky mlčí (13 %), ale čekaný výsledek se silou ze studií sedí o 4,7 % lépe.
-4. **Doplňkové zkoušky** před větou „neukázal se“: na složkách výsledku (koupě, nájem), na jiných projevech (přelidnění, mladí u rodičů, s vědomím, že jsou zčásti výsledkem), na výsledku zprůměrovaném za dva až tři roky (fáze cyklu).
-
-#### Krok 5. Rozhodnutí podle svědků, síla důkazu a soulad s ekonomy (přepracováno ve v1.2)
-
-**Proč (12. 10. 2026):** ve verzi 1.1 rozhodovala o zařazení hlavně zkouška v datech 27 zemí. Ta u řady faktorů ze své podstaty nic nepozná: 27 zemí unese spolehlivě jeden až dva silné faktory, hranice náhody roste s počtem poctivě zkoušených kandidátů, zásluhu za společnou část bere faktor, který vstoupí dřív, a nabídka se mezi zeměmi schová za poptávku. Pravidla proto opakovaně vyřadila faktory, které se pak ukázaly jako důležité (výstavba 10. 10., zásoba bytů 11. 10.) a odporovala zadání „vybrat všechny faktory, které mají vliv“. Rozbor: `10_documents/active/2026-10-12_system_proti_zapomenutym_faktorum/PRAVIDLA_VYBERU.md`.
-
-**Svědci.** U každého kandidáta z kroku 2 vypoví pět svědků; mechanismus je podmínka. Výpovědi skládá a rozhoduje `05_epizode_packs/_skills/analyza-pricin-regiony/svedci.py` (stejný kód pro každý ukazatel).
-
-| Svědek | Odkud | Podporuje, když | Odporuje, když | Nespolehlivý (jeho výpověď se nepočítá), když |
-|---|---|---|---|---|
-| studie | krok 2.4, 4.3 | účinek dokládají a podmínky přenosu (b) a (c) nejsou „ne“ | studie ukazují opačný směr | měří jinou otázku (podmínka (b) nebo (c) „ne“) |
-| ekonomové v lize | krok 2.2–2.3, přísný protokol, **jen výroky o téže otázce jako ukazatel** (u úrovně o úrovni; výroky o vývoji se zapíšou, ale nepočítají) | kategorii řadí mezi tři hlavní příčiny aspoň dvě nezávislé rodiny zdrojů v aspoň třetině zemí nebo v pěti zemích (pro celou ligu); v méně zemích jen pro jmenované země | aspoň dvě rodiny výslovně popírají aspoň v pěti zemích a ve víc zemích, než kolik jich kategorii uvádí | volné zmínky (jedna instituce, šablona) se nepočítají vůbec |
-| srovnání zemí ligy | krok 4.1 a 4.3 | u faktoru se silou zvenku: test přenosu s hranicí náhody („síla sedí“, nebo „směr sedí, síla přestřelená“); u faktoru bez síly zvenku: odhad z dat nad hranicí náhody (pro jednoho kandidáta jen se zápisem předem v commitu, jinak pro celý seznam), i bez zemí s vadou měření, **se stálým znaménkem po vynechání každé země**, směr podle mechanismu | totéž s opačným směrem (u testu přenosu: skutečné hodnoty sedí hůř než 95 % přeházení) | obrácený směr (krok 3.5), propletení s faktorem v modelu spočítané z dat (korelace při stejné výplatě aspoň 0,5, krok 3.4; nebo překlopený závěr v registru), vadné měření faktoru nebo výsledku (krok 1.4, 3.3), jiná geografie (krok 3.8) |
-| vývoj v čase | krok 4.2 | opravený test se sbližováním nad hranicí (pro jednoho kandidáta jen se zápisem předem), nebo panel uvnitř zemí se správným časováním, intervalem bez nuly **a prošlým placebem**, směr podle mechanismu | totéž s opačným směrem | řady kratší, než trvá odezva mechanismu (krok 3.11), náhrada neměří totéž (HICP nájmy), obrácený směr i v čase, souběžné šoky v přirozeném pokusu |
-| případy zvenku | krok 2.8 | epizoda v zemi ligy doložená vnější analýzou se srovnáním (jiné země, kontrolní skupina, trend) | totéž s opačným směrem | bez srovnání; případ rozebraný studií se počítá jen jako studie; **případ spočítaný z dat ligy je svědek dat ligy, ne zvenku** |
-
-**Rozhodnutí** (jedno pravidlo pro všechny ukazatele; liší se jen vstupy):
-1. **Bez mechanismu** se faktor nezařadí; objev z dat bez mechanismu zůstává hypotézou, dokud se mechanismus nenajde.
-2. **Odporuje-li spolehlivý svědek**, je to spor a jde postupem při rozporu (níže). Nevyřešený spor jde Ondřejovi, jen když citlivostní test ukáže hmotný dopad (brána eskalace).
-3. **Zařazen:** pro celou ligu ho podporují aspoň dvě nezávislé rodiny spolehlivých svědků, z toho aspoň jedna zvenku (studie, ekonomové, případy), a nikdo spolehlivý neodporuje. Podpora jen z dat ligy (srovnání a vývoj) nestačí: obojí stojí na stejných 27 zemích.
-4. **Zařazen jako objev z dat** (cesta z verze 1.1 zůstává, i pro kandidáty zapsané předem): odhad z dat nad hranicí pro celý seznam, i bez zemí s vadou měření, se stálým znaménkem, spolehlivý, vývoj neodporuje.
-5. **Zvláštnost zemí:** v konkrétní zemi ho podporují aspoň dvě rodiny, z toho aspoň jedna zvenku (např. ekonomové v té zemi a studie, které pro ni platí); počítá se země po zemi, ne sjednocením zemí různých svědků. Rozebere se u těch zemí (krok 7.3) a do čekaného výsledku nevstupuje.
-6. **Hypotéza:** ostatní. Uvede se mezi vedlejšími faktory s tím, který svědek chybí („co by rozhodlo“); síla jen s označením („podle studií by posouval o X %, v lize neověřeno“, „podle dat ligy náznak, zvenku nepotvrzeno“).
-
-**Na čem pravidlo stojí.** Pojistky z verze 1.1 zůstávají, protože bez nich by svědci vypovídali špatně. Zkouška vypnutí na bydlení (`SVEDCI.md`):
-
-| Pojistka (krok verze 1.1) | Co by se stalo bez ní |
-|---|---|
-| hranice náhody pro celý seznam (4.1, pravidlo 7) | jako objevy z dat by prošly čtyři průzkumné proměnné: dvě jiná měření přírůstku lidí, úspory 2020–2024 (souběžné s výsledkem) a byty na 1 000 obyvatel 2021 včetně prázdných (o 0,01 bodu) |
-| zápis předem v commitu (2.1, 2.7) | úspory by ve srovnání zemí prošly hranicí pro jednoho kandidáta (13,7 % proti 8,4 %), ačkoli se na stejných datech zkoušely dřív, než se zapsaly (hranice pro celý seznam 18,1 %) |
-| přísný protokol ekonomů jen o úrovni (2.2–2.3) | ekonomové by podporovali 9 z 12 kategorií pro celou ligu (s ním jen nabídku bytů) a daně i stavební náklady by se zařadily podle šablon |
-| obrácený směr (3.1, 3.5), u vývoje placebo | panel přírůstku lidí by se počítal jako svědek, ačkoli budoucí přírůstek „působí“ víc (+2,7 %) než minulý (+0,7 %, v rámci náhody) |
-| aritmetika není příčina (1.2, pravidlo 4) | přirážka ceny nad cenou stavby (obsahuje cenu bytu) by „vysvětlila“ 34,6 % rozdílů a stala se hlavním faktorem |
-| jeden mechanismus = jeden faktor (3.4, pravidlo 5) | nabídka bytů by vstoupila až šestkrát a poptávka dvakrát (bilance bytů a lidí obsahuje přírůstek lidí) |
-| srovnatelné měření (1.4, 3.3) | rozhodnutí by se nezměnila (surový přírůstek lidí 17,7 %, srovnatelný 18,3 % rozdílů), ale země by měly špatná čísla: Polsko −4,0 % místo −1,4 %, Slovensko +0,5 % místo +3,0 % |
-| stálost znaménka po vynechání země (4.1) | srovnání zemí by „vypovídalo“ i o výstavbě, dani z nemovitostí a sociálních bytech, u kterých se znaménko po vynechání jedné země překlopí |
-| nejvýš tři síly z dat (6.1) | s deseti silami z dat se chyba předpovědi vynechané země zvětší ze 16–17 na 22 log. bodů a u šesti faktorů se po vynechání jediné země překlopí znaménko |
-| test přenosu (4.3 d), nově s hranicí náhody a vynecháním po jednom | se silou nabídky ze studií by čekaný výsledek seděl hůř (rozptyl +23 %) a překroutila by země: Polsko −14 %, Slovensko −18 %, Slovinsko −18 %, Rumunsko −19 %, Portugalsko +42 %, Chorvatsko +25 % |
-| opravený test vývoje se sbližováním (4.2) | bez sbližování projde šest faktorů, se sbližováním dva; neopravený test z 11. 10. souhlasil i s náhodnými řadami |
-| registr závěrů a detektory (10.2a–b) | překlopení závěru o zásobě bytů (11. 10. „nic“, 12. 10. „vysvětluje střední Evropu“) by zůstalo bez povšimnutí |
-
-**Stav síly důkazu a slova** (upraveno ve v1.2; navazuje na pravidlo 10):
-
-| Stav | Kdy | Co se uvádí |
-|---|---|---|
-| **potvrzený daty** | zařazen a srovnání zemí podporuje nad hranicí; síla z dat (nejvýš tři faktory, krok 6.1) *(opraveno po druhé nezávislé kontrole 14. 10. 2026: a obvyklý vliv je nad pásmem chyby výsledku v obou podobách výpočtu, krok 3.4 a pravidlo 6; jinak nejvýš „doložený svědky“)* | podíl na rozdílech (tři podoby, interval z bootstrapu), síla účinku, příspěvky zemí |
-| **doložený svědky** | zařazen bez podpory srovnání zemí; síla od nejspolehlivějšího svědka se silou (studie, panel, vývoj) s rozpětím | „podle studií posouvá o X %; ekonomové ho v N zemích řadí mezi hlavní příčiny; srovnání zemí ho nezměří, protože…“; bez podílu na rozdílech ligy |
-| **zvláštnost zemí** | rozhodnutí 5 | rozbor u jmenovaných zemí s institucemi a čísly |
-| **hypotéza** | rozhodnutí 6 | mechanismus, chybějící svědek, síla jen s označením |
-
-Dřívější stavy „doložený studiemi“ a „doložený uvnitř zemí, mezi zeměmi neměřitelný“ se převádějí podle svědků: faktor, který dřív stál „bez procenta“, dostane sílu od studie s podmínkou (a) „ano“ nebo „zčásti“, pokud test přenosu nehlásí přestřelenou sílu; jinak sílu z dat ligy (nejvýš tři faktory), nebo zůstane bez procenta s vysvětlením.
-
-**Rozpor s ekonomy** (definice z verze 1.1; ekonomové se počítají přísným protokolem): kategorie, kterou ekonomové řadí mezi tři hlavní příčiny **úrovně** aspoň v třetině zemí, má v datech ligy (a) nulový nebo opačný podíl na úrovni, (b) opačné nebo nestálé znaménko v opraveném testu vývoje a (c) nesplní podmínky přenosu. Rozpor se posuzuje zvlášť pro úroveň a pro vývoj; shoda ekonomů o vývoji není rozporem s nulovým podílem na úrovni. **Soulad** = znaménko souhlasí a faktor se objeví aspoň v jednom doložení.
-
-Postup při rozporu: (1) najít důvod (obrácený směr, měření, horizont, souběh s jiným faktorem, jiná otázka); (2) opravit měření, nebo použít vrstvu studií; *(doplněno ve v1.2)* nebo doložit, že odporující svědek je u tohoto faktoru nespolehlivý (s daty, ne odhadem), a rozhodnout znovu; (3) zbylý rozpor jde Ondřejovi jako otázka s rozborem, jen s hmotným dopadem podle citlivostního testu. Nikdy se nesmí napsat, že faktor nepůsobí, jen proto, že se neukázal ve srovnání zemí.
-
-#### Krok 6. Výpočet
-
-1. **Datová vrstva:** z dat se společně odhadují **nejvýš tři faktory** (s 27 zeměmi 10–15 zemí na faktor). Výjimka pro čtvrtý jen s permutační hranicí, kterou překročí. Podíl na rozdílech: sám, přidaný jako poslední, `Shapley`, společné části dvojic; **90% interval z bootstrapu** (1 000 opakování přes země). Nejmenší a největší hodnota z vynechání země slouží jen jako kontrola znaménka.
-   - *(doplněno ve v1.2)* Síla z dat se odhaduje jen u zařazených faktorů (krok 5), u kterých je srovnání zemí spolehlivé, v pořadí podle příčinného řetězce (výplata první). Odhad z dat se porovná s rozpětím studií (apriorní odhad zpřesněný daty, krok 4.3): opačné znaménko s intervalem, který nulu nezahrnuje, je rozpor (svědek „srovnání“ odporuje); stejné znaménko mimo rozpětí je rozpor v síle, který rozhoduje jen o tom, odkud se síla vezme. U bydlení: přírůstek lidí z dat +2,6 % na bod nad rozpětím studií 1–2 % (síla ze studií, test přenosu sedí); zásoba bytů z dat −0,42 a −0,60 proti −1,5 a −1,0 ze studií (síla z dat, studie přestřelené). *(opraveno po druhé nezávislé kontrole 14. 10. 2026: po řecké opravě −0,02 a −0,61; síla na ceny je mezi zeměmi neprůkazná a se silou ze studií sedí čekaný výsledek o 42 % hůř, proto síla z dat podle kroku 4.3)*
-2. **Vrstva studií:** příspěvky „podle studií“ se počítají zvlášť a do podílů datové vrstvy se nesčítají. Součet podílů datové vrstvy a zbytku dává 100 %.
-   - *(doplněno ve v1.2)* **Síla ostatních zařazených faktorů** se bere od nejspolehlivějšího svědka, který ji dává pro naši proměnnou: studie s podmínkou (a) „ano“ nebo „zčásti“, pokud test přenosu nehlásí přestřelenou sílu; jinak data ligy (v rámci limitu tří sil z dat) nebo spojený odhad; vždy s rozpětím. Síla ze studií data nespotřebuje: model tak unese osm až deset faktorů, když většina má sílu zvenku a data ligy jen kontrolují směr a sílu (test přenosu s vynecháním po jednom). *(opraveno po druhé nezávislé kontrole 14. 10. 2026)* „Test přenosu nehlásí přestřelenou sílu“ znamená, že čekaný výsledek se silou ze studií nesedí hůř, ani když test „mlčí“ (krok 4.3). Zdroj síly a jeho důvod se ve výstupu vypisují podle výsledku testu.
-   - *(doplněno ve v1.2)* Zařazený faktor bez síly pro naši proměnnou (studie měří něco jiného, data nestačí) zůstane bez procenta s vysvětlením a stane se cílem rešerše („chybí podíl bytů v krátkodobém pronájmu pro 27 zemí“).
-3. **Čekaný výsledek po kolech:** sekvenční rozklad (`Gelbach`): po každém kole se ukáže, jak se čekaný výsledek posune a jak se změní zbytek každé země. Divák tak neuslyší o téže zemi opačné věci (dřív: Irsko o 23 % hůř, než se podle výplaty čekalo, ale o 10 % lépe, než se čekalo podle dvou faktorů). *(Ondřej 13. 10. 2026 v noci: čekaný výsledek po kolech se počítá dál, ale jen pro analytika; divák ho neuslyší vůbec, takže ani opačné věci o téže zemi.)*
-4. **Složky a složený výsledek:** příspěvek faktoru k výsledku se spočítá jako rozdíl skutečného výsledku a výsledku, kdyby faktor měl v obou složkách hodnotu měřítka ligy.
-5. **Zbytky zemí:** zbytek nad typickou odchylkou modelu (orientačně ±15 %) spouští šetření v tomto pořadí: srovnatelnost výsledku u země (pásmo chyby), doložená specifická příčina, jinak výslovně „nevysvětleno“. Zbytek uvnitř pásma chyby se nevykládá.
-
-#### Krok 7. Hlavní faktory, vedlejší faktory a zvláštnosti zemí
-
-1. **Hlavní faktory (nejvýš pět, stejné pro všechny země; přepracováno ve v1.2):** ze zařazených faktorů (krok 5, rozhodnutí 3 a 4) se vybere nejvýš pět s největším **obvyklým vlivem na výsledek** (medián absolutních příspěvků zemí v procentech, s intervalem; dřív `typický posun`). O tom, kdo je hlavní, rozhoduje velikost vlivu, ne cesta, kterou faktor prošel. *(doplněno po nezávislé kontrole 13. 10. 2026)* Každý zařazený faktor, který patří mezi pět s největším obvyklým vlivem, je kolo (po rozdělení podle kroku 7.4 obě jeho části); z kol smí vypadnout jen Ondřejovým rozhodnutím o dramaturgii, zapsaným doslovnou citací v oddílu 6, a jeho body pak zůstávají v čekaném výsledku (krok 7.5). Zařazený faktor bez procenta se řadí za faktory s procentem podle váhy ekonomů (záložní pravidlo verze 1.1). Faktor, jehož obvyklý vliv je menší než medián pásma chyby výsledku (pravidlo 6; u bydlení 5 %), dostane příznak „menší než chyba měření“; u bydlení to podle výpočtu ze 14. 10. 2026 (`kola_koncept.py`, tabulka `KOLA_KONCEPT_TABULKA.md`) jsou zásoba bytů (2,2 bodu, ale Polsko zhoršuje o 11 a Slovensko o 9 bodů), úroky hypoték (1,8 bodu) a tempo výstavby (0,9 bodu); změna počtu obyvatel (7,2 bodu) ho dostane jen v podobě očištěné o výplatu (4,0 bodu, krok 3.4). *(opraveno po nezávislé kontrole 13. 10. 2026; výpočet z 12. 10. 2026 uváděl nabídku bytů ±3,9 %, u Polska a Slovenska o 15 %, a úroky ±1,6 %)* *(opraveno po druhé nezávislé kontrole 14. 10. 2026 po řecké opravě a výstavbě od sčítání 2011; výpočet ze 13. 10. uváděl zásobu 3,5 bodu, Polsko o 17 a Slovensko o 14 bodů a výstavbu 1,1 bodu)* S 27 zeměmi je čekaný stav dvě až tři kola potvrzená daty a zbytek doložený svědky; skill to musí říct, ne tlačit na pět potvrzených. **Když je zařazených pro celou ligu méně než pět**, skill to řekne a počet kol předloží Ondřejovi jako otázku dramaturgie; pátý se nedoplňuje zvláštností zemí ani hypotézou. **Kontrola souladu:** kategorie, kterou podle přísného protokolu ekonomové řadí mezi tři hlavní příčiny aspoň ve třetině zemí a která mezi hlavními faktory chybí, se zdůvodní podle kroku 5 (volné zmínky se nepočítají; analýza bydlení verze 3 je tu omylem počítala a nájemní bydlení tak dostala mezi hlavní).
-2. **Vedlejší faktory:** ostatní zařazené faktory podle obvyklého vlivu, pak zvláštnosti zemí, pak hypotézy (s tím, co by rozhodlo).
-3. **Zvláštnosti země:** faktor (i vedlejší, nebo typický jen pro jednu zemi), jehož příspěvek u země přesahuje typickou odchylku modelu, nebo který v dané zemi aspoň dvě instituce řadí mezi tři hlavní příčiny; rozebere se u ní. *(doplněno ve v1.2)* Patří sem i faktory s rozhodnutím „zvláštnost zemí“ (krok 5). Vyčnívá-li země v hlavním faktoru (aspoň jednu typickou odchylku od měřítka nebo pět nejlepších či nejhorších), rozebere se i hlavní faktor. *(doplněno po nezávislé kontrole 13. 10. 2026: typická odchylka a vyčnívající hodnota jsou vysvětlené ve slovníku; u hodnot faktoru je typická odchylka směrodatná odchylka 27 zemí kolem měřítka ligy. Tato definice platí i pro výklad hodnot v kroku 9a.3.)*
-4. **Rozklad faktoru na to, co země měla na začátku, a co přibylo za horizont (doplněno ve v1.3, Ondřej 13. 10. 2026;
-   opraveno po nezávislé kontrole 13. 10. 2026 a po druhé nezávislé kontrole 14. 10. 2026).** Ondřej: „…počet bytů na
-   tisíc obyvatel rozdělil na 2 faktory… z toho důvodu, že chceme vysvětlovat i to, co vlády, firmy a společnost dělají
-   dobře nebo špatně…“ Zařazený faktor se pro výklad rozdělí na dvě kola, **co země měla na začátku horizontu**
-   (`zděděný stav`; u bydlení byty, které země měla na začátku, podle sčítání 2011) a **co přibylo za horizont** (`tok`;
-   u bydlení dokončené byty 2010–2024, *od 14. 10. 2026 byty dokončené od dne sčítání 2011 do konce roku 2024*), jen
-   když platí všechny čtyři podmínky:
-   1. **Dnešní stav = stav na začátku + co přibylo − úbytky** (u bydlení dnešní byty = byty 2011 + dokončené byty −
-      zbourané a zaniklé byty; obdobně kapitál a investice, dluh a nové půjčky).
-   2. **Faktor není samotný ukazatel** ani jeho část (u ukazatele zadlužení se dluh takto nerozděluje, je to výsledek).
-   3. **Obě části se vejdou do pěti kol** (krok 7.1 a 7.5); jinak faktor zůstane celý.
-   4. **Části se nepřekrývají a mají stejný základ:** co přibylo, se počítá až od dne, ke kterému se měří stav na
-      začátku; obě části se vztahují ke stejnému počtu obyvatel; úbytky se odečtou, nebo se označí jako známá
-      nepřesnost.
-
-   - **Stejná síla na jednotku je předpoklad, ne zjištění.** Obě části dostanou sílu odhadnutou na jejich součtu podle
-     kroků 4–6 (byt je byt, ať je starý, nebo nový). Samostatný odhad části, která přibyla, bývá nestálý: u bydlení vyšla
-     síla výstavby na cenu +0,31 s 90% intervalem −1,04 až +1,93 a na nájem −1,34 s intervalem −2,82 až +0,19, tedy
-     u ceny s opačným znaménkem a v obou případech s nulou v intervalu. Proto jsou **povinné dvě citlivosti**:
-     (a) samostatný odhad obou sil z dat ligy (v limitu tří sil z dat, krok 6.1) a (b) síla odhadnutá jen ze stavu před
-     obdobím (u bydlení ze zásoby 2011), použitá pro obě části. U každé se zapíše, zda mění pořadí kol a čekaná místa.
-     U bydlení (`kola_koncept.py`, 13. 10. 2026) nemění pořadí kol ani jedna; samostatný odhad nemění ani čekaná místa,
-     síla jen ze zásoby (cena −0,34 a nájem −0,45 na 1 % bytů místo −0,33 a −0,61) posune o jedno místo čtyři země
-     (Německo, Francie, Irsko, Nizozemsko). Když citlivost změní pořadí kol nebo čekané místo země o víc než dvě místa,
-     analytik to zapíše do poznámek pro editora (krok 9a.7) a rozhodnutí jde branou eskalace. *(opraveno po druhé
-     nezávislé kontrole 14. 10. 2026)* Výpočet tato upozornění zapisuje sám (`kola_koncept.py`, oddíl „Do poznámek pro
-     editora“). Po řecké opravě a s výstavbou od sčítání 2011 vyšla samostatná síla výstavby na cenu +0,15 (interval
-     −1,15 až +1,45) a na nájem −1,45 (−3,09 až +0,03). Samostatný odhad dá výstavbu před úroky a posune Norsko o tři
-     místa (9. → 6.); síla jen ze zásoby (cena −0,03, nájem −0,45) dá úroky před zásobu a posune šest zemí nejvýš o dvě
-     místa. Obojí je v poznámkách pro editora.
-   - **Čekaný výsledek se rozdělením nemění** a výběr faktorů se kvůli němu neopakuje; změní se jen typická země, se
-     kterou se srovnává, u všech zemí o stejný počet bodů (u bydlení o 0,07 bodu; *14. 10. 2026: 0,04 bodu*). Body
-     zásoby a výstavby dávají dohromady body celé nabídky bytů; obojí hlídá automatická kontrola (krok 10.3). Body kola
-     s tím, co přibylo, se počítají z toho, o kolik to zvětšilo stav na začátku; divákovi se hodnota ukazuje v jednotce,
-     které rozumí (u výstavby dokončené byty na 1 000 obyvatel ročně). *(opraveno po druhé nezávislé kontrole
-     14. 10. 2026: na 1 000 obyvatel roku 2011, tedy na stejný základ jako zásoba; změnu počtu lidí ukazuje samostatné
-     kolo)*
-   - **Síla důkazu, páka a obrácený směr.** Část, která přibyla, nese stav důkazu spojeného faktoru s dovětkem
-     „samostatně v datech ligy neověřen“ (u výstavby: test přenosu samotné výstavby mlčí, náhodné přeházení sedí stejně
-     dobře ve 47–58 % případů, krok 4.3; *14. 10. 2026 po řecké opravě ve 38–47 %*). Štítek páky se bere z listu
-     měření (krok 3.9; u výstavby „pomalu ovlivnitelné“). *(opraveno po druhé nezávislé kontrole 14. 10. 2026; dřív
-     „U výstavby se vždy řekne obrácený směr z listu měření: kde je draho, víc se staví“)* Obrácený směr se
-     neopisuje z listu měření, ale ověří podle kroku 3.5. U bydlení ho data neprokazují:
-     - souvislost výstavby s výchozím stavem výsledku je 0,10 a s jeho změnou 0,09;
-     - s cenou při stejné výplatě a přírůstku lidí je −0,04 (hranice náhody asi 0,38);
-     - výstavba ale souvisí s přírůstkem lidí (0,51) a s výplatou (0,54).
-
-     Říká se proto: **víc se staví tam, kde lidí přibývá a mají vyšší výplaty, proto se výstavba mezi zeměmi schová
-     za poptávku.** Údaj „ano“ v listu měření se opraví. Má-li část, která přibyla, malý obvyklý vliv (u bydlení
-     1,1 bodu proti 3,5 u zásoby; *14. 10. 2026: 0,9 proti 2,2*), řekne se to otevřeně: stav mění jen pomalu.
-   - **Proč to verze 1.2 nerozdělila:** výstavba sama mezi zeměmi nic nevysvětlila (víc se staví tam, kde lidí
-     přibývá a mají vyšší výplaty, takže se výstavba schová za poptávku) a pravidlo „jeden mechanismus = jeden faktor“
-     ji spojilo se zásobou. Pro výběr faktorů to platí dál; rozdělení je výkladové. *(opraveno po druhé nezávislé
-     kontrole 14. 10. 2026; dřív se tu jako důvod uvádělo „kde je draho, víc se staví“, což data podle kroku 3.5
-     neprokazují)*
-   - **Výstavba od sčítání 2011 (opraveno po druhé nezávislé kontrole 14. 10. 2026; podmínka 4 je u bydlení
-     splněná):**
-     - dokončené byty se počítají od dne sčítání 2011 (v roce sčítání jen část roku po něm) do konce roku 2024;
-     - den sčítání je podle přehledu OSN, Irsko 10. 4. 2011, Francie 1. 1. 2011;
-     - výstavba je vůči zásobě podle téhož sčítání a v absolutních počtech, takže obě části mají stejný základ obyvatel;
-     - proti výstavbě 2010–2024 se body změnily nejvýš o 0,41 bodu a čekaný výsledek nejvýš o 0,39 bodu;
-     - čekaná místa se nezměnila.
-
-     Označené zůstávají tyto nepřesnosti:
-     - Belgie, Francie, Řecko a Itálie mají výstavbu ze sčítání 2021 (byty postavené 2011–2021, které v roce 2021
-       stály), prodlouženou stejným tempem do konce roku 2024;
-     - zbourané byty se u zemí s řadou dokončených bytů neodečítají;
-     - u Chorvatska je zásoba 2011 dopočtená ze sčítání 2021, výstavba proto od 1. 1. 2011;
-     - Británie má finanční roky, počítané poměrně podle dnů.
-   - **Známé nepřesnosti u bydlení** (stav 13. 10. 2026, od 14. 10. opravený podle předchozího bodu; podmínka 4 zatím splněná není; zapsané i ve výstupu): zásoba je ze sčítání 2011
-     a výstavba se počítá od roku 2010, takže byty dokončené v roce 2010 a v roce 2011 do dne sčítání jsou v obou
-     částech (překryv 2–19 % výstavby); výstavba je na obyvatele daného roku, zásoba na obyvatele roku 2011; u Belgie,
-     Francie, Řecka a Itálie je výstavba ze sčítání 2021 (byty postavené 2011–2021, které v roce 2021 stály, na
-     obyvatele roku 2021), protože jejich národní řady jsou povolené nebo zahájené byty; zbourané byty se u ostatních
-     zemí neodečítají; u Chorvatska je zásoba 2011 dopočtená ze sčítání 2021.
-   - **Zatím vyzkoušeno jen na bydlení.** Před použitím na jiný ukazatel (například kapitál a investice u mezd, dluh
-     a nové půjčky) se rozdělení musí stejně vyzkoušet: čtyři podmínky, obě citlivosti a automatická kontrola.
-5. **Pořadí kol a zemí v kole (doplněno ve v1.3; opraveno po nezávislé kontrole 13. 10. 2026).** Kola jsou všechny
-   zařazené faktory (krok 5, rozhodnutí 3 a 4) po rozdělení podle kroku 7.4, v pořadí od největšího obvyklého vlivu po
-   nejmenší, nejvýš pět (Ondřej 13. 10. 2026: „Pak bych postupoval od nejdůležitějšího faktoru po nejméně důležitý.“).
-   U bydlení (`kola_koncept.py`, 13. 10. 2026): čistá výplata 20,8, změna počtu obyvatel 7,2, zásoba bytů 3,5, úroky
-   hypoték 1,8 a tempo výstavby 1,1 bodu, tedy pět kol. *(Dřívější znění vyřadilo úroky z kol a dalo je mezi další
-   faktory zemí; nebylo to Ondřejovo rozhodnutí a odporovalo to kroku 7.1.)* *(opraveno po druhé nezávislé kontrole
-   14. 10. 2026: výpočet ze 14. 10. dává 22,4, 7,2, 2,2, 1,8 a 0,9 bodu ve stejném pořadí; tabulka
-   `KOLA_KONCEPT_TABULKA.md`)* Zařazený faktor smí z kol vypadnout jen
-   Ondřejovým rozhodnutím o dramaturgii zapsaným doslovnou citací v oddílu 6; jeho body pak zůstávají v čekaném výsledku,
-   který se počítá pro analytika, a scénář ho zmíní u zemí, kde hraje roli, jako faktor, který se jako kolo neukazuje.
-   U bydlení je to otevřená otázka 5; do rozhodnutí platí pět kol. *(Ondřej 13. 10. 2026 v noci)* Kola ukazují místo
-   země v kole a výklad hodnoty. Čekané místo po jednotlivých kolech zůstává jen v datech pro analytika a pořadí podle
-   prvního kola se nevydává za očekávaný výsledek. Nejsilnější kolo se zmíní hodně, ale ne jako předpoklad.
-   *(opraveno po druhé nezávislé kontrole 14. 10. 2026; dřív tu jako pravidlo stálo „i tím, kolik rozdílů mezi zeměmi
-   vysvětluje, u bydlení čistá výplata sama asi polovinu, 49,1 %“. Že se zmíní hodně a ne jako předpoklad, je Ondřejův
-   pokyn. Jak velký vliv se řekne, je otevřená otázka 2. Návrh: podíl rozdílů, který kolo vysvětlí samo (slovník;
-   u výplaty po řecké opravě 53,6 %), u výplaty ve dvou částech, početně a ekonomicky.)* Pořadí kol nese jistotu z převzorkování zemí (u bydlení výplata před lidmi
-   100 %, lidé před zásobou 97 %, zásoba před úroky 81 %, úroky před výstavbou 69 %); pod dvě třetiny se pořadí označí
-   jako nejisté. *(opraveno po druhé nezávislé kontrole 14. 10. 2026)* Výpočet ze 14. 10. dává 100, 99, 59 a 83 %;
-   zásoba před úroky je tedy nejistá. Štítek „nejisté“ je ve výstupu u každého takového pořadí a nejisté pořadí jde do
-   poznámek pro editora. Pořadí kol a jeho jistota se zapisují do registru závěrů (krok 10.2b), aby přepočet ohlásil
-   každé překlopení. V každém kole se země regionu řadí od hodnoty pro výsledek nejlepší po nejhorší (u úroků je
-   lepší vyšší sazba po odečtení inflace, protože drží ceny níž; kupující na hypotéku ale platí víc a podklad musí říct
-   obojí). Když „lepší“ znamená něco, co lidé jako úspěch nevnímají (úbytek obyvatel, drahá hypotéka), podklad to
-   výslovně označí, aby to scénář řekl citlivě. Místo v kole se počítá z hodnoty, kterou divák vidí, body z příspěvku;
-   když se pořadí podle hodnoty a podle bodů liší (stejný počet nových bytů přidá víc tam, kde je bytů málo), podklad
-   to vysvětlí jednou větou.
-
-#### Krok 8. Vývoj v čase a kroky zemí
-
-Pro každou zemi: vývoj ukazatele a faktorů za horizont proti měřítku ligy; kroky vlád, firem a institucí s datem a zdrojem; jak se vývoj po kroku změnil. Časová souvislost není důkaz; jako příčina se krok uvede jen s dokladem z kroku 4.
-
-**Pojistka 25. 10. 2026 (Ondřej): stavba výkladu země `vyklad/{KOD}.md`.**
-- **Oddíl 1 (výchozí stav, rozdané karty)** popisuje jen to, co země zdědila před začátkem hodnoceného období:
-  zděděnou strukturu ekonomiky (zemědělství, těžký průmysl, orientace výroby na trhy bývalého východního bloku),
-  vlastnictví v roce 1990 (například v Česku tvořily soukromé firmy méně než 5 % HDP, tedy stát vlastnil skoro vše),
-  předválečné bohatství, zděděný kapitál a vzdělání. U zemí bez plánované ekonomiky obdobně poválečné dědictví.
-- **Oddíl 2 (růst, tah země)** obsahuje všechna rozhodnutí od roku 1990: metody privatizace (kupónová privatizace,
-  prodej podniků cizincům), šokovou terapii, měnové krize a reakce na ně, investiční pobídky, vstup do EU a eura.
-  Transformace je tah země, ne rozdaná karta, i když se odehrála před rokem 1996.
-- **Oddíl 4 (další faktory), ceny:** u zemí, kde cenová hladina výrazně mění pořadí mezi eury a kupní silou (například
-  Polsko 69,9 % proti Slovensku 80,8 % průměru EU), uvede podklad vedle měnového režimu stručně i velikost vnitřního
-  trhu a konkurenci a soběstačnost v potravinách, každé se zdrojem; je to podklad pro krátkou zmínku a odkaz na
-  epizodu o cenové hladině, ne kolo.
-- Výklady zemí z 17.–18. 10. 2026 jsou podle starší stavby; při další revizi se přeskupí, obsah se nemaže.
-
-#### Krok 9. Výstup pro regionový systém
-
-Pro každý region (pořadí regionů určuje průběžné pořadí týmové soutěže):
-- **kola:** u každé země hodnota faktoru, měřítko ligy, místo v lize, místo v regionu, příspěvek a síla důkazu kola;
-- **čekaný výsledek po každém kole** a skutečný výsledek: hodnota, místo v lize a v regionu, rozdíl proti čekanému výsledku po posledním kole; *(Ondřej 13. 10. 2026 v noci: čekaný výsledek a čekané místo jsou jen v datech pro analytika, do podkladu pro scénář ani do hlasu nejdou; skutečný výsledek a místo ano, krok 9a)*
-- **zvláštnosti zemí** a **kroky v čase**;
-- **co říkají ekonomové** v každé zemi, stručně, a kde se s daty rozcházejí.
-- **přehledová stránka (doplněno 12. 10. 2026 podle Ondřejových připomínek; poučení 11, 15, 17, 19):** pořadí ligy s hlavní příčinou každé země; karta každé země, která začíná hlavní příčinou napsanou analytikem jako odpověď na přímou otázku (co pořadí určuje, nejpravděpodobnější příčina se jmenovanými institucemi a čísly, síla dokladu, podíl měření) a pokračuje rozborem s čísly; **grafy faktorů** podle součástky `05_epizode_packs/_skills/analysis-review/grafy_faktoru/` (každý faktor pro všechny země s pořadím před zemí, středem ligy a barvou regionu, v každém regionu grafy jeho zemí); úplné tabulky všech faktorů se zdroji; test všech zkoušených kandidátů; přepočet jedné země krok za krokem.
-- **kontrola shlukování odchylek:** průměrná odchylka od čekaného výsledku v každém regionu; když se region odchyluje víc než typická odchylka země, modelu chybí faktor a hledá se (příklad: bydlení 12. 10. 2026, střední Evropa +17 %, Balkán −12 %, zásoba bytů na obyvatele; poučení 18).
-- *(nové ve v1.2)* **nabídka a podobné faktory se posuzují kombinací znaků**, ne jedním zástupným ukazatelem: u nabídky bytů čtyři znaky nedostatku (povolování, byty na obyvatele, výstavba, výstavba v hlavním městě) a přirážka ceny nad cenou stavby, s protipříkladem (Belgie: znaky bez přirážky, nedostatek se do cen nepromítá; poučení 16).
-- *(nové ve v1.2)* **tabulka svědků** u každého kandidáta: výpověď a spolehlivost každého svědka, rozhodnutí podle kroku 5, co by rozhodlo (výstup `SVEDCI.md`).
-
-#### Krok 9a. Podklad pro scénář regionu (nové ve v1.3; opraveno po nezávislé kontrole 13. 10. 2026)
-
-Pro každý region vznikne `PODKLAD_SCENAR_{region}.md` podle šablony na konci tohoto kroku, psaný tak, aby z něj writer
-psal přímo. Pořadí odpovídá stavbě bloku (Ondřej 13. 10. 2026). **Rozpočet slov** *(nové po nezávislé kontrole
-13. 10. 2026)*: scénář hlavního videa má asi minutu a půl na zemi, dlouhá verze regionu asi 500 slov na zemi. Podklad
-dává materiál na dlouhou verzi a u každé země označí jádro pro hlavní video.
-1. **Otázka regionu** jednou větou: nejpřekvapivější pravdivý rozpor regionu (Balkán: staví se málo, ale lidé odešli
-   a byty zůstaly, takže tři ze čtyř zemí mají dnes na obyvatele nejvíc bytů v lize; jedna z nich má bydlení
-   dostupnější než většina ligy, dvě patří k nejméně dostupné třetině ligy). *(opraveno 14. 10. 2026 po kontrole scénáře
-   Balkánu: otázka nesmí dovolit odvodit pořadí zemí v regionu, kontrast se proto vztahuje k lize, ne k regionu.)* *(opraveno po nezávislé kontrole 13. 10. 2026)* Míra složená z více kol smí v otázce
-   zaznít jen výslovně jako složená, nikdy jako samostatná příčina vedle kol, ze kterých je složená (krok 3.4: jeden
-   mechanismus = jeden faktor). Byty na obyvatele dnes (zásoba a výstavba dělené dnešním počtem lidí) obsahují i úbytek
-   lidí z kola změny počtu obyvatel, proto se o nich mluví jen jako o tom, že „lidé odešli a byty zůstaly“.
-2. **Kořen regionu:** společná historie nebo pravidla (Balkán: rozprodané státní byty, odchod lidí, skoro žádné nájemní
-   a státní byty), se zdroji. *(opraveno po nezávislé kontrole 13. 10. 2026, tvrdé pravidlo 9: skupiny ani regiony
-   nejsou důkaz)* Jako příčina výsledku regionu se kořen podá, jen když (a) má stav důkazu podle kroku 5 a (b) projde
-   srovnáním se zeměmi mimo region, které mají stejný rys: dopadly-li jinak, kořen sám výsledek nevysvětluje (rozprodej
-   státních bytů mají i střední Evropa a Pobaltí, a dopadly jinak než Balkán). Jinak se podá jen jako možné vysvětlení
-   nebo společný rys regionu.
-3. **Kola v pořadí podle kroku 7.5.** *(doplněno po nezávislé kontrole 13. 10. 2026)* U každého kola: obvyklý vliv
-   s intervalem, příznak „menší než chyba měření“, **síla důkazu kola** a **měřítko ligy** (výstup kroků 7.4–7.5).
-   U každé země regionu: hodnota, místo v kole z celé ligy, body a **výklad hodnoty**: 1–3 věty pro laika, proč má
-   země hodnotu takovou, jakou má, **na konkrétních věcech ze souboru `priklady/{kód}.md`** (zásada Ekonomie lidskou
-   řečí: nejdřív věc, pak číslo; 2. 11. 2026), a u druhé a další země, čím je způsobeno, že je na tom hůř než předchozí.
-   *(Ondřej 13. 10. 2026 v noci: čekané místo po kole, které tu dřív bylo, do podkladu nepatří a zůstává jen v datech
-   pro analytika; nejsilnější kolo se zmíní hodně, ale pořadí podle něj se nevydává za očekávaný výsledek.)* *(opraveno po druhé nezávislé kontrole 14. 10. 2026: nejsilnější kolo se zmíní
-   hodně a ne jako předpoklad. Jakým číslem, je otevřená otázka 2, takže podklad uvede jen návrh: podíl rozdílů, který
-   kolo vysvětlí samo (slovník). U výplaty ve dvou částech: „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější;
-   ekonomicky: v bohatší zemi jsou byty dražší“. Ondřejův odhad „asi polovina“ tak smí zaznít.)* Výklad stojí na
-   doložených příčinách (struktura ekonomiky, daně a odvody u čisté
-   výplaty, porodnost, úmrtnost, stěhování a uprchlíci, historie výstavby, povolování, krize, státní programy)
-   s odkazem na zdroj *(doplněno po nezávislé kontrole 13. 10. 2026)* a používá slova podle síly důkazu (tvrdé
-   pravidlo 10). *(Ondřej 13. 10. 2026 v noci: u daní a odvodů jde o jejich celkovou výši, ne o to, kdo je platí; test
-   protipříkladem níže.)* U nevýrazné hodnoty stačí jedna věta, delší výklad patří vyčnívajícím hodnotám *(doplněno
-   po nezávislé kontrole 13. 10. 2026: vyčnívající hodnota podle kroku 7.3 a slovníku, tedy mezi pěti nejlepšími nebo
-   nejhoršími v lize, nebo od měřítka ligy aspoň o typickou odchylku hodnot; výstup kroků 7.4–7.5 ji u každé země
-   označí)*.
-   *(nové po nezávislé kontrole 13. 10. 2026)* Povolená odpověď je **„příčina není doložena“**: když doklad chybí,
-   podklad to tak napíše a příčinu nevymýšlí. **Práh „skoro stejně“:** rozdíl hodnot dvou zemí, který je menší než
-   chyba měření faktoru (pásmo chyby z listu měření, krok 1.4 a 3.3; kde chybí, analytik ho odhadne a zapíše se
-   zdrojem), se nevysvětluje a podklad napíše „skoro stejně“. *(opraveno po druhé nezávislé kontrole 14. 10. 2026)*
-   **Výchozí pravidlo**, dokud list měření pásmo chyby faktoru nemá (výchozí volba analytika): rozdíl menší než 5 %
-   hodnoty, tedy medián pásma chyby výsledku. U veličin v procentech nebo procentních bodech (změna počtu obyvatel,
-   sazba po odečtení inflace) je to rozdíl menší než 0,5 procentního bodu. Výstup kroků 7.4–7.5 ho u každé země proti
-   předchozí zemi v regionu označí. U bydlení je tak „skoro stejně“ úroková sazba všech čtyř balkánských zemí
-   a výplata Bulharska a Rumunska. *(doplněno po zkoušce Pobaltí 7. 11. 2026)* Odhad pásma chyby smí vycházet jen
-   z nejistoty hodnoty samé (revize dat, rozdíl zdrojů téže veličiny), **nikdy z rozporu dvou různých pojetí
-   veličiny** (růst v kupní síle proti růstu ve stálých cenách): takový rozpor není nepřesnost, ale jiná otázka,
-   a jako „pásmo chyby“ by smazal i rozdíly, které se vykládají (zkouška Pobaltí: odhad 28 % z rozporu obou měření
-   neobstál u kontrolora, platí výchozích 5 %).
-   **Jedno měřítko kola, a co dělat, když se dvě měření rozcházejí** *(nové po zkoušce Pobaltí 7. 11. 2026)*:
-   hodnotou kola je měření, kterým se kolo počítá pro celou ligu (u růstu výkonu kupní síla proti středu ligy,
-   `KOLA_TABULKA.md`); do hlasu scénáře jde jen ono a věci, které platí i v kontrolním měření (reálný růst). Zařazení
-   „nad / pod rámec dohánění“ se u země říká jen tam, kde se obě měření shodují; jinak soud o cestě země stojí na
-   jiných otestovaných rysech (vývoz, investice, bublina, propad, úbytek pracujících), ne na zařazení. Když dvě
-   měření seřadí dvojici sousedů opačně a test nenajde jinou příčinu pořadí než přepočet, podklad to zapíše jako
-   nevyřešený pár a otázku pro Ondřeje (mění pořadí v kole, brána eskalace); scénář se bez toho neodesílá. Vlastnost
-   měření sama o sobě se v hlase nevysvětluje (skill mapy příběhu, poučení ze severu), ale rozdíl kupní síly
-   a objemu může být obsah, ne artefakt (co země vytvoří, se v Unii prodává za lepší nebo horší ceny); rozhodne
-   nezávislý kontrolor s výkladem, co rozdíl způsobuje.
-   **Test protipříkladem** *(Ondřej 13. 10. 2026 v noci; navazuje na tvrdé pravidlo 4: aritmetika není příčina)*:
-   u každého „protože X“ se analytik zeptá, zda by hodnota byla jiná, kdyby X nebylo. Když by byla stejná, X příčinou
-   není a do výkladu nepatří; typicky jde o účetní nebo definiční věc (kdo platí odvody, jak se něco počítá, do které
-   kolonky statistika co zapíše). Výklad jmenuje ekonomickou příčinu (u výplaty produktivita, struktura ekonomiky,
-   kapitál, vzdělání, trh práce), ne účetní rozdělení. **Poučení z Rumunska:** podklad psal, že Rumunsko má nízkou
-   čistou výplatu kvůli přesunu odvodů na zaměstnance. Ondřej: „Tím to není. Kdyby vše platil zaměstnavatel, tak jen
-   bude velmi nízká hrubá mzda… čistá bude na úrovni hrubé víceméně. Je to jen účetní trik. Problém je
-   produktivita.“ Přesun odvodů změnil hrubou mzdu, ne čistou výplatu; příčinou nízké čisté výplaty je produktivita.
-   Stejný test se dělá při kontrole faktů (krok 10.4).
-   *(nové 14. 10. 2026 po kontrolách scénářů regionů)* **Míra produktivity se volí testem protipříkladem, ne zvykem.**
-   U bydlení výplatu (roční mzda na plný úvazek) vysvětluje líp výkon jednoho pracujícího za rok (hrubý domácí produkt
-   na pracujícího) než výkon za hodinu: za hodinu vytvoří Rumunsko a Řecko skoro totéž, ale rumunská výplata je o 12 %
-   nižší, a Maďarsko vytvoří za hodinu víc než Polsko a má nižší výplatu; za rok seřadí výplaty stejně dobře nebo lépe ve
-   všech šesti regionech (v lize shoda pořadí 0,98 proti 0,96). V jedné epizodě se používá jedna míra pro všechny
-   regiony, aby divák neslyšel dvě různé věci pod stejným jménem.
-   *(nové po druhé nezávislé kontrole 14. 10. 2026)* **Zátěž daní a odvodů** se měří vůči celkovým nákladům práce,
-   tedy hrubé mzdě plus odvodům zaměstnavatele (podíl daní a odvodů na nákladech práce, `tax wedge` podle OECD).
-   Podíl čisté výplaty na hrubé mzdě se jako doklad nepoužívá, protože závisí na tom, kdo odvody formálně platí
-   (u Rumunska a Litvy ho posunul přesun odvodů na zaměstnance v letech 2018 a 2019, tedy účetní změna, pravidlo 6).
-   Věta typu „z hrubé mzdy si nechá jen X %“ proto výklad zátěže není; kontrola faktů ji zachytí (krok 10.4).
-4. **Další faktory zemí:** u každé země faktory mimo kola, které tam hrají velkou roli (zvláštnosti země z kroku 7.3
-   a vedlejší faktory, jejichž příspěvek u země přesahuje typickou odchylku), s mechanismem, velikostí (body, pokud jsou
-   spočítané), silou dokladu a tím, **komu dostupnost platí** (lidé uvnitř proti nováčkům, pořadníky, podnájmy, mladí
-   u rodičů). Příklady z bydlení: Maďarsko dotace kupujícím (zvláštnost země podle kroku 5; ekonomové a data ligy),
-   Chorvatsko tlak turismu, Rakousko neziskové a obecní bydlení, Nizozemsko a Švédsko pořadníky a nedostupnost pro
-   nováčky. *(opraveno po druhé nezávislé kontrole 14. 10. 2026: dřívější příklad „Rumunsko drahé hypotéky kvůli
-   dlouhodobé inflaci“ se nehodí. Kolo úroků měří sazbu po odečtení inflace a v ní je Rumunsko na úrovni Balkánu,
-   skoro stejně jako Chorvatsko, Řecko a Bulharsko; vysokou nominální sazbu dělá inflace a patří do výkladu kola
-   úroků, krok 7.5.)* **Co říkají
-   ekonomové a kde se s daty rozcházejí** *(nové po nezávislé kontrole 13. 10. 2026, převzato z kroku 9)*: u každé země
-   stručně výroky institucí s citací (krok 2.2) a kde se s daty ligy rozcházejí (rozpor podle kroku 5, nebo jiná síla
-   než v datech).
-5. **Odhalení pořadí** od posledního po nejlepšího v regionu (skutečné místo v lize), u každé země dvě až tři věty:
-   hlavní příčiny výsledku (z kol a dalších faktorů) a **hodnocení výkonu země** podle kroku 9b. *(doplněno po nezávislé
-   kontrole 13. 10. 2026; upraveno podle Ondřeje 13. 10. 2026 v noci)* Rozdíl skutečného místa proti čekanému místu po
-   posledním kole se povinně spočítá, ale zapíše se jen do poznámek pro editora: analytikovi ukazuje, co kola
-   nevysvětlí a co je potřeba vyšetřit. Do podkladu místo něj patří, **co zemi pomohlo a co ji brzdilo** (z kol
-   a dalších faktorů), ne „o tolik míst lépe, než se čekalo“. Hodnocení výkonu je na obou osách s hodnoceným obdobím.
-   *(nové po druhé nezávislé kontrole 14. 10. 2026)* **Co důvody nevysvětlí:** když rozdíl skutečného a čekaného
-   výsledku země přesáhne typickou odchylku výpočtu (u bydlení 15,2 bodu po opravě čisté výplaty 14. 10. 2026), podklad slovy, bez míst a bez čísel
-   čekaného výsledku, řekne, že část výsledku země důvody v tomto videu nevysvětlí. Pak doplní, co se o tom ví:
-   doloženou zvláštnost země (krok 7.3), nebo „příčina není doložena“. Vada měření se řeší podle pravidla 13. Výstup
-   kroků 7.4–7.5 takové země označí; u bydlení (stav 14. 10. 2026) Belgie, Bulharsko, Portugalsko, Dánsko, Francie,
-   Česko, Rumunsko, Chorvatsko a Rakousko. U Portugalska stojí velká část rozdílu na sporné ceně nového bytu, proto se
-   podle pravidla 13 v hlase neříká, dokud se cena nevyjasní.
-6. **Ponaučení regionu** jednou až dvěma větami.
-7. **Poznámky pro editora (nečtou se):** vady měření a citlivosti, které by změnily místo (tvrdé pravidlo 13; opraveno
-   po nezávislé kontrole 13. 10. 2026, dřív chybně „11“), a předpoklady, které čekají na Ondřeje. *(doplněno po
-   nezávislé kontrole 13. 10. 2026)* Patří sem i výsledky citlivostí z kroků 3.4 a 7.4 a *(Ondřej 13. 10. 2026
-   v noci)* čekané místo po kolech a rozdíl skutečného místa proti čekanému místu. Stojí v samostatném souboru
-   `PODKLAD_SCENAR_{region}_EDITOR.md`. *(doplněno po druhé nezávislé kontrole 14. 10. 2026)* Povinně sem patří
-   i každé nejisté pořadí kol (jistota pod dvě třetiny) a každé upozornění z citlivostí, které mění pořadí kol nebo
-   posouvá čekané místo o víc než dvě místa. Výpočet je připraví v oddílu „Do poznámek pro editora“
-   (`KOLA_KONCEPT_TABULKA.md`), analytik je převezme pro země regionu.
-
-Podklad prochází `scripts/kontrola_srozumitelnosti.py --divak`, u každého čísla nese zdroj a nepoužívá pracovní názvy.
-*(opraveno po nezávislé kontrole 13. 10. 2026)* Kontrola `--divak` se nevztahuje na poznámky pro editora: smějí
-obsahovat odborná slova analýzy, proto stojí v samostatném souboru, který prochází kontrolou bez `--divak`.
-Přehledová stránka (krok 9) řadí grafy podle týchž kol: v každém regionu graf každého kola pro všech 27 zemí se
-zvýrazněním zemí regionu a grafy dalších faktorů, které region vysvětlují. Vzor podkladu: `BALKAN_PRO_SCENAR.md`
-(viz zkouška v hlavičce); první blok scénáře podle konceptu se po Ondřejově schválení stane vzorem pro writera.
-*(opraveno po nezávislé kontrole 13. 10. 2026: `BALKAN_PRO_SCENAR.md` vznikl před opravou, je řazený po zemích a nemá
-kola s místy v kole ani srovnání kořene se zeměmi mimo region; vzorem pro formu se stane až po úpravě podle bodů 1–7
-a šablony.)*
-
-**Šablona souboru** *(nové po nezávislé kontrole 13. 10. 2026)*:
-
-```markdown
-## Podklad pro scénář: {region}
-
-*Výpočet: {skript a datum}; kola podle `KOLA_KONCEPT_TABULKA.md`; poznámky pro editora
-v `PODKLAD_SCENAR_{region}_EDITOR.md`. Rozpočet: hlavní video asi minuta a půl na zemi, dlouhá verze asi 500 slov na zemi.*
-
-### 1. Otázka regionu
-{jedna věta; míra složená z více kol jen výslovně jako složená}
-
-### 2. Kořen regionu
-{společná historie nebo pravidla se zdroji}
-- Stav důkazu: {podle kroku 5}
-- Země mimo region se stejným rysem a jak dopadly: {…}
-- Podání: příčina / možné vysvětlení / společný rys
-
-### 3. Kola
-#### Kolo {n}: {faktor} ({jednotka})
-Obvyklý vliv {x} bodu ({interval}); menší než chyba měření: {ano/ne}; síla důkazu: {…}; měřítko ligy: {…}
-
-| Země | Hodnota | Místo v lize | Body |
-|---|---|---|---|
-
-- **{země}** ({vyčnívá / nevýrazná}): {výklad se zdrojem slovy podle síly důkazu a po testu protipříkladem, nebo
-  „příčina není doložena“; u další země, čím je na tom hůř než předchozí, nebo „skoro stejně“}
-- U nejsilnějšího kola: {zmínit hodně, ne jako předpoklad; číslo jen podle rozhodnutí o otázce 2, návrh: podíl rozdílů,
-  který vysvětlí samo, u výplaty „početně…; ekonomicky…“}
-
-### 4. Další faktory zemí
-- **{země}:** {faktor}: mechanismus, velikost v bodech, síla dokladu; komu dostupnost platí: {…}
-- **{země}, co říkají ekonomové a kde se s daty rozcházejí:** {instituce, rok, výrok s citací; shoda, nebo rozpor}
-
-### 5. Odhalení pořadí (od posledního po nejlepšího)
-- **{země}, {skutečné místo}. v lize, {místo v regionu}. v regionu:** co pomohlo: {…}; co brzdilo: {…}; co důvody
-  nevysvětlí: {jen u země nad typickou odchylkou výpočtu, slovy bez míst}; výkon politiky: {typ} ({hodnocené období});
-  komu dostupnost platí: {…}; jádro pro hlavní video: {…}
-
-### 6. Ponaučení regionu
-{jedna až dvě věty}
-```
-
-#### Krok 9b. Hodnocení výkonu země (nové ve v1.3; opraveno po nezávislé kontrole 13. 10. 2026)
-
-Hodnotí se, co s dostupností dělal stát, firmy a společnost, ne kde země skončila. Stupnice (návrh ze 13. 10. 2026,
-čeká na Ondřejovo schválení, otevřená otázka 4). *(opraveno po druhé nezávislé kontrole 14. 10. 2026: typy osy 1
-i druhá osa jsou zatím vyzkoušené jen na bydlení; před použitím na jiný ukazatel se musí vyzkoušet stejně jako
-rozdělení v kroku 7.4.)* *(opraveno po nezávislé kontrole 13. 10. 2026: dřívější stupnice
-měla šest typů na jedné ose a jedním z nich bylo „Dostupné jen pro někoho“; to ale neříká, jak se politika snažila,
-nýbrž komu výsledek slouží, a doplňuje hlavní hodnocení skoro každé země. Hodnocení má proto dvě samostatné osy.)*
-
-**Osa 1: výkon politiky.** Čísla typů neznamenají pořadí.
-1. **Dělá to dobře a je to vidět:** doložená politika s doloženým účinkem.
-2. **Snaží se, ale má to těžké:** doložená snaha proti silným okolnostem (příliv lidí, turismus, zděděný nedostatek, krize).
-3. **Chybami si přitížil:** doložená rozhodnutí, která dostupnost zhoršila (dotace kupujícím bez nabídky, daňové výhody
-   pro pronájem turistům, zrušené plány nebo instituce).
-4. **Zaspal:** jen když jsou doložené tři věci *(opraveno po nezávislé kontrole 13. 10. 2026)*: (a) problém byl zjevný
-   a doložený v době, kdy se dal řešit; (b) země měla páku se štítkem „řiditelné“ nebo „pomalu ovlivnitelné“ (krok 3.9);
-   (c) účinek té páky dokládá studie nebo případ (krok 2.4 a 2.8). Nepřijatý dokument (strategie, plán, zákon, který
-   neprošel) sám doklad není; dokladem je problém a nevyužitá páka s doloženým účinkem. Dřívější příklady „nepřijatá
-   strategie, program bez peněz“ jsou jen stopa, kde doklad hledat.
-5. **Těží z okolností:** dostupnost z věcí, které nejsou zásluhou politiky (úbytek lidí, zděděné byty, levná stavba).
-6. **Nedá se posoudit:** bez dokladu účinku se krok neoznačí za úspěch ani chybu; hodnocení zní „nedá se posoudit,
-   protože…“.
-
-**Pojistka 25. 10. 2026 (Ondřej): kalibrace štítků s výsledkem a s růstem nad rámec dohánění.** Hlavní štítek
-„Dělá to dobře a je to vidět“ nesmí dostat země, která (a) v kole růstu rostla prokazatelně pomaleji, než odpovídá
-běžnému dohánění (u mezd zařazení „rostla pomaleji“ v kupní síle i v reálných cenách, například Maďarsko), nebo (b)
-u které instituce v podkladu konstatují vyčerpání růstového modelu a zároveň skončila v suterénu (21.–27. místo).
-Slepý agent dostane tato dvě kritéria spolu s kroky země; místo v lize nadále nevidí, kritérium (b) doplní koordinátor
-po slepém hodnocení. Přesnější štítky osy 1:
-7. **Dobrý motor, ale s vlastními brzdami:** doložená politika s doloženým účinkem a zároveň doložená vlastní
-   rozhodnutí, která růst brzdila (například Česko: přímé investice a vstup do EU proti škrtům 2010–2013 a výzkumu
-   zastavenému pod 2 % HDP; měnová krize 1997 jako cena kupónové privatizace z horší výchozí pozice, viz pojistka
-   26. 10. níže).
-8. **Vyčerpaný montážní model:** růst stál na zahraničních montážních investicích, instituce konstatují, že model
-   ztratil dech, a země skončila v suterénu (například Slovensko).
-Hodnocení mezd z 17.–18. 10. 2026 (`data/hodnoceni/`) vzniklo před touto pojistkou; Česko, Maďarsko a Slovensko se
-podle ní přehodnotí.
-
-**Pojistka 26. 10. 2026 (Ondřej): výchozí pozice.** Doklad chyby (typ 3 „Chybami si přitížil“ a brzdy u typu 7)
-potřebuje navíc posouzení, zda země měla při své výchozí pozici realisticky proveditelnou lepší možnost: míra
-zestátnění a soukromého sektoru na začátku, zahraniční dluh, domácí kapitál a zájem zahraničních kupců, politická
-průchodnost. Kde instituce krok kritizují, ale lepší proveditelná možnost doložená není, zapíše se krok jako
-„kontroverzní, s doloženými náklady“ a do štítku se jako chyba nepočítá. Příklad: kupónová privatizace v Česku
-(skoro celá ekonomika ve vlastnictví státu, na rozdíl od Polska se soukromým zemědělstvím a Maďarska s dřívější
-liberalizací); náklady (slabá správa podniků, měnová krize 1997) se uvedou, ale jako cena volby z horší výchozí
-pozice, ne jako zjevná chyba.
-
-**Osa 2: komu dostupnost platí** (samostatný štítek, do výkonu politiky se nepočítá): **dostupné jen pro někoho**, když
-čísla vypadají dobře, ale nováčci se k bydlení nedostanou (pořadníky, regulace, podnájmy, mladí u rodičů), s dokladem;
-jinak se štítek nedává.
-
-**Hodnocené období** *(nové po nezávislé kontrole 13. 10. 2026)*: horizont ukazatele (u bydlení 2010–2024). Při zlomu
-(nová vláda, reforma) se uvede rok změny a hodnocení se rozdělí, například „do roku 2024 zaspal, od té doby napravuje;
-účinek zatím nikdo nezměřil“.
-
-**Postup** *(nové po nezávislé kontrole 13. 10. 2026)*: hodnotí se naslepo jen z kroku 8 (kroky zemí s doklady), dřív
-než analytik uvidí místo země v lize a rozdíl proti čekanému výsledku. Aspoň u pěti zemí hodnotí naslepo i druhý
-agent a zapíše se shoda (jako u výroků ekonomů v kroku 2.3); při neshodě rozhodnou doklady, jinak zůstane „nedá se
-posoudit“. *(opraveno po druhé nezávislé kontrole 14. 10. 2026)* Hodnotí samostatný agent s čerstvým kontextem.
-Dostane jen záznamy z kroku 8 (kroky zemí s daty a zdroji, doklady účinku, štítky pák z listu měření). Nedostane místa
-v lize ani v kolech, body, čekaný výsledek, výpočet ani rozbor analytika. Stejně čerstvý a stejně omezený je druhý
-slepý agent; nevidí ani hodnocení prvního. Analytik jejich hodnocení jen přebírá a slučuje podle dokladů.
-
-Země dostane hlavní hodnocení a nejvýš jedno vedlejší. Hodnocení stojí na krocích z kroku 8 s doloženým účinkem
-(tvrdé pravidlo 10: „zaspala“ jen u páky s doloženým účinkem); bez dokladu účinku se krok neoznačí za úspěch ani chybu
-a hodnocení zní „nedá se posoudit, protože…“. Hodnocení se nikdy neodvozuje jen z místa v lize ani z rozdílu proti
-čekanému výsledku. Když se stupnice na zemi nehodí, analytik navrhne novou kategorii a zapíše ji jako otázku pro
-Ondřeje.
-
-**Návrhy z rešerší regionů (13. 10. 2026), otázka pro Ondřeje** *(nové po nezávislé kontrole 13. 10. 2026; otevřená
-otázka 4)*: sedmý typ **„léčí příznaky“**, tedy podpora kupujících místo nabídky (státní záruky, dotace hypoték
-a daňové úlevy při nepružné nabídce; mechanismus popisují Banco de España, MMF a OECD;
-`10_documents/active/2026-10-14_podklady_regionu/jizni_evropa.md`), a typ **„dlouho zaspal, teď napravuje“** (Británie,
-Irsko, Německo; `zapadni_evropa.md`). Do rozhodnutí platí šest typů osy 1: podpora kupujících bez nabídky se hodnotí
-jako „chybami si přitížil“, když je doložené, že dostupnost zhoršila (jinak „nedá se posoudit“), a zlom se zapíše
-hodnoceným obdobím.
-
-#### Krok 10. Kontroly
-
-1. **Sedm kontrol** před každým závěrem o vlivu faktoru (`10_documents/active/2026-10-11_podklady_noveho_skillu/kontrola_zaveru_dodatek.md`).
-2. **Nezávislý oponent** zkontroluje výběr faktorů, listy měření a výpočet dřív, než výsledek dostane Ondřej.
-2a. **Detektory chybějícího faktoru (doplněno 12. 10. 2026; poučení 21):** po každém výpočtu a po každé změně dat nebo modelu se pustí `05_epizode_packs/_skills/analyza-pricin-regiony/diagnostika_modelu.py` (shlukování odchylek podle regionů, stálost hlavního faktoru v polovinách ligy, stopy ve zbytku včetně vyřazených proměnných, sousední země, neobvyklé složky, nezávislé měření téhož jevu, čekané vztahy). Každý signál se vyřeší: nový faktor, propletený s faktorem v modelu, chyba měření, nebo nevysvětleno se jmenovanými zeměmi. Výsledek patří do výstupu (`DIAGNOSTIKA.md`).
-2b. **Registr závěrů:** každý závěr „faktor přidá / nepřidá“ se zapíše s podobou modelu a verzí dat (`registr_zaveru.py`) a při každé změně se přepočítá; závěr se zkouší ve více podobách modelu a když se mezi nimi liší, faktor je propletený a nesmí se tvrdit „nepřidává“ ani „vysvětluje“. U propletených faktorů se v modelu použije kombinace stavu a toku. O zařazení faktoru rozhodují tato pravidla, ne Ondřej (Ondřej 12. 10.: „Já potřebuji tu analýzu plně automatizovat… Proč jsi tam nedal zásobu bytů sám?“). *(doplněno ve v1.2)* Do registru se zapisují i výpovědi svědků a rozhodnutí podle kroku 5; když se po změně dat nebo modelu rozhodnutí změní, je to signál stejně jako překlopený závěr (poučení 20). *(doplněno po druhé nezávislé kontrole 14. 10. 2026)* Do registru se zapisuje i **pořadí kol a jeho jistota** (u bydlení záznam `bydleni_poradi_peti_kol`, zapisuje ho `kola_koncept.py`); verdikt je kategorie (pořadí a nejistá dvojice), takže přepočet ohlásí každé překlopení pořadí i změnu toho, co je nejisté.
-3. **Automatická kontrola** nad strojovými poli: horizont proti období měření každého toku; přepočet na velikost země; korelace a inflace rozptylu nad prahem; podíly datové vrstvy a zbytek dávají 100 % a příspěvky studií se nesčítají; nejvýš tři faktory odhadované z dat a nejvýš pět hlavních; každý hlavní faktor má stav síly důkazu; u každého kola je měřítko ligy; pásmo chyby u každé země. *(doplněno po nezávislé kontrole 13. 10. 2026)* U výstupu kol (kroky 7.4–7.5, vzor `kola_koncept.py`): nejvýš pět kol a každé je zařazený faktor; každé kolo má obvyklý vliv s intervalem, příznak „menší než chyba měření“ (u faktoru se dvěma podobami výpočtu v obou), jistotu pořadí proti dalšímu kolu, sílu důkazu, zdroj síly, štítek páky a měřítko ligy; body obou částí rozděleného faktoru (u bydlení zásoby a výstavby) dávají dohromady body celého faktoru a rozdíl smí být jen změna typické země, stejná u všech zemí; body ostatních kol a síla výplaty se rozdělením nezmění; čekaný výsledek a čekaná místa se nezmění ani rozdělením, ani podobou přírůstku lidí (krok 3.4). Když kontrola neprojde, výstupy se nezapíšou. *(doplněno po druhé nezávislé kontrole 14. 10. 2026)* Navíc kontrola hlídá:
-   - stav důkazu podle pravidla 6: „potvrzený daty“ jen se srovnáním zemí a s obvyklým vlivem nad pásmem chyby výsledku v obou podobách výpočtu;
-   - zdroj síly podle testu přenosu: síla ze studií jen tam, kde s ní čekaný výsledek nesedí hůř (krok 4.3, 6.2);
-   - výstavbu od dne sčítání vůči zásobě téhož sčítání v absolutních počtech (krok 7.4, podmínka 4);
-   - štítek „nejisté“ u každého pořadí kol s jistotou pod dvě třetiny;
-   - že každé upozornění z citlivostí (změna pořadí kol, posun čekaného místa o víc než dvě místa) je v poznámkách pro editora.
-
-   Pořadí kol a jeho jistota se po kontrole zapíšou do registru závěrů (krok 10.2b).
-4. **Kontrola faktů podkladu pro scénář** *(nové; Ondřej 13. 10. 2026 v noci)*: každé číslo se ověří proti zdroji a každé „protože X“ projde testem protipříkladem (krok 9a.3). Výklad, který místo ekonomické příčiny jmenuje účetní nebo definiční věc, se vrací k přepsání. Kontrola ověří i to, že podklad neobsahuje čekané místo po kolech a nevydává pořadí podle hlavního faktoru za očekávaný výsledek. *(doplněno po druhé nezávislé kontrole 14. 10. 2026)* Kontrola zachytí v podkladu i ve scénáři každou větu, která jako doklad zátěže daní a odvodů používá podíl čisté výplaty na hrubé mzdě („z hrubé mzdy si nechá jen X %“, „čistá mzda je jen X % hrubé“). Takovou větu vrátí k přepsání na zátěž vůči celkovým nákladům práce (krok 9a.3).
-
-### 4. Tvrdá pravidla (nesmí se porušit)
-
-1. **Jeden rok nevysvětlí ukazatel, který se buduje léta.** Horizont určuje test setrvačnosti; toky za horizont. (Příklad: jednoroční výstavba v analýze bydlení v22 z 3. 8. 2026.)
-2. **„Nemá vliv“ smí zaznít jen po sedmi kontrolách**; jinak „v datech ligy se neukázal, protože…“.
-3. **Výpočty nesmějí být v rozporu s ekonomy** podle definice v kroku 5; co nejde vysvětlit, jde Ondřejovi.
-4. **Aritmetika není příčina:** model nad čitateli, výplata jako faktor poptávky. *(doplněno, Ondřej 13. 10. 2026 v noci)* Totéž platí ve výkladu hodnot: účetní nebo definiční rozdělení (kdo platí odvody, jak se něco počítá) příčinou není; rozhoduje test protipříkladem (krok 9a.3, poučení z Rumunska).
-5. **Žádné dvojí započtení:** číselné prahy překryvu, zákaz složených proměnných z jiného faktoru.
-6. **Srovnatelná data a pásmo chyby:** faktor smí být potvrzený daty jen, když jeho účinek na typický rozdíl v lize převyšuje medián pásma chyby výsledku. Statistická změna definice (přesun odvodů v Rumunsku 2018 a Litvě 2019) nesmí vypadat jako výsledek. *(doplněno po druhé nezávislé kontrole 14. 10. 2026)* Účinkem se rozumí obvyklý vliv faktoru, a to v obou podobách výpočtu (krok 3.4); když je v kterékoli z nich pod pásmem chyby, faktor je nejvýš „doložený svědky“. U bydlení je proto „potvrzená daty“ jen čistá výplata (22,4 a 14,7 bodu); změna počtu obyvatel má očištěná 4,0 bodu, a je tedy „doložená svědky“. Výpočet to kontroluje (krok 10.3).
-7. **Hranice náhody permutací** podle skutečného počtu zkoušených kandidátů a variant.
-8. **Stejné hlavní faktory pro všechny země a jedno měřítko ligy** pro faktory i výsledek. Žádné „potřebné hladiny“.
-9. **Skupiny ani regiony nejsou důkaz.** Příčiny se hledají na celé lize.
-10. **Slova podle síly důkazu:** potvrzený daty „vysvětluje“; doložený studiemi „podle studií posouvá“; doložený uvnitř zemí „uvnitř zemí rozhoduje, mezi zeměmi se schová za…“; nepotvrzený „ekonomové uvádějí, v datech ligy se neukázal“. „Zaspala“ jen u kroku, který je páka a má doložený účinek. *(doplněno ve v1.2)* Doložený svědky „podle studií posouvá o X %, ekonomové ho v N zemích řadí mezi hlavní příčiny; srovnání zemí ho nezměří, protože…“; zvláštnost zemí „v zemi X podle [instituce] rozhoduje…“; hypotéza „možná působí…, v lize neověřeno; rozhodlo by…“.
-11. *(nové ve v1.2)* **Žádný svědek nemá právo veta, kde je nespolehlivý, a nic se nezařadí jen podle jednoho svědka.** Mlčení srovnání zemí není důkaz, že faktor nepůsobí; podpora jen z dat ligy pod hranicí pro celý seznam není důkaz, že působí.
-12. *(nové ve v1.2)* **Časový profil předem:** jak rychle výsledek na faktor reaguje, se určí ze studií dřív, než se změří; nejlepší profil se v datech nehledá.
-13. **Měření se opravuje v datech, ne v příběhu (doplněno ve v1.3; opraveno po nezávislé kontrole 13. 10. 2026, dřív
-    chybně číslované 11).** Ondřej 13. 10. 2026: „U všech zemí říkat, že Deloitte to pravděpodobně vypočítal špatně, je
-    nuda.“ Vadu měření, která mění místo země, analytik doloží (krok 1.4 a 3.3), opraví podle pravidla srovnatelnosti
-    u všech zemí stejně a rozhodnutí s hmotným dopadem předloží Ondřejovi jako otázku; do podkladu pro scénář jde jen
-    poznámka pro editora, s jedinou výjimkou níže. *(doplněno po nezávislé kontrole 13. 10. 2026)* **Vada, kterou
-    opravit nejde, a má hmotný dopad** (podle citlivostního testu brány eskalace: překlopí verdikt nebo mluvenou větu,
-    nebo posune pořadí asi o víc než dvě místa) nese v datech příznak; výklad ani hodnocení výkonu země se o tuto část
-    odchylky neopírají a scénář ji smí jednou krátce zmínit (jednou větou, například že cena bytu je v datech země
-    nejspíš podhodnocená). Ostatní vady měření patří jen do poznámek pro editora. Scénář vysvětluje příčiny, které
-    diváka zajímají (výplata, lidé, byty, výstavba, státní byty, turismus…). Rozbor zbytku po hlavních faktorech je ze
-    své podstaty plný měření; proto nikdy nenahrazuje výklad příčin z kol a dalších faktorů.
-14. **Žádná hodnota v kole bez výkladu (doplněno ve v1.3; opraveno po nezávislé kontrole 13. 10. 2026, dřív chybně
-    číslované 12).** Každá hodnota, kterou divák v kole uvidí, má v podkladu výklad, proč taková je; „je taková“
-    nestačí. *(doplněno po nezávislé kontrole 13. 10. 2026)* Poctivá odpověď „příčina není doložena“ výkladem je; rozdíl
-    dvou zemí uvnitř chyby měření faktoru se nevysvětluje a řekne se „skoro stejně“ (krok 9a.3).
-
-### 5. Výstupní soubory
-
-| Soubor | Obsah |
-|---|---|
-| `LIST_UKAZATELE.md` | krok 1 včetně testu horizontu a pásem chyby |
-| `KANDIDATI.md`, `kandidati.json` | krok 2: kategorie zapsané předem, výroky ekonomů, váhy s rozpětím |
-| `LISTY_MERENI.md`, `mereni.json` | krok 3 se strojovými poli |
-| `VLIV_FAKTORU.md`, `vliv.json` | kroky 4–7: korelační matice, podíly ve třech podobách s intervaly, síly účinku, vrstva studií s testy přenosu, stav síly důkazu, čekaný výsledek po kolech, příspěvky zemí, zbytky a jejich šetření |
-| `REGIONY.md`, `regiony.json` | krok 9 |
-| `KONTROLY.md` | krok 10 |
-| `ANALYZA_*.html` (přehledová stránka) | krok 9: pořadí s hlavními příčinami, karty zemí, grafy faktorů (součástka `analysis-review/grafy_faktoru/`), úplné tabulky, přepočet jedné země |
-| `SVEDCI.md`, `svedci.json` (nové ve v1.2) | krok 5: výpovědi svědků u každého kandidáta, rozhodnutí, co by rozhodlo, zkouška vypnutí pojistek |
-| `CASOVY_PROFIL.md`, `casovy_profil.json` (nové ve v1.2) | krok 3.11 a 4.2: přírůstek po úsecích, podoby s vahami podle stáří, panel uvnitř zemí, přirozené pokusy |
-| `DIAGNOSTIKA.md`, `registr_zaveru.json` | krok 10.2a–b: detektory a registr závěrů |
-| `KOLA_KONCEPT_TABULKA.md`, `kola_koncept.json` (nové ve v1.3; opraveno po nezávislé kontrole 13. 10. 2026) | kroky 3.4 a 7.4–7.5: kola v pořadí podle vlivu (nejvýš pět), zvlášť to, co země měla na začátku, a co přibylo; u každého kola obvyklý vliv s 90% intervalem, podíl na obvyklém vlivu, příznak „menší než chyba měření“ (v obou podobách výpočtu přírůstku lidí), jistota pořadí proti dalšímu kolu, síla důkazu, zdroj síly, štítek páky, obrácený směr, měřítko ligy a typická odchylka hodnot; obě citlivosti rozdělení (krok 7.4); známé nepřesnosti; výsledky automatické kontroly (krok 10.3); u každé země hodnota, místo v kole, zda vyčnívá, body a čekané místo po kole (Ondřej 13. 10. 2026 v noci: čekané místo jen pro analytika), po regionech *(doplněno po druhé nezávislé kontrole 14. 10. 2026: štítek „nejisté“ u pořadí kol, oddíl „Do poznámek pro editora“, výsledek testu přenosu a zdroj síly podle něj, stálost znaménka síly, ověření obráceného směru podle kroku 3.5, výstavba od sčítání 2011 se změnou proti výstavbě 2010–2024, návrh „výplata sama“ ve dvou částech, „skoro stejně“ proti předchozí zemi v regionu, co kola nevysvětlí u zemí nad typickou odchylkou výpočtu; záznam pořadí kol v `registr_zaveru.json`)* |
-| `PODKLAD_SCENAR_{region}.md` (nové ve v1.3) | kroky 9a a 9b: podklad pro writera s výkladem hodnot, dalšími faktory, odhalením pořadí a hodnocením výkonu země *(opraveno po nezávislé kontrole 13. 10. 2026 a podle Ondřeje 13. 10. 2026 v noci: podle šablony v kroku 9a, s tím, co říkají ekonomové, a s tím, co zemi pomohlo a co ji brzdilo; bez čekaného místa)* |
-| `PODKLAD_SCENAR_{region}_EDITOR.md` (nové po nezávislé kontrole 13. 10. 2026) | krok 9a.7: poznámky pro editora (vady měření, citlivosti, čekané místo po kolech a rozdíl proti němu, předpoklady čekající na Ondřeje); kontrola srozumitelnosti bez `--divak` |
-
-JSON pro edit nese u každého faktoru a země hodnotu, měřítko ligy, místo v lize a v regionu, příspěvek, sílu důkazu a příznaky srovnatelnosti.
-
-### 6. Ondřejova rozhodnutí a otevřené otázky
-
-**Ekonomové jako vodítko (Ondřej 11. 10. 2026):** „Podle mě je možné brát vliv podle ekonomů, ale myslím, že oni to nebudou mít procentuálně vypočítané. Mělo by to být ale vodítko a naše výpočty by neměly být v rozporu s ekonomy.“ → váha podle ekonomů (krok 2), vrstva studií s testem přenosu (krok 4), definice rozporu (krok 5).
-
-**Rozhodnutí z 12. 10. 2026 (doplněno ve v1.2):**
-- **Měřítko ligy je medián** (dřívější otázka 1 je uzavřená). U dostupnosti bydlení čistá mzda; ceny Deloitte beze změny (Portugalsko a Dánsko s poznámkou). *(záznam doplněn po nezávislé kontrole 13. 10. 2026: rozhodl Ondřej 12. 10. 2026 večer; k čisté mzdě doslovně „čistá mzda je mnohem více vypovídající“; k mediánu a k cenám Deloitte se doslovná citace v záznamech nezachovala, rozhodnutí je zapsané v `PREKLADOVY_MUSTEK.md`)*
-- **O zařazení faktoru rozhodují pravidla, ne Ondřej:** „Já potřebuji tu analýzu plně automatizovat… Proč jsi tam nedal zásobu bytů sám?“ Ondřej rozhoduje definice ukazatele, ligu, dramaturgii a vkus. *(rozhodl Ondřej 12. 10. 2026)*
-- **Systém svědků:** „Ano, do zkoušky na datech přidej systém svědků, ale ne tak, že vše předchozí zahodíš… aby se nestalo, že z předchozího systému zahodíš i funkční věci, bez kterých by nový systém se svědky také nefungoval.“ → krok 5 a tabulka pojistek v něm. *(rozhodl Ondřej 12. 10. 2026)*
-- **Časová osa:** „Má smysl pracovat i s časovou osou, a nebo to nehraje roli?“ → krok 3.11 a panel v kroku 4.2. *(záznam doplněn po nezávislé kontrole 13. 10. 2026: citace je Ondřejova otázka z 12. 10. 2026; způsob zapracování do kroků 3.11 a 4.2 je výchozí volba analytika, čeká na Ondřejovu námitku)*
-
-**Rozhodnutí ze 13. 10. 2026 (doplněno ve v1.3; záznam opravený po nezávislé kontrole 13. 10. 2026: u každého bodu doslovná citace a kdo rozhodl):**
-- **Koncept bloku regionu** (zadání v oddílu 1 a kroky 7.4, 7.5, 9a, 9b). Rozhodl Ondřej 13. 10. 2026: „V každém kole se začne státem, který má ve skupině nejlepší hodnotu… a vždy se vysvětlí, proč má stát hodnotu takovou, jakou má… Je hodně potřeba vysvětlovat, proč je faktor takový, a ne jen že je takový… Pak se odhalí pořadí od posledního po nejlepšího ve skupině, krátce se zopakují příčiny výsledku a zhodnotí se výkon země.“ a k pořadí kol „Pak bych postupoval od nejdůležitějšího faktoru po nejméně důležitý.“
-- **Zásoba bytů a výstavba zvlášť** (krok 7.4). Rozhodl Ondřej 13. 10. 2026: „První řadě bych počet bytů na tisíc obyvatel rozdělil na 2 faktory. První by byla zásoba bytů … a pak počet průměrně postavených bytů na 1000 obyvatel od 2010 do 2024, a to z toho důvodu, že chceme vysvětlovat i to, co vlády, firmy a společnost dělají dobře nebo špatně…“ Stejná síla na byt pro obě části je **výchozí volba analytika** (předpoklad s povinnou citlivostí), čeká na Ondřejovu námitku.
-- **Přírůstek lidí v kolech tak, jak je** („stačí trend poslední doby tak, jak to je“; krok 3.4). *(opraveno po nezávislé kontrole 13. 10. 2026)* Ondřejova věta z 13. 10. 2026 „U změny počtu obyvatel to potřeba není. Tam stačí trend poslední doby…“ rozhodla, že se přírůstek lidí **nedělí** na to, co země měla na začátku, a co přibylo; o očištění Ondřej nerozhodl. Použití neočištěné hodnoty v kolech je **výchozí volba analytika, čeká na Ondřejovu námitku**; opírá se o Ondřejovu větu z 13. 10. 2026 „U Bulharska je jednoznačný faktor úbytek obyvatel a velký rezervoár bytů“.
-- **Měření do příběhu nepatří** (tvrdé pravidlo 13; opraveno po nezávislé kontrole 13. 10. 2026, dřív chybně „11“). Rozhodl Ondřej 13. 10. 2026: „U všech zemí říkat, že Deloitte to pravděpodobně vypočítal špatně, je nuda.“ Jedna krátká zmínka neopravitelné vady s hmotným dopadem je **výchozí volba analytika** podle nezávislé kontroly, čeká na Ondřejovu námitku.
-- **Skill má nést i text pro scénář.** Ondřej 13. 10. 2026: „Pokud zapíšeš nový koncept do skillu, tak by to tím mělo být vyřešeno.“ → krok 9a.
-- **Stupnice hodnocení výkonu země** (krok 9b) je návrh analytika, ne rozhodnutí; otevřená otázka 4.
-
-**Rozhodnutí z 13. 10. 2026 v noci (Ondřej; doplněno do znění po nezávislé kontrole):**
-- **Čekaný výsledek se divákovi neříká.** Ondřej: „Pořadí po čisté mzdě bych nebral jako očekávaný výsledek. Je to cca 50 % a zbylých 50 % to může hodně změnit. Pokud ale indikátor bude mít takto významný faktor, tak je to určitě potřeba hodně zmiňovat, ale nemělo by se o tom mluvit jako o předpokladu… Úplně bych vynechal tu změnu pořadí po jednotlivých kolech.“ → čekaný výsledek a čekané místo po kolech jen v datech pro analytika; nejsilnější faktor se zmiňuje hodně, ne jako předpoklad; při odhalení se řekne, co zemi pomohlo a co ji brzdilo (oddíl 1, slovník, kroky 6.3, 7.5, 9, 9a, výstupy).
-- **Výklad jmenuje ekonomickou příčinu, ne účetní věc.** Ondřej: „U Rumunska píšeš, že má nízkou čistou mzdu kvůli přesunu daňové odpovědnosti na zaměstnance. Tím to není. Kdyby vše platil zaměstnavatel, tak jen bude velmi nízká hrubá mzda… čistá bude na úrovni hrubé víceméně. Je to jen účetní trik. Problém je produktivita.“ → test protipříkladem (krok 9a.3), tvrdé pravidlo 4, kontrola faktů (krok 10.4).
-- **Cíl skillu.** Ondřej: „Pokud bych zadal indikátor, autonomně se mi vytvořila dobrá analýza a hned na to script. Tak já už si to doladím.“ → oddíl 1.
-
-**Rozhodnutí ze 14. 10. 2026 (Ondřej; doplněno po druhé nezávislé kontrole):**
-- **Srovnatelná řecká cena nového bytu.** Ondřej: „K tomu Řecku ano a až se dokončí analytické podklady, tak mi rovnou udělej script pro všechny země. Pokud to bude v pořádku, se nový analytický skill a script aktivuje a otestujeme to na první disciplíně průměrná mzda.“
-  - V datech bydlení je místo ceny Deloitte 1 792 €/m² srovnatelný odhad 2 900 €/m² a analýza je přepočítaná; čísla v krocích 4.3, 6.1, 7.1, 7.4 a 7.5 jsou ze 14. 10. 2026.
-  - Aktivace skillu a writera přijde podle Ondřejovy věty až po podkladech a scénáři všech regionů, pokud budou v pořádku, a zkouška proběhne na průměrné mzdě. Do té doby je návrh NEAKTIVNÍ.
-
-**Otevřené otázky pro Ondřeje:**
-1. *(uzavřeno 12. 10.: medián)*
-2. **Co uslyší divák o síle kola:** podíl na rozdílech (pořadí kol), nebo sílu účinku (o kolik procent posune výsledek typický rozdíl), nebo obojí. *(doplněno ve v1.3: zčásti uzavřeno konceptem ze 13. 10.: kola jdou podle obvyklého vlivu; velikost vlivu se divákovi říká podílem na obvyklém vlivu, krok 3.4.)* *(opraveno po nezávislé kontrole 13. 10. 2026: otázka zůstává otevřená, je to dramaturgie. Z Ondřejova konceptu plyne jen pořadí kol podle obvyklého vlivu. Ondřej 13. 10. 2026 v noci dodal, že nejsilnější faktor se má hodně zmiňovat, ale ne jako předpoklad, a mluvil o „cca 50 %“ rozdílů. Návrh: u nejsilnějšího kola podíl rozdílů mezi zeměmi, který vysvětlí samo (u čisté výplaty asi polovina, 49,1 %); u ostatních kol obvyklý vliv slovy (například „změna počtu obyvatel obvykle posune dostupnost asi o 7 %“), nebo podíl na obvyklém vlivu; vždy s větou, že kola dohromady asi třetinu rozdílů nevysvětlí. Podíl na rozdílech v podobě tak, jak je, se divákovi neříká, protože u přírůstku lidí vychází záporný.)* *(opraveno po druhé nezávislé kontrole 14. 10. 2026)* Návrh zůstává návrhem.
-   - **Míra podle principu:** podíl rozdílů výsledku mezi zeměmi, který vysvětlí výpočet jen s tímto faktorem a se stejnou silou jako v kolech (slovník). U bydlení po řecké opravě 53,6 % u čisté výplaty; kola dohromady 68,4 %.
-   - **U výplaty ve dvou částech**, protože je ve jmenovateli ukazatele (krok 1.2): „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší, o 1 % vyšší výplata = nový byt o 0,72 % a nájem o 0,56 % dražší“.
-   - **Ondřejův odhad** „cca 50 %“ tak smí zaznít slovy („výplata vysvětlí asi polovinu rozdílů“), když se početní a ekonomický účinek odliší.
-   - Kroky 7.5 a 9a.3 a šablona to uvádějí jen jako návrh.
-3. *(nové ve v1.2)* **Méně než pět hlavních faktorů:** když pravidlo najde pro celou ligu méně zařazených faktorů (bydlení: čtyři, z toho nabídka bytů a úroky typicky menší než chyba měření výsledku 5 %; podle výpočtu z 13. 10. 2026 zásoba bytů 3,5, úroky 1,8 a tempo výstavby 1,1 bodu *(opraveno po nezávislé kontrole 13. 10. 2026; výpočet z 12. 10. 2026 uváděl nabídku bytů ±3,9 % a úroky ±1,6 %)*; *podle výpočtu ze 14. 10. 2026 zásoba 2,2, úroky 1,8 a výstavba 0,9 bodu, opraveno po druhé nezávislé kontrole*), má epizoda méně kol, nebo se páté kolo doplní jinak? Je to otázka dramaturgie, ne metodiky. *(doplněno ve v1.3: uzavřeno 13. 10.: čtyři kola, nabídka bytů rozdělená na zásobu a výstavbu, úroky mezi dalšími faktory.)* *(opraveno po nezávislé kontrole 13. 10. 2026: zápis „uzavřeno: čtyři kola, úroky mezi dalšími faktory“ nebyl Ondřejovo rozhodnutí. U bydlení otázka odpadla, protože Ondřejovo rozdělení nabídky bytů na zásobu a výstavbu dává pět zařazených částí, tedy pět kol; o úrocích je otázka 5. Pro jiné ukazatele otázka platí dál.)*
-4. *(nové ve v1.3)* **Stupnice hodnocení výkonu země** (krok 9b): sedí šest typů, nebo něco chybí? *(opraveno po nezávislé kontrole 13. 10. 2026: návrh má nově dvě osy, výkon politiky se šesti typy a samostatný štítek „dostupné jen pro někoho“, s hodnoceným obdobím a slepým hodnocením. Otázky: (a) sedí dvě osy? (b) přidat sedmý typ „léčí příznaky“ (podpora kupujících místo nabídky, z rešerše jižní Evropy) a typ „dlouho zaspal, teď napravuje“ (z rešerše západní Evropy)? Doporučení analytika: dvě osy ano; „léčí příznaky“ zatím ne, protože se kryje s typem „chybami si přitížil“ (dotace kupujícím bez nabídky); „dlouho zaspal, teď napravuje“ ne, zlom se zapíše hodnoceným obdobím.)* *(opraveno po druhé nezávislé kontrole 14. 10. 2026: typy i druhá osa jsou zatím vyzkoušené jen na bydlení; slepé hodnocení dělá samostatný agent s čerstvým kontextem, krok 9b)*
-5. *(nové po nezávislé kontrole 13. 10. 2026)* **Úroky jako kolo u bydlení** (dramaturgie): podle pravidla (kroky 7.1 a 7.5) jsou úroky zařazený faktor s obvyklým vlivem 1,8 bodu, větším než tempo výstavby (1,1), a jsou čtvrté z pěti kol. Vyřadit je z kol může jen Ondřej. Pro vyřazení mluví malý vliv (menší než chyba měření) a to, že vliv je pro diváka obrácený: vyšší úroky drží ceny níž, hypotéka je ale dražší. Proti vyřazení mluví, že úroky mají větší vliv než výstavba a že by divák neslyšel o faktoru, který některým zemím přidává čtyři až pět bodů. **Doporučení: pět kol**; u úroků jednou větou říct obě strany. Kdyby Ondřej úroky z kol vyřadil, jejich body zůstanou v čekaném výsledku pro analytika a scénář je zmíní u zemí, kde hrají roli (u bydlení hlavně Řecko, Chorvatsko, Irsko, Rumunsko a Bulharsko, každé asi +4 až +5 bodů).
-   - *(opraveno po druhé nezávislé kontrole 14. 10. 2026)* **Záznam přesunutý z rozhodnutí ze 13. 10. 2026:** „Úroky nejsou kolo; patří mezi další faktory zemí, kde hrají velkou roli (Rumunsko).“ Nebylo to Ondřejovo výslovné rozhodnutí. Ondřejův koncept úroky nezmínil a vyřazení navrhl analytik, dřív už v dramaturgii verze 2 s poznámkou „pokud Ondřej nenamítne“. Proto patří sem, mezi otevřené otázky.
-   - **Čísla ze 14. 10. 2026:** úroky 1,8 bodu, výstavba 0,9 bodu. Zásoba je před úroky jen v 59 % převzorkování a síla jen ze zásoby dá úroky před zásobu; úroky jsou tedy kolo i při jiném pořadí.
-   - **Rumunsko není důvodem úroky vyřadit:** v sazbě po odečtení inflace je na úrovni Balkánu, skoro stejně jako Chorvatsko, Řecko a Bulharsko.
-
-### 7. Vztah ke starým skillům
-
-Podle rozboru `10_documents/active/2026-10-11_podklady_noveho_skillu/ANALYZA_SOUCASNEHO_SKILLU.md` (11. 10. 2026):
-- **Nahrazuje:** rozdělení faktorů na potenciál, krátkodobou a dlouhodobou strategii; tři indexy s průměrem 100 a bodování 0–100; potenciál jako měřítko výsledku (nahradí čekaný výsledek po kolech); výběr karet 3 + 1–2 + 3; zákaz vybírat faktory podle vlivu (nahradí kandidáti zapsaní předem, permutační hranice, vynechání zemí, opravený test vývoje); „nejnovější společný rok“ jako výchozí období dat.
-- **Přebírá:** stupně důkazu a slovník jistoty, bránu způsobilosti faktoru, srovnatelnost dat, strojové ověření čísel, kartu příčiny s kronikou rozhodnutí, vedlejší účinky, slepé kontroly, odlišující příčiny a odkaz místo opakování, bránu eskalace; výpočet čekaného výsledku (přímka, nálepky nad/pod) pro čekaný výsledek po kolech.
-- **Rozbije:** přes sto souborů závisí na staré struktuře; nový skill potřebuje vlastní větev nástrojů; aktivace vyžaduje novelu ústavy (mění jen Ondřej) a nový registr sekcí.
-- *(doplněno ve v1.2)* **Vztah k verzi 1.1:** verze 1.2 z verze 1.1 nic nemaže. Mění jen to, kdo rozhoduje o zařazení (svědci místo jedné zkoušky v datech), jak se řadí hlavní faktory (velikost vlivu) a kde se dělá test přenosu (na sadě). Detektory a registr závěrů jsou záchranná síť, která chybějící faktor najde až dodatečně; pravidlo svědků opravuje samotný výběr.
-- **Upřesnění k chybě s výstavbou:** jednoroční výstavba byla jen v analýze v22 z 3. 8. 2026. Mylný závěr z 10. 10. vznikl ze srovnání zemí v jednom roce, z vývoje v čase bez výchozího stavu a z nebrání rozporu s ekonomy jako varování. Test vývoje z 11. 10. (o 10 % víc výstavby zlepší poměr cen k příjmům asi o 1 % za 15 let; výstavba, turisté a úspory „prošly v čase“) byl zčásti mechanický a **do opravy podle kroku 4.2 neplatí**. V datech ligy navíc výstavba souvisí s přírůstkem lidí (0,46), ne s výchozí úrovní cen (−0,15): nabídka se mezi zeměmi schová za poptávku, ne za obrácený směr. *(ověřeno po druhé nezávislé kontrole 14. 10. 2026 podle kroku 3.5, s výstavbou od sčítání 2011: s přírůstkem lidí 0,51, s výplatou 0,54, s výchozím stavem výsledku 0,10, se změnou 0,09, s cenou při stejné výplatě a přírůstku lidí −0,04; krok 7.4)*
-
-### Příloha A. Horizont u dalších ukazatelů (podle kritiky)
-
-| Ukazatel | Druh | Co by jednoroční měření udělalo špatně | Doporučené měření faktorů |
-|---|---|---|---|
-| Zadlužení (% HDP) | stav z desítek let (dluh 2007 vysvětlí 65–67 %) | schodek a růst jednoho roku jsou část výsledku | start + změna; průměrná salda, krize a pravidla za období; růst měřený před obdobím |
-| Obnovitelné zdroje | stav kapacit (podíl 2005 vysvětlí 86 %; cíle EU se dělily podle startu) | roční výroba a podpora jsou čitatel výsledku | příroda a dědictví na začátku; politika jako změna od 2005 |
-| Průměrná mzda | produktivita a kapitál budované desítky let | jednoroční příliv investic, dnešní výsledky školáků | kapitál a investice za 15–20 let, vzdělání dnešních pracujících, instituce s dobou platnosti |
-| Naděje dožití | expozice celého života | letošní výdaje na zdravotnictví | kouření a alkohol zpožděné 20–30 let, příjem a vzdělání kohort |
-| Hustota dálnic | stav stavěný od 30.–60. let | letošní kilometry | stav na začátku, výstavba za 20 let, fondy EU s dobou platnosti, hustota osídlení a terén |
-| Zbrojní průmysl | kapacity z desítek let; roky kolísají | rok 2024 (válka) | pětileté průměry (SIPRI), výdaje na obranu za 20 let |
-| Dostupnost bydlení | ceny z desítek let; data 10–15 let | dokončené byty jednoho roku | příloha B; přírůstek lidí za 10–15 let; příjem a sazby jako úroveň i změna |
-
-### Příloha B. Nabídka bytů u dostupnosti bydlení (podle kritiky)
-
-Bytový fond na obyvatele měří prázdné, rekreační a venkovské byty a velikost domácností (ta je sama zčásti výsledkem cen); fond na domácnost je ve sčítání skoro jen podíl prázdných bytů. Ani jedno se jako příčina nepoužije. Místo toho tři vrstvy, zapsané do gitu před stažením dat:
-- **A. Nabídka za poptávkou ve městech 2011–2021:** pro kraje měst z cenového koše přírůstek bytového fondu minus přírůstek dospělých obyvatel (20–64 let), v `logaritmech` (sčítání 2021 podle období výstavby, obyvatelé krajů). Hlavní měřítko nabídky; přírůstek lidí celé země zůstává samostatným faktorem poptávky se společnou částí.
-- **B. Nepružnost nabídky:** odhady pružnosti nabídky (OECD, BIS), náhrady (cenová hladina stavby, podíl netržního nájmu, délka povolování), vstupující jako **násobení s růstem poptávky**.
-- **C. Zděděný fond:** byty postavené před rokem 2001 na dospělého v krajích měst z koše (nemohly vzniknout jako reakce na dnešní ceny); podíl prázdných bytů jen jako kontrola.
-
-Je legitimní výsledek, že se nabídka mezi 27 zeměmi ukáže jen přes přírůstek lidí, zatímco uvnitř zemí rozhoduje; pak má stav „doložený uvnitř zemí, mezi zeměmi neměřitelný“ a writer o ní mluví s příklady uvnitř zemí.
-
-*(doplněno ve v1.2)* **Výsledek zkoušky přenosu na bydlení (12. 10. 2026):** výstavba 2010–2024 mezi zeměmi nenese žádnou informaci (náhodné přeházení sedí stejně dobře ve 47–58 % případů); zděděná zásoba bytů na obyvatele (byty 2011 × růst fondu) má správný směr (lepší než 95 % přeházení), ale síla ze studií (−1,5 % cen na 1 % bytů) je na ligu přestřelená a data ligy dávají −0,42 % cen a −0,60 % nájmů. Fond na obyvatele počítá i prázdné a rekreační byty a velikost domácností, proto je jeho síla mezi zeměmi menší než ve studiích uvnitř zemí. Přírůstek lidí je složka téhož rámce „lidé na byt“ (krok 3.4) a jeho síla ze studií na ligu sedí. Podle kroku 5 je nabídka zařazená (studie a ekonomové v 15 zemích) se silou z dat ligy.
 
 
 # Skill: voiceover-styl-ondrej-SKILL-v1.0.md

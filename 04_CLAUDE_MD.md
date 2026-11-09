@@ -7,13 +7,15 @@
 Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
 webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
 
-- **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.0.md` postaví mapu příběhu
+- **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.1.md` postaví mapu příběhu
   (kostra `py scripts/kostra_mapy_pribehu.py --region "…"`) a napíše **faktickou verzi** scénáře regionu se zámkem
   faktů (tučně = pevné jádro, `{volitelné: …}`, seznam NEŘÍKEJ, rozpočet slov). Fakta nechá nezávisle zkontrolovat.
+  Důvody a jejich váhu bere z analýzy podle `analyza-pricin-regiony-SKILL-v1.5.md`, krok 2b (test se třemi výsledky,
+  pořadí příčin zvlášť pro vlastní výsledek země a pro rozdíl proti sousedovi; audit výkladu, Ondřej 9. 11. 2026).
 - **Ondřej** ji vloží do **Gemini na webu** spolu se skillem `05_epizode_packs/_skills/gemini-web-ctiva-verze-SKILL-v1.0.md`
   (Ondřej ho dál ladí); Gemini napíše čtivou sportovní verzi a nemění fakta.
-- **Claude** čtivou verzi zkontroluje jen na pět druhů odchylek (číslo, omezující slovo, směr příčiny, pořadí/štítek/tip,
-  nový fakt; skill mapy příběhu oddíl 4). Styl Gemini nepřepisuje.
+- **Claude** čtivou verzi zkontroluje jen na šest druhů odchylek (číslo, omezující slovo, směr příčiny, pořadí/štítek/tip,
+  nový fakt, váha důvodů; skill mapy příběhu oddíl 4). Styl Gemini nepřepisuje.
 - Platí dál: sloh v souvislých větách, žádné „my“ o Česku, žádné kódy.
 
 **Historie (23.–31. 10. 2026, nahrazeno):** dřív psal scénáře jen Gemini 4 Argon přes Antigravity CLI (`agy`,
@@ -304,7 +306,8 @@ Instrukční dokumenty pro generování obsahu jsou v `05_epizode_packs/_skills/
 - **`european-economy-analysis-v20-capacity-first.md`** — Podklad v22: platí z něj §1.2, §4, §5, §7.1, §8, §9 (v22 na ně odkazuje); konstrukce indexu z v20 §2–3 je nahrazená.
 - **`european-economy-analysis-v19-causal-first.md`** — Předchozí causal-first rámec (nahrazen v20→v22); kauzální kontrakt žije dál ve v22 §5 odkazem.
 - **`voiceover-skill-v10-live-race.md` (v10.3) + `voiceover-styl-ondrej-SKILL-v1.0.md`** — AKTIVNÍ writer kontrakt (Ondřej, laděno 2026-07-24→28; závazné i pro ep_001). Formát „živý závod": abecední startovní listina, PAPER FORM/OČEKÁVÁNÍ před výsledkem, GAME PLAN + TARGET BAND, živá tabulka se zásuny, checkpointy po 10/20, vyhlášení §7. Stylová vrstva styl-ondrej v1.0 při konfliktu vyhrává. Kauzalita se vynucuje NAVRCH přes `causal-claim-repair-ADDENDUM-v1.0.md` (bodové opravy à la cr/cr2 vzorky — styl se při nich zachovává). Kanonický vzor: `output/v14/FINAL_voiceover_v14.md` + cr2 segmenty.
-- **`voiceover-mapa-pribehu-SKILL-v1.0.md`** — AKTIVNÍ hlavní postup scénářů regionů (Ondřej 31. 10. 2026): kostra (`scripts/kostra_mapy_pribehu.py`), mapa příběhu (tip, hlavní scéna kola, otázka diváka, průběžné pořadí po každém kole, finále = skutečné pořadí proti pořadí po kolech a zvláštnosti zemí při posunu aspoň o dvě místa), faktická verze se zámkem faktů a zpětná kontrola čtivé verze z Gemini (jen pět druhů odchylek). Nahrazuje psaní Argonem a doplněk o jádru země.
+- **`voiceover-mapa-pribehu-SKILL-v1.1.md`** — AKTIVNÍ hlavní postup scénářů regionů (Ondřej 31. 10. 2026; verze 1.1 z 9. 11. 2026 po auditu výkladu dat): kostra (`scripts/kostra_mapy_pribehu.py`), mapa příběhu (tip, hlavní scéna kola, otázka diváka, průběžné pořadí po každém kole, finále = skutečné pořadí proti pořadí po kolech a zvláštnosti zemí při posunu aspoň o dvě místa), důvody a jejich váha ze záznamu pořadí příčin v analýze, závěr povinný a soud jen s oporou, dohánění jako kontext, faktická verze se zámkem faktů a zpětná kontrola čtivé verze z Gemini (šest druhů odchylek včetně váhy důvodů). Nahrazuje psaní Argonem a doplněk o jádru země; historie v `voiceover-mapa-pribehu-HISTORIE.md`.
+- **`analyza-pricin-regiony-SKILL-v1.5.md`** — analytický skill regionů (podle něj vznikají analýzy regionů; formální aktivaci potvrzuje Ondřej): výběr kol podle svědků a obvyklého vlivu, a zvlášť výklad hodnot v kole (krok 2b: test domněnek se třemi výsledky podporuje / odporuje / nerozlišuje, pořadí příčin zvlášť pro vlastní hodnotu a pro rozdíl proti sousedovi, závěr a soud jen s oporou; krok 7.6). Verze 1.5 z 9. 11. 2026 po auditu výkladu dat; historie v `analyza-pricin-regiony-HISTORIE.md`.
 - **`gemini-web-ctiva-verze-SKILL-v1.0.md`** — malý skill pro Gemini na webu (Ondřej ho ladí): z faktické verze čtivý sportovní komentář, pevné jádro a omezující slova zůstávají, žádné nové fakty, limit slov.
 - **`ekonomie-lidskou-reci-ZASADA-v1.0.md`** — ZÁSADA CELÉ SÉRIE (Ondřej 2. 11. 2026): ekonomie lidskou řečí. Nejdřív věc, pak číslo (za každým stavem konkrétní firmy, výrobky, místa, povolání ze země); každý krok jako příběh (co se lidem změnilo, jak to bylo provedeno, kudy to doputovalo k ukazateli); méně příčin, ale pořádně. Test nosnosti příkladu (slavná výjimka průměr nevysvětlí) a zdroj u každého příkladu. Povinná rešerše lidských příkladů `priklady/{kód}.md` v každé analýze, ze které vzniká scénář. Platí pro všechny ukazatele, analýzy, writery i Gemini.
 - **`voiceover-uvod-SKILL-v1.0.md`** — AKTIVNÍ skill mluveného úvodu (Ondřej 8. 10. 2026), nahrazuje §9 writer skillu: trademark „Vítejte u {první} epizody {Evropských/Amerických/Globálních} ekonomických her.“, hned disciplína, bez otázky a výčtu zemí; část „Pojďme se podívat na to, co v dnešní disciplíně uvidíme.“ (favoriti, černí koně a outsideři vždy od Ondřeje — bez nich se FINAL nepíše, trikoty, pořadí startu, tři kola s faktory a vahami, nesčítání kol se smyšleným příkladem, zdroje); nakonec co přesně měříme a rok dat ověřený u zdroje.
