@@ -2,11 +2,11 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 09. 11. 2026 20:24 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `3b4e11ee`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 17. 11. 2026 23:13 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `65a31c78`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
-| 01_POSLEDNI_SCENAR | poslední scénář (BALKAN_OPRAVA_2026-11-09, faktická verze od Clauda) a kontrola čísel |
+| 01_POSLEDNI_SCENAR | poslední scénář (ZAPADNI_EVROPA, od Gemini 4 Argonu) a kontrola čísel |
 | 02_KUCHARKA_GEMINI | instrukce, podle kterých Gemini scénář napsal |
 | 03_PODKLADY_SCENARE | data a výklady zemí, ze kterých scénář vznikl (jediný zdroj čísel) |
 | 04_CLAUDE_MD | závazná pravidla projektu |
@@ -18,292 +18,601 @@ Aktualizováno 09. 11. 2026 20:24 automaticky ze soukromého repozitáře projek
 
 <!-- soubor 01_POSLEDNI_SCENAR.md -->
 
-# Poslední scénář – Balkán a jihovýchodní Evropa – faktická verze scénáře (průměrná čistá mzda v kupní síle, 9. 11. 2026)
+# Poslední scénář – Západní Evropa
 
-*Faktická verze se zámkem faktů a seznamem NEŘÍKEJ, kterou napsal Claude podle skillu mapy příběhu a nechal nezávisle zkontrolovat; čtivou verzi z ní píše Gemini na webu podle skillu gemini-web-ctiva-verze a fakta nemění. Uloženo 09. 11. 2026 20:19.*
+*Napsal Gemini 4 Argon podle kuchařky (soubor 02); Claude zkontroloval čísla. Uloženo 17. 11. 2026 10:40.*
 
-
-Napsal Claude (Opus 5.5) 9. 11. 2026 podle zadání `ZADANI_SCENARE.md` a doplnění koordinátora z téhož dne (vady měření jen do poznámky pro editora, pevné jádro každé země v každém kole, čísla do hlasu jen jako pointa, opravy podkladů po nezávislé kontrole).
-
-**Druhá verze, 9. 11. 2026 večer (souhrn oprav od koordinátora po kontrole vah, slepém divákovi a slepém hodnotiteli).** Co se změnilo: (1) podklady: v kole 1 pár Chorvatsko–Bulharsko stojí na výkonu chorvatských firem uvnitř týchž odvětví, ne na menším dílu pracujících (vyvráceno), u páru Řecko–Slovinsko jde do hlasu jen fakt o odvětvích, bez žen; v kole 2 je z dělení mechanismem jen odchod z drobných políček (zapsáno v `podklady/ZMENY_karty.md` a `ZMENY_rust.md`, oddíly „Druhá oprava“); (2) hlas: v cíli „hlavně“ jen u Slovinska proti kolům, u páru Bulharsko–Řecko a v pointě; nová pointa cíle a kola 1; kolo 1 se čtyřmi čísly, definicí kola a vlastní větou pro Chorvatsko; pravidlo průběžného pořadí a místo lídra v lize po každém kole; konkrétní obrazy místo „napůl“ a šablon (prodavačka, sto eur, stroje a bydlení; u Chorvatska v kole 2 srovnání s Českem a Maďarskem); obměněné věty párů; statistický pojem pro nájem v bytech vlastníků nahrazen popisem nebo vypuštěn. Zůstalo: váhy a hlavní důvody všech zemí, hodnocení, struktura a pořadí odhalení. **Třetí průchod 9. 11.: druhá kontrola a slepé čtení tří verzí.** Přesná znění od koordinátora: válka v Chorvatsku vzala výrobu i práci „zhruba“ stejným dílem; pointa kola 1 „Kromě Řecka tak všechny drží dole hlavně továrny“; Rumunsko v kole 2 bez čísla „skoro dvakrát“ v hlase a se zahraničními firmami na konci věty; Chorvatsko v kole 2 srovnané s Českem, Maďarskem a Slovenskem a pár s Bulharskem jen dvěma fakty bez příčiny (méně bulharských pracujících nezazní ani jako fakt); Slovinsko „také s dobrým výsledkem“; Řecko „dnes vyrobí“ místo „po odečtení zdražení“; průběžné pořadí po kolech 2 a 3 dvěma větami; Řecko v cíli „nadcenila i proto“; Bulharsko v cíli „předčila kola nejvíc z celé ligy“, rolníci „vytvoří jen zlomek“, bydlení „levné i na bulharské poměry“ místo strojů; Rumunsko v cíli „z velké části“.
-
-Verze skillů, podle kterých text vznikl: `voiceover-mapa-pribehu-SKILL-v1.1.md` (celý, závazný); `analyza-pricin-regiony-SKILL-v1.5.md` (krok 2b a 9a.3, jen ke čtení záznamů pořadí příčin a hodnocení); `ekonomie-lidskou-reci-ZASADA-v1.0.md`. Jediný zdroj důvodů, jejich vah a hodnocení: nová analýza ve složce `podklady/` (`soudy_karty`, `soudy_rust`, `soudy_dane`, `soudy_cil`, `ZMENY_*.md` včetně oddílů „Opravy po nezávislé kontrole“). Místa, průběžné pořadí a tipy: `KOSTRA.md`; čísla na obrazovce: `../POKUS_JAKO_NA_WEBU_2026-11-08/BALKAN_OBRAZOVKA.md`; mapa příběhu: `MAPA_PRIBEHU.md`; vady měření a otázky pro Ondřeje: `POZNAMKY_PRO_EDITORA.md` (do hlasu nepatří); návrh úprav páteře: `PATER_NAVRH_ZMEN.md`. Data epizody zůstávají ve stejné verzi jako dosud.
-
-Rozpočet (skill §3 bod 6): cíl celé epizody Ondřej zatím nestanovil, platí strop regionu. Při tempu hlasu 150 slov za minutu je cíl 9 minut = 1 350 slov a strop 9,5 minuty = 1 425 slov (pro pět zemí by vzorec 250 × 5 + 300 dal 1 550, platí nižší strop 1 425). Šest regionů podle těchto stropů dá asi 7 500 až 7 800 slov, tedy 50 až 52 minut bez úvodu, finále a pauz. Konečná délka se ověří nahrávkou.
-
-Počet slov mluveného textu (počítáno stejně jako brána `kontrola_paru_sousedu.py`): **bez volitelných 1 417 (9,4 min), s volitelnými 1 552 (10,3 min)**; strop 1 425 dodržen, ideál 1 350 až 1 400 kvůli doplňkům z oprav překročen o 17 slov. Po částech bez / s volitelnými: showcase 48 / 50, kolo 1 365 / 382, kolo 2 374 / 425, kolo 3 273 / 311, cíl 357 / 384. Kolo 2: Rumunsko a Bulharsko dohromady 149 slov bez volitelných (limit 160). Pro Gemini: text s volitelnými je nad stropem 1 425, takže z volitelných částí musí aspoň 127 slov vypustit, a protože pevný text je skoro na stropu, nesmí nic přidávat ani rozvádět.
-
-Značení: **tučně** = pevné jádro (musí zaznít, číslo a omezující slovo přesně); `{volitelné: …}` = smí zkrátit nebo vypustit; ostatní text smí přeformulovat, ale ne vynechat. Tučně je 19 % slov.
 
 ## Předstartovní showcase
 
-[VIZUÁL: Mapa Balkánu a jihovýchodní Evropy – Slovinsko, Chorvatsko, Rumunsko, Bulharsko, Řecko; vlajky v hranicích států; první region epizody. Ondřejovy tipy: Slovinsko 15.–20. místo ligy; Rumunsko kolem 25. (23.–27.); Chorvatsko mezi třemi nejhoršími (25.–27.); Bulharsko kandidát na poslední místo (25.–27.); Řecko unikne poslednímu místu (22.–26.). Zelený trikot pro nejrychlejší dohánění: Rumunsko, Chorvatsko, Bulharsko.]
+[VIZUÁL: Startovní rošt západoevropské rozjížďky – pět ekonomických těžkých vah: alpská pevnost Švýcarsko, průmyslový motor Německo, státem řízená Francie, finanční ostrov Británie a korporátní tygr Irsko.]
 
-Balkán a jihovýchodní Evropu čekáme v **dolní polovině** tabulky, nejvýš **Slovinsko**, **mezi patnáctým a dvacátým** místem. O **zelený trikot** pro nejrychlejší dohánění se utká **Rumunsko**, které čekáme **kolem pětadvacátého** místa, **Chorvatsko**, které tipujeme **mezi tři nejhorší**, a {volitelné: největší outsider }**Bulharsko**, **kandidát na poslední místo**. **Řecko** by poslednímu místu mělo **uniknout**.
+Do západoevropské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupuje pět těžkých vah. Favoritem na triumf v regionu i místo v evropské špičce je Švýcarsko, kde obří výplaty narážejí na nejdražší život v celé Evropě. O medaile a špičku ligy bojují i průmyslové Německo s mírnějšími cenami a drahá Británie opřená o služby. Černým koněm na hraně špičky je Irsko, kde výdělky v zámořských korporacích krotí drahota, zatímco levnější Francii se stlačenými mzdami hrozí chvost regionu a střed ligy.
 
-## Kolo 1 – Rozdané karty: kolik vytvořil pracující v roce 1996
+## Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
 
-[VIZUÁL: Kolo 1, ikona vějíř dvou karet s ozubeným kolem. Kolik vytvořil jeden pracující v roce 1996 v kupní síle, střední země ligy = 100 %: Řecko 90 % (15. v lize), Slovinsko 70 % (17.), Chorvatsko 57 % (19.), Bulharsko 35 % (23.), Rumunsko 26 % (27., poslední v lize).]
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Švýcarsko (128,9 %, +24,7 b., 3. v Evropě), 2. Francie (118,5 %, +16,5 b., 5. v Evropě), 3. Německo (115,7 %, +14,2 b., 6. v Evropě), 4. Británie (109,4 %, +8,8 b., 9. v Evropě), 5. Irsko (101,1 %, +1,1 b., 13. v Evropě).]
 
-První kolo rozdává karty podle toho, kolik v roce 1996 vytvořil pracující: co země vyrobila a prodala, rozdělené mezi všechny od dělníka po rolníka.
+Karty roku devatenáct set devadesát šest ukazují zděděnou produktivitu, s níž celá pětice začínala nad středem ligy.
 
-[VIZUÁL: Řecko – rodinné políčko a olivový háj; v zemědělství 18,3 % pracujících (střed ligy 8,2 %), zemědělec vytvořil asi třetinu řeckého průměru; obory mimo zemědělství 0,96 až 0,99 středu ligy (továrny, obchod a turisté, stavby, veřejné služby); růst výkonu na pracujícího 1990–1996 +6,0 % (střed ligy i Portugalsko +10,5 %). Ikona: olivový háj.]
+Třetí v celé Evropě startovalo Švýcarsko, o víc než čtvrtinu nad středem. Vyhnulo se válkám, před tou druhou bylo dvakrát bohatší než střed Evropy a pracovníci měli o dvě pětiny více kapitálu. Produktivitu táhnou velké nadnárodní firmy od Roche a Novartisu po strojírny a banky, dohromady s více než pětaosmdesáti procenty přidané hodnoty, zatímco celá ekonomika rostla od sedmdesátých let pomalu, což vláda přičítala chráněnému trhu.
 
-Nejvýš startuje **Řecko**, jediné **bez centrálního plánování**: dělník i úředník tu vytvořili **zhruba tolik co ve střední zemi ligy**, takže bylo z čeho platit mzdy. Pod středem ho drží **hlavně** olivové háje a políčka, kde pracovalo mnohem víc Řeků než jinde a vytvořili jen zlomek. Nejlepší karty regionu jsou dědictví trhu, ne zásluha{volitelné: , a Řecko s nimi do roku 1996 rostlo pomaleji než střed ligy}.
+Necelou pětinu a šestinu nad středem vyjížděly Francie s Německem. Průmyslová Francie s Renaultem sice v hodinové produktivitě dohnala Spojené státy, na pracujícího ji ale tlumilo o sto padesát odpracovaných hodin méně než v Unii. Německo mělo o pětinu více kapitálu, jenže průměr srazilo sjednocení: východoněmecký soustružník dosahoval necelých tří čtvrtin západní produktivity, kde dohánění zamrzlo.
 
-[VIZUÁL: Slovinsko, do roku 1991 republika Jugoslávie. Továrny (zpracovatelský průmysl), výkon na pracujícího proti střední zemi ligy: Slovinsko 0,52–0,56, Řecko 0,96–0,99; obchod, doprava a ubytování Slovinsko 0,76, Řecko 0,97. Výroba 1990–1992 −14 %, v roce 1996 zpět na úrovni 1990 s o pětinu menším počtem pracujících, výkon na pracujícího 1990–1996 +25 % (nejvíc v regionu). Ikona: továrna.]
+Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie investuje nejméně ze sedmi největších vyspělých ekonomik a šestnáctiprocentní hodinové manko na Francii doháněla delší prací. Irsko, v osmdesátých letech chudé a s šestnáctiprocentní nezaměstnaností, teprve sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
 
-**Druhé** je bývalá jugoslávská republika **Slovinsko**, které drží pod středem **hlavně** socialistické továrny s dělníkem na **polovině** středu ligy, a s ním i výplaty. Roky po pádu socialismu ale zvládlo **nejlépe v regionu** a výrobu obnovilo s mnohem menším počtem lidí. Řecko je před ním, protože řecké továrny i obchody vytvořily na pracujícího víc.
+## Kolo 2 – Tah země: Vývoj produktivity 1996–2024
 
-[VIZUÁL: Chorvatsko, do roku 1991 republika Jugoslávie. Továrny 0,46–0,50 středu ligy, na pracujícího asi 60 % středu ligy už v roce 1990; loděnice Uljanik v Pule, 3. Maj v Rijece a Brodosplit (v roce 1990 asi 25 000 lidí). Válka za nezávislost 1991–1995: výroba 1990→1996 −22 %, pracujících 1990→1996 −27 %, výkon zbylých pracujících reálně +6 % (skoro předválečný); Slovinsko v týchž letech výroba zpět na úrovni 1990 s pětinou lidí méně. Turisté 1991–1992 méně než 2,5 milionu příjezdů ročně proti přes 10 milionům koncem 80. let. Ikony: loděnice a prázdná pláž.]
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 vůči středu ligy, body a hodnocení nad rámec dohánění): 1. Irsko (1,17×, +0,6 b., 13. v Evropě – očištěný důchod GNI*, nad rámec dohánění nejisté), 2. Švýcarsko (1,04×, −10,8 b., 16. v Evropě – rostlo rychleji, než odpovídá dohánění), 3. Francie (0,96×, −19,1 b., 22. v Evropě – v rámci běžného dohánění), 4. Británie (0,94×, −20,9 b., 23. v Evropě – nejisté), 5. Německo (0,94×, −21,3 b., 24. v Evropě – nejisté).]
 
-**Třetí** je **Chorvatsko**, další jugoslávská republika, které drží pod středem **hlavně** továrny a loděnice zaostávající **už v roce 1990**. Válka za nezávislost vzala výrobu i práci zhruba stejným dílem: kdo práci měl, vytvářel **zhruba jako před válkou** a měl z čeho dostat výplatu, **smůla** dopadla na ty, kdo ji ztratili. Od Slovinska ho dělí válečná léta, kdy Slovinsko výrobu obnovilo, Chorvatsko ne.
+Druhé kolo sleduje vývoj do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění z nízkého základu, protože převzít linku je snazší než vymýšlet patenty.
 
-[VIZUÁL: Bulharsko – 44 let centrálního plánování sovětského vzoru; v roce 1988 šlo 62,5 % vývozu do Sovětského svazu (vysokozdvižné vozíky Balkancar, cigarety); bulharská továrna 1995–1998 0,16–0,20 středu ligy, dělník zhruba jako rolník; 1996 krach bank a hyperinflace (lev ze 71 na 487 za dolar), v roce 1997 výroba reálně −14,1 %; chorvatský dělník vytvořil 3,2krát víc než bulharský (továrna 0,50 proti 0,155 středu ligy). Ikona: továrna se šipkou do Sovětského svazu, přeškrtnutou.]
+Skutečným vítězem je proto Švýcarsko: vůči středu sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo běžné dohánění. Od roku dva tisíce dva otevřelo trh odborníkům z Unie a farmacie rostla skoro o desetinu ročně, obstarala čtvrtinu růstu a po letech se silným frankem pomohla projít pandemií. První v kole skončilo Irsko s růstem o sedmnáct procent. Měříme ho přes očištěný důchod: když korporace jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt roku dva tisíce patnáct bez nové výroby vyskočil o čtvrtinu. I po očištění však produktivita rostla, zčásti díky technologiím a lékům – ačkoliv po roce dva tisíce osm praskla úvěrová bublina, investice spadly o dvě pětiny a stát čerpal pětaosmdesátimiliardový záchranný balík.
 
-**Čtvrté** je **Bulharsko**, za **centrálního plánování sovětského vzoru** dílna Sovětského svazu. Když ten zákazník zmizel, bulharská továrna vytvářela **jen šestinu** středu ligy: co se neprodá, nevytvoří hodnotu ani výplaty. Zánik trhu byl **smůla**, krach bank roku 1996 po odkládaných reformách **vlastní chyba**, která zemi v roce 1997 vzala **sedminu** výroby. Za Chorvatskem je, protože chorvatská továrna vytvořila na dělníka **mnohem víc**.
+Zbylá trojice ztratila kolem dvaceti bodů, což u Francie odpovídá zpomalení bohaté země. Británii táhl rozmach londýnské City a severomořská ropa; krize roku dva tisíce osm ale obojí vypnula a nejistota odchodu z Unie srazila investice firem o desetinu. Francie zkrátila týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů počítaných jako plní pracující, což vysvětlí asi pětinu propadu po pandemii. Německé odbory se při vysoké nezaměstnanosti kolem roku dva tisíce spokojily se skromnými přídavky, což továrnám vrátilo konkurenceschopnost, ale mzdy na spodku pak celé desetiletí reálně klesaly a kolektivní smlouvy dnes kryjí už jen asi polovinu zaměstnanců. Od roku devadesát šest sice Německo nabralo o pětinu víc pracujících i díky reformě podpor roku dva tisíce pět, s kratšími úvazky ale Němec odpracoval o jedenáct procent méně hodin a od roku dva tisíce dvacet dva průmysl zasáhl energetický šok. Motor neroztočily ani výdaje na výzkum přes tři procenta výkonu ekonomiky – proč, ukáže epizoda o produktivitě a sektorech.
 
-[VIZUÁL: Rumunsko – nejnižší HDP na obyvatele dnešní ligy už v letech 1929–1938; komunistický diktátor Nicolae Ceaușescu (do roku 1989); ocelárna Sidex v Galați, státní a ztrátová, při privatizaci v roce 2001 asi 27 000 zaměstnanců; rumunská továrna 0,29–0,33 středu ligy (asi dvakrát víc než bulharská); na polích třetina až dvě pětiny pracujících podle měření (Bulharsko 22,5 %); zákon o půdě z roku 1991: asi 3,8 milionu hospodářství po 1,9 ha; výkon na pracujícího 1990–1996 −11 % (jediný pokles v regionu). Ikona: komín kombinátu a motyka.]
+## Kolo 3 – Tah země: Daňový klín
 
-**Poslední** v lize je **Rumunsko**, kterému komunistický diktátor Ceaușescu zanechal obří kombináty{volitelné: jako ocelárnu Sidex v Galați}: dělník v továrně vytvořil **jen třetinu** středu ligy, a z toho vysoká výplata nebude. Továrny a služby byly **hlavní slabinou**, **druhou** pole, kam se vraceli propuštění, takže výkon na pracujícího jako **jediný v regionu** klesl: nouzová síť, ne chyba, ale výkon **slabý**. Na Bulharsko ztrácí **zčásti** kvůli polím, kde pracovalo víc Rumunů, i když rumunské továrny byly **výkonnější**.
+[VIZUÁL: Grafické schéma „Daňového klínu“ (daně a odvody zaměstnance + odvody zaměstnavatele + povinné soukromé fondy vůči celkovým nákladům práce) a tabulka Kola 3: 1. Británie (28,3 %, +13,2 b., 1. v Evropě), 2. Irsko (34,2 %, +7,4 b., 2. v Evropě), 3. Švýcarsko (36,5 %, +5,1 b., 6. v Evropě), 4. Francie (46,3 %, −6,1 b., 24. v Evropě), 5. Německo (46,9 %, −6,8 b., 25. v Evropě).]
 
-[VIZUÁL: Průběžné pořadí po kole 1 (místo v lize): Řecko 15., Slovinsko 17., Chorvatsko 19., Bulharsko 23., Rumunsko 27.]
+Třetí kolo měří daňový klín – podíl daní, odvodů a povinných plateb zaměstnance i firmy na nákladech práce, který ze dvou třetin nese pracující. Nejmenší zátěž v sedmadvacítce mají ostrovy: první Británie osmadvacet a druhé Irsko čtyřiatřicet procent, hlavně díky jedenáctiprocentnímu pojistnému firem nad hrubou mzdu. Británie roku dva tisíce dvacet čtyři srazila zaměstnanecké pojistné na osm procent, zmrazená pásma se základem dvanácti a půl tisíce liber ale s inflací zvyšují daň, zatímco Irsko drží od krize univerzální sociální poplatek a silnou progresi.
 
-Body kol se nesčítají; průběžné pořadí jen ukazuje, kde by země stály, kdyby rozhodovala jen odehraná kola. Vede **Řecko**, v lize **patnácté**, **Rumunsko** je **poslední**.
+Nízkou zátěž má i Švýcarsko se šestatřiceti a půl procenty. Běžné přehledy přehlížejí povinné soukromé fondy, jenže Švýcar posílá přes pět tisíc franků ročně zdravotní pojišťovně – jejíž pojistné od konce devadesátých let stouplo dvaapůlkrát – a přes pětapůl tisíce do penzijní kasy.
 
-[VIZUÁL: Ikony u vlajek: Řecko olivový háj; Slovinsko továrna; Chorvatsko loděnice; Bulharsko továrna se škrtnutou šipkou do Sovětského svazu; Rumunsko komín kombinátu a motyka.]
+Mezi posledními v Evropě odevzdají Francie a Německo přes šestačtyřicet procent; hůř dopadají jen Rakousko a Belgie. Francouzské firmy odvádějí nad hrubou mzdu přes třetinu; u minimální výplaty jim stát skoro čtyři pětiny odvodů odpouští, jenže s každým přidaným eurem úlevy mizí, takže přidat zaměstnanci nad minimum se podniku skoro nevyplatí a podle Komise to stlačuje mzdy. V Německu leží důchody a zdravotnictví na páskách, kde pojistné roku dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Německo dříve udrželo odvody seškrtáním budoucích penzí, kdežto Švýcarsko sází na zmíněné kasy – čí model vyhraje, ukáže epizoda o penzích.
 
-Kromě Řecka tak všechny drží dole **hlavně továrny**: kde dělník vytvoří málo, jsou malé i **výplaty**.
+## Finále regionu: Odhalení pořadí od posledního po vítěze
 
-## Kolo 2 – Tah země: jak výkon rostl od roku 1996
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Německo +15,7 b., Švýcarsko +7,3 b., Francie +4,6 b., Británie +4,2 b., Irsko −6,6 b.).]
 
-[VIZUÁL: Kolo 2, ikona stoupající křivka s ozubeným kolem. O kolik se výkon pracujícího v kupní síle od roku 1996 do let 2020–2024 změnil proti střední zemi ligy: Rumunsko 3,17krát, z 26 na 82 % (1. v lize); Bulharsko 1,63krát, z 35 na 57 % (6.); Chorvatsko 1,50krát, z 57 na 86 % (8.); Slovinsko 1,25krát, ze 70 na 87 % (12.); Řecko 0,77krát, z 90 na 70 % (27., poslední v lize).]
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
 
-Druhé kolo měří, jak se od roku 1996 výkon pracujícího přiblížil středu ligy, nebo vzdálil.
+Pátá v regionu a nad středem Evropy končí Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Pomáhají jí spolu s Německem nejnižší ceny regionu, osm procent nad Unií, a kola překonává o čtyři a půl bodu, což skoro celé vysvětlí jednapadesátiprocentní podíl výplat na výkonu. Francouzská minimální mzda přitom patří vůči střední mzdě k nejvyšším v Unii a každý leden se sama zvyšuje, takže táhne spodek nahoru a stlačuje škálu – stále víc lidí tak zůstává na minimu nebo těsně nad ním. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
 
-[VIZUÁL: Rumunsko – zelený trikot; Dacia (Renault od roku 1999, Logan 2004), Ford v Craiově (od roku 2008); ve výrobě aut 100 tisíc lidí (1996) → 228 tisíc (2024); celý zpracovatelský průmysl vyrábí reálně 1,8 až 1,9krát víc s o 40 % menším počtem lidí (2,45 → 1,48 milionu), zahraniční firmy v něm dělají 68 % přidané hodnoty; zahraniční firmy platí na osobu 24 238 eur, domácí 11 292 (2023); programátoři 22,6 → 125 tisíc; z polí odešlo asi 1,5 milionu lidí (číslo očištěné o změnu měření v roce 2002, poznámka pro editora); přestavba firem a služeb nese asi dvě třetiny vlastního reálného růstu výkonu; ceny vývozu proti dovozu 201 (1996 = 100), asi čtvrtina hodnoty kola. Ikona: auto se šipkou do světa.]
+Čtvrté a rovněž nad středem Evropy je Německo s jednatřiceti tisíci čtyřmi sty jednotkami a přes čtyřiatřiceti tisíci eury, krácenými o devět procent vyššími cenami. Kola přeskočilo o šestnáct bodů, ale třiapadesátiprocentní podíl mezd na výkonu a zmíněné kratší úvazky vysvětlí jen menší část; většina zůstává otevřená. Německo bere štítek „Dělá to dobře a je to vidět“.
 
-**Kolo v celé lize vyhrává Rumunsko** a bere zelený trikot. Skok stojí **hlavně na přestavbě firem a služeb**: staré kombináty lidi ztratily, kdežto továrny zahraničních firem, jako Dacia nebo Ford, vyrábějí mnohem víc, a rostly i obchody a programátoři. Průměrný pracující i s rolníky tak vytvoří **čtyři pětiny** středu ligy místo **čtvrtiny** a mzdy mají z čeho růst; zahraniční firmy platí **dvakrát víc** než domácí. **Menší kus** dělá odchod z políček a vývoz, za který Rumunsko dostává víc než dřív{volitelné: ; zbrzdily ho jen vlastní recese konce devadesátých let a krize let 2009 a 2010}.
+Třetí nad středem Evropy končí Irsko s jednatřiceti tisíci šesti sty jednotkami. Skoro pětačtyřicet tisíc eur srážejí o dvě pětiny vyšší ceny než v Unii, které mažou náskok před Británií, a oproti kolům ztrácí sedm bodů. Proč, data spolehlivě neřeknou: i očištěný důchod nese část příjmů korporací, což může produktivitu v kolech nadhodnocovat, a průměr míchá vysoké platy v amerických firmách s nižšími ve většině domácích. Irsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
 
-[VIZUÁL: Bulharsko – programátoři v Sofii (Telerik koupen v roce 2014 za 262,5 milionu dolarů); 1997 výroba −14 %, do roku 2000 z 35 na 31 % středu ligy; reálný výkon na pracujícího rostl od roku 2000 celou dobu, proti středu ligy se nejvíc posunul po roce 2013, zčásti díky cenám vývozu (ceny vývozu proti dovozu 159); rumunské pole: pracujících v zemědělství ubylo asi o 1,5 milionu, rumunský rolník dnes vytvoří asi sedminu průměru země (2024); bulharský pracující má dnes z čeho dostat zhruba sedm desetin toho co rumunský.]
+Druhá v regionu a v evropské špičce je Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, tlumenými skoro o třetinu vyššími cenami. Kola překonává o čtyři body a skoro vše vysvětlí patnáctiprocentní podíl živnostníků, díky němuž se výkon dělí mezi méně zaměstnanců; průměr nejspíš zvedá i vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Po finanční krizi navíc vláda platy ve veřejném sektoru zmrazila a pak zvedala jen o procento ročně, takže si státní zaměstnanci do roku dva tisíce sedmnáct reálně pohoršili. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
 
-**Druhé** je **Bulharsko**, které si vede **dobře, ale na tak nízký start pomaleji, než je v lize obvyklé**. I ono **hlavně přestavělo firmy a služby**, od továren po programátory v Sofii, a výkon, ze kterého se platí výplata, rostl, jen ho na začátku srazila **vlastní krize** let 1996 a 1997{volitelné: ; pomohly mu i lepší ceny za vývoz}. Na Rumunsko nestačí, protože z rumunských políček odešlo mnohem víc lidí, kteří vytvářeli málo, a výroba tam rostla rychleji.
+Vítězem regionu, pevně usazeným v evropské špičce, je Švýcarsko s více než čtyřiceti tisíci jednotkami. Sedmdesát tři tisíce eur krátí ceny o čtyři pětiny nad Unií; už počátkem tisíciletí tam stál Big Mac o dvě třetiny víc než v Americe – proč se cenovky liší, ukáže epizoda o cenové hladině. Kola přesto překonává o sedm bodů díky sedmapadesátiprocentnímu podílu výplat na výkonu. Otevřený trh s Unií od roku dva tisíce dva sice přivádí často vysokoškoláky, což průměr zvedá složením, podle Mezinárodního měnového fondu ale příliv lidí tlak na mzdy tlumí – se štítkem „Dělá to dobře a je to vidět“ však Švýcarsko ovládá region.
 
-[VIZUÁL: Chorvatsko – z reálného růstu výkonu 0,52: obchod, doprava, ubytování a stravování 0,15 (samo ubytování a stravování asi 0,045), průmysl 0,12; reálný růst výkonu na pracujícího 1996–2024 Chorvatsko +66,8 %, Česko +68,9 %, Maďarsko +59,5 %, Slovensko +107,8 %; 108,7 milionu nocí turistů (2024); průmysl reálně jen asi 1,6krát (nejméně z postkomunistických zemí regionu); loděnice Uljanik v konkurzu (2019); výroba 1996 → 2020–2024 Chorvatsko 1,75krát, Bulharsko 1,69krát; výkon na pracujícího reálně Bulharsko 1,77krát, Chorvatsko 1,68krát (v kole 1,63 a 1,50krát).]
 
-**Třetí** je **Chorvatsko**, které si vede **dobře**: výrobu na pracujícího zvedlo zhruba jako Česko a Maďarsko, pomaleji než Slovensko. Nese ho přestavba služeb a firem, nejvíc obchod a doprava, těsně za nimi továrny, a s tím rostou i mzdy; turisté jsou **menší část**. Na Bulharsko ztrácí jen kousek: chorvatská výroba sice rostla víc, ale na pracujícího rostla bulharská o něco rychleji.
+# Kontrola čísel a opravy (Claude)
 
-[VIZUÁL: Slovinsko – Krka v Novém Mestu: z 4 500 lidí v polovině 90. let na 12 810 zaměstnanců (2024), doma prodá jen 6,4 %; průmysl vyrábí reálně 2,4 až 2,6krát víc s šestinou lidí méně; vývoz ze 46 na 81 % HDP; bankovní krize 2009–2013: investice o dvě pětiny dolů, stát v prosinci 2013 dokapitalizoval pět bank za asi 3,2 miliardy eur; v objemu výroby na pracujícího rostlo Chorvatsko o 2–3 % rychleji (skoro stejně); ceny vývozu proti dovozu Slovinsko 99, Chorvatsko 119. Ikona: lahvička léku.]
+### Automatická kontrola scénáře: Západní Evropa
 
-**Čtvrté** je **Slovinsko**, také s **dobrým** výsledkem: nese ho **hlavně vývozní průmysl**, třeba léky Krky, takže mzdy tu stojí na továrnách, které obstály ve světě{volitelné: ; zbrzdila ho jen vlastní bankovní krize}. Chorvatsko ho předstihlo, i když v objemu rostly obě země **skoro stejně**: Chorvatsku pomohly lepší ceny, **zčásti** za vývoz.
+Scénář: `05_epizode_packs\ep_001_prumerna_mzda_pps_v18\output\scenar_regiony_2026_10\gemini\ZAPADNI_EVROPA\SCENAR_GEMINI.md`; mluvený text 1265 slov (asi 9.0 minuty při 140 slovech za minutu).
+Čísel psaných číslicemi: 0, z toho bez opory v datech: **0**.
 
-[VIZUÁL: Řecko – otázka diváka; běžný účet 2008 −14,6 % HDP; 2008→2013 výroba −27 %, investice −66 %; investice po roce 2009 13,7 % HDP (předtím 24,1 %); HDP 2024 stále o 16 % pod rokem 2008; reálně vytvoří řecký pracující o 2 % víc než v roce 1996, střední země ligy o 29 %; hotely a restaurace: 372 tisíc lidí (2008) → 742 tisíc (2024) a vyrobí o 5 % méně; slovinské továrny vyrobí reálně 2,6krát víc než v roce 1996, řecké 1,4krát. Ikona: prázdný jeřáb a dlužní úpis.]
+### Čísla
 
-**Páté** a v kole **poslední z ligy** je **Řecko**. Jak se lídr prvního kola propadl na dno? Do roku 2008 rostlo **na dluh** a **krize**, do které se z velké části dostalo samo, mu vzala **čtvrtinu výroby** a **dvě třetiny investic**, které se **nevrátily**{volitelné: ; nová práce přibývala v hotelech, tavernách a obchodech, kde dnes pracuje víc lidí a vyrobí méně}. Řecký pracující tak dnes vyrobí **skoro stejně jako v roce 1996** a výplata nemá z čeho růst. Se Slovinskem prohrává **výrobou**: slovinskou táhly továrny, řecká spadla.
+| Ve scénáři | Opora v datech |
+|---|---|
 
-[VIZUÁL: Průběžné pořadí po kole 2 (místo v lize): Slovinsko 16., Chorvatsko 17., Rumunsko 22., Řecko 26., Bulharsko 27.]
+### Pravidla
 
-V průběžném pořadí vede **Slovinsko**, **šestnácté** v lize{volitelné: , Rumunsko vyskočilo na dvaadvacáté, Řecko spadlo na šestadvacáté}; Bulharsko je i přes slušný růst **poslední**.
+- „nejist“ ×1 (metodická poznámka v mluveném textu)
+- délka 1265 slov mimo cíl 1 050–1 150
 
-[VIZUÁL: Ikony u vlajek: Rumunsko auto se šipkou do světa; Bulharsko a Chorvatsko obchod a továrna; Slovinsko lahvička léku; Řecko dlužní úpis a prázdný jeřáb.]
+### Co automatická kontrola nepozná (ručně, Claude)
 
-Dohánět se dá, ale ne samo: kdo přestaví firmy, dohání, kdo upadne do krize, ztrácí, a **výplata** jde s výkonem.
+- čísla psaná slovy, tvrzení o pořadí („nejlepší“, „poslední“, „předběhlo“), kauzální závěry proti výkladům zemí,
+- fakta navíc (značky, historie) – smějí jen ilustrovat mechanismus doložený ve výkladu země.
 
-## Kolo 3 – Tah země: daně a odvody
+### Ruční kontrola (nezávislý kontrolor + Claude, 27. 10. 2026)
 
-[VIZUÁL: Kolo 3, ikona budova státu, do které padá mince. Kolik ze sta eur, které firma za zaměstnance zaplatí, mu zbude po daních a odvodech (2024): Bulharsko 65,10 (3. v lize), Řecko 64,15 (4.), Chorvatsko 58,63 (15.), Rumunsko 57,20 (19.), Slovinsko 54,23 (23.); střední země ligy 58,82.]
+Poznámka k běhu: Argon odpověděl za 6 minut, ale Antigravity CLI po odpovědi neskončilo a skript čekal do limitu 35 minut (třikrát); scénář je uložený ze záznamu `agy_vystup.jsonl`. Skript nyní agy ukončí hned po hotové odpovědi.
 
-Třetí kolo měří, kolik ze sta eur, které firma za zaměstnance zaplatí, mu zbude po daních a odvodech.
+**Sedí:** všechny hodnoty, body a místa kol, dohánění, zátěž všech pěti zemí a mechanismy kola 3 (pojistné, britská a irská pravidla, švýcarské fondy, francouzská past nízkých mezd, německé pojistné), čisté mzdy v kupní síle i v eurech, ceny, „co kola nevysvětlí“ (+15,7 / +7,3 / +4,6 / +4,2 / −6,6), podíly mezd a zaměstnanců, pořadí v regionu, patra, štítky; falešný nález „u nás“ (řetězec „mu náskok“).
 
-[VIZUÁL: Bulharsko – rovná daň 10 % od roku 2008 (předtím 20, 22 a 24 %); ze sta eur daň 7,2 (střed ligy 12,4), odvody 27,7 (střed ligy 29,2, nejméně v regionu); daně a odvody 30,3 % HDP (EU 40,2); veřejné výdaje na zdraví 5,4 % HDP (EU 7,2); z vlastní kapsy 34,1 % výdajů na zdraví (EU 15,1; 2. nejvíc v EU). Ikona: stát s rukou v peněžence, vedle nemocnice.]
+**Bodově opraveno (23 míst; původní text Argona v `SCENAR_GEMINI_PUVODNI.md`):** prozrazené první místo Švýcarska v celé lize („vrchol celé sedmadvacítky“, „trůn ligy“); Francie a Německo nejsou na chvostu daní (24. a 25., za nimi Rakousko a Belgie) a doplněna hlavní příčina francouzské zátěže; 85 % přidané hodnoty patří všem velkým nadnárodním firmám, ne Roche a Novartis; obrácený mechanismus u Francie (nízká zaměstnanost produktivitu na pracujícího netlumí); britské investice jen jako souvislost; farmacie po roce 2015 Švýcarsko nepodržela; Německo: období 1996–2024, reforma jen přispěla, energetický šok od 2022, bez Volkswagenu; ve finále příčiny „co kola nevysvětlí“ podle rozkladu (Německo, Irsko obráceným směrem, Británie, Francie bez minimální mzdy); drobnosti (o víc než čtvrtinu, Big Mac z roku 2003, irský záchranný balík, Pfizer vypuštěn, učni vysvětlí pětinu propadu).
 
-Kolo v regionu **vede Bulharsko**, kde zbude **asi 65 eur**, **hlavně** díky **rovné dani deset procent**{volitelné: , kterou platí programátor stejně jako prodavačka}. **Pro výplatu je to dobře**, proti středu ligy ji zvedá **asi o sedm procent**. Druhou stranou je **menší stát**: bere si o čtvrtinu menší díl výroby než průměr Unie a třetinu léčení si Bulhar platí sám.
+**Bez opory, ponecháno jako obecně známé:** Roche, Novartis, Renault, Airbus, Apple, soustružník v Lipsku, švýcarská neutralita, londýnská City.
 
-[VIZUÁL: Řecko – snížení odvodů 2019–2024 o 4,4 bodu hrubé mzdy srazilo zátěž asi o 2,4 bodu; odvody 29,6 eura ze sta (střed ligy 29,2); daňová pásma se nezvyšují s cenami: u mzdy průměrného pracovníka podle OECD daň 9,1 % (2021) → 12,1 % hrubé mzdy (2024).]
+### Zkrácení a nový showcase (27. 10. 2026)
 
-Těsně za ním je **Řecko**, kterému pomohlo **snížení odvodů** od roku 2019, a to je **dobře**, protože zvedlo čistou výplatu. **Část** toho mu ale berou daňová pásma, která nerostou s cenami, takže si stát z každého přidání bere víc.
+Ondřej: zkrátit, nic neříkat dvakrát, showcase bez věcí z kol a s charakteristikou a očekáváním každé země (pravidlo 9 kuchařky). Argon zkracoval ve dvou kolech ve svém rozhovoru regionu (záznam `ROZHOVOR.md`); verze před zkrácením je `SCENAR_PRED_ZKRACENIM.md`. Nezávislý kontrolor porovnal zkrácenou verzi větu po větě s verzí před zkrácením a showcase s podklady. **Bodově opraveno 12 míst:** nové tvrzení showcase bez opory nebo jen pro sousední zemi, prozrazený nebo zesílený výsledek ve showcase, krajní tvrzení u těsných rozdílů a opravené formulace, které zkrácení vypustilo („na pracujícího“, „vůči středu ligy“, „v regionu“, „jen“, „v průměru“, období). Pořadí v celé Evropě, která scénář zmiňuje, jsou ověřená proti tabulkám kol.
 
-[VIZUÁL: Chorvatsko – ze sta eur odvody 31,4 (střed ligy 29,2), daň 10,0 (střed 12,4); nezdanitelná částka 560 eur měsíčně, sazbu daně si volí obec (15–23 %, Záhřeb 23 %); reforma z ledna 2024: průměrné výplatě o 6 až 13 eur daně měsíčně méně; řecké odvody 29,6 eura ze sta.]
+### Jádro země a opravy Argonem (27. 10. 2026)
 
-**Třetí** je **Chorvatsko**, **přesně uprostřed Evropy**, **bez chyby i bez náskoku**: vyšší odvody vyrovná nižší daň, takže čistému platu kolo nepřidá ani neubere. Za Řeckem zůstává i proto, že chorvatské odvody berou víc{volitelné: ; reforma z roku 2024 byla dobře, ale malý krok, výplatě přidala pár eur měsíčně}.
+Dvě kola oprav. Doplněna jádra Německa (skromné přídavky kolem roku 2000, spodek reálně klesal, smlouvy kryjí asi polovinu), Francie (minimální mzda se každý leden sama zvyšuje a stlačuje škálu; past nízkých mezd v kole 3), Británie (zmrazené platy ve veřejném sektoru) a Švýcarska (otevřený trh od roku 2002, složení zvedá průměr, MMF: příliv tlak na mzdy tlumí). Vyškrtnuto: metodické „nejistý“ u Irska, Británie a Německa, francouzských 98 % smluv jako příčina náskoku, švýcarské „díky přílivu vysokoškoláků“. Claude opravil drobnost: „skoro všechny odvody“ → „skoro čtyři pětiny odvodů“ (podklad: skoro 80 %). Věta o nejistotě kolem odchodu z Unie je věcná a zůstává. Délka 1 265 slov.
 
-[VIZUÁL: Rumunsko – odvody zaměstnance 35 % hrubé mzdy bez stropu, firmy 2,25 %: ze sta eur 36,4, nejvíc z 27 zemí; daň 10 %: 6,4 eura ze sta; s poloviční mzdou (třeba prodavačka) zbude ze sta eur v Rumunsku 57,8, v Chorvatsku 66,9; průměrnou rumunskou výplatu kolo proti středu ligy snižuje asi o 2 %; přesun odvodů na zaměstnance v roce 2018: zátěž 42,9 → 42,8 %, jen změna na papíře.]
 
-**Čtvrté** je **Rumunsko**, kde odvody berou **nejvíc z ligy** a rovná daň je vyrovná **jen zčásti**, proto má Chorvatsko navrch. Průměrnému platu to ubere málo, **špatně** je to pro lidi s **malou výplatou**, kterým stát bere skoro stejný díl jako manažerovi: prodavačce s poloviční mzdou zbude ze sta eur o **devět** méně než v Chorvatsku.
+# Dosavadní konzultace s Gemini 4 Argonem
 
-[VIZUÁL: Slovinsko – ze sta eur odvody 32,9 a povinný zdravotní příspěvek 1,0 (střed ligy 29,2), daň 11,8 (střed 12,4); při rumunské mzdě by slovinská pravidla dala 42,7 % (Rumunsko 42,8 %); čistá výplata 24 415 jednotek kupní síly, nejvíc v regionu; v jiné zemi EU žije 2,8 % Slovinců (Řeků 4,0, Bulharů 11,8, Chorvatů 15,0, Rumunů 16,4); asi 80 % slovinské diaspory žije v Německu a Rakousku, kde stát bere z výplat ještě víc; z vlastní kapsy 12,9 % výdajů na zdraví.]
 
-**Poslední** je **Slovinsko**{volitelné: , kde zbude asi 54 eur}, **hlavně** kvůli vysokým odvodům na důchod a zdraví, a od Rumunska ho dělí daň, která z nejvyšší mzdy regionu bere větší díl. Slovinsko si to ale **může dovolit**: i po zdanění má nejvyšší výplatu v regionu a odešlo odtud **nejméně lidí**{volitelné: ; za odvody mají Slovinci léčení, za které skoro nedoplácejí}.
+### Claude (zkrácení podle Ondřeje 27. 10. 2026)
 
-[VIZUÁL: Průběžné pořadí po kole 3 (místo v lize): Chorvatsko 17., Slovinsko 20., Rumunsko 22., Řecko 25., Bulharsko 27.]
-
-Po třech kolech vede **Chorvatsko**, **sedmnácté** v lize{volitelné: , Slovinsko klesá na dvacáté}; Bulharsko zůstává **poslední**.
-
-[VIZUÁL: Obvyklý vliv kola na výplatu: daně asi 4 body, výkon v roce 1996 asi 27, jeho růst asi 19.]
-
-Bulharsko vyhrálo daně v regionu, a v průběžném pořadí je přesto poslední: daně posunou výplatu o pár procent, výkon o desítky.
-
-## Finále: cíl
-
-[VIZUÁL: Cíl, čistá mzda na plný úvazek v kupní síle 2024 (jednotky kupní síly ročně): Slovinsko 24 415 (22 120 eur), Chorvatsko 21 657 (16 026 eur), Rumunsko 21 253 (12 348 eur), Bulharsko 20 693 (11 940 eur), Řecko 16 848 (14 085 eur). Pořadí podle tří kol: Chorvatsko, Slovinsko, Rumunsko, Řecko, Bulharsko. Odhalení od pátého po prvního. Místa v celé lize nečíst ani neukazovat, přijdou ve velkém finále epizody (Slovinsko 15., Chorvatsko 20., Rumunsko 22., Bulharsko 23., Řecko 27.).]
-
-Kdyby rozhodovala jen kola, vyhrálo by region **Chorvatsko** před Slovinskem, Rumunskem, Řeckem a Bulharskem. V cíli ale rozhoduje jen **skutečná čistá mzda v kupní síle** a ke slovu přijdou **vedlejší faktory, které jsme představili v úvodu**; celou ligu odhalí velké finále.
-
-[VIZUÁL: Řecko – ikona Malé firmy a skladba odvětví (obchůdek s markýzou a taverna) jako obraz, proč kola Řecko nadcenila; výdělky živnostníků a rodinných podniků 21,7 % HDP (střed ligy 8,1 %; mezi 1,16 milionu samostatně činných asi 360 tisíc rolníků, 200 tisíc obchodníků, 120 tisíc svobodných povolání a 80 tisíc majitelů hospod a ubytování); ze sta eur, které řecké podniky vytvoří, jde zaměstnancům 57,3 (střed ligy 59,0; v letech 2000–2008 jen 45–48).]
-
-**Páté** je **Řecko**, které promarnilo nejlepší start regionu krizí na dluh. Jeho firmy ze sta eur, které vytvoří, pošlou do mezd zhruba tolik co jinde, ale kola Řecko **nadcenila** i proto, že **pětinu** výroby tu tvoří výdělky majitelů obchůdků, taveren a rodinných podniků, ze kterých se mzda zaměstnance neplatí. Bulharsko ho přeskočilo **hlavně** proto, že bulharský výkon kola naopak **podcenila**.
-
-[VIZUÁL: Bulharsko – ikony Drahota života a Kolik firma dá zaměstnancům; mezi pracujícími národní účty počítají 847 tisíc lidí, kteří nejsou zaměstnanci (24,1 %), z toho 392 tisíc v zemědělství, které vytvoří na pracujícího asi 5 000 eur proti 26 000 v celé ekonomice; co kola nevysvětlí +22,3 bodu, nejvíc v lize (druhé Rakousko +16,0); bydlení, voda, elektřina a plyn 38 % průměru Unie (nejméně v lize), zdravotní služby 44 %; bydlení a energie stojí 0,62 bulharských cen výroby (střed ligy 0,99); ze sta eur, které bulharské podniky vytvoří, jde zaměstnancům 47–54 (střed ligy 56–59); Rumunsko před Bulharskem o 2,7 %.]
-
-**Čtvrté** je **Bulharsko**, po kolech poslední, a jeho výplata předčila kola **nejvíc z celé ligy**. Kola ho **podcenila**, protože se jeho výkon dělí i mezi statisíce drobných rolníků, kteří vytvoří jen zlomek, a výplatu zaměstnance to nesnižuje. Bydlení a energie jsou tu **nejlevnější v lize**, levné i na bulharské poměry, takže se za výplatu koupí víc; firmy ale dávají zaměstnancům **méně** než ve většině ligy. S Rumunskem dojelo **skoro vedle sebe**.
-
-[VIZUÁL: Rumunsko – ikony Kolik firma dá zaměstnancům, Drahota života, Mzdy určené státem; rumunské podniky dávají zaměstnancům 47,6 % přidané hodnoty (22. z 23, střed ligy 59,0 %); domácí firmy 47,3 %, zahraniční 53,4 % a platí na osobu 24 238 eur proti 11 292 (2023); zdravotní služby 34 % průměru Unie (nejméně v lize), bydlení 52 %, stroje 101 %; 1,56 milionu lidí v zemědělství mimo zaměstnance vytvoří na hlavu asi 5 150 eur proti 37 200 v celé ekonomice; platy ve veřejné správě, školství a zdravotnictví 1,8násobek ostatní ekonomiky (nejvíc v lize); Chorvatsko před Rumunskem o 1,9 %.]
-
-**Třetí**, stejně jako po kolech, je **Rumunsko**, s Chorvatskem **skoro vedle sebe**. Pro jeho výplatu je nejhorší, že firmy dávají zaměstnancům **skoro nejmenší díl v lize**{volitelné: , a jsou to domácí, ne zahraniční}: **z velké části** to vyrovnává **levný lékař a bydlení** a to, že ho kola podcenila kvůli lidem na políčkách.
-
-[VIZUÁL: Chorvatsko – ikona Kolik firma dá zaměstnancům a návrh nové ikony Daně v cenách (cenovka s mincí letící do budovy státu; do Ondřejova rozhodnutí ikona Drahota života s popiskem „daň v ceně“); daně ve výrobcích 16,8 % HDP (nejvíc v lize, střed ligy 10,6 %), DPH 25 % (Slovinsko 22 %); chorvatské podniky dávají zaměstnancům 60,1 % přidané hodnoty (střed ligy 59,0 %; v roce 2000 72,2 %), slovinské 66,2 %; Slovinsko před Chorvatskem o 12,7 %.]
-
-**Druhé** je **Chorvatsko**, které po kolech vedlo. **Zčásti** ho stáhlo, že si stát z každého nákupu bere **nejvíc v lize**, a co zákazník zaplatí státu, nedostane zaměstnanec ve mzdě; nadprůměrný díl firem to **z velké části** vyrovná. Slovinsko mu vedení vzalo menšími daněmi v cenách a štědřejšími firmami.
-
-[VIZUÁL: Slovinsko – ikona Kolik firma dá zaměstnancům (koláč s vysunutým dílem); ze sta eur, které slovinské podniky vytvoří, jde zaměstnancům 66,2, nejvíc ze 23 zemí ligy s daty (střed ligy 59,0), tak je to aspoň od roku 2000; smlouvy odborů pro 63 až 83 % zaměstnanců podle zdroje, minimální mzda 52 % průměrné (nejvíc v regionu), povinný příspěvek na dovolenou aspoň ve výši minimální mzdy (2024: 1 253,90 eur).]
-
-**Vítězem regionu** je **Slovinsko**, které dojelo výš, než ho poslala kola, **hlavně** díky vedlejšímu faktoru **kolik firma dá zaměstnancům**: ze sta eur, které firma vytvoří, pošle do mezd **nejvíc z ligy**, a právě to dělá z výkonu výplatu{volitelné: ; ruku v ruce s tím jdou smlouvy odborů pro většinu zaměstnanců, nejvyšší minimální mzda v regionu a povinný příspěvek na dovolenou}.
-
-[VIZUÁL: Konec regionu. Po kolech vedlo Chorvatsko, vyhrálo Slovinsko; Bulharsko a Řecko si místa prohodila. Tipy ze startu regionu: Slovinsko 15.–20. → splněno (15.); Chorvatsko 25.–27. → líp (20.); Rumunsko kolem 25. (23.–27.) → o kousek líp (22.); Bulharsko 25.–27., kandidát na poslední místo → líp (23.); Řecko 22.–26., unikne poslednímu místu → o kousek hůř (27.). Místa jen pro střih, nečíst. Most do dalšího regionu: střední Evropa.]
-
-Bulharsko a Řecko si místa prohodila **hlavně** kvůli kolům, která jedno podcenila a druhé nadcenila. Z vedlejších faktorů nejvíc vážilo, kolik z vytvořeného dá firma zaměstnancům: Slovinsku to přidalo, Rumunsku ubralo, protože z toho dílu je **výplata**. Tip ze startu vyšel jen u Slovinska, Řecko dopadlo **hůř**, ostatní **líp**. A teď do střední Evropy.
+Ondřej chce tvůj scénář tohoto regionu zkrátit na 1 050–1 150 slov mluveného textu (nadpisy a řádky
+[VIZUÁL: …] se nepočítají). Níže je scénář po kontrole faktů: Claude v něm bodově opravil čísla a příčiny proti
+podkladům, které máš v tomto rozhovoru.
+
+Postup:
+1. Najdi věci řečené dvakrát (ve showcase a znovu v kolech, v jednom kole a znovu v dalším kole nebo ve finále) a nech
+   každou jen na jednom místě; jinde na ni nanejvýš krátce odkaž.
+2. Showcase přepiš podle nového pravidla, které Ondřej zadal:
+9. **Showcase s očekáváním a nic dvakrát (Ondřej 27. 10. 2026).** Ve showcase dostane každá země krátkou
+   charakteristiku v kontextu měřeného ukazatele (u mezd: co v zemi určuje výplaty dnes, čím se živí, jak drahý je
+   život) a předstartovní očekávání: jak asi dopadne v celé soutěži (evropská špička, střed, chvost) i uvnitř regionu.
+   Showcase neříká nic, co patří až do kol: žádná čísla ani pořadí z kol, žádná historie ani příčiny vývoje.
+   Celý scénář říká každou věc jen jednou; co zaznělo v jednom kole, se v dalším kole ani ve finále neopakuje, jen se
+   na to krátce odkáže.
+3. Zbytek zkrať škrtáním vedlejších podrobností, opakovaných obrazů a nadbytečných ilustrací, ne vysvětlení příčin.
+
+ZÁVAZNÉ:
+- Nepřidávej žádné číslo, fakt, příčinu ani značku, které nejsou ve scénáři níže. Jedinou výjimkou je showcase: tam
+  smíš z podkladů v tomto rozhovoru vzít charakteristiku země, ale žádné číslo ani pořadí z kol.
+- Opravené formulace zachovej věcně beze změny; smíš je zkrátit, nikdy zesílit. Platí to hlavně pro „asi třetinu
+  vysvětlí“, „zůstává bez jasné příčiny“, „spolu s … nejvíc“, „těsně“, „podle …“ a podmiňovací způsob.
+- Čísla ponech, jak jsou. Řádky [VIZUÁL: …] ponech beze změny.
+- Neprozrazuj konečné místo žádné země v celé lize a neříkej, kde by země skončila po kolech nebo bez některého kola.
+- Souvislé, plynulé věty, žádné odrážky.
+
+Vrať jen celý hotový scénář v Markdownu.
 
 ---
 
-## Soudy a dopad na výplatu
+### Západní Evropa
 
-**Kolo 1:**
-- Řecko — hlavní: zemědělství (olivové háje a políčka, skoro pětina pracujících za třetinu řeckého průměru) drží Řecko pod středem ligy; mimo zemědělství je na středu ligy, protože hospodářství nikdy nemělo centrální plánování; vedlejší pomalý růst 1990–1996 — kudy: dělník i úředník mimo zemědělství vytvořili tolik co ve střední zemi ligy, takže bylo z čeho platit mzdy; zemědělec vytvořil jen zlomek — dopad: výkon na pracujícího 90 % středu ligy, nejlepší základ pro mzdy v regionu — test: zemědělství 18,3 % pracujících proti 8,2 % ve středu ligy, se středním dílem zemědělců by Řecko mělo 102 % středu ligy (podporuje); obory mimo zemědělství 0,98 středu ligy proti 0,33 až 0,74 u postkomunistických sousedů (podporuje); růst 1990–1996 +6,0 proti +10,5 % (podporuje) — soud: dědictví a výkon: nejlepší karty regionu, ale dědictví trhu, ne zásluha; do roku 1996 slabý růst — proč: „dělník i úředník tu vytvořili zhruba tolik co ve střední zemi ligy, takže bylo z čeho platit mzdy“ — v textu: „Nejlepší karty regionu jsou dědictví trhu, ne zásluha“
-- Slovinsko — hlavní: zděděné socialistické továrny (dělník asi na polovině středu ligy; kapitál, technika a organizace z let socialismu jako jeden proces); vedlejší zemědělství a víc pracujících na obyvatele; proti mezeře nejlépe zvládnutý přechod; pár s Řeckem nerozlišený, v hlase jen fakt o odvětvích — kudy: z toho, co dělník v továrně vytvoří, se platí jeho výplata; dělník na polovině středu ligy a s ním i výplaty — dopad: výkon na pracujícího 70 % středu ligy, druhé v regionu — test: výkon uvnitř odvětví 89 % mezery, z výkonové mezery 64 % v průmyslu, továrny 0,52 až 0,56 středu ligy (podporuje); výkon na pracujícího 1990–1996 +25,4 % proti +10,5 % ve středu ligy, výroba 1996 na úrovni 1990 s o pětinu menším počtem pracujících (podporuje); pár: továrny Řecko 0,99 proti 0,56, obchod a doprava 0,97 proti 0,76, výkon uvnitř odvětví +29,1 bodu z 25,5 (mechanismus nerozlišuje) — soud: dobré dědictví a nejlépe zvládnutý rozpad Jugoslávie v regionu; slabé továrny jsou dědictví, ne chyba — proč: „výrobu obnovilo s mnohem menším počtem lidí“ — v textu: „Roky po pádu socialismu ale zvládlo nejlépe v regionu“
-- Chorvatsko — hlavní: zděděná úroveň firem (továrny a loděnice zaostávaly už v roce 1990); vedlejší válka za nezávislost, která vzala výrobu i práci zhruba stejným dílem (malý díl pracujících je jen místo z rozkladu, ne důvod) — kudy: kdo práci měl, vytvářel zhruba jako před válkou a měl z čeho dostat výplatu; továrny s dělníkem na polovině středu ligy a s nimi i výplaty — dopad: výkon na pracujícího 57 % středu ligy — test: výkon uvnitř odvětví 93 % mezery, už v roce 1990 asi 60 % středu ligy (podporuje dědictví); výroba 1990–1996 −22,2 %, pracující −26,7 %, výkon zbylých pracujících reálně +6 %; válka stáhla výkon na pracujícího reálně jen o 4,1 bodu z 55,6 (odporuje tomu, že válka je hlavní důvod) — soud: smůla války, kterou Chorvatsko nevyvolalo, a průměrné dědictví; rychlost obnovy se nehodnotí, srovnatelného soupeře s válkou liga nemá — proč: „kdo práci měl, vytvářel zhruba jako před válkou a měl z čeho dostat výplatu“ — v textu: „Válka za nezávislost vzala výrobu i práci zhruba stejným dílem“
-- Bulharsko — hlavní: hospodářství sovětského typu, jehož továrny postavené pro sovětský trh po jeho zániku vytvářely jen zlomek hodnoty; vedlejší krize 1996–1997 a zemědělství; pár s Chorvatskem: výkon chorvatských firem uvnitř týchž odvětví, původ nerozlišen — kudy: co se neprodá za dobrou cenu, nevytvoří hodnotu a není z čeho platit výplaty — dopad: výkon na pracujícího 35 % středu ligy — test: bulharská továrna 1995–1998 0,16 až 0,20 středu ligy, dělník ÷ rolník 0,67 až 1,05 proti 2,1 až 3,2 u sousedů (podporuje); výkon uvnitř odvětví 90 % mezery, zemědělství 10 % (odporuje tomu, že hlavní je zemědělství); reálné HDP 1997 −14,1 %; pár: výkon uvnitř odvětví 54,7 z 58,9 bodu bez položky bydlení (podporuje), výkon zbylých chorvatských pracujících 1990–1996 reálně +6 %, bulharských +18,6 % (odporuje tomu, že náskok dělá menší díl pracujících) — soud: nejhorší cesta regionu do roku 1996: zánik trhu smůla, krach bank a hyperinflace po odkládaných reformách vlastní chyba (ne zbytečná chyba) — proč: „co se neprodá, nevytvoří hodnotu ani výplaty“ — v textu: „vlastní chyba, která zemi v roce 1997 vzala sedminu výroby“
-- Rumunsko — hlavní: zděděný nízký výkon továren a služeb (obří kombináty z doby Ceaușeska, dělník v továrně na třetině středu ligy); vedlejší pole, kam se v 90. letech vraceli propuštění — kudy: dělník v továrně vytvoří třetinu středu ligy a z toho se vysoká výplata zaplatit nedá — dopad: výkon na pracujícího 26 % středu ligy, poslední v lize — test: hospodářství mimo zemědělství 70 až 73 % mezery (s opravou zlomu řady 77 až 81 %), zemědělství 27 až 30 % (odporuje tomu, že nejvíc stáhla pole); továrna 0,29 až 0,33 středu ligy, bulharská 0,16 až 0,17 (podporuje protiváhu v páru); výkon na pracujícího 1990–1996 −11 % proti +10,5 % (podporuje) — soud: nejtěžší karty ligy a slabá cesta do roku 1996; pole byla nouzová síť, ne zbytečná chyba, hodnotí se výkon (slabý) — proč: „dělník v továrně vytvořil jen třetinu středu ligy, a z toho vysoká výplata nebude“ — v textu: „nouzová síť, ne chyba, ale výkon slabý“
-- Pointa — výplata: kromě Řecka drží všechny dole hlavně továrny (průmysl je největší část vlastní výkonové mezery: Slovinsko 64 %, Bulharsko 46 %, Chorvatsko 41 %, Rumunsko asi 41 %; Řecko drží pod středem pole); kde dělník v továrně vytvoří málo, jsou malé i výplaty, protože mzda se platí z toho, co pracující vytvoří — v textu: „kde dělník vytvoří málo, jsou malé i výplaty“
+### Předstartovní showcase
 
-**Kolo 2:**
-- Rumunsko — hlavní: přestavba firem a služeb (staré kombináty lidi ztratily, kdežto továrny zahraničních firem vyrábějí mnohem víc, průmysl s menším počtem lidí reálně skoro dvakrát víc, v hlase bez čísla; obchod, doprava, programátoři), asi dvě třetiny vlastního reálného růstu výkonu; vedlejší odchod z drobného zemědělství (asi sedmina reálného růstu po opravě zlomu řady) a ceny vývozu proti dovozu (asi čtvrtina hodnoty kola) — kudy: mzda se platí z toho, co pracující vytvoří, a průměrný pracující i s rolníky vytvoří čtyři pětiny středu ligy místo čtvrtiny; zahraniční firmy platí lidem dvakrát víc než domácí — dopad: v průběžném pořadí z 27. na 22. místo; mzdy mají z čeho růst — test: průmysl reálně 1,8 až 1,9krát s o 40 % méně lidmi, ve výrobě aut 100 → 228 tisíc lidí, zahraniční firmy 68 % přidané hodnoty průmyslu (podporuje); podíl průmyslu na pracujících 21,8 → 16,8 % (odporuje čistému přesunu z polí do továren); zahraniční firmy 24 238 eur na osobu, domácí 11 292 (2023) — soud: výkon: vyhrává kolo v celé lize a skok stojí hlavně na skutečné přestavbě firem — proč: „tak vytvoří čtyři pětiny středu ligy místo čtvrtiny a mzdy mají z čeho růst“ — v textu: „Kolo v celé lize vyhrává Rumunsko a bere zelený trikot“
-- Bulharsko — hlavní: přestavba firem a služeb po roce 1997 (průmysl, obchod a doprava, banky, programátoři); vedlejší ceny vývozu; brzdy vlastní krize 1996–1997 a boom 2004–2008 s mnoha novými místy; pár s Rumunskem nerozlišen: odchod z rumunských drobných políček (mechanismem jen tam, kde odchod výrobu skoro nesnížil) spolu s rychlejší rumunskou výrobou — kudy: výkon, ze kterého se platí výplata, rostl; bulharský pracující má z čeho dostat zhruba sedm desetin toho co rumunský — dopad: z 35 na 57 % středu ligy; v průběžném pořadí z 23. na 27., poslední — test: přestavba firem a služeb 0,52 z 0,67 reálného růstu od roku 1997 (podporuje); 1997 výroba −14,1 %, pozice 35,2 → 31,0 % do roku 2000 (podporuje); růst pod tím, co odpovídá startu, v kupní síle −28 až −24,5 bodu a reálně −27,5 až −26,9 (obě měření, podporuje); pár: odchod z rumunských polí asi 0,15 po opravě zlomu, rychlejší rumunská výroba 0,229 (nerozlišuje, co převažuje) — soud: výkon: vede si dobře, ale na tak nízký start pomaleji, než je v lize obvyklé; krize 1996–1997 vlastní (ne zbytečná chyba) — proč: „jen ho na začátku srazila vlastní krize let 1996 a 1997“ — v textu: „které si vede dobře, ale na tak nízký start pomaleji, než je v lize obvyklé“
-- Chorvatsko — hlavní: přestavba služeb a firem, nejvíc obchod a doprava, těsně za nimi průmysl, turisté menší část; vedlejší ceny vývozu a odchod ze zemědělství; brzdy pomalý start a dlouhá krize 2009–2014; pár s Bulharskem: v hlase jen dva fakty bez příčiny (chorvatská výroba rostla víc, bulharská na pracujícího o něco rychleji); menší počet bulharských pracujících nezazní ani jako fakt — kudy: s výkonem obchodů, dopravy a továren rostou i mzdy — dopad: z 57 na 86 % středu ligy; v průběžném pořadí z 19. na 17. místo — test: z 0,52 reálného růstu obchod, doprava, ubytování a stravování 0,15, průmysl 0,12, samo ubytování a stravování asi 0,045 (podporuje); průmysl reálně jen 1,56krát (nejméně z postkomunistických sousedů); reálný růst výkonu na pracujícího +66,8 % proti Česku +68,9 %, Maďarsku +59,5 % a Slovensku +107,8 % (start 1996: Chorvatsko 57,4 %, Česko 66,1 %, Maďarsko 55,1 %, Slovensko 52,8 % středu ligy); pár: výroba Chorvatsko 1,75krát, Bulharsko 1,69krát, výkon na pracujícího reálně Bulharsko 1,77krát, Chorvatsko 1,68krát — soud: výkon: vede si dobře, reálně zhruba jako Česko a Maďarsko, pomaleji než Slovensko — proč: „výrobu na pracujícího zvedlo zhruba jako Česko a Maďarsko, pomaleji než Slovensko“ — v textu: „Třetí je Chorvatsko, které si vede dobře“ (obraz číšníka koordinátor 9. 11. vypustil: dával obraz vedlejšímu turismu a výkon v ubytování a stravování je na průměru země jen v letech 2022–2024, v roce 2020 0,53)
-- Slovinsko — hlavní: vývozní průmysl (polovina reálného růstu výkonu); vedlejší služby; brzda vlastní bankovní krize 2009–2013 — kudy: mzdy stojí na továrnách, které obstály na světovém trhu — dopad: ze 70 na 87 % středu ligy; v průběžném pořadí ze 17. na 16. a vede region — test: čistý příspěvek zpracovatelského průmyslu 0,262 z 0,522 reálného růstu (podporuje); investice 2008–2013 −40 %, nejvíc z postkomunistických zemí regionu (podporuje brzdu); pár: v objemu výroby na pracujícího Chorvatsko o 2 až 3 % rychleji, Chorvatsku pomohly lepší ceny, zčásti za vývoz (ceny vývozu proti dovozu 119 proti 99) — soud: výkon: dobrý výsledek, bez cenového bonusu sousedů; bankovní krize jako vlastní brzda — proč: „takže mzdy tu stojí na továrnách, které obstály ve světě“ — v textu: „také s dobrým výsledkem: nese ho hlavně vývozní průmysl“
-- Řecko — hlavní: dluhová krize 2008–2013 a to, co vzala na dlouho (čtvrtina výroby a dvě třetiny investic, které se nevrátily); do krize vedl růst na dluh; vedlejší víc nové práce než výroby v hotelech a obchodech a smůla propadu lodní dopravy po roce 2008 — kudy: mzda se platí z toho, co pracující vytvoří, a co řecký pracující vyrobí, skoro stojí — dopad: z 90 na 70 % středu ligy; v průběžném pořadí z 15. na 26. místo — test: 2008–2013 výroba −27 %, investice −66 %, investice po roce 2009 13,7 % HDP, krizová léta nesou −0,220 z −0,258 (podporuje); běžný účet 2008 −14,6 % HDP (podporuje růst na dluh); reálně řecký pracující +2 %, střed ligy +29 % — soud: výkon: v kole poslední z celé ligy a nejvíc pod tím, co odpovídá startu, v obou měřeních; do krize se z velké části dostalo samo (úsudek) — proč: „pracující tak dnes vyrobí skoro stejně jako v roce 1996 a výplata nemá z čeho růst“ — v textu: „do které se z velké části dostalo samo“
-- Pointa — výplata: kdo přestaví firmy, dohání, kdo upadne do krize, ztrácí, a výplata jde s výkonem — v textu: „a výplata jde s výkonem“
+[VIZUÁL: Startovní rošt západoevropské rozjížďky – pět ekonomických těžkých vah: alpská pevnost Švýcarsko, průmyslový motor Německo, státem řízená Francie, finanční ostrov Británie a korporátní tygr Irsko.]
 
-**Kolo 3:**
-- Bulharsko — hlavní: rovná daň 10 % bez progrese (daň 7,2 eura ze sta proti 12,4 ve středu ligy); vedlejší nejnižší odvody v regionu — kudy: zaměstnanci zbude ze sta eur, které firma zaplatí, asi 65, nejvíc v regionu — dopad: výplatu proti středu ligy zvedá asi o 7 % (kolo +6,8 bodu); v průběžném pořadí zůstává poslední — test: daň 7,23 eura ze sta, 3. nejnižší v lize (podporuje); průměrná mzda 2 508 leva pod stropem odvodů 3 750 (odporuje stropu jako důvodu); daně a odvody 30,3 % HDP proti 40,2 v Unii, tedy o čtvrtinu menší díl; z vlastní kapsy 34,1 % výdajů na zdraví (druhá strana, věty jen vedle sebe) — soud: rozhodnutí: pro výplatu dobře, za menší stát — proč: „proti středu ligy ji zvedá asi o sedm procent“ — v textu: „Pro výplatu je to dobře“
-- Řecko — hlavní: hlavní část nízké zátěže závisí na měření řecké mzdy (do hlasu nejde); doložené snížení odvodů 2019–2024 (asi −2,4 bodu) — kudy: nižší odvody zvedly čistou výplatu asi o 2,4 eura ze sta — dopad: kolo +5,8 bodu, v průběžném pořadí z 26. na 25. místo — test: se sazbami odvodů roku 2019 by zátěž byla 38,4 % místo 35,9 % (podporuje); daň při mzdě průměrného pracovníka 9,1 % (2021) → 12,1 % hrubé mzdy (2024) při stejných sazbách (podporuje, že pásma část berou) — soud: rozhodnutí: snížení odvodů dobře, daňová pásma, která nerostou s cenami, z toho část berou — proč: „a to je dobře, protože zvedlo čistou výplatu“ — v textu: „Část toho mu ale berou daňová pásma, která nerostou s cenami“
-- Chorvatsko — hlavní: nerozlišeno, odvody nad středem spolu s daní pod středem se skoro vyruší; pár s Řeckem stojí v hlase na vyšších chorvatských odvodech (doložené při každé mzdě) — kudy: zátěž na středu ligy čistý plat proti typické zemi nemění — dopad: kolo −0,2 bodu; v průběžném pořadí zůstává 17. a přebírá vedení regionu — test: odvody 31,4 eura ze sta proti 29,2 ve středu ligy, daň 10,0 proti 12,4 (podporuje vyrušení); reforma 2024 −6 až −13 eur daně měsíčně (podporuje „malý krok“) — soud: výkon: přesně uprostřed, bez chyby i bez náskoku; reforma 2024 dobře, ale malý krok (v hlase volitelně) — proč: „vyšší odvody vyrovná nižší daň, takže čistému platu kolo nepřidá ani neubere“ — v textu: „přesně uprostřed Evropy, bez chyby i bez náskoku“
-- Rumunsko — hlavní: vysoké odvody bez stropu (36,4 eura ze sta, nejvíc z 27 zemí), rovná daň 10 % je vyrovná jen zčásti — kudy: zaměstnanci zbude ze sta eur 57, při poloviční mzdě 58, protože stát bere skoro stejný díl malé výplatě jako manažerovi — dopad: kolo −1,9 bodu, průměrnou výplatu proti středu ligy snižuje asi o 2 %; v průběžném pořadí zůstává 22. — test: odvody 36,44 proti 29,23 ve středu ligy (podporuje); zátěž 42,2 % při poloviční mzdě proti 42,8 % při průměru (podporuje); s poloviční mzdou zbude ze sta eur 57,8 v Rumunsku a 66,9 v Chorvatsku; přesun odvodů 2018: 42,9 → 42,8 % (odporuje tomu, že přesun zvedl zátěž) — soud: rozhodnutí: průměrnému platu ubírá málo, špatně pro lidi s malou výplatou — proč: „prodavačce s poloviční mzdou zbude ze sta eur o devět méně než v Chorvatsku“ — v textu: „špatně je to pro lidi s malou výplatou“
-- Slovinsko — hlavní: vysoké odvody na důchod a zdraví (32,9 eura ze sta a povinný příspěvek 1,0); pár s Rumunskem: daň, která z vyšší mzdy bere větší díl, při nejvyšší mzdě regionu — kudy: zaměstnanci zbude ze sta eur jen asi 54, nejméně v regionu — dopad: kolo −5,4 bodu; v průběžném pořadí z 16. na 20. a ztrácí vedení regionu — test: v jiné zemi EU žije 2,8 % Slovinců, nejméně v regionu (Chorvatů 15,0); čistá výplata 24 415 jednotek kupní síly, nejvíc v regionu (podporuje „může si to dovolit“); 80 % diaspory v Německu a Rakousku se zátěží 46,9 a 47,0 % (odporuje odchodu za nižšími daněmi); při rumunské mzdě by slovinská pravidla dala 42,7 % proti rumunským 42,8 % — soud: rozhodnutí financovat důchody a zdraví vysokými odvody: může si to dovolit (úsudek ze souběhu čísel) — proč: „i po zdanění má nejvyšší výplatu v regionu a odešlo odtud nejméně lidí“ — v textu: „Slovinsko si to ale může dovolit“
-- Pointa — výplata: daně posunou výplatu o pár procent, výkon o desítky — v textu: „daně posunou výplatu o pár procent, výkon o desítky“
+Na startovní čáru západoevropské rozjížďky nastupuje pět těžkých vah, které v závodě o nejvyšší čistou výplatu v kupní síle obhajují pověst nejbohatšího koutu kontinentu. V roli favorita na zlatou medaili a místo v evropské špičce vyráží alpské Švýcarsko – pevnost špičkové farmacie, přesného strojírenství a silného franku. O další příčky v evropské špičce se chtějí poprat průmyslové Německo, opřené o automobilky a exportní střední firmy, a Británie s globálním finančním centrem v londýnské City. Na paty jim šlape Irsko, magnet na americké technologické a farmaceutické korporace s pověstí největšího skokana Západu, zatímco Francie s mohutným sociálním státem a kratším pracovním týdnem bojuje o to, aby jí sousedé neujeli. Kdo svou váhu promění ve výplaty?
 
-**Cíl:**
-- Řecko — hlavní: z ekonomických příčin žádná nepřevažuje (daně v cenách −2,3 proti dílu ve firmách a státě +2,9; firmy dávají zaměstnancům zhruba obvyklý díl); ztrátu proti kolům dělá měřítko kol, asi ze dvou pětin proto, že pětinu řecké výroby tvoří výdělky živnostníků a rodinných podniků, ze kterých se mzdy zaměstnanců neplatí (skladba −7,3 z −17,9; zbytek nájem připisovaný lidem bydlícím ve vlastním a měření, jen pro editora) — kudy: z výdělků majitelů obchůdků, taveren a rodinných podniků se mzda zaměstnance neplatí, kola je přesto počítala do výkonu — dopad: poslední v regionu, o místo hůř než po kolech; Bulharsko ho přeskočilo hlavně měřítkem kol (+40,7, z toho skladba pracujících 26,4), díl firem a státu stojí proti Bulharsku (−11,6) — test: výdělky živnostníků a rodinných podniků 21,7 % HDP (střed ligy 8,1 %); řecké podniky dávají zaměstnancům 57,3 ze sta eur přidané hodnoty (střed 59,0); poměr cen +1,1 bodu (odporuje drahotě) — soud: výkon: v ekonomických věcech cíle zhruba průměr; promarnilo nejlepší start regionu krizí na dluh (účet z kol) — proč: „Jeho firmy ze sta eur, které vytvoří, pošlou do mezd zhruba tolik co jinde“ — v textu: „které promarnilo nejlepší start regionu krizí na dluh“
-- Bulharsko — hlavní: ekonomicky nerozlišeno (levné bydlení, energie a zdravotní služby vůči cenám výroby +9,8 proti nízkému dílu ve firmách a státě −8,7); celé překvapení dělá měřítko kol, kola ho podcenila kvůli statisícům drobných rolníků — kudy: drobní rolníci vytvoří jen zlomek (asi pětinu průměru) a výplatu zaměstnance nesnižují; bydlení a energie nejlevnější v lize, levné i na bulharské poměry, takže se za výplatu koupí víc; firmy dávají zaměstnancům menší díl — dopad: čtvrté v regionu, po kolech páté; výplata předčila kola nejvíc z celé ligy (+22,3 bodu, druhé Rakousko +16,0; v místech poskočilo víc Rakousko, Německo i Slovinsko) — test: 847 tisíc nezaměstnanců v národních účtech (24,1 %), s výkonem na odpracovanou hodinu by kola nevysvětlila jen 2,0 bodu místo 22,3 (podporuje měřítko kol); bydlení a energie 38 % průměru Unie, nejméně v lize, a 0,62 bulharských cen výroby proti 0,99 ve středu ligy (podporuje); zemědělec asi 5 000 eur proti 26 000 v celé ekonomice; bulharské podniky 47 až 54 ze sta eur přidané hodnoty (střed ligy 56 až 59) — soud: výkon: výplata předčila kola nejvíc z celé ligy, ale střízlivě: v ekonomických věcech výhoda levného života proti slabšímu dílu firem, ne úspěch — proč: „takže se za výplatu koupí víc; firmy ale dávají zaměstnancům méně než ve většině ligy“ — v textu: „jeho výplata předčila kola nejvíc z celé ligy“
-- Rumunsko — hlavní: z ekonomických příčin malý díl, který rumunské firmy dávají zaměstnancům (−16,4 bodu); proti tomu levný život ve službách a bydlení (+6,6) a nízké daně v cenách; že dojelo jako po kolech, dělá i to, že ho kola podcenila (políčka, +6,5); levný život a podcenění koly vyrovnají asi 80 % dílu, v hlase „z velké části“ — kudy: z toho, co firmy vytvoří, dostanou zaměstnanci méně než skoro kdekoli v lize; levný lékař a bydlení, za výplatu se koupí víc — dopad: třetí v regionu jako po kolech, s Chorvatskem skoro vedle sebe; bez malého dílu by bylo v regionu první — test: podniky 47,6 ze sta eur přidané hodnoty (22. z 23, střed ligy 59,0); domácí firmy 47,3, zahraniční 53,4 (odporuje tomu, že malý díl dělají cizí firmy); zdravotní služby 0,57 a bydlení 0,86 cen výroby (podporuje) — soud: výkon: nejhorší zprávou cíle je skoro nejmenší díl pro zaměstnance v lize, slabý výkon firem, hlavně domácích (úsudek) — proč: „že firmy dávají zaměstnancům skoro nejmenší díl v lize“ — v textu: „Pro jeho výplatu je nejhorší“
-- Chorvatsko — hlavní: z ekonomických příčin zčásti daně v cenách (−6,5; nejvíc v lize), z velké části je vyrovná nadprůměrný díl ve firmách (+4,8); větší kus dělá měření (jen pro editora); pár se Slovinskem nerozlišeno, daně v cenách (+6,2) spolu s větším dílem slovinských firem (+4,5) — kudy: co zákazník zaplatí státu v ceně, nedostane zaměstnanec ve mzdě — dopad: druhé v regionu, po kolech první — test: daně ve výrobcích 16,8 % HDP (nejvíc z 26 zemí, střed ligy 10,6 %); chorvatské podniky 60,1 ze sta eur přidané hodnoty (střed ligy 59,0); poměr cen −0,5 bodu (odporuje drahotě) — soud: výkon: daně v cenách berou, štědřejší firmy z velké části vracejí; region neztratilo vlastní chybou, Slovinsko je v obou věcech o kus lépe — proč: „a co zákazník zaplatí státu, nedostane zaměstnanec ve mzdě“ — v textu: „nadprůměrný díl firem to z velké části vyrovná“
-- Slovinsko — hlavní: slovinské firmy dávají zaměstnancům největší díl v lize (+9,3 bodu; ze sta eur, které podniky vytvoří, 66); tím dojelo výš, než ho poslala kola (bez této výhody asi 17. v lize místo 15., stále první v regionu); kola ho zároveň trochu podcenila (jen obraz, vyruší se s jinými vlastnostmi měřítka) — kudy: právě díl pro zaměstnance dělá z výkonu výplatu — dopad: první v regionu, po kolech druhé; v páru s Chorvatskem dělá díl nejvýš polovinu prohození — test: náhrady ÷ přidaná hodnota podniků 66,2 %, 1. z 23 zemí (střed ligy 59,0 %); daně v cenách obvyklé; domácí firmy 51,9 %, zahraniční 60,1 % (odporuje domácímu vlastnictví jako důvodu) — soud: výkon: nejlépe v regionu a v tom, kolik firma pošle zaměstnancům, nejlépe v celé lize — proč: „ze sta eur, které firma vytvoří, pošle do mezd nejvíc z ligy“ — v textu: „které dojelo výš, než ho poslala kola“
-- Pointa — výplata: Bulharsko a Řecko si místa prohodila hlavně kvůli kolům (měřítko kol); z vedlejších faktorů nejvíc vážilo, kolik z vytvořeného dá firma zaměstnancům, Slovinsku přidalo a Rumunsku ubralo — v textu: „protože z toho dílu je výplata“
+### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
 
-## Páry sousedů
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Švýcarsko (128,9 %, +24,7 b., 3. v Evropě), 2. Francie (118,5 %, +16,5 b., 5. v Evropě), 3. Německo (115,7 %, +14,2 b., 6. v Evropě), 4. Británie (109,4 %, +8,8 b., 9. v Evropě), 5. Irsko (101,1 %, +1,1 b., 13. v Evropě).]
 
-**Kolo 1:** Řecko je před Slovinskem: řecké továrny i obchody vytvořily na pracujícího víc; proč, záznam nerozlišuje (výkonnější řecké firmy, nebo víc Slovinců na podobnou výrobu), proto v hlase jen tento fakt, bez žen, bez počtu pracujících a bez „hlavně“ („Řecko je před ním, protože řecké továrny i obchody vytvořily na pracujícího víc“). Slovinsko je před Chorvatskem kvůli válečným létům, kdy Slovinsko výrobu obnovilo s menším počtem lidí a Chorvatsko ne („Od Slovinska ho dělí válečná léta“). Chorvatsko je před Bulharskem, protože chorvatská továrna vytvořila na dělníka mnohem víc; rozdíl leží uvnitř týchž odvětví, původ nerozlišen, násobek 3,2 jen v obraze; menší díl pracujících v Chorvatsku hlavním důvodem není a v hlase nezazní (je to místo z rozkladu) („Za Chorvatskem je, protože chorvatská továrna vytvořila na dělníka mnohem víc“). Bulharsko je před Rumunskem zčásti kvůli polím, kde pracovalo víc Rumunů, s protiváhou výkonnějších rumunských továren; většina rozdílu v číslech kola leží ve dvou vadách měření, které jsou jen v poznámce pro editora, a o jejich opravě rozhodne Ondřej („Na Bulharsko ztrácí zčásti kvůli polím, kde pracovalo víc Rumunů“).
+První kolo rozdává startovní karty roku devatenáct set devadesát šest podle zděděné produktivity, se kterou celá západoevropská pětice začínala nad středem ligy.
 
-**Kolo 2:** Rumunsko je před Bulharskem, protože z rumunských drobných políček odešlo mnohem víc lidí, kteří vytvářeli málo (mechanismem je jen tato část úbytku pracujících), a rumunská výroba rostla rychleji; obojí bez „hlavně“ („Na Rumunsko nestačí, protože z rumunských políček odešlo mnohem víc lidí, kteří vytvářeli málo“). Bulharsko je před Chorvatskem o kousek: chorvatská výroba rostla víc (1,75 proti 1,69krát), ale na pracujícího rostla bulharská o něco rychleji (reálně 1,77 proti 1,68krát, v kole 1,63 proti 1,50krát); v hlase jen tyto dva fakty bez příčiny, menší počet bulharských pracujících nezazní ani jako fakt, bez cen vývozu („Na Bulharsko ztrácí jen kousek: chorvatská výroba sice rostla víc, ale na pracujícího rostla bulharská o něco rychleji“). Chorvatsko je před Slovinskem, i když v objemu výroby na pracujícího rostly obě země skoro stejně: Chorvatsku pomohly lepší ceny, zčásti za vývoz („Chorvatsku pomohly lepší ceny, zčásti za vývoz“). Slovinsko je před Řeckem kvůli výrobě: slovinskou táhly továrny, kdežto Řecko po roce 2008 přišlo o čtvrtinu výroby („Se Slovinskem prohrává výrobou“).
+Nejlepší karty v regionu a třetí nejsilnější v celé Evropě drželo Švýcarsko, o víc než čtvrtinu nad středem ligy. Alpská země se vyhnula válkám, už před tou druhou byla dvakrát bohatší než střed Evropy a pracovníci měli v halách o dvě pětiny více strojů a budov než průměrný Evropan. Vysokou produktivitu táhnou velké nadnárodní firmy od farmaceutických koncernů jako Roche a Novartis po strojírny a banky, které dohromady tvoří přes pětaosmdesát procent přidané hodnoty, zatímco celá ekonomika od sedmdesátých let rostla jen pomalu a vláda za tím viděla hlavně chráněný domácí trh.
 
-**Kolo 3:** Bulharsko je před Řeckem, ale v číslech kola jsou skoro vedle sebe (0,95 bodu, pod prahem 1 bodu), rozdíl se proto nevykládá; pořadí platí při každém měření řecké mzdy („Těsně za ním je Řecko“). Řecko je před Chorvatskem i proto, že chorvatské odvody berou víc (31,4 proti 29,6 eura ze sta při jakékoli mzdě); větší část rozdílu stojí na výši řecké mzdy a do hlasu nejde („Za Řeckem zůstává i proto, že chorvatské odvody berou víc“). Chorvatsko je před Rumunskem, protože rumunské odvody berou nejvíc z celé ligy a rovná daň je vyrovná jen zčásti („proto má Chorvatsko navrch“). Rumunsko je před Slovinskem, protože slovinská daň bere z vyšší mzdy větší díl a slovinská mzda je v regionu nejvyšší; při rumunské mzdě by obě země braly skoro stejně („od Rumunska ho dělí daň, která z nejvyšší mzdy regionu bere větší díl“).
+O patro níž, necelou pětinu a šestinu nad středem ligy, vyjížděly Francie s Německem. Francouzský průmysl s Renaultem či Airbusem sice v hodinové produktivitě dohnal i Spojené státy, produktivitu na pracujícího ale tlumilo to, že Francouzi odpracovali o sto padesát hodin ročně méně než průměr Unie. Německo mělo špičkové strojírny a o pětinu více kapitálu než střed Evropy, jenže celostátní průměr srazilo sjednocení: východoněmecký soustružník v Lipsku dosahoval na startu necelých tří čtvrtin západní produktivity, kde se dohánění zastavilo.
 
-**Cíl:** Slovinsko je před Chorvatskem dvěma věcmi zároveň, bez „hlavně“: v Chorvatsku si stát bere víc v cenách (+6,2) a slovinské firmy dávají zaměstnancům větší díl (+4,5); díl tak dělá nejvýš polovinu tohoto prohození („Slovinsko mu vedení vzalo menšími daněmi v cenách a štědřejšími firmami“). Chorvatsko a Rumunsko jsou skoro vedle sebe (1,9 %) („s Chorvatskem skoro vedle sebe“). Rumunsko a Bulharsko jsou skoro vedle sebe (2,7 %) („S Rumunskem dojelo skoro vedle sebe“). Bulharsko je před Řeckem hlavně proto, že kola bulharský výkon podcenila a Řecko nadcenila (měřítko kol +40,7, z toho skladba pracujících 26,4; ekonomické příčiny se vyruší, díl firem a státu stojí proti Bulharsku −11,6) („Bulharsko ho přeskočilo hlavně proto, že bulharský výkon kola naopak podcenila“).
+Devět a jedno procento nad středem pak vyrážely Británie s Irskem. Británie dlouhodobě investuje nejméně ze sedmi největších vyspělých ekonomik a za Francií v hodinové produktivitě o šestnáct procent zaostávala, mezeru ale doháněla delší prací. A Irsko, ještě v osmdesátých letech chudá periferie s šestnáctiprocentní nezaměstnaností, teprve sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
 
-## Kontrolní list
+### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
 
-- showcase jen sportovní očekávání (tipy, zelený trikot, poslední místo), bez charakteristik a bez spoilerů: ano
-- otevření každého kola jednou větou, co kolo měří (kolo 1 s obrazem „co země vyrobila a prodala, rozdělené mezi všechny od dělníka po rolníka“, pevně): ano
-- páry sousedů ve všech kolech i v cíli, příčina páru jako rozdíl proti sousedovi, ne vlastní růst; nerozlišené páry oběma důvody bez „hlavně“, páry uvnitř chyby měření jako „skoro vedle sebe“: ano
-- díl pracujících (víc nebo méně pracujících, ženy v práci) nikde jako důvod, obraz ani holý fakt rozdílu, bez výjimky; z dělení v kole 2 jen odchod z drobných políček, kde odchod výrobu skoro nesnížil; pár Bulharsko–Chorvatsko v kole 2 jen dvěma fakty bez příčiny: ano
-- pořadí důvodů u každé země podle záznamu pořadí příčin v nové analýze po druhé opravě (hlavní první a nejdelší, vedlejší jen vedlejší větou nebo ve volitelné části, „hlavně“, „proto“ a „díky“ jen u hlavního): ano
-- „hlavně“ v cíli jen u Slovinska (proč dojelo výš, než ho poslala kola), u páru Bulharsko–Řecko (měřítko kol) a v pointě: ano
-- žádná příčina vyřazená údajem, který nerozlišuje (podobnost se sousedem, čistá změna počtu, dnešní podíl): ano
-- dohánění jako kontext, ne „samy od sebe“ (pointa kola 2): ano
-- co divák nemusí znát, vysvětleno při první zmínce (Slovinsko a Chorvatsko jako jugoslávské republiky, válka za nezávislost, centrální plánování sovětského vzoru, komunistický diktátor Ceaușescu, díl pro zaměstnance obrazem „ze sta eur, které firma vytvoří“): ano
-- žádný holý pojem (`kontrola_srozumitelnosti.py --divak` bez nálezu, i u statistického pojmu pro nájem v bytech vlastníků v celém souboru): ano
-- u cizích firem, co z hodnoty zůstává v zemi (Rumunsko: zahraniční firmy platí dvakrát víc než domácí, v hlase pevně; v cíli dávají zaměstnancům větší díl než domácí, volitelně): ano
-- u každé země v každém kole hodnocení s hlavním důvodem, kudy k výplatě a důvodem řečeným důsledkem pro lidi, se silou podle předmětu a dokladů; místo „napůl“ konkrétně, co pomáhá a co bere: ano
-- věty páru obměněné („Za X je“ jen jednou, „Za X zůstává“ jednou) a připomínky výplaty spojené s obrazem (prodavačka, továrna, sto eur); „si vede dobře“ jen dvakrát: ano
-- instituce v hlase nejvýš jednou za kolo a nikdy jako důvod soudu (v hlase žádná instituce): ano
-- pointa po průběžném pořadí s osou kola, končí výplatou; páteř upravená podle výjimek (návrh v `PATER_NAVRH_ZMEN.md`): ano
-- cíl s vedlejšími faktory jménem kategorie a ikonou (§2.6; v hlase „kolik firma dá zaměstnancům“, ikony v řádcích VIZUÁL, „daně v cenách“ jako návrh nové kategorie): ano
-- měřítko kol v cíli jen jako obraz („kola ho podcenila, protože…“), nikdy „pomohlo mu“ ani „berou si“: ano
-- vady měření (rumunský zlom řady pracujících 2002, bulharské bydlení 1995–1996, řecká mzda a počet řeckých zaměstnanců, ročník mezd Eurostatu z 6. 11. 2026) v hlase nejsou, jen v poznámce pro editora a v zámku faktů: ano
-- čísla v hlase jen jako pointa; v kole 1 přesně čtyři (polovina, šestina, sedmina, třetina), v kole 2 čtyři pětiny, čtvrtina a dvakrát (údaj „skoro dvakrát“ u průmyslu jen ve VIZUÁL), v kole 3 asi 65 eur, asi sedm procent, čtvrtina, třetina a devět eur, v cíli pětina: ano
-- otázka diváka jednou na region, s odpovědí z podkladu (Řecko, kolo 2): ano
-- první region epizody: pravidla průběžného pořadí (kolo 1) a cíle vysvětlená jednou; po každém kole lídr regionu s místem v lize: ano
-- zvláštnost země mimo tři kola u každé země (v cíli): ano
-- ve finále žádné místo v celé lize, jen pořadí v regionu; tipy jako tipy ze startu regionu: ano
-- tučně jen klíčová fakta (19 % slov): ano
-- oprava detailu z Ondřejovy připomínky nepřidala do hlasu nové téma (v zadání žádná taková připomínka): ano
-- délka pod stropem (1 417 slov bez volitelných, strop 1 425; ideál 1 350 až 1 400 kvůli doplňkům z oprav překročen o 17 slov), kolo 2 Rumunsko a Bulharsko 149 slov (limit 160): ano
-- hlavička uvádí verze skillů, zadání a co se změnilo proti předchozí verzi: ano
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 vůči středu ligy, body a hodnocení nad rámec dohánění): 1. Irsko (1,17×, +0,6 b., 13. v Evropě – očištěný důchod GNI*, nad rámec dohánění nejisté), 2. Švýcarsko (1,04×, −10,8 b., 16. v Evropě – rostlo rychleji, než odpovídá dohánění), 3. Francie (0,96×, −19,1 b., 22. v Evropě – v rámci běžného dohánění), 4. Británie (0,94×, −20,9 b., 23. v Evropě – nejisté), 5. Německo (0,94×, −21,3 b., 24. v Evropě – nejisté).]
 
-## NEŘÍKEJ
+Druhé kolo sleduje hru zemí do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu napříč ligou přitom vysvětlí prosté dohánění z nízkého základu, protože převzít hotovou linku je snazší než vymýšlet patenty na špičce.
 
-**Celý region:** místa v celé lize ve finále; vady měření (rumunský zlom řady pracujících 2002, bulharské bydlení v letech 1995–1996, výška řecké mzdy a počet řeckých zaměstnanců, ročník tabulky mezd Eurostatu a jeho aktualizace z 6. 11. 2026); „kola mu pomohla“, „pomohli mu drobní rolníci“, „živnostníci si berou“; díl pracujících jako důvod, obraz ani holý fakt rozdílu výkonu, bez výjimky (víc či méně pracujících, ženy v práci, „Bulhar je v práci častěji“, „bulharskou výrobu dělí méně pracujících“); tímto zákazem není dotčen doložený mechanismus v kole 2 „z rumunských políček odešlo mnohem víc lidí, kteří vytvářeli málo“ (odchod z práce s malou výrobou, jejíž úbytek výrobu skoro nesnížil, ne holý počet pracujících); jména institucí jako důvod soudu; „nejde zjistit“, „nevíme“; podmiňovací způsob místo zjištění; reálná čísla růstu jako hodnota kola; „hlavně“ u kterékoli příčiny páru, který je podle záznamu nerozlišený; nájem, který statistika připisuje lidem bydlícím ve vlastním, v hlase.
+Skutečným vítězem je proto Švýcarsko: vůči středu ligy sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo křivku běžného dohánění. Po roce dva tisíce dva otevřelo trh přeshraničním odborníkům z Unie a vsadilo na farmacii, která rostla skoro o desetinu ročně, obstarala čtvrtinu růstu ekonomiky a po letech, kdy silný frank průmyslu přitížil, pomohla zemi projít pandemií. Na čele kola skončilo Irsko s růstem o sedmnáct procent, jehož nadrůst nad běžné dohánění je však po započtení cen nejistý. Irskou produktivitu měříme přes očištěný národní důchod: když nadnárodní firmy jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt v roce dva tisíce patnáct vyskočil o čtvrtinu, aniž by se víc vyrábělo. I po očištění však irská produktivita rostla a zčásti za tím stojí technologie a léky – přestože po roce dva tisíce osm praskla úvěrová bublina, zedníci opustili stavby, investice spadly o dvě pětiny a stát musel přijmout záchranný balík Unie a Mezinárodního měnového fondu za pětaosmdesát miliard eur.
 
-**Řecko.** Vyvráceno: že vede „díky turistům, obchodu a dopravě“ (obor na 0,97 středu ligy jako ostatní řecké obory); že mu vstup do Unie do roku 1996 přidal náskok; že řecký pokles v kole 2 dělají ceny nebo drahota (cenová část −0,024 z −0,258); že propad lodní dopravy stáhl celé období (za celé období zhruba nula); že odchod lidí zvedl výkon dělením (pracujících přibylo o 20 %); že má v Evropě vysoké odvody (29,6 eura ze sta, střed ligy 29,2); že Řekové platí léčení sami, protože stát kvůli nízkým daním z práce málo vybere (výběr 41,6 % HDP, víc než EU); že v cíli dojelo hůř kvůli drahotě; že řecké firmy dnes dávají malý díl kvůli krizi (57,3 % proti 45,4 % v roce 2008); že mzdy drží dole snížená minimální mzda; že nízkou mzdu vysvětlují dlouhé hodiny. Neříkat jako zjištěné: že kola Řecko nadcenila jen kvůli živnostníkům (asi dvě pětiny přecenění, zbytek nájem připisovaný lidem bydlícím ve vlastním a měření); „po odečtení zdražení“ v hlase; že bylo v roce 1996 na obyvatele bohatší (nebo chudší) než Slovinsko; „skoro každý pátý Řek vytvořil třetinu“ v hlase (čísla jen v obraze); „nejhorší výkon ligy“ v obou měřeních (reálně je horší Itálie); že je zátěž v kole 3 nízká hlavně proto, že řecká výplata je malá, nebo že Řecko má nejnižší daň z příjmu v lize (stojí na měření mzdy); „čtvrté v lize“ v kole 3 v hlase; že krizi způsobila olympiáda 2004; přesný podíl vlastní viny a vnějšího šoku; že odchod mladých zhoršil výkon; „blahobyt byl jen zdánlivý“; nájem připisovaný lidem bydlícím ve vlastním jako příčinu nízké mzdy.
+Zbylé tři velmoci ztratily kolem dvaceti bodů, což u Francie odpovídá zpomalení bohaté země a u Británie s Německem je čistý tah podle měřítka cen nejistý. Británii táhl rozmach bank v londýnské City a severomořská ropa; finanční krize roku dva tisíce osm ale oba motory vypnula a nejistota kolem odchodu z Unie srazila firemní investice o desetinu. Francie zase zkrátila pracovní týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů, kteří část týdne sedí ve škole, ale počítají se jako plní pracující, a to vysvětlí asi pětinu propadu po pandemii. A Německo mezi lety devadesát šest a dva tisíce dvacet čtyři nabralo o pětinu víc pracujících, k čemuž přispěla i reforma podpor z roku dva tisíce pět, jenže s kratšími úvazky odpracoval Němec o jedenáct procent méně hodin a od roku dva tisíce dvacet dva továrny zasáhl energetický šok. Zatímco ve Švýcarsku a Irsku táhne průměr hrstka globálních obrů vedle slabších domácích firem, Německo ani výdaji na výzkum přes tři procenta výkonu ekonomiky motor neroztočilo – proč to nestačilo, ukáže epizoda o produktivitě a sektorech.
 
-**Slovinsko.** Vyvráceno: že je za Řeckem, protože mu kolem rozpadu Jugoslávie ubyla výroba (rozdíl na pracujícího byl v roce 1990 větší); že ztráta jugoslávského trhu stáhla výkon na pracujícího do roku 1996; že Slovinsko v roce 1996 táhl nahoru průmysl (0,52 středu ligy, služby 0,76); že slovinský průmysl zaostal kvůli málo cizím investicím; že je s Chorvatskem v kole 2 „skoro vedle sebe“ (1,25 proti 1,50); že vysokou zátěž proti Evropě dělá hlavně daň z příjmu; že Slovince vyhánějí daně víc než sousedy nebo že odcházejí za nižšími daněmi; sazba 50 % jako sazba průměrného Slovince; že velký díl pro zaměstnance je účetní věc, domácí vlastnictví firem nebo veřejné platy. Neříkat: ženy ani „Slovinců pracovalo víc“ v kole 1, ani jako obraz; „hlavně kvůli výkonnějším řeckým firmám“ (smí jen fakt, že řecké továrny i obchody vytvořily na pracujícího víc); že ho vytáhly značky Gorenje nebo Krka; „staré stroje“ jako změřená příčina (doložený je jen kapitál na pracujícího 0,84 středu ligy); že je za Chorvatskem, protože startovalo výš; „hlavně“ u cen vývozu v páru s Chorvatskem; posun cenových hladin v hlase; „hlavně díky smlouvám odborů“ nebo „hlavně díky minimální mzdě“ samostatně; že velký díl je dědictví samosprávy podniků; že mu pomohli drobní rolníci; že díky dílu pro zaměstnance vyhrálo region (bez něj by bylo v regionu stále první).
+### Kolo 3 – Tah země: Daňový klín
 
-**Chorvatsko.** Vyvráceno: že válka je hlavní důvod nízkého výkonu na pracujícího v roce 1996; že Slovinsko je před ním na pracujícího hlavně z dědictví; že chorvatský průměr drží Pliva; že je v kole 1 před Bulharskem hlavně proto, že výrobu po válce dělilo méně pracujících (rozdíl leží uvnitř týchž odvětví); že krize 2009–2014 srazila výkon na pracujícího; že odchod lidí po vstupu do EU zvedl výkon dělením; že Bulharsko je před ním v kole 2, protože vyrábělo víc; že bere dobře placeným víc než Evropa; že v cíli dojelo hůř kvůli drahotě života; že díl pro zaměstnance drží nízko slabé odbory a nízká minimální mzda. Neříkat jako zjištěné: menší díl pracujících jako důvod nebo část důvodu chorvatského náskoku před Bulharskem v kole 1 (válka vzala výrobu i místa zhruba stejným dílem, je to místo z rozkladu); „s podobným startem“ u srovnání s Českem a Maďarskem (Česko startovalo na 66,1 %, Chorvatsko na 57,4 %); „táhli ho turisté, ne továrny“; že úbytek bulharských obyvatel zvedl bulharský výkon (kolo 2; v hlase ani jako holý fakt, že bulharskou výrobu dělí méně pracujících); ceny vývozu v páru s Bulharskem; že privatizace manažerům odradila zahraniční továrny; že rostlo zhruba podle startu; že zdražení vývozu jsou celé turisté; že loděnice jsou hlavní brzda; že je za Řeckem v kole 3 hlavně kvůli dani z příjmu nebo vyšší mzdě; že Chorvati odcházejí kvůli daním; kolik daní v cenách platí turisté; „hlavně“ u kterékoli z obou příčin páru se Slovinskem v cíli; skladbu pracujících jako důvod slovinského náskoku; „o 5,9 bodu hůř“ a „o 12,7 %“ bez poznámky o ročníku dat.
+[VIZUÁL: Grafické schéma „Daňového klínu“ (daně a odvody zaměstnance + odvody zaměstnavatele + povinné soukromé fondy vůči celkovým nákladům práce) a tabulka Kola 3: 1. Británie (28,3 %, +13,2 b., 1. v Evropě), 2. Irsko (34,2 %, +7,4 b., 2. v Evropě), 3. Švýcarsko (36,5 %, +5,1 b., 6. v Evropě), 4. Francie (46,3 %, −6,1 b., 24. v Evropě), 5. Německo (46,9 %, −6,8 b., 25. v Evropě).]
 
-**Bulharsko.** Vyvráceno: že hlavním důvodem nízké karty 1996 je zemědělství; že je za Chorvatskem hlavně proto, že v Chorvatsku po válce pracoval menší díl lidí; že zaostalo za Rumunskem kvůli stavbám; že vylidňování zvedlo výkon velkým dělením; že boom 2004–2008 přidal „hlavně místa, ne výkon“; že nízkou zátěž dělá strop odvodů; že má nejnižší daň z příjmu v regionu; že vybírá nejméně daní v regionu nebo v Unii; že Bulhar platil za léčení z vlastní kapsy v roce 2024 nejvíc v Unii (skoro nejvíc); že bulharské podniky dávají víc než před krizí; že ho vytáhla minimální mzda, odbory nebo napjatý trh práce; že pomáhá levné jídlo. Neříkat jako zjištěné: že menší díl pracujících v Chorvatsku dělá aspoň část odstupu v kole 1 (místo z rozkladu, test to nerozliší); že v cíli poskočilo v lize nejvíc míst (nejvíc jen v tom, o kolik výplata předčila kola; v místech víc Rakousko, Německo i Slovinsko); že drobní rolníci „skoro nic“ nevytvoří (asi pětinu průměru); „skutečné dohánění až po roce 2013“; „hlavně pád 1997“ nebo „hlavně v prvních letech“ v páru s Rumunskem; že za Rumunskem zaostává, protože pracuje větší díl Bulharů; o kolik krize snížila kartu 1996; „půl na půl“ v páru s Chorvatskem; „skoro dvojnásobek“ za Chorvatskem; že výroba spadla „o víc než čtvrtinu“; že odstup od Chorvatska vytvořil zánik sovětského trhu, ani že ho nevytvořil; že nízké daně způsobily vysoké platby pacientů nebo slabé školy (věty jen vedle sebe); že nízká zátěž láká investory nebo drží lidi doma; „bydlení a energie za dvě pětiny průměru Unie“ jako důvod posunu proti kolům; že mu pomohli drobní rolníci.
+Třetí kolo měří daňový klín – tedy součet všech daní, odvodů a povinných plateb zaměstnance i firmy vůči celkovým nákladům práce, z něhož dvě třetiny zaplatí sám pracující na nižší čisté výplatě. Nejmenší zátěž v celé sedmadvacítce nesou ostrovní země: první Británie bere osmadvacet procent a druhé Irsko čtyřiatřicet procent. Není to nízkou daní z příjmu, ale tím, že ostrovní firmy platí na pojistném nad hrubou mzdu jen kolem jedenácti procent. Británie navíc v roce dva tisíce dvacet čtyři srazila zaměstnanecké pojistné na osm procent, zmrazená daňová pásma se základem dvanácti a půl tisíce liber ale s inflací potichu vytahují lidem z kapes vyšší daň, zatímco Irsko drží od krize univerzální sociální poplatek a silně progresivní zdanění.
 
-**Rumunsko.** Vyvráceno: že kartu 1996 nejvíc stáhla pole; že rumunské továrny nebyly problém; že druhou část odstupu od Bulharska dělají výkonnější bulharské továrny; že výkon v kole 2 zvedl čistý přesun „z pole do továrny“; že ho za celé období táhly léky, elektronika a letadla; že krize 2009–2010 Rumunsko zastavila; že přesun odvodů v roce 2018 zvedl zátěž; že chudoba pracujících je nejvyšší hlavně kvůli zdanění; že nízkou čistou mzdu dělají hlavně odvody; že ho vytáhly nejlevnější potraviny; „život o pětinu levnější“ jako důvod dotažení Chorvatska; že malý díl dělají cizí firmy; že díl drží nízko nízká minimální mzda nebo zrušení smluv v roce 2011. Neříkat jako zjištěné: přesné „dvě pětiny lidí na polích“ (třetina až dvě pětiny podle měření); že je Bulharsko před Rumunskem v kole 1 výrazně; „rostlo nejrychleji v lize“; „asi třetina skoku je dělení“ ani celý úbytek pracujících jako důvod náskoku před Bulharskem (mechanismem jen odchod z drobných políček); „hlavně Dacia“ nebo „hlavně programátoři“; co přesně stojí za zdražením vývozu; že vysoká zátěž vyhání lidi do šedé práce (nejvýš „ekonomové se shodují, že zčásti“); „dojelo přesně tam, kam ho poslala kola“ jako zjištěná vlastnost (stojí na ročníku dat); že mu pomohli drobní rolníci.
+Hned za ostrovy, mezi zeměmi s nejnižší zátěží, je Švýcarsko se šestatřiceti a půl procenty. Běžné přehledy u něj přehlížejí povinné soukromé fondy, jenže Švýcar musí poslat přes pět tisíc franků ročně zdravotní pojišťovně – jejíž pojistné od konce devadesátých let stouplo dvaapůlkrát – a přes pětapůl tisíce franků do penzijní kasy.
 
-## Zámek faktů
+Mezi posledními zeměmi celé Evropy jsou Francie a Německo, kterým stát a pojišťovny vezmou přes šestačtyřicet procent nákladů práce, a hůř jsou na tom už jen Rakousko a Belgie. Francouzské firmy platí na odvodech nad hrubou mzdu přes třetinu, třikrát víc než ostrovní. Francie sice u minimální mzdy odpouští firmám čtyři pětiny odvodů, při povýšení ale úlevy mizí a v pasti nízkých mezd bere stát až osmdesát centů z každého přidaného eura. V Německu zase leží důchody a zdravotnictví přímo na výplatních páskách, kde pojistné v roce dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Zatímco Německo dříve udrželo odvody na uzdě seškrtáním budoucích státních penzí, Švýcarsko sází na povinné kapitálové kasy – čí model je udržitelnější, ukáže epizoda o penzích.
 
-1. Tipy ze startu regionu: Slovinsko mezi 15. a 20. místem, nejvýš z regionu; Rumunsko kolem 25.; Chorvatsko mezi třemi nejhoršími; Bulharsko největší outsider a kandidát na poslední místo; Řecko unikne poslednímu místu; o zelený trikot se utkají Rumunsko, Chorvatsko a Bulharsko. Vyhodnocení bez míst v lize: vyšel jen u Slovinska; Chorvatsko, Rumunsko a Bulharsko líp, Řecko hůř.
-2. Kolo 1 (výkon pracujícího 1996 v kupní síle, střed ligy = 100 %; co země vyrobila a prodala, rozdělené mezi všechny pracující od dělníka po rolníka): Řecko 90 % (15.), Slovinsko 70 % (17.), Chorvatsko 57 % (19.), Bulharsko 35 % (23.), Rumunsko 26 % (27., poslední v lize).
-3. Řecko, kolo 1: jediné bez centrálního plánování, dělník i úředník mimo zemědělství zhruba na středu ligy (bylo z čeho platit mzdy); pod středem hlavně olivové háje a políčka (18,3 % pracujících proti 8,2 % ve středu ligy, zemědělec asi třetina řeckého průměru; v hlase jen „mnohem víc Řeků než jinde“ a „zlomek“). Pořadí důvodů: pole → pomalý růst 1990–1996. Protiváha: výhoda je dědictví trhu, ne zásluha.
-4. Slovinsko, kolo 1: hlavně zděděné socialistické továrny (dělník asi na polovině středu ligy) → zemědělství a víc pracujících na obyvatele; roky po pádu socialismu zvládlo nejlépe v regionu (výroba obnovena s mnohem menším počtem lidí, o pětinu). Pár s Řeckem nerozlišený; v hlase jen fakt, že řecké továrny i obchody vytvořily na pracujícího víc (výkon uvnitř odvětví +29,1 bodu z rozdílu 25,5 bez bydlení); ženy ani počet pracujících ne, ani v obraze.
-5. Chorvatsko, kolo 1: hlavně zděděná úroveň firem (továrny a loděnice zaostávaly už v roce 1990) → válka za nezávislost vzala výrobu i práci zhruba stejným dílem (výroba 1990–1996 −22 %, pracující −27 %); malý díl pracujících je jen místo z rozkladu; výkon zbylých pracujících reálně skoro předválečný (+6 %); smůla dopadla na ty, kdo práci ztratili. Pár se Slovinskem: válečná léta, kdy Slovinsko výrobu obnovilo s menším počtem lidí a Chorvatsko ne → dědictví. Válka je smůla, ne chyba.
-6. Bulharsko, kolo 1: hlavně hospodářství sovětského typu, továrny pro sovětský trh po jeho zániku na šestině středu ligy → krize 1996–1997 → zemědělství; zánik trhu smůla, krach bank po odkládaných reformách vlastní chyba (ne zbytečná), v roce 1997 reálně −14,1 % výroby (sedmina). Pár s Chorvatskem: chorvatská továrna vytvořila na dělníka mnohem víc (3,2krát jen v obraze; výkon uvnitř odvětví 54,7 z 58,9 bodu bez položky bydlení), původ nerozlišen; menší díl pracujících v Chorvatsku důvodem není (válka vzala výrobu i místa stejným dílem).
-7. Rumunsko, kolo 1: hlavně zděděný nízký výkon továren a služeb (dělník v továrně na třetině středu ligy, kombináty z doby Ceaușeska) → pole (třetina až dvě pětiny pracujících podle měření); výkon na pracujícího jako jediný v regionu klesl; nouzová síť, ne zbytečná chyba, výkon slabý. Pár s Bulharskem: v hlase jen ekonomická část, zčásti rumunská pole, s pevnou protiváhou, že rumunské továrny byly výkonnější než bulharské (0,29–0,33 proti 0,16–0,17 středu ligy); zbytek dvě vady měření (poznámka pro editora).
-8. Průběžné pořadí po kole 1: Řecko 15., Slovinsko 17., Chorvatsko 19., Bulharsko 23., Rumunsko 27. Body kol se nesčítají a průběžné pořadí ukazuje jen, kde by země stály, kdyby rozhodovala odehraná kola (řečeno jednou, v prvním regionu); po každém kole lídr regionu a jeho místo v lize. Pointa kola 1: kromě Řecka drží všechny dole hlavně továrny (průmysl je největší část vlastní výkonové mezery: Slovinsko 64 %, Bulharsko 46 %, Chorvatsko 41 %, Rumunsko asi 41 %; Řecko drží pod středem pole); kde dělník vytvoří málo, jsou malé i výplaty.
-9. Kolo 2 (změna výkonu pracujícího v kupní síle 1996 → 2020–2024 proti středu ligy): Rumunsko 3,17krát (1., zelený trikot), Bulharsko 1,63krát (6.), Chorvatsko 1,50krát (8.), Slovinsko 1,25krát (12.), Řecko 0,77krát (27., poslední v lize).
-10. Rumunsko, kolo 2: hlavně přestavba firem a služeb (staré kombináty lidi ztratily, kdežto továrny zahraničních firem, Dacia pod Renaultem a Ford, vyrábějí mnohem víc; průmysl s o 40 % menším počtem lidí vyrobí reálně 1,8 až 1,9krát víc, jen ve VIZUÁL; ve výrobě aut 100 → 228 tisíc lidí; obchod, doprava, programátoři; asi dvě třetiny vlastního reálného růstu) → menší kus odchod z políček a vývoz, za který Rumunsko dostává víc než dřív; průměrný pracující i s rolníky z čtvrtiny na čtyři pětiny středu ligy (dělník v továrně v roce 1996 na třetině). Zahraniční firmy platí na osobu 24 238 eur, domácí 11 292 (2023), v hlase pevně „dvakrát víc“ na konci věty o čtyřech pětinách. Neříkat „rostlo nejrychleji v lize“.
-11. Bulharsko, kolo 2: vede si dobře, ale na tak nízký start pomaleji, než je obvyklé (obě měření); hlavně přestavba firem a služeb po roce 1997, od továren po programátory v Sofii; brzda vlastní krize 1996–1997; ceny vývozu vedlejší, ale velké (asi 0,21; v hlase volitelně). Pár s Rumunskem nerozlišen: odchod Rumunů z drobných políček, kde vytvářeli málo (rumunský rolník dnes asi sedmina průměru země; mechanismem jen tato část úbytku pracujících, asi 0,15 po opravě zlomu), spolu s rychlejší rumunskou výrobou. Po kole 2 poslední v průběžném pořadí, i když si vede dobře.
-12. Chorvatsko, kolo 2: vede si dobře; výrobu na pracujícího zvedlo zhruba jako Česko a Maďarsko, pomaleji než Slovensko (reálně +66,8 %, Česko +68,9 %, Maďarsko +59,5 %, Slovensko +107,8 %; pevně, bez „s podobným startem“); přestavba služeb a firem, nejvíc obchod a doprava, těsně za nimi továrny, s tím rostou i mzdy; turisté menší část. Pár s Bulharskem: jen dva fakty bez příčiny, chorvatská výroba rostla víc (1,75 proti 1,69krát), bulharská na pracujícího o něco rychleji (reálně 1,77 proti 1,68krát); menší počet bulharských pracujících nezazní ani jako fakt; bez cen vývozu.
-13. Slovinsko, kolo 2: také dobrý výsledek; hlavně vývozní průmysl (léky Krky) → služby; brzda bankovní krize 2009–2013. Pár s Chorvatskem: v objemu skoro stejně, Chorvatsku pomohly lepší ceny, zčásti za vývoz.
-14. Řecko, kolo 2: v kole poslední z celé ligy; hlavně dluhová krize a to, co vzala na dlouho (čtvrtina výroby, dvě třetiny investic, nevrátily se) → víc práce než výroby v hotelech a obchodech → smůla lodní dopravy po roce 2008; do krize se z velké části dostalo samo; řecký pracující dnes vyrobí skoro stejně jako v roce 1996 (reálně +2 %, střed ligy +29 %). Pár se Slovinskem: výroba (slovinskou táhly továrny, řecká spadla).
-15. Otázka diváka: jak se lídr prvního kola (Řecko) propadl na dno? Odpověď: růst na dluh a krize, která vzala výrobu a investice, které se nevrátily.
-16. Průběžné pořadí po kole 2: Slovinsko 16., Chorvatsko 17., Rumunsko 22., Řecko 26., Bulharsko 27.; v hlase lídr se šestnáctým místem a zvlášť věta, že Bulharsko je i přes slušný růst poslední.
-17. Kolo 3 (ze sta eur nákladů práce zaměstnanci zbude, 2024): Bulharsko 65,10 (3.), Řecko 64,15 (4.), Chorvatsko 58,63 (15.), Rumunsko 57,20 (19.), Slovinsko 54,23 (23.).
-18. Bulharsko, kolo 3: hlavně rovná daň 10 % → nejnižší odvody v regionu; pro výplatu dobře (asi +7 % proti středu ligy), druhou stranou menší stát (daně a odvody 30,3 % HDP proti 40,2 % v Unii, tedy o čtvrtinu menší díl výroby; třetinu léčení si Bulhar platí sám), věty jen vedle sebe.
-19. Řecko, kolo 3: v hlase jen doložené snížení odvodů od roku 2019 (dobře, zvedlo čistou výplatu); část toho berou daňová pásma, která nerostou s cenami (daň při mzdě průměrného pracovníka 9,1 → 12,1 % hrubé mzdy, 2021–2024); hlavní část nízké zátěže závisí na měření řecké mzdy (jen pro editora). S Bulharskem v číslech kola skoro vedle sebe.
-20. Chorvatsko, kolo 3: přesně uprostřed Evropy, bez chyby i bez náskoku (pevně); vyšší odvody vyrovná nižší daň; za Řeckem i proto, že chorvatské odvody berou víc; reforma 2024 dobře, ale malý krok (volitelně).
-21. Rumunsko, kolo 3: hlavně odvody bez stropu, nejvíc z celé ligy, rovná daň je vyrovná jen zčásti; průměrnou výplatu kolo snižuje jen asi o 2 %, špatně pro lidi s malou výplatou (bere jim skoro stejný díl jako manažerovi; s poloviční mzdou zbude ze sta eur 57,8 v Rumunsku a 66,9 v Chorvatsku, v hlase „o devět méně“, prodavačka jako obraz). Nezdanitelná částka jako lepší možnost je doložená, do hlasu nejde.
-22. Slovinsko, kolo 3: hlavně vysoké odvody na důchod a zdraví; od Rumunska ho dělí daň, která z vyšší mzdy bere větší díl, při nejvyšší mzdě regionu (při rumunské mzdě 42,7 proti 42,8 %); může si to dovolit (nejvyšší výplata v regionu i po zdanění, odešlo odtud nejméně lidí), úsudek pořadu.
-23. Průběžné pořadí po kole 3: Chorvatsko 17., Slovinsko 20., Rumunsko 22., Řecko 25., Bulharsko 27. (v hlase lídr se sedmnáctým místem a zvlášť „Bulharsko zůstává poslední“); daně výplatu posunou o pár procent, výkon o desítky.
-24. Cíl (čistá mzda v kupní síle 2024): Slovinsko 24 415, Chorvatsko 21 657, Rumunsko 21 253, Bulharsko 20 693, Řecko 16 848; podle kol by vyhrálo Chorvatsko před Slovinskem, Rumunskem, Řeckem a Bulharskem.
-25. Řecko v cíli: žádná ekonomická příčina nepřevažuje; firmy ze sta eur, které vytvoří, pošlou do mezd zhruba tolik co jinde (57,3 proti 59,0 ve středu ligy); kola ho nadcenila i proto (asi ze dvou pětin, skladba −7,3 z −17,9), že pětinu výroby tvoří výdělky živnostníků a rodinných podniků (majitelé obchůdků a taveren), ze kterých se mzda zaměstnance neplatí; zbytek přecenění je nájem připisovaný vlastníkům bytů a měření (jen pro editora); desetinu přidané hodnoty tvoří nájem, který statistika připisuje lidem bydlícím ve vlastním (do hlasu ne). Bulharsko ho přeskočilo hlavně proto, že kola bulharský výkon podcenila (měřítko kol +40,7, z toho skladba pracujících 26,4; díl firem a státu stojí proti Bulharsku −11,6). Účet: promarnilo nejlepší start regionu krizí na dluh.
-26. Bulharsko v cíli: výplata předčila kola nejvíc z celé ligy (+22,3 bodu, druhé Rakousko +16,0; v místech poskočilo víc Rakousko, Německo i Slovinsko, proto ne „nejvíc míst“); celé překvapení je, že ho kola podcenila (statisíce drobných rolníků, kteří vytvoří jen zlomek, asi pětinu průměru; výplatu zaměstnance to nesnižuje); ekonomicky nerozlišeno: bydlení a energie nejlevnější v lize (38 % průměru Unie), levné i na bulharské poměry (0,62 cen výroby, střed ligy 0,99), proti menšímu dílu firem než ve většině ligy. S Rumunskem skoro vedle sebe (2,7 %).
-27. Rumunsko v cíli: třetí jako po kolech; pro výplatu je nejhorší skoro nejmenší díl pro zaměstnance v lize (domácí firmy, ne zahraniční; bez toho by bylo v regionu první); z velké části ho vyrovnává levný lékař a bydlení a to, že ho kola podcenila (lidé na políčkách; +6,6 a +6,5 proti −16,4, asi 80 %). S Chorvatskem skoro vedle sebe (1,9 %).
-28. Chorvatsko v cíli: po kolech první, v cíli druhé; zčásti ho stáhly daně v cenách, nejvyšší v lize (co zákazník zaplatí státu, nedostane zaměstnanec ve mzdě), nadprůměrný díl firem to z velké části vyrovná (−6,5 proti +4,8). Pár se Slovinskem nerozlišeno: menší daně v cenách (+6,2) spolu se štědřejšími slovinskými firmami (+4,5).
-29. Slovinsko v cíli: vítěz regionu; „hlavně“ jen k tomu, proč dojelo výš, než ho poslala kola: vedlejší faktor kolik firma dá zaměstnancům (ze sta eur, které podniky vytvoří, 66 proti 59; +9,3 bodu); bez této výhody by bylo asi 17. v lize místo 15., stále první v regionu; v páru s Chorvatskem dělá díl nejvýš polovinu prohození. Ruku v ruce smlouvy odborů, nejvyšší minimální mzda v regionu a povinný příspěvek na dovolenou (souběh, váhy neoddělené).
-30. Pointa cíle: Bulharsko a Řecko si místa prohodila hlavně kvůli kolům (měřítko kol +40,7, skladba pracujících 26,4); z vedlejších faktorů nejvíc vážil díl, který firma dá zaměstnancům: Slovinsku přidal (+9,3), Rumunsku ubral (−16,4); končí výplatou.
-31. Konec: po kolech vedlo Chorvatsko, vyhrálo Slovinsko; tip ze startu vyšel jen u Slovinska, Řecko hůř, ostatní líp (bez míst v lize); most do střední Evropy.
+### Finále regionu: Odhalení pořadí od posledního po vítěze
 
-## Zdroje příkladů
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Německo +15,7 b., Švýcarsko +7,3 b., Francie +4,6 b., Británie +4,2 b., Irsko −6,6 b.).]
 
-- Řecko: rodinné políčko a olivy, 18,3 % pracujících v zemědělství (Eurostat 1996, `analyza_regiony_2026_10/priklady/GR.md`); hotely a restaurace 372 → 742 tisíc lidí (Eurostat, `podklady/soudy_rust/GR.md`); živnostníci podle skupin (`podklady/vypocty/cil/ZDROJE_CILE.md`, Z21).
-- Slovinsko: Krka v Novém Mestu, https://www.krka.biz/media-center/news/krka-releases-2024-unaudited-financial-statements/ ; povinný příspěvek na dovolenou, https://www.gov.si/en/news/2025-06-23-annual-leave-and-holiday-allowance-employee-rights-and-employer-obligations-in-slovenia/ ; záchrana bank 2013, https://www.bsi.si/en/media/posts/government-carries-out-capital-increases-at-five-banks-following-european-commission-approval (vše přes `priklady/SI.md`).
-- Chorvatsko: srovnání s Českem, Maďarskem a Slovenskem (reálný růst výkonu na pracujícího, `podklady/soudy_rust/HR.md`, start 1996 `podklady/soudy_karty/HR.md` D6); loděnice Uljanik, 3. Maj a Brodosplit, https://hina.hr/OTS/4185438 ; prázdné pláže po válce, https://www.hr-eu.net/index.php/en/home-en/the-economy/tourism ; turisté 2024, https://www.htz.hr/en/node/11657 ; daň si volí obec, https://porezna-uprava.gov.hr/en/income-t-ax-information-on-the-general-rules-rates-taxpayer-and-submitting-annual-income-tax-return/7322 (vše přes `priklady/HR.md`).
-- Bulharsko: vývoz do Sovětského svazu a Balkancar, https://countrystudies.us/bulgaria/41.htm a https://en.wikipedia.org/wiki/Balkancar ; krach bank a hyperinflace 1996–1997, https://www.imf.org/external/pubs/ft/fandd/1999/09/gulde.htm ; programátoři v Sofii (Telerik), https://techcrunch.com/2014/10/22/progress-software-buys-telerik-for-262-5m-as-buying-spree-continues/ ; rovná daň 10 %, https://taxsummaries.pwc.com/Bulgaria/Individual/Taxes-on-personal-income (vše přes `priklady/BG.md`).
-- Rumunsko: ocelárna Sidex v Galați, https://romania-insider.com/arcelotmittal-starts-new-voluntary-redundancy-scheme-at-galati-plant-in-romania ; výroba aut 100 → 228 tisíc lidí a rolník dnes asi sedmina průměru země (Eurostat nama_10_a64_e, nama_10_a10 a a10_e, `podklady/vypocty/rust/ROZKLAD_KOLO2.md` oddíl 5 a `podklady/ZMENY_rust.md`); políčko po dědečkovi (zákon 18/1991), https://www.cafee.ase.ro/wp-content/uploads/2022/10/The-present-and-future-of-small-farms-in-Romania.pdf ; Dacia pod Renaultem, https://en.wikipedia.org/wiki/Automobile_Dacia ; Ford v Craiově, https://wardsauto.com/ford/ford-to-take-control-of-romanian-daewoo-plant (vše přes `priklady/RO.md`); zahraniční a domácí firmy, osobní náklady na osobu (Eurostat, `podklady/soudy_cil/RO.md`, test C4).
+Jdeme do cíle roku dva tisíce dvacet čtyři se středem evropské ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
+
+Páté místo v regionu a pozici v patře nad středem Evropy bere Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Francouzům pomáhá nejnižší cenová hladina regionu jen osm procent nad průměrem Unie a součet kol překonávají o čtyři a půl bodu: kolektivní smlouvy kryjí osmadevadesát procent zaměstnanců a na výplaty jde přes jednapadesát procent výkonu, což vysvětlí skoro celý náskok. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Čtvrté v regionu a rovněž nad středem Evropy končí Německo s jednatřiceti tisíci čtyřmi sty jednotkami a přes čtyřiatřiceti tisíci eury, které ceny krátí o devět procent. Oproti kolům vyskočilo o šestnáct bodů, ale jen menší část z toho vysvětlí, že na mzdy tam jde třiapadesát procent výkonu a že produktivitu v kolech trochu ředí částečné úvazky; většina rozdílu zůstává otevřená. Německo si odnáší štítek „Dělá to dobře a je to vidět“.
+
+Třetí místo nad středem Evropy obsazuje Irsko s jednatřiceti tisíci šesti sty jednotkami. Ir si v eurech vydělá skoro pětačtyřicet tisíc, jenže o dvě pětiny dražší ceny než v Unii mu vymažou náskok před Británií a oproti kolům ztrácí sedm bodů. Proč, data spolehlivě neřeknou: i očištěný irský důchod v sobě nese část příjmů nadnárodních firem, takže produktivita v kolech může být pořád trochu nafouknutá, a průměrná mzda míchá vysoké platy v amerických firmách s nižšími výdělky ve většině domácích firem. Irsko si odnáší štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Na druhé místo a do evropské špičky proniká Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, které tlumí skoro o třetinu vyšší ceny než v Unii. Součet kol překonává o čtyři body a skoro celý rozdíl vysvětlí to, že patnáct procent pracujících tvoří živnostníci, takže výkon se dělí mezi méně zaměstnanců; průměr navíc nejspíš zvedá vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
+
+A vítězem regionu, pevně usazeným v evropské špičce, se stává Švýcarsko s více než čtyřiceti tisíci jednotkami kupní síly. V eurech bere Švýcar sedmdesát tři tisíce, na chráněném trhu s cenami o čtyři pětiny nad průměrem Unie, kde už na začátku tisíciletí stál Big Mac o dvě třetiny víc než v Americe, ale část náskoku ztrácí – proč se cenovky tolik liší, ukáže epizoda o cenové hladině. Švýcarsko přesto překonává kola o sedm bodů, neboť do výplat posílá přes sedmapadesát procent výkonu a láká vysokoškoláky z celé Evropy, a se štítkem „Dělá to dobře a je to vidět“ jednoznačně ovládá region.
+
+### Gemini 4 Argon
+
+### Západní Evropa
+
+### Předstartovní showcase
+
+[VIZUÁL: Startovní rošt západoevropské rozjížďky – pět ekonomických těžkých vah: alpská pevnost Švýcarsko, průmyslový motor Německo, státem řízená Francie, finanční ostrov Británie a korporátní tygr Irsko.]
+
+Na startovní čáru západoevropské rozjížďky nastupuje pět těžkých vah, které v závodě o nejvyšší čistou výplatu v kupní síle poměří výdělky s místní drahotou. Jasným favoritem na triumf v regionu i na čelo evropské špičky je Švýcarsko – sídlo globálních centrál, kde obří platy narážejí na nejdražší život na kontinentu. O medaile v regionu a evropskou špičku bojují také průmyslové Německo s dostupnějšími cenami a ostrovní Británie, tažená službami navzdory dražšímu životu. Černým koněm na hraně špičky je Irsko, kde vysoké výdělky v zámořských korporacích krotí ostrovní drahota, zatímco cenově dostupné Francii se stlačenými mzdami hrozí poslední místo v regionu a pád ke středu ligy.
+
+### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
+
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Švýcarsko (128,9 %, +24,7 b., 3. v Evropě), 2. Francie (118,5 %, +16,5 b., 5. v Evropě), 3. Německo (115,7 %, +14,2 b., 6. v Evropě), 4. Británie (109,4 %, +8,8 b., 9. v Evropě), 5. Irsko (101,1 %, +1,1 b., 13. v Evropě).]
+
+První kolo rozdává startovní karty roku devatenáct set devadesát šest podle zděděné produktivity, se kterou celá pětice začínala nad středem ligy.
+
+Nejlepší karty v regionu a třetí nejsilnější v celé Evropě drželo Švýcarsko, o víc než čtvrtinu nad středem. Vyhnulo se válkám, už před tou druhou bylo dvakrát bohatší než střed Evropy a pracovníci měli o dvě pětiny více strojů a budov než průměrný Evropan. Produktivitu táhnou nadnárodní firmy od Roche a Novartisu po strojírny a banky s více než pětaosmdesáti procenty přidané hodnoty, zatímco celá ekonomika rostla od sedmdesátých let pomalu, za čímž vláda viděla chráněný domácí trh.
+
+O patro níž, necelou pětinu a šestinu nad středem, vyjížděly Francie s Německem. Francouzský průmysl s Renaultem či Airbusem sice v hodinové produktivitě dohnal i Spojené státy, na pracujícího ji ale tlumilo to, že Francouzi odpracovali o sto padesát hodin ročně méně než průměr Unie. Německo mělo o pětinu více kapitálu než střed Evropy, jenže průměr srazilo sjednocení: východoněmecký soustružník dosahoval necelých tří čtvrtin západní produktivity, kde se dohánění zastavilo.
+
+Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie dlouhodobě investuje nejméně ze sedmi největších vyspělých ekonomik a za Francií v hodinové produktivitě o šestnáct procent zaostávala, což doháněla delší prací. A Irsko, v osmdesátých letech chudá periferie s šestnáctiprocentní nezaměstnaností, teprve sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
+
+### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
+
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 vůči středu ligy, body a hodnocení nad rámec dohánění): 1. Irsko (1,17×, +0,6 b., 13. v Evropě – očištěný důchod GNI*, nad rámec dohánění nejisté), 2. Švýcarsko (1,04×, −10,8 b., 16. v Evropě – rostlo rychleji, než odpovídá dohánění), 3. Francie (0,96×, −19,1 b., 22. v Evropě – v rámci běžného dohánění), 4. Británie (0,94×, −20,9 b., 23. v Evropě – nejisté), 5. Německo (0,94×, −21,3 b., 24. v Evropě – nejisté).]
+
+Druhé kolo sleduje vývoj do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí prosté dohánění z nízkého základu, protože převzít linku je snazší než vymýšlet patenty na špičce.
+
+Skutečným vítězem je proto Švýcarsko: vůči středu ligy sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo běžné dohánění. Po roce dva tisíce dva otevřelo trh odborníkům z Unie a rostlo díky farmacii, která přidávala skoro desetinu ročně, obstarala čtvrtinu růstu ekonomiky a po letech se silným frankem pomohla zemi projít pandemií. Na čele kola skončilo Irsko s růstem o sedmnáct procent, jehož nadrůst nad dohánění je však po započtení cen nejistý. Měříme ho přitom přes očištěný národní důchod: když korporace jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt v roce dva tisíce patnáct vyskočil o čtvrtinu, aniž by se víc vyrábělo. I po očištění však produktivita rostla, zčásti díky technologiím a lékům – přestože po roce dva tisíce osm praskla úvěrová bublina, investice spadly o dvě pětiny a stát musel přijmout záchranný balík Unie a Mezinárodního měnového fondu za pětaosmdesát miliard eur.
+
+Zbylé tři velmoci ztratily kolem dvaceti bodů, což u Francie odpovídá zpomalení bohaté země a u Británie s Německem je čistý tah nejistý. Británii táhl rozmach bank v londýnské City a severomořská ropa; finanční krize roku dva tisíce osm ale oba motory vypnula a nejistota kolem odchodu z Unie srazila firemní investice o desetinu. Francie zase zkrátila pracovní týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů, kteří část týdne sedí ve škole, ale počítají se jako plní pracující, což vysvětlí asi pětinu propadu po pandemii. A Německo nabralo o pětinu víc pracujících, k čemuž přispěla i reforma podpor z roku dva tisíce pět, jenže s kratšími úvazky odpracoval Němec o jedenáct procent méně hodin a od roku dva tisíce dvacet dva továrny zasáhl energetický šok. Německo přitom neroztočilo motor ani výdaji na výzkum přes tři procenta výkonu ekonomiky – proč to nestačilo, ukáže epizoda o produktivitě a sektorech.
+
+### Kolo 3 – Tah země: Daňový klín
+
+[VIZUÁL: Grafické schéma „Daňového klínu“ (daně a odvody zaměstnance + odvody zaměstnavatele + povinné soukromé fondy vůči celkovým nákladům práce) a tabulka Kola 3: 1. Británie (28,3 %, +13,2 b., 1. v Evropě), 2. Irsko (34,2 %, +7,4 b., 2. v Evropě), 3. Švýcarsko (36,5 %, +5,1 b., 6. v Evropě), 4. Francie (46,3 %, −6,1 b., 24. v Evropě), 5. Německo (46,9 %, −6,8 b., 25. v Evropě).]
+
+Třetí kolo měří daňový klín – součet daní, odvodů a povinných plateb zaměstnance i firmy vůči nákladům práce, z něhož dvě třetiny zaplatí pracující na nižší čisté výplatě. Nejmenší zátěž v celé sedmadvacítce nesou ostrovní země: první Británie bere osmadvacet procent a druhé Irsko čtyřiatřicet procent. Není to nízkou daní z příjmu, ale tím, že ostrovní firmy platí na pojistném nad hrubou mzdu jen kolem jedenácti procent. Británie navíc v roce dva tisíce dvacet čtyři srazila zaměstnanecké pojistné na osm procent, zmrazená pásma se základem dvanácti a půl tisíce liber ale s inflací vytahují lidem z kapes vyšší daň, zatímco Irsko drží od krize univerzální sociální poplatek a silně progresivní zdanění.
+
+Mezi zeměmi s nejnižší zátěží je i Švýcarsko se šestatřiceti a půl procenty. Běžné přehledy u něj přehlížejí povinné soukromé fondy, jenže Švýcar musí poslat přes pět tisíc franků ročně zdravotní pojišťovně – jejíž pojistné od konce devadesátých let stouplo dvaapůlkrát – a přes pětapůl tisíce franků do penzijní kasy.
+
+Na chvostu Evropy jsou Francie a Německo se zátěží přes šestačtyřicet procent; hůř dopadají jen Rakousko a Belgie. Francouzské firmy platí na odvodech nad hrubou mzdu přes třetinu, a ačkoliv jim stát u minimální mzdy čtyři pětiny odpouští, při povýšení úlevy mizí a v pasti nízkých mezd bere stát až osmdesát centů z každého přidaného eura. V Německu zase leží důchody a zdravotnictví přímo na páskách, kde pojistné v roce dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Zatímco Německo udrželo odvody seškrtáním budoucích státních penzí, Švýcarsko sází na zmíněné kapitálové kasy – čí model je udržitelnější, ukáže epizoda o penzích.
+
+### Finále regionu: Odhalení pořadí od posledního po vítěze
+
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Německo +15,7 b., Švýcarsko +7,3 b., Francie +4,6 b., Británie +4,2 b., Irsko −6,6 b.).]
+
+Jdeme do cíle roku dva tisíce dvacet čtyři se středem evropské ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
+
+Páté místo v regionu a pozici nad středem Evropy bere Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Pomáhá jí nejnižší cenová hladina regionu jen osm procent nad průměrem Unie a součet kol překonává o čtyři a půl bodu: kolektivní smlouvy kryjí osmadevadesát procent zaměstnanců a na výplaty jde přes jednapadesát procent výkonu, což vysvětlí skoro celý náskok. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Čtvrté v regionu a rovněž nad středem Evropy končí Německo s jednatřiceti tisíci čtyřmi sty jednotkami a přes čtyřiatřiceti tisíci eury, které ceny krátí o devět procent. Oproti kolům vyskočilo o šestnáct bodů, ale jen menší část vysvětlí třiapadesátiprocentní podíl mezd na výkonu a zmíněné kratší úvazky; většina rozdílu zůstává otevřená. Německo bere štítek „Dělá to dobře a je to vidět“.
+
+Třetí místo nad středem Evropy obsazuje Irsko s jednatřiceti tisíci šesti sty jednotkami. Ir si v eurech vydělá skoro pětačtyřicet tisíc, jenže o dvě pětiny dražší ceny než v Unii mu vymažou náskok před Británií a oproti kolům ztrácí sedm bodů. Proč, data spolehlivě neřeknou: i očištěný důchod nese část příjmů korporací, což může produktivitu v kolech nadhodnocovat, a průměr míchá vysoké platy v amerických firmách s nižšími výdělky v domácích podnicích. Irsko si odnáší štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Na druhé místo a do evropské špičky proniká Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, které tlumí skoro o třetinu vyšší ceny než v Unii. Kola překonává o čtyři body a skoro celý rozdíl vysvětlí patnáctiprocentní podíl živnostníků, díky němuž se výkon dělí mezi méně zaměstnanců; průměr navíc nejspíš zvedá vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
+
+A vítězem regionu v evropské špičce je Švýcarsko s více než čtyřiceti tisíci jednotkami. V eurech bere Švýcar sedmdesát tři tisíce, jenže ceny o čtyři pětiny nad průměrem Unie, kde už na začátku tisíciletí stál Big Mac o dvě třetiny víc než v Americe, část náskoku ukrojí – proč se cenovky tolik liší, ukáže epizoda o cenové hladině. Švýcarsko přesto překonává kola o sedm bodů, neboť do výplat posílá přes sedmapadesát procent výkonu a příchozí odborníci mají většinou vysokou školu, a se štítkem „Dělá to dobře a je to vidět“ ovládá region.
+
+### Claude (druhé kolo zkrácení podle Ondřeje 27. 10. 2026)
+
+Díky. Mluvený text tvé zkrácené verze má ale pořád 1343 slov (počítám bez nadpisů a řádků [VIZUÁL]), cíl je 1 050–1 150, tedy ubrat ještě asi 243 slov. Zkrať ji podle stejných závazných pravidel jako minule: nic nového, opravené formulace věcně beze změny, čísla a řádky [VIZUÁL] ponech. Škrtej opakované myšlenky, vedlejší ilustrace a druhé příklady k témuž; vysvětlení příčin ve finále zkracuj jen jazykově. Vrať jen celý hotový scénář v Markdownu.
+
+### Gemini 4 Argon
+
+### Západní Evropa
+
+### Předstartovní showcase
+
+[VIZUÁL: Startovní rošt západoevropské rozjížďky – pět ekonomických těžkých vah: alpská pevnost Švýcarsko, průmyslový motor Německo, státem řízená Francie, finanční ostrov Británie a korporátní tygr Irsko.]
+
+Do západoevropské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupuje pět těžkých vah. Favoritem na triumf v regionu i čelo evropské špičky je Švýcarsko, kde obří platy globálních centrál narážejí na nejdražší život kontinentu. O medaile a špičku ligy bojují i průmyslové Německo s mírnějšími cenami a drahá Británie opřená o služby. Černým koněm na hraně špičky je Irsko, kde výdělky v zámořských korporacích krotí drahota, zatímco cenově dostupné Francii se stlačenými mzdami hrozí chvost regionu a střed ligy.
+
+### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
+
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Švýcarsko (128,9 %, +24,7 b., 3. v Evropě), 2. Francie (118,5 %, +16,5 b., 5. v Evropě), 3. Německo (115,7 %, +14,2 b., 6. v Evropě), 4. Británie (109,4 %, +8,8 b., 9. v Evropě), 5. Irsko (101,1 %, +1,1 b., 13. v Evropě).]
+
+Karty roku devatenáct set devadesát šest ukazují zděděnou produktivitu, s níž celá pětice začínala nad středem ligy.
+
+Třetí v celé Evropě startovalo Švýcarsko, o víc než čtvrtinu nad středem. Vyhnulo se válkám, před tou druhou bylo dvakrát bohatší než střed Evropy a pracovníci měli o dvě pětiny více kapitálu. Produktivitu táhnou nadnárodní firmy jako Roche a Novartis s více než pětaosmdesáti procenty přidané hodnoty, zatímco celá ekonomika rostla od sedmdesátých let pomalu, což vláda přičítala chráněnému trhu.
+
+Necelou pětinu a šestinu nad středem vyjížděly Francie s Německem. Průmyslová Francie s Renaultem sice v hodinové produktivitě dohnala Spojené státy, na pracujícího ji ale tlumilo o sto padesát odpracovaných hodin méně než v Unii. Německo mělo o pětinu více kapitálu, jenže průměr srazilo sjednocení: východoněmecký soustružník dosahoval necelých tří čtvrtin západní produktivity, kde dohánění zamrzlo.
+
+Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie investuje nejméně ze sedmi největších vyspělých ekonomik a šestnáctiprocentní hodinové manko na Francii doháněla delší prací. Chudé Irsko s šestnáctiprocentní nezaměstnaností v osmdesátých letech sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
+
+### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
+
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 vůči středu ligy, body a hodnocení nad rámec dohánění): 1. Irsko (1,17×, +0,6 b., 13. v Evropě – očištěný důchod GNI*, nad rámec dohánění nejisté), 2. Švýcarsko (1,04×, −10,8 b., 16. v Evropě – rostlo rychleji, než odpovídá dohánění), 3. Francie (0,96×, −19,1 b., 22. v Evropě – v rámci běžného dohánění), 4. Británie (0,94×, −20,9 b., 23. v Evropě – nejisté), 5. Německo (0,94×, −21,3 b., 24. v Evropě – nejisté).]
+
+Druhé kolo sleduje vývoj do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění z nízkého základu, protože převzít linku je snazší než vymýšlet patenty.
+
+Vítězem je proto Švýcarsko: vůči středu sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo běžné dohánění. Od roku dva tisíce dva otevřelo trh odborníkům z Unie a farmacie rostla skoro o desetinu ročně, obstarala čtvrtinu růstu a po letech se silným frankem pomohla projít pandemií. První v kole skončilo Irsko s růstem o sedmnáct procent, jehož nadrůst nad dohánění je však po započtení cen nejistý. Měříme ho přes očištěný důchod: když korporace jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt roku dva tisíce patnáct bez nové výroby vyskočil o čtvrtinu. I po očištění však produktivita rostla, zčásti díky technologiím a lékům – ačkoliv po roce dva tisíce osm praskla úvěrová bublina, investice spadly o dvě pětiny a stát čerpal pětaosmdesátimiliardový záchranný balík.
+
+Zbylá trojice ztratila kolem dvaceti bodů: u Francie to odpovídá zpomalení bohaté země, u Británie s Německem je čistý tah nejistý. Británii táhl rozmach londýnské City a severomořská ropa; krize roku dva tisíce osm ale obojí vypnula a nejistota odchodu z Unie srazila investice firem o desetinu. Francie zkrátila týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů počítaných jako plní pracující, což vysvětlí asi pětinu propadu po pandemii. Německo nabralo o pětinu víc pracujících i díky reformě podpor roku dva tisíce pět, s kratšími úvazky ale Němec odpracoval o jedenáct procent méně hodin a od roku dva tisíce dvacet dva průmysl zasáhl energetický šok. Motor neroztočily ani výdaje na výzkum přes tři procenta výkonu ekonomiky – proč, ukáže epizoda o produktivitě a sektorech.
+
+### Kolo 3 – Tah země: Daňový klín
+
+[VIZUÁL: Grafické schéma „Daňového klínu“ (daně a odvody zaměstnance + odvody zaměstnavatele + povinné soukromé fondy vůči celkovým nákladům práce) a tabulka Kola 3: 1. Británie (28,3 %, +13,2 b., 1. v Evropě), 2. Irsko (34,2 %, +7,4 b., 2. v Evropě), 3. Švýcarsko (36,5 %, +5,1 b., 6. v Evropě), 4. Francie (46,3 %, −6,1 b., 24. v Evropě), 5. Německo (46,9 %, −6,8 b., 25. v Evropě).]
+
+Třetí kolo měří daňový klín – podíl daní, odvodů a povinných plateb zaměstnance i firmy na nákladech práce, který ze dvou třetin nese pracující. Nejmenší zátěž v sedmadvacítce mají ostrovy: první Británie osmadvacet a druhé Irsko čtyřiatřicet procent, hlavně díky jedenáctiprocentnímu pojistnému firem nad hrubou mzdu. Británie roku dva tisíce dvacet čtyři srazila zaměstnanecké pojistné na osm procent, zmrazená pásma se základem dvanácti a půl tisíce liber ale s inflací zvyšují daň, zatímco Irsko drží od krize univerzální sociální poplatek a silnou progresi.
+
+Nízkou zátěž má i Švýcarsko se šestatřiceti a půl procenty. Běžné přehledy přehlížejí povinné soukromé fondy, jenže Švýcar posílá přes pět tisíc franků ročně zdravotní pojišťovně – jejíž pojistné od konce devadesátých let stouplo dvaapůlkrát – a přes pětapůl tisíce do penzijní kasy.
+
+Na chvostu Evropy odevzdají Francie a Německo přes šestačtyřicet procent; hůř dopadají jen Rakousko a Belgie. Francouzské firmy odvádějí nad hrubou mzdu přes třetinu; u minimální mzdy jim stát čtyři pětiny odpouští, při povýšení ale úlevy mizí a v pasti nízkých mezd bere stát až osmdesát centů z přidaného eura. V Německu leží důchody a zdravotnictví na páskách, kde pojistné roku dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Německo dříve udrželo odvody seškrtáním budoucích penzí, kdežto Švýcarsko sází na zmíněné kasy – čí model vyhraje, ukáže epizoda o penzích.
+
+### Finále regionu: Odhalení pořadí od posledního po vítěze
+
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Německo +15,7 b., Švýcarsko +7,3 b., Francie +4,6 b., Británie +4,2 b., Irsko −6,6 b.).]
+
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
+
+Pátá v regionu a nad středem Evropy končí Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Pomáhají jí nejnižší ceny regionu osm procent nad Unií a kola překonává o čtyři a půl bodu: kolektivní smlouvy kryjí osmadevadesát procent zaměstnanců a jednapadesátiprocentní podíl výplat na výkonu vysvětlí skoro celý náskok. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Čtvrté a rovněž nad středem Evropy je Německo s jednatřiceti tisíci čtyřmi sty jednotkami a přes čtyřiatřiceti tisíci eury, krácenými o devět procent vyššími cenami. Kola přeskočilo o šestnáct bodů, ale třiapadesátiprocentní podíl mezd na výkonu a zmíněné kratší úvazky vysvětlí jen menší část; většina zůstává otevřená. Německo bere štítek „Dělá to dobře a je to vidět“.
+
+Třetí nad středem Evropy končí Irsko s jednatřiceti tisíci šesti sty jednotkami. Skoro pětačtyřicet tisíc eur srážejí o dvě pětiny vyšší ceny než v Unii, které mažou náskok před Británií, a oproti kolům ztrácí sedm bodů. Proč, data spolehlivě neřeknou: i očištěný důchod nese část příjmů korporací, což může produktivitu v kolech nadhodnocovat, a průměr míchá vysoké platy v amerických firmách s nižšími ve většině domácích. Irsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Druhá a v evropské špičce je Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, tlumenými skoro o třetinu vyššími cenami. Kola překonává o čtyři body a skoro vše vysvětlí patnáctiprocentní podíl živnostníků, díky němuž se výkon dělí mezi méně zaměstnanců; průměr nejspíš zvedá i vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
+
+Vítězem v evropské špičce je Švýcarsko s více než čtyřiceti tisíci jednotkami. Sedmdesát tři tisíce eur krátí ceny o čtyři pětiny nad Unií, kde už počátkem tisíciletí stál Big Mac o dvě třetiny víc než v Americe – proč se cenovky liší, ukáže epizoda o cenové hladině. Kola přesto překonává o sedm bodů díky sedmapadesátiprocentnímu podílu výplat na výkonu i přílivu vysokoškoláků a se štítkem „Dělá to dobře a je to vidět“ ovládá region.
+
+### Claude (opravy)
+
+OPRAVY OD KONTROLORA (Claude). Níže je seznam míst ve tvém posledním scénáři regionu, která neodpovídají podkladům nebo pravidlům. Oprav JEN tato místa, svým stylem a v souvislých větách; nic jiného neměň, zvlášť ne čísla a omezující slova v ostatních větách. Ostatní věty nezkracuj ani nepřeformulovávej, i když scénář přeroste 1 150 slov o pár desítek; délku vyrovnáš jen tím, co výslovně povoluje seznam oprav. Vrať celý opravený scénář v Markdownu a nic jiného.
+
+AKTUÁLNÍ SCÉNÁŘ:
+
+### Západní Evropa
+
+### Předstartovní showcase
+
+[VIZUÁL: Startovní rošt západoevropské rozjížďky – pět ekonomických těžkých vah: alpská pevnost Švýcarsko, průmyslový motor Německo, státem řízená Francie, finanční ostrov Británie a korporátní tygr Irsko.]
+
+Do západoevropské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupuje pět těžkých vah. Favoritem na triumf v regionu i místo v evropské špičce je Švýcarsko, kde obří výplaty narážejí na nejdražší život v celé Evropě. O medaile a špičku ligy bojují i průmyslové Německo s mírnějšími cenami a drahá Británie opřená o služby. Černým koněm na hraně špičky je Irsko, kde výdělky v zámořských korporacích krotí drahota, zatímco levnější Francii se stlačenými mzdami hrozí chvost regionu a střed ligy.
+
+### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
+
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Švýcarsko (128,9 %, +24,7 b., 3. v Evropě), 2. Francie (118,5 %, +16,5 b., 5. v Evropě), 3. Německo (115,7 %, +14,2 b., 6. v Evropě), 4. Británie (109,4 %, +8,8 b., 9. v Evropě), 5. Irsko (101,1 %, +1,1 b., 13. v Evropě).]
+
+Karty roku devatenáct set devadesát šest ukazují zděděnou produktivitu, s níž celá pětice začínala nad středem ligy.
+
+Třetí v celé Evropě startovalo Švýcarsko, o víc než čtvrtinu nad středem. Vyhnulo se válkám, před tou druhou bylo dvakrát bohatší než střed Evropy a pracovníci měli o dvě pětiny více kapitálu. Produktivitu táhnou velké nadnárodní firmy od Roche a Novartisu po strojírny a banky, dohromady s více než pětaosmdesáti procenty přidané hodnoty, zatímco celá ekonomika rostla od sedmdesátých let pomalu, což vláda přičítala chráněnému trhu.
+
+Necelou pětinu a šestinu nad středem vyjížděly Francie s Německem. Průmyslová Francie s Renaultem sice v hodinové produktivitě dohnala Spojené státy, na pracujícího ji ale tlumilo o sto padesát odpracovaných hodin méně než v Unii. Německo mělo o pětinu více kapitálu, jenže průměr srazilo sjednocení: východoněmecký soustružník dosahoval necelých tří čtvrtin západní produktivity, kde dohánění zamrzlo.
+
+Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie investuje nejméně ze sedmi největších vyspělých ekonomik a šestnáctiprocentní hodinové manko na Francii doháněla delší prací. Irsko, v osmdesátých letech chudé a s šestnáctiprocentní nezaměstnaností, teprve sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
+
+### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
+
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 vůči středu ligy, body a hodnocení nad rámec dohánění): 1. Irsko (1,17×, +0,6 b., 13. v Evropě – očištěný důchod GNI*, nad rámec dohánění nejisté), 2. Švýcarsko (1,04×, −10,8 b., 16. v Evropě – rostlo rychleji, než odpovídá dohánění), 3. Francie (0,96×, −19,1 b., 22. v Evropě – v rámci běžného dohánění), 4. Británie (0,94×, −20,9 b., 23. v Evropě – nejisté), 5. Německo (0,94×, −21,3 b., 24. v Evropě – nejisté).]
+
+Druhé kolo sleduje vývoj do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění z nízkého základu, protože převzít linku je snazší než vymýšlet patenty.
+
+Skutečným vítězem je proto Švýcarsko: vůči středu sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo běžné dohánění. Od roku dva tisíce dva otevřelo trh odborníkům z Unie a farmacie rostla skoro o desetinu ročně, obstarala čtvrtinu růstu a po letech se silným frankem pomohla projít pandemií. První v kole skončilo Irsko s růstem o sedmnáct procent, jehož nadrůst nad dohánění je však po započtení cen nejistý. Měříme ho přes očištěný důchod: když korporace jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt roku dva tisíce patnáct bez nové výroby vyskočil o čtvrtinu. I po očištění však produktivita rostla, zčásti díky technologiím a lékům – ačkoliv po roce dva tisíce osm praskla úvěrová bublina, investice spadly o dvě pětiny a stát čerpal pětaosmdesátimiliardový záchranný balík.
+
+Zbylá trojice ztratila kolem dvaceti bodů: u Francie to odpovídá zpomalení bohaté země, u Británie s Německem je čistý tah nejistý. Británii táhl rozmach londýnské City a severomořská ropa; krize roku dva tisíce osm ale obojí vypnula a nejistota odchodu z Unie srazila investice firem o desetinu. Francie zkrátila týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů počítaných jako plní pracující, což vysvětlí asi pětinu propadu po pandemii. Německo od roku devadesát šest nabralo o pětinu víc pracujících i díky reformě podpor roku dva tisíce pět, s kratšími úvazky ale Němec odpracoval o jedenáct procent méně hodin a od roku dva tisíce dvacet dva průmysl zasáhl energetický šok. Motor neroztočily ani výdaje na výzkum přes tři procenta výkonu ekonomiky – proč, ukáže epizoda o produktivitě a sektorech.
+
+### Kolo 3 – Tah země: Daňový klín
+
+[VIZUÁL: Grafické schéma „Daňového klínu“ (daně a odvody zaměstnance + odvody zaměstnavatele + povinné soukromé fondy vůči celkovým nákladům práce) a tabulka Kola 3: 1. Británie (28,3 %, +13,2 b., 1. v Evropě), 2. Irsko (34,2 %, +7,4 b., 2. v Evropě), 3. Švýcarsko (36,5 %, +5,1 b., 6. v Evropě), 4. Francie (46,3 %, −6,1 b., 24. v Evropě), 5. Německo (46,9 %, −6,8 b., 25. v Evropě).]
+
+Třetí kolo měří daňový klín – podíl daní, odvodů a povinných plateb zaměstnance i firmy na nákladech práce, který ze dvou třetin nese pracující. Nejmenší zátěž v sedmadvacítce mají ostrovy: první Británie osmadvacet a druhé Irsko čtyřiatřicet procent, hlavně díky jedenáctiprocentnímu pojistnému firem nad hrubou mzdu. Británie roku dva tisíce dvacet čtyři srazila zaměstnanecké pojistné na osm procent, zmrazená pásma se základem dvanácti a půl tisíce liber ale s inflací zvyšují daň, zatímco Irsko drží od krize univerzální sociální poplatek a silnou progresi.
+
+Nízkou zátěž má i Švýcarsko se šestatřiceti a půl procenty. Běžné přehledy přehlížejí povinné soukromé fondy, jenže Švýcar posílá přes pět tisíc franků ročně zdravotní pojišťovně – jejíž pojistné od konce devadesátých let stouplo dvaapůlkrát – a přes pětapůl tisíce do penzijní kasy.
+
+Mezi posledními v Evropě odevzdají Francie a Německo přes šestačtyřicet procent; hůř dopadají jen Rakousko a Belgie. Francouzské firmy odvádějí nad hrubou mzdu přes třetinu; u minimální mzdy jim stát čtyři pětiny odpouští, při povýšení ale úlevy mizí a v pasti nízkých mezd bere stát až osmdesát centů z přidaného eura. V Německu leží důchody a zdravotnictví na páskách, kde pojistné roku dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Německo dříve udrželo odvody seškrtáním budoucích penzí, kdežto Švýcarsko sází na zmíněné kasy – čí model vyhraje, ukáže epizoda o penzích.
+
+### Finále regionu: Odhalení pořadí od posledního po vítěze
+
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Německo +15,7 b., Švýcarsko +7,3 b., Francie +4,6 b., Británie +4,2 b., Irsko −6,6 b.).]
+
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
+
+Pátá v regionu a nad středem Evropy končí Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Pomáhají jí spolu s Německem nejnižší ceny regionu, osm procent nad Unií a kola překonává o čtyři a půl bodu: kolektivní smlouvy kryjí osmadevadesát procent zaměstnanců a jednapadesátiprocentní podíl výplat na výkonu vysvětlí skoro celý náskok. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Čtvrté a rovněž nad středem Evropy je Německo s jednatřiceti tisíci čtyřmi sty jednotkami a přes čtyřiatřiceti tisíci eury, krácenými o devět procent vyššími cenami. Kola přeskočilo o šestnáct bodů, ale třiapadesátiprocentní podíl mezd na výkonu a zmíněné kratší úvazky vysvětlí jen menší část; většina zůstává otevřená. Německo bere štítek „Dělá to dobře a je to vidět“.
+
+Třetí nad středem Evropy končí Irsko s jednatřiceti tisíci šesti sty jednotkami. Skoro pětačtyřicet tisíc eur srážejí o dvě pětiny vyšší ceny než v Unii, které mažou náskok před Británií, a oproti kolům ztrácí sedm bodů. Proč, data spolehlivě neřeknou: i očištěný důchod nese část příjmů korporací, což může produktivitu v kolech nadhodnocovat, a průměr míchá vysoké platy v amerických firmách s nižšími ve většině domácích. Irsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Druhá v regionu a v evropské špičce je Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, tlumenými skoro o třetinu vyššími cenami. Kola překonává o čtyři body a skoro vše vysvětlí patnáctiprocentní podíl živnostníků, díky němuž se výkon dělí mezi méně zaměstnanců; průměr nejspíš zvedá i vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
+
+Vítězem regionu, pevně usazeným v evropské špičce, je Švýcarsko s více než čtyřiceti tisíci jednotkami. Sedmdesát tři tisíce eur krátí ceny o čtyři pětiny nad Unií; už počátkem tisíciletí tam stál Big Mac o dvě třetiny víc než v Americe – proč se cenovky liší, ukáže epizoda o cenové hladině. Kola přesto překonává o sedm bodů díky sedmapadesátiprocentnímu podílu výplat na výkonu i přílivu vysokoškoláků a se štítkem „Dělá to dobře a je to vidět“ ovládá region.
+
+
+---
+
+SEZNAM OPRAV:
+
+Ondřej zjistil, že scénáře vynechávají mechanismy, bez kterých divák zemi nepochopí, ačkoli je analýza dokládá. Doplň níže uvedená jádra zemí a odstraň metodické poznámky. Fakta ber jen odsud a z podkladů, nic nepřidávej. Každé jádro řekni jednou, jednou až dvěma větami a nejvýš s jedním dvěma čísly; kam patří (kolo 2, kolo 3, nebo finále jako vysvětlení toho, co kola nevysvětlí), rozhodni ty.
+
+
+1. NĚMECKO, JÁDRO (Mzdová umírněnost kolem roku 2000 a slábnoucí kolektivní smlouvy). Musí zaznít: Kolem roku 2000 přistoupily německé odbory při vysoké nezaměstnanosti na mírný růst mezd a na větší pružnost mezd a pracovní doby; podle výzkumníků to obnovilo konkurenceschopnost, cenou ale byly rostoucí rozdíly a reálné mzdy na spodku do roku 2010 výrazně klesaly. Kolektivní smlouvy kryly v roce 2000 68 % zaměstnanců, v roce 2023 jen 49 %. Směr: Podle IAB (2026) umírněnost obnovila konkurenceschopnost a zaměstnanost, ale držela mzdy a zvýšila jejich rozptyl; kolektivní smlouvy obvykle mzdy zvyšují, takže jejich ústup mzdy spíš brzdí. Vliv na průměrnou mzdu nikdo nevyčíslil. NESMÍ: Nesmí říct, že umírněnost zvedla mzdy (zvedla konkurenceschopnost a zaměstnanost, mzdy držela). Nesmí říct, o kolik slábnutí smluv snížilo průměrnou mzdu, ani že vysvětluje německý výsledek proti kolům (Německo kola přeskočilo; výklad: „příčina tedy není doložena“). Nesmí zaměnit roky ani čísla pokrytí (68 % v roce 2000, 49 % v roce 2023; 35 % jen soukromý sektor). Nesmí to slít s minimální mzdou z roku 2015.
+
+2. ŠVÝCARSKO, JÁDRO (Otevřený trh práce s EU od roku 2002). Musí zaznít: Od dohody s EU v roce 2002 přichází do Švýcarska čistě v průměru 71 300 cizinců ročně a 53 % pracovníků přišlých podle dohody má vysokou školu proti 45 % u Švýcarů. Volný přístup pohraničních pracovníků podle srovnávací studie zvedl mzdy vzdělaných domácích pracovníků, celkově ale podle MMF příliv lidí tlumí tlak na mzdy. Směr: Smíšený: MMF (2025) – pružný trh práce přitahuje přistěhovalce, což omezuje tlak na mzdy; studie Beerli a kol. (2021) – otevření pohraničním pracovníkům zvedlo mzdy vysokoškolsky vzdělaných domácích a produktivitu firem; SECO (2026) – riziko tlaku na mzdy hlavně v Ticinu a Jurském oblouku. Vysoký podíl vysokoškoláků zvedá průměr jen složením, ne účinkem na mzdy. NESMÍ: Nesmí říct, že přistěhovalci obecně zvedli švýcarské mzdy (MMF říká opak: tlumí tlak na mzdy). Nesmí vydávat složení (víc vysokoškoláků) za účinek na mzdy. Nesmí tvrdit, že příliv vysokoškoláků vysvětluje sedm bodů nad koly – nikdo to nevyčíslil (dnešní finále říká „díky … přílivu vysokoškoláků“, to je přehnané). 71 300 je čistá imigrace cizinců ročně, ne počet pracovníků.
+
+3. FRANCIE, JÁDRO (Vysoká minimální mzda s automatickým zvyšováním). Musí zaznít: Francie je jednou ze dvou zemí EU, kde minimální mzda přesahuje 60 % mediánu (62,5 % v roce 2024), a každý leden se automaticky zvyšuje podle cen a podle poloviny růstu kupní síly mezd. Táhne tím nahoru spodek a stlačuje mzdovou škálu: přibývá lidí, kteří zůstávají na minimální mzdě nebo těsně nad ní. Směr: Podle skupiny expertů pro minimální mzdu (2025) a Komise (2026) zvedá dolní mzdy a stlačuje mzdovou škálu; vliv na průměrnou mzdu pro Francii doložen není. NESMÍ: Nesmí říct, že minimální mzda zvedla francouzskou průměrnou mzdu nebo vysvětluje náskok nad koly (výklad: „jak silně, pro Francii doloženo není“). Nesmí říct „nejvyšší v Evropě“ bez upřesnění (Británie má podle LPC zhruba dvě třetiny mediánu; bezpečné je „jedna ze dvou zemí EU“). Nesmí zaměnit 62,5 % mediánu s 50,4 % průměru. Automatika je podle cen a poloviny růstu kupní síly mezd, ne podle celé inflace a celého růstu mezd.
+
+4. FRANCIE, JÁDRO (Past nízkých mezd z úlev na odvodech). Musí zaznít: U minimální mzdy stát firmám odpouští skoro 80 % jejich odvodů, úlevy ale s rostoucí mzdou mizí; mezi 1,2 a 2násobkem minimální mzdy tak mezní zdanění dosahuje 75 až 80 % a právě tam experti vidí zpomalený mzdový postup. Komise píše, že úlevy nejspíš přispěly ke stlačení mezd a oslabily motivaci investovat do dovedností. Směr: Podle Komise (2026) úlevy cílené na nízké mzdy pravděpodobně stlačily mzdy a oslabily investice do dovedností; podle expertů (2025) brzdí mzdový postup v pásmu 1,2–2násobku minimální mzdy. Pro zaměstnanost mají podle hodnocení země doložený přínos. NESMÍ: Nesmí říct, že stát bere 80 % z celé mzdy: jde o mezní zdanění přidaného eura v pásmu 1,2–2násobku minimální mzdy. Nesmí škrtnout „nejspíš/pravděpodobně“ (Komise: „are likely to have contributed“). Nesmí říct, o kolik úlevy snížily průměrnou mzdu. Nesmí zamlčet, že úlevy podle studií přidaly místa (hodnocení: „stovky tisíc míst“) – chyba je ve stlačení, ne ve zbytečnosti.
+
+5. BRITÁNIE, JÁDRO (Zmrazení platů ve veřejném sektoru po krizi). Musí zaznít: Po finanční krizi vláda v letech 2011–2013 zmrazila platy ve veřejném sektoru a pak je zvedala nejvýš asi o 1 % ročně; průměrný reálný týdenní výdělek ve veřejném sektoru byl proto v letech 2016–17 o 4 % nižší než v letech 2009–10. Týkalo se to asi 5,1 milionu lidí. Směr: Podle IFS (2017) snížilo reálné výdělky ve veřejném sektoru; celou britskou průměrnou mzdu ani rok 2024 IFS nevyčísluje. NESMÍ: Nesmí to zobecnit na všechny britské mzdy ani na rok 2024 (jde o veřejný sektor a srovnání 2016–17 proti 2009–10). Nesmí to vydávat za hlavní příčinu britské stagnace mezd – tou je podle MMF, Bank of England a Resolution Foundation produktivita. Nesmí zaměnit týdenní výdělek za roční ani reálný za nominální.
+
+6. METODIKA VEN Z HLASU, kolo 2: „jehož nadrůst nad dohánění je však po započtení cen nejistý“ vyškrtni (Irsko prostě vyrostlo nejvíc v regionu). „u Británie s Německem je čistý tah nejistý“ vyškrtni; u Francie smíš nechat, že to odpovídá zpomalení bohaté země. Věta o nejistotě odchodu z Unie je věcná, ta zůstává.
+
+7. FRANCIE, finále: „kolektivní smlouvy kryjí osmadevadesát procent zaměstnanců“ jako vysvětlení náskoku nad koly podklady nedokládají (Komise o účinnosti těch smluv pochybuje); vyškrtni a nech jen podíl výplat na výkonu, který vysvětlí skoro celý náskok. Jádra Francie (níže) patří do kola 3 nebo finále.
+
+8. ŠVÝCARSKO, finále: „díky … přílivu vysokoškoláků“ přehání; nech jen podíl výplat na výkonu. Jádro Švýcarska (níže) řekni i s protiváhou: příliv lidí podle MMF tlumí tlak na mzdy.
+
+DÉLKA: přesah do zhruba 1 250 slov mluveného textu je v pořádku. Když potřebuješ místo, zkrať jen obrazy a ilustrace v části, kam přidáváš; nikdy nevypouštěj čísla, štítky, roky ani omezující slova jako „na pracujícího“, „v regionu“, „oproti kolům“, „dlouhodobě“, „jen“, „asi“, „skoro“, „podle Komise“.
+
+### Gemini 4 Argon
+
+### Západní Evropa
+
+### Předstartovní showcase
+
+[VIZUÁL: Startovní rošt západoevropské rozjížďky – pět ekonomických těžkých vah: alpská pevnost Švýcarsko, průmyslový motor Německo, státem řízená Francie, finanční ostrov Británie a korporátní tygr Irsko.]
+
+Do západoevropské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupuje pět těžkých vah. Favoritem na triumf v regionu i místo v evropské špičce je Švýcarsko, kde obří výplaty narážejí na nejdražší život v celé Evropě. O medaile a špičku ligy bojují i průmyslové Německo s mírnějšími cenami a drahá Británie opřená o služby. Černým koněm na hraně špičky je Irsko, kde výdělky v zámořských korporacích krotí drahota, zatímco levnější Francii se stlačenými mzdami hrozí chvost regionu a střed ligy.
+
+### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
+
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Švýcarsko (128,9 %, +24,7 b., 3. v Evropě), 2. Francie (118,5 %, +16,5 b., 5. v Evropě), 3. Německo (115,7 %, +14,2 b., 6. v Evropě), 4. Británie (109,4 %, +8,8 b., 9. v Evropě), 5. Irsko (101,1 %, +1,1 b., 13. v Evropě).]
+
+Karty roku devatenáct set devadesát šest ukazují zděděnou produktivitu, s níž celá pětice začínala nad středem ligy.
+
+Třetí v celé Evropě startovalo Švýcarsko, o víc než čtvrtinu nad středem. Vyhnulo se válkám, před tou druhou bylo dvakrát bohatší než střed Evropy a pracovníci měli o dvě pětiny více kapitálu. Produktivitu táhnou velké nadnárodní firmy od Roche a Novartisu po strojírny a banky, dohromady s více než pětaosmdesáti procenty přidané hodnoty, zatímco celá ekonomika rostla od sedmdesátých let pomalu, což vláda přičítala chráněnému trhu.
+
+Necelou pětinu a šestinu nad středem vyjížděly Francie s Německem. Průmyslová Francie s Renaultem sice v hodinové produktivitě dohnala Spojené státy, na pracujícího ji ale tlumilo o sto padesát odpracovaných hodin méně než v Unii. Německo mělo o pětinu více kapitálu, jenže průměr srazilo sjednocení: východoněmecký soustružník dosahoval necelých tří čtvrtin západní produktivity, kde dohánění zamrzlo.
+
+Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie investuje nejméně ze sedmi největších vyspělých ekonomik a šestnáctiprocentní hodinové manko na Francii doháněla delší prací. Irsko, v osmdesátých letech chudé a s šestnáctiprocentní nezaměstnaností, teprve sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
+
+### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
+
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 vůči středu ligy, body a hodnocení nad rámec dohánění): 1. Irsko (1,17×, +0,6 b., 13. v Evropě – očištěný důchod GNI*, nad rámec dohánění nejisté), 2. Švýcarsko (1,04×, −10,8 b., 16. v Evropě – rostlo rychleji, než odpovídá dohánění), 3. Francie (0,96×, −19,1 b., 22. v Evropě – v rámci běžného dohánění), 4. Británie (0,94×, −20,9 b., 23. v Evropě – nejisté), 5. Německo (0,94×, −21,3 b., 24. v Evropě – nejisté).]
+
+Druhé kolo sleduje vývoj do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění z nízkého základu, protože převzít linku je snazší než vymýšlet patenty.
+
+Skutečným vítězem je proto Švýcarsko: vůči středu sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo běžné dohánění. Od roku dva tisíce dva otevřelo trh odborníkům z Unie a farmacie rostla skoro o desetinu ročně, obstarala čtvrtinu růstu a po letech se silným frankem pomohla projít pandemií. První v kole skončilo Irsko s růstem o sedmnáct procent. Měříme ho přes očištěný důchod: když korporace jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt roku dva tisíce patnáct bez nové výroby vyskočil o čtvrtinu. I po očištění však produktivita rostla, zčásti díky technologiím a lékům – ačkoliv po roce dva tisíce osm praskla úvěrová bublina, investice spadly o dvě pětiny a stát čerpal pětaosmdesátimiliardový záchranný balík.
+
+Zbylá trojice ztratila kolem dvaceti bodů, což u Francie odpovídá zpomalení bohaté země. Británii táhl rozmach londýnské City a severomořská ropa; krize roku dva tisíce osm ale obojí vypnula a nejistota odchodu z Unie srazila investice firem o desetinu. Francie zkrátila týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů počítaných jako plní pracující, což vysvětlí asi pětinu propadu po pandemii. Kolem roku dva tisíce přitom německé odbory při vysoké nezaměstnanosti přistoupily na mírný růst mezd a větší pružnost mezd i pracovní doby, což obnovilo konkurenceschopnost, cenou ale byly rostoucí rozdíly a reálné mzdy na spodku do roku dva tisíce deset výrazně klesaly. Kolektivní smlouvy kryly v roce dva tisíce osmašedesát procent zaměstnanců a v roce dva tisíce dvacet tři jen devětačtyřicet procent; od roku devadesát šest sice Německo nabralo o pětinu víc pracujících i díky reformě podpor roku dva tisíce pět, s kratšími úvazky ale Němec odpracoval o jedenáct procent méně hodin a od roku dva tisíce dvacet dva průmysl zasáhl energetický šok. Motor neroztočily ani výdaje na výzkum přes tři procenta výkonu ekonomiky – proč, ukáže epizoda o produktivitě a sektorech.
+
+### Kolo 3 – Tah země: Daňový klín
+
+[VIZUÁL: Grafické schéma „Daňového klínu“ (daně a odvody zaměstnance + odvody zaměstnavatele + povinné soukromé fondy vůči celkovým nákladům práce) a tabulka Kola 3: 1. Británie (28,3 %, +13,2 b., 1. v Evropě), 2. Irsko (34,2 %, +7,4 b., 2. v Evropě), 3. Švýcarsko (36,5 %, +5,1 b., 6. v Evropě), 4. Francie (46,3 %, −6,1 b., 24. v Evropě), 5. Německo (46,9 %, −6,8 b., 25. v Evropě).]
+
+Třetí kolo měří daňový klín – podíl daní, odvodů a povinných plateb zaměstnance i firmy na nákladech práce, který ze dvou třetin nese pracující. Nejmenší zátěž v sedmadvacítce mají ostrovy: první Británie osmadvacet a druhé Irsko čtyřiatřicet procent, hlavně díky jedenáctiprocentnímu pojistnému firem nad hrubou mzdu. Británie roku dva tisíce dvacet čtyři srazila zaměstnanecké pojistné na osm procent, zmrazená pásma se základem dvanácti a půl tisíce liber ale s inflací zvyšují daň, zatímco Irsko drží od krize univerzální sociální poplatek a silnou progresi.
+
+Nízkou zátěž má i Švýcarsko se šestatřiceti a půl procenty. Běžné přehledy přehlížejí povinné soukromé fondy, jenže Švýcar posílá přes pět tisíc franků ročně zdravotní pojišťovně – jejíž pojistné od konce devadesátých let stouplo dvaapůlkrát – a přes pětapůl tisíce do penzijní kasy.
+
+Mezi posledními v Evropě odevzdají Francie a Německo přes šestačtyřicet procent; hůř dopadají jen Rakousko a Belgie. Francouzské firmy odvádějí nad hrubou mzdu přes třetinu; u minimální mzdy jim stát skoro osmdesát procent odvodů odpouští, což sice přidalo místa, s rostoucí mzdou ale úlevy mizí. Mezi jednaceládvou a dvojnásobkem minimální mzdy tak mezní zdanění dosahuje pětasedmdesáti až osmdesáti procent, kde experti vidí zpomalený mzdový postup, a podle Komise úlevy nejspíš přispěly ke stlačení mezd a oslabily motivaci investovat do dovedností. V Německu leží důchody a zdravotnictví na páskách, kde pojistné roku dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Německo dříve udrželo odvody seškrtáním budoucích penzí, kdežto Švýcarsko sází na zmíněné kasy – čí model vyhraje, ukáže epizoda o penzích.
+
+### Finále regionu: Odhalení pořadí od posledního po vítěze
+
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Německo +15,7 b., Švýcarsko +7,3 b., Francie +4,6 b., Británie +4,2 b., Irsko −6,6 b.).]
+
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
+
+Pátá v regionu a nad středem Evropy končí Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Pomáhají jí spolu s Německem nejnižší ceny regionu, osm procent nad Unií, a kola překonává o čtyři a půl bodu, což skoro celé vysvětlí jednapadesátiprocentní podíl výplat na výkonu. Francie je přitom jednou ze dvou zemí Unie, kde minimální mzda přesahuje šedesát procent mediánu, a protože se každý leden automaticky zvyšuje podle cen a poloviny růstu kupní síly mezd, táhne nahoru spodek a stlačuje mzdovou škálu, takže přibývá lidí na minimální mzdě nebo těsně nad ní. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Čtvrté a rovněž nad středem Evropy je Německo s jednatřiceti tisíci čtyřmi sty jednotkami a přes čtyřiatřiceti tisíci eury, krácenými o devět procent vyššími cenami. Kola přeskočilo o šestnáct bodů, ale třiapadesátiprocentní podíl mezd na výkonu a zmíněné kratší úvazky vysvětlí jen menší část; většina zůstává otevřená. Německo bere štítek „Dělá to dobře a je to vidět“.
+
+Třetí nad středem Evropy končí Irsko s jednatřiceti tisíci šesti sty jednotkami. Skoro pětačtyřicet tisíc eur srážejí o dvě pětiny vyšší ceny než v Unii, které mažou náskok před Británií, a oproti kolům ztrácí sedm bodů. Proč, data spolehlivě neřeknou: i očištěný důchod nese část příjmů korporací, což může produktivitu v kolech nadhodnocovat, a průměr míchá vysoké platy v amerických firmách s nižšími ve většině domácích. Irsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Druhá v regionu a v evropské špičce je Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, tlumenými skoro o třetinu vyššími cenami. Kola překonává o čtyři body a skoro vše vysvětlí patnáctiprocentní podíl živnostníků, díky němuž se výkon dělí mezi méně zaměstnanců; průměr nejspíš zvedá i vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Po finanční krizi vláda v letech dva tisíce jedenáct až třináct zmrazila platy ve veřejném sektoru a pak je zvedala nejvýš asi o procento ročně; průměrný reálný týdenní výdělek asi pěti celé jedné desetiny milionu lidí ve veřejném sektoru byl proto v letech dva tisíce šestnáct až sedmnáct o čtyři procenta nižší než v letech dva tisíce devět až deset. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
+
+Vítězem regionu, pevně usazeným v evropské špičce, je Švýcarsko s více než čtyřiceti tisíci jednotkami. Sedmdesát tři tisíce eur krátí ceny o čtyři pětiny nad Unií; už počátkem tisíciletí tam stál Big Mac o dvě třetiny víc než v Americe – proč se cenovky liší, ukáže epizoda o cenové hladině. Kola přesto překonává o sedm bodů díky sedmapadesátiprocentnímu podílu výplat na výkonu. Od dohody s Unií v roce dva tisíce dva tam přichází čistě v průměru sedmdesát jedna tisíc tři sta cizinců ročně a třiapadesát procent příchozích pracovníků má vysokou školu proti pětačtyřiceti procentům u Švýcarů: volný přístup pohraničních pracovníků podle srovnávací studie zvedl mzdy vzdělaných domácích, celkově ale podle Mezinárodního měnového fondu příliv lidí tlak na mzdy tlumí a se štítkem „Dělá to dobře a je to vidět“ Švýcarsko ovládá region.
+
+### Claude (opravy)
+
+OPRAVY OD KONTROLORA (Claude). Níže je seznam míst ve tvém posledním scénáři regionu, která neodpovídají podkladům nebo pravidlům. Oprav JEN tato místa, svým stylem a v souvislých větách; nic jiného neměň, zvlášť ne čísla a omezující slova v ostatních větách. Ostatní věty nezkracuj ani nepřeformulovávej, i když scénář přeroste 1 150 slov o pár desítek; délku vyrovnáš jen tím, co výslovně povoluje seznam oprav. Vrať celý opravený scénář v Markdownu a nic jiného.
+
+AKTUÁLNÍ SCÉNÁŘ:
+
+### Západní Evropa
+
+### Předstartovní showcase
+
+[VIZUÁL: Startovní rošt západoevropské rozjížďky – pět ekonomických těžkých vah: alpská pevnost Švýcarsko, průmyslový motor Německo, státem řízená Francie, finanční ostrov Británie a korporátní tygr Irsko.]
+
+Do západoevropské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupuje pět těžkých vah. Favoritem na triumf v regionu i místo v evropské špičce je Švýcarsko, kde obří výplaty narážejí na nejdražší život v celé Evropě. O medaile a špičku ligy bojují i průmyslové Německo s mírnějšími cenami a drahá Británie opřená o služby. Černým koněm na hraně špičky je Irsko, kde výdělky v zámořských korporacích krotí drahota, zatímco levnější Francii se stlačenými mzdami hrozí chvost regionu a střed ligy.
+
+### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
+
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Švýcarsko (128,9 %, +24,7 b., 3. v Evropě), 2. Francie (118,5 %, +16,5 b., 5. v Evropě), 3. Německo (115,7 %, +14,2 b., 6. v Evropě), 4. Británie (109,4 %, +8,8 b., 9. v Evropě), 5. Irsko (101,1 %, +1,1 b., 13. v Evropě).]
+
+Karty roku devatenáct set devadesát šest ukazují zděděnou produktivitu, s níž celá pětice začínala nad středem ligy.
+
+Třetí v celé Evropě startovalo Švýcarsko, o víc než čtvrtinu nad středem. Vyhnulo se válkám, před tou druhou bylo dvakrát bohatší než střed Evropy a pracovníci měli o dvě pětiny více kapitálu. Produktivitu táhnou velké nadnárodní firmy od Roche a Novartisu po strojírny a banky, dohromady s více než pětaosmdesáti procenty přidané hodnoty, zatímco celá ekonomika rostla od sedmdesátých let pomalu, což vláda přičítala chráněnému trhu.
+
+Necelou pětinu a šestinu nad středem vyjížděly Francie s Německem. Průmyslová Francie s Renaultem sice v hodinové produktivitě dohnala Spojené státy, na pracujícího ji ale tlumilo o sto padesát odpracovaných hodin méně než v Unii. Německo mělo o pětinu více kapitálu, jenže průměr srazilo sjednocení: východoněmecký soustružník dosahoval necelých tří čtvrtin západní produktivity, kde dohánění zamrzlo.
+
+Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie investuje nejméně ze sedmi největších vyspělých ekonomik a šestnáctiprocentní hodinové manko na Francii doháněla delší prací. Irsko, v osmdesátých letech chudé a s šestnáctiprocentní nezaměstnaností, teprve sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
+
+### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
+
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 vůči středu ligy, body a hodnocení nad rámec dohánění): 1. Irsko (1,17×, +0,6 b., 13. v Evropě – očištěný důchod GNI*, nad rámec dohánění nejisté), 2. Švýcarsko (1,04×, −10,8 b., 16. v Evropě – rostlo rychleji, než odpovídá dohánění), 3. Francie (0,96×, −19,1 b., 22. v Evropě – v rámci běžného dohánění), 4. Británie (0,94×, −20,9 b., 23. v Evropě – nejisté), 5. Německo (0,94×, −21,3 b., 24. v Evropě – nejisté).]
+
+Druhé kolo sleduje vývoj do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění z nízkého základu, protože převzít linku je snazší než vymýšlet patenty.
+
+Skutečným vítězem je proto Švýcarsko: vůči středu sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo běžné dohánění. Od roku dva tisíce dva otevřelo trh odborníkům z Unie a farmacie rostla skoro o desetinu ročně, obstarala čtvrtinu růstu a po letech se silným frankem pomohla projít pandemií. První v kole skončilo Irsko s růstem o sedmnáct procent. Měříme ho přes očištěný důchod: když korporace jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt roku dva tisíce patnáct bez nové výroby vyskočil o čtvrtinu. I po očištění však produktivita rostla, zčásti díky technologiím a lékům – ačkoliv po roce dva tisíce osm praskla úvěrová bublina, investice spadly o dvě pětiny a stát čerpal pětaosmdesátimiliardový záchranný balík.
+
+Zbylá trojice ztratila kolem dvaceti bodů, což u Francie odpovídá zpomalení bohaté země. Británii táhl rozmach londýnské City a severomořská ropa; krize roku dva tisíce osm ale obojí vypnula a nejistota odchodu z Unie srazila investice firem o desetinu. Francie zkrátila týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů počítaných jako plní pracující, což vysvětlí asi pětinu propadu po pandemii. Kolem roku dva tisíce přitom německé odbory při vysoké nezaměstnanosti přistoupily na mírný růst mezd a větší pružnost mezd i pracovní doby, což obnovilo konkurenceschopnost, cenou ale byly rostoucí rozdíly a reálné mzdy na spodku do roku dva tisíce deset výrazně klesaly. Kolektivní smlouvy kryly v roce dva tisíce osmašedesát procent zaměstnanců a v roce dva tisíce dvacet tři jen devětačtyřicet procent; od roku devadesát šest sice Německo nabralo o pětinu víc pracujících i díky reformě podpor roku dva tisíce pět, s kratšími úvazky ale Němec odpracoval o jedenáct procent méně hodin a od roku dva tisíce dvacet dva průmysl zasáhl energetický šok. Motor neroztočily ani výdaje na výzkum přes tři procenta výkonu ekonomiky – proč, ukáže epizoda o produktivitě a sektorech.
+
+### Kolo 3 – Tah země: Daňový klín
+
+[VIZUÁL: Grafické schéma „Daňového klínu“ (daně a odvody zaměstnance + odvody zaměstnavatele + povinné soukromé fondy vůči celkovým nákladům práce) a tabulka Kola 3: 1. Británie (28,3 %, +13,2 b., 1. v Evropě), 2. Irsko (34,2 %, +7,4 b., 2. v Evropě), 3. Švýcarsko (36,5 %, +5,1 b., 6. v Evropě), 4. Francie (46,3 %, −6,1 b., 24. v Evropě), 5. Německo (46,9 %, −6,8 b., 25. v Evropě).]
+
+Třetí kolo měří daňový klín – podíl daní, odvodů a povinných plateb zaměstnance i firmy na nákladech práce, který ze dvou třetin nese pracující. Nejmenší zátěž v sedmadvacítce mají ostrovy: první Británie osmadvacet a druhé Irsko čtyřiatřicet procent, hlavně díky jedenáctiprocentnímu pojistnému firem nad hrubou mzdu. Británie roku dva tisíce dvacet čtyři srazila zaměstnanecké pojistné na osm procent, zmrazená pásma se základem dvanácti a půl tisíce liber ale s inflací zvyšují daň, zatímco Irsko drží od krize univerzální sociální poplatek a silnou progresi.
+
+Nízkou zátěž má i Švýcarsko se šestatřiceti a půl procenty. Běžné přehledy přehlížejí povinné soukromé fondy, jenže Švýcar posílá přes pět tisíc franků ročně zdravotní pojišťovně – jejíž pojistné od konce devadesátých let stouplo dvaapůlkrát – a přes pětapůl tisíce do penzijní kasy.
+
+Mezi posledními v Evropě odevzdají Francie a Německo přes šestačtyřicet procent; hůř dopadají jen Rakousko a Belgie. Francouzské firmy odvádějí nad hrubou mzdu přes třetinu; u minimální mzdy jim stát skoro osmdesát procent odvodů odpouští, což sice přidalo místa, s rostoucí mzdou ale úlevy mizí. Mezi jednaceládvou a dvojnásobkem minimální mzdy tak mezní zdanění dosahuje pětasedmdesáti až osmdesáti procent, kde experti vidí zpomalený mzdový postup, a podle Komise úlevy nejspíš přispěly ke stlačení mezd a oslabily motivaci investovat do dovedností. V Německu leží důchody a zdravotnictví na páskách, kde pojistné roku dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Německo dříve udrželo odvody seškrtáním budoucích penzí, kdežto Švýcarsko sází na zmíněné kasy – čí model vyhraje, ukáže epizoda o penzích.
+
+### Finále regionu: Odhalení pořadí od posledního po vítěze
+
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Německo +15,7 b., Švýcarsko +7,3 b., Francie +4,6 b., Británie +4,2 b., Irsko −6,6 b.).]
+
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
+
+Pátá v regionu a nad středem Evropy končí Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Pomáhají jí spolu s Německem nejnižší ceny regionu, osm procent nad Unií, a kola překonává o čtyři a půl bodu, což skoro celé vysvětlí jednapadesátiprocentní podíl výplat na výkonu. Francie je přitom jednou ze dvou zemí Unie, kde minimální mzda přesahuje šedesát procent mediánu, a protože se každý leden automaticky zvyšuje podle cen a poloviny růstu kupní síly mezd, táhne nahoru spodek a stlačuje mzdovou škálu, takže přibývá lidí na minimální mzdě nebo těsně nad ní. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Čtvrté a rovněž nad středem Evropy je Německo s jednatřiceti tisíci čtyřmi sty jednotkami a přes čtyřiatřiceti tisíci eury, krácenými o devět procent vyššími cenami. Kola přeskočilo o šestnáct bodů, ale třiapadesátiprocentní podíl mezd na výkonu a zmíněné kratší úvazky vysvětlí jen menší část; většina zůstává otevřená. Německo bere štítek „Dělá to dobře a je to vidět“.
+
+Třetí nad středem Evropy končí Irsko s jednatřiceti tisíci šesti sty jednotkami. Skoro pětačtyřicet tisíc eur srážejí o dvě pětiny vyšší ceny než v Unii, které mažou náskok před Británií, a oproti kolům ztrácí sedm bodů. Proč, data spolehlivě neřeknou: i očištěný důchod nese část příjmů korporací, což může produktivitu v kolech nadhodnocovat, a průměr míchá vysoké platy v amerických firmách s nižšími ve většině domácích. Irsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Druhá v regionu a v evropské špičce je Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, tlumenými skoro o třetinu vyššími cenami. Kola překonává o čtyři body a skoro vše vysvětlí patnáctiprocentní podíl živnostníků, díky němuž se výkon dělí mezi méně zaměstnanců; průměr nejspíš zvedá i vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Po finanční krizi vláda v letech dva tisíce jedenáct až třináct zmrazila platy ve veřejném sektoru a pak je zvedala nejvýš asi o procento ročně; průměrný reálný týdenní výdělek asi pěti celé jedné desetiny milionu lidí ve veřejném sektoru byl proto v letech dva tisíce šestnáct až sedmnáct o čtyři procenta nižší než v letech dva tisíce devět až deset. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
+
+Vítězem regionu, pevně usazeným v evropské špičce, je Švýcarsko s více než čtyřiceti tisíci jednotkami. Sedmdesát tři tisíce eur krátí ceny o čtyři pětiny nad Unií; už počátkem tisíciletí tam stál Big Mac o dvě třetiny víc než v Americe – proč se cenovky liší, ukáže epizoda o cenové hladině. Kola přesto překonává o sedm bodů díky sedmapadesátiprocentnímu podílu výplat na výkonu. Od dohody s Unií v roce dva tisíce dva tam přichází čistě v průměru sedmdesát jedna tisíc tři sta cizinců ročně a třiapadesát procent příchozích pracovníků má vysokou školu proti pětačtyřiceti procentům u Švýcarů: volný přístup pohraničních pracovníků podle srovnávací studie zvedl mzdy vzdělaných domácích, celkově ale podle Mezinárodního měnového fondu příliv lidí tlak na mzdy tlumí a se štítkem „Dělá to dobře a je to vidět“ Švýcarsko ovládá region.
+
+
+---
+
+SEZNAM OPRAV:
+
+Jádra zemí jsi do scénáře převzal skoro doslova z mého zadání. Je to úřední styl plný čísel a scénář se tím natáhl hluboko přes rozpočet. Přepiš každé jádro níže po svém: vyprávěj jen uvedenou pointu, jednou až dvěma souvislými větami, hmatatelně, nejvýš s jedním číslem. Ostatní čísla a podrobnosti z jádra vypusť. Zbytek scénáře neměň. Cíl je celek do zhruba 1 200 slov mluveného textu; když to nestačí, uber v jádrech, ne jinde.
+
+1. NĚMECKO: kolem roku 2000 se odbory při vysoké nezaměstnanosti spokojily se skromnými přídavky, což vrátilo konkurenceschopnost, ale mzdy na spodku do roku 2010 reálně klesaly; kolektivní smlouvy dnes kryjí už jen asi polovinu zaměstnanců. Nesmí zaznít, že to vysvětluje, proč Německo kola přeskočilo.
+
+2. FRANCIE, minimální mzda: patří k nejvyšším v Unii vůči střední mzdě a každý leden se sama zvyšuje, takže táhne spodek nahoru a stlačuje škálu – přibývá lidí na minimu nebo těsně nad ním.
+
+3. FRANCIE, past nízkých mezd (kolo 3): u minimální mzdy stát firmám odpouští skoro všechny odvody, s každým přidaným eurem ale úlevy mizí, takže přidat zaměstnanci nad minimum se firmě skoro nevyplatí; podle Komise to stlačuje mzdy.
+
+4. BRITÁNIE: po krizi vláda platy ve veřejném sektoru zmrazila a pak zvedala o procento ročně, takže si státní zaměstnanci do roku 2017 reálně pohoršili.
+
+5. ŠVÝCARSKO: od roku 2002 otevřelo trh lidem z Unie a přicházejí často vysokoškoláci, což průměr zvedá složením; podle Mezinárodního měnového fondu ale příliv lidí tlak na mzdy tlumí.
+
+6. IRSKO, kolo 2: zachovej beze změny.
+
+### Gemini 4 Argon
+
+### Západní Evropa
+
+### Předstartovní showcase
+
+[VIZUÁL: Startovní rošt západoevropské rozjížďky – pět ekonomických těžkých vah: alpská pevnost Švýcarsko, průmyslový motor Německo, státem řízená Francie, finanční ostrov Británie a korporátní tygr Irsko.]
+
+Do západoevropské rozjížďky o nejvyšší čistou výplatu v kupní síle nastupuje pět těžkých vah. Favoritem na triumf v regionu i místo v evropské špičce je Švýcarsko, kde obří výplaty narážejí na nejdražší život v celé Evropě. O medaile a špičku ligy bojují i průmyslové Německo s mírnějšími cenami a drahá Británie opřená o služby. Černým koněm na hraně špičky je Irsko, kde výdělky v zámořských korporacích krotí drahota, zatímco levnější Francii se stlačenými mzdami hrozí chvost regionu a střed ligy.
+
+### Kolo 1 – Rozdané karty: Produktivita práce v roce 1996
+
+[VIZUÁL: Karta Kola 1 – Produktivita 1996 (% středu ligy a body): 1. Švýcarsko (128,9 %, +24,7 b., 3. v Evropě), 2. Francie (118,5 %, +16,5 b., 5. v Evropě), 3. Německo (115,7 %, +14,2 b., 6. v Evropě), 4. Británie (109,4 %, +8,8 b., 9. v Evropě), 5. Irsko (101,1 %, +1,1 b., 13. v Evropě).]
+
+Karty roku devatenáct set devadesát šest ukazují zděděnou produktivitu, s níž celá pětice začínala nad středem ligy.
+
+Třetí v celé Evropě startovalo Švýcarsko, o víc než čtvrtinu nad středem. Vyhnulo se válkám, před tou druhou bylo dvakrát bohatší než střed Evropy a pracovníci měli o dvě pětiny více kapitálu. Produktivitu táhnou velké nadnárodní firmy od Roche a Novartisu po strojírny a banky, dohromady s více než pětaosmdesáti procenty přidané hodnoty, zatímco celá ekonomika rostla od sedmdesátých let pomalu, což vláda přičítala chráněnému trhu.
+
+Necelou pětinu a šestinu nad středem vyjížděly Francie s Německem. Průmyslová Francie s Renaultem sice v hodinové produktivitě dohnala Spojené státy, na pracujícího ji ale tlumilo o sto padesát odpracovaných hodin méně než v Unii. Německo mělo o pětinu více kapitálu, jenže průměr srazilo sjednocení: východoněmecký soustružník dosahoval necelých tří čtvrtin západní produktivity, kde dohánění zamrzlo.
+
+Devět a jedno procento nad středem vyrážely Británie s Irskem. Británie investuje nejméně ze sedmi největších vyspělých ekonomik a šestnáctiprocentní hodinové manko na Francii doháněla delší prací. Irsko, v osmdesátých letech chudé a s šestnáctiprocentní nezaměstnaností, teprve sklízelo první plody bezplatných středních škol, evropského trhu a zahraničních továren.
+
+### Kolo 2 – Tah země: Vývoj produktivity 1996–2024
+
+[VIZUÁL: Tabulka Kola 2 (násobek růstu produktivity 1996–2024 vůči středu ligy, body a hodnocení nad rámec dohánění): 1. Irsko (1,17×, +0,6 b., 13. v Evropě – očištěný důchod GNI*, nad rámec dohánění nejisté), 2. Švýcarsko (1,04×, −10,8 b., 16. v Evropě – rostlo rychleji, než odpovídá dohánění), 3. Francie (0,96×, −19,1 b., 22. v Evropě – v rámci běžného dohánění), 4. Británie (0,94×, −20,9 b., 23. v Evropě – nejisté), 5. Německo (0,94×, −21,3 b., 24. v Evropě – nejisté).]
+
+Druhé kolo sleduje vývoj do roku dva tisíce dvacet čtyři. Přes čtyři pětiny rozdílů v růstu vysvětlí dohánění z nízkého základu, protože převzít linku je snazší než vymýšlet patenty.
+
+Skutečným vítězem je proto Švýcarsko: vůči středu sice ztratilo jedenáct bodů, jako jediné v regionu ale v obou měřeních překonalo běžné dohánění. Od roku dva tisíce dva otevřelo trh odborníkům z Unie a farmacie rostla skoro o desetinu ročně, obstarala čtvrtinu růstu a po letech se silným frankem pomohla projít pandemií. První v kole skončilo Irsko s růstem o sedmnáct procent. Měříme ho přes očištěný důchod: když korporace jako Apple přesunuly za dvanáctiapůlprocentní daní do Irska patenty, papírový produkt roku dva tisíce patnáct bez nové výroby vyskočil o čtvrtinu. I po očištění však produktivita rostla, zčásti díky technologiím a lékům – ačkoliv po roce dva tisíce osm praskla úvěrová bublina, investice spadly o dvě pětiny a stát čerpal pětaosmdesátimiliardový záchranný balík.
+
+Zbylá trojice ztratila kolem dvaceti bodů, což u Francie odpovídá zpomalení bohaté země. Británii táhl rozmach londýnské City a severomořská ropa; krize roku dva tisíce osm ale obojí vypnula a nejistota odchodu z Unie srazila investice firem o desetinu. Francie zkrátila týden na pětatřicet hodin a nabrala přes půl milionu dotovaných učňů počítaných jako plní pracující, což vysvětlí asi pětinu propadu po pandemii. Německé odbory se při vysoké nezaměstnanosti kolem roku dva tisíce spokojily se skromnými přídavky, což továrnám vrátilo konkurenceschopnost, ale mzdy na spodku pak celé desetiletí reálně klesaly a kolektivní smlouvy dnes kryjí už jen asi polovinu zaměstnanců. Od roku devadesát šest sice Německo nabralo o pětinu víc pracujících i díky reformě podpor roku dva tisíce pět, s kratšími úvazky ale Němec odpracoval o jedenáct procent méně hodin a od roku dva tisíce dvacet dva průmysl zasáhl energetický šok. Motor neroztočily ani výdaje na výzkum přes tři procenta výkonu ekonomiky – proč, ukáže epizoda o produktivitě a sektorech.
+
+### Kolo 3 – Tah země: Daňový klín
+
+[VIZUÁL: Grafické schéma „Daňového klínu“ (daně a odvody zaměstnance + odvody zaměstnavatele + povinné soukromé fondy vůči celkovým nákladům práce) a tabulka Kola 3: 1. Británie (28,3 %, +13,2 b., 1. v Evropě), 2. Irsko (34,2 %, +7,4 b., 2. v Evropě), 3. Švýcarsko (36,5 %, +5,1 b., 6. v Evropě), 4. Francie (46,3 %, −6,1 b., 24. v Evropě), 5. Německo (46,9 %, −6,8 b., 25. v Evropě).]
+
+Třetí kolo měří daňový klín – podíl daní, odvodů a povinných plateb zaměstnance i firmy na nákladech práce, který ze dvou třetin nese pracující. Nejmenší zátěž v sedmadvacítce mají ostrovy: první Británie osmadvacet a druhé Irsko čtyřiatřicet procent, hlavně díky jedenáctiprocentnímu pojistnému firem nad hrubou mzdu. Británie roku dva tisíce dvacet čtyři srazila zaměstnanecké pojistné na osm procent, zmrazená pásma se základem dvanácti a půl tisíce liber ale s inflací zvyšují daň, zatímco Irsko drží od krize univerzální sociální poplatek a silnou progresi.
+
+Nízkou zátěž má i Švýcarsko se šestatřiceti a půl procenty. Běžné přehledy přehlížejí povinné soukromé fondy, jenže Švýcar posílá přes pět tisíc franků ročně zdravotní pojišťovně – jejíž pojistné od konce devadesátých let stouplo dvaapůlkrát – a přes pětapůl tisíce do penzijní kasy.
+
+Mezi posledními v Evropě odevzdají Francie a Německo přes šestačtyřicet procent; hůř dopadají jen Rakousko a Belgie. Francouzské firmy odvádějí nad hrubou mzdu přes třetinu; u minimální výplaty jim stát skoro všechny odvody odpouští, jenže s každým přidaným eurem úlevy mizí, takže přidat zaměstnanci nad minimum se podniku skoro nevyplatí a podle Komise to stlačuje mzdy. V Německu leží důchody a zdravotnictví na páskách, kde pojistné roku dva tisíce dvacet pět překročilo dvaačtyřicet procent hrubé mzdy. Německo dříve udrželo odvody seškrtáním budoucích penzí, kdežto Švýcarsko sází na zmíněné kasy – čí model vyhraje, ukáže epizoda o penzích.
+
+### Finále regionu: Odhalení pořadí od posledního po vítěze
+
+[VIZUÁL: Cílová rovinka roku 2024 se středem evropské ligy na 25 308 PPS. Postupné odhalování od 5. do 1. místa v regionu + graf „Papírový součet 3 kol vs. Skutečná mzda“ (Německo +15,7 b., Švýcarsko +7,3 b., Francie +4,6 b., Británie +4,2 b., Irsko −6,6 b.).]
+
+V cíli roku dva tisíce dvacet čtyři leží střed ligy na pětadvaceti tisících třech stech jednotkách kupní síly.
+
+Pátá v regionu a nad středem Evropy končí Francie s necelými třiceti tisíci jednotkami a skoro dvaatřiceti tisíci eury. Pomáhají jí spolu s Německem nejnižší ceny regionu, osm procent nad Unií, a kola překonává o čtyři a půl bodu, což skoro celé vysvětlí jednapadesátiprocentní podíl výplat na výkonu. Francouzská minimální mzda přitom patří vůči střední mzdě k nejvyšším v Unii a každý leden se sama zvyšuje, takže táhne spodek nahoru a stlačuje škálu – stále víc lidí tak zůstává na minimu nebo těsně nad ním. Francie bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Čtvrté a rovněž nad středem Evropy je Německo s jednatřiceti tisíci čtyřmi sty jednotkami a přes čtyřiatřiceti tisíci eury, krácenými o devět procent vyššími cenami. Kola přeskočilo o šestnáct bodů, ale třiapadesátiprocentní podíl mezd na výkonu a zmíněné kratší úvazky vysvětlí jen menší část; většina zůstává otevřená. Německo bere štítek „Dělá to dobře a je to vidět“.
+
+Třetí nad středem Evropy končí Irsko s jednatřiceti tisíci šesti sty jednotkami. Skoro pětačtyřicet tisíc eur srážejí o dvě pětiny vyšší ceny než v Unii, které mažou náskok před Británií, a oproti kolům ztrácí sedm bodů. Proč, data spolehlivě neřeknou: i očištěný důchod nese část příjmů korporací, což může produktivitu v kolech nadhodnocovat, a průměr míchá vysoké platy v amerických firmách s nižšími ve většině domácích. Irsko bere štítek „Dělá to dobře a je to vidět“ s vedlejším „Chybami si přitížil“.
+
+Druhá v regionu a v evropské špičce je Británie s dvaatřiceti tisíci pěti sty jednotkami a skoro dvaačtyřiceti tisíci eury, tlumenými skoro o třetinu vyššími cenami. Kola překonává o čtyři body a skoro vše vysvětlí patnáctiprocentní podíl živnostníků, díky němuž se výkon dělí mezi méně zaměstnanců; průměr nejspíš zvedá i vysoká nerovnost, vždyť Londýn je o dvě pětiny produktivnější než Manchester. Po finanční krizi navíc vláda platy ve veřejném sektoru zmrazila a pak zvedala jen o procento ročně, takže si státní zaměstnanci do roku dva tisíce sedmnáct reálně pohoršili. Británie bere štítek „Chybami si přitížil“ s vedlejším „Dělá to dobře a je to vidět“.
+
+Vítězem regionu, pevně usazeným v evropské špičce, je Švýcarsko s více než čtyřiceti tisíci jednotkami. Sedmdesát tři tisíce eur krátí ceny o čtyři pětiny nad Unií; už počátkem tisíciletí tam stál Big Mac o dvě třetiny víc než v Americe – proč se cenovky liší, ukáže epizoda o cenové hladině. Kola přesto překonává o sedm bodů díky sedmapadesátiprocentnímu podílu výplat na výkonu. Otevřený trh s Unií od roku dva tisíce dva sice přivádí často vysokoškoláky, což průměr zvedá složením, podle Mezinárodního měnového fondu ale příliv lidí tlak na mzdy tlumí – se štítkem „Dělá to dobře a je to vidět“ však Švýcarsko ovládá region.
 
 
 ---
@@ -452,9 +761,1141 @@ každá začíná řádkem `[VIZUÁL: …]` a pokračuje souvislými odstavci. N
 
 <!-- soubor 03_PODKLADY_SCENARE.md -->
 
-# Podklady scénáře
+# Podklady pro scénář regionu Západní Evropa
 
-Poslední scénář (soubor 01) je faktická verze. Jediným zdrojem čísel, důvodů a jejich váhy pro čtivou verzi jsou její zámek faktů, oddíly Soudy a Páry sousedů a seznam NEŘÍKEJ; podklady analýzy zůstávají v soukromém repozitáři projektu.
+Země regionu: Německo, Švýcarsko, Francie, Británie, Irsko. Ukazatel: průměrná čistá mzda na plný úvazek v kupní síle (PPS), rok 2024. Body kol a pořadí jsou hotové a nesmějí se měnit.
+
+# Jádro země: musí zaznít (Ondřej 27. 10. 2026)
+
+U každé země níže je mechanismus mimo tři kola, bez kterého divák zemi nepochopí. Ve scénáři zazní jednou, obyčejnou češtinou a svým stylem: v kole 2, je-li to tah země, v kole 3, týká-li se daní, jinak ve finále jako vysvětlení toho, co kola nevysvětlí. Drž se směru a nikdy neřekni, co je u něj zakázané.
+
+## Německo: Mzdová umírněnost kolem roku 2000 a slábnoucí kolektivní smlouvy
+
+- Pointa pro diváka (převyprávěj po svém, nejvýš jedno číslo): Kolem roku 2000 se odbory při vysoké nezaměstnanosti spokojily se skromnými přídavky, což vrátilo konkurenceschopnost, ale mzdy na spodku reálně klesaly; kolektivní smlouvy dnes kryjí už jen asi polovinu zaměstnanců.
+- Fakta k výběru (nepřepisuj doslova): Kolem roku 2000 přistoupily německé odbory při vysoké nezaměstnanosti na mírný růst mezd a na větší pružnost mezd a pracovní doby; podle výzkumníků to obnovilo konkurenceschopnost, cenou ale byly rostoucí rozdíly a reálné mzdy na spodku do roku 2010 výrazně klesaly. Kolektivní smlouvy kryly v roce 2000 68 % zaměstnanců, v roce 2023 jen 49 %.
+- Směr podle instituce: Podle IAB (2026) umírněnost obnovila konkurenceschopnost a zaměstnanost, ale držela mzdy a zvýšila jejich rozptyl; kolektivní smlouvy obvykle mzdy zvyšují, takže jejich ústup mzdy spíš brzdí. Vliv na průměrnou mzdu nikdo nevyčíslil.
+- Nesmí zaznít: Nesmí říct, že umírněnost zvedla mzdy (zvedla konkurenceschopnost a zaměstnanost, mzdy držela). Nesmí říct, o kolik slábnutí smluv snížilo průměrnou mzdu, ani že vysvětluje německý výsledek proti kolům (Německo kola přeskočilo; výklad: „příčina tedy není doložena“). Nesmí zaměnit roky ani čísla pokrytí (68 % v roce 2000, 49 % v roce 2023; 35 % jen soukromý sektor). Nesmí to slít s minimální mzdou z roku 2015.
+- Doklad: Institut pro výzkum trhu práce IAB (Bellmann, Dustmann, Fitzenberger 2026); Evropská komise 2025, 2026
+
+## Švýcarsko: Otevřený trh práce s EU od roku 2002
+
+- Pointa pro diváka (převyprávěj po svém, nejvýš jedno číslo): Od roku 2002 Švýcarsko otevřelo trh lidem z Unie a přicházejí často vysokoškoláci, což průměr zvedá složením; podle Mezinárodního měnového fondu ale příliv tlak na mzdy tlumí.
+- Fakta k výběru (nepřepisuj doslova): Od dohody s EU v roce 2002 přichází do Švýcarska čistě v průměru 71 300 cizinců ročně a 53 % pracovníků přišlých podle dohody má vysokou školu proti 45 % u Švýcarů. Volný přístup pohraničních pracovníků podle srovnávací studie zvedl mzdy vzdělaných domácích pracovníků, celkově ale podle MMF příliv lidí tlumí tlak na mzdy.
+- Směr podle instituce: Smíšený: MMF (2025) – pružný trh práce přitahuje přistěhovalce, což omezuje tlak na mzdy; studie Beerli a kol. (2021) – otevření pohraničním pracovníkům zvedlo mzdy vysokoškolsky vzdělaných domácích a produktivitu firem; SECO (2026) – riziko tlaku na mzdy hlavně v Ticinu a Jurském oblouku. Vysoký podíl vysokoškoláků zvedá průměr jen složením, ne účinkem na mzdy.
+- Nesmí zaznít: Nesmí říct, že přistěhovalci obecně zvedli švýcarské mzdy (MMF říká opak: tlumí tlak na mzdy). Nesmí vydávat složení (víc vysokoškoláků) za účinek na mzdy. Nesmí tvrdit, že příliv vysokoškoláků vysvětluje sedm bodů nad koly – nikdo to nevyčíslil (dnešní finále říká „díky … přílivu vysokoškoláků“, to je přehnané). 71 300 je čistá imigrace cizinců ročně, ne počet pracovníků.
+- Doklad: MMF 2025; Státní sekretariát pro hospodářství SECO 2026; Spolková rada 2024; Beerli, Ruffner, Siegenthaler, Peri (American Economic Review 2021)
+
+## Francie: Vysoká minimální mzda s automatickým zvyšováním
+
+- Pointa pro diváka (převyprávěj po svém, nejvýš jedno číslo): Minimální mzda patří k nejvyšším v Unii vůči střední mzdě a každý leden se sama zvyšuje, takže táhne spodek nahoru a stlačuje škálu.
+- Fakta k výběru (nepřepisuj doslova): Francie je jednou ze dvou zemí EU, kde minimální mzda přesahuje 60 % mediánu (62,5 % v roce 2024), a každý leden se automaticky zvyšuje podle cen a podle poloviny růstu kupní síly mezd. Táhne tím nahoru spodek a stlačuje mzdovou škálu: přibývá lidí, kteří zůstávají na minimální mzdě nebo těsně nad ní.
+- Směr podle instituce: Podle skupiny expertů pro minimální mzdu (2025) a Komise (2026) zvedá dolní mzdy a stlačuje mzdovou škálu; vliv na průměrnou mzdu pro Francii doložen není.
+- Nesmí zaznít: Nesmí říct, že minimální mzda zvedla francouzskou průměrnou mzdu nebo vysvětluje náskok nad koly (výklad: „jak silně, pro Francii doloženo není“). Nesmí říct „nejvyšší v Evropě“ bez upřesnění (Británie má podle LPC zhruba dvě třetiny mediánu; bezpečné je „jedna ze dvou zemí EU“). Nesmí zaměnit 62,5 % mediánu s 50,4 % průměru. Automatika je podle cen a poloviny růstu kupní síly mezd, ne podle celé inflace a celého růstu mezd.
+- Doklad: Skupina expertů pro minimální mzdu 2025; Evropská komise 2026; OECD databáze
+
+## Francie: Past nízkých mezd z úlev na odvodech
+
+- Pointa pro diváka (převyprávěj po svém, nejvýš jedno číslo): U minimální mzdy stát firmám odpouští skoro čtyři pětiny odvodů, s každým přidaným eurem ale úlevy mizí, takže přidat zaměstnanci nad minimum se firmě skoro nevyplatí.
+- Fakta k výběru (nepřepisuj doslova): U minimální mzdy stát firmám odpouští skoro 80 % jejich odvodů, úlevy ale s rostoucí mzdou mizí; mezi 1,2 a 2násobkem minimální mzdy tak mezní zdanění dosahuje 75 až 80 % a právě tam experti vidí zpomalený mzdový postup. Komise píše, že úlevy nejspíš přispěly ke stlačení mezd a oslabily motivaci investovat do dovedností.
+- Směr podle instituce: Podle Komise (2026) úlevy cílené na nízké mzdy pravděpodobně stlačily mzdy a oslabily investice do dovedností; podle expertů (2025) brzdí mzdový postup v pásmu 1,2–2násobku minimální mzdy. Pro zaměstnanost mají podle hodnocení země doložený přínos.
+- Nesmí zaznít: Nesmí říct, že stát bere 80 % z celé mzdy: jde o mezní zdanění přidaného eura v pásmu 1,2–2násobku minimální mzdy. Nesmí škrtnout „nejspíš/pravděpodobně“ (Komise: „are likely to have contributed“). Nesmí říct, o kolik úlevy snížily průměrnou mzdu. Nesmí zamlčet, že úlevy podle studií přidaly místa (hodnocení: „stovky tisíc míst“) – chyba je ve stlačení, ne ve zbytečnosti.
+- Doklad: Skupina expertů pro minimální mzdu 2025; Evropská komise 2026 (a 2025 podle studie Bozio a Wasmer 2024)
+
+## Británie: Zmrazení platů ve veřejném sektoru po krizi
+
+- Pointa pro diváka (převyprávěj po svém, nejvýš jedno číslo): Po krizi vláda platy ve veřejném sektoru zmrazila a pak zvedala o procento ročně, takže si státní zaměstnanci do roku 2017 reálně pohoršili.
+- Fakta k výběru (nepřepisuj doslova): Po finanční krizi vláda v letech 2011–2013 zmrazila platy ve veřejném sektoru a pak je zvedala nejvýš asi o 1 % ročně; průměrný reálný týdenní výdělek ve veřejném sektoru byl proto v letech 2016–17 o 4 % nižší než v letech 2009–10. Týkalo se to asi 5,1 milionu lidí.
+- Směr podle instituce: Podle IFS (2017) snížilo reálné výdělky ve veřejném sektoru; celou britskou průměrnou mzdu ani rok 2024 IFS nevyčísluje.
+- Nesmí zaznít: Nesmí to zobecnit na všechny britské mzdy ani na rok 2024 (jde o veřejný sektor a srovnání 2016–17 proti 2009–10). Nesmí to vydávat za hlavní příčinu britské stagnace mezd – tou je podle MMF, Bank of England a Resolution Foundation produktivita. Nesmí zaměnit týdenní výdělek za roční ani reálný za nominální.
+- Doklad: Institute for Fiscal Studies 2017
+
+## Irsko: Dvě ekonomiky: nadnárodní firmy platí víc než domácí
+
+- Pointa pro diváka (převyprávěj po svém, nejvýš jedno číslo): Irský průměr míchá dvě ekonomiky: zahraniční nadnárodní firmy platí výrazně víc než domácí.
+- Fakta k výběru (nepřepisuj doslova): Irský průměr míchá dvě ekonomiky: zahraniční nadnárodní firmy ve vysoce placených oborech (technologie, farmacie, finance) platí výrazně víc než domácí firmy – medián týdenního výdělku byl v roce 2023 906,74 eura ve firmách nadnárodních skupin mimo EU a 654,41 eura v irských firmách. V zahraničních firmách přitom pracovalo v listopadu 2024 asi 619 tisíc zaměstnanců, v irských asi 1,88 milionu.
+- Směr podle instituce: Podle irské Národní rady pro konkurenceschopnost a produktivitu (2025) vysoké irské náklady práce odrážejí vysoce placená odvětví; vlastnictví firmy a skladba odvětví vysvětlují mzdové rozdíly víc než velikost firmy. Průměr tak nadnárodní firmy zvedají složením, typický zaměstnanec domácí firmy bere méně.
+- Nesmí zaznít: Nesmí říct, že typický Ir bere průměrnou mzdu. Nesmí míchat týdenní mediány v eurech s ročním průměrem v kupní síle. Nesmí tvrdit, že nadnárodní firmy vysvětlují, proč Irsko ztratilo sedm bodů proti kolům (výklad: data to spolehlivě neřeknou). Statistický úřad dělí firmy na skupiny „mimo EU“, nikoli „americké“; „americké“ je jen přibližné.
+- Doklad: Národní rada pro konkurenceschopnost a produktivitu (NCPC) 2025; irský statistický úřad CSO 2025; Evropská komise 2025, 2026; MMF 2026
+
+
+# Tabulky kol
+
+## Kola
+
+| Kolo | Faktor | Skupina | Obvyklý vliv (body) | 90% interval | Podíl na obvyklém vlivu | Menší než chyba měření | Jistota pořadí před dalším | Síla důkazu | Zdroj síly | Páka | Měřítko ligy |
+| ---: | --- | --- | ---: | --- | ---: | --- | --- | --- | --- | --- | ---: |
+| 1 | Výkon na začátku | rozdané karty | 27,4 | 10,3–50,3 | 54,4 % | ne | 85 % (jisté) | potvrzený daty (samostatně v datech ligy ověřen (samostatná síla s intervalem nad nulou)) | data ligy (stejná síla na jednotku pro obě části výkonu, krok 7.4) | dané (pro hodnocené období) | 100,00 |
+| 2 | Růst výkonu | tah země | 19,1 | 9,4–29,2 | 38,0 % | ne | 100 % (jisté) | potvrzený daty (samostatně v datech ligy ověřen (samostatná síla s intervalem nad nulou)) | data ligy (stejná síla na jednotku pro obě části výkonu, krok 7.4) | pomalu ovlivnitelné | 1,17 |
+| 3 | Daně a odvody | tah země | 3,9 | 1,5–5,3 | 7,7 % | ano |  | doložený svědky (zařazen pravidlem vzorce, ne svědky: zátěž je ve vzorci čisté mzdy, takže její početní účinek je jistý (krok 1.2); svědci rozhodují jen o ekonomické části, tedy kolik zátěže se přenese do nákladů práce. Podle společného kódu by svědci daním dali „hypotéza (jeden svědek)“. Pravidlo je v návrhu novely skillu (nález oponenta 5).) | studie (zapsáno předem): zaměstnanci nesou dlouhodobě 2/3 zátěže, třetina se přenese do nákladů práce; data ligy sílu neurčí: v celé lize nesou zaměstnanci 0,47 zátěže (90% interval −0,05 až 0,81, po vynechání každé země 0,33–0,55), bez zemí s nejistým měřením 0,12 (−0,51 až 0,49); celá liga připouští přenos třetiny i poloviny, podmnožina bez nejistých zemí ukazuje spíš větší přenos do nákladů práce; interval v obou podobách nevylučuje ani nulu; citlivosti s polovinou a bez přenosu jsou v kolech | řiditelné | 41,18 |
+
+Kola vysvětlí **82,5 %** rozdílů čisté mzdy mezi zeměmi; typická odchylka výpočtu 9,3 bodu. Síla výkonu 0,973 (o 1 % vyšší výkon = náklady práce o 0,97 % vyšší), daně 0,67 × log(1 − zátěž). Samostatné síly částí: výkon na začátku 0,968 (interval 0,700 až 1,204), růst 0,962 (interval 0,574 až 1,250). Korelace zátěže s výkonem −0,22.
+
+**Návrh pro otevřenou otázku 2** (co uslyší divák o síle kola): výkon pracujícího sám vysvětlí 79,9 % rozdílů čisté mzdy, daně samy −7,5 %. U daní ve dvou částech: početně při stejných nákladech práce sníží o 1 procentní bod vyšší zátěž čistou mzdu asi o 1,70 %; ekonomicky zaměstnanci nesou dlouhodobě asi dvě třetiny zátěže, třetina se přenese do vyšších nákladů práce (studie).
+
+## Růst výkonu a dohánění (nález oponenta 2)
+
+Růst výkonu 1996 → 2020–2024 je z **86,1 %** dohánění: přímka růstu podle výkonu na začátku má sklon −0,65 (čím níž země začínala, tím rychleji rostla). Body kola zůstávají v hodnotě tak, jak je (skill v1.4 krok 3.4, výchozí volba analytika, kterou může Ondřej změnit), ale tahu země se smí přičíst jen **růst nad rámec dohánění** (zbytek po přímce) a podle něj se hodnotí směr jízdy na ose 2. Zbytek je spočítaný dvakrát, s přímkou a s kvadratickou křivkou (shoda 0,89, největší rozdíl 17,6 bodu, u Rumunska); slovní zařazení platí, jen když obě podoby leží na stejné straně pásma chyby výsledku. **Kontrola v reálných cenách (18. 10. 2026, `REALNE_CENY.md`):** růst v kupní síle obsahuje i posuny cenových hladin, proto je zbytek spočítaný ještě z výkonu ve stálých cenách národní měny (Norsko pevninské HDP, Irsko GNI*). Dohánění tam vysvětlí 84,4 % rozdílů v růstu (sklon −0,57), takže že je růst z velké části dohánění, platí v obou měřeních. Slovní zařazení platí, jen když se kupní síla a reálné ceny shodnou; shodnou se u 17 z 27 zemí, u ostatních je zařazení nejisté a scénář tahu země nic nepřičítá. Přímka přes všech 27 zemí; sbližování je silnější na východě než mezi bohatými zeměmi, takže u bohatých zemí přímka čekaný pokles spíš nadsazuje (oponent); proto výklad, ne nová kola.
+
+
+| Země | Výkon na začátku | Body růstu | Růst nad rámec dohánění v kupní síle (body, přímka a křivka) | Totéž v reálných cenách | Slovy (společné zařazení) |
+| --- | ---: | ---: | --- | --- | --- |
+| Švýcarsko | 128,9 % | −10,8 | +7,1 až +14,8 | +7,1 až +9,1 | rostla rychleji, než odpovídá dohánění |
+| Irsko | 101,1 % | +0,6 | +10,7 až +11,4 | −0,3 až +0,4 | nejisté: v kupní síle rychleji, v reálných cenách zhruba tak |
+| Francie | 118,5 % | −19,1 | −3,3 až +1,1 | −1,6 až −0,6 | rostla zhruba tak, jak odpovídá dohánění |
+| Německo | 115,7 % | −21,3 | −6,2 až −2,6 | −4,2 až −3,5 | nejisté: v kupní síle nejisté, v reálných cenách zhruba tak |
+| Británie | 109,4 % | −20,9 | −7,5 až −5,8 | +1,9 až +1,9 | nejisté: v kupní síle pomaleji, v reálných cenách zhruba tak |
+
+## Přenos daní podle dat ligy (nález oponenta 3)
+
+Regrese čisté mzdy na výkon a log(1 − zátěž): zaměstnanci nesou **0,47** zátěže (90% interval −0,04 až 0,80, po vynechání každé země 0,33–0,55; bez 8 zemí s nejistým měřením 0,12); zbytek nákladů práce po výkonu souvisí se zátěží (korelace −0,41), takže část daní se do nákladů práce přenáší. Studie dávají 0,67, společný odhad vážený přesností 0,62 (předpoklad nejistoty studií ±0,15). Data ligy sílu neurčí: celá liga připouští, že zaměstnanci nesou dvě třetiny i polovinu zátěže, bez zemí s nejistým měřením vychází přenos do nákladů práce spíš větší a interval v obou podobách nevylučuje ani nulu; síla proto zůstává ze studií (2/3, zapsáno předem) a citlivosti s polovinou a bez přenosu jsou v tabulce citlivostí. Dřívější „test přenosu“ s přeházením zátěže nic netestoval: zátěž je ve vzorci výsledku, takže skutečné hodnoty sedí lépe při každé síle (oponent).
+
+## Co kola nevysvětlí a podíl mezd na výkonu (nález oponenta 7)
+
+Vysoký podíl vysvětlených rozdílů je zčásti účetní vazba: náklady práce na zaměstnance = podíl náhrad na výkonu × výkon. Podstatné sdělení je, že **podíl mezd na výkonu je v Evropě podobný** (střed ligy 47,9 %). Podíl náhrad na výstupu a podíl zaměstnanců mezi pracujícími vysvětlí 43,1 % rozptylu toho, co kola nevysvětlí (typická odchylka 9,3 → 7,0 bodu). Podíl náhrad zaměstnancům na výstupu (Norsko pevninské HDP, Irsko GNI*) a podíl zaměstnanců mezi pracujícími; Británie 2015–2019; u Irska nespolehlivé (náhrady nadnárodních firem jsou ve výstupu i bez jejich zisků); podíl práce není příčina, za ním je vyjednávání a skladba ekonomiky.
+
+| Země | Co kola nevysvětlí | Z toho podíl mezd a složení | Zbývá | Podíl mezd na výkonu | Zaměstnanci mezi pracujícími |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Německo | +15,7 | +3,9 | +11,8 | 53,0 % | 91,5 % |
+| Švýcarsko | +7,3 | +10,0 | −2,6 | 57,2 % | 91,2 % |
+| Irsko | −6,6 | +6,7 | −13,3 | 51,3 % | 86,0 % |
+| Francie | +4,6 | +3,7 | +0,9 | 51,5 % | 89,2 % |
+| Británie | +4,2 | +4,0 | +0,2 | 48,8 % | 84,7 % |
+
+### Západní Evropa
+
+**Kolo 1: Výkon na začátku** (% výkonu střední země ligy v roce 1996)
+
+| Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
+| --- | ---: | ---: | ---: | ---: | --- | --- |
+| Švýcarsko | 128,90 | 3 | 1 | +24,7 | ano |  |
+| Francie | 118,52 | 5 | 2 | +16,5 | ano |  |
+| Německo | 115,70 | 6 | 3 | +14,2 |  | ano |
+| Británie | 109,41 | 9 | 4 | +8,8 |  |  |
+| Irsko | 101,10 | 13 | 5 | +1,1 |  |  |
+
+**Kolo 2: Růst výkonu** (kolikrát se výkon vůči střední zemi zvětšil (1996 → 2020–2024))
+
+| Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
+| --- | ---: | ---: | ---: | ---: | --- | --- |
+| Irsko | 1,17 | 13 | 1 | +0,6 |  |  |
+| Švýcarsko | 1,04 | 16 | 2 | −10,8 |  |  |
+| Francie | 0,96 | 22 | 3 | −19,1 |  |  |
+| Británie | 0,94 | 23 | 4 | −20,9 | ano | ano |
+| Německo | 0,94 | 24 | 5 | −21,3 | ano | ano |
+
+**Kolo 3: Daně a odvody** (% nákladů práce, které jdou na daně, odvody a povinné platby)
+
+| Země | Hodnota | Místo v lize | Místo v regionu | Body | Vyčnívá | Skoro stejně jako předchozí |
+| --- | ---: | ---: | ---: | ---: | --- | --- |
+| Británie | 28,28 | 1 | 1 | +13,2 | ano |  |
+| Irsko | 34,25 | 2 | 2 | +7,4 | ano |  |
+| Švýcarsko | 36,49 | 6 | 3 | +5,1 |  |  |
+| Francie | 46,34 | 24 | 4 | −6,1 | ano |  |
+| Německo | 46,86 | 25 | 5 | −6,8 | ano | ano |
+
+
+| Země | Místo v lize | Patro | Čistá mzda PPS | Proti středu ligy | Co kola nevysvětlí (body) |
+| --- | ---: | --- | ---: | ---: | ---: |
+| Švýcarsko | 1 | evropská špička | 40 189 | +58,8 % | +7,3 |
+| Británie | 4 | evropská špička | 32 510 | +28,5 % | +4,2 |
+| Irsko | 7 | nad středem až střed Evropy | 31 639 | +25,0 % | −6,6 |
+| Německo | 8 | nad středem až střed Evropy | 31 408 | +24,1 % | +15,7 (nad typickou odchylkou) |
+| Francie | 10 | nad středem až střed Evropy | 29 629 | +17,1 % | +4,6 |
+
+Papírové pořadí podle rozdaných karet: Švýcarsko (+24,7), Francie (+16,5), Německo (+14,2), Británie (+8,8), Irsko (+1,1). Průměrný zbytek regionu +5,0 bodu.
+
+
+## Výsledek v cíli (rok 2024)
+
+| Země | Skutečné místo v lize (27 zemí) | Patro | Čistá mzda v kupní síle (PPS ročně) | Čistá mzda v eurech ročně | Cenová hladina spotřeby (EU27 = 100) | Daně, odvody a povinné platby (% nákladů práce) |
+|---|---:|---|---:|---:|---:|---:|
+| Švýcarsko | 1 | evropská špička | 40 189 | 73 064 | 181,8 | 36,5 |
+| Británie | 4 | evropská špička | 32 510 | 41 938 | 129,0 | 28,3 |
+| Irsko | 7 | nad středem až střed Evropy | 31 639 | 44 579 | 140,9 | 34,2 |
+| Německo | 8 | nad středem až střed Evropy | 31 408 | 34 329 | 109,3 | 46,9 |
+| Francie | 10 | nad středem až střed Evropy | 29 629 | 31 881 | 107,6 | 46,3 |
+
+Střed ligy (medián 27 zemí) v čisté mzdě: 25 308 PPS ročně.
+Patra evropské reality: 1.–6. evropská špička, 7.–15. nad středem až střed Evropy, 16.–20. pod středem Evropy, 21.–27. evropský suterén.
+
+
+## Štítky z hodnocení výkonu zemí (pro finále)
+
+- Německo: Dělá to dobře a je to vidět
+- Švýcarsko: Dělá to dobře a je to vidět
+- Francie: Dělá to dobře a je to vidět; vedlejší štítek: Chybami si přitížil
+- Británie: Chybami si přitížil; vedlejší štítek: Dělá to dobře a je to vidět
+- Irsko: Dělá to dobře a je to vidět; vedlejší štítek: Chybami si přitížil
+
+
+# Výklady zemí (proč mají v kolech takové hodnoty)
+
+# Německo: proč má v kolech takové hodnoty
+
+*Podklad pro výklad hodnot v kolech průměrné čisté mzdy (rok 2024), sestavený 17. 10. 2026. Čísla výkonu a zátěže jsou
+z dat projektu (`data/kontext_kroky.json`, `data/mereni.json`), výroky ekonomů z `ekonomove/DE.md`, síla účinků ze
+`studie/UCINKY.md`, ostatní z otevřených oficiálních a odborných zdrojů v oddílu 6. Kroky vlád a institucí s doklady jsou
+v `data/kroky_zemi/DE.json`. „Můj přepočet“ znamená výpočet z uvedených dat, „můj úsudek“ moji úvahu bez přímého dokladu.*
+
+## Ve zkratce
+
+Německo startovalo vysoko díky průmyslu bývalého západního Německa, celostátní průměr ale stahoval dolů východ, kde se
+po sjednocení dohánění kolem roku 1996 zastavilo. Výkon na pracujícího pak rostl pomaleji než ve střední zemi ligy, protože
+bohatá země nemá z čeho dohánět, protože Němci odpracují na hlavu stále méně hodin a protože po roce 2019 přišel energetický
+šok a útlum průmyslu; za hodinu práce Německo za středem ligy nezaostalo. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl německý výkon za odpracovanou hodinu v letech 1996–2024 asi o 30 %, střed ligy asi o 45 % (25 zemí s údaji o hodinách); i za hodinu práce tedy Německo za středem ligy reálně zaostalo, nezaostalo jen za Španělskem (asi +17 %). Daně a odvody jsou vysoké hlavně proto, že
+sociální pojištění se platí převážně z mezd; od roku 2000 zátěž klesla díky nižší dani z příjmu, pojistné zůstalo skoro stejné.
+
+## 1. Proč takový výkon na začátku (1996)
+
+V roce 1996 vytvořil pracující v Německu 115,7 % toho, co pracující ve střední zemi ligy (data projektu z Eurostatu;
+střední zemí ligy bylo toho roku pevninské Norsko). Vysoký start stál na průmyslu: Evropská komise popisuje německou
+konkurenceschopnost jako postavenou na rozmanité ekonomice se silnou průmyslovou základnou a dynamickými středními firmami
+a úroveň produktivity práce hodnotí jako vysokou (Evropská komise 2024), a kapitálu na pracovníka mělo Německo v roce 1996
+asi 1,18násobek střední země ligy (Penn World Table 11.0, data projektu). Celostátní průměr ale stahovalo dolů sjednocení
+z roku 1990. Na východě vytvořil pracující v roce 1991 méně než 45 % toho, co na západě, v roce 1996 asi 72 % a v roce
+2000 73 %, takže dohánění se právě kolem roku 1996 zastavilo (změřeno: Burda a Huntová 2001, přidaná hodnota na
+pracujícího podle údajů statistických úřadů). Sjednocení bylo i drahé: převody ze západu na východ dělaly kolem roku 2000
+asi 5 % německého HDP ročně a 40–45 % z nich tvořily sociální nároky, tedy hlavně důchody a podpory (Burda a Huntová 2001).
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon na pracujícího vůči střední zemi ligy se v Německu zmenšil na 0,936násobek stavu z roku 1996 (průměr let 2020–2024,
+asi 108 % střední země, je můj přepočet z tohoto násobku), zatímco typická země ligy si polepšila na 1,17násobek (data
+projektu). Průběh: 108,0 % (2000), 112,6 % (2004), 107,4 % (2008), 102,9 % (2013), 107,3 % (2019) a 104,8 % (2024) (data
+projektu). Nejvíc Německo ztratilo v letech 1996–2000, 2004–2013 a 2019–2024, polepšilo si v letech 2000–2004
+a 2013–2019, v obou případech v době, kdy srovnávací Španělsko rychle přibíralo pracovníky (jen časová souvislost, viz
+níže). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách si Německo v letech 2000–2004 vůči středu ligy nepolepšilo: výkon na pracujícího vzrostl asi o 4 %, střed ligy asi o 9 %; polepšilo si jen proti Španělsku, kde výkon na pracujícího skoro nerostl (asi −0,2 %).
+
+**Bohatá země nemá z čeho dohánět.** Střed ligy táhnou nahoru východní země, které dohánějí z nízkého základu: Rumunsko
+zvětšilo výkon vůči střední zemi 3,17krát, Polsko 1,76krát (data projektu). Zemím, které vstoupily do EU, zvýšil vstup
+příjem na obyvatele podle srovnání s umělými kontrolními zeměmi v průměru asi o 12 % (změřeno: Campos, Coricelli a Moretti
+2019, podle rešerše studií projektu). Že Německo jako země blízko technologické špičky takto dohánět nemůže, je můj úsudek
+z dat ligy.
+
+**Střední země ligy se mění a s ní i měřítko.** V roce 1996 bylo střední zemí pevninské Norsko, v letech 2000, 2004, 2008,
+2013, 2019 i 2024 Španělsko (data projektu). Proti Španělsku mělo Německo v roce 1996 i v roce 2000 stejný náskok, výkon
+108 % španělského (můj přepočet z dat projektu); pokles ze 115,7 % na 108,0 % v letech 1996–2000 tedy hlavně ukazuje, že
+Irsko, Norsko a Dánsko rostly rychleji než Španělsko a předběhly ho, takže se střed ligy posunul výš (data projektu). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl výkon na pracujícího v letech 1996–2000 v Německu asi o 4 %, ve Španělsku skoro vůbec (asi −0,3 %) a ve středu ligy asi o 9,5 %; proti Španělsku si tedy Německo reálně mírně polepšilo a za středem ligy reálně zaostalo asi o 5 %, pokles proto není jen posunem střední země. Od
+roku 2000 se Německo vlastně srovnává se Španělskem. Jeho výkon na pracujícího skočil v krizi, protože v letech 2008–2013
+ubylo 3,4 milionu pracujících, z 21,3 na 17,9 milionu (Eurostat, přepočet projektu); vývoj španělské produktivity v krizi
+podle studie Hospidové a Moreno-Galbisové z velké části odráží nepříznivý vývoj na trhu práce, ale také vývoj celkové
+efektivity výroby a změny ve skladbě (posoudily Hospido a Moreno-Galbis 2015). Německo naopak v krizi pracovní místa drželo: v roce 2009 mělo stejně pracujících
+jako v roce 2008, 40,9 milionu, ale každý odpracoval méně hodin, 1 407 místo 1 447 (Eurostat, přepočet projektu), protože
+firmy s podporou státu zkracovaly pracovní dobu místo propouštění; zkrácená práce podle srovnání zemí snížila ztráty
+pracovních míst (změřeno: Boeri a Brücker 2011). Proto německá hodnota v letech 2008–2013 klesla ze 107,4 % na 102,9 %
+(data projektu). Polepšení v letech 2000–2004 se zase časově kryje s tím, že Španělsko tehdy rychle přibíralo pracovníky,
+ze 16,7 milionu v roce 2000 na 19,0 milionu v roce 2004, a podobně v letech 2013–2019 ze 17,9 na 20,5 milionu, zatímco
+v Německu pracujících v letech 2000–2004 mírně ubylo, ze 40,0 na 39,4 milionu (Eurostat, přepočet projektu); španělský výkon
+na pracujícího proto rostl pomalu, je to ale jen časová souvislost.
+
+**Na hlavu se odpracuje stále méně hodin.** Kolo měří výkon na pracujícího, ne na hodinu. Německý pracující odpracoval
+v roce 1996 v průměru 1 515 hodin a v roce 2024 1 345 hodin, o 11 % méně, španělský 1 740 a 1 642 hodin, o 6 % méně
+(Eurostat, přepočet projektu). Za hodinu práce vytvořilo Německo v roce 1996 124 % a v roce 2024 128 % toho, co Španělsko
+(můj přepočet z dat Eurostatu), takže za hodinu za středem ligy nezaostalo, na pracujícího ano. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* proti Španělsku to platí i ve stálých cenách, proti středu ligy ne: za hodinu vzrostl německý výkon v letech 1996–2024 asi o 30 %, střed ligy asi o 45 % (viz opravu ve zkratce). Pracujících přibylo
+z 38,1 milionu (1996) na 46,0 milionu (2024), o 21 %, odpracovaných hodin ale jen o 7 % (Eurostat, přepočet projektu).
+Evropská komise uvádí, že velký sektor nízkých mezd táhnou pobídky v sociálních dávkách a okrajové částečné úvazky
+(posoudila Evropská komise 2026), a Mezinárodní měnový fond zaznamenává, že částečných úvazků dál přibývá (Mezinárodní
+měnový fond 2026). K velkému přírůstku pracujících přispěla i reforma podpor v nezaměstnanosti z roku 2005 (takzvaná Hartz
+IV), které model trhu práce připisuje 2,1 procentního bodu z poklesu nezaměstnanosti z 12 % (2005) na 5 % (2019)
+(změřeno: Hochmuth a kol. 2021, model odhadnutý na datech průzkumu volných míst). Že reforma snížila výkon na pracujícího
+tím, že do práce přivedla méně produktivní a kratší úvazky, nikdo nezměřil; je to můj úsudek.
+
+**Pomalý růst kolem roku 2000 a mzdová umírněnost.** V letech 1998–2005 rostla německá ekonomika jen asi o 1,2 % ročně
+a nezaměstnanost stoupla z 9,2 % na 11,1 % (Dustmann a kol. 2014). Odbory tehdy přistoupily na mírný růst mezd a do
+odvětvových smluv přibyly doložky, které firmám v potížích dovolily odchýlit se od smluvních mezd a pracovní doby; podle
+Institutu pro výzkum trhu práce (IAB) to přispělo k růstu produktivity a obnově konkurenceschopnosti (posoudil IAB 2026)
+a Dustmann a kol. pružnost německých institucí trhu práce považují za hlavní důvod hospodářského úspěchu Německa v desetiletí
+před rokem 2014 (posoudili Dustmann a kol. 2014).
+
+**Po roce 2019 energetický šok a útlum průmyslu.** Energetický šok z poloviny roku 2022 a rychlé zvýšení úroků přinesly dva
+roky poklesu ekonomiky (2023 a 2024); dopady podle Mezinárodního měnového fondu zesílil slabý základní růst produktivity,
+zčásti kvůli dlouho odkládaným strukturálním reformám (posoudil Mezinárodní měnový fond 2026). Evropská komise mezi
+příčinami ztráty konkurenceschopnosti jmenuje slábnoucí technologický náskok, nedostatek kvalifikovaných pracovníků a vysoké
+mzdové náklady a ceny energií a uvádí, že soukromé investice klesly do roku 2025 pod úroveň roku 2015 (posoudila Evropská
+komise 2026). Podíl zpracovatelského průmyslu na přidané hodnotě klesl z 22,9 % (2016) na 20,8 % (2023) (Evropská komise
+2024) a Rada hospodářských expertů upozorňuje, že úbytek průmyslu a růst málo produktivních služeb tlumí růst a zvyšuje podíl
+hůře placených míst (posoudila Rada hospodářských expertů 2025). Výkon vůči středu ligy klesl ze 107,3 % (2019) na 104,8 %
+(2024) (data projektu).
+
+**Investice a výzkum.** Německo investovalo v letech 1996–2024 v průměru 20,5 % HDP, méně než střední země ligy s 22,8 %
+(Eurostat, data projektu), výdaje na výzkum a vývoj ale zvýšilo z 2,14 % HDP (1996) na 3,12 % (2024) (Eurostat, data
+projektu). Proč vyšší výdaje na výzkum nezrychlily růst výkonu, zdroje nevysvětlují; Komise jen uvádí, že růst produktivity
+práce i celkové efektivity výroby v posledních letech zpomaluje (Evropská komise 2024).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Z toho, co firma za zaměstnance s průměrnou mzdou zaplatí, odvedl stát v roce 2024 46,86 % (výpočet projektu při skutečné
+průměrné mzdě 53 791 eur; střední země ligy 41,2 %). Systém stojí na sociálním pojištění placeném z mezd: součet sazeb
+důchodového (18,6 %), zdravotního (průměrně 16,3 % včetně dodatkového příspěvku), pečovatelského (3,4 %) a pojištění
+v nezaměstnanosti (2,6 %) činil v roce 2024 40,9 % hrubé mzdy a platí ho napůl zaměstnanec a napůl zaměstnavatel (Institut
+Arbeit und Qualifikation 2026). Při průměrné mzdě zaplatí zaměstnanec 11 323 eur pojistného a 8 139 eur daně z příjmu,
+solidární příplatek už neplatí (výpočet projektu podle pravidel roku 2024). Podle OECD (Organizace pro hospodářskou
+spolupráci a rozvoj) tvořila v roce 2024 daň z příjmu 16,8 % hrubé mzdy, pojistné zaměstnance 20,7 % a pojistné
+zaměstnavatele 20,1 % (OECD Taxing Wages, data projektu). Evropská komise píše, že německý daňový mix stojí hlavně na
+zdanění práce, které je vysoké u všech výší mezd (posoudila Evropská komise 2026).
+
+**Test protipříkladem.** Že pojistné platí napůl zaměstnavatel, výši zátěže nevysvětluje: kdyby všechno platil zaměstnanec,
+byla by vyšší hrubá mzda, ale zátěž vůči nákladům práce stejná; je to jen účetní rozdělení. Skutečnou příčinou je, že
+důchody, zdravotní a dlouhodobá péče a podpory v nezaměstnanosti se platí převážně z pojistného z mezd (Institut Arbeit und
+Qualifikation 2026), u průměrné mzdy z celé její výše (strop zdravotního pojištění je například 62 100 eur, výpočet
+projektu). Kdyby se větší část platila z jiných daní, zátěž práce by byla nižší; naznačuje to i to, že stát v letech
+1990–2000 výrazně zvýšil příspěvek z rozpočtu do důchodového pojištění a sazba se pak udržela mezi 19 a 20 % (Institut
+Arbeit und Qualifikation 2026; že to sazbu udrželo, je můj úsudek).
+
+**Vývoj od roku 2000.** Zátěž svobodného s průměrnou mzdou klesla podle OECD z 52,9 % nákladů práce (2000) na 51,3 %
+(2008), 49,3 % (2013 i 2019) a 47,9 % (2024) (data projektu z OECD). Klesla hlavně daň z příjmu, jejíž průměrná sazba se
+snížila z 22,7 % hrubé mzdy (2000) na 16,8 % (2024) (OECD Taxing Wages, data projektu):
+- daňová reforma v letech 2001–2005 snížila nejnižší sazbu z 22,9 % na 15 % a nejvyšší z 51 % na 42 % (Spolkové
+  ministerstvo financí), průměrná sazba pak klesla z 22,7 % (2000) na 20,8 % (2005), celková zátěž ale jen z 52,9 % na
+  52,1 %, protože pojistné zaměstnance vzrostlo z 20,5 % na 21,4 % hrubé mzdy (OECD Taxing Wages; jen časová souvislost);
+- v roce 2010 klesla průměrná sazba daně podle OECD z 20,6 % na 18,7 % (OECD Taxing Wages); příčinu jsem v otevřeném zdroji
+  neověřil;
+- od roku 2021 přestalo solidární příplatek platit asi 90 % poplatníků a průměrná sazba klesla z 18,5 % na 17,6 %
+  (Regierungspräsidium Kassel; OECD Taxing Wages).
+
+Pojistné se naopak skoro nezměnilo: součet sazeb byl 40,9 % hrubé mzdy v roce 1996 i v roce 2024. Mezitím vystoupal na
+42,1 % (1997–1998), po snížení pojištění v nezaměstnanosti ze 6,5 % na 2,8 % v letech 2007–2009 klesl na 39,6 % a pak ho
+zvedalo zdravotní a pečovatelské pojištění (Institut Arbeit und Qualifikation 2026). Snížení sazby pojištění
+v nezaměstnanosti umožnil podle téhož ústavu hlavně úbytek nezaměstnaných, ale také škrty v podporách (posoudil Institut
+Arbeit und Qualifikation 2026), a důchodová reforma z roku 2001 udržela sazbu důchodového pojištění díky nižší budoucí
+úrovni důchodů (posoudil Institut Arbeit und Qualifikation 2026). Malá část poklesu v letech 2023–2024 v datech OECD je jen
+měření: OECD počítá s tím, že 750 eur průměrné mzdy roku 2024 (1 000 eur v roce 2023) tvořila inflační prémie bez daní
+a odvodů, kterou náš výpočet jako dobrovolnou platbu nezapočítává (ověření projektu, `data/overeni_cista_mzda_2024.md`).
+V roce 2025, tedy po sledovaném roce, se zdravotní a pečovatelské pojištění zvýšilo o 1,4 procentního bodu a součet sazeb
+přesáhl 42 % hrubé mzdy (Mezinárodní měnový fond 2026). Změnu toho, kdo odvody formálně platí, rešerše ekonomů u Německa
+nenašla.
+
+## 4. Další faktory země
+
+**Minimální mzda.** Zákonná minimální mzda platí od 1. ledna 2015, zpočátku 8,50 eura za hodinu, a v říjnu 2022 ji zákon
+zvýšil z 10,45 na 12 eur (Komise pro minimální mzdu 2025). Při zavedení zasáhla asi 15 % zaměstnanců, zvedla mzdy bez
+poklesu zaměstnanosti a přesunula nízko placené pracovníky do větších, lépe platících a produktivnějších podniků, což
+vysvětluje až 17 % zvýšení mezd (změřeno: Dustmann a kol. 2022, srovnání podle toho, jak silně byli zasaženi lidé
+a regiony). Zvýšení na 12 eur zvedlo hodinové mzdy zasažených asi o 6 %, celkovou měsíční mzdovou sumu ekonomiky ale jen asi
+o 0,34 % (změřeno, podle Komise pro minimální mzdu 2025). Na průměrnou mzdu má tedy minimální mzda malý vliv, na spodek mezd
+velký.
+
+**Slábnoucí kolektivní smlouvy.** Kolektivní smlouvy kryly v roce 2000 68 % zaměstnanců a v roce 2023 49 %, v soukromém
+sektoru jen 35 %; smlouvy obvykle mzdy zvyšují a snižují rozdíly v mzdách uvnitř odvětví a firem (IAB 2026). Reálné mzdy
+na spodku rozdělení výrazně klesaly až do roku 2010 (IAB 2026). O kolik je kvůli slábnutí smluv nižší průměrná mzda, nikdo
+nevyčíslil, příčina tedy není doložena.
+
+**Sektor nízkých mezd.** Podíl pracovníků s nízkou mzdou klesl z 22,5 % (2014) na 19 % (2022), je ale vyšší než v EU
+s 14,7 % (Evropská komise 2026).
+
+**Přistěhovalci.** Od 1. května 2011 mohou v Německu volně pracovat občané osmi středo- a východoevropských zemí EU
+a v prvních pěti měsících jich přišlo 41 400, o 51 % víc než rok předtím (IAB 2011). Německá spolková banka píše, že
+v desetiletí před pandemií rostly mzdy slaběji, než by odpovídalo vysoké poptávce po práci, protože silný příliv pracovních
+přistěhovalců bránil vyššímu růstu mezd (posoudila Německá spolková banka 2024); o kolik, neuvádí.
+
+**Východ a západ.** Rozdíly v produktivitě mezi východními a západními regiony se v letech 2014–2024 zmenšily, ale zůstávají
+významné (Evropská komise 2026).
+
+**Ceny.** Cenová hladina spotřeby byla v Německu v roce 2024 na 109,3 % průměru EU (Eurostat, data projektu), takže tatáž
+mzda v eurech koupí asi o 8 % méně než při průměrných cenách EU (můj přepočet).
+
+**Měření: částečné úvazky.** Mzda v ukazateli je přepočtená na plný úvazek, výkon v kolech se ale počítá na hlavu
+pracujícího včetně částečných úvazků. V zemi, kde částečných úvazků přibývá, proto výkon na pracujícího roste pomaleji než
+to, co vytvoří hodina práce, a mzda na plný úvazek může vycházet vysoko vůči výkonu na pracujícího (můj úsudek z dat
+Eurostatu v oddílu 2).
+
+## 5. Co říkají ekonomové
+
+Evropská komise (2026) shrnuje daně a odvody větou: „The labour tax burden is considerably higher and less progressive than
+the EU average.“ Německá spolková banka (2024) k desetiletí před pandemií píše: „Die kräftige arbeitsmarktorientierte
+Zuwanderung wirkte stärkeren Lohnzuwächsen entgegen.“ Mezinárodní měnový fond (2026) vysvětluje slabý růst posledních let
+tím, že odráží „lackluster underlying productivity growth, in part due to long-stalled structural reforms“.
+
+## 6. Zdroje
+
+**Data projektu**
+- `data/kontext_kroky.json`: výkon na pracujícího vůči střední zemi ligy 1996–2024 (Eurostat; HDP v kupní síle na
+  pracujícího), násobek růstu, zátěž daní a odvodů 2024 a řada OECD.
+- `data/mereni.json` a `data/raw_faktory/`: kapitál na pracovníka 1996 (Penn World Table 11.0), investice a výzkum (Eurostat),
+  zaměstnanost a hodiny. Eurostat zaměstnanost: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995 ;
+  hodiny: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_HW&nace_r2=TOTAL&na_item=EMP_DC&sinceTimePeriod=1995 ;
+  HDP v kupní síle: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
+  cenové hladiny: Eurostat `prc_ppp_ind_1` (skutečná individuální spotřeba, EU27 = 100).
+- `data/raw_krok1/oecd_taxing_wages.json`: OECD Taxing Wages 2000–2025, https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/all?startPeriod=2000&endPeriod=2025&format=csvfilewithlabels
+- `data/overeni_cista_mzda_2024.md`: výpočet čisté mzdy a zátěže podle pravidel 2024; `LIST_UKAZATELE.md` a
+  `KOLA_TABULKA.md`: střední hodnoty ligy (zátěž 41,2 %, násobek růstu 1,17).
+- `studie/UCINKY.md`: Campos, Coricelli, Moretti (2019), účinek vstupu do EU.
+
+**Instituce a studie**
+- Burda, M., Hunt, J.: From Reunification to Economic Integration: Productivity and the Labor Market in Eastern Germany,
+  Brookings Papers on Economic Activity 2:2001, https://www.brookings.edu/wp-content/uploads/2001/06/2001b_bpea_burda.pdf
+- Evropská komise: 2024 Country Report – Germany, SWD(2024) 605, https://economy-finance.ec.europa.eu/document/download/0826d6c6-4c97-44be-8b9e-1a0b5c4361c8_en?filename=SWD_2024_605_1_EN_Germany.pdf
+- Evropská komise: 2026 Country Report – Germany, SWD(2026) 205, https://economy-finance.ec.europa.eu/document/download/1ba59e9c-048c-49a1-a97f-cc359b74b278_en?filename=DE_SWD_2026_205_1_EN_autre_document_travail_service_part1_v3.pdf
+- Mezinárodní měnový fond: Germany: 2025 Article IV Consultation, Country Report No. 26/36, únor 2026, https://www.imf.org/-/media/files/publications/cr/2026/english/1deuea2026001.pdf
+- Deutsche Bundesbank (Německá spolková banka): Lohnentwicklung in Deutschland, Monatsbericht Oktober 2024, https://publikationen.bundesbank.de/caas/v1/media/941666/localSettings%2CreferenceDoc/dd9304b80ac36d870b1496654caa642b
+- Bellmann, Dustmann, Fitzenberger: Collective Bargaining in Germany: Trends and Challenges, IAB-Discussion Paper 4/2026, https://doku.iab.de/discussionpapers/2026/dp0426.pdf
+- Dustmann, Fitzenberger, Schönberg, Spitz-Oener: From Sick Man of Europe to Economic Superstar, Journal of Economic Perspectives 28(1), 2014, https://www.aeaweb.org/articles?id=10.1257/jep.28.1.167
+- Hochmuth, Kohlbrecher, Merkl, Gartner: Hartz IV and the Decline of German Unemployment: A Macroeconomic Evaluation, IHS Working Paper 31, 2021, https://irihs.ihs.ac.at/id/eprint/5705/
+- Boeri, T., Brücker, H.: Short-time work benefits revisited: some lessons from the Great Recession, Economic Policy 26(68), 2011, https://researchonline.lse.ac.uk/id/eprint/57237
+- Hospido, L., Moreno-Galbis, E.: The Spanish Productivity Puzzle in the Great Recession, IZA Discussion Paper 8891, 2015, https://www.iza.org/publications/dp/8891/the-spanish-productivity-puzzle-in-the-great-recession
+- Sachverständigenrat (Rada hospodářských expertů): Nationaler Produktivitätsbericht 2025, https://www.sachverstaendigenrat-wirtschaft.de/fileadmin/dateiablage/gutachten/fg2025/2025_Nationaler_Produktivitaetsbericht.pdf
+- Institut Arbeit und Qualifikation Univerzity Duisburg-Essen: Beitragssätze in den Zweigen der Sozialversicherung 1995–2026 (abbII8), stav 27. 1. 2026, https://www.sozialpolitik-aktuell.de/files/sozialpolitik-aktuell/_Politikfelder/Finanzierung/Datensammlung/PDF-Dateien/abbII8.pdf
+- Spolkové ministerstvo financí: Tarifhistorie (sazebník daně z příjmu 1958–2025), https://www.bmf-steuerrechner.de/javax.faces.resource/2025_10_14_Tarifhistorie_Steuerrechner.pdf.xhtml
+- Regierungspräsidium Kassel: Teilabschaffung des Solidaritätszuschlags ab 01.01.2021, https://rp-kassel.hessen.de/sites/rp-kassel.hessen.de/files/2022-07/teilabschaffung_des_solidaritaetszuschlags_ab_202101_0_1.pdf
+- Mindestlohnkommission (Komise pro minimální mzdu): Fünfter Bericht zu den Auswirkungen des gesetzlichen Mindestlohns, 2025, https://www.sozialpolitik-aktuell.de/files/sozialpolitik-aktuell/_Politikfelder/Einkommen-Armut/Dokumente/2025_06_Mindestlohnkommission_Bericht2025.pdf
+- Dustmann, Lindner, Schönberg, Umkehrer, vom Berge: Reallocation Effects of the Minimum Wage, Quarterly Journal of Economics 137(1), 2022, https://ideas.repec.org/a/oup/qjecon/v137y2022i1p267-328..html
+- Institut für Arbeitsmarkt- und Berufsforschung (IAB): Kurzbericht 10/2011, https://doku.iab.de/kurzber/2011/kb1011.pdf a Kurzbericht 24/2011, https://doku.iab.de/kurzber/2011/kb2411.pdf
+
+
+# Švýcarsko: proč má v kolech takové hodnoty
+
+*Podklad pro výklad hodnot v kolech průměrné čisté mzdy (rok 2024), sestavený 17. 10. 2026. Čísla výkonu a zátěže jsou
+z dat projektu (`data/kontext_kroky.json`, `data/mereni.json`, `data/overeni_cista_mzda_2024.md`), výroky ekonomů
+z `ekonomove/CH.md`, síla účinků ze `studie/UCINKY.md`, ostatní z otevřených oficiálních a odborných zdrojů v oddílu 6.
+Kroky vlád, firem a institucí s doklady jsou v `data/kroky_zemi/CH.json`. „Můj přepočet“ znamená výpočet z uvedených dat,
+„můj úsudek“ moji úvahu bez přímého dokladu.*
+
+## Ve zkratce
+
+Švýcarsko bylo bohaté dávno před rokem 1996 a jeho vysoký výkon táhnou velké nadnárodní firmy ve farmacii, strojírenství,
+financích a obchodu. Výkon na pracujícího vůči střední zemi ligy se za sledované období mírně zvětšil, ale mnohem méně než
+u typické země ligy, protože bohatá země nemá z čeho dohánět, protože Švýcaři odpracují na hlavu méně hodin a protože po
+roce 2008 krize a silný frank brzdily produktivitu; po roce 2019 si polepšilo díky farmacii. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl švýcarský výkon na pracujícího mezi rokem 1996 a průměrem let 2020–2024 asi o 24 %, střed ligy asi o 29 %; vůči středu ligy se tedy reálně nezvětšil, ale mírně zmenšil (asi o 4 %), polepšil si jen proti Španělsku. Zátěž je nižší než v Německu
+a Rakousku, i když náš výpočet do ní započítává povinné zdravotní pojištění a povinné spoření v penzijních kasách, které
+OECD mezi daně a odvody nepočítá; bez nich by podle OECD činila 23 % místo 36,5 %.
+
+## 1. Proč takový výkon na začátku (1996)
+
+V roce 1996 vytvořil pracující ve Švýcarsku 128,9 % toho, co pracující ve střední zemi ligy (data projektu z Eurostatu).
+Švýcarsko bylo bohaté už před válkou: v letech 1929–1938 mělo HDP na obyvatele asi 9 800 mezinárodních dolarů z roku 2011,
+střední země ligy asi 4 700 (Maddison Project Database, data projektu), a v roce 1996 mělo na pracovníka asi 1,41násobek
+kapitálu střední země ligy (Penn World Table 11.0, data projektu). Vysoký výkon táhnou velké nadnárodní firmy, které tvoří
+přes 85 % přidané hodnoty, zatímco malé firmy a služby zaostávají (posoudil Mezinárodní měnový fond 2025), a zpracovatelský
+průmysl má po Irsku nejvyšší produktivitu práce v OECD už přes 20 let (Spolková rada 2024). Rostlo ale dlouho pomalu: od roku
+1973 patřilo k zemím OECD s nejnižším růstem HDP a v letech 1980–1996 rostlo v průměru jen o 1,25 % ročně (Spolková daňová
+správa 2003 podle údajů OECD). Za hodinu práce vytvořil Švýcar v roce 1996 asi 123 % toho, co Španěl, na pracujícího asi
+120 % (můj přepočet z dat Eurostatu).
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon na pracujícího vůči střední zemi ligy se ve Švýcarsku zvětšil na 1,044násobek stavu z roku 1996 (průměr let 2020–2024
+asi 135 % střední země je můj přepočet z tohoto násobku), zatímco typická země ligy si polepšila na 1,17násobek (data
+projektu). *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* ve stálých cenách vzrostl švýcarský výkon na pracujícího ve stejném období asi o 24 % a střed ligy asi o 29 %, takže reálně se poměr ke středu ligy nezvětšil, ale mírně zmenšil. Průběh: 126,7 % (2000), 123,6 % (2004), 130,3 % (2008), 126,3 % (2013), 124,8 % (2019) a 131,4 % (2024) (data
+projektu). Švýcarsko ztrácelo v letech 1996–2004 a 2008–2019 a polepšilo si v letech 2004–2008 a 2019–2024.
+
+**Bohatá země nemá z čeho dohánět.** Střed ligy táhnou nahoru východní země, které dohánějí z nízkého základu (například
+Rumunsko zvětšilo výkon vůči střední zemi 3,17krát, Polsko 1,76krát; data projektu). Proti střední zemi ligy, kterou je od
+roku 2000 Španělsko, si Švýcarsko polepšilo, z výkonu 120 % španělského v roce 1996 na 131 % v roce 2024 (můj přepočet z dat
+Eurostatu); pomalé je tedy jen ve srovnání se zeměmi, které dohánějí. *Oprava koordinátora 18. 10. 2026 (kontrola v reálných cenách, `REALNE_CENY.md`):* proti Španělsku si Švýcarsko polepšilo i ve stálých cenách (v letech 1996–2024 asi +26 % proti +10 %), pomalé ale reálně nebylo jen proti dohánějícím zemím: mezi rokem 1996 a průměrem let 2020–2024 vzrostl výkon na pracujícího ve Švýcarsku asi o 24 %, ve Švédsku asi o 39 % a v Norsku asi o 48 %. Že bohatá země takto dohánět nemůže, je můj úsudek
+z dat ligy.
+
+**1996–2004: pokračující pomalý růst.** Zpráva o růstu spolkového ministerstva hospodářství z roku 2002 označila za hlavní
+důvod podprůměrného švýcarského růstu chráněný domácí trh (posoudilo spolkové ministerstvo hospodářství 2002, podle Spolkové
+daňové správy 2003). Výkon vůči středu ligy v té době klesl ze 128,9 % na 123,6 % (data projektu; s diagnózou zprávy
+jen časová souvislost).
+
+**2004–2008: farmacie a otevření trhu práce.** Chemický a farmaceutický průmysl zvyšoval v letech 2004–2022 přidanou hodnotu
+v průměru o 9,4 % ročně a připadá na něj asi 24 % růstu švýcarského HDP za toto období (posoudila Spolková rada 2024). Od roku
+2002 platí dohoda s EU o volném pohybu osob a v roce 2007 se úplně uvolnilo zaměstnávání přeshraničních pracovníků (Státní
+sekretariát pro hospodářství 2026). Volný přístup přeshraničních pracovníků zvýšil v příhraničních regionech velikost,
+produktivitu a inovace firem náročných na kvalifikaci a mzdy vysokoškolsky vzdělaných domácích vzrostly (změřeno: Beerli,
+Ruffner, Siegenthaler a Peri 2021, srovnání regionů blízko hranice a dál od ní). Výkon vůči středu ligy vzrostl ze 123,6 %
+(2004) na 130,3 % (2008) (data projektu).
+
+**2008–2019: krize a silný frank.** Produktivita práce mezi lety 2008 a 2012 klesla kvůli souběhu světové krize,
+strukturálních změn, silné měny a rozhodnutí firem udržet pracovní místa na úkor krátkodobé efektivity (posoudil Mezinárodní
+měnový fond 2025); počet pracujících přitom vzrostl ze 4,45 milionu (2008) na 4,68 milionu (2012) (Eurostat, přepočet
+projektu). Když národní banka v lednu 2015 zrušila minimální kurz 1,20 franku za euro, který držela od září 2011, frank
+okamžitě posílil asi o 10 % a zaměstnanost v průměrné průmyslové firmě byla o dva roky později o 4 % nižší než u srovnatelných
+rakouských firem (změřeno: Kaufmann a Renkin 2017, srovnání s kontrolní skupinou). Spolková rada naproti tomu hodnotí růst
+produktivity práce v letech 2011–2022, asi 1 % ročně, jako v mezinárodním srovnání poměrně vysoký (posoudila Spolková rada
+2024); zdroje se tu rozcházejí. Výkon vůči středu ligy klesl ze 130,3 % (2008) na 124,8 % (2019) (data projektu).
+
+**2019–2024: farmacie v pandemii.** Švýcarská ekonomika prošla pandemií poměrně dobře mimo jiné díky výhodné skladbě oborů se
+silným farmaceutickým průmyslem a malou vahou služeb založených na osobním kontaktu a turismu (posoudila Spolková rada 2024).
+Výkon vůči středu ligy vzrostl ze 124,8 % (2019) na 131,4 % (2024) (data projektu).
+
+**Na hlavu se odpracuje méně hodin.** Švýcarský pracující odpracoval v roce 1996 v průměru 1 697 hodin a v roce 2024
+1 519 hodin, o 10 % méně, španělský o 6 % méně (Eurostat, přepočet projektu). Za hodinu práce vytvářelo Švýcarsko v roce
+1996 asi 123 % a v roce 2024 asi 142 % toho, co Španělsko (můj přepočet z dat Eurostatu). Spolková rada píše, že pokles
+počtu hodin od roku 2000 jde skoro úplně na vrub přibývajících částečných úvazků a že zisky z produktivity šly v posledních
+letech zčásti do kratší pracovní doby; pracovní doba na pracujícího klesla v letech 2010–2022 o 5,2 % (posoudila Spolková
+rada 2024). Přistěhovalectví přidávalo za posledních 15 let asi 0,8 % ročně k objemu odpracované práce (Státní sekretariát
+pro hospodářství 2026).
+
+**Investice a výzkum.** Švýcarsko investovalo v letech 1996–2024 v průměru 26,7 % HDP, víc než střední země ligy s 22,8 %
+(Eurostat, data projektu), a výdaje na výzkum a vývoj zvýšilo z 2,34 % HDP (1996) na 3,10 % (2023) (Eurostat, data projektu).
+
+**Měření.** Vysokou měřenou produktivitu farmacie mohou zčásti zvyšovat zisky, které nadnárodní firmy vykazují ve Švýcarsku
+kvůli nízkým daním, i zbytek zpracovatelského průmyslu má ale mezinárodně velmi vysokou produktivitu (posoudila Spolková
+rada 2024).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Z toho, co firma za zaměstnance s průměrnou mzdou zaplatí, odvedl v roce 2024 stát, zdravotní pojišťovna a penzijní kasa
+dohromady 36,49 % (výpočet projektu; střední země ligy 41,2 %). Podle OECD (Organizace pro hospodářskou spolupráci a rozvoj)
+činila zátěž jen 23,0 % (OECD Taxing Wages, data projektu), protože OECD nepočítá povinné pojistné na zdravotní pojištění ani
+povinné příspěvky do penzijní kasy zaměstnavatele (druhý pilíř). Náš výpočet je odečítá stejně, jako je u zemí EU odečítá
+Eurostat: při průměrné hrubé mzdě 97 727 franků zbývá podle OECD 80 321 franků (82,2 %), po odečtení průměrného pojistného
+dospělého 5 120 franků a příspěvku do penzijní kasy 5 602 franků 69 599 franků (71,2 %) (výpočet projektu). Spolková rada
+sama upozorňuje, že celkové daně a odvody ve Švýcarsku, asi 28 % HDP proti 34 % v průměru OECD, nezahrnují příspěvky do
+penzijních kas ani pojistné na povinné zdravotní pojištění, které se v mnoha zemích platí přes daně a odvody, a mezinárodní
+srovnání je proto nutné brát opatrně (posoudila Spolková rada 2024).
+
+**Jak je systém postavený.** Státní starobní, invalidní a výdělkové pojištění stojí od roku 2020 10,55 % mzdy, napůl za
+zaměstnance a napůl za zaměstnavatele (Informační středisko státního důchodového pojištění 2020); podle OECD činilo v roce
+2024 pojistné zaměstnance i zaměstnavatele po 6,4 % hrubé mzdy a daň z příjmu 11,6 % (OECD Taxing Wages, data projektu).
+Zdravotní pojištění se platí jako pojistné na hlavu, stejné bez ohledu na příjem, na jehož snížení spolek a kantony
+domácnostem přispívají (Spolkový statistický úřad). Druhý pilíř je kapitálové spoření v penzijní kase, do které jsou
+zaměstnanci přihlášeni povinně nebo dobrovolně a kterou stát podporuje jen tím, že příspěvky a úspory nedaní (Spolkový úřad
+pro sociální pojištění).
+
+**Proč je zátěž nižší než v sousedních zemích i se zdravotním pojištěním a penzí.** Daň z příjmu a pojistné do státního
+průběžného pojištění jsou nízké (viz čísla OECD výše) a Spolková rada to připisuje zdravým veřejným financím a efektivnímu
+státu (posoudila Spolková rada 2024). Pojistné na zdravotní pojištění je navíc pevná částka na hlavu, takže při vysoké
+průměrné mzdě tvoří jen asi 5,2 % hrubé mzdy (můj přepočet z dat projektu: 5 120 z 97 727 franků).
+
+**Test protipříkladem.** Že se zdravotní pojištění a penze platí mimo daně, zátěž v našem měření nesnižuje: obojí je v ní
+započítané, takže by vyšla stejně, kdyby se tyto platby nazývaly daní; jde o účetní zařazení, ne o příčinu. Stejně tak
+rozdělení pojistného napůl mezi zaměstnance a zaměstnavatele nic nevysvětluje. Příčinou nižší zátěže je nižší celková výše
+povinných plateb, hlavně nízká daň z příjmu a malé státní průběžné pojištění.
+
+**Vývoj od roku 2000.** Řada OECD se skoro nehýbe: 22,9 % (2000), 21,9 % (2008), 22,2 % (2013), 22,3 % (2019) a 23,0 %
+(2024) (data projektu z OECD). Zvýšení pojistného do státního starobního pojištění z 8,4 % na 8,7 % mzdy od roku 2020,
+schválené v referendu v roce 2019 (Informační středisko státního důchodového pojištění 2020), zvedlo pojistné zaměstnance
+podle OECD z 6,2 % na 6,4 % hrubé mzdy a zátěž z 22,3 % (2019) na 22,7 % (2020) a 23,1 % (2021) (OECD Taxing Wages).
+Mimo řadu OECD ale rychle rostlo zdravotní pojistné: index pojistného základního pojištění Spolkového statistického úřadu
+dosáhl v roce 2025 270,4 bodu (1999 = 100), tedy průměrně asi 3,9 % ročně (můj přepočet), a střední pojistné vzrostlo
+z asi 1 539 franků ročně v roce 1996 na 3 788 franků v roce 2021, o 146 % (Bernská vysoká škola aplikovaných věd 2023 podle
+údajů Spolkového statistického úřadu), kdežto nominální mzdy rostly v letech 2010–2025 asi o 0,9 % ročně (Státní sekretariát
+pro hospodářství 2026). Celková zátěž v našem pojetí proto od roku 2000 nejspíš vzrostla; časovou řadu našeho měření nemáme,
+je to můj úsudek.
+
+## 4. Další faktory země
+
+**Ceny.** Cenová hladina spotřeby byla ve Švýcarsku v roce 2024 na 181,8 % průměru EU (Eurostat, data projektu), takže tatáž
+mzda převedená kurzem koupí asi o 45 % méně než při průměrných cenách EU (můj přepočet). Spolková daňová správa uvádí vedle
+závěru zprávy o růstu z roku 2002 o chráněném domácím trhu, že za stejné zboží se ve Švýcarsku platí výrazně víc, například
+za hamburger Big Mac o 69 % víc než v USA (Spolková daňová správa 2003); že chráněný trh vysvětluje celou cenovou hladinu,
+doloženo není.
+
+**Přistěhovalci a jejich složení.** Čistá imigrace cizinců činila od roku 2002 v průměru 71 300 osob ročně, 61 % z nich
+přišlo ze zemí EU a ESVO a 53 % pracovníků přišlých podle dohody s EU má terciární vzdělání proti 45 % u Švýcarů (Státní
+sekretariát pro hospodářství 2026). Když přistěhovalci patří mezi dobře placené odborníky, zvedají průměrnou mzdu už svým
+složením (podle rešerše studií projektu jde o měření skladby, ne o účinek na mzdy). Riziko tlaku na mzdy vidí Státní
+sekretariát hlavně u přeshraničních pracovníků v Ticinu a v Jurském oblouku (posoudil Státní sekretariát pro hospodářství
+2026).
+
+**Mzdy rostou pomalu a se stálým podílem na výkonu.** Střední hrubá mzda na plný úvazek vzrostla z 6 207 franků měsíčně
+(2010) na 7 024 franků (2024), o 13,2 %, a podíl nízkých mezd se skoro nezměnil (10,8 % v roce 2024) (Státní sekretariát pro
+hospodářství 2026). Reálné mzdy vzrostly v letech 2010–2022 o 5,6 %, produktivita práce od roku 2010 o 13 %, podíl
+zaměstnanců na HDP ale zůstal stálý, asi 58 %, protože zisky z produktivity šly zčásti do kratší pracovní doby (posoudila
+Spolková rada 2024).
+
+## 5. Co říkají ekonomové
+
+Mezinárodní měnový fond (2025) shrnuje zdroj švýcarského výkonu: „Multinational enterprises drive average productivity
+upwards, while small firms and the services sector lag.“ Spolková rada (2024) k pomalému růstu mezd na pracujícího píše:
+„Vielmehr flossen die Produktivitätsgewinne in den letzten Jahren in eine weitere Verkürzung der durchschnittlichen
+Arbeitszeit pro erwerbstätige Person.“ Státní sekretariát pro hospodářství (2026) dodává: „Entsprechend hängt das
+Wirtschaftswachstum der Schweiz bereits heute in erster Linie von Zuwanderung und Produktivitätsgewinnen ab.“
+
+## 6. Zdroje
+
+**Data projektu**
+- `data/kontext_kroky.json`: výkon na pracujícího vůči střední zemi ligy 1996–2024 (Eurostat; HDP v kupní síle na
+  pracujícího), násobek růstu, zátěž daní, odvodů a povinných plateb 2024 a řada OECD.
+- `data/mereni.json` a `data/raw_faktory/`: předválečný HDP na obyvatele (Maddison Project Database 2023), kapitál na
+  pracovníka 1996 (Penn World Table 11.0), investice a výzkum (Eurostat), zaměstnanost a hodiny. Eurostat zaměstnanost:
+  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995 ;
+  hodiny: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_HW&nace_r2=TOTAL&na_item=EMP_DC&sinceTimePeriod=1995 ;
+  HDP v kupní síle: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
+  cenové hladiny: Eurostat `prc_ppp_ind_1` (skutečná individuální spotřeba, EU27 = 100).
+- `data/raw_krok1/oecd_taxing_wages.json`: OECD Taxing Wages 2000–2025, https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,/all?startPeriod=2000&endPeriod=2025&format=csvfilewithlabels
+- `data/overeni_cista_mzda_2024.md`: čistá mzda po povinném zdravotním pojištění a příspěvku do penzijní kasy (pojistné
+  podle Spolkového úřadu pro zdraví, https://www.priminfo.admin.ch/downloads/praemien_2024.pdf); `LIST_UKAZATELE.md`
+  a `KOLA_TABULKA.md`: střední hodnoty ligy (zátěž 41,2 %, násobek růstu 1,17).
+- `studie/UCINKY.md`: přistěhovalci a skladba průměrné mzdy.
+
+**Instituce a studie**
+- Mezinárodní měnový fond: Switzerland: Selected Issues, Country Report No. 25/264, září 2025, https://www.imf.org/-/media/files/publications/cr/2025/english/1cheea2025002-source-pdf.pdf
+- Spolková rada (švýcarská vláda): Lagebericht zur Schweizer Volkswirtschaft 2024, https://www.seco.admin.ch/dam/en/sd-web/Kls9FZQMBm5-/SECO-24-05-2024%20-Lagebericht_Schweizer_Volkswirtschaft-2024%20(1).pdf
+- Státní sekretariát pro hospodářství (SECO): 22. Bericht des Observatoriums zum Freizügigkeitsabkommen Schweiz – EU, 2026, https://www.seco.admin.ch/dam/de/sd-web/OApVoo89AUQX/22.%20Observatoriumsbericht%20zum%20FZA_SECO_2026_DE.pdf
+- Spolková daňová správa (Schaltegger, C. A.): Wachstumsschwäche der Schweiz: Ein Messproblem?, 2003, https://www.estv2.admin.ch/stp/notizen/stp-notizen-2003-wachstumschwaeche-schweiz-de.pdf
+- Beerli, Ruffner, Siegenthaler, Peri: The Abolition of Immigration Restrictions and the Performance of Firms and Workers:
+  Evidence from Switzerland, American Economic Review 111(3), 2021, https://www.aeaweb.org/articles?id=10.1257/aer.20181779
+- Kaufmann, D., Renkin, T.: Manufacturing prices and employment after the Swiss franc shock, SECO 2017, https://libra.unine.ch/handle/20.500.14713/29486
+- Švýcarská národní banka: tiskové zprávy z 6. 9. 2011 (minimální kurz 1,20 franku za euro), https://www.snb.ch/en/publications/communication/press-releases/2011/pre_20110906 a z 15. 1. 2015 (zrušení), https://www.snb.ch/en/publications/communication/press-releases/2015/pre_20150115
+- Spolkový statistický úřad: Krankenversicherungsprämien-Index 2025, tisková zpráva 21. 11. 2025, https://dam-api.bfs.admin.ch/hub/api/dam/assets/36292138/master ; Steckbrief Krankenversicherungsprämien-Index, https://dam-api.bfs.admin.ch/hub/api/dam/assets/35748312/master
+- Spolkový statistický úřad: Haushaltsbudgeterhebung (tabulka 2023), https://www.bfs.admin.ch/bfs/de/home/statistiken/wirtschaftliche-soziale-situation-bevoelkerung/einkommen-verbrauch-vermoegen/haushaltsbudget.html
+- Berner Fachhochschule (Bernská vysoká škola aplikovaných věd): Hohe Kosten = hohe Prämien, 23. 11. 2023, https://www.bfh.ch/de/aktuell/storys/krankenkassenpraemien-bealsten-schweizerinnen/
+- Informační středisko státního důchodového pojištění (AHV/IV): Merkblatt 1.2020 Änderungen auf 1. Januar 2020, https://ahv-iv.ch/p/1.2020.d
+- Spolkový úřad pro sociální pojištění: Berufliche Vorsorge (BVG) und 3. Säule – Übersicht, https://www.bsv.admin.ch/de/bvg-3-saeule
+
+
+# Francie: proč má v kolech takové hodnoty (průměrná čistá mzda 2024)
+
+> Podklad pro výklad hodnot kol v podkladu pro scénář regionu (zkouška návrhu skillu pro regiony), zpracováno
+> 17. 10. 2026. Výkon vůči střední zemi ligy, jeho růst a zátěž daní a odvodů jsou z kontextu projektu
+> (`data/kontext_kroky.json`: Eurostat; zátěž 2024 při skutečné francouzské mzdě; řada OECD). Střední zemí ligy bylo
+> v roce 1996 Norsko (jen pevninská ekonomika bez ropy) a od roku 2000 je to v datech každý rok Španělsko. Kroky vlád
+> a institucí s doklady jsou v `data/kroky_zemi/FR.json`. „Můj přepočet“ znamená výpočet z dat uvedeného zdroje, „můj
+> úsudek“ výklad, který zdroj sám neříká.
+
+## 1. Proč takový výkon na začátku (1996)
+
+Francouzský pracující vytvořil v roce 1996 asi 118,5 % toho, co pracující ve střední zemi ligy (kontext projektu podle
+Eurostatu), a asi 122 % průměru dnešní EU; na odpracovanou hodinu to bylo dokonce asi 133 % průměru EU, protože
+francouzský pracující odpracoval jen asi 1 578 hodin ročně proti 1 728 v průměru EU (Eurostat, můj přepočet). Francie
+byla dlouho industrializovaná země s vysokým výkonem na hodinu: výkon na hodinu, který v roce 1970 činil 70 %
+amerického, dohnala do konce 90. let (sekretariát Rady pro důchody 2023). Vysoký výkon na hodinu ale zčásti souvisí s tím, že
+pracuje méně lidí a méně hodin: delší pracovní doba a vyšší zaměstnanost mají klesající výnosy, takže měřený výkon na
+hodinu evropských zemí vychází výš, než by vycházel při americké pracovní době a zaměstnanosti (posoudili Bourlès
+a Cette ve studii francouzské centrální banky Banque de France 2005). Sekretariát francouzské Rady pro důchody mluví o dlouhodobé nerovnováze mezi
+relativně vysokou produktivitou a podprůměrnou zaměstnaností (posoudil sekretariát Rady pro důchody 2023). Na startu
+tak Francie patřila k nejvýkonnějším zemím ligy, přičemž výkon na pracujícího tlumila kratší pracovní doba.
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon francouzského pracujícího vůči střední zemi ligy pomalu klesal ze 118,5 % v roce 1996 na 117,0 % v roce 2004,
+115,2 % v roce 2008 a 112,7 % v roce 2013, pak vystoupal na 118,6 % v roce 2019 a prudce spadl na 109,9 % v roce 2024.
+V průměru let 2020–2024 byl poměr ke střední zemi 0,958násobkem poměru z roku 1996 (kontext projektu). Vůči průměru
+EU je obraz jednodušší: 122 % v roce 1996, 117 % v roce 2004, pak dlouho 116 % (2008, 2013 i 2019) a 107 % v roce 2024
+(Eurostat, můj přepočet). Francie tedy nikdy nedoháněla, mírně ztrácela do poloviny prvního desetiletí, pak stála
+a nejvíc ztratila po pandemii.
+
+**1996–2004: víc míst, méně hodin.** Zákony Aubry zkrátily v letech 1998 a 2000 zákonnou pracovní dobu na 35 hodin
+a podle hodnocení statistiků rychle přidaly asi 350 000 míst v letech 1998–2002 (změřeno, Gubian a kol., francouzský
+statistický úřad 2005). Snížení odvodů zaměstnavatele u nízkých mezd z 90. let podle odhadu vytvořila nebo udržela
+460 000 míst v letech 1994–1997 (změřeno, Crépon a Desplatz 2001, podle skupiny expertů pro minimální mzdu 2025).
+Odpracované hodiny na pracujícího klesly z 1 578 ročně v roce 1996 na 1 519 v roce 2004 (Eurostat, můj přepočet), takže
+výkon na pracujícího rostl pomaleji než výkon na hodinu. Když navíc přibývá zaměstnaných s nižší kvalifikací,
+průměrný měřený výkon kvůli klesajícím výnosům z práce roste pomaleji (můj úsudek opřený o Bourlèse a Cetta 2005).
+
+**2004–2019: pomalý růst produktivity.** Komise píše, že francouzská produktivita na hodinu klesla z víc než 130 %
+úrovně EU na počátku tisíciletí na 112,7 % v roce 2025 a že v letech 2014–2023 rostla jen o 0,1 % ročně proti 0,6 %
+v EU; růst brzdí slabé přidávání kapitálu na pracovníka, téměř stagnující celková efektivita výroby a výdaje na
+výzkum a vývoj (2,18 % HDP v roce 2024) pod průměrem EU (posoudila Evropská komise 2026). Krize 2008–2013 francouzské
+postavení vůči průměru EU skoro nezměnila (116 % v letech 2008 i 2013, Eurostat, můj přepočet). Výkyvy vůči střední
+zemi v tomto období jsou hlavně měřítkem: Španělsko, které je střední zemí ligy, v krizi přišlo o mnoho míst (počet
+pracujících klesl z 21,3 milionu v roce 2008 na 17,9 milionu v roce 2013) a jeho výkon na pracujícího vůči průměru EU
+stoupl ze 101 na 103 %; v letech 2013–2019 naopak rychle přidávalo místa a jeho výkon vůči průměru EU klesl na 98 %
+(Eurostat, můj přepočet). Proto Francie vůči střední zemi do roku 2013 klesala a do roku 2019 stoupala, ačkoli vůči
+průměru EU stála na 116 %.
+
+**2019–2024: propad po pandemii.** Ve 3. čtvrtletí 2023 byl francouzský výkon na odpracovanou hodinu stále o 4 % pod
+koncem roku 2019, zatímco v ostatních třech velkých zemích eurozóny se už vrátil na předpandemickou úroveň (sekretariát
+Rady pro důchody 2023). Část vysvětluje rychlý růst zaměstnanosti, který podle sekretariátu na produktivitu pravděpodobně
+tlačil: reforma učňovství z roku 2018 a mimořádný příspěvek na nové učně od roku 2020 přidaly do konce roku 2022 o 543 000 učňů víc než v roce 2018, a podle
+statistického oddělení ministerstva práce připadala asi pětina ztráty výkonu na pracujícího proti předkrizovému trendu
+na učňovství, protože učni se počítají jako zaměstnanci na plný úvazek, i když část času studují (změřeno, Dares,
+podle sekretariátu Rady pro důchody 2023). Dalšími důvody bylo držení zaměstnanců v útlumu a přežívání neproduktivních
+firem díky krizové podpoře, což Mezinárodní měnový fond považuje za dočasné, kdežto trvalejší složku spojuje hlavně se
+začleňováním méně kvalifikovaných pracovníků (posoudil Mezinárodní měnový fond 2025). Vůči průměru EU klesl francouzský
+výkon na pracujícího ze 116 % v roce 2019 na 107 % v roce 2024 (Eurostat, můj přepočet), takže tento propad je
+francouzský, ne pohyb střední země.
+
+**Měření.** Rok 2020 je zvýšený pandemií (122,7 % střední země), protože Španělsku tehdy výkon na pracujícího spadl
+na 93 % průměru EU (Eurostat, můj přepočet); bez roku 2020 by násobek růstu vyšel 0,939 místo 0,958 (můj přepočet).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Z toho, co firma za průměrně placeného svobodného zaměstnance bez dětí zaplatí, připadne ve Francii státu na daních
+a odvodech 46,3 %, čtvrtý nejvyšší podíl v lize; ve střední zemi ligy je to 41,2 % (kontext a list ukazatele projektu,
+tabulka kol). Řada OECD při průměrné mzdě OECD ukazuje 47,1 % v roce 2024 (OECD, databáze Taxing Wages).
+
+**Jak je systém postavený.** Hlavní část zátěže tvoří odvody zaměstnavatele na sociální pojištění. Při průměrné mzdě
+OECD činily v roce 2024 odvody zaměstnavatele 36,3 % hrubé mzdy, odvody zaměstnance 11,3 % a daň z příjmu včetně
+všeobecného sociálního příspěvku (CSG) 16,6 % hrubé mzdy (OECD, databáze Taxing Wages). Bez jakýchkoli úlev by odvody
+zaměstnavatele činily 45,28 % hrubé mzdy; po trvalých úlevách zděděných po daňovém odpočtu na konkurenceschopnost
+a zaměstnanost (CICE) a po paktu odpovědnosti 37,48 % a u minimální mzdy po všech obecných úlevách jen 5,15 %, takže na úrovni minimální mzdy je zrušeno skoro 80 % odvodů
+zaměstnavatele (skupina expertů pro minimální mzdu 2025). Komise řadí francouzské implicitní zdanění práce (38,8 %
+v roce 2024 proti 37,1 % v EU) a zdanění práce na straně zaměstnavatelů k nejvyšším v EU (posoudila Evropská komise
+2026). Úlevy jsou odstupňované podle mzdy: největší jsou u minimální mzdy a slábnou směrem nahoru; průměrná mzda OECD
+(45 313 eur v roce 2024) je asi 2,1násobkem roční minimální mzdy (11,65 eura za hodinu, 35 hodin týdně), takže se jí
+týkají úlevy do 2,5násobku a 3,5násobku minimální mzdy, ne ty do 1,6násobku (OECD; skupina expertů 2025; můj
+přepočet a úsudek).
+
+**Jak se zátěž měnila od roku 2000.** Podle řady OECD se do roku 2012 držela kolem 50 % (50,4 % v roce 2000, 49,8 %
+v roce 2008, 50,1 % v roce 2012) a pak klesla na 47,2 % v roce 2019; v roce 2024 činila 47,1 % (OECD, databáze Taxing
+Wages). Pokles přinesly úlevy zaměstnavatelům: daňový odpočet CICE ve výši 4 až 7 % mezd do 2,5násobku minimální mzdy
+(2013–2018), pakt odpovědnosti se snížením odvodů na rodinné dávky o 1,8 bodu až do 3,5násobku minimální mzdy (od
+dubna 2016) a od roku 2019 trvalé snížení odvodů na zdravotní pojištění o 6 bodů místo CICE (skupina expertů pro
+minimální mzdu 2025). V řadě OECD klesly odvody zaměstnavatele u průměrné mzdy ze 44,0 % hrubé mzdy v roce 2012 na
+40,2 % v roce 2013 a 35,1 % v roce 2017 a po přeměně CICE zůstaly na 36,3 % (OECD); že řada OECD CICE započítává jako
+snížení odvodů, je můj úsudek z toho, že pokles v roce 2013 odpovídá úlevě 4 %. Skupina expertů přičítá CICE a paktu,
+že se náklady práce do roku 2019 přiblížily průměru eurozóny (posoudila skupina expertů 2025), a hodnocení CICE našla
+asi 100 000 míst (změřeno, vládní analytický úřad France Stratégie 2020 podle skupiny expertů 2025). V roce 2018 stát zvýšil všeobecný sociální
+příspěvek o 1,7 bodu ze všech příjmů včetně důchodů a příjmů z kapitálu a zaměstnancům zrušil odvody na nemocenské
+a na pojištění v nezaměstnanosti (odpověď vlády Národnímu shromáždění 2018); v řadě OECD kleslo pojistné zaměstnance
+ze 14,3 % hrubé mzdy (2017) na 11,3 % (2019) a daň z příjmu stoupla ze 14,6 na 16,7 %, celková zátěž se ale změnila
+jen ze 47,4 na 47,2 % (OECD). Jde hlavně o přesun mezi druhy plateb, tedy o měření složení, ne o příčinu výše čisté
+mzdy.
+
+**Test protipříkladem.** Zátěž je vysoká hlavně kvůli odvodům zaměstnavatele. Kdyby Francie měla odvody zaměstnavatele
+jako Británie (11,4 % hrubé mzdy místo 36,3 %), vyšla by zátěž při průměrné mzdě OECD asi 35,3 % místo 47,1 % (můj
+přepočet ze složek OECD 2024); protipříklad tedy příčinu potvrzuje. Daň z příjmu to není: francouzská daň z příjmu
+včetně příspěvku CSG (16,6 % hrubé mzdy) je skoro stejná jako britská (16,1 %) a nižší než irská (21,9 %) (OECD).
+Kdyby nebyly úlevy z let 2013–2019 a odvody zaměstnavatele zůstaly na úrovni roku 2012 (44,0 % hrubé mzdy), byla by
+zátěž při průměrné mzdě asi 49,9 % místo 47,1 % (můj přepočet). Přesun z odvodů zaměstnance do příspěvku CSG v roce
+2018 celkovou zátěž skoro nezměnil, proto se jako příčina neuvádí. Studie francouzských reforem z let 2003–2006 navíc
+ukazuje, že snížení odvodů zaměstnavatele se do vyhlášených hrubých mezd nepřeneslo (změřeno, Lehmann, Marical
+a Rioux 2013), takže úlevy zaměstnavatelům se projevily hlavně v nákladech práce a zaměstnanosti, ne v čisté mzdě
+(můj úsudek z této studie).
+
+## 4. Další faktory země
+
+**Minimální mzda.** Francie je jednou ze dvou zemí EU, kde minimální mzda přesahuje 60 % mediánu (62,5 %) i 50 %
+průměrné mzdy (50,4 %); mezi lety 2021 a 2025 vzrostla o 17 %, kdežto vyjednané a základní mzdy asi o 15 % a nejvyšších
+5 % mezd o 12,6 %, takže mzdová škála je výrazně stlačená (skupina expertů pro minimální mzdu 2025). Komise píše, že
+vysoká úroveň minimální mzdy přispívá ke stlačení mezd (posoudila Evropská komise 2026). Na průměr působí minimální
+mzda hlavně přes spodek rozdělení; jak silně, pro Francii doloženo není.
+
+**Past nízkých mezd.** Úbytek úlev zaměstnavatele, ubývání příspěvku na zaměstnání a začátek daně z příjmu vytvářejí
+mezi 1,2 a 2násobkem minimální mzdy mezní zdanění 75 až 80 % a právě tam experti poprvé pozorují zpomalení mzdového
+postupu (posoudila skupina expertů pro minimální mzdu 2025). Komise dodává, že úlevy cílené na nízké mzdy pravděpodobně
+přispěly ke stlačení mezd a oslabily motivaci investovat do dovedností (posoudila Evropská komise 2026).
+
+**Kolektivní vyjednávání.** Kolektivními smlouvami je pokryto 98 % zaměstnanců (2024), v odborech je jich ale jen
+10,1 %, jeden z nejnižších podílů v EU (Evropská komise 2026).
+
+**Pracovní doba.** Kratší pracovní doba po zákonech Aubry snižuje výkon i mzdu na pracujícího proti výkonu na hodinu:
+francouzský pracující odpracoval v roce 2024 asi 1 513 hodin proti 1 612 v průměru EU (Eurostat, můj přepočet).
+
+**Ceny a kupní síla.** Cenová hladina skutečné individuální spotřeby byla ve Francii v roce 2024 108 % průměru EU
+(v roce 2000 110 %) (Eurostat), mnohem méně než v Británii (129 %) nebo Irsku (141 %), takže přepočet na kupní sílu
+francouzskou mzdu zmenšuje méně než mzdy těchto zemí.
+
+## 5. Co říkají ekonomové
+
+Instituce vysvětlují nižší francouzskou mzdu hlavně slabou a relativně klesající produktivitou: Komise píše, že růst
+produktivity brzdí „slabé přidávání kapitálu a téměř stagnující celková efektivita výroby“ (v originále „low capital
+deepening and almost stagnant total factor productivity“, Evropská komise 2026). Tvar mezd podle nich formuje vysoká
+minimální mzda s automatickým zvyšováním a snížené odvody zaměstnavatele u nízkých mezd, které mzdy stlačují a podle
+Komise i francouzských expertů zvyšují riziko pastí nízkých mezd (`ekonomove/FR.md`).
+
+## 6. Zdroje
+
+- **Kontext projektu:** `data/kontext_kroky.json` (výkon na pracujícího vůči střední zemi ligy po letech, násobek
+  růstu, zátěž 2024, řada OECD); list ukazatele `LIST_UKAZATELE.md` (medián ligy 41,2 %); tabulka kol
+  `KOLA_TABULKA.md` (pořadí v kole daní a odvodů).
+- **Eurostat (můj přepočet):** HDP v kupní síle, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
+  zaměstnanost, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995 ;
+  odpracované hodiny, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_HW&nace_r2=TOTAL&na_item=EMP_DC&sinceTimePeriod=1995
+  (staženo projektem 17. 10. 2026); cenová hladina skutečné individuální spotřeby, `prc_ppp_ind_1` (data projektu
+  `data/raw_krok1/prc_ppp_ind_1_A01.json`).
+- **OECD, databáze Taxing Wages** (svobodný bez dětí, průměrná mzda OECD; stažena 17. 10. 2026):
+  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/GBR+IRL+FRA......A?startPeriod=2000&endPeriod=2024
+- **Evropská komise 2026:** 2026 Country Report – France, SWD(2026) 210 final, 3. 6. 2026,
+  https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=SWD:2026:210:FIN
+- **Skupina expertů pro minimální mzdu 2025:** Groupe d'experts sur le Smic, Salaire minimum interprofessionnel de
+  croissance, rapport du Groupe d'experts, 25. 11. 2025, https://www.vie-publique.fr/files/rapport/pdf/301429_0.pdf
+  (shrnuje i hodnocení Crépon a Desplatz 2001, Cottet 2020 a France Stratégie 2020)
+- **Sekretariát Rady pro důchody 2023:** Secrétariat général du Conseil d'orientation des retraites, Les évolutions de
+  la productivité du travail, tendances passées et récentes, dokument č. 2 k zasedání 21. 12. 2023 (pracovní dokument,
+  nezavazuje Radu; shrnuje Dares 2023 a OFCE 2023),
+  https://www.cor-retraites.fr/sites/default/files/2023-12/Doc_02_%C3%A9volutions%20pass%C3%A9es%20et%20r%C3%A9centes%20de%20la%20productivit%C3%A9.pdf
+- **Mezinárodní měnový fond 2025:** France: 2025 Article IV Consultation, IMF Country Report No. 25/179, červenec 2025,
+  https://www.imf.org/-/media/files/publications/cr/2025/english/1fraea2025001-source-pdf.pdf
+- **Gubian a kol. 2005:** Gubian, Jugnot, Lerais, Passeron, Les effets de la RTT sur l'emploi : des estimations ex ante
+  aux évaluations ex post, Économie et Statistique 376-377, INSEE, červen 2005, https://www.insee.fr/fr/statistiques/1376464
+- **Bourlès a Cette 2005:** A comparison of Structural Productivity Levels in the Major Industrialised Countries,
+  Banque de France Working Paper 133, 2005, https://econpapers.repec.org/paper/bfrbanfra/133.htm
+- **Lehmann, Marical a Rioux 2013:** Labor income responds differently to income-tax and payroll-tax reforms, Journal
+  of Public Economics 99, https://ideas.repec.org/a/eee/pubeco/v99y2013icp66-84.html
+- **Odpověď vlády Národnímu shromáždění 2018:** písemný dotaz č. 6859, Journal officiel 2. 10. 2018,
+  https://www.assemblee-nationale.fr/dyn/15/questions/QANR5L15QE6859.pdf
+- **Rešerše ekonomů projektu:** `ekonomove/FR.md` (17. 10. 2026).
+
+
+# Británie: proč má v kolech takové hodnoty (průměrná čistá mzda 2024)
+
+> Podklad pro výklad hodnot kol v podkladu pro scénář regionu (zkouška návrhu skillu pro regiony), zpracováno
+> 17. 10. 2026. Výkon vůči střední zemi ligy, jeho růst a zátěž daní a odvodů jsou z kontextu projektu
+> (`data/kontext_kroky.json`: Eurostat, u Británie po roce 2019 počet zaměstnaných podle britského statistického úřadu;
+> zátěž 2024 podle britských daňových pravidel; řada OECD). Střední zemí ligy bylo v roce 1996 Norsko (jen pevninská
+> ekonomika bez ropy) a od roku 2000 je to v datech každý rok Španělsko. Kroky vlád a institucí s doklady jsou
+> v `data/kroky_zemi/GB.json`. U každé příčiny je slovy uvedena síla dokladu; „můj přepočet“ znamená výpočet z dat
+> uvedeného zdroje, „můj úsudek“ výklad, který zdroj sám neříká.
+
+## 1. Proč takový výkon na začátku (1996)
+
+Britský pracující vytvořil v roce 1996 asi 109 % toho, co pracující ve střední zemi ligy (kontext projektu podle
+Eurostatu), a asi 112 % průměru dnešní EU (Eurostat, můj přepočet). Británie byla dávno industrializovaná země s velkým
+finančnictvím, výkon na odpracovanou hodinu ale měla asi o 16 % nižší než Francie a mezeru zčásti doháněla delší prací:
+britský pracující odpracoval v roce 1996 asi 1 728 hodin, francouzský 1 578 (Eurostat, můj přepočet). Hlavní důvod
+dnešního zaostávání za Francií vidí britský nezávislý výzkumný ústav Resolution Foundation v nedostatku strojů, budov
+a nehmotného kapitálu na pracovníka: celkové investice činily ve čtyřiceti letech do roku 2022 průměrně 19 % HDP, nejméně v G7 (průměr G7 22 %), a tato
+„mezera v kapitálu“ podle ní vysvětluje téměř celý dnešní rozdíl v produktivitě proti Francii (posoudila Resolution
+Foundation 2023). *Oprava koordinátora 18. 10. 2026 (nález A1 kontroly scénáře Západní Evropy):* výrok je v přítomném
+čase a studie, o kterou se ústav opírá, srovnává rok 2019; o roce 1996 neříká nic a publikovaná verze té studie
+(Van Reenen a Yang 2024) připisuje kapitálu jen asi třetinu mezery proti Francii. Pro start v roce 1996 tedy platí jen
+to, že Británie investuje dlouhodobě nejméně ze sedmi největších vyspělých ekonomik (souvislost, ne změřená příčina). V 90. letech přitom Británie produktivnější Francii, Německo a USA doháněla (posoudila Resolution
+Foundation 2023), takže startovala nad střední zemí ligy, ale pod nejproduktivnějšími sousedy.
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon britského pracujícího vůči střední zemi ligy prošel třemi obdobími: do roku 2004 vzrostl ze 109,4 na 114,4 %,
+do roku 2013 klesl na 100,9 % a od té doby se drží těsně nad střední zemí (101,2 % v roce 2019, 101,4 % v roce 2024).
+V průměru let 2020–2024 byl poměr ke střední zemi 0,94násobkem poměru z roku 1996 (kontext projektu). Nejvíc tedy
+Británie dohnala na přelomu tisíciletí, zastavila se v polovině prvního desetiletí a největší ztráta přišla
+s finanční krizí.
+
+**Do roku 2004: rozmach finančnictví a ropy.** Až do poloviny prvního desetiletí Británie podle Resolution Foundation
+produktivnější země doháněla (posoudila Resolution Foundation 2023). Mezinárodní měnový fond ukazuje, že silný růst
+celkové efektivity výroby před krizí měl zvláštní zdroje, které se nedaly zopakovat: dluhem tažený rozmach
+finančnictví, ropu ze Severního moře a rozmach informačních technologií na začátku tisíciletí (posoudil Mezinárodní
+měnový fond 2024).
+
+**2004–2013: krize vypnula motory růstu.** Finanční krize 2008 tyto motory zastavila. Růst výkonu na odpracovanou
+hodinu klesl z asi 2 % ročně před krizí na asi půl procenta po ní, víc než v jiných vyspělých zemích, a většinu
+poklesu Mezinárodní měnový fond přičítá ztrátě ropy ze Severního moře a dluhem taženého rozmachu finančnictví,
+prohloubené slabší dynamikou firem a pozdějšími šoky (posoudil Mezinárodní měnový fond 2024). Za dvanáct let po krizi
+rostla britská produktivita o 0,4 % ročně proti 0,9 % u 25 nejbohatších zemí OECD a mezera proti průměru USA, Francie
+a Německa se od roku 2008 zdvojnásobila na 18 % v roce 2022 (Resolution Foundation 2023). Druhou brzdou byly
+investice: podle rozkladu růstu klesl příspěvek kapitálu k růstu produktivity z asi 1¼ procentního bodu ročně
+v 90. letech na asi ½ bodu od poloviny prvního desetiletí a těsně po krizi a po referendu o odchodu z EU skoro na nulu
+(posoudil Mezinárodní měnový fond 2024). Část propadu vůči střední zemi je ale dána měřítkem: Španělsko, které je
+střední zemí ligy, v krizi přišlo o mnoho míst (počet pracujících klesl z 21,3 milionu v roce 2008 na 17,9 milionu
+v roce 2013) a jeho výkon na pracujícího vůči průměru EU stoupl ze 101 na 103 % (Eurostat, můj přepočet). Vůči průměru
+EU klesla Británie mezi lety 2008 a 2013 méně, ze 108 na 104 % (Eurostat, můj přepočet).
+
+**Od roku 2013: stagnace a odchod z EU.** Vůči střední zemi se britský výkon od roku 2013 skoro nehýbe, vůči průměru
+EU ale dál klesal, ze 104 % v roce 2013 na 99 % v letech 2019 i 2024 (Eurostat, můj přepočet). Stálost vůči střední
+zemi je hlavně tím, že ve Španělsku po krizi rychle přibývala místa a jeho výkon na pracujícího vůči průměru EU klesl
+ze 103 % v roce 2013 na 98 % v roce 2019 (Eurostat, můj přepočet; že šlo hlavně o méně produktivní místa, je můj
+úsudek). Brzdou v tomto období byl odchod z EU: podle velkého šetření britských firem snížilo očekávání odchodu
+investice během tří let po referendu asi o 11 % a produktivitu o 2 až 5 % (změřeno, Bloom a kol. 2019, šetření firem),
+a britský Úřad pro rozpočtovou odpovědnost počítá s tím, že dohoda o obchodu s EU sníží dlouhodobou produktivitu
+o 4 % (posoudil úřad 2026; je to předpoklad z průměru vnějších studií, ne změřený dopad). Mzdy se od výkonu
+neodpojily: jednotkové mzdové náklady se vyvíjely jako u srovnatelných zemí, takže růst reálných mezd jen odrážel
+velmi slabý růst produktivity (posoudil Mezinárodní měnový fond 2024), a reálné mzdy byly v polovině roku 2023 tam,
+kde během finanční krize (Resolution Foundation 2023). Zaměstnanost přitom rostla: britský Institut pro fiskální studia
+(Institute for Fiscal Studies) popisuje léta mezi velkou recesí a pandemií jako období bez růstu průměrné mzdy, ale s rozmachem pracovních míst
+(Institute for Fiscal Studies 2024).
+
+**Měření.** Eurostat nemá britskou zaměstnanost po roce 2019, projekt ji proto prodloužil změnou počtu zaměstnaných
+podle šetření pracovních sil britského statistického úřadu (kontext projektu). Návratnost tohoto šetření klesla
+v říjnu 2023 na historicky nízkých 12,7 % a statistický úřad dočasně přestal zveřejňovat z něj odvozená čísla
+(Mezinárodní měnový fond 2024), takže hodnoty po roce 2019 jsou méně jisté. Rok 2020 je navíc zvýšený pandemií
+(105,3 % střední země); bez něj by násobek růstu vyšel 0,934 místo 0,94 (Eurostat, můj přepočet).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Z toho, co firma za průměrně placeného svobodného zaměstnance bez dětí zaplatí, připadne v Británii státu na daních
+a odvodech 28,3 %, nejméně v lize; ve střední zemi ligy je to 41,2 % (list ukazatele projektu, výpočet podle britských
+daňových pravidel 2024). Řada OECD při průměrné mzdě OECD ukazuje podobnou úroveň, 29,9 % v roce 2024 (OECD,
+databáze Taxing Wages); rozdíl je v tom, při jaké výši mzdy se počítá.
+
+**Jak je systém postavený.** Celá zátěž se skládá z daně z příjmu a ze státního pojistného (National Insurance). Při
+průměrné mzdě OECD činila v roce 2024 daň z příjmu 16,1 % hrubé mzdy, pojistné zaměstnance 5,8 % a pojistné
+zaměstnavatele 11,4 % hrubé mzdy (OECD, databáze Taxing Wages). Daň se platí až z příjmu nad osobní nezdanitelnou
+částkou 12 570 liber (britské ministerstvo financí, HM Treasury 2021) a hlavní sazba pojistného zaměstnance je od dubna 2024 8 % (HM Treasury 2024).
+
+**Jak se zátěž měnila od roku 2000.** Podle řady OECD klesla z 32,6 % v roce 2000 na 29,9 % v roce 2024, ale ne
+rovnoměrně (OECD, databáze Taxing Wages). V roce 2003 stouplo pojistné zaměstnance i zaměstnavatele zhruba o bod
+hrubé mzdy (z 8,3 na 9,2 % a z 9,8 na 10,7 %) a zátěž se v letech 2003–2007 držela mezi 33,8 a 34,1 %; v roce 2008
+klesla průměrná sazba daně z příjmu ze 17,7 na 16,4 % hrubé mzdy (OECD). Které změny pravidel za oběma pohyby stály,
+jsem v otevřených zdrojích nedoložil. Mezi lety 2010 a 2019 vlády zvýšily osobní nezdanitelnou částku z 6 475 na
+12 500 liber (legislation.gov.uk 2010; HM Treasury 2018), průměrná sazba daně z příjmu při průměrné mzdě klesla ze
+16,2 na 13,9 % hrubé mzdy a zátěž z 32,6 na 30,9 % (OECD). Mzda po zdanění proto rostla rychleji než před zdaněním,
+o 6,4 % proti 3,5 % mezi lety 2009–10 a 2023–24, „díky snížení daní pro střední výdělky“ (posoudil Institute for
+Fiscal Studies 2024). Od roku 2021 jsou hranice daně zmrazené (HM Treasury 2021), podle Mezinárodního měnového fondu
+až do let 2028/29, takže s rychlým růstem mezd stoupla průměrná sazba daně z příjmu ze 13,7 % v roce 2020 na 16,1 %
+v roce 2024 (OECD; zvyšování příjmů státu zmrazením posoudil Mezinárodní měnový fond 2024). V roce 2024 pak vláda
+snížila hlavní sazbu pojistného zaměstnanců ze 12 na 8 % (HM Treasury 2024) a pojistné zaměstnance při průměrné mzdě
+kleslo z 8,5 na 5,8 % hrubé mzdy (OECD). Krátkodobý výkyv v roce 2022 (31,7 %) jde podle řady OECD hlavně na vrub
+vyššímu pojistnému zaměstnavatele toho roku (11,6 % hrubé mzdy proti 10,9 % v roce 2021); jeho příčinu jsem
+v otevřených zdrojích nedoložil.
+
+**Test protipříkladem.** Zátěž je nízká hlavně proto, že je nízké pojistné, zvlášť pojistné zaměstnavatele. Kdyby
+Británie měla odvody zaměstnavatele jako Francie (36,3 % hrubé mzdy místo 11,4 %), vyšla by zátěž při průměrné mzdě
+OECD asi 42,7 % místo 29,9 % (můj přepočet ze složek OECD 2024); protipříklad tedy příčinu potvrzuje. Nízká daň
+z příjmu to není: při průměrné mzdě je britská daň z příjmu (16,1 % hrubé mzdy) skoro stejná jako francouzská
+(16,6 %) (OECD). Kdyby vláda v roce 2024 pojistné zaměstnanců nesnížila, bylo by při průměrné mzdě OECD asi 8,7 %
+hrubé mzdy místo 5,8 % a zátěž asi 32,5 % místo 29,9 % (můj přepočet podle sazeb roku 2024). Kdyby hranice daně
+nebyly od roku 2021 zmrazené, byla by daň z příjmu nižší; o kolik přesně, není pro průměrnou mzdu v otevřených
+zdrojích vyčísleno. Kdo pojistné formálně platí, se v Británii ve sledovaném období neměnilo. Studie 35 let britských
+reforem pojistného zjistila, že náklady práce klesají mnohem víc při snížení pojistného zaměstnavatele než
+zaměstnance, takže skutečný dopad pojistného silně závisí na tom, kdo ho formálně platí (změřeno, Adam, Phillips
+a Roantree 2017, velký panel pracovníků); snížení pojistného zaměstnanců v roce 2024 se proto dá čekat hlavně ve vyšší
+čisté mzdě, ne v nižších nákladech práce (můj úsudek).
+
+## 4. Další faktory země
+
+**Minimální mzda.** Celostátní minimální mzda platí od roku 1999 a od roku 2016 vyšší národní životní mzda pro
+dospělé; v roce 2024 byla reálně asi o 70 % vyšší než při zavedení a asi o 30 % vyšší než v roce 2015, zatímco
+reálný medián hodinové mzdy byl zhruba stejný jako na začátku finanční krize (komise, která vládě radí s minimální
+mzdou, Low Pay Commission 2024). Mzdy dole
+po jejím zavedení rostly mnohem rychleji než nahoře (posoudila Low Pay Commission 2024) a Mezinárodní měnový fond
+upozorňuje, že desetiprocentní zvýšení v dubnu 2024 může zpomalit zmírňování růstu mezd i mimo cílovou skupinu
+(posoudil Mezinárodní měnový fond 2024). Na průměrnou mzdu působí hlavně přes spodek rozdělení; vlastní síla tohoto
+působení na průměr není pro Británii doložena.
+
+**Veřejné platy.** Zmrazení platů ve veřejném sektoru v letech 2011–2013 a následný strop asi 1 % ročně snížily
+průměrný reálný týdenní výdělek ve veřejném sektoru v letech 2016–17 o 4 % proti letům 2009–10 (posoudil Institute
+for Fiscal Studies 2017); týkalo se to asi 5,1 milionu lidí (Institute for Fiscal Studies 2017).
+
+**Přistěhovalci.** Po otevření trhu práce při rozšíření EU v roce 2004 odešlo do Británie a Irska asi 1,2 milionu
+pracovníků z východní Evropy (Elsner 2013). Přistěhovalectví podle studie snižuje mzdy domácích pracovníků pod
+20. percentilem a mírně zvyšuje mzdy výše, celkově mírně kladně (změřeno, Dustmann, Frattini a Preston 2013, srovnání
+oblastí). Po odchodu z EU platí nový přistěhovalecký režim, přistěhovalectví ale zůstalo silné a britský Úřad pro
+rozpočtovou odpovědnost dnes počítá se střednědobou čistou migrací 290 000 lidí ročně (Úřad pro rozpočtovou
+odpovědnost 2026).
+
+**Ceny a kupní síla.** Cenová hladina skutečné individuální spotřeby byla v Británii v roce 2024 129 % průměru EU
+a v roce 2000 dokonce 147 % (Eurostat), takže se britská mzda po přepočtu na kupní sílu zmenšuje víc než u levnějších
+zemí.
+
+**Průměr a nerovnost.** Británie má nejvyšší příjmovou nerovnost mezi velkými evropskými ekonomikami (Resolution
+Foundation 2023) a Londýn je o 41 % produktivnější než Manchester, kdežto Paříž proti Lyonu jen o 26 % (Resolution
+Foundation 2023). Průměrná mzda, se kterou projekt pracuje, je proto proti mzdě typického zaměstnance relativně vysoká
+(můj úsudek; britský statistický úřad dává přednost mediánu, podle rešerše ekonomů v `ekonomove/GB.md`).
+
+## 5. Co říkají ekonomové
+
+Mezinárodní měnový fond, britská centrální banka (Bank of England) a Resolution Foundation shodně uvádějí jako hlavní příčinu slabých britských
+mezd pomalý růst produktivity od finanční krize 2008; Resolution Foundation píše, že „kořenem stagnace mezd je
+žalostný vývoj produktivity práce na hodinu“ (v originále „The root of that wage stagnation and foregone leisure is
+the woeful trend in British labour productivity per hour“, Resolution Foundation 2023). Za slabou produktivitou vidí
+instituce hlavně nízké investice, zánik předkrizových motorů růstu (finančnictví a ropa ze Severního moře) a odchod
+z EU; mezery v dovednostech Mezinárodní měnový fond označuje za závazné omezení, Resolution Foundation to popírá
+(`ekonomove/GB.md`).
+
+## 6. Zdroje
+
+- **Kontext projektu:** `data/kontext_kroky.json` (výkon na pracujícího vůči střední zemi ligy po letech, násobek
+  růstu, zátěž 2024, řada OECD); list ukazatele projektu `LIST_UKAZATELE.md` (zátěž 2024 a medián ligy 41,2 %).
+- **Eurostat (můj přepočet):** HDP v kupní síle, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
+  zaměstnanost, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995 ;
+  odpracované hodiny, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10_e?format=JSON&lang=EN&unit=THS_HW&nace_r2=TOTAL&na_item=EMP_DC&sinceTimePeriod=1995
+  (staženo projektem 17. 10. 2026); cenová hladina skutečné individuální spotřeby, `prc_ppp_ind_1` (data projektu
+  `data/raw_krok1/prc_ppp_ind_1_A01.json`). Britská zaměstnanost po roce 2019: britský statistický úřad, řada MGRZ,
+  https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/mgrz/lms
+  (podle `data/raw_faktory/doplnena_data.json`).
+- **OECD, databáze Taxing Wages** (svobodný bez dětí, průměrná mzda OECD; stažena 17. 10. 2026):
+  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/GBR+IRL+FRA......A?startPeriod=2000&endPeriod=2024
+- **Mezinárodní měnový fond 2024:** United Kingdom: 2024 Article IV Consultation, Staff Report, IMF Country Report
+  No. 24/203, červenec 2024, https://www.imf.org/-/media/files/publications/cr/2024/english/1gbrea2024001.pdf
+- **Resolution Foundation 2023:** Resolution Foundation a Centre for Economic Performance, Ending Stagnation: A New
+  Economic Strategy for Britain, prosinec 2023,
+  https://economy2030.resolutionfoundation.org/wp-content/uploads/2023/12/Ending-stagnation-final-report.pdf
+- **Institute for Fiscal Studies 2024:** Cribb, Waters, Seven key facts about UK living standards, IFS Report R315,
+  květen 2024, https://ifs.org.uk/sites/default/files/2024-06/New-Final-Seven-Key-Facts-living-standards-IFS-Report.pdf
+- **Institute for Fiscal Studies 2017:** Cribb, Public sector pay: still time for restraint?, Briefing Note BN216,
+  září 2017, https://ifs.org.uk/sites/default/files/output_url_files/BN216.pdf
+- **Low Pay Commission 2024:** The National Minimum Wage in 2024 and forecast National Living Wage in 2025, březen
+  2024, https://assets.publishing.service.gov.uk/media/66043e0991a320001a82b0e7/The_National_Minimum_Wage_in_2024.pdf
+- **Úřad pro rozpočtovou odpovědnost 2026:** Office for Budget Responsibility, Brexit analysis (aktualizováno
+  20. 7. 2026), https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/
+- **Bloom a kol. 2019:** Bloom, Bunn, Chen, Mizen, Smietanka, Thwaites, The Impact of Brexit on UK Firms, NBER Working
+  Paper 26218, září 2019, https://www.nber.org/papers/w26218
+- **Adam, Phillips a Roantree 2017:** 35 Years of Reforms: A Panel Analysis of the Incidence of, and Employee and
+  Employer Responses to, Social Security Contributions in the UK, NBER Working Paper 23336, duben 2017 (časopisecky
+  Journal of Public Economics 2019), https://www.nber.org/papers/w23336
+- **Dustmann, Frattini a Preston 2013:** The Effect of Immigration along the Distribution of Wages, Review of Economic
+  Studies 80(1), https://ideas.repec.org/a/oup/restud/v80y2013i1p145-173.html
+- **Elsner 2013:** Emigration and wages: The EU enlargement experiment, Journal of International Economics 91(1),
+  https://ideas.repec.org/a/eee/inecon/v91y2013i1p154-163.html
+- **legislation.gov.uk 2010:** Finance Act 2010, vysvětlivky k oddílu 1,
+  https://www.legislation.gov.uk/ukpga/2010/13/section/1/notes/data.htm
+- **HM Treasury 2018:** Income Tax: Personal Allowance and basic rate limit from 2019-20, 29. 10. 2018,
+  https://www.gov.uk/government/publications/income-tax-personal-allowance-and-basic-rate-limit-from-2019-to-2020/income-tax-personal-allowance-and-basic-rate-limit-from-2019-20
+- **HM Treasury 2021:** Income Tax Personal Allowance and the basic rate limit from 6 April 2022 to 5 April 2026,
+  3. 3. 2021,
+  https://www.gov.uk/government/publications/income-tax-personal-allowance-and-the-basic-rate-limit-from-6-april-2022-to-5-april-2026/income-tax-personal-allowance-and-the-basic-rate-limit-from-6-april-2022-to-5-april-2026
+- **HM Treasury 2024:** Reduction to the main rates of primary Class 1 and Class 4 National Insurance contributions,
+  7. 3. 2024,
+  https://www.gov.uk/government/publications/changes-to-national-insurance-contributions-from-6-april-2024/reduction-to-the-main-rates-of-primary-class-1-and-class-4-national-insurance-contributions
+- **Rešerše ekonomů projektu:** `ekonomove/GB.md` (17. 10. 2026).
+
+
+# Irsko: proč má v kolech takové hodnoty (průměrná čistá mzda 2024)
+
+> Podklad pro výklad hodnot kol v podkladu pro scénář regionu (zkouška návrhu skillu pro regiony), zpracováno
+> 17. 10. 2026. Výkon vůči střední zemi ligy, jeho růst a zátěž daní a odvodů jsou z kontextu projektu
+> (`data/kontext_kroky.json`). Irský výkon v něm není měřen celým HDP, ale upraveným hrubým národním důchodem (GNI*),
+> který irský statistický úřad počítá bez účetních vlivů nadnárodních firem (přesuny duševního vlastnictví, odpisy,
+> přesídlené firmy); projekt HDP v kupní síle násobí poměrem tohoto důchodu k HDP. Střední zemí ligy bylo v roce 1996
+> Norsko (jen pevninská ekonomika bez ropy) a od roku 2000 je to v datech každý rok Španělsko. Kroky vlád a institucí
+> s doklady jsou v `data/kroky_zemi/IE.json`. „Můj přepočet“ znamená výpočet z dat uvedeného zdroje, „můj úsudek“
+> výklad, který zdroj sám neříká.
+
+## 1. Proč takový výkon na začátku (1996)
+
+Irský pracující vytvořil v roce 1996 asi 101 % toho, co pracující ve střední zemi ligy, měřeno očištěným důchodem
+(kontext projektu podle Eurostatu a irského statistického úřadu), a asi 104 % průměru dnešní EU (Eurostat a irský
+statistický úřad, můj přepočet). Irsko bylo dlouho chudší zemí na okraji Evropy: ještě v roce 1986 mělo nezaměstnanost
+16 % a čistý odchod lidí do ciziny se blížil 1 % obyvatel (Honohan a Walsh 2002). Dohánění začalo až v polovině
+80. let a podle Honohana a Walshe ho předtím brzdila nevhodná rozpočtová a možná i měnová politika, takže se pak
+„stlačilo“ do krátkého období (posoudili Honohan a Walsh 2002). K roku 1996 už zemi zvedaly zahraniční investice
+lákané granty a daňovými výhodami pro zisky, bezcelní přístup na evropský trh od vstupu do Evropského hospodářského
+společenství v roce 1973 a vzdělanost rostoucí od zavedení bezplatného středního školství v roce 1967 (Honohan
+a Walsh 2002). Neočištěné HDP by irský start nadsadilo: v roce 1996 činil očištěný důchod 92 % HDP (irský statistický
+úřad), takže z celého HDP by irský pracující vycházel asi na 110 % střední země (můj přepočet).
+
+## 2. Proč takový růst výkonu (1996–2024)
+
+Výkon irského pracujícího vůči střední zemi ligy rostl ve dvou vlnách a mezi nimi ztrácel: z 101,1 % v roce 1996
+vystoupal na 116,3 % v roce 2004, do roku 2008 spadl na 104,9 % a do roku 2013 na 103,8 %, pak se zvedl na 109,2 %
+v roce 2019 a na 122,9 % v roce 2024. V průměru let 2020–2024 byl poměr ke střední zemi 1,173násobkem poměru z roku
+1996 (kontext projektu). Nejvíc Irsko dohnalo v letech 1996–2004 a 2019–2024, ztrácelo v letech 2004–2013.
+
+**1996–2004: keltský tygr.** Rychlý růst táhly zahraniční investice lákané konkurenceschopným a vstřícným
+podnikatelským prostředím: vývoz přesáhl 100 % HDP a přesunul se k výrobkům s vysokou přidanou hodnotou
+(informační technologie, služby, léčiva) (posoudil Mezinárodní měnový fond 2015). Od roku 2003 platí pro zisky všech
+firem jednotná daň 12,5 %, která nahradila zvýhodněných 10 % pro výrobu (Honohan a Walsh 2002), a umístění ziskových
+nadnárodních firem je podle irské centrální banky zvlášť citlivé na nízké zdanění, podnikatelské prostředí
+a dostupnost kvalifikovaných lidí (posoudila Central Bank of Ireland 2019). Fondy EU pomohly v kritické chvíli:
+na vrcholu v roce 1993 přinášely přes 3 % hrubého národního produktu a vláda díky nim mohla začít stavět odloženou
+infrastrukturu bez ohrožení křehce se zotavujícího rozpočtu (posoudili Honohan a Walsh 2002). Dohody sociálních partnerů vyměňovaly
+umírněný růst mezd za snižování daně z příjmu, což podle Honohana a Walshe zmírnilo růst mzdových nákladů a zlepšilo
+konkurenceschopnost (posoudili Honohan a Walsh 2002). Titíž autoři ale upozorňují, že hlavním rysem irského dohánění
+v příjmu na obyvatele byl rostoucí podíl lidí v práci a že po správném výkladu dat nešlo o „zázrak produktivity“
+(posoudili Honohan a Walsh 2002); počet pracujících vzrostl z 1,51 milionu v roce 1996 na 1,95 milionu v roce 2004
+(Eurostat). Výkon na pracujícího přesto i po očištění rostl rychleji než v EU, ze 104 % průměru EU v roce 1996 na
+116 % v roce 2004 (Eurostat a irský statistický úřad, můj přepočet), jen mnohem méně, než ukazuje neočištěné HDP.
+
+**2004–2013: bublina a krize.** Po vstupu do eurozóny v roce 1999 úrokové sazby výrazně klesly a přišel rozmach
+domácí poptávky, úvěrů a cen nemovitostí; úvěry soukromému sektoru rostly v letech 2002–2007 o 20 % ročně, rostoucí
+mzdy a ceny zhoršily konkurenceschopnost a celková efektivita výroby začala klesat (posoudil Mezinárodní měnový fond
+2015). Počet pracujících dál rostl, na 2,22 milionu v roce 2007 (Eurostat), i díky pracovníkům z nových členských zemí
+EU, kterých po roce 2004 odešlo do Británie a Irska asi 1,2 milionu (Elsner 2013); že nová místa byla hlavně ve
+stavebnictví a méně produktivních službách, je můj úsudek opřený o to, že po krizi se investice propadly „hlavně ve
+stavebnictví“ (Mezinárodní měnový fond 2015). Bankovní krize a splasknutí bubliny snížily v letech 2008–2010 reálný
+hrubý národní produkt o 9½ % a investice o 41 % (Mezinárodní měnový fond 2015), počet pracujících klesl na 1,92 milionu
+v roce 2010 (Eurostat) a nezaměstnanost vystoupala na 15,9 % v roce 2011 (Central Bank of Ireland 2020). Vláda v září
+2008 plošně zaručila závazky šesti bank, což podle Mezinárodního měnového fondu prohloubilo provázanost bank a státu,
+a v letech 2010–2013 prošlo Irsko ozdravným programem EU a Mezinárodního měnového fondu s balíkem 85 miliard eur a opatřeními
+za 15 miliard eur (9 % HDP roku 2010), ze dvou třetin ve výdajích (Mezinárodní měnový fond 2015). Program stabilizoval
+banky, domácí poptávka ale byla slabší, než se čekalo, a nezaměstnanost zůstala vysoká (posoudil Mezinárodní měnový
+fond 2015). Vůči průměru EU spadl irský výkon na pracujícího ze 116 % v roce 2004 na 106 % v roce 2008 a v roce 2013
+byl na 107 % (Eurostat a irský statistický úřad, můj přepočet), takže ztráta byla irská, ne jen pohyb střední země.
+
+**2013–2024: návrat a nadnárodní obory.** Nezaměstnanost klesla z vrcholu 15,9 % v roce 2011 na 4,9 % ve
+3. čtvrtletí 2019 (Central Bank of Ireland 2020) a výkon vůči střední zemi se zvedl na 109,2 % (2019). Nejprudší nárůst přišel po roce
+2019: očištěný důchod vzrostl mezi lety 2019 a 2024 v běžných cenách o 57 %, kdežto počet pracujících o 18 % (irský
+statistický úřad a Eurostat, můj přepočet), a vůči průměru EU se irský výkon na pracujícího zvedl ze 107 na 120 %
+(můj přepočet). Komise k tomu píše, že vysokou celostátní produktivitu silně ovlivňuje několik nadnárodních firem ve
+vysoce produktivních oborech, zatímco domácí firmy zaostávají za nimi i za firmami v EU (posoudila Evropská komise
+2026), a že daň ze zisku firem se od roku 2021 víc než zdvojnásobila díky výjimečným ziskům malého počtu zahraničních
+firem (Evropská komise 2026). Očištěný důchod vylučuje zisky, které firmy posílají do ciziny, obsahuje ale mzdy
+vyplácené nadnárodními firmami a daně z jejich zisků (můj úsudek z definice), takže i po očištění je část irského
+nárůstu po roce 2019 spjatá s nadnárodními firmami; jak velká, příčina není doložena.
+
+**Měření.** Bez očištění by čísla byla úplně jiná: nadnárodní firmy v roce 2015 přesunuly do Irska celé rozvahy
+s duševním vlastnictvím, HDP skokem vzrostlo o 26 % a kapitálová zásoba o 300 miliard eur (irský statistický úřad
+2016); proto úřad od července 2017 zveřejňuje očištěný důchod (irský statistický úřad 2017). Ten činil v roce 2024 jen
+57 % HDP (irský statistický úřad, můj přepočet), takže z celého HDP by irský pracující v roce 2024 vycházel asi na
+215 % střední země místo 123 % (můj přepočet). Rok 2020 je zvýšený pandemií (115,8 %); bez něj by násobek růstu vyšel
+1,18 místo 1,173 (můj přepočet).
+
+## 3. Proč taková zátěž daní a odvodů (2024)
+
+Z toho, co firma za průměrně placeného svobodného zaměstnance bez dětí zaplatí, připadne v Irsku státu na daních
+a odvodech 34,2 %, druhý nejnižší podíl v lize po Británii; ve střední zemi ligy je to 41,2 % (kontext a list ukazatele
+projektu, výpočet podle irských pravidel 2024). Řada OECD při průměrné mzdě OECD ukazuje 33,3 % v roce 2024 (OECD,
+databáze Taxing Wages); rozdíl je v tom, při jaké výši mzdy se počítá.
+
+**Jak je systém postavený.** Zátěž tvoří daň z příjmu spolu s univerzálním sociálním poplatkem (USC) a pojistné
+zaměstnance a zaměstnavatele. Při průměrné mzdě OECD činila v roce 2024 daň z příjmu včetně poplatku 21,9 % hrubé
+mzdy, pojistné zaměstnance 4,0 % a pojistné zaměstnavatele 11,1 % hrubé mzdy (OECD, databáze Taxing Wages). Komise
+shrnuje, že Irsko má velmi nízkou celkovou zátěž práce, ale silně progresivní zdanění: daně z práce tvoří méně než
+polovinu průměru EU v poměru k HDP a rozdíl zátěže mezi vysokou a nízkou mzdou patří k největším v EU (posoudila
+Evropská komise 2026).
+
+**Jak se zátěž měnila od roku 2000.** Podle řady OECD klesla z 35,3 % v roce 2000 na 28,2 % v roce 2008, do roku 2013
+vystoupala na 33,9 % a od té doby se drží kolem 33 % (32,9 % v roce 2019, 33,3 % v roce 2024) (OECD, databáze Taxing
+Wages). Pokles do roku 2008 byl celý v dani z příjmu (z 24,1 na 17,1 % hrubé mzdy, OECD): vlády v rámci dohod
+sociálních partnerů slibovaly snižování daní výměnou za umírněné mzdové požadavky a zvyšovaly hranice, od kterých se
+daň platí (posoudili Honohan a Walsh 2002). V krizi se trend obrátil: od 1. 1. 2011 nahradil dřívější příjmovou
+a zdravotní dávku univerzální sociální poplatek z téměř všech příjmů (irská daňová správa Revenue), daň z příjmu včetně dávek
+a poplatku stoupla ze 17,1 % (2008) na 22,7 % hrubé mzdy (2013) a pojistné zaměstnance ze 3,4 na 4,0 % (OECD).
+Průměrná mzda podle OECD se přitom skoro nezměnila (42 783 eur v roce 2008, 43 046 eur v roce 2013), takže nárůst
+zátěže nevyvolaly vyšší mzdy, ale změny pravidel (můj úsudek z dat OECD); podíl jednotlivých opatření ale v otevřených
+zdrojích nikdo neoddělil (jen časová souvislost). Mírný pokles po roce 2014 (daň z příjmu včetně poplatku z 22,9 % na
+21,6 % hrubé mzdy v roce 2019, OECD) jsem konkrétním opatřením v otevřených zdrojích nepřiřadil.
+
+**Test protipříkladem.** Zátěž je nízká hlavně proto, že je nízké pojistné, ne proto, že by byla nízká daň z příjmu.
+Kdyby Irsko mělo odvody zaměstnavatele jako Francie (36,3 % hrubé mzdy místo 11,1 %), vyšla by zátěž při průměrné mzdě
+OECD asi 45,6 % místo 33,3 % (můj přepočet ze složek OECD 2024); protipříklad tedy příčinu potvrzuje. Daň z příjmu
+včetně poplatku je naopak vyšší než v Británii nebo ve Francii (21,9 % hrubé mzdy proti 16,1 % a 16,6 %, OECD), takže
+„nízké daně“ jako vysvětlení protipříkladem neprojdou. Kdyby nebyly krizové daně, byla by zátěž blíž úrovni roku 2008
+(28,2 %); celý nárůst o 5,7 bodu do roku 2013 ale nejde přičíst jen poplatku, protože se měnilo i pojistné. Kdo
+odvody formálně platí, se v Irsku ve sledovaném období neměnilo.
+
+## 4. Další faktory země
+
+**Dvě ekonomiky vedle sebe.** Zahraniční nadnárodní firmy zaměstnávají téměř čtvrtinu pracovníků irského
+podnikatelského sektoru (průměr EU 15 %) a vytvářejí přes polovinu jeho přidané hodnoty (Central Bank of Ireland
+2019); v listopadu 2024 pracovalo v zahraničních firmách 618 700 zaměstnanců a v irských 1 877 800 (irský statistický
+úřad 2025). Medián týdenního výdělku byl v roce 2023 906,74 eura ve firmách nadnárodních skupin mimo EU, 789,07 eura
+ve firmách skupin z EU a 654,41 eura v irských firmách (irský statistický úřad 2025). Hodinové náklady práce činily
+v roce 2024 42,5 eura proti 33,5 eura v EU, což irská Národní rada pro konkurenceschopnost a produktivitu přičítá
+vysoce placeným oborům, napjatému trhu práce a zvyšování minimální mzdy (posoudila Národní rada pro
+konkurenceschopnost a produktivitu 2025). Průměrná mzda tak popisuje směs dvou ekonomik, ne typického zaměstnance
+(můj úsudek).
+
+**Minimální mzda.** Mezi lednem 2022 a lednem 2025 vzrostla o 28 % (reálně o 10 %), rychleji než ostatní mzdy
+(posoudila Evropská komise 2026), od 1. 1. 2025 na 13,50 eura za hodinu (Evropská komise 2025).
+
+**Ceny a kupní síla.** Cenová hladina skutečné individuální spotřeby byla v Irsku v roce 2024 141 % průměru EU
+a v roce 2000 116 % (Eurostat). Irská rada pro konkurenceschopnost k tomu píše, že Irsko má poměrně vysoké mzdy, ale
+vyvažují je vysoké ceny (Národní rada pro konkurenceschopnost a produktivitu 2025); po přepočtu na kupní sílu se proto
+irská mzda zmenší víc než mzdy v levnějších zemích.
+
+**Kolektivní vyjednávání.** Kolektivními smlouvami bylo pokryto 34 % zaměstnanců (2017, poslední údaj), o 19 bodů
+méně než v roce 2003, a v odborech bylo v roce 2024 22,2 % zaměstnanců; slabé organizace podle Komise oslabují
+vyjednávání o spravedlivých mzdách (posoudila Evropská komise 2026). Vliv na průměrnou mzdu nikdo nevyčíslil.
+
+**Přistěhovalci.** Po otevření trhu práce v roce 2004 přicházeli pracovníci z nových členských zemí EU (do Británie
+a Irska dohromady asi 1,2 milionu, Elsner 2013); účinek na irské mzdy v otevřených zdrojích změřen není.
+
+## 5. Co říkají ekonomové
+
+Instituce vysvětlují vysokou irskou mzdu hlavně zahraničními nadnárodními firmami ve vysoce placených oborech:
+národní rada pro konkurenceschopnost píše, že vysoké irské náklady práce odrážejí „vysoce placená odvětví, jako jsou
+technologie, farmacie a mezinárodně obchodované služby“ (v originále „high-wage sectors such as technology,
+pharmaceuticals, and internationally traded services“, Národní rada pro konkurenceschopnost a produktivitu 2025).
+Evropská komise a Mezinárodní měnový fond zároveň zdůrazňují, že vysoká celostátní produktivita je dílem několika
+nadnárodních firem, zatímco domácí firmy zaostávají, takže průměr popisuje dvě ekonomiky vedle sebe (`ekonomove/IE.md`).
+
+## 6. Zdroje
+
+- **Kontext projektu:** `data/kontext_kroky.json` (výkon na pracujícího vůči střední zemi ligy po letech, násobek
+  růstu, zátěž 2024, řada OECD); list ukazatele `LIST_UKAZATELE.md` (medián ligy 41,2 %); tabulka kol
+  `KOLA_TABULKA.md` (pořadí v kole daní a odvodů).
+- **Eurostat (můj přepočet):** HDP v kupní síle, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_ppp_ind_1?format=JSON&lang=EN&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=GDP&sinceTimePeriod=1995 ;
+  zaměstnanost, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pe?format=JSON&lang=EN&unit=THS_PER&na_item=EMP_DC&na_item=SAL_DC&na_item=POP_NC&sinceTimePeriod=1995
+  (staženo projektem 17. 10. 2026); cenová hladina skutečné individuální spotřeby, `prc_ppp_ind_1` (data projektu
+  `data/raw_krok1/prc_ppp_ind_1_A01.json`).
+- **Irský statistický úřad, očištěný důchod a HDP:** tabulka NA001 (zveřejněno 2. 7. 2026), https://data.cso.ie/table/NA001
+  (data projektu `data/raw_faktory/doplnena_data.json`).
+- **Irský statistický úřad 2016:** National Income and Expenditure 2016, FAQs,
+  https://www.cso.ie/en/media/csoie/methods/nationalincomeandexpenditureannualresults/NIE_2016_FAQS.pdf
+- **Irský statistický úřad 2017:** De-globalized GDP by using modified GNI (pro poradní skupinu expertů OSN, prosinec
+  2017), https://unstats.un.org/unsd/nationalaccount/aeg/2017/M11_3_4_Deglobalized_GDP_IP.pdf
+- **Irský statistický úřad 2025:** Employment and Earnings Insights by Nationality of Enterprise Ownership 2023–2024,
+  6. 2. 2025, https://www.cso.ie/en/releasesandpublications/fp/fp-eino/employmentandearningsinsightsbynationalityofenterpriseownership2023-2024/
+- **OECD, databáze Taxing Wages** (svobodný bez dětí, průměrná mzda OECD; stažena 17. 10. 2026):
+  https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_TAX_WAGES_COMP@DF_TW_COMP,2.1/GBR+IRL+FRA......A?startPeriod=2000&endPeriod=2024
+- **Honohan a Walsh 2002:** Catching Up with the Leaders: The Irish Hare, Brookings Papers on Economic Activity 1:2002,
+  https://www.brookings.edu/wp-content/uploads/2002/01/2002a_bpea_honohan.pdf
+- **Mezinárodní měnový fond 2015:** Ireland: Ex Post Evaluation of Exceptional Access Under the 2010 Extended
+  Arrangement, IMF Country Report No. 15/20, leden 2015, https://www.imf.org/external/pubs/ft/scr/2015/cr1520.pdf
+- **Central Bank of Ireland 2019:** Emter, McQuade, Mehigan, Box E MNEs and Ireland: A Firm Level Analysis, Quarterly
+  Bulletin 3/2019, https://www.centralbank.ie/docs/default-source/publications/quarterly-bulletins/boxes/box-e-mnes-and-ireland.pdf
+- **Central Bank of Ireland 2020:** Keenan, Box C Sectoral Wage Growth in Ireland, Quarterly Bulletin 1/2020,
+  https://www.centralbank.ie/docs/default-source/publications/quarterly-bulletins/boxes/qb1-2020/box-c-sectoral-wage-growth-in-ireland.pdf
+- **ESRI 2004:** Boyle, McElligott, O'Leary, Public-Private Wage Differentials in Ireland, 1994-2001, Quarterly
+  Economic Commentary, léto 2004, https://www.esri.ie/system/files/media/file-uploads/2015-07/QEC2004Sum_SA_Boyle.pdf
+  (dohoda Partnership 2000 v souboru kroků)
+- **Evropská komise 2026:** 2026 Country Report – Ireland, SWD(2026) 207 final, 3. 6. 2026,
+  https://economy-finance.ec.europa.eu/document/download/2e6416cf-583a-4518-9a54-61bcaf3a4a09_en?filename=IE_SWD_2026_207_1_EN_autre_document_travail_service_part1_v4.pdf
+- **Evropská komise 2025:** 2025 Country Report – Ireland, SWD(2025) 207 final,
+  https://economy-finance.ec.europa.eu/document/download/7ec5fe18-b881-4140-b86a-7b22cb7a8580_en?filename=IE_CR_SWD_2025_207_1_EN_autre_document_travail_service_part1_v3.pdf
+- **Národní rada pro konkurenceschopnost a produktivitu 2025:** National Competitiveness and Productivity Council,
+  Ireland's Competitiveness Challenge 2025, https://competitiveness.ie/media/3y4kcpus/irelands-competitiveness-challenge-2025.pdf
+- **Revenue:** irská daňová správa, Notes for Guidance – Taxes Consolidation Act 1997 – Part 18D Universal Social
+  Charge, https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf
+- **Elsner 2013:** Emigration and wages: The EU enlargement experiment, Journal of International Economics 91(1),
+  https://ideas.repec.org/a/eee/inecon/v91y2013i1p154-163.html
+- **Rešerše ekonomů projektu:** `ekonomove/IE.md` (17. 10. 2026).
 
 
 ---
@@ -465,20 +1906,32 @@ Poslední scénář (soubor 01) je faktická verze. Jediným zdrojem čísel, d�
 
 # Ekonomické hry antigravity
 
-## SCÉNÁŘE REGIONŮ: FAKTICKOU VERZI PÍŠE CLAUDE, ČTIVOU GEMINI NA WEBU — Ondřej 31. 10. 2026
+## SCÉNÁŘE REGIONŮ: FAKTICKOU VERZI PÍŠE CLAUDE, GEMINI NA WEBU ODPOVÍDÁ ZA SROZUMITELNOST — Ondřej 31. 10. a 17. 11. 2026
 
 Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
 webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
 
-- **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.1.md` postaví mapu příběhu
+**Stav 17. 11. 2026** (Ondřej: „Ano určitě. Všechny ty body, které jsem schválil, tak [zplatni]… určitě všechno hned
+commitni“): platí postup pro scénáře v1.2, postup analýzy v1.6 a postup pro úvod v1.1. Co Ondřej od 9. 11. schválil,
+co čeká a k čemu se nevyjádřil: `10_documents/active/2026-11-17_co_je_schvaleno/PREHLED_SCHVALENI.md`.
+
+- **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.2.md` postaví mapu příběhu
   (kostra `py scripts/kostra_mapy_pribehu.py --region "…"`) a napíše **faktickou verzi** scénáře regionu se zámkem
   faktů (tučně = pevné jádro, `{volitelné: …}`, seznam NEŘÍKEJ, rozpočet slov). Fakta nechá nezávisle zkontrolovat.
-  Důvody a jejich váhu bere z analýzy podle `analyza-pricin-regiony-SKILL-v1.5.md`, krok 2b (test se třemi výsledky,
-  pořadí příčin zvlášť pro vlastní výsledek země a pro rozdíl proti sousedovi; audit výkladu, Ondřej 9. 11. 2026).
-- **Ondřej** ji vloží do **Gemini na webu** spolu se skillem `05_epizode_packs/_skills/gemini-web-ctiva-verze-SKILL-v1.0.md`
-  (Ondřej ho dál ladí); Gemini napíše čtivou sportovní verzi a nemění fakta.
-- **Claude** čtivou verzi zkontroluje jen na šest druhů odchylek (číslo, omezující slovo, směr příčiny, pořadí/štítek/tip,
-  nový fakt, váha důvodů; skill mapy příběhu oddíl 4). Styl Gemini nepřepisuje.
+  **Výklad píše rovnou tak, aby mu napoprvé rozuměl člověk, který se o ekonomii nezajímá** (oddíl „Jak se staví
+  výklad“, §3.0: nejdřív výklad nanečisto pro jednoho člověka, řetěz otázek diváka, obraz místo poměrů a procent,
+  čísla do řádku `[VIZUÁL: …]`, schválené vzory); na Gemini se nespoléhá (Ondřej 17. 11. 2026).
+  Důvody a jejich váhu bere z analýzy podle `analyza-pricin-regiony-SKILL-v1.6.md`, krok 2b (test se třemi výsledky,
+  pořadí příčin zvlášť pro vlastní výsledek země a pro rozdíl proti sousedovi; audit výkladu, Ondřej 9. 11. 2026)
+  a krok 7 bod 8 (ke každému důvodu v cíli pět věcí běžnými slovy včetně „čím to je“).
+- **Ondřej** ji vloží do **Gemini na webu** spolu se skillem `05_epizode_packs/_skills/gemini-web-ctiva-verze-SKILL-v1.1.md`
+  (Ondřej ho dál ladí). **Gemini od 17. 11. 2026 odpovídá za srozumitelnost:** smí výklad přestavět, nahradit odborný
+  obrat obrazem, čísla přesunout do řádku VIZUÁL a dohledat a doplnit chybějící „proč“; všechno doplněné vypíše na
+  konci se zdrojem. Dává textu sportovní tón. Nemění výsledky, pořadí, hodnoty čísel, váhu a směr důvodů a analýzu
+  nepřepisuje (Ondřej: „aby se to nepřehnalo“).
+- **Claude** hotový text zkontroluje: nejdřív ověří u zdrojů všechno, co Gemini doplnil, potom osm druhů odchylek
+  (číslo, omezující slovo, směr příčiny, role a pořadí, nový fakt, váha důvodů, tvář změněná v příčinu, síla soudu;
+  skill mapy příběhu oddíl 4). Mění slovo, ne stavbu, změny Ondřejovi vypíše s důvodem a styl Gemini nepřepisuje.
 - Platí dál: sloh v souvislých větách, žádné „my“ o Česku, žádné kódy.
 
 **Historie (23.–31. 10. 2026, nahrazeno):** dřív psal scénáře jen Gemini 4 Argon přes Antigravity CLI (`agy`,
@@ -769,11 +2222,11 @@ Instrukční dokumenty pro generování obsahu jsou v `05_epizode_packs/_skills/
 - **`european-economy-analysis-v20-capacity-first.md`** — Podklad v22: platí z něj §1.2, §4, §5, §7.1, §8, §9 (v22 na ně odkazuje); konstrukce indexu z v20 §2–3 je nahrazená.
 - **`european-economy-analysis-v19-causal-first.md`** — Předchozí causal-first rámec (nahrazen v20→v22); kauzální kontrakt žije dál ve v22 §5 odkazem.
 - **`voiceover-skill-v10-live-race.md` (v10.3) + `voiceover-styl-ondrej-SKILL-v1.0.md`** — AKTIVNÍ writer kontrakt (Ondřej, laděno 2026-07-24→28; závazné i pro ep_001). Formát „živý závod": abecední startovní listina, PAPER FORM/OČEKÁVÁNÍ před výsledkem, GAME PLAN + TARGET BAND, živá tabulka se zásuny, checkpointy po 10/20, vyhlášení §7. Stylová vrstva styl-ondrej v1.0 při konfliktu vyhrává. Kauzalita se vynucuje NAVRCH přes `causal-claim-repair-ADDENDUM-v1.0.md` (bodové opravy à la cr/cr2 vzorky — styl se při nich zachovává). Kanonický vzor: `output/v14/FINAL_voiceover_v14.md` + cr2 segmenty.
-- **`voiceover-mapa-pribehu-SKILL-v1.1.md`** — AKTIVNÍ hlavní postup scénářů regionů (Ondřej 31. 10. 2026; verze 1.1 z 9. 11. 2026 po auditu výkladu dat): kostra (`scripts/kostra_mapy_pribehu.py`), mapa příběhu (tip, hlavní scéna kola, otázka diváka, průběžné pořadí po každém kole, finále = skutečné pořadí proti pořadí po kolech a zvláštnosti zemí při posunu aspoň o dvě místa), důvody a jejich váha ze záznamu pořadí příčin v analýze, závěr povinný a soud jen s oporou, dohánění jako kontext, faktická verze se zámkem faktů a zpětná kontrola čtivé verze z Gemini (šest druhů odchylek včetně váhy důvodů). Nahrazuje psaní Argonem a doplněk o jádru země; historie v `voiceover-mapa-pribehu-HISTORIE.md`.
-- **`analyza-pricin-regiony-SKILL-v1.5.md`** — analytický skill regionů (podle něj vznikají analýzy regionů; formální aktivaci potvrzuje Ondřej): výběr kol podle svědků a obvyklého vlivu, a zvlášť výklad hodnot v kole (krok 2b: test domněnek se třemi výsledky podporuje / odporuje / nerozlišuje, pořadí příčin zvlášť pro vlastní hodnotu a pro rozdíl proti sousedovi, závěr a soud jen s oporou; krok 7.6). Verze 1.5 z 9. 11. 2026 po auditu výkladu dat; historie v `analyza-pricin-regiony-HISTORIE.md`.
-- **`gemini-web-ctiva-verze-SKILL-v1.0.md`** — malý skill pro Gemini na webu (Ondřej ho ladí): z faktické verze čtivý sportovní komentář, pevné jádro a omezující slova zůstávají, žádné nové fakty, limit slov.
+- **`voiceover-mapa-pribehu-SKILL-v1.2.md`** — AKTIVNÍ hlavní postup scénářů regionů (Ondřej 31. 10. 2026; verze 1.2 z 13. 11. 2026, platná od 17. 11. 2026): kostra (`scripts/kostra_mapy_pribehu.py`), mapa příběhu (role zemí místo tipů, hlavní scény kola, slova soudu, průběžné pořadí jen v regionu, cílová tabule ligy po každém regionu), tváře zemí a všeobecně známé představy (pravidlo „Co za tím stálo“, body 7 a 8), oddíl „Jak se staví výklad“ (§3.0: nejdřív výklad nanečisto pro jednoho člověka, řetěz otázek diváka, obraz místo poměrů a procent, čísla do řádku VIZUÁL, schválené vzory), finále s výplatou na účet a kupní silou, psaní na poslech, dělba práce s Gemini (§0) a kontrola hotového textu včetně ověření toho, co Gemini doplnil (oddíl 4). Předchozí znění v1.1 a v1.0 zůstávají jako historie; záznam změn v `voiceover-mapa-pribehu-HISTORIE.md`.
+- **`analyza-pricin-regiony-SKILL-v1.6.md`** — AKTIVNÍ postup analýzy regionů (platnost potvrdil Ondřej 17. 11. 2026): výběr kol podle svědků a obvyklého vlivu; výklad hodnot v kole (krok 2b: test domněnek se třemi výsledky podporuje / odporuje / nerozlišuje, pořadí příčin zvlášť pro vlastní hodnotu a pro rozdíl proti sousedovi, závěr a soud jen s oporou, slovo soudu a test lepší možnosti); známé představy a tváře zemí (krok 9a bod 11); rozložení hlavního ukazatele na díly pro graf v úvodu (krok 7 bod 7); výsledek v penězích a výklad specifického faktoru v cíli pěti poli (krok 7 bod 8: jak to chodí obvykle, jak je to v zemi, co to dělá s výplatou, čím to je, co si divák myslí a neplatí). Předchozí znění v1.5 zůstává jako historie; záznam změn v `analyza-pricin-regiony-HISTORIE.md`. Ústava starého systému tří indexů se nemění.
+- **`gemini-web-ctiva-verze-SKILL-v1.1.md`** — skill pro Gemini na webu (Ondřej ho ladí; verze 1.1 ze 17. 11. 2026): Gemini odpovídá za srozumitelnost výkladu (smí ho přestavět, nahradit obrat obrazem, čísla přesunout do řádku VIZUÁL, dohledat a doplnit chybějící „proč“ se seznamem doplněného) a dává textu sportovní tón; nemění výsledky, pořadí, hodnoty čísel, váhu a směr důvodů, analýzu nepřepisuje; limit slov.
 - **`ekonomie-lidskou-reci-ZASADA-v1.0.md`** — ZÁSADA CELÉ SÉRIE (Ondřej 2. 11. 2026): ekonomie lidskou řečí. Nejdřív věc, pak číslo (za každým stavem konkrétní firmy, výrobky, místa, povolání ze země); každý krok jako příběh (co se lidem změnilo, jak to bylo provedeno, kudy to doputovalo k ukazateli); méně příčin, ale pořádně. Test nosnosti příkladu (slavná výjimka průměr nevysvětlí) a zdroj u každého příkladu. Povinná rešerše lidských příkladů `priklady/{kód}.md` v každé analýze, ze které vzniká scénář. Platí pro všechny ukazatele, analýzy, writery i Gemini.
-- **`voiceover-uvod-SKILL-v1.0.md`** — AKTIVNÍ skill mluveného úvodu (Ondřej 8. 10. 2026), nahrazuje §9 writer skillu: trademark „Vítejte u {první} epizody {Evropských/Amerických/Globálních} ekonomických her.“, hned disciplína, bez otázky a výčtu zemí; část „Pojďme se podívat na to, co v dnešní disciplíně uvidíme.“ (favoriti, černí koně a outsideři vždy od Ondřeje — bez nich se FINAL nepíše, trikoty, pořadí startu, tři kola s faktory a vahami, nesčítání kol se smyšleným příkladem, zdroje); nakonec co přesně měříme a rok dat ověřený u zdroje.
+- **`voiceover-uvod-SKILL-v1.1.md`** — AKTIVNÍ skill mluveného úvodu pro scénáře po regionech (Ondřej 10., 13. a 16. 11. 2026; platný od 17. 11. 2026), nahrazuje §9 writer skillu: krátký úvod asi 90 vteřin v pěti blocích, trademark „Vítejte u {první} epizody {Evropských/Amerických/Globálních} ekonomických her.“, favoriti, černí koně a outsideři vždy od Ondřeje, trikoty a týmová soutěž, a blok 4b: sloupcový graf hlavních faktorů a jejich vlivu na zkoumaný ukazatel se zněním od Ondřeje. Verze 1.0 (8. 10. 2026) zůstává pro starší formát živého závodu.
 - **`voiceover-cestina-SKILL-v1.0.md`** — ČESKÁ JAZYKOVÁ VRSTVA, NA ZKOUŠKU (Ondřej rozhoduje vkus; 2026-09-15, z rešerší R1/R2 a ze slepého porovnání dvou verzí voiceoveru ep_003). Není to writer ani přepis: **omezený druhý průchod** nad hotovou skillovou verzí — mapa bodových oprav jazyka (`scripts/voiceover_apply_replacements.py`), zámek číslovek a hedgí (`scripts/voiceover_cestina_detektory.py --pred`, exit 0), INFO rozdíly kvalifikátorů/první osoby/zesilovačů, čerstvá kontrola, pak standardní slepé čtení + viewer review. §15.1 = pravidla, která obstála (nominalizace → sloveso, aktér místo pasiva, réma na konec, dvojtečka → spojka ne tečka, „kam“, genitiv po „dost“ a u kvantity, statistická jednotka není fyzický objekt); §15.2 = tvrdé zákazy (hodnotící přívlastek u čísla, první osoba u verdiktu, škrtnutý kvalifikátor, změněná kauzální spojka, přidaný fakt, přejmenovaný pojem série, dvojtečka → tečka); §15.4 = otázky vkusu pro Ondřeje (vrstva postoje, první osoba, průvodcovské vazby, nocleh/startér).
 - **`voiceover_skill_v_9_2.md`** — LEGACY craft base (v9.x formát bez živého závodu). ⚠ v19/v20 voiceovery napsané podle v9.2 (FINAL_voiceover_v19, první FINAL_voiceover_v20) NEJSOU stylový kanon — Ondřej 2026-07-31: „absolutně nepoužitelný styl"; slouží jen jako zdroj kauzálních formulací.
 - **`voiceover-review-skill-v2_4.md`** — Recenzuje voiceover z osy analytické hloubky, kreativní kvality, UI synchronizace a týmové validace.
@@ -870,11 +2323,11 @@ Obsah (31 skillů):
 - potencial-index-produktove-svazky-ADDENDUM-v1.0.md
 - european-economy-analysis-v20-capacity-first.md
 - voiceover-skill-v10-live-race.md
-- voiceover-mapa-pribehu-SKILL-v1.1.md
-- analyza-pricin-regiony-SKILL-v1.5.md
-- gemini-web-ctiva-verze-SKILL-v1.0.md
+- voiceover-mapa-pribehu-SKILL-v1.2.md
+- analyza-pricin-regiony-SKILL-v1.6.md
+- gemini-web-ctiva-verze-SKILL-v1.1.md
 - ekonomie-lidskou-reci-ZASADA-v1.0.md
-- voiceover-uvod-SKILL-v1.0.md
+- voiceover-uvod-SKILL-v1.1.md
 - voiceover-cestina-SKILL-v1.0.md
 - voiceover-review-skill-v2_4.md
 - voiceover-creative-control-v2_3.md
@@ -6627,13 +8080,74 @@ vysvětlení lze přidat podle §4; nevypouštěj význam jen kvůli délce. Zdr
 **Doplnění kroku 1 (23. 9. 2026):** režijní plán obsahuje mapu příčin napříč ligou (§3.7), u každé země nový prvek segmentu (§4) a předem spočítaná pásma kol, pokud se mají použít (§3.6). Slovník kol (§3.6) a kolize názvů kol (§5d) hlídá `scripts/validate_voiceover_five_blocks.py`; směr kol, test záměny, odkazy místo opakování a pravidla §5d ověřuje dramaturgická evaluace a slepé čtení.
 
 
-# Skill: voiceover-mapa-pribehu-SKILL-v1.1.md
+# Skill: voiceover-mapa-pribehu-SKILL-v1.2.md
 
-## Mapa příběhu a faktická verze scénáře regionu (skill pro Claude, v1.1, 9. 11. 2026)
+## Mapa příběhu a faktická verze scénáře regionu (skill pro Claude, v1.2, 13. 11. 2026)
 
 *Stav: **AKTIVNÍ, hlavní postup pro scénáře regionů** (Ondřej 31. 10. 2026: „zapiš postup mapy příběhu, ale obecně…
 co nejkonkrétnější, ale zároveň obecný, aby se to dalo uplatnit na všechny regiony, všechny indikátory“). Vznikl
 z prototypu Jižní Evropy (mzdy, 31. 10. 2026), kde slepý divák poprvé správně pochopil celý příběh regionu.*
+
+**Platnost: tato verze je od 17. 11. 2026 platná a uložená v projektu.** Ondřej 17. 11. 2026 v noci: „Ano určitě.
+Všechny ty body, které jsem schválil, tak [zplatni]… určitě všechno hned commitni.“ Jmenoval, co se nesmí ztratit:
+výklad na věcech, které běžný člověk zná, a tváře zemí (Skype; pravidlo „Co za tím stálo“, body 7 a 8), nový výklad
+a dělbu práce s Gemini (§3.0, §0) a graf faktorů v úvodu (postup pro úvod, blok 4b). Slovo „necommitovaný“
+u doplňků níže popisuje stav před tímto dnem. Neuzavřené zůstává, co čeká na jeho posouzení (celé znění cíle
+Balkánu, čtyři regiony ze 13. 11.); přehled: `10_documents/active/2026-11-17_co_je_schvaleno/PREHLED_SCHVALENI.md`.
+
+**Co se změnilo ve verzi 1.2 (13. 11. 2026; úplné znění).** Ondřej si v Pobaltí všiml dvou věcí, které nezadal, a obě se po dohledání ukázaly jako mezera v postupu. Zkouška na Pobaltí: `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/gemini/POBALTI_FABLE_2026-11-10/`.
+1. **Tvář země, ne jen příčina** (pravidlo „Co za tím stálo“, bod 7): test nosnosti rozhoduje o tom, co smí být
+   příčina, ne o tom, co smí zaznít. Firmy, které si divák se zemí spojuje (Skype, Vinted), zazní jménem jako tvář
+   země; věta o tváři netvrdí příčinu a jedna poctivá věta ji spojí se skutečným důvodem. Tvář patří do pevného
+   jádra (§3 bod 3), hlídá ji kontrolor (§3 bod 7) i zpětná kontrola čtivé verze (§4 bod 7).
+2. **Místo země zazní, až když na ni dojde řada** (§2.3, otevření kola): kolo nezačíná pořadím celého regionu.
+3. **Novou stavbu z pokusné verze Claude nepřebírá mlčky** (§2.3, otevření kola).
+4. **Začni tím, co si divák o zemi myslí** (pravidlo „Co za tím stálo“, bod 8): scénář pracuje se všeobecně
+   známými představami o zemi, pojmenuje je hmatatelnou věcí a potvrdí je, zmenší nebo vyvrátí podle analýzy.
+   Ondřej zkoušku na Pobaltí schválil („toto je přesně ono… přesně ten postup, jako jsi teď použil, tak to je
+   ideální stav“).
+
+**Z přestavby Balkánu a Pobaltí (Ondřej 10. 11. 2026) je ve verzi 1.2 zapsáno:**
+5. **role zemí místo tipů na místa**, tipy se v cíli regionu nevyhodnocují (§2.2, §2.7);
+6. **nejvýš dvě hlavní scény na kolo**, ostatní země krátce, ale s konkrétním jménem; každá země má za region aspoň
+   jednu hlavní scénu; před psaním tabulka chvil a titulková věta; „nudnější“ země se nekrátí (§2.3 bod 2, §2.9);
+7. **soud nahlas, hlavní větou**, slovník slov soudu a test slova „chyba“ (§2.3a);
+8. **průběžné pořadí jen uvnitř regionu** a pravidla závodu vysvětlená za jízdy v prvním regionu (§2.5);
+9. **věta účtu u každé země v cíli** a otázka, zda důvod posunu není započtený už v kolech (§2.6);
+10. **cílová tabule ligy a body týmu** na konci regionu (§2.8);
+11. **psaní na poslech** a příčina krkolomných vět (§3 bod 2);
+12. **zkouška poslechem u každého regionu** a pořadí kontrol; omezující slovo je součást faktu (§3 bod 7, §5a);
+13. **dělba práce s Gemini:** zamčený je význam, ne slovosled; styl je celý jeho (§0, §3 bod 3, §4);
+14. **délka:** cílová tabule se počítá do stropu regionu, první region epizody smí o 50 slov víc (§3 bod 6).
+15. **kontrakt rozhraní s Gemini** (§0): pevné pořadí zemí, ochrana vítěze v cíli, obě místa u každé země jako data,
+    štítek u každého zlomu, slovník a nadpisy kol.
+
+**Doplněk 17. 11. 2026 (necommitovaný; Ondřej po zkoušce hotového videa na bratrovi a rodičích):** finále regionu
+říká u každé země peníze (eura na účet a co se za ně koupí), srovnání s tím, co slibovala kola, a nejvýš jeden
+specifický faktor s ikonou a velikostí zásahu (§2.6, nový úvodní blok; čísla z analytického skillu krok 7 bod 8).
+**Tento doplněk je od večera téhož dne nahrazen opravou níže.**
+
+**Oprava 17. 11. 2026 večer (necommitovaná).** Ondřej: finále podle dopoledního i odpoledního znění nepochopil,
+kdežto výkladu, který mu ke stejným faktům napsal Gemini, rozuměl hned („šlo by přesně identifikovat ve skillu chyby
+a napravit to?“). Změnilo se: (1) §3 začíná tím, že faktická verze musí být srozumitelná sama o sobě, a novým oddílem
+**§3.0 Jak se staví výklad** (pořadí práce, řetěz otázek diváka, běžná slova, vzor Rumunska schválený Ondřejem);
+(2) úvodní blok §2.6 o finále má jedno krátké znění místo dvou z téhož dne; (3) do pevného jádra patří jen čísla,
+která nesou výklad (§3 bod 3); (4) pojem z analýzy se do hlasu nepřenáší jejím slovníkem (§3 bod 1b); (5) zkouška
+poslechem pomocníky srozumitelnost nepotvrzuje (§3.0, §5a). **Zůstalo:** všechno ostatní, včetně starších částí §2.6
+(věta účtu, cesta výplaty, vedlejší faktory jménem); kde jsou s §3.0 v rozporu, platí §3.0. Přesná místa chyb
+a důvody: `voiceover-mapa-pribehu-HISTORIE.md`. Znění před opravou:
+`10_documents/active/2026-11-17_finale_balkan/zaloha_postupu_pred_upravou_2026-11-17_vecer/`.
+
+**Doplněk 17. 11. 2026 pozdě večer (necommitovaný; Ondřej vybral „variantu A“ a novou dělbu s Gemini).** (1) §3.0:
+divák nic nepočítá; poměry a procenta patří do řádku VIZUÁL, v hlase je obraz (koláč, o který se firma dělí
+s lidmi), srovnávací slovo a jedno číslo v jednotce ze života; obraz se vysvětlí u první země, další na něj odkáže;
+vzor Rumunska je upraven a přibyl vzor další země (Slovinsko). (2) §0 a oddíl 4: Gemini odpovídá za srozumitelnost
+a smí dohledat a doplnit chybějící „proč“, Claude píše výklad rovnou co nejsrozumitelněji a v hotovém textu ověří
+všechno, co Gemini doplnil. **Zůstalo:** všechno ostatní.
+
+Doklady: `10_documents/active/2026-11-10_prestavba_scenaru/` (`NAVRH_ZMEN_SKILLU.md`, `NAVRH_CILOVA_TABULE.md`,
+`NAVRH_UVOD.md`, kontroly a zkouška poslechem) a přestavěné scénáře `BALKAN_FABLE_2026-11-10`
+a `POBALTI_FABLE_2026-11-10`, které slouží jako vzor.
 
 **Co se změnilo ve verzi 1.1 (9. 11. 2026).** Ondřej poslal k provedení audit „Proč se z dobrých podkladů ztrácí
 hlavní vysvětlení“: „Má opravit rozhodovací pravidla a sjednotit jejich platné znění… Chceme, aby příště správně
@@ -6654,8 +8168,8 @@ posoudil i úplně jinou zemi a jiný ukazatel.“ Proto:
 **Co zůstalo:** celý postup mapy příběhu, dělba práce, srozumitelnost a ekonomie lidskou řečí, páry sousedů,
 průběžné pořadí, finále s vedlejšími faktory, brány a strop 9,5 minuty na region. Analytické kroky (testy
 domněnek, pořadí příčin, závěr a soud) mají jedno platné znění v analytickém skillu
-`analyza-pricin-regiony-SKILL-v1.5.md`, krok 2b; tento skill z nich vypráví. Předchozí znění:
-`voiceover-mapa-pribehu-SKILL-v1.0.md` (beze změny); záznam změn a důvodů: `voiceover-mapa-pribehu-HISTORIE.md`.
+`analyza-pricin-regiony-SKILL-v1.6.md`, krok 2b; tento skill z nich vypráví. Předchozí znění:
+`voiceover-mapa-pribehu-SKILL-v1.1.md` a `voiceover-mapa-pribehu-SKILL-v1.0.md` (beze změny); záznam změn a důvodů: `voiceover-mapa-pribehu-HISTORIE.md`.
 
 **Co nahrazuje:** psaní scénářů regionů Argonem přes `scripts/gemini_scenarista.py` (23. 10. 2026) a doplněk
 o jádru země (`voiceover-jadro-zeme-ADDENDUM-2026-10-27.md`). Jeho výběr jader (doklad, sdílený mechanismus
@@ -6713,8 +8227,8 @@ Test představy hlídá mechanismy, ale propouštěl **holé stavy** („Itálie
    „účinek nikdo nezměřil“. Ne dějiny reformy, jen tyto tři kroky.
 3. **Test nosnosti příkladu:** příklad musí stát tam, kde účinek opravdu vzniká, tedy tam, kde pracuje hodně lidí nebo
    kde je většina hodnoty. Slavná výjimka není vysvětlení průměru (Ferrari má asi 5 400 zaměstnanců, italské bary
-   a restaurace 1,5 milionu, takže Ferrari italskou produktivitu neudělalo). Slavnou značku smí scénář použít jako
-   obraz, jen když projde tímto testem, nebo právě jako vyvrácený mýtus.
+   a restaurace 1,5 milionu, takže Ferrari italskou produktivitu neudělalo). Slavná značka, která testem neprojde,
+   nesmí být podaná jako příčina; jako tvář země ale zaznít má (bod 7).
 4. **Odkud příklady:** primárně ze souboru `priklady/{kód}.md` (rešerše lidských příkladů podle zásady Ekonomie lidskou
    řečí). Když chybí nebo nemá dané kolo, Claude je při psaní mapy příběhu **dohledá sám** (několik vyhledávání, zdroj ke každému), zapíše je
    do řádku VIZUÁL a zdroje na konec faktické verze. Bez zdroje se příklad nepoužije.
@@ -6723,16 +8237,141 @@ Test představy hlídá mechanismy, ale propouštěl **holé stavy** („Itálie
    v analýze (analytický skill krok 2b bod 4), ne podle lekce kola ani podle toho, který příklad je nejbarvitější.
    Slavný příklad vedlejšího důvodu nesmí v textu přerůst hlavní důvod.
 
+7. **Tvář země, ne jen příčina (Ondřej 13. 11. 2026: „je to taková vlajková loď a lidi si pod tím představí mnohem
+   víc, než když napíšeš, že začaly vznikat nové technologické firmy… mají se tam i budovat příběhy“).** Test
+   nosnosti (bod 3) rozhoduje o tom, co smí být **příčina**, ne o tom, co smí **zaznít**. Věta ve scénáři dělá
+   jednu ze dvou věcí a každá má jiná pravidla:
+   - **tvrdí příčinu** („vyrostlo díky…“, „hlavně proto…“, „je to chyba státu“): přísný režim, jen to, co analýza
+     otestovala, s vahou ze záznamu pořadí příčin;
+   - **ukazuje tvář země** („Estonští programátoři napsali Skype“): netvrdí, proč je ukazatel takový, jaký je.
+     Říká pravdivou věc, kterou si divák se zemí spojí a kterou si představí. Stačí, aby byla pravda a měla zdroj;
+     vybírá se podle toho, co divák zná a co ho baví, ne podle toho, kolik lidí tam pracuje.
+
+   **Jedna otázka u každé věty: tvrdí, že se něco stalo kvůli téhle věci?** Když ano, platí přísný režim. Když ne,
+   platí režim příběhu. Režim příběhu neznamená menší přesnost, jen jiné měřítko výběru. Postup:
+   a) před psaním se u každé země zapíšou zvlášť **příčiny** (z analýzy) a **tváře** (vlajková loď, slavná značka,
+      místo, člověk, rok), které si divák se zemí spojuje. Tváře se berou z rešerše příkladů včetně položek, které
+      vede jako „mýtus“, a z toho, co o zemi říká Ondřejův tip nebo role („digitální tygr“ znamená Skype);
+   b) **jedna až dvě tváře na zemi za region**, ne v každém kole; zazní v kole, kam věcně patří;
+   c) **tvář a příčinu spojí jedna poctivá věta** (vzor Estonsko: „Je to vlajková loď země. Výplatu většiny Estonců
+      ale platí jiná práce.“). Z rozporu mezi slávou a průměrem je tak příběh, ne chyba;
+   d) věta o tváři **nemá příčinné slovo** („díky“, „proto“, „hlavně“, „zvedl“) a neříká počet, který není ověřený
+      pro tu zemi; původ a vlastnictví se říkají přesně („britský Revolut tu má svou evropskou banku“, ne „litevský
+      Revolut“; Wise založili Estonci, ale v Londýně);
+   e) tvář patří do **pevného jádra** (§3 bod 3) a při krácení se neškrtá; do zámku faktů se zapíše jako tvář a do
+      NEŘÍKEJ příčinná podoba téhož („že Estonsko vyrostlo díky Skypu“);
+   f) **co se nepovoluje nikdy:** číslo, pořadí, směr příčiny, slova váhy, soud a to, kdo rozhodl.
+
+   Země bez světově známé značky dostane nejsilnější obraz z vlastní rešerše (Lotyšsko: mikrobusy z Jelgavy); nic
+   se nevymýšlí. **Poučení (Pobaltí, 8.–13. 11. 2026):** rešerše měla Skype, Bolt, Wise i Revolut, vedené jako
+   „mýtus“, protože v nich pracuje málo lidí. Dřívější znění říkalo, že slavnou značku scénář „smí“ použít jako
+   vyvrácený mýtus, a při krácení chránilo jen hlavní důvod. Jména proto ze scénáře vypadla, zůstalo „Programátoři
+   přidali jen malý díl růstu“ a výklad byl správný, ale bez příběhu.
+
+8. **Začni tím, co si divák o zemi myslí (Ondřej 13. 11. 2026: „Chtěl bych, aby se pracovalo s všeobecně známými
+   stereotypy. A klidně to tam vyvrátit, ale zkrátka toho diváka zatáhnout do děje… aby se pracovalo s hmatatelnými
+   věcmi, co si lidi umí představit, a nebyla to jen nudná přednáška o tom, jak nějaké firmy rostly.“).** Divák si ke
+   každé zemi nese hotovou představu (ukázka typu, ne výsledek analýzy: Estonsko zbohatlo na Skypu, Švýcarsko žije
+   z bank, Norsko z ropy, Pobaltí má nízké daně). Scénář ji neobchází. Začne jí: pojmenuje ji hmatatelnou věcí
+   (značka, výrobek, místo; bod 7) a hned řekne, jak to je doopravdy. Každý ze tří konců je dobrý příběh:
+   - **platí:** představa je vstupní dveře k hlavnímu důvodu země;
+   - **platí jen zčásti:** „je to pravda, ale menší, než byste čekali“, a hned to, co je hlavní;
+   - **neplatí:** scénář ji uvede na pravou míru a hned řekne, co je místo ní.
+
+   Postup:
+   a) před psaním se u každé země zapíše **jedna až dvě všeobecně známé představy**. Berou se z Ondřejových tipů
+      a rolí („digitální tygr“), z obecně známého výkladu v analýze (analytický skill krok 2b bod 2, zdroj c)
+      a z rešerše příkladů, která je často vede jako „mýtus“;
+   b) u každé stojí **výsledek testu z analýzy** (podporuje / odporuje / nerozlišuje). „Tohle neplatí“ i „tohle
+      platí“ je tvrzení o příčině a platí pro ně přísný režim (bod 7). Co analýza netestovala, se před psaním
+      otestuje; bez testu smí představa zaznít jen jako tvář země, bez potvrzení i bez vyvrácení;
+   c) **vyvrácení nepřehání:** „Skype Estonsku nepomohl“ je stejně nedoložené jako „Estonsko zbohatlo díky Skypu“.
+      Řekne se jen to, co test unese („Výplatu většiny Estonců ale platí jiná práce“). Vyvrací se jen představa,
+      kterou lidé opravdu mají, ne vymyšlený protivník;
+   d) představa o **povaze lidí** („líní“, „pracovití“, „šetrní“) se nikdy nepotvrzuje jako vlastnost národa.
+      Smí zaznít jen tehdy, když je opravdu rozšířená a data ji uvádějí na pravou míru;
+   e) v hlase bez pracovních slov „mýtus“ a „stereotyp“, přirozeně („Svět ho zná jako…“, „Říká se, že…“, „Čekali
+      byste…“). Jedna až dvě představy na zemi za region, ne v každém kole;
+   f) představa a její rozuzlení patří do **pevného jádra** (§3 bod 3) a při krácení se neškrtají.
+
+   Proč: výklad, který začne tím, co divák ví, ho vtáhne do děje. Výklad, který začne tím, co ví analytik, je
+   přednáška. Fakta jsou v obou stejná, liší se jen dveře, kterými divák vejde. Vzor (Pobaltí, 13. 11. 2026):
+   „Svět ho zná jako digitálního tygra. Estonští programátoři napsali Skype a Estonci pak založili Bolt a Wise. Je
+   to vlajková loď země. Výplatu většiny Estonců ale platí jiná práce.“ a „Pobaltí proslavila rovná daň. Jenže
+   rovná daň není nízká daň.“
+
 ### 0. Dělba práce
 
 | Kdo | Co dělá | Co nedělá |
 |---|---|---|
-| **Claude (tento skill)** | mapu příběhu, faktickou verzi scénáře se zámkem faktů a zpětnou kontrolu čtivé verze | nepíše „hezky“, nesoutěží o styl |
-| **Gemini na webu** (skill `gemini-web-ctiva-verze-SKILL-v1.0.md`) | přepíše faktickou verzi do čtivého sportovního komentáře | nemění fakta, nepřidává fakta, neanalyzuje |
-| **Ondřej** | tipy před startem, vkus a dramaturgii, štítky; vkládá text do Gemini a vrací výsledek | nerozhoduje dílčí fakta |
+| **Claude (tento skill)** | fakta, příčiny a jejich váhu, **výklad napsaný rovnou co nejsrozumitelněji (§3.0; na Gemini se nespoléhá)**, soudy, tváře zemí a známé představy, stavbu regionu, zámek faktů a **kontrolu hotového textu včetně ověření všeho, co Gemini doplnil** | neurčuje styl, rytmus ani tón; nepíše Gemini slohové zákazy |
+| **Gemini na webu** (Ondřejův postup pro čtivou verzi; v repozitáři `gemini-web-ctiva-verze-SKILL-v1.0.md`) | **kontroluje a dotahuje srozumitelnost** pro diváka, který se o ekonomii nezajímá (Ondřej 17. 11. 2026): smí výklad přestavět, nahradit obrat obrazem, čísla přesunout do řádku VIZUÁL, dohledat si informace a doplnit chybějící „proč“; vše doplněné vypíše na konci se zdrojem. A dává textu sportovní tón: rytmus, napětí, přechody, emoce, vtip | nemění výsledky, pořadí odhalování, hodnoty čísel, váhu a směr důvodů ani sílu soudu; analýzu nepřepisuje |
+| **Ondřej** | favority, černé koně a outsidery pro úvod (z nich plynou role zemí), vkus a dramaturgii; vkládá text do Gemini a vrací výsledek | nerozhoduje dílčí fakta |
 
-Postup: kostra (skript) → mapa příběhu → faktická verze → Ondřej ji vloží do Gemini → čtivou verzi vrátí →
-zpětná kontrola (oddíl 4) → hotovo.
+Postup: kostra (skript) → tabulka chvil a mapa příběhu → faktická verze → kontrola faktů → zkouška poslechem (§5a) →
+kontrola změněných vět a brány → Ondřej ji vloží do Gemini → čtivou verzi vrátí → zpětná kontrola (oddíl 4) → hotovo.
+
+**Dělba od 17. 11. 2026 (Ondřej; kde jsou odrážky níže v rozporu, platí toto).** „Přijde mi celkově Gemini ve
+vysvětlování mnohem lepší než Claude, ale Claude je zase mnohem lepší v analytickém myšlení. Umí lépe přidat váhy
+k různým faktorům… Gemini by to měl kontrolovat a případně si dohledat informace a doplnit. Ale to neznamená, že
+[Claude] se taky nemá snažit to rovnou vysvětlovat co nejlépe, aby to divák pochopil… aby se to nepřehnalo, že by
+Gemini třeba měl možnost přegenerovat nějakou větší část analýzy.“ Proto:
+- **Claude píše výklad rovnou tak, aby mu rozuměl laik** (§3.0), a nepočítá s tím, že ho Gemini opraví.
+- **Gemini je druhé čtení, které za srozumitelnost odpovídá.** Smí výklad přestavět, nahradit odborný obrat obrazem,
+  číslo, které výklad nenese, přesunout do řádku VIZUÁL (i tučné), vypustit vedlejší srovnání a dohledat a doplnit
+  chybějící „proč“. Všechno doplněné vypíše na konci se zdrojem (seznam DOPLNĚNO).
+- **Gemini nemění** výsledky, pořadí odhalování, hodnoty čísel, která v hlase nechá, to, který důvod je hlavní,
+  směr příčiny ani sílu slovesa a soudu. Analýzu nepřepisuje; když se mu nezdá výsledek nebo váha, napíše to
+  v poznámce.
+- **Claude zkontroluje hotový text** (oddíl 4): ověří u zdrojů všechno ze seznamu DOPLNĚNO, mění slovo, ne stavbu,
+  a změny Ondřejovi vypíše s důvodem. Zkušenost ze 17. 11. 2026: ze tří příčin, které Gemini doplnil u Rumunska,
+  mířily všechny správně, dvě se musely říct přesněji a jedna do hlasu nešla.
+
+**Hranice mezi Claudem a Gemini (Ondřej 13. 11. 2026: stávalo se, že Gemini „nemohl udělat víc strhující
+komentátorský skript, a to z toho důvodu, že to měl zakázané v instrukcích“).** Aby se to nestávalo:
+- **Zamčený je význam, ne slovosled.** Gemini smí přeformulovat každou větu včetně tučného jádra, věty spojovat
+  a dělit, měnit jejich pořadí uvnitř odstavce a přidat komentátorský přechod nebo zvolání. Zachovat musí číslo,
+  omezující slovo, směr a váhu příčiny, slovo soudu, tvář země a pořadí, ve kterém se země a výsledky odhalují.
+- **Claude nepíše Gemini slohová omezení.** Do faktické verze ani do zadání nepatří pokyny o délce vět, zakázaných
+  obratech nebo míře emocí. Platí jen Ondřejova pravidla série (souvislé věty bez staccata, žádné „my“ o Česku,
+  žádné kódy) a rozpočet slov.
+- **Seznam NEŘÍKEJ je o faktech, ne o stylu.** Smí v něm být jen tvrzení, která neplatí nebo nejsou doložená.
+- **Tučného je málo** (nejvýš asi 40 % slov, §3 bod 3). Čím méně je zamčeno, tím víc může Gemini udělat.
+- **Co má dodat už Claude, aby to Gemini nemusel dohledávat:** celý výklad příčiny (jak to chodí obvykle, jak je to
+  v zemi, co to dělá s výsledkem člověka a čím to je; §3.0), konkrétní jména, tváře zemí, známé představy a obrazy (pravidlo
+  „Co za tím stálo“, body 7 a 8). Strhující komentář se z holých čísel udělat nedá; když ve faktické verzi chybí,
+  je to vada faktické verze, ne čtivé.
+- **Zpětná kontrola nehodnotí styl** (oddíl 4). Když je čtivá verze živější než faktická a žádná z vyjmenovaných
+  odchylek v ní není, je to správně.
+- Když Gemini napíše, že mu některý pokyn brání ve strhujícím komentáři, je to podnět upravit zadání nebo
+  faktickou verzi; Claude to řekne Ondřejovi a pokyn obhájí faktem, nebo ho zruší.
+
+**Kontrakt rozhraní: co musí faktická verze dodat, aby Gemini nemusel nic domýšlet** (zpráva od Gemini, kterou Ondřej
+13. 11. 2026 poslal k zapracování: „dramaturgické pořadí zemí a analytické srovnání staví už Claude, zatímco Gemini
+mění čistě větnou stavbu, rytmus, komentátorské můstky a práci s napětím“). Kdyby Gemini přehazoval odstavce, které
+jsou provázané rozdíly mezi sousedy a značkami pro obraz, rozpadla by se logika příčin. Proto:
+1. **Pořadí a gradaci staví Claude.** V kolech jdou země od prvního po poslední místo v regionu v daném kole, v cíli
+   od posledního po první. Gemini pořadí odstavců nemění.
+2. **Ochrana vítěze.** Úvodní odstavec cíle řekne jen papírové pořadí „podle tří hlavních faktorů“, nikdy skutečné
+   pořadí. V odstavci o druhém místě se neříká jméno vítěze ani srovnání s ním, jen to, co druhou zemi zbrzdilo.
+   Srovnání druhého s prvním patří až do odstavce vítěze.
+3. **Obě místa u každé země v každém kole, v hlase.** Když se mluví o hodnotě země v kole, zazní, jak si vede
+   v regionu, a **i její místo v celé lize** (Ondřej 13. 11. 2026: „tam patří i to celkové pořadí v celé
+   sedmadvacítce“). Obě místa patří do tučného jádra. Navíc stojí hned za otevírací větou kola řádek
+   `[VIZUÁL: Místa v kole N (v regionu / v lize z 27): Země 1. / 15., …]`. **Průběžné pořadí po kole se v hlase
+   říká jen uvnitř regionu** (§2.5; Ondřej 10. a 13. 11. 2026: „do toho shrnutí pořadí po těch kolech to
+   nepatří“); průběžná místa v lize a držitel zeleného trikotu jsou jen v jeho řádku VIZUÁL jako podklad.
+4. **Cílová tabule na konci každého regionu** (§2.8), v řádku VIZUÁL i s držitelem zeleného trikotu a body týmu.
+5. **Každý zlom má štítek.** U každého propadu, stagnace a skoku stojí v oddíle Soudy, co to bylo: vnější smůla,
+   vlastní chyba (test čtyř otázek, §2.3a), dobrý tah, dědictví, nebo **jiná či opatrnější cesta než konkrétní soused
+   z regionu** (se jménem souseda a tím, v čem se lišili). Hlas to věcně rozliší, takže komentátor může srovnat
+   správnou a špatnou stopu, aniž si cokoli domýšlí.
+6. **Slovník.** „Produktivita“ se vysvětlí při prvním použití v epizodě (kolik za rok vytvoří jeden pracující) a pak
+   se používá; „výkon pracujícího“ se neopakuje v každé větě. Součet tří kol se v hlase jmenuje „tři hlavní faktory“
+   nebo „papírové předpoklady“ (v jednom regionu jen jeden z těch názvů), nikdy „kola slibovala“ ani „podle kol“. Každé kolo má jiný nadpis (u mezd „Kolo 1 –
+   Rozdané karty“, „Kolo 2 – Růst“, „Kolo 3 – Daně a odvody“).
+7. **V cíli se neopakuje děj kol.** Jedna věta účtu se soudem (§2.6 bod 0), pak vedlejší faktory, které rozhodly.
+8. Značení zůstává: tučné jádro, `{volitelné: …}`, řádky `[VIZUÁL: …]`, seznam NEŘÍKEJ.
 
 ### 1. Vstupy
 
@@ -6740,14 +8379,19 @@ Pro každý ukazatel a region:
 - **výsledek** každé země (hodnota, místo v celé lize, patro Evropy);
 - **kola**, tedy části výsledku, ve kterých se závod hraje: hodnota země v kole, místo v kole, body (vliv na výsledek);
 - **průběžné pořadí** po každém kole (kde by země stála, kdyby rozhodovala jen dosud odehraná kola);
-- **tipy** Ondřeje před startem (text a rozmezí míst);
+- **role zemí** podle Ondřejových tipů před startem (favorit regionu, adept na zelený trikot, země, od které se moc
+  nečeká); rozmezí míst z tipů zůstává jen v podkladech;
+- **tváře zemí a známé představy** s výsledkem testu (pravidlo „Co za tím stálo“, body 7 a 8);
+- **podklad pro cílovou tabuli ligy** (výsledek všech zemí regionu a zemí, které už dojely, start z prvního kola,
+  rozdíly proti sousedům přes hranici regionu v procentech, kdo sedí v křesle lídra, kde leží linka středu ligy, body
+  týmu): z analýzy (analytický skill krok 9a body 9 až 11) a z návrhu tabule epizody;
 - **štítky** (hodnocení kroků vlády vůči výchozí pozici, rok zlomu, vedlejší štítek);
 - **výklady zemí** (proč má země v kolech takové hodnoty, další faktory, co říkají ekonomové) a **rešerše ekonomů**
   (důvody od největšího vlivu, síla dokladu);
 - **co kola nevysvětlí** (rozdíl mezi výsledkem a pořadím po kolech) a jeho rozklad, pokud ho analýza má (u mezd:
   podíl mezd na výkonu, podíl zaměstnanců, hodiny), a **typická odchylka** výpočtu;
 - **podklad pro výklad a soud** u každého kola a finále: soubor na zemi (`soudy_karty/`, `soudy_rust/`,
-  `soudy_dane/`, `soudy_cil/` a v nich `{kód}.md`) podle analytického skillu (`analyza-pricin-regiony-SKILL-v1.5.md`,
+  `soudy_dane/`, `soudy_cil/` a v nich `{kód}.md`) podle analytického skillu (`analyza-pricin-regiony-SKILL-v1.6.md`,
   krok 2b, jediné platné znění postupu): (1) otázka a fakt; (2) domněnky ze tří zdrojů a u každé, **co by bylo
   vidět, kdyby platila**; (3) **test** číslem země proti sousedům a průměru Unie s výsledkem podporuje / odporuje /
   nerozlišuje; (4) **pořadí příčin** (hlavní, vedlejší, nerozlišená část s dokladem velikosti) zvlášť pro vlastní
@@ -6768,27 +8412,29 @@ druhů údajů jeho analýzy; když některý chybí, zapíše se to do mapy a n
 Spusť `py scripts/kostra_mapy_pribehu.py --region "<region>"` (jiný ukazatel: stejná tabulka ručně z jeho dat).
 Kostra dá místa v kolech, průběžné pořadí, cíl, posun proti pořadí po kolech, prohození v regionu, tip a jeho
 splnění, štítek a chybějící podklady. **Z kostry se neodchyluj;** úsudek začíná až u příčin.
+Tip a jeho splnění slouží jen jako podklad pro role zemí (§2.2); v hlase regionu se nevyhodnocují. Kde se kostra liší
+od přepočtu ligy po opravách dat, platí přepočet a kostra se podle něj opraví dřív, než se začne psát.
 
-#### 2.2 Očekávání (showcase)
-- **Nová stavba showcase (Ondřej 4. 11. 2026 po zhlédnutí prototypu Balkánu):** představování všech zemí regionu
-  působilo jako výplň a zdržování. Showcase je teď krátký (asi 90 slov): jedna věta, kde region v hlavní
-  tabulce čekáme, a pak **jen země, které hrají o něco zajímavého** — o medaile nebo vítězství v lize, o žlutý
-  trikot, o zelený trikot (země dohánějící z nízké základny), případně o poslední místo. Ostatní země se jmenovat
-  nemusí; v obraze je vidí divák v tabulce regionu. Vzor Balkán: dolní polovina tabulky, nejvýš Slovinsko 15.–20.,
-  pak boj o zelený trikot Rumunska, Chorvatska a Bulharska. Pravidla níže (věrný tip, charakteristika, test
-  spoileru) platí pro jmenované země.
-- Očekávání je **Ondřejův tip**, převyprávěný věrně (favorit, outsider, černý kůň, rozmezí míst). Nepřidávej mu
-  důvod, který Ondřej neřekl a podklady nedokládají („díky nižším cenám“).
-- **Bez charakteristik zemí (Ondřej 5. 11. 2026, nahrazuje pravidlo z 2. 11.):** v showcase zazní jen sportovní
-  očekávání, tedy o co země bojuje: medaile, trikot, únik ze dna, poslední místo. Firmy, výrobky a „čím je země
-  známá“ sem nepatří, patří do kola, kde vysvětlují výsledek. Pravidlo z 2. 11. („krátká charakteristika každé
-  země“) je zrušené; v Balkánu 5. 11. zůstalo omylem v platnosti vedle novějšího pravidla výše, a proto ho Ondřej
-  musel připomínat znovu. Co je v Ondřejově textu tipu, zůstává.
+#### 2.2 Role zemí (místo očekávání a tipů)
+**Ondřej 10. 11. 2026:** úvodní blok regionu s tipy na přesná místa se ruší. Divák z něj znal přibližný výsledek dřív,
+než závod začal, a vyhodnocování tipů v cíli bralo slova. Před prvním kolem zazní jen **role zemí**, dvě až čtyři
+věty (asi 30 až 50 slov):
+- **kdo je favorit regionu**, nebo kteří dva se o vítězství poperou;
+- **kdo je adept na zelený trikot**; když trikot po dřívějším regionu už někdo drží, řekne se to a noví adepti se měří
+  s ním („Zelený trikot už má Rumunsko. Litva a Lotyšsko na něj byly adepty, tak uvidíme, kolik jim chybělo.“);
+- **od koho se v celkovém pořadí moc nečeká** a „může jen překvapit“.
+- **Žádná místa ani rozmezí míst, žádné „podle tipů“.** Role vycházejí z Ondřejových tipů a z jeho seznamu favoritů
+  pro úvod epizody; rozmezí míst zůstává v podkladech. Když roli pro zemi z tipů odvodit nejde, Claude se Ondřeje
+  zeptá jednou otázkou v chatu. Země bez vlastní role se jmenovat nemusí, divák ji vidí v tabulce regionu.
+- **Nejvýš přezdívka o dvou třech slovech** („Estonsko, digitální tygr“), když s ní kolo potom pracuje jako se známou
+  představou (pravidlo „Co za tím stálo“, bod 8). Firmy, výrobky, čísla a příčiny sem nepatří (Ondřej 5. 11. 2026).
 - **Test spoileru:** co se později vykládá v kole nebo ve finále (ceny a drahota života, kolektivní smlouvy, turismus,
-  hotely, značky, odvětví), do showcase nepatří, i když je to „charakter země“. Divák to má slyšet poprvé tam, kde
-  se to vysvětluje. Žádná čísla z kol, žádné příčiny výsledku. (Poučení 1. 11. 2026: Jih měl v úvodu kolektivní
-  smlouvy, ceny a Ferrari, Gemini to správně označilo jako spoiler; Balkán, psaný jen z tipů, byl čistý.)
-- Když chybí tip, scénář se nepíše (skill úvodu: tipy vždy od Ondřeje).
+  značky, odvětví), do rolí nepatří. Divák to má slyšet poprvé tam, kde se to vysvětluje.
+- Vzor Balkán: „Favoritem regionu je Slovinsko. Od ostatních se v celkovém pořadí moc nečeká, mohou jen překvapit.
+  Rumunsko, Chorvatsko a Bulharsko jsou ale adepti na zelený trikot za největší skok.“
+- Zelený trikot se říká „za největší skok“, ne „pro nejrychlejší růst“ (u mezd: ve stálých cenách rostla víc Litva
+  než vítěz kola Rumunsko).
+- Nadpis části ve faktické verzi je `## Předstartovní obraz a role zemí`.
 
 #### 2.3 Kola
 **Páteř epizody a pointa kola (Ondřej 5. 11. 2026: „chybí tam to, proč je produktivita tak důležitá pro mzdy…
@@ -6801,7 +8447,13 @@ a výjimka smí změnit i pointu. Lekce neurčuje, jaké příčiny země dostan
 2b). V kole se lekce **nikdy neříká jako přednáška na začátku**:
 - **otevření: jedna věta, co kolo měří** (v prvním regionu „První kolo rozdává karty podle toho, kolik hodnoty
   vytvořil jeden pracující v roce 1996.“, v dalších ještě kratší připomínka). Nic víc: žádná sázka, žádná osa,
-  žádná lekce (Ondřej 5. 11. 2026 zrušil sázku ze stejného dne jako výplň; osa i lekce zazní v pointě);
+  žádná lekce (Ondřej 5. 11. 2026 zrušil sázku ze stejného dne jako výplň; osa i lekce zazní v pointě).
+  **Kolo nezačíná pořadím regionu (Ondřej 13. 11. 2026):** místo země v kole zazní, až když na ni dojde řada
+  (§3 bod 1a), nikdy ve výčtu všech zemí na začátku kola. Společná příčina regionu zazní u první země (sdílený
+  mechanismus se vysvětlí jednou, bod 3), bez míst ostatních zemí. Poučení: v Pobaltí začínalo každé kolo větou
+  typu „Litva je v celé lize druhá, Estonsko třetí a Lotyšsko čtvrté“. Stavba přišla z pokusné verze z 8. 11.,
+  která vyhrála slepé čtení, a nikdo ji neschválil. **Novou stavbu z pokusné verze Claude nepřebírá mlčky:** řekne
+  Ondřejovi, co se mění a proč, a počká na jeho rozhodnutí;
 - **země** jako dosud (body níže); příklad u země ilustruje její hlavní důvod z analýzy, ne lekci, a lekce se
   u země nevyslovuje;
 - **pointa po průběžném pořadí:** dvě až tři věty, které z právě viděných zemí vyvodí obecné pravidlo a jmenují je
@@ -6829,8 +8481,21 @@ napříč ligou nic nenašel (objem investic), řekne se jen to, co doklady zem�
 
 Pro každé kolo a zemi:
 1. **Hodnota a místo v kole** z kostry.
-2. **Hlavní scéna kola** patří zemi s největším vlivem kola v regionu (největší body v absolutní hodnotě). Když jsou dvě
-   země blízko, dostane ji ta, která víc mění průběžné pořadí nebo jde nejvíc proti svým kartám. Ostatní země stručně.
+2. **Nejvýš dvě hlavní scény na kolo, ostatní země krátce, ale nikdy hole (Ondřej 10. 11. 2026).** Dřív dostala
+   každá země v každém kole zhruba stejný odstavec se stejnou stavbou a text byl hustý a plochý zároveň.
+   - **Hlavní scéna** má otázku diváka, odpověď hned v další větě, soud hlavní větou (§2.3a) a jeden konkrétní obraz.
+     Dostane ji země, u které se v kole stalo něco, co mění pořadí nebo co divák nečeká: obvykle země s největším
+     vlivem kola v regionu (největší body v absolutní hodnotě), a když jsou dvě blízko, ta, která víc mění průběžné
+     pořadí nebo jde nejvíc proti svým kartám.
+   - **Ostatní země** mají v kole krátký odstavec: místo, hlavní důvod, kudy k výplatě, hodnocení, u nižší země páru
+     důvod páru a **jedno konkrétní jméno** (firma, výrobek, místo, rok). Zkušební posluchač označil jako odbyté
+     právě odstavce bez jména.
+   - **Každá země má za region aspoň jednu hlavní scénu** (v některém kole nebo v cíli) a k tomu svou chvíli na
+     cílové tabuli (§2.8).
+   - **„Nudnější“ země se nekrátí** (Ondřej 10. 11. 2026: plánuje dabing do dalších jazyků s titulkem a náhledem pro
+     každou zemi; divák z Lotyšska nesmí mít pocit, že jeho země jen prošla). Krátit se bude až podle dat
+     o sledovanosti.
+   - Podmínkou psaní je vyplněná **tabulka chvil** a **titulková věta** každé země (§2.9).
 2a. **Osa kola a proč je soused před sousedem (Ondřej 4. 11. 2026, NEJVYŠŠÍ PRIORITA kola).** Kolo se nepíše jako
    pět samostatných popisů stavu, ale jako vysvětlené pořadí, jako ve sportu: „sedmý je Fin a ztrácí na Francouze,
    protože má hůř namazané lyže“.
@@ -6913,17 +8578,20 @@ Pro každé kolo a zemi:
         Nevyžaduje se pochvala i výtka zároveň; hlavní brzda se odliší od drobnosti. Neovlivnitelné věci (geologie,
         vnější šok) se nesoudí jako chyba státu, řekne se, že to bylo štěstí nebo smůla, a hodnotí se, jak si s tím
         země poradila. Soud bez důvodu je nálepka a nepočítá se; pouhý popis bez hodnocení také ne.
+     **Soud zazní nahlas, hlavní větou a slovem ze slovníku soudu (§2.3a).** Hodnocení má dál každá země v každém
+     kole; plný soud s otázkou diváka a obrazem dostanou hlavní scény kola, u ostatních zemí stačí hodnocení
+     jednou větou.
      Ve faktické verzi se kroky zapisují do oddílu „## Soudy a dopad na výplatu“ (bod 4c) a Gemini je nesmí
      vypustit. **Při krácení se chrání společné jádro: hlavní důvod, hodnocení a následek** (obvykle jedna až dvě
      přirozené věty, které nahradí část popisu); škrtají se nejdřív doplňky: popis (názvy firem bez následku, roky,
      kulisy), náhražky důvodu (jméno úřadu, vlastnost systému, rada vládě; viz níže) a vedlejší důvody vedlejších
      zemí; **nikdy hlavní důvod země, jeho váha, hodnocení, kudy k výplatě a pár sousedů.** Omezení, které mění
      smysl soudu, zůstává i v hlase; podrobné doklady zůstávají v podkladu. **Krátká verze** (cíl 9 minut na
-     region, nejvýš 9,5; §3 bod 6): celý řetěz fakt → kudy k výplatě → dopad → hodnocení dostane hlavní scéna kola
-     (země nebo dvojice s největším vlivem kola podle bodu 2); ostatní země **jednu až dvě věty** s hlavním
-     důvodem, kudy k výplatě, hodnocením a důvodem páru, pokud jsou nižší ze dvojice (jedna věta by musela mít víc
-     než dvě vedlejší věty, §3 bod 2). Země se stejným příběhem smějí dostat společné hodnocení jednou větou,
-     s tím, v čem se liší. Krátká verze prochází stejnými branami jako dlouhá.
+     region, nejvýš 9,5; §3 bod 6): celý řetěz fakt → kudy k výplatě → dopad → hodnocení dostanou hlavní scény kola
+     (nejvýš dvě, bod 2); ostatní země **krátký odstavec** (dvě až čtyři věty) s hlavním důvodem, kudy k výplatě,
+     hodnocením, jedním konkrétním jménem a důvodem páru, pokud jsou nižší ze dvojice. Země se stejným příběhem
+     smějí dostat společné hodnocení jednou větou, s tím, v čem se liší. Krátká verze prochází stejnými branami
+     jako dlouhá.
    - **Důvod soudu je důsledek pro lidi, ne názor úřadu (Ondřej 6. 11. 2026 v noci: „napsal, že je to dobře napůl,
      a místo aby řekl proč, začal mluvit o Evropské komisi a OECD… nudné analytické popisy pro panel expertů, ne
      pro běžného diváka“).** Dřívější znění chtělo soud „opřený o instituci“. Model proto od institucí převzal
@@ -7034,27 +8702,130 @@ Pro každé kolo a zemi:
    na srovnání s vlastní minulostí, soupeřem a tím, co odpovídá startu; pochvala nebo výtka za rozhodnutí stojí na
    jeho doloženém účinku (analytický skill krok 2b bod 6). Místo v kole ani odchylka od dohánění samy zásluhou nejsou.
 
+#### 2.3a Slova soudu a test slova „chyba“ (Ondřej 10. 11. 2026)
+Hlavní motiv série je ukázat, kdo chyboval a kdo zahrál dobře, jako to dělá sportovní komentátor. Dřív byl soud jen
+v poznámkách a do hlasu se dostal změkčený ve vedlejší větě (u Řecka „do krize se z velké části dostalo samo“);
+Gemini ho při přepisu změkčilo ještě víc a ve finále chyběl úplně, takže řecká krize zněla jako smůla. Příčina:
+dřívější kontroly trestaly každý soud bez dokladu, a soudy se proto tlumily. **Správná odpověď na „soud bez dokladu“
+není slabší slovo, ale doklad.**
+
+| Slovo v hlase | Kdy smí zaznít | Příklad |
+|---|---|---|
+| **smůla** | vnější šok, který země nemohla ovlivnit a žádná srovnatelná země se mu nevyhnula | rozpad sovětského trhu pro Pobaltí; válka pro Chorvatsko |
+| **dědictví** (zděděný náskok, zděděná slabina) | stav, který země dostala a nevybojovala | řecký start: „náskok zděděný, ne vybojovaný“ |
+| **chyba** | všechny čtyři otázky testu níže mají odpověď v analýze | řecký stát v letech 2000 až 2009; lotyšské daně z malých výplat |
+| **dobrý tah, zásluha** | rozhodnutí nebo výkon s doloženým účinkem na ukazatel; hned za ním jednou větou jeho cena, když je doložená | bulharská rovná daň („má ale i druhou stranu“); litevská reforma 2019 |
+| **nepovedlo se, slabina** | země udělala něco, co dopadlo špatně, ale lepší možnost doložená není nebo totéž udělali i sousedé | lotyšská stavební bublina; estonské dluhy |
+
+**Test slova „chyba“ (čtyři otázky; odpovědi dává analytický skill, krok 2b bod 6a):**
+1. **Kdo rozhodl?** Stát, firmy, nebo lidé. Když data ukazují na stát, hlas neviní lidi (u Řecka se domácnosti
+   a firmy zadlužily méně než ve Španělsku nebo Irsku, schodky dělal stát: proto „Řecko žilo nad poměry, a hlavně
+   jeho stát“, nikdy „Řekové si žili nad poměry“).
+2. **Existovala lepší možnost a je doložená?** Ve stejné době ji zvolila srovnatelná země, nebo ji tehdy doporučovaly
+   instituce.
+3. **Kolik to stálo ukazatel epizody?** Číslo nebo obraz.
+4. **Jakou má váhu?** „Hlavně“, „z velké části“, „zčásti“; vnější díl se přizná jednou větou.
+
+Když některá odpověď chybí, slovo „chyba“ nezazní a použije se „nepovedlo se“ nebo „slabina“.
+
+**Kde soud stojí.** V hlavní větě, hned za místem a jménem země („Páté je Řecko. Jak se vítěz prvního kola propadl na
+dno? Z velké části vlastní chybou.“), ne ve vedlejší větě, ne v závorce, ne jako přívlastek. Ve finále ho nese věta
+účtu (§2.6 bod 0). Soud se vztahuje k ukazateli epizody; co krok stál jinde (zdraví, důchody), zazní jednou větou jako
+obraz. **Slovo soudu je pevné jádro:** patří do zámku faktů a Gemini ho nesmí změkčit, zesílit ani přesunout na jinou
+zemi; omezující slovo u něj („z velké části“, „hlavně stát“) je součást soudu.
+
 #### 2.4 Otázka diváka
 - **Jedna na region**, u hlavní scény regionu (země, kterou kola pohnula nejvíc nebo jejíž výsledek nejvíc překvapí).
 - Je to rozpor, na který by se zeptal běžný divák: slavné značky a slabý výsledek, euro a chudoba, boom a pořád dno.
 - **Odpověď musí mít oporu.** Když ji podklady nemají, zadej cílenou rešerši (vzor: `ekonomove/IT_PARADOX_LUXUSU.md`:
   čísla s institucí a rokem, co nepoužít). Bez odpovědi se otázka nepokládá.
 
-#### 2.5 Průběžné pořadí
-- **První region epizody vysvětlí pravidla odhalování** (Ondřej 4. 11. 2026, přesunuto z úvodu): když po kole poprvé zazní průběžné pořadí, jednou větou se řekne, že body kol se nesčítají a ukazují jen, kde by země stála, kdyby rozhodovala dosud odehraná kola; v cíli prvního regionu se jednou řekne, že rozhoduje jen změřená hodnota, v cíli se ukazuje jen pořadí v týmu a celé pořadí ligy přijde ve velkém finále. Vysvětluje se na skutečných vlajkách regionu, ne na vymyšlených zemích; v dalších regionech už se to neopakuje.
-- Po každém kole se řekne krátce jako stav závodu: kdo vede region a kde je v celé lize.
-- **Vždy odliš** místo v samotném kole („v tomto kole je šestadvacátá“) od průběžného pořadí („v průběžném pořadí
-  je desátá“). Při první zmínce v epizodě jednou vysvětli, co průběžné pořadí znamená.
+#### 2.5 Průběžné pořadí a pravidla za jízdy
+- **Jen uvnitř regionu (Ondřej 10. a 13. 11. 2026).** Po každém kole se řekne krátce jako stav závodu: kdo vede region a kdo
+  je za ním. Místo v celé lize zazní u hodnoty kola, a to **u každé země v každém kole** („Třetí je Chorvatsko, v lize
+  devatenácté“), ne u průběžného pořadí; celou ligu
+  ukazuje cílová tabule (§2.8). Náskok pod pět procent se říká „těsně“.
+- **Vždy odliš** místo v samotném kole od průběžného pořadí.
 - Nikdy „by měla skončit“: průběžné pořadí je stav, ne předpověď.
+- **První region epizody vysvětlí pravidla za jízdy** (Ondřej 4., 10. a 13. 11. 2026; úvod epizody je krátký a návod
+  neobsahuje, skill úvodu v1.1). Každá věc se řekne jednou, na skutečných zemích regionu, ve chvíli, kdy ji divák
+  poprvé vidí. V dalších regionech se neopakuje:
+
+  | Co | Kde v prvním regionu | Vzor věty |
+  |---|---|---|
+  | co které kolo měří | otevření každého kola (v dalších regionech kratší připomínka) | „První kolo rozdává karty: kolik v roce 1996 vytvořil jeden pracující.“ |
+  | rozdaná karta proti tahu země | první kolo, hned za úvodní větou | „Tuhle kartu země dostala. Další dvě kola už jsou její tahy.“ |
+  | průběžné pořadí a to, že se kola nesčítají | po prvním kole | „Průběžné pořadí říká, kde by země byla, kdyby rozhodovala jen kola, která už odjela.“ |
+  | váha kol | od 16. 11. 2026 už v úvodu jedním grafem dílů (skill úvodu blok 4b, čísla z analytického skillu krok 7 bod 7); v pointě kola jen tam, kde to výklad potřebuje, a vždy ve shodě s grafem | „Nízké daně výplatě pomůžou, ale slabý výkon nedoženou.“ |
+  | v cíli rozhoduje jen změřená hodnota | úvod cíle | „V cíli ale rozhoduje jen skutečná čistá mzda v kupní síle.“ |
+  | vedlejší faktory | úvod cíle | „Do hry vstupují vedlejší faktory, tedy věci, které tři kola nezachytí: třeba kolik z vytvořeného dá firma zaměstnancům nebo jak drahý je život.“ |
+  | co je kupní síla | cíl, první země, u které rozdíl eur a kupní síly něco mění | na příkladu, bez definice |
+  | cílová tabule, křeslo lídra, linka středu ligy, body týmu | konec regionu | „Vodorovná linka ukazuje výplatu střední země ligy.“ |
+  | pojem, který divák nemusí znát | půlvětou při první zmínce | „centrální plánování, kdy o výrobě rozhodoval stát“ |
+
+  První region smí kvůli tomu překročit strop o 50 slov (§3 bod 6). Smyšlený příklad k nesčítání kol se nepoužívá,
+  první skutečný příklad přijde v cíli prvního regionu. Přesná definice ukazatele a zdroje dat jsou v obraze
+  a v popisu videa; úvod je říká jednou větou.
 
 #### 2.6 Finále: skutečné pořadí a proč je soused před sousedem
+**Finále od 17. 11. 2026 večer (platné znění; kde jsou starší části tohoto oddílu v rozporu, platí toto).** Ondřej
+17. 11. 2026 po zkoušce hotového videa na bratrovi a rodičích: finále „vůbec nepochopili, a já taky ne… zvláštní věty
+a i trošku nepochopitelné důvody“; chtěl peníze („kolik vlastně vydělají“) a specifický faktor s ikonou a velikostí.
+Dvě znění tohoto bloku z téhož dne (dopolední body 1 až 12 a odpolední záplata) to splnila přidáváním čísel
+a předepsaných vět a Ondřej finále podle nich nerozuměl; výkladu, který mu ke stejným faktům napsal Gemini, rozuměl
+hned. Obě znění jsou zrušená (záloha: `10_documents/active/2026-11-17_finale_balkan/
+zaloha_postupu_pred_upravou_2026-11-17_vecer/`; přesná místa chyb: `voiceover-mapa-pribehu-HISTORIE.md`). Blok země
+v cíli se staví podle §3.0 (řetěz otázek diváka, vzor Rumunska) a platí jen toto:
+
+1. **Úvod cíle:** co by vyšlo, kdyby rozhodovaly jen tři hlavní faktory (pořadí podmiňovacím způsobem, „těsně“ pod
+   5 %); že cíl ukáže skutečnost (u mezd skutečné výplaty); a že pořadím ještě zamíchají specifické faktory zemí,
+   s jedním příkladem ze života („třeba jak štědře se firmy o výdělek dělí se zaměstnanci“). V obraze se vrátí
+   sloupec z úvodu a jeho poslední díl se rozsvítí i s ikonami.
+2. **Pořadí bloku země:** místo v regionu a místo po třech hlavních faktorech → výsledek v životě (bod 3) → je to
+   víc, nebo méně, než by odpovídalo třem hlavním faktorům (bod 4) → u rozdílu aspoň 5 % „Proč?“ a výklad (bod 5)
+   → věta účtu (bod 0 níže).
+3. **Výsledek v životě.** U mezd nejdřív kolik eur čistého přijde průměrnému zaměstnanci měsíčně na účet
+   („kolem“), potom kupní síla **jako stejný život:** „za ty peníze si doma pořídí stejný životní standard, na jaký
+   by v průměrně drahé evropské zemi potřeboval…, a právě podle toho řadíme cíl“. První země regionu to řekne celé
+   a jmenuje, co je v zemi levné nebo drahé (bydlení, služby, jídlo; jen to, co sedí s cenami po druzích z analýzy).
+   Další země už krátce („doma to vydá za…“). Roční částky a cenová hladina jsou jen v obraze. U jiného ukazatele
+   výsledek v jednotce z běžného života vedle hodnoty, podle které se řadí cíl.
+4. **Srovnání s tím, co vyšlo po kolech:** zlomkem z tabulky analýzy (krok 7 bod 8) a jedním názvem na region
+   („tři hlavní faktory“, nebo „papírové předpoklady“; nikdy „kola slibovala“ ani „podle kol“, §0 bod 6).
+5. **Výklad rozdílu** podle §3.0: jak to chodí obvykle → jak je to tady → co to dělá s výplatou (eura měsíčně)
+   → čí je to dílo a čím to je. **Příčina ze života je povinná.** Dodá ji analýza (krok 7 bod 8, pět polí); bez ní
+   se blok nepíše a práce se vrací do analýzy. Slova „specifický faktor“ zazní v úvodu a v závěru cíle a smějí
+   zaznít i u země; výklad ale nese otázka „Proč?“ a ikona kategorie v obraze, ne jméno položky. Dva důvody
+   stejného směru a podobné velikosti zazní oba („každý zhruba polovinou“); důvod se nikdy nepopírá, aby zůstal
+   jeden.
+6. **Když rozdíl plyne z toho, co průměr zkresluje** (kdo se počítá mezi pracující, ceny strojů proti cenám toho, co
+   lidé kupují), říká se věcí, která zkresluje, a jejím obrazem (§3.0, druhý vzor). Srovnání s ligou jen tam, kde by
+   se divák zeptal „a jinde to tak není?“. Nevykládá se to jako čin země. Takový blok je kratší než blok s příčinou
+   (vzor má asi sto slov).
+7. **Země s rozdílem do 5 %:** „dojela skoro přesně tam, kam ji tři hlavní faktory poslaly“. Výměna míst se
+   vysvětlí u země, která se pohnula, ne vnitřními částmi země, která stála. Neříkat, že země „žádný specifický
+   faktor nemá“.
+8. **Závěr regionu:** konečné pořadí jedním výčtem; komu specifické faktory pomohly a komu ubraly; jedno poučení
+   věcí, ne pojmem. Vyhodnocení předstartovních očekávání sem nepatří (§2.7).
+9. **Řádek VIZUÁL** u každé země: karta peněz (na účet měsíčně, cenová hladina, kupní síla); sloupec země (podle
+   tří hlavních faktorů → skutečnost; rozdíl barvou specifických faktorů s ikonou; u země bez rozdílu značka
+   shody); a čísla, která v hlase nezazněla (norma a kraje ligy, doklady příčiny). Sloupce se zaokrouhlují na
+   stovky a rozdíl v obraze je jejich rozdíl, aby počty na obrazovce seděly.
+10. **Co z dřívějška přestává platit:** „Eura na této tabuli neukazovat“ (karta peněz ukazuje eura vedle kupní
+    síly); „nejvýš jeden specifický faktor na zemi“; pravidlo, že se příčina bez dokladu prostě neřekne (hledá se,
+    bod 5); a zkouška poslechem pomocníky jako potvrzení srozumitelnosti (§3.0, Zkouška).
+
 **Vedlejší faktory jménem (Ondřej 5. 11. 2026: „v tom finále vůbec nepracuješ s vedlejšími faktory… v úvodu se
-hezky graficky vyjmenovaly a líbilo by se mi, kdyby se ta loga pak používala u jednotlivých států“).** Úvod epizody
-představí vedlejší faktory jako kategorie s ikonou (u mezd osm kategorií:
+hezky graficky vyjmenovaly a líbilo by se mi, kdyby se ta loga pak používala u jednotlivých států“).** Vedlejší faktory
+jsou kategorie s ikonou (u mezd osm kategorií:
 `10_documents/active/2026-11-03_prototyp_noc_uvod_balkan_recko/KATEGORIE_VEDLEJSICH_FAKTORU.md`, v kódu
-`KATEGORIE_VEDLEJSICH` v `ekonomicke-hry-remotion/src/prototyp-noc/uvod/data.ts`). V cíli pak platí:
-- cíl připomene pořadí po hlavních faktorech a řekne, že teď přicházejí ke slovu vedlejší faktory z úvodu
-  (v prvním regionu výslovně „které jsme představili v úvodu“);
+`KATEGORIE_VEDLEJSICH` v `ekonomicke-hry-remotion/src/prototyp-noc/uvod/data.ts`). Úvod epizody je hlasem
+jednotlivě nepředstavuje; od 16. 11. 2026 je jen souhrnně pojmenuje jako „specifické faktory jednotlivých zemí“
+a ukáže jejich díl a ikony v grafu (skill úvodu v1.1, blok 4b). Jsou to tytéž vedlejší faktory, o kterých mluví cíl.
+První region je uvede při prvním použití (§2.5) a ikona se v obraze objeví u země,
+které se faktor týká. V cíli platí:
+- cíl připomene pořadí po hlavních faktorech a řekne, že teď přicházejí ke slovu vedlejší faktory; v prvním regionu je
+  jednou větou vysvětlí (§2.5), v dalších už jen „vedlejší faktory“, bez „z úvodu“;
 - u každé země, která se proti pořadí po hlavních faktorech posunula, se **jménem kategorie** řekne, který vedlejší
   faktor rozhodl, a hned konkrétní doložený fakt („Proti očekávání po hlavních faktorech končí Řecko až páté.
   Zásadní roli hrály vedlejší faktory vyjednávání o mzdách a mzdy určené státem: v dluhové krizi klesla minimální
@@ -7072,8 +8843,8 @@ nesrozumitelná. Divák se ptá: **proč je tahle země před tou druhou?**
 
 **Podoba finále (Ondřej 2. 11. 2026 večer, nahrazuje bod 4 níže tam, kde je s ním v rozporu):**
 - **a) Nejdřív pořadí podle kol.** Grafika ukáže pořadí regionu po všech třech kolech a scénář ho jednou krátkou
-  větou řekne podmiňovacím způsobem („Kdyby rozhodovala jen tři kola, vyhrála by jih Itálie před Španělskem
-  a Portugalskem.“). Bez míst v lize a bez bodů.
+  větou řekne podmiňovacím způsobem („Podle tří hlavních faktorů by jih vyhrála Itálie před Španělskem
+  a Portugalskem.“; součet kol se v hlase jmenuje „tři hlavní faktory“ nebo „papírové předpoklady“). Bez míst v lize a bez bodů.
 - **b) Pak odhalení od posledního v regionu po prvního** ve skutečné čisté mzdě v kupní síle.
 - **c) U každé země rozdíl proti kolům a čím to je.** Když země dojela tam, kam ji poslala kola, stačí to říct
   a krátce, proč (rozsudek a cesta výplaty). Když dojela jinam, je to **hlavní místo pro zvláštnosti země mimo
@@ -7082,9 +8853,12 @@ nesrozumitelná. Divák se ptá: **proč je tahle země před tou druhou?**
 
 Odhaluje se od posledního v regionu po vítěze, s výsledkem. **Ve finále se neříká místo v celé lize** (Ondřej
 1. 11. 2026: ne „Španělsko skončilo dvanácté“, ale „Španělsko se umístilo nejlépe v jižní Evropě“); místo v lize
-a patro jen v řádku VIZUÁL. U každé země zazní:
+a patro jen v řádku VIZUÁL. Kde země stojí v lize, ukáže hned po cíli cílová tabule (§2.8), a to sousedy na tabuli, ne
+číslem místa. U každé země zazní:
 
-0. **Účet za třicet let (hodnocení).** Jednou až dvěma větami spoj s výsledkem, co zemi za období pomohlo a co ji
+0. **Účet za třicet let (věta účtu, povinná u každé země; 10. 11. 2026: finále bez ní zní jako výčet míst).** Soud v ní
+   stojí hlavní větou a slovem ze slovníku soudu (§2.3a), se stejnou vahou jako v kole („Nejlepší karty regionu
+   promarnilo z velké části vlastní chybou.“). Jednou až dvěma větami spoj s výsledkem, co zemi za období pomohlo a co ji
    brzdilo; slovo „chyba“ jen se silou podle analytického skillu (krok 2b bod 6: rozhodnutí s doloženým účinkem,
    „zbytečná chyba“ jen s tehdy dostupnou možností) („Itálie promarnila nejlepší start v Evropě: výkon třicet let stál, protože firmy
    zůstaly malé“; „Španělsko nevyhrálo růstem; rozhodlo, že z italského náskoku ve výkonu nedojde do výplat skoro nic“). Smí použít jen příčiny, které už
@@ -7131,24 +8905,193 @@ Pak pro každou dvojici sousedů v cíli:
    ztráty ve finále).
 6. **Pozor na směr skladby pracujících:** málo zaměstnanců mezi pracujícími snižuje podíl výplat na vytvořené
    hodnotě, ale mzdu na jednoho zaměstnance zvedá (Bulharsko). Nikdy neříkej, že víc zaměstnanců zvedá mzdu.
+7. **Je důvod posunu započtený už v kolech? (10. 11. 2026, poučení z Bulharska.)** Když jsou kola i cíl ve stejném
+   měřítku (u mezd v kupní síle), to, co je započtené na obou stranách, posun mezi koly a cílem nevysvětlí. Obecná
+   levnost země proto nevysvětlí, proč Bulharsko v cíli přeskočilo Řecko a Rumunsko; vysvětlí to jen to, co se mezi
+   koly a cílem liší (kdo se počítá mezi pracující; bydlení a energie levné i na bulharské poměry). Obrat proti kolům
+   se říká věcí, kterou divák vidí (výplata v eurech vedle výplaty v kupní síle, eura ze sta, která firma dá
+   zaměstnancům), ne vlastností měření. Věta typu „měří se něco jiného, než průměr ukazoval“ je znamení, že
+   v analýze chybí krok (analytický skill krok 2b bod 4).
 
 #### 2.7 Štítky a tipy
-- **Štítky se ve scénáři neříkají** (Ondřej 1. 11. 2026: „ty štítky končí“). Hodnocení země nese rozsudek za třicet
-  let (2.6 bod 0) a vysvětlené příčiny. Štítky zůstávají jen v podkladech analýzy.
-- **Tip** se vyhodnotí proti aktuálním datům a rozmezí: splněn, líp, hůř; těsně mimo rozmezí „o kousek líp/hůř“.
-  Starší rozhodnutí o tipech platí jen pro data, ke kterým vznikla.
+- **Štítky se ve scénáři neříkají** (Ondřej 1. 11. 2026: „ty štítky končí“). Hodnocení země nese věta účtu (§2.6
+  bod 0) a vysvětlené příčiny. Štítky zůstávají jen v podkladech analýzy.
+- **Tipy se v regionu nevyhodnocují (Ondřej 10. 11. 2026).** V cíli stačí u země s rolí půlvěta, zda roli potvrdila
+  („favorit roli potvrdil“, „na zelený trikot nestačila“). Tipy z úvodu epizody se spočítají jednou, ve velkém finále,
+  proti aktuálním datům.
 
-#### 2.8 Konec regionu
-Jedna věta zápletky (kdo vedl po kolech, kdo vyhrál, splnily se tipy) a jedna věta předávky dalšímu regionu.
+#### 2.8 Konec regionu: cílová tabule ligy a body týmu
+(Ondřej 10. 11. 2026: „průběžná tabulka cíle napříč regiony… ukazovat na ní vzorce“.) Region nekončí větou zápletky,
+ale **cílovou tabulí celé ligy**: stálou tabulí všech zemí, které už dojely, seřazených podle skutečného výsledku.
+Dojeté země tak zůstávají ve hře do konce epizody. Návrh tabule (zastávky na skutečných číslech, věty, obraz) vzniká
+jednou pro celou epizodu před psaním regionů; u mezd `10_documents/active/2026-11-10_prestavba_scenaru/
+NAVRH_CILOVA_TABULE.md` a náčrt `cilova_tabule_nacrt.html` tamtéž.
+- **Tři stálé prvky a nic dalšího:** křeslo lídra (první řádek tabule, země, která zatím vede), linka středu ligy
+  (výsledek střední země ligy, tatáž „střední země“, ke které se vztahují kola) a start u každého řádku (hodnota
+  z prvního kola).
+- **Co řekne hlas (20 až 30 vteřin, asi 40 až 90 slov):** kdo sedí v křesle lídra a jestli se změnil; **jeden souboj
+  přes hranici regionu** (nová země vedle země z dřívějšího regionu, nejlépe s rozdílným startem); kde je region proti
+  lince; **jedna otázka pro další region** a předávka. Každá zastávka má jinou hlavní otázku, aby se šablona
+  neopakovala.
+- **Každá země regionu má na tabuli svou chvíli:** vedle koho dojela a odkud startovala (hlasem, nebo aspoň v řádku
+  VIZUÁL).
+- **Body týmu (Ondřej 13. 11. 2026).** Soutěží se i týmově, tým je region. Body země jsou její výsledek proti
+  průměru ligy (průměr ligy = 100), body týmu prostý průměr bodů jeho zemí. U tabule zazní jednou větou („Tým
+  Balkánu má 82 bodů, sto je průměr ligy“); celé pořadí týmů vyhlásí velké finále. Rozdíl pod pět procent mezi týmy
+  se říká „skoro nastejno“.
+- **Vzorec, ne výklad:** tabule ukazuje (start není osud; kdo je pod linkou), proč se to stalo, říkají kola a cíl
+  regionu. Tabule nepřidává novou příčinu.
+- **Slova:** rozdíl pod pět procent „těsně“, „vedle“, „skoro nastejno“; místo číslem jen u křesla a prvních míst;
+  linka není hranice chudoby („střed této ligy“); „východ Evropy“ jen ve významu zemí, které prošly socialismem,
+  a když na tom záleží, řekne se to tak.
+- **Věta před cílem regionu** jen tehdy, když je křeslo lídra ve hře (útočí na něj favorit regionu).
+- **Odhalení, která tabule chystá** (u mezd: na čtvrté zastávce, že linka středu je Itálie), se dřív neprozrazují.
+- Počítá se do stropu regionu (§3 bod 6). Čísla jsou z jednoho přepočtu ligy; chvíle, která stojí na rozdílu pod
+  pět procent, se před výrobou obrazu ověří zvlášť a věta se píše tak, aby malý posun přežila.
+- Ve faktické verzi stojí tabule na konci části `## Finále: cíl` s vlastním řádkem `[VIZUÁL: …]` (pořadí dojetých
+  zemí s čísly, linka, starty, počitadlo „na trati ještě N“, body týmu).
+
+#### 2.9 Tabulka chvil a titulková věta (před psaním)
+1. **Tabulka chvil:** řádek země, sloupce kolo 1, kolo 2, kolo 3, cíl, cílová tabule. V každém poli konkrétní věc
+   (jméno, místo, rok, číslo) a u nejvýš dvou zemí v kole značka hlavní scény. Prázdné pole znamená vrátit se do
+   rešerše příkladů, ne napsat obecnou větu. Vedle tabulky stojí u každé země její **tváře a známé představy**
+   s výsledkem testu (pravidlo „Co za tím stálo“, body 7 a 8).
+2. **Titulková věta:** jedna věta na zemi, která by mohla být titulkem dabované verze pro tu zemi („Jak Řecko
+   promarnilo nejlepší karty Balkánu“, „Lotyšsko startovalo pod Slovenskem a dojelo vedle něj“). Když ji nejde
+   napsat, země ve scénáři nemá příběh.
+
+Vzor tabulky chvil (Pobaltí):
+
+| Země | Kolo 1 | Kolo 2 | Kolo 3 | Cíl | Cílová tabule |
+|---|---|---|---|---|---|
+| Estonsko | každé čtvrté místo zrušeno | Skype, Bolt a Wise jako tvář; Ericsson a dřevěné domy jako příčina | daně se zvedají potichu | nejvíc eur, a přece druhé | mezi Portugalskem a Bulharskem |
+| Litva | dvě stě tisíc malých statků | Vinted a Revolut jako tvář; nábytek pro Ikeu a kamiony (hlavní scéna) | reforma 2019 (hlavní scéna) | vítěz, výkon udržela | vedle Chorvatska a Polska ze startu 34 |
+| Lotyšsko | továrna v Jelgavě, přístavy (hlavní scéna) | bublina 2008 | tisíc eur hrubého, o osmdesát méně (hlavní scéna) | dvaašedesát eur ze sta, nouze o lidi | vedle Slovenska, před Maďarskem |
 
 Mapa se ukládá jako `MAPA_PRIBEHU.md` ve složce regionu. Každé číslo v ní má zdroj v datech nebo výkladu země.
 
 ### 3. Faktická verze scénáře
 
-Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost dodá Gemini. Přesto platí:
+Píše ji Claude z mapy. **Faktická verze musí být srozumitelná sama o sobě: na první poslech a člověku, který
+o ekonomii nic neví.** Gemini dodá sportovní tón, rytmus a napětí. Výklad nedodá, protože příčiny přidávat nesmí
+(§0). Když výkladu nerozumí Ondřej, je to vada faktické verze, ne čtivé. (Do 17. 11. 2026 tu stálo „cílem je
+správnost a stavba, ne krása; čtivost dodá Gemini“. Srozumitelnost výkladu tak neměl na starosti nikdo: Claude psal
+pro kontrolu faktů a Gemini směl měnit slova, ne výklad.)
 
-1. **Stavba:** `# Region`, pak `## Předstartovní showcase`, `## Kolo 1 – …` až `## Kolo N – …`, `## Finále: cíl`.
+#### 3.0 Jak se staví výklad (každé „proč“ v kolech i v cíli; při rozporu s jiným místem skillu platí toto)
+
+Ondřej 17. 11. 2026: „To, jak ty vysvětluješ ty věci, je ale dlouhodobě problematické… napříč celou epizodou.“
+Stejná fakta mu týž den vyložil Gemini a rozuměl hned („Ano, toto je přesně ono“). Rozdíl nebyl ve faktech ani
+v délce, ale v tom, jak je výklad postavený.
+
+**Pořadí práce.** Výklad země se nejdřív napíše nanečisto, bez tabulek a zámku před očima, jako odpověď jednomu
+člověku, který se ptá. Teprve potom se porovná s analýzou a opraví se, co neplatí. Opačné pořadí (věta složená ze
+záznamu analýzy) dává text, který je správný a nikdo mu nerozumí.
+
+**Řetěz otázek diváka.** Každá věta odpovídá na otázku, kterou vyvolala věta před ní. Otázka smí zaznít nahlas
+(„Proč?“). Odpověď nikdy nepřijde dřív než otázka: příčina, která zazní, než divák ví, co se vysvětluje, zapadne.
+1. **Co se stalo a co to znamená v životě** (místo, výsledek; u mezd kolik přijde na účet a co se za to pořídí).
+2. **Je to víc, nebo méně, než se čekalo?**
+3. **Proč?** Nejdřív **jak to chodí obvykle**, obrazem, ve kterém někdo jedná („o výdělek se firmy s lidmi dělí
+   jako o koláč a zaměstnanci z něj v Evropě obvykle dostanou větší půlku“). Potom **jak je to tady** („v Rumunsku
+   jen tu menší“). Norma vždy před odchylkou a místo pořadí v lize.
+4. **Co to dělá s výsledkem jednoho člověka,** v jednotce, kterou zná (u mezd eura měsíčně).
+5. **Čí je to dílo a čím to je:** věc ze života (zákon, pravidlo, daň, zvyk, kdo co vlastní, co lidé dělají),
+   u které jde říct, kdo co udělal. Bez tohoto kroku výklad končí v půlce a divák se zeptá sám. Když ho analýza
+   nemá, vrací se práce do analýzy (analytický skill krok 7 bod 8, pole „čím to je“); blok se bez něj nepíše.
+   Představa, kterou divák má a která neplatí, se vyvrátí těsně před tím („Překvapivě za to nemohou…“).
+
+**Slova.**
+- **Běžné slovo, ne slovo zdroje ani analýzy:** „slabé odbory“, ne „pokrytí kolektivními smlouvami“; „firma se
+  s lidmi dělí o výdělek“, ne „podíl mezd na přidané hodnotě“ ani jeho opis („co firmě zbude z tržeb po zaplacení
+  materiálu, energií a služeb“). Opis definice je pořád definice. Když obraz chybí, hledá se obraz, nepřidává se
+  vysvětlivka.
+- **Spojovací slova nesou logiku** („Proč?“, „ale“, „a kdyby“, „překvapivě“, „hlavně“): posluchač z nich pozná,
+  jestli slyší normu, odchylku, důsledek, nebo příčinu.
+- **Nejistota se říká slovesem, ne číslem dokladu ani vrstvením výhrad:** „nahrává“, „pomáhá“, „souvisí“ podle
+  síly dokladu (dodá analýza). Čísla, která příčinu jen dokládají (počty, podíly ze zdrojů, pořadí v lize),
+  patří do zámku a do obrazu.
+- **Divák nic nepočítá a neporovnává dvě čísla** (Ondřej 17. 11. 2026 pozdě večer: větu „šedesát ku čtyřiceti…
+  šestašedesát ze sta… sto šedesát eur“ pochopí jen díky svému ekonomickému zázemí; „pro lidský mozek je to fakt
+  složitě stravitelný a tak by se to mohlo přenést na grafiku“). **Poměry, procenta a „kolik ze sta“ patří do
+  obrazu.** V hlase je místo nich obraz a srovnávací slovo („větší půlku“, „jen tu menší“, „víc, než je zvykem“)
+  a nejvýš jedno číslo v jednotce ze života (u mezd eura měsíčně). Výsledek země (kolik přijde na účet a za kolik
+  to doma vydá) zazní číslem dál.
+- **Obraz se vysvětlí jednou, u první země, které se věc týká.** Další země na něj už jen odkáže („Vzpomeňte si na
+  koláč, o který se firma dělí se svými lidmi“) a řekne, čím se liší a kolik to dělá.
+- **Co z hlasu vypadlo, stojí v řádku `[VIZUÁL: …]` té části:** číslo, jaký graf ho ukáže (koláč, sloupec, karta
+  peněz) a u kterých slov hlasu se objeví. Řádek VIZUÁL je zadání pro grafiku: střih smí ukázat jen čísla z něj
+  nebo z datového souboru střihu, takže co v řádku není, v obraze nebude.
+- **Když rozdíl plyne z toho, co průměr zkresluje,** říká se věcí, která zkresluje, ne popisem výpočtu. Stavba:
+  jedna věta, že zemi v kolech něco zkreslovalo, a ke každé věci jedna až dvě věty „co průměr zkreslovalo → jak je
+  to u lidí doopravdy“ (druhý vzor níže). Neříká se, s čím kola „počítala“, ani srovnání s typickou zemí, pokud by
+  se na ně divák sám nezeptal. Krok „čí je to dílo“ tu odpadá, protože nikdo nic neudělal; věta „není to zásluha
+  ani chyba země“ do hlasu nepatří.
+
+**Vzor úrovně (Rumunsko v cíli).** Výklad napsal 17. 11. 2026 Gemini a Ondřej ho schválil; proti jeho znění je
+opraveno jen to, co neodpovídalo faktům nebo slovníku série:
+
+> Na páté, poslední místo v regionu padá Rumunsko, které ještě před cílem drželo bronz. Průměrnému zaměstnanci tu
+> na účet přijde v čistém kolem devíti set padesáti eur měsíčně. Díky levnému bydlení, službám i jídlu si za ně doma
+> pořídí stejný životní standard, na jaký by v průměrně drahé evropské zemi potřeboval tisíc šest set třicet eur,
+> a právě podle této kupní síly řadíme cíl. I tak je to ale o desetinu méně, než by odpovídalo třem hlavním
+> faktorům. Proč? Když firmy zaplatí materiál a energie, o zbylý výdělek se s lidmi dělí jako o koláč. V Evropě
+> z něj zaměstnanci obvykle dostanou větší půlku, v Rumunsku jen tu menší. S obvyklým dílem by měl Rumun na účtu
+> asi o sto sedmdesát eur měsíčně víc. Překvapivě za to nemohou zahraniční koncerny, které do ciziny odvádějí jen
+> malý zlomek peněz a lidem platí štědřeji. Výplaty drží nízko hlavně domácí firmy. Nahrává jim, že většině lidí tu
+> mzdu nevyjednávají odbory, a také daně, při kterých se majiteli malé firmy vyplatí brát si peníze jako zisk,
+> a ne jako mzdu.
+
+V řádku VIZUÁL k tomu stojí mimo jiné: `u slova „koláč“ koláčový graf THE PIE: EUROPE 60 / 40, ROMANIA 48 / 52;
+štítek WITH THE USUAL SHARE +169 € / MONTH`.
+
+**Další země, které se týká stejná věc (Slovinsko v cíli; Ondřej 17. 11. 2026: „ta varianta A, ta mě přijde fakt
+dobrá… není tam zahlcení těmi čísly“):**
+
+> Proč? Vzpomeňte si na koláč, o který se firma dělí se svými lidmi. Ve Slovinsku si z něj zaměstnanci ukrojí ještě
+> víc, než je v Evropě zvykem. Slovincovi to dělá asi sto šedesát eur měsíčně navíc.
+
+V řádku VIZUÁL: `koláčový graf se vrátí: EUROPE 60 / 40, SLOVENIA 66 / 34; štítek +164 € / MONTH`.
+
+Proti Geminiho znění je podle Ondřejovy volby (varianta A) poměr „šedesát procent na výplaty ku čtyřiceti pro
+firmu… přes polovinu zůstává firmě“ nahrazen koláčem s větší a menší půlkou a čísla jsou v obraze.
+Co dalšího se proti Geminiho znění změnilo a proč (ukázka toho, co smí kontrola faktů: mění slovo, ne stavbu): „levným
+nájmům“ → „levnému bydlení“ (Rumuni většinou bydlí ve vlastním); „než odpovídá výkonu rumunské ekonomiky“ → „než by
+odpovídalo třem hlavním faktorům“ (kola počítají i s daněmi); „přes polovinu si nechávají majitelé“ → „zůstává
+firmě“ (v té polovině je i opotřebení strojů a úroky); „slabé odbory“ → „většině lidí mzdu nevyjednávají odbory“
+(členů odbory nemají málo, slabé je vyjednávání: smlouva kryje podle zdroje 15 až 43 % zaměstnanců); „vykazovat
+zisk víc než přidávat lidem“ → „majiteli malé firmy se vyplatí brát si peníze jako zisk“ (doložený je tento užší
+mechanismus). Sloveso „nahrává“ odpovídá síle dokladu: mechanismus je doložený a sedí s daty, účinek nikdo nezměřil.
+
+**Druhý vzor: rozdíl dělá zkreslený průměr (Bulharsko v cíli).** Také Geminiho výklad schválený Ondřejem, po
+kontrole faktů („dovážené stroje“ → „stroje, které stojí skoro stejně jako všude v Evropě“; „každý devátý hospodaří
+jen na malém políčku“ → „na vlastním poli, často jen na malém políčku“; „skutečných zaměstnanců… bez chudého
+venkova“ → „jen zaměstnanců… bez lidí z políček“):
+
+> Naopak z posledního místa až na bronz vystřelilo Bulharsko. Bulharovi chodí na účet kolem tisíce eur měsíčně,
+> jenže díky mimořádně levnému životu to doma vydá za tisíc sedm set dvacet eur. To je o dobrou pětinu víc, než by
+> odpovídalo třem hlavním faktorům. Bulharsku totiž v předchozích kolech škodily dva optické klamy. Zaprvé průměrné
+> ceny v zemi zvedají stroje pro firmy, které stojí skoro stejně jako všude v Evropě, kdežto to, co lidé platí
+> z výplaty, a nejvíc bydlení a energie, je tu mimořádně levné. Zadruhé průměr celé země srážel velký počet drobných
+> rolníků: každý devátý pracující tu hospodaří na vlastním poli, často jen na malém políčku pro sebe. Cílový
+> žebříček ale sleduje jen výplaty zaměstnanců, a ti bez lidí z políček vycházejí zřetelně výš.
+
+První zkouška opravy (17. 11. 2026 večer): pomocník, který znal jen vzor Rumunska, napsal podle něj Slovinsko na
+stejné úrovni (norma, země, eura, vyvrácená představa, příčina; 150 slov). Bulharsko bez vlastního vzoru vyšlo
+dvakrát delší než tento vzor a znovu popisovalo výpočet; proto má zkreslený průměr vlastní vzor.
+
+**Zkouška.** Hotový výklad se čte nahlas proti vzoru. Kde je hustší, má víc čísel, začíná příčinou dřív, než
+zazněla otázka, nebo v něm jedná veličina místo lidí, přepíše se. Srozumitelnost nepotvrzují pomocníci: modely
+rozumějí i hustému textu a 16. i 17. 11. 2026 potvrdily znění, kterému lidé nerozuměli. První zemi nového regionu
+čte Ondřej jako krátkou ukázku dřív, než vznikne zbytek.
+
+Dál platí:
+
+1. **Stavba:** `# Region`, pak `## Předstartovní obraz a role zemí`, `## Kolo 1 – …` až `## Kolo N – …`, `## Finále: cíl`.
    Každá část začíná řádkem `[VIZUÁL: …]` s přesnými čísly (sem patří čísla, která v hlase nejsou).
+   Cílová tabule ligy stojí na konci části `## Finále: cíl` a má vlastní řádek `[VIZUÁL: …]` (§2.8).
+   Každé kolo má jiný nadpis a hned za otevírací větou řádek `[VIZUÁL: Místa v kole N (v regionu / v lize z 27): …]`
+   (kontrakt rozhraní, §0).
 1a. **Uvedení země jako ve sportovním přenosu (Ondřej 4. 11. 2026):** první věta země v kole i ve finále začíná tím,
    **kdo to je a na jakém je místě** („Třetí v regionu a v kole devatenácté je Chorvatsko…“), hned další věta říká
    proč. Nikdy řečnická otázka, ve které jméno země zazní až na konci („A proč skončilo úplně poslední… Rumunsko?“):
@@ -7164,23 +9107,71 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    mluví o chorvatské válce v 90. letech, divák neví, že jde o druhou světovou; vždy „před druhou světovou válkou“),
    „Jugoslávie“ bez vysvětlení, že Slovinsko a Chorvatsko byly jejími republikami. **Co divák nemusí znát, se řekne
    při první zmínce**: příslušnost k státu nebo bloku, která válka, který režim, čí je firma. Přívlastek patří do tučného jádra a do zámku faktů, aby ho Gemini nevypustil.
+   **Neznamená to přebírat do hlasu slovník analýzy nebo zdroje** (17. 11. 2026): v hlase stojí běžné slovo (§3.0),
+   jen se z něj nesmí ztratit to, čím se země liší.
    Mechanicky to hlídá `py scripts/kontrola_srozumitelnosti.py --divak` (seznam holých pojmů je ukázka typu; každý
    nový pojem, který Ondřej musel opravit, se do něj přidá).
-2. **Věty:** souvislé, nejvýš dvě čísla ve větě, nejvýš dvě vedlejší věty, jeden odstavec = jedna otázka a odpověď.
-   Žádné staccato, žádné odrážky v mluveném textu, žádná metodika (body, výpočet, odchylka, tabulka, data).
+2. **Věty se píšou na poslech (Ondřej 10. 11. 2026 chtěl obecný vzorec, proč vznikají krkolomné věty).** Příčina:
+   věta vzniká stlačením záznamu z analýzy (hlavní důvod, kudy, dopad, test, soud) pod strop slov. Zůstanou v ní
+   všechna pole a zmizí spojky, slovesa a podměty; je úplná pro kontrolora a nečitelná pro ucho. Druhá příčina je
+   obranná: aby věta neřekla víc, než analýza dokládá, přibírá výhrady o měření. Pravidla:
+   1. **Jedna věta, jedna myšlenka:** kdo, co udělal, a co z toho. Důvod do další věty s „protože“ nebo „proto“.
+   2. **Podmět je ten, kdo jedná** (země, stát, firma, člověk), ne veličina („díl“, „hodnota“, „průměr“). Jeden podmět
+      na odstavec; když se mění, řekne se jménem.
+   3. **Nejvýš jedno číslo na větu**, dvě jen když jsou spolu pointou („o šestinu víc eur, o čtvrtinu dražší život“).
+      Ostatní čísla do obrazu.
+   4. **Jedna veličina má v celém regionu jedno číslo** (ne v jednom kole „třetina“ a v druhém „čtvrtina“ téhož).
+   5. **Žádné středníky. Dvojtečka jen před výčtem nebo citací.**
+   6. **Souboj sousedů celou větou:** „X je před Y, protože…“. Nikdy zkratka „ztrácí na Y něčím“.
+   7. **O měření se nemluví.** Výhrada patří do poznámek a do obrazu; do hlasu jen tehdy, když mění, co si divák
+      odnese. Když výsledek ovlivňuje to, co průměr zkresluje, říká se věcí, která zkresluje (§3.0), ne výpočtem.
+   8. **Pojem se vysvětlí při první zmínce v epizodě** půlvětou; srovnává se jen se zeměmi, které už jely, nebo se
+      „středem ligy“. Odpověď stojí hned za otázkou, ne po třech jiných myšlenkách.
+   9. **Když se text nevejde pod strop, škrtá se myšlenka, ne slova.** Vyškrtnutá spojka je začátek krkolomné věty.
+   10. **Pointa kola je věta, kterou by divák zopakoval kamarádovi.** Když v ní je „která“, „kolik“ a „za kolik“
+       najednou, je to vzorec pro analytika. Fakt se hned nepopírá („praskla bublina… pořadí to nezměnilo“): řekne se,
+       co to lidi stálo.
+
+   Dál platí: souvislé věty, žádné staccato, nejvýš dvě vedlejší věty, jeden odstavec = jedna otázka a odpověď, žádné
+   odrážky v mluveném textu, žádná metodika (body, výpočet, odchylka, tabulka, data). Tato pravidla jsou pro
+   faktickou verzi, aby šla přečíst nahlas; Gemini je nedostává jako zákazy (§0).
+
+   **Co se opakovalo ve čtyřech zkouškách poslechem (noc 13.–14. 11. 2026; střední Evropa, jih, západ, Skandinávie
+   a Benelux; známky srozumitelnosti 7, 7, 7 a 5 z 10).** Každý z těch bodů našli nezávisle aspoň tři posluchači:
+   - **Úvodní věta druhého kola.** „Kolikrát se produktivita zvedla proti středu ligy“ nikdo nepochopil. Kolo se
+     otevírá obyčejně: kdo si od začátku období nejvíc polepšil ve srovnání se střední zemí ligy.
+   - **Kolo o daních je suché,** když jsou v něm jen procenta. Hlavní scéna říká, co to znamená pro konkrétního
+     člověka a jeho výplatu v eurech (firma zaplatí za zaměstnance 3 700 eur, na účet mu přijdou dva tisíce);
+     ostatní země dostanou jednu konkrétní věc (rok, pravidlo, co za odvody lidé mají).
+   - **Cílová tabule je hustá.** V hlase nejvýš dvě čísla, každé procento říká pod kým nebo před kým, body týmu jen
+     se souvislostí („sto je průměr ligy“). Vypráví se jako děj: kdo útočil, kdo odolal, kdo se vedle koho zařadil.
+   - **Zelený trikot v rolích** bez vysvětlení mate, když v regionu žádný adept není. Buď půlvěta, co trikot je a kdo
+     ho veze, nebo nic.
+   - **Dva názvy pro součet kol** („tři hlavní faktory“ a „papírové předpoklady“) posluchač bere jako dvě různé
+     věci. V jednom regionu jen jeden z nich.
+   - **Sousedé „skoro nastejno“** bez jediného slova o tom, čím se liší, znějí jako vynechaný důvod.
+   - **Shrnutí po kole** musí sedět s tím, co v kole zaznělo, a čísla se v odstavci nesmějí hromadit.
+   - **Co naopak fungovalo všude:** známé představy uvedené na pravou míru (polský instalatér, „montovna“, Němci
+     a odpracované hodiny, banky jen desetina Švýcarska, Itálie jako továrna na pračky), konkrétní značky a otázka
+     před odhalením („Sesadí ho Rakousko?“).
 3. **Značení pro Gemini:**
    - **tučně** = pevné jádro: musí zaznít v hlase, číslo a omezující slovo přesně tak;
    - `{volitelné: …}` = smí zkrátit, vynechat nebo nechat jen v obraze;
    - ostatní text = smí volně přeformulovat, ale ne vynechat.
    **Pevné jádro každé země v každém kole (jediný seznam, ostatní místa skillu i skill pro Gemini na něj odkazují):**
    hlavní důvod a jeho váha, hodnocení, kudy k ukazateli epizody (u mezd k výplatě) a u nižší země páru důvod
-   páru. Vše ostatní smí být volitelné: co zaznít nemusí (doplňky, kulisy, vedlejší důvody vedlejších zemí), Claude
+   páru. K pevnému jádru regionu patří i tváře zemí a všeobecně známé představy s jejich rozuzlením (pravidlo „Co za tím stálo“, body 7 a 8). Vše ostatní smí být volitelné: co zaznít nemusí (doplňky, kulisy, vedlejší důvody vedlejších zemí), Claude
    do faktické verze buď vůbec nepíše, nebo ho označí `{volitelné: …}`.
-   Pevné je jen to, bez čeho se příběh rozpadne: asi 15–25 faktů na region (tip a jeho splnění, hlavní důvod každé
+   Pevné je jen to, bez čeho se příběh rozpadne: asi 15–25 faktů na region (role zemí, slova soudu, hlavní důvod každé
    země a jeho váha, otázka diváka a odpověď, průběžné pořadí, výsledky v cíli, důvody finále). Méně pevného = víc
    prostoru pro čtivost. **Tučně jsou jen krátké úseky s klíčovým faktem** (místo a jméno země, číslo, omezující
-   slovo, směr příčiny, Ondřejův tip, průběžné pořadí), **nikdy celé věty a odstavce; tučně nejvýš asi 40 % slov**
-   (hlídá brána `kontrola_paru_sousedu.py`). Netučný text je prostor Gemini pro sportovní styl. (Poučení 5. 11. 2026:
+   slovo, směr příčiny, slovo soudu, role země, průběžné pořadí), **nikdy celé věty a odstavce; tučně nejvýš asi 40 % slov**
+   (hlídá brána `kontrola_paru_sousedu.py`). **Z čísel jsou tučně jen ta, která nesou výklad** (výsledek, norma,
+   odchylka, dopad na člověka; §3.0). Čísla, která příčinu jen dokládají, a vedlejší srovnání jsou `{volitelné: …}`
+   nebo jen v řádku VIZUÁL, aby je Gemini směl vypustit (Gemini 17. 11. 2026: pevné jádro mu „zakazuje jakékoli
+   číslo z podkladu vypustit“). Netučný text je prostor Gemini pro sportovní styl. **I tučné
+   jádro smí Gemini přeformulovat**, když zachová číslo, omezující slovo, směr příčiny a slovo soudu: zamčený je význam,
+   ne slovosled (§0). (Poučení 5. 11. 2026:
    v Balkánu bylo tučně 97 % slov, Gemini proto nemohl nic přepsat a sportovní styl zmizel; Ondřej si toho všiml.)
 4. **Zámek faktů** na konci souboru: číslovaný seznam pevných faktů v krátké podobě (číslo, omezující slovo, směr
    příčiny, místo) a u každé země **pořadí důvodů** (hlavní → doplněk) a protiváha, kterou poctivý závěr potřebuje.
@@ -7196,7 +9187,15 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    „X je před Y, protože…“ s odkazem na větu v textu kola. Prázdný řádek = kolo se neodesílá.
 4b. **Kontrolní list** na konci souboru, vyplněný ano/ne u každého bodu (Ondřej 5. 11. 2026: „nechci, aby se to
    opakovalo“; pravidla se dřív ztrácela, protože se kontrolovala po paměti a starší rozporná pravidla zůstala ve
-   skillu): showcase jen sportovní očekávání; otevření každého kola jedna věta; páry sousedů ve všech kolech
+   skillu): role zemí bez míst a bez tipů (§2.2); nejvýš dvě hlavní scény na kolo a žádná země v kole bez
+   konkrétního jména; každá země má za region hlavní scénu, titulkovou větu a chvíli na cílové tabuli (§2.9); soud
+   hlavní větou slovem ze slovníku a „chyba“ jen po testu čtyř otázek (§2.3a); průběžné pořadí jen uvnitř regionu;
+   věta účtu u každé země v cíli; cílová tabule s křeslem lídra, linkou středu, soubojem přes hranici regionu a body
+   týmu (§2.8); věty na poslech (bod 2) a zkouška poslechem proběhla (§5a); v prvním regionu pravidla za jízdy
+   (§2.5); otevření každého kola jedna věta; žádné kolo nezačíná pořadím
+   regionu a místo země zazní, až když na ni dojde řada; tváře zemí jménem, bez příčinného slova a s větou, která
+   je spojí se skutečným důvodem (Co za tím stálo, bod 7); u každé země jedna až dvě všeobecně známé představy,
+   pojmenované hmatatelnou věcí a potvrzené, zmenšené nebo vyvrácené podle testu v analýze (bod 8); páry sousedů ve všech kolech
    a příčina páru jako rozdíl proti sousedovi, ne vlastní růst; pořadí důvodů u každé země podle záznamu pořadí
    příčin v analýze (hlavní první a nejdelší, vedlejší jen vedlejší větou, „hlavně“ jen u hlavního); žádná příčina
    vyřazená údajem, který nerozlišuje (podobnost se sousedem, čistá změna počtu, dnešní podíl); dohánění jako
@@ -7242,13 +9241,21 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    finále a pauz). Konečná délka se ověří nahrávkou. Rozpočet napiš do hlavičky souboru i s výpočtem. Ondřej ho smí
    změnit, Claude ne: **bohatší vysvětlení se nezískává přidáním slov, ale méně příčinami** (oddíl Nejvyšší priorita).
    Strop hlídá brána `kontrola_paru_sousedu.py`: spočítá slova mluveného textu po částech a nad stropem neprojde.
+   **Cílová tabule se počítá do stropu regionu;** místo pro ni vzniklo zrušením tipů, míst v lize u průběžného pořadí
+   a vyhodnocení tipů. **První region epizody smí strop překročit o 50 slov** kvůli pravidlům za jízdy (§2.5; brána
+   `--prvni-region`). Tváře zemí a známé představy (Co za tím stálo, body 7 a 8) se do stropu počítají také; když se
+   nevejdou, Claude to řekne Ondřejovi s počtem slov, tvář potichu nevynechá.
+   **Region se šesti zeměmi (otevřené, 14. 11. 2026):** Skandinávie a Benelux se do stropu 1 425 slov vešla jen za cenu
+   nahuštěných čísel a ve zkoušce poslechem dostala srozumitelnost 5 z 10. Jestli má šestičlenný region dostat víc
+   slov, nebo se má rozdělit, rozhodne Ondřej.
    Nový povinný prvek se proto do textu nedostane přidáním slov: nejdřív ustoupí náhražky důvodu (§2.3, odrážka
    „Důvod soudu“), pak kulisy, pak vedlejší důvody vedlejších zemí; pevné jádro (§3 bod 3) nikdy.
-   **Vyváženost:** ve verzi do 9,5 minuty je orientační podíl showcase asi 5 %, kolo 1 asi 25 %, kolo 2 asi 30 %,
-   kolo 3 asi 20 %, finále asi 20 % (u mezd se třemi koly a cílem; u jiného počtu kol obdobně). Kolo s pěti
+   **Vyváženost:** ve verzi do 9,5 minuty je orientační podíl rolí zemí asi 3 %, kolo 1 asi 25 %, kolo 2 asi 30 %,
+   kolo 3 asi 15 až 20 %, cíl s cílovou tabulí asi 25 % (u mezd se třemi koly a cílem; u jiného počtu kol obdobně; kolo
+   s malým vlivem na výsledek smí být kratší). Kolo s pěti
    hodnoceními s důvodem, čtyřmi páry a pointou se pod asi 280 slov nevejde (zkouška 6. 11. 2026; hodnocení se vejde
-   do věty, která nahradí část popisu). **Na čem šetřit (Ondřej 5. 11. 2026):** na showcase (jen sportovní
-   očekávání), na otevření kol (jedna věta) a na doplňcích, nikdy na pevném jádru (§3 bod 3). Když se vysvětlení
+   do věty, která nahradí část popisu). **Na čem šetřit (Ondřej 5. 11. 2026):** na rolích zemí (dvě až čtyři
+   věty), na otevření kol (jedna věta) a na doplňcích, nikdy na pevném jádru (§3 bod 3). Když se vysvětlení
    párů nevejde, nejdřív se
    krátí detaily příkladů; když ani to nestačí, Claude to řekne Ondřejovi s návrhem rozpočtu, nevynechá pár potichu.
    Žádná část nesmí být holá: každá země dostane v kole 1 jeden
@@ -7285,27 +9292,56 @@ Píše ji Claude z mapy. **Cílem je správnost a stavba, ne krása;** čtivost 
    nepozná, jestli si vede dobře; doplní se věcný hodnoticí závěr) a **nepodložený soud** (soud silnější, než
    doklady unesou, nebo rozhodnutí odsouzené bez doloženého účinku; upraví se na rozsah, který doklady unesou,
    třeba na hodnocení výkonu).
+   **Šestý úkol kontrolora (13. 11. 2026): tváře zemí.** U každé věty o tváři ověří fakt u zdroje (kdo firmu
+   založil a kde, čí je dnes, zda ještě funguje) a to, že věta netvrdí příčinu: nemá „díky“, „proto“ ani „hlavně“
+   a neříká počet, který není ověřený pro tu zemi. Ověří také, že každá tvář má hned za sebou větu se skutečným
+   důvodem a že žádné kolo nezačíná pořadím regionu. U každé všeobecně známé představy ověří, že její potvrzení nebo
+   vyvrácení má test v analýze a neříká víc, než test unese (Co za tím stálo, bod 8).
+   **Sedmý úkol kontrolora (10. 11. 2026): síla soudu.** U každého slova soudu ověří, že odpovídá slovníku (§2.3a),
+   že „chyba“ má v analýze odpověď na všechny čtyři otázky testu, že hlas neviní lidi tam, kde rozhodoval stát,
+   a že u soudu nevypadlo omezující slovo.
+   **Pořadí kontrol (10. 11. 2026):** kontrola faktů a vah → oprava → zkouška poslechem (§5a) → úprava vět → krátká
+   kontrola faktů jen změněných vět → brány. Žádný krok se nevynechává; kontrola faktů a zkouška poslechem hlídají
+   dvě různé věci a žádná nenahradí druhou.
+   **Přepis vrací chyby, které už byly opravené.** Při úpravě na poslech padá jako první omezující slovo („jen“,
+   „zčásti“, „z velké části“, „výš“ místo „do čela“). Proto: (a) omezující slovo je součást faktu a při úpravě se
+   neškrtá ani nemění za silnější; když s ním věta zní špatně, přestaví se celá věta; (b) před každým přepisem se
+   znovu přečte oddíl NEŘÍKEJ a záznam minulých kontrol; (c) po úpravě vždy krátká kontrola změněných vět.
 
 Soubor se ukládá jako `FAKTICKA_VERZE.md` ve složce regionu a Ondřejovi se posílá přes SendUserFile.
 
 ### 4. Zpětná kontrola čtivé verze
 
-Ondřej vloží čtivou verzi z Gemini zpět. Kontroluje se **jen uzavřený seznam šesti odchylek** proti zámku faktů:
+Ondřej vloží čtivou verzi z Gemini zpět. Od 17. 11. 2026 smí Gemini výklad přestavět, čísla přesunout do řádku
+VIZUÁL a doplnit, co dohledal (§0). Kontrola proto začíná jeho seznamem DOPLNĚNO:
+0. **všechno doplněné se ověří u zdroje** (nejlépe nezávislým kontrolorem, který text nepsal): potvrdí se, řekne
+   se přesněji, nebo se škrtne; sloveso dostane sílu podle dokladu („způsobil“ jen s měřeným účinkem, „nahrává“
+   u doloženého mechanismu, „souvisí“ u souběhu). Doplněk, který v seznamu chybí, je nález. Přestavěný výklad ani
+   číslo přesunuté do řádku VIZUÁL nález nejsou; ověří se jen, že číslo v řádku VIZUÁL opravdu je a sedí.
+
+Pak se kontroluje **uzavřený seznam osmi odchylek** proti zámku faktů:
 1. změněné nebo nově zaokrouhlené číslo, rok, místo;
 2. vypadlé omezující slovo („jen“, „asi“, „skoro“, „zčásti“, „reálně“, „v kupní síle“) nebo přívlastek, který odlišuje
    pojem („centrální“ plánování, „sovětského vzoru“); čtivou verzi proto vždy proženeš i kontrolou srozumitelnosti
    `--divak` a holý pojem opravíš rovnou sám;
 3. obrácený nebo zesílený směr příčiny („díky“ místo „kvůli“, „proto“ místo „zčásti proto“);
-4. změněný štítek, tip nebo pořadí;
-5. nový fakt, který ve faktické verzi není (značka s číslem, historie, citát);
+4. změněná role země, pořadí nebo místo na cílové tabuli;
+5. nový fakt, který ve faktické verzi není a Gemini ho neuvedl v seznamu DOPLNĚNO (značka s číslem, historie, citát);
 6. **změněná váha důvodů** (9. 11. 2026): hlavní důvod země zkrácený na dovětek, doplněk rozvedený víc než hlavní
    důvod, nebo vypadlá protiváha, kterou závěr potřebuje. Kontrola: u každé země si přečti jen čtivou verzi, napiš
    jednou větou, co si divák odnese jako hlavní důvod, a porovnej to se zámkem faktů.
+7. **tvář změněná v příčinu** (13. 11. 2026): věta o slavné firmě, místě nebo člověku dostala při přepisu „díky“,
+   „proto“ nebo „hlavně“, vypadla věta, která ji spojuje se skutečným důvodem, nebo se změnil původ a vlastnictví
+   (z „britský Revolut tu má banku“ se stalo „litevský Revolut“).
+8. **změněná síla soudu** (10. 11. 2026): „chyba“ změkčená na popis nebo na vedlejší větu, „dobrý tah“ nafouknutý na
+   „skvělý“, soud přesunutý na jinou zemi nebo z státu na lidi, vypadlá věta účtu ve finále. Hodnoticí slova, která ve
+   faktické verzi nejsou a mění váhu („zachraňují“, „vyneslo na vrchol“), jsou nový fakt (bod 5).
 
-Plus: chybí-li pevný fakt ze zámku, je to odchylka.
+Plus: chybí-li pevný fakt ze zámku, je to odchylka; číslo přesunuté z hlasu do řádku VIZUÁL odchylka není.
 
 **Všechno ostatní je volnost Gemini** (obrazy, pořadí vět, pokud hlavní důvod zůstane hlavní, tón, vtip, rytmus,
-délka vět) a nekomentuje se. Drobnost
+délka vět, komentátorské přechody a zvolání) a nekomentuje se. Když čtivá verze zní strhujícněji než faktická a žádná
+z osmi odchylek v ní není, je to správně, ne nález. Drobnost
 (jedno slovo, číslo) opraví Claude rovnou a zapíše. Když je špatně celá věta, dostane Ondřej tu jednu větu se správným
 faktem, aby ji vrátil Gemini; nikdy celý seznam stylových připomínek. Výsledek: krátký seznam „co jsem opravil“ a hotový
 soubor `CTIVA_VERZE.md`.
@@ -7313,11 +9349,29 @@ soubor `CTIVA_VERZE.md`.
 ### 5. Slepá zkouška diváka (u nového ukazatele nebo velké změny)
 
 Model, který analýzu neviděl, dostane jen mluvený text a odpoví na otázky příběhu (co je veličina kola, jak se měnilo
-pořadí, proč hlavní scéna, odpověď na otázku diváka, proč je země v cíli jinde než po kolech, splnily se tipy),
+pořadí, proč hlavní scéna, odpověď na otázku diváka, proč je země v cíli jinde než po kolech, potvrdily země své role),
 u zemí hlavní scény jednou větou, proč je země taková, druhou, v čem se lišila od souseda, a co je hlavní důvod
 a co doplněk, u každé země, **co se jí povedlo nebo nepovedlo, proč a jak významně to ovlivnilo výsledek**, a dá
 čtivost 1–10 s místy, kde se ztratil. Odpovědi se porovnají se záznamy pořadí příčin a hodnocením v analýze.
 Chybná odpověď = vada mapy nebo faktické verze, ne stylu.
+
+#### 5a. Zkouška poslechem (u každého regionu, před předáním Gemini)
+
+Čtenář bez podkladů (stačí levnější model) dostane **jen čistý text hlasu** (`HLAS_K_PRECTENI.md`) a má:
+1. vypsat každou větu, kterou by při jediném poslechu nepochopil, a napsat proč;
+2. u každé země vlastními slovy říct, co udělala dobře, co špatně a co byla smůla;
+3. u každého kola říct, proč je soused před sousedem;
+4. říct, kterou firmu, místo nebo věc si u každé země zapamatoval;
+5. dát srozumitelnost 1 až 10.
+
+U finále navíc (17. 11. 2026): posluchač má říct, kolik lidé v zemi berou, proč země skončila jinde než po kolech,
+co se u ní stalo a čím to je. Otázky nepíše autor podle vlastního výkladu; vždy mezi nimi je „a jinde to tak není?“,
+„a čím to je?“ a „kolik to dělá na výplatě?“. Stejné otázky dostane i posluchač předchozí verze, aby šlo
+porovnat, co se zlepšilo.
+
+Odpovědi z bodů 2 a 3 se porovnají se soudy a páry v poznámkách; rozdíl je vada textu. Země, u které si posluchač
+nic nezapamatoval, nemá tvář ani obraz (Co za tím stálo, bod 7). Posluchač po přestavbě Balkánu a Pobaltí našel
+38 vět, které pět kol kontroly faktů nechalo projít, protože kontrolor faktů hledá něco jiného.
 
 ### 6. Obecnost: jak postup použít na jiný ukazatel
 
@@ -7327,22 +9381,68 @@ z analýzy toho ukazatele, a když ho nemá, finále vykládá jen doložené in
 otázka diváka, průběžné pořadí, páry sousedů, dvě otázky výkladu (proč je země taková a proč je před sousedem nebo
 za ním) s pořadím příčin, komentátorské hodnocení se silou podle předmětu a dokladů a zámek faktů platí beze
 změny. Kde skill mluví o výplatě (kudy k výplatě, pointa končí výplatou), u jiné epizody platí její ukazatel.
+Role zemí, tabulka chvil, slova soudu, tváře zemí a známé představy, cílová tabule ligy s body týmu a psaní na poslech
+platí pro každý ukazatel. Návrh cílové tabule se pro každou epizodu počítá znovu z jejích čísel (kde leží linka, kdo
+drží křeslo, které souboje přes hranici regionu vyjdou).
 
 ### 7. Historie
 
 Záznam změn a jejich důvodů je v `voiceover-mapa-pribehu-HISTORIE.md`; předchozí znění
-v `voiceover-mapa-pribehu-SKILL-v1.0.md`. Kdo pravidlo mění, přepíše platné znění na jeho místě, smaže
+v `voiceover-mapa-pribehu-SKILL-v1.1.md` a `voiceover-mapa-pribehu-SKILL-v1.0.md`. Kdo pravidlo mění, přepíše platné znění na jeho místě, smaže
 to, co mu odporuje, a důvod zapíše do souboru historie.
 
 
-# Skill: analyza-pricin-regiony-SKILL-v1.5.md
+# Skill: analyza-pricin-regiony-SKILL-v1.6.md
 
-## Analýza příčin pro regionový systém (skill v1.5)
+## Analýza příčin pro regionový systém (skill v1.6)
 
-*Verze 1.5, 9. 11. 2026. Stav: podle tohoto skillu vznikají analýzy regionů (mzdy od 23. 10. 2026) a aktivní skill
-mapy příběhu (`voiceover-mapa-pribehu-SKILL-v1.1.md`) na něj odkazuje jako na jediné platné znění postupu výkladu;
-formální aktivaci potvrzuje Ondřej (oddíl 6, otevřená otázka 6). Každý výstup zapíše do hlavičky, podle které verze
+**Platnost: tato verze je od 17. 11. 2026 platná a uložená v projektu** (Ondřej 17. 11. 2026 v noci: „Že to ještě
+není aktivované jako hlavní skill? Analytický a voiceover? To já bych právě už chtěl… aby to bylo platné“; „Ano
+určitě… určitě všechno hned commitni“). Tím je zodpovězená i otevřená otázka 6 v oddílu 6. Chráněná ústava starého
+systému tří indexů se neměnila (mění ji jen Ondřej). Slovo „necommitovaný“ u doplňků níže popisuje stav před tímto
+dnem.
+
+*Verze 1.6, 13. 11. 2026 (předchozí znění 1.5 z 9. 11. 2026 zůstává beze
+změny v `analyza-pricin-regiony-SKILL-v1.5.md`). Stav: podle tohoto skillu vznikají analýzy regionů (mzdy od 23. 10. 2026) a aktivní skill
+mapy příběhu (`voiceover-mapa-pribehu-SKILL-v1.2.md`) na něj odkazuje jako na jediné platné znění postupu výkladu;
+platnost potvrdil Ondřej 17. 11. 2026 (oddíl 6, otázka 6). Každý výstup zapíše do hlavičky, podle které verze
 vznikl (krok 10.7).*
+
+**Doplněk 16. 11. 2026 (necommitovaný; Ondřejovo zadání z 16. 11. 2026):** krok 7 bod 7, rozložení hlavního
+ukazatele na díly podle vlivu pro graf v úvodu; nový výstup `ROZLOZENI_UKAZATELE.md` a `rozlozeni_ukazatele.json`
+(oddíl 5); otevřená otázka 2 je rozhodnutá (oddíl 6).
+
+**Doplněk 17. 11. 2026 (necommitovaný; Ondřej po zkoušce hotového videa na bratrovi a rodičích):** krok 7 bod 8,
+zásah specifických faktorů u každé země (kolik by země měla jen podle kol, o kolik se liší skutečnost, z čeho se
+rozdíl skládá a který specifický faktor je hlavní) a výsledek v penězích, které divák zná; je to podklad finále
+regionu (skill mapy příběhu §2.6). Nový výstup `ZASAH_SPECIFICKYCH_FAKTORU.md` a `zasah_specifickych_faktoru.json`
+(oddíl 5); rozhodnutí v oddílu 6.
+
+**Oprava 17. 11. 2026 večer (necommitovaná).** Ondřej: „To, jak ty vysvětluješ ty věci, je ale dlouhodobě
+problematické… Tam je podle mě problém v tom analytickém skillu… šlo by přesně identifikovat ve skillu chyby a napravit
+to?“ Finále Balkánu podle kroku 7 bodu 8 jmenovalo jako důvod největší část rozkladu („kolik firma dá zaměstnancům“)
+a neřeklo, čím to je; Ondřej tomu nerozuměl a příčinu mu řekl až Gemini. Změnilo se: (1) krok 7 bod 8 má novou
+povinnou odrážku **Výklad specifického faktoru pro scénář** (pět polí: jak to chodí obvykle, jak je to v zemi, co to
+dělá s výplatou, čím to je, co si divák myslí a neplatí); největší část rozkladu říká jen, v čem se země liší;
+(2) výhrada k měření se čte jako možná příčina; (3) „příčina není doložena“ nesmí být tichý konec (krok 9a bod 3);
+(4) rešerše příkladů a výklad příčin jsou podmínka psaní scénáře (krok 2a); (5) podklad nedává hotové věty do hlasu
+(krok 9a). **Zůstalo:** výpočty, výběr kol, testy domněnek a všechna ostatní pravidla. Přesná místa chyb a důvody:
+`analyza-pricin-regiony-HISTORIE.md`. Znění před opravou:
+`10_documents/active/2026-11-17_finale_balkan/zaloha_postupu_pred_upravou_2026-11-17_vecer/`.
+
+**Co se změnilo proti verzi 1.5** (Ondřej 10. a 13. 11. 2026, po přestavbě scénářů Balkánu a Pobaltí; skill mapy
+příběhu v1.2 z těchto výstupů vypráví):
+1. **Slovo soudu a test lepší možnosti** (krok 2b bod 6a, tvrdé pravidlo 17): výstupem u každé země a kola je jedno
+   ze slov soudu s dokladem; „chyba“ jen se čtyřmi odpověďmi (kdo rozhodl, doložená lepší možnost, co to stálo
+   ukazatel, váha).
+2. **Je důvod započtený už v kolech?** (krok 2b bod 4, tvrdé pravidlo 18): co je započtené v kolech i v cíli, posun
+   mezi nimi nevysvětlí; obrat v cíli se připraví v jednotkách, které divák vidí.
+3. **Jedna veličina, jedno číslo** (krok 2b bod 4).
+4. **Známé představy a tváře zemí** (krok 2b bod 2, krok 9a bod 11, tvrdé pravidlo 19): všeobecně známé představy
+   o zemi se testují jako domněnky a jdou do podkladu i s výsledkem; slavná firma, která průměr nevysvětlí, se
+   nevyřazuje, ale předává jako tvář země.
+5. **Podklad pro cílovou tabuli a body týmu, tabulka chvil a titulková věta** (krok 9a body 9 a 10).
+6. Kontrolor ověřuje i slovo soudu, započtení v kolech a test známých představ (krok 10.5).
 
 **Co se změnilo proti verzi 1.4** (Ondřej 9. 11. 2026 poslal k provedení audit „Proč se z dobrých podkladů ztrácí
 hlavní vysvětlení“):
@@ -7476,7 +9576,12 @@ text uzpůsobený pro psaní scénáře (krok 9a), ne jen tabulky. Kola jsou vš
 | typická země | pomyslná země, která má u všech faktorů hodnotu měřítka ligy; body se počítají proti ní |
 | obvyklý vliv (dřív `typický posun`) | o kolik bodů faktor obvykle posune zemi proti typické zemi: medián absolutních bodů 27 zemí, s 90% intervalem z převzorkování zemí (země se losují s opakováním a výpočet se zopakuje). Podle něj se řadí kola (krok 7.1 a 7.5) |
 | podíl na obvyklém vlivu | obvyklý vliv faktoru dělený součtem obvyklých vlivů všech kol (u bydlení podíl čisté výplaty podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Říká, jak velký kus toho, co kola obvykle udělají, připadá na jedno kolo. **Není to podíl vysvětlených rozdílů** mezi zeměmi a nesčítá se na celý výsledek: kola asi třetinu rozdílů mezi zeměmi nevysvětlí (u bydlení vysvětlí 68,9 %). **Podíl roste, když se faktor rozdělí**, protože obvyklé vlivy částí se sčítají v absolutních hodnotách (čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Podíly rozděleného faktoru se proto se staršími nebo nerozdělenými výpočty nesrovnávají. |
-| podíl rozdílů, který faktor vysvětlí sám | jakou část rozdílů výsledku mezi zeměmi vysvětlí výpočet, ve kterém je jen tento faktor, se stejnou silou jako v kolech (síla z dat ligy, nebo ze studií podle kroku 6.2). Je to první z podob podílu na rozdílech („sám“). U čisté výplaty u bydlení podle posledního výpočtu (`KOLA_KONCEPT_TABULKA.md`). U faktoru ve jmenovateli ukazatele (aritmetika, krok 1.2) obsahuje početní i ekonomický účinek a podává se ve dvou částech: „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší (o 1 % vyšší výplata = nový byt o 0,72 % a nájem o 0,56 % dražší)“. Divákovi se říká jen podle rozhodnutí o otevřené otázce 2 |
+| podíl rozdílů, který faktor vysvětlí sám | jakou část rozdílů výsledku mezi zeměmi vysvětlí výpočet, ve kterém je jen tento faktor, se stejnou silou jako v kolech (síla z dat ligy, nebo ze studií podle kroku 6.2). Je to první z podob podílu na rozdílech („sám“). U čisté výplaty u bydlení podle posledního výpočtu (`KOLA_KONCEPT_TABULKA.md`). U faktoru ve jmenovateli ukazatele (aritmetika, krok 1.2) obsahuje početní i ekonomický účinek a podává se ve dvou částech: „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší (o 1 % vyšší výplata = nový byt o 0,72 % a nájem o 0,56 % dražší)“. Divákovi se říká jen jako doplněk k dílům podle kroku 7 bodu 7 (otázka 2 rozhodnuta 16. 11. 2026) |
+| podíl rozdílů, který kola vysvětlí dohromady | jakou část rozdílů výsledku mezi zeměmi vysvětlí výpočet se všemi koly: jedna minus rozptyl toho, co kola nevysvětlí, dělený rozptylem výsledku (obojí jako poměrné rozdíly mezi zeměmi, ve stejných bodech jako kola, přes všechny země ligy). U mezd po opravách dat z 10. 11. 2026 je to 83,1 %. Počítají se z něj díly pro graf v úvodu (krok 7 bod 7) |
+| díl kola (graf v úvodu) | podíl rozdílů, který kola vysvětlí dohromady, krát podíl kola na obvyklém vlivu. S dílem specifických faktorů zemí (to, co kola nevysvětlí) dává sto (krok 7 bod 7) |
+| výsledek podle kol | hodnota hlavního ukazatele, jakou by země měla, kdyby rozhodovala jen kola: čekaná hodnota po posledním kole. V hlase vždy podmiňovacím způsobem nebo „slibovala kola“ (krok 7 bod 8) |
+| zásah specifických faktorů | skutečný výsledek země proti výsledku podle kol, v jednotkách cíle a v procentech; totéž, co „co kola nevysvětlí“, řečené v penězích. Dělí se na části, největší pojmenovaná část ve směru zásahu je hlavní specifický faktor země (krok 7 bod 8) |
+| díly pohybu země | jak moc který faktor výsledkem jedné země hýbe bez ohledu na směr, ze všeho pohybu dohromady (obdoba grafu z úvodu pro jednu zemi); nejsou to části výsledku (krok 7 bod 8) |
 | čekané místo | místo, na kterém by země byla podle dosud odjetých kol, vždy podmiňovacím způsobem. Do scénáře smí jen jako průběžné pořadí po kolech (stav závodu, ne předpověď) a jako papírové pořadí podle rozdaných karet; rozdíl skutečného místa proti čekanému („o tolik míst lépe, než se čekalo“) zůstává jen v datech pro analytika (krok 7.5, 9a.5) |
 | další faktory zemí | faktory mimo kola, které v některé zemi hrají velkou roli: zvláštnosti země (krok 7.3) a vedlejší faktory, jejichž příspěvek u země přesahuje typickou odchylku výpočtu; rozeberou se jen u těch zemí (krok 9a.4). Patří sem i zařazený faktor, který z kol vyřadil Ondřej rozhodnutím o dramaturgii; jeho body ale zůstávají v čekaném výsledku |
 | co země měla na začátku (`zděděný stav`; nové po nezávislé kontrole 13. 10. 2026) | část faktoru, kterou země měla na začátku horizontu (u bydlení byty, které země měla na začátku, podle sčítání 2011) |
@@ -7511,12 +9616,17 @@ Před hledáním příčin se zapíše list ukazatele:
    `priklady/{kód}.md`, u každého hlavního faktoru a zvláštnosti 2–3 konkrétní příklady (firma, výrobek, místo,
    povolání, situace ze života) se zdrojem a nosností a u každého kroku „co se lidem změnilo, jak to bylo provedeno,
    kudy to doputovalo k ukazateli, doložený účinek“. Do vah ani výpočtů nevstupuje; slouží výkladu (krok 9a)
-   a scénáři. Dělá se po výběru kol (krok 7), jen pro faktory, které ve scénáři zazní.
+   a scénáři. Dělá se po výběru kol (krok 7), jen pro faktory, které ve scénáři zazní. **Je to podmínka psaní, ne
+   doplněk (17. 11. 2026):** bez příkladů a bez výkladu příčiny (krok 2b; v cíli krok 7 bod 8, pět polí) se scénář
+   země nepíše. Finále Balkánu ze 17. 11. 2026 vzniklo bez tohoto kroku a u Rumunska skončilo větou „proč dávají
+   domácí firmy málo, podklady neříkají“.
 2b. **Výklad hodnot v kole: test domněnek, pořadí příčin, závěr a soud.** Dělá se pro každé kolo a pro finále
    (Ondřej 7. 11. 2026 večer: „všechna kola… nestačí jenom druhý a třetí“): kolo 1 rozdané karty `soudy_karty/`
    (dědictví, štěstí nebo smůla; tvrzení o příčinách výchozí úrovně se testují stejně; rozdíl pod prahem „skoro
    stejně“ se nevysvětluje), kolo 2 `soudy_rust/`, kolo 3 `soudy_dane/`, finále `soudy_cil/` (rozdíl proti pořadí
-   po kolech a čím to je: cenové hladiny po druzích, podíl mezd na výkonu, vyjednávání, dojíždění), a dále u každého
+   po kolech a čím to je. Cenové hladiny po druzích a podíl mezd na výkonu říkají jen, **v čem** se země liší; **čím
+   to je**, je až věc ze života: pravidla vyjednávání o mzdách, daně, kdo firmy vlastní, jak lidé pracují; krok 7
+   bod 8), a dále u každého
    faktoru, který je pravidlem nebo krokem státu a ve scénáři se hodnotí. Pro každou zemi vznikne soubor
    `soudy_{…}/{kód}.md` s oddíly v pořadí bodů 1–6 níže. Postup platí pro každou příčinu a každý soud, ne jen pro
    daně (Ondřej 7. 11. 2026: „ty myšlenkové řetězce, tu interpretaci dat, to se má dělat v analýze hlavně“). Do vah
@@ -7528,7 +9638,8 @@ Před hledáním příčin se zapíše list ukazatele:
    dovozu, odchody lidí.
    **Pozor u podílu mezd na výkonu:** jako důvod ve finále se smí použít až po testu skladby výkonu (část výkonu
    může tvořit například nájemné z vlastních bytů, které se do mezd nedostane); bez toho je podíl mezd účetní věc,
-   ne důvod (tvrdé pravidlo 4).
+   ne důvod (tvrdé pravidlo 4). A i po testu je to teprve „v čem se země liší“; divákovi se dluží „čím to je“
+   (krok 7 bod 8, pole 4).
    1. **Otázka a fakt.** Nejdřív se zapíše, **co se vysvětluje**, protože každá otázka má jiné odpovědi a jiné váhy:
       (a) **vlastní hodnota nebo změna země** v kole (proč je výkon země takový, proč rostl, proč je zátěž taková),
       (b) **rozdíl proti sousedovi** v pořadí kola (proč je země před zemí pod sebou nebo za zemí nad sebou). U každé
@@ -7540,7 +9651,9 @@ Před hledáním příčin se zapíše list ukazatele:
       a nemocnice, lidé si platí sami, odcházejí, pracují načerno, firmy se stěhují). Berou se vždy ze tří zdrojů,
       ne jen z prvního: (a) z dosavadního scénáře a výkladu země; (b) z rešerše ekonomů (`ekonomove/{kód}.md`)
       a zpráv o zemi (OECD Economic Survey, MMF článek IV, zpráva Komise o zemi, centrální banka); (c) z **obecně
-      známého výkladu**, který by model dal v běžném rozhovoru bez podkladů. U každé domněnky se zapíše, **co by
+      známého výkladu**, který by model dal v běžném rozhovoru bez podkladů. Sem patří i **všeobecně známé představy
+      o zemi** (pověst, slavná firma, „digitální tygr“, „země nízkých daní“): testují se stejně jako každá jiná domněnka
+      a jejich výsledek jde do podkladu pro scénář (krok 9a bod 11), ať vyjde jakkoli. U každé domněnky se zapíše, **co by
       bylo vidět, kdyby platila** (odchody občanů na tisíc obyvatel, saldo migrace, podíl obálkových mezd, příliv
       investic, výdaje na školy, rozklad růstu, přírůstek výroby v odvětví), a ověří se, že to **z domněnky opravdu
       musí plynout a měří to totéž** (stejná veličina, období a skupina lidí): pohyby lidí se nepoznají z čisté změny
@@ -7612,6 +9725,16 @@ Před hledáním příčin se zapíše list ukazatele:
         ligy). Přepočet: změna pozice v kupní síle se přibližně skládá z reálného růstu proti středu ligy a ze změny
         relativních cen toho, co země vyrábí (například ceny vývozu proti dovozu); reálný rozklad dokládá první část,
         druhá se vykládá zvlášť.
+      - **Jedna veličina, jedno číslo (10. 11. 2026):** záznam u každé země určí, které číslo je pro hlas (celá
+        ekonomika) a které jen pro obraz (odvětví). Tatáž veličina nesmí mít ve dvou kolech dvě různá čísla, která si
+        divák splete (u Rumunska „třetina“ pro továrny a „čtvrtina“ pro celou zemi).
+      - **Je důvod započtený už v kolech? (10. 11. 2026)** U každého důvodu posunu mezi pořadím po kolech a cílem se
+        položí otázka, zda už není započtený na obou stranách. Když jsou kola i cíl ve stejném měřítku (u mezd
+        v kupní síle), obecná cenová hladina posun nevysvětlí; vysvětlí ho jen to, co se mezi koly a cílem liší
+        (u Bulharska to, kdo se počítá mezi pracující, asi 19 bodů, a bydlení a energie levné i proti ostatním
+        bulharským cenám, asi 10 bodů). Pro obrat v cíli analýza připraví graf nebo dvojici čísel v jednotkách, které
+        divák vidí (výplata v eurech vedle výplaty v kupní síle; eura ze sta, která firma dá zaměstnancům). Věta
+        „měří se něco jiného, než průměr ukazoval“ je znamení, že tenhle krok chybí.
       - **Kontrola slov:** „hlavně“, „proto“ a „díky“ smí nález použít jen u mechanismu, který je v záznamu hlavní;
         když doklad velikosti říká menší část, nález to řekne („zčásti“, „pomohlo i“).
    5. **Nález:** co z testů a pořadí příčin plyne. Když test domněnce odporuje, hledá se, **co skutečný stav země
@@ -7639,6 +9762,17 @@ Před hledáním příčin se zapíše list ukazatele:
         vztahuje k ukazateli epizody (u mezd čistá mzda v kupní síle), u jiné epizody k jejímu ukazateli;
       - **neovlivnitelné věci** (geologie, vnější šok) se nesoudí jako chyba, řeknou se jako štěstí nebo smůla; jak si
         s nimi země poradila, se hodnotit smí.
+      **6a. Slovo soudu a test lepší možnosti (Ondřej 10. 11. 2026: chyby a dobré tahy se říkají nahlas).**
+      Hodnoticí závěr dostane jedno ze slov soudu, která scénář říká hlavní větou (skill mapy příběhu §2.3a):
+      **smůla** (vnější šok, kterému se nevyhnula žádná srovnatelná země), **dědictví** (stav, který země dostala),
+      **chyba**, **dobrý tah nebo zásluha** (rozhodnutí nebo výkon s doloženým účinkem; k tomu jeho cena, je-li
+      doložená) a **nepovedlo se nebo slabina** (dopadlo to špatně, ale lepší možnost doložená není nebo totéž
+      udělali sousedé). Slovo **„chyba“** analýza nabídne jen tehdy, když podklad odpoví na čtyři otázky:
+      (1) **kdo rozhodl:** stát, firmy, nebo domácnosti, doloženo číslem (u Řecka schodky a dluh státu proti úvěrům
+      domácnostem a firmám); (2) **jaká lepší možnost tehdy existovala** a čím je doložená (srovnatelná země ji ve
+      stejné době zvolila, nebo ji tehdy doporučovaly instituce); (3) **kolik to stálo ukazatel epizody** (číslo nebo
+      obraz); (4) **jakou má váhu** („hlavně“, „z velké části“, „zčásti“) a jaký díl byl vnější. Když některá odpověď
+      chybí, zapíše se „nepovedlo se“ nebo „slabina“. Opatrnost se neřeší slabším slovem, ale dohledáním dokladu.
       Nejistota se řekne krátce slovy váhy („zčásti“, „pomohlo i“, „spolu s“); omezení, které mění smysl soudu,
       zůstává i v hlase, ale nemění se ve větu o tom, co se neví. **NEŘÍKEJ** zapiš ke každé zemi ve dvou částech:
       **vyvráceno** (test odporuje; co přesně, s číslem) a **neříkat jako zjištěné** (test nerozlišil, není
@@ -7686,8 +9820,8 @@ Každý kandidát dostane strojově čitelný **list měření** (`mereni.json`:
      - **Obě podoby výpočtu:** pořadí kol a příznak „menší než chyba měření“ se spočítají v obou podobách a musí v nich
        platit; když se liší, podklad to řekne. U bydlení (`kola_koncept.py`) je pořadí kol v obou podobách stejné, jen jistota, že změna počtu obyvatel je před zásobou bytů, se v obou podobách liší (čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Příznak se liší: změna počtu obyvatel má tak, jak je, obvyklý vliv 7,1 bodu, očištěná 4,0 bodu, tedy méně než chyba měření výsledku (5 %). Podle pravidla 6 má proto změna počtu obyvatel stav „doložený svědky“, ne „potvrzený daty“.
      - **Podíl na rozdílech** neočištěného faktoru může vyjít záporný (faktor rozdíly zmenšuje: bohaté země lákají lidi
-       a to jim bydlení zdražuje; u bydlení záporný, očištěný kladný; čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Co o velikosti vlivu uslyší divák, je otevřená
-       otázka 2 (dramaturgie); návrh je podíl na obvyklém vlivu (slovník), ne podíl na rozdílech. *(Ondřej 13. 10. 2026 v noci mluví u čisté výplaty o „cca 50 %“ rozdílů. To odpovídá podílu, který výplata vysvětlí sama (číslo podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`); průměr přes všechna pořadí by v podobě tak, jak je, dal podstatně víc, protože přírůstek lidí rozdíly zmenšuje. Že se u nejsilnějšího kola říká podíl, který vysvětlí samo, je jen návrh pro otevřenou otázku 2, ne pravidlo; u výplaty se podává ve dvou částech, početně a ekonomicky, slovník „podíl rozdílů, který faktor vysvětlí sám“. Ondřejův odhad „cca 50 %“ tak smí zaznít, když se odliší početní a ekonomický účinek.)*
+       a to jim bydlení zdražuje; u bydlení záporný, očištěný kladný; čísla podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`). Co o velikosti vlivu uslyší divák, rozhodl Ondřej 16. 11. 2026
+       (dřív otevřená otázka 2): díly podle kroku 7 bodu 7, tedy podíl na obvyklém vlivu (slovník) přepočtený tak, aby s tím, co kola nevysvětlí, dal sto; ne podíl na rozdílech. *(Ondřej 13. 10. 2026 v noci mluví u čisté výplaty o „cca 50 %“ rozdílů. To odpovídá podílu, který výplata vysvětlí sama (číslo podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`); průměr přes všechna pořadí by v podobě tak, jak je, dal podstatně víc, protože přírůstek lidí rozdíly zmenšuje. Že se u nejsilnějšího kola říká podíl, který vysvětlí samo, byl návrh k tehdy otevřené otázce 2 (16. 11. 2026 rozhodnuté jinak, krok 7 bod 7), ne pravidlo; u výplaty se podává ve dvou částech, početně a ekonomicky, slovník „podíl rozdílů, který faktor vysvětlí sám“. Ondřejův odhad „cca 50 %“ tak smí zaznít, když se odliší početní a ekonomický účinek.)*
    - **Jeden mechanismus = jeden faktor.** Složená proměnná spočítaná z jiného faktoru zůstává zakázaná. Dovolené je měřit jeden mechanismus po složkách, které mají sílu z jednoho rámce a nepočítají totéž dvakrát: u bydlení „lidé na byt“ (studie: +1 % lidí = ceny +1,5 %, +1 % bytů = ceny −1,5 %) se skládá ze zděděné zásoby a výstavby (nabídka) a z přírůstku lidí (poptávka); každá složka je změřená zvlášť, síla každé se ověří testem přenosu (krok 4.3) a žádná se nepočítá podruhé uvnitř jiné (proto „byty na obyvatele dnes“ s odečteným přírůstkem lidí nesmí stát vedle přírůstku lidí).
 5. **Obrácený směr nejdřív ověřit v datech:** korelace faktoru s výchozí úrovní výsledku a s jeho změnou. Je-li doložený, pro úroveň se použije měřítko, které cenám předchází (strukturální, nebo před obdobím), a tok za horizont jde jen do testu vývoje. Není-li doložený, tok za horizont smí do testu úrovně s označením „obrácený směr v datech neprokázán“.
 6. **Zdroj s odkazem, rok a pokrytí** u každého údaje; chybějící země ze srovnatelného zdroje, jinak příznak.
@@ -7856,7 +9990,7 @@ Postup při rozporu: (1) najít důvod (obrácený směr, měření, horizont, s
    kola) jako stav závodu a na začátku papírové pořadí podle rozdaných karet (oddíl 0.3); nikdy jako předpověď
    konečného místa a nikdy jako „o tolik míst lépe, než se čekalo“ (Ondřej 13. 10. 2026 v noci a 16. 10. 2026;
    skill mapy příběhu §2.5). Nejsilnější kolo se zmíní hodně, ale ne jako předpoklad.
-   Je to Ondřejův pokyn. Jak velký vliv se řekne, je otevřená otázka 2. Návrh: podíl rozdílů, který kolo vysvětlí samo (slovník), u výplaty ve dvou částech, početně a ekonomicky. Pořadí kol nese jistotu z převzorkování zemí (u bydlení podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`); pod dvě třetiny se pořadí označí jako nejisté. Štítek „nejisté“ je ve výstupu u každého takového pořadí a nejisté pořadí jde do
+   Je to Ondřejův pokyn. Jak velký vliv se řekne, rozhodl Ondřej 16. 11. 2026: díly, které dají dohromady sto, v úvodu jedním grafem (bod 7). Dřívější návrh k otázce 2 (podíl rozdílů, který kolo vysvětlí samo (slovník), u výplaty ve dvou částech, početně a ekonomicky) zůstává jen jako podklad pro výklad nejsilnějšího kola. Pořadí kol nese jistotu z převzorkování zemí (u bydlení podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`); pod dvě třetiny se pořadí označí jako nejisté. Štítek „nejisté“ je ve výstupu u každého takového pořadí a nejisté pořadí jde do
    poznámek pro editora. Pořadí kol a jeho jistota se zapisují do registru závěrů (krok 10.2b), aby přepočet ohlásil
    každé překlopení. V každém kole se země regionu řadí od hodnoty pro výsledek nejlepší po nejhorší (u úroků je
    lepší vyšší sazba po odečtení inflace, protože drží ceny níž; kupující na hypotéku ale platí víc a podklad musí říct
@@ -7875,6 +10009,169 @@ Postup při rozporu: (1) najít důvod (obrácený směr, měření, horizont, s
    faktor kolem, ještě neříká, co jeho hodnotu u země způsobilo (že výkon rozhoduje o mzdě, nevysvětluje, proč výkon
    rostl). Investice, stroje, technologie a organizace proto nemusejí dostat vlastní kolo, aby byly hlavním důvodem
    růstu výkonu některé země.
+
+7. **Rozložení hlavního ukazatele na díly podle vlivu (graf před startem; doplněno 16. 11. 2026).** Ondřej
+   16. 11. 2026: „…ukážu sloupcový graf průměrných mezd a tam ukážu, kolik procent jednotlivé faktory mají vliv na ten
+   celkový indikátor. Takže úplně dole bude… produktivita do roku 96. O kousek výše bude produktivita od roku 1996 do
+   roku 2024… Nad tímto… bude daňové zatížení… A pak tam bude zbývajících 20 %, což budou vedlejší faktory.“ a „aby mi
+   přesně takto připravoval rozložení hlavního indikátoru na faktory“. Analýza proto ke kolům vždy vydá jedno
+   rozložení, které dává dohromady sto:
+   - **Díl kola** = podíl rozdílů výsledku mezi zeměmi, který kola vysvětlí dohromady (slovník), krát podíl kola na
+     obvyklém vlivu (krok 7.1; obojí je v `KOLA_KONCEPT_TABULKA.md`). **Díl specifických faktorů zemí** = sto minus
+     součet dílů kol, tedy to, co kola nevysvětlí (v úvodu „specifické faktory jednotlivých zemí“, v cíli „vedlejší
+     faktory“).
+   - **Zaokrouhlení** na celá procenta tak, aby součet byl přesně sto: chybějící body dostanou díly s největším
+     odříznutým zbytkem. Pořadí dílů je pořadí kol (krok 7.5), specifické faktory jsou poslední.
+   - **U mezd** (body kol všech 27 zemí po opravách dat z 10. 11. 2026, `10_documents/active/2026-11-10_opravy_dat/
+     prepocet_ligy/varianty.json`, varianta s oběma opravami): kola vysvětlí 83,1 %; podíly na obvyklém vlivu 54,4 /
+     38,0 / 7,6 % → výkon v roce 1996 **45 %**, růst výkonu 1996–2024 **32 %**, daně a odvody **6 %**, specifické
+     faktory zemí **17 %**. Před opravami dat (stav 18. 10. 2026: 82,5 % a 54,4 / 38,0 / 7,7 %) vycházelo 45 / 31 / 6
+     / 18. Ondřejův odhad z hlavy byl 40 / 30 / 10 / 20.
+   - **Slova pro hlas** (skill úvodu, blok 4b). Procenta ukazuje obraz, hlas říká zlomky:
+
+     | Díl | Slovo pro hlas |
+     |---|---|
+     | 56 % a víc | nejbližší zlomek („přes polovinu“, „dvě třetiny“, „tři čtvrtiny“) |
+     | 50–55 % | „polovinu“ až „něco přes polovinu“ |
+     | 44–49 % | „skoro polovinu“ |
+     | 35–43 % | „přes třetinu“ |
+     | 30–34 % | „necelou třetinu“ (30–32) nebo „třetinu“ (33–34) |
+     | 23–29 % | „asi čtvrtinu“ |
+     | 17–22 % | „asi pětinu“ |
+     | 10–16 % | nejbližší zlomek („asi desetinu“, „asi šestinu“) |
+     | pod 10 % | „jen pár procent“ |
+
+     Díl specifických faktorů zemí se říká slovem „zbytek“, ne zlomkem.
+   - **Co rozložení je a co není.** Jsou to podíly na **rozdílech mezi zeměmi**, ne části výsledku jedné země; obraz
+     to říká podtitulem a podklad to opakuje u čísel. Není to pořadí důvodů u konkrétní země (to dává krok 2b)
+     a neříká, proč má země v kole svou hodnotu (bod 6).
+   - **Jistota.** Ke každému dílu se zapíše rozmezí (převzorkováním zemí) a u kol vzniklých rozdělením podle bodu 4
+     poznámka, že rozdělení mezi obě části je méně jisté než jejich součet (u mezd: start 31–55, růst 25–44, obě
+     části dohromady 68–85; kdo startoval níž, rostl víc, takže části jdou proti sobě). Slovo pro hlas se bere ze
+     středního odhadu. Pořadí dvou dílů se v hlase říká jen tehdy, když je jisté podle bodu 5 (aspoň dvě třetiny
+     převzorkování); jinak hlas řekne, že jsou zhruba stejně velké, a jde to do poznámek pro editora. Když citlivost
+     podle bodu 4 změní pořadí dílů, rozhoduje brána eskalace.
+   - **Výstup:** `ROZLOZENI_UKAZATELE.md` (díl, kolo, procento, rozmezí, slovo pro hlas, barva a ikona kola)
+     a `rozlozeni_ukazatele.json` pro střih (id, kolo, podíl, barva, krátký anglický titulek a podtitul do obrazu).
+     Automatická kontrola (krok 10.3): součet je sto, pořadí odpovídá kolům, slovo pro hlas odpovídá tabulce a čísla
+     souhlasí s `KOLA_KONCEPT_TABULKA.md`.
+   - Tím je rozhodnutá otevřená otázka 2 (co uslyší divák o síle kola).
+   - *(Upřesnění 17. 11. 2026.)* Hotový střih Balkánu bere cíl ze stavu dat, kde je navíc tabulka mezd Eurostatu ze
+     6. 11. 2026. V něm kola vysvětlí 83,4 % a podíly na obvyklém vlivu jsou 54,5 / 38,1 / 7,5 %; díly vycházejí stejně,
+     45 / 32 / 6 / 17.
+8. **Zásah specifických faktorů u každé země (podklad finále; doplněno 17. 11. 2026).** Ondřej 17. 11. 2026 po
+   zkoušce hotového videa na bratrovi a rodičích: „Hluchá místa ale jsou hlavně v tom finále. Tam mi říkali, že to
+   vůbec nepochopili, a já taky ne… Proč u Bulharska tam je věta o tom, že 24 % lidí pracuje na polích a nejsou
+   zaměstnanci? … Taky nepochopil, proč je to důležité… myslel jsem si, že tam mnohem líp budeš pracovat s tím efektem
+   specifických faktorů, kdy řekneš: ‚Ale u této země zasáhl specifický faktor, o kterém jsem mluvil.‘ Objeví se tam
+   ta vybraná ikonka a teď se přesně popíše, jak velký vliv to bude mít… Dá se to nějak vypočítat u každé země, kolik
+   procent? … chybí… kolik vlastně vydělají ročně… ukázat i, jaká je průměrná čistá mzda v té zemi a kolik to dělá
+   v paritě kupní síly.“ Analýza proto ke každé zemi vydá:
+   - **Výklad specifického faktoru pro scénář (povinný; 17. 11. 2026 večer).** Největší část rozkladu říká jen,
+     **v čem** se země liší. Je to počet, ne příčina (tvrdé pravidlo 4), a divák se hned zeptá „a čím to je?“
+     (Ondřej 17. 11. 2026: „nechápu, proč rumunské firmy dávají svým rumunským zaměstnancům méně… přece to je to, co
+     diváka zajímá“). Ke každému faktoru, který má ve scénáři zaznít, proto analýza vydá pět polí běžnými slovy,
+     a scénář se bez nich nepíše:
+     1. **jak to chodí obvykle:** norma ligy obrazem, ve kterém někdo jedná, a srovnávacím slovem pro hlas („o výdělek
+        se firmy se zaměstnanci dělí jako o koláč a zaměstnanci z něj obvykle dostanou větší půlku“); číslo (60 ze
+        sta) a druh grafu jsou pro obraz (Ondřej 17. 11. 2026 pozdě večer: divák nemá nic počítat);
+     2. **jak je to v zemi,** stejným obrazem a slovem („jen tu menší“, „ještě víc, než je zvykem“); číslo pro obraz;
+     3. **co to dělá s výsledkem člověka:** u mezd eura měsíčně proti normě;
+     4. **čím to je:** věc ze života (zákon, pravidlo, daň, zvyk, kdo co vlastní, co lidé dělají), u které jde říct,
+        kdo co udělal a kdy. Hledá se rešerší: zprávy o zemi (MMF, OECD, Komise, centrální banka), zákony, ekonomové
+        země a obecně známý výklad (krok 2b bod 2c). Každá domněnka projde testem (krok 2b bod 3), i na vlastních
+        datech: kde přesně rozdíl sedí (ve kterých firmách, odvětvích, skupinách lidí) a jestli by tam podle domněnky
+        sedět měl. Výsledkem je příčina se silou dokladu a **slovesem pro hlas:** „způsobil“ jen s měřeným účinkem;
+        „nahrává“, „pomáhá“ u doloženého mechanismu, který sedí s daty; „souvisí“ u souběhu. Fakta příčiny ověří
+        druhý nezávislý kontrolor u zdroje. **„Příčina není doložena“ tu smí stát jen se záznamem, co a kde se
+        hledalo;** taková země jde Ondřejovi v chatu jako díra ve výkladu, ne potichu do scénáře;
+     5. **co si divák myslí a neplatí:** vyvrácená představa s tím, co je místo ní.
+
+     **Výhrada k měření bývá příčina v převleku.** Poznámka „mezi domácí firmy patří i malé firmy, kde majitel sám
+     pracuje a bere zisk místo mzdy“ (Rumunsko, 17. 11. 2026) byla v podkladu vedená jako jemnost měření, a přitom je
+     to půlka odpovědi na „čím to je“: proč to majitelé dělají? (Daně.) Každá výhrada se proto přečte otázkou „co
+     lidé dělají, že to číslo tak vychází, a proč“.
+     Když rozdíl plyne z toho, co průměr zkresluje (skupina 2 níže: drobní rolníci; ceny strojů proti cenám toho, co
+     lidé kupují), vydá analýza místo pole 4 **věc, která průměr zkresluje,** dvěma větami běžnými slovy: co průměr
+     zkreslovalo a jak je to u lidí doopravdy („průměrné ceny zvedají stroje pro firmy, které stojí skoro jako všude
+     v Evropě; lidé ale z výplaty platí bydlení a energie, a ty jsou tu mimořádně levné“). Popis toho, s čím kola
+     počítala, do pole nepatří: writer ho opíše a divák mu nerozumí (zkouška 17. 11. 2026 večer).
+   - **Výběr faktoru (stav 17. 11. 2026 odpoledne; platí do Ondřejova rozhodnutí).**
+     Pravidlo „hlavní specifický faktor = největší pojmenovaná část ve směru zásahu“ nad podrobným rozpisem dílu
+     neobstálo: hranici mezi „kolik firma dá zaměstnancům“ a „lidé pracující na sebe“ vede statistika každé země
+     jinde (Bulharsko zapisuje výdělky živnostníků skoro celé do firem), a tak vyšel u Bulharska důvod, který
+     neobstojí před otázkou „v jiných zemích nepracují?“. Do Ondřejova rozhodnutí platí:
+     (a) faktor se vybírá jen z částí, které na zápisu výdělků živnostníků nezávisí (drobní rolníci; díl pro
+     zaměstnance mimo malá hospodářství; ceny spotřeby proti cenám výroby; daně v cenách);
+     (b) ke každé části patří srovnání celé ligy v surovém údaji (střed ligy, kraje, místo země) a velikost v eurech
+     měsíčně; část, ve které se země od ligy neliší, se jako důvod nejmenuje;
+     (c) druhý faktor se jmenuje, když má stejný směr a aspoň dvě třetiny velikosti prvního;
+     (d) u hlavního faktoru se otestuje i představa, kterou divák má (u dílu firem „zisk odteče zahraničním
+     majitelům“), a výsledek testu se zapíše;
+     (e) měsíční částky: na účet, v kupní síle, podle tří kol.
+     Výpočet a tabulky: `10_documents/active/2026-11-17_finale_balkan/srovnani_specifickych_faktoru.py`,
+     `SROVNANI_SPECIFICKYCH_FAKTORU.md`.
+   - **Výsledek v penězích, které divák zná.** U mezd čistou výplatu v eurech na účet (ročně a měsíčně), cenovou
+     hladinu a výplatu v kupní síle (hodnotu cíle). U jiného ukazatele výsledek v jednotce z běžného života vedle
+     hodnoty, podle které se řadí cíl. Když je částka dopočet projektu nebo stojí na opravě dat, zapíše se to
+     a k částce patří slovo „kolem“ nebo „zhruba“.
+   - **Výsledek podle kol** = hodnota, jakou by země měla, kdyby rozhodovala jen kola (čekaná hodnota po posledním
+     kole). **Zásah specifických faktorů** = skutečný výsledek proti výsledku podle kol, v jednotkách cíle,
+     v procentech a slovem pro hlas. Je to totéž, co „co kola nevysvětlí“, jen řečené v penězích: přesný počet, ne
+     odhad. Nejistý je jen tolik, kolik je nejisté měření výsledku a síla kol.
+   - **Slovo pro hlas** (zlomek výsledku podle kol; procento a částku ukazuje obraz):
+
+     | Zásah | Slovo pro hlas |
+     |---|---|
+     | do 5 % | žádný zlomek: „skoro přesně tam, kam ji poslala kola“ |
+     | 5–7 % | „pár procent“ |
+     | 8–12 % | „desetinu“ |
+     | 13–14 % | „osminu“ |
+     | 15–18 % | „šestinu“ |
+     | 19–22 % | „pětinu“ („dobrou pětinu“ nad 21) |
+     | 23–28 % | „čtvrtinu“ |
+     | 29–39 % | „třetinu“ |
+     | 40 % a víc | říct číslem |
+
+     Hranice 5 % platí u mezd; u jiného ukazatele je to polovina typické odchylky výpočtu (stejná hranice jako „malý
+     zbytek“ ve skillu mapy příběhu §2.6 bod 4a).
+   - **Z čeho se zásah skládá.** Zásah se rozdělí na části, které se sčítají přesně na celek (u mezd rozklad cíle: díl,
+     který firmy a stát dávají zaměstnancům; lidé pracující na sebe; ceny bydlení a služeb proti cenám toho, co země
+     vyrábí; daně v cenách; měření a ostatní). Každá část dostane jméno slovy diváka, kategorii vedlejšího faktoru
+     s ikonou (skill mapy příběhu §2.6) a jednu ze tří skupin:
+     1. **věc země, kterou divák vidí** (kolik firma dá zaměstnancům, daně v cenách, levné bydlení): říká se, co se
+        děje;
+     2. **koho výsledek vidí a koho ne** (skladba pracujících: kola počítala všechny pracující, výsledek jen
+        zaměstnance): říká se tím, koho žebříček vidí („žebříček výplat nevidí lidi, kteří pracují sami na sebe“),
+        nikdy tím, jak se co měří, a nikdy jako zásluha nebo chyba země;
+     3. **měření a ostatní** (ročník dat, způsob měření výsledku): do hlasu ani do obrazu nepatří. Když je to největší
+        část zásahu, žádný specifický faktor se nejmenuje a analýza to nahlásí jako otázku k datům (brána eskalace).
+   - **Hlavní specifický faktor země** = největší pojmenovaná část ze skupin 1 a 2 ve směru zásahu. Jmenuje se jen
+     u zásahu aspoň 5 % (u mezd); u zásahu 5 až 9 % se slovem „zčásti“. **V hlase nejvýš jeden na zemi.** Části, které
+     jdou proti sobě a skoro se ruší (Bulharsko: levné bydlení +10 a malý díl firem −9 bodů; Chorvatsko: daně v cenách
+     −6,5 a díl firem +4,8), se v hlase neříkají a zůstávají v podkladu. Druhý faktor stejného směru se jmenuje podle
+     písmene (c) výše. Proč je hlavní specifický faktor u země takový, jaký je (například proč slovinské firmy
+     dávají velký díl), **je povinný výstup** (odrážka „Výklad specifického faktoru pro scénář“, pole 4); velikost
+     se k příčině nepřipisuje, když ji nikdo nezměřil.
+   - **Dopad na pořadí.** Ke každé zemi se jmenovaným faktorem se spočítá, kde by skončila bez něj (jedno „kdyby“ na
+     zemi). Do hlasu jde jen tehdy, když platí ve všech ročnících dat a mimo pásmo „skoro nastejno“; jinak se smí říct
+     jen to, že faktor zemi „výš zvedl“ nebo „stáhl“.
+   - **Díly pohybu jedné země** (odpověď na otázku „z kolika procent má jaký faktor vliv u této země“): díl faktoru =
+     jeho body bez ohledu na směr dělené součtem bodů všech kol a zásahu, zaokrouhlení na sto jako v bodě 7. Je to
+     obdoba grafu z úvodu pro jednu zemi. **Nejde číst jako části výsledku**, protože u většiny zemí jdou kola proti
+     sobě (Rumunsko: start −127, růst +93 bodů). Ve finále se proto neukazuje jako koláč; obraz ukáže výsledek podle
+     kol, skutečný výsledek a zásah mezi nimi. Tabulka dílů je v podkladu pro Ondřeje a pro střih.
+   - **U mezd** (stav dat střihu Balkánu): Slovinsko 22 300 → 24 400 (+10 %, kolik firma dá zaměstnancům), Chorvatsko
+     23 200 → 22 800 (−2 %, nic), Bulharsko 17 000 → 20 700 (+22 %, lidé pracující na sebe), Řecko 19 800 → 20 300
+     (+3 %, nic), Rumunsko 21 700 → 19 500 (−10 %, kolik firma dá zaměstnancům). Díly pohybu (start / růst / daně /
+     specifické): Slovinsko 61 / 12 / 10 / 17, Chorvatsko 67 / 31 / 0 / 2, Bulharsko 60 / 26 / 4 / 10, Řecko 18 / 70 /
+     7 / 5, Rumunsko 55 / 40 / 1 / 4. Výpočet: `10_documents/active/2026-11-17_finale_balkan/
+     zasah_specifickych_faktoru.py`.
+   - **Výstup:** `ZASAH_SPECIFICKYCH_FAKTORU.md` a `zasah_specifickych_faktoru.json` (u každé země peníze, výsledek
+     podle kol, zásah, slovo pro hlas, části, hlavní specifický faktor s kategorií a ikonou, díly pohybu). Automatická
+     kontrola (krok 10.3): zásah v bodech se rovná tomu, co kola nevysvětlí; části dávají dohromady celý zásah; eura
+     na účet a kupní síla souhlasí přes cenovou hladinu; hlavní faktor odpovídá pravidlu; slovo pro hlas odpovídá
+     tabulce.
 
 #### Krok 8. Vývoj v čase a kroky zemí
 
@@ -7915,6 +10212,9 @@ Pro každý region (pořadí regionů určuje průběžné pořadí týmové sou
 Pro každý region vznikne `PODKLAD_SCENAR_{region}.md` podle šablony na konci tohoto kroku, psaný tak, aby z něj writer
 psal přímo. Pořadí odpovídá stavbě bloku (Ondřej 13. 10. 2026). **Rozpočet slov** scénáře určuje skill mapy příběhu
 (§3 bod 6). Podklad dává materiál a u každé země označí jádro (hlavní důvod, jeho váhu a hodnocení).
+**Podklad dává zjištění, čísla pro obraz a slovesa podle síly dokladu; hotové věty do hlasu z něj writer neopisuje**
+(17. 11. 2026): staví je podle skillu mapy příběhu §3.0, nejdřív výklad nanečisto pro jednoho člověka, potom oprava
+podle podkladu. Věta složená ze záznamu analýzy je správná a nikdo jí nerozumí.
 1. **Otázka regionu** jednou větou: nejpřekvapivější pravdivý rozpor regionu (Balkán: staví se málo, ale lidé odešli
    a byty zůstaly, takže tři ze čtyř zemí mají dnes na obyvatele nejvíc bytů v lize; jedna z nich má bydlení
    dostupnější než většina ligy, dvě patří k nejméně dostupné třetině ligy). Otázka nesmí dovolit odvodit pořadí zemí v regionu, kontrast se proto vztahuje k lize, ne k regionu. Míra složená z více kol smí v otázce
@@ -7934,7 +10234,7 @@ psal přímo. Pořadí odpovídá stavbě bloku (Ondřej 13. 10. 2026). **Rozpo�
    řečí: nejdřív věc, pak číslo; 2. 11. 2026), a u druhé a další země, čím je na tom hůř než předchozí, podle záznamu
    pořadí příčin pro rozdíl proti sousedovi (krok 2b bod 4, otázka b), ne podle jejího vlastního růstu.
    Nejsilnější kolo se zmíní hodně, ale pořadí podle něj se nevydává za očekávaný výsledek; průběžné pořadí po kolech
-   je stav závodu, ne předpověď (krok 7.5). Jakým číslem se velikost vlivu řekne, je otevřená otázka 2, takže podklad uvede jen návrh: podíl rozdílů, který kolo vysvětlí samo (slovník). U výplaty ve dvou částech: „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší“. Ondřejův odhad „asi polovina“ tak smí zaznít. Výklad stojí na
+   je stav závodu, ne předpověď (krok 7.5). Velikost vlivu kol se divákovi říká díly podle kroku 7 bodu 7 (rozhodnuto 16. 11. 2026; skill úvodu, blok 4b). Podklad je uvede u kol a k nejsilnějšímu kolu smí přidat podíl rozdílů, který kolo vysvětlí samo (slovník). U výplaty ve dvou částech: „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší“. Ondřejův odhad „asi polovina“ tak smí zaznít. Výklad stojí na
    doložených příčinách (struktura ekonomiky, daně a odvody u čisté
    výplaty, porodnost, úmrtnost, stěhování a uprchlíci, historie výstavby, povolování, krize, státní programy)
    s odkazem na zdroj a používá slova podle síly důkazu (tvrdé
@@ -7944,7 +10244,10 @@ psal přímo. Pořadí odpovídá stavbě bloku (Ondřej 13. 10. 2026). **Rozpo�
    nejhoršími v lize, nebo od měřítka ligy aspoň o typickou odchylku hodnot; výstup kroků 7.4–7.5 ji u každé země
    označí)*.
    Povolená odpověď podkladu je **„příčina není doložena“**: když doklad chybí, podklad to tak napíše a příčinu
-   nevymýšlí; do hlasu tahle věta nejde, scénář řekne jen doloženou část slovy váhy (skill mapy příběhu §2.3). **Práh „skoro stejně“:** rozdíl hodnot dvou zemí, který je menší než
+   nevymýšlí; do hlasu tahle věta nejde, scénář řekne jen doloženou část slovy váhy (skill mapy příběhu §2.3).
+   **Není to ale tichý konec hledání (17. 11. 2026):** u hlavního důvodu země v kole a u specifického faktoru v cíli
+   smí tahle odpověď stát jen se záznamem, co a kde se hledalo (krok 7 bod 8, pole 4), a Ondřej se o takové zemi
+   dozví v chatu. **Práh „skoro stejně“:** rozdíl hodnot dvou zemí, který je menší než
    chyba měření faktoru (pásmo chyby z listu měření, krok 1.4 a 3.3; kde chybí, analytik ho odhadne a zapíše se
    zdrojem), se nevysvětluje a podklad napíše „skoro stejně“.
    **Výchozí pravidlo**, dokud list měření pásmo chyby faktoru nemá (výchozí volba analytika): rozdíl menší než 5 %
@@ -8029,6 +10332,22 @@ psal přímo. Pořadí odpovídá stavbě bloku (Ondřej 13. 10. 2026). **Rozpo�
    karty regionu (součet bodů kol karet a papírové pořadí podle oddílu 0.3), průběžné pořadí zemí v cíli před
    regionem a po něm, patro evropské reality, směr od začátku období, těsná krajní pořadí (do 5 % od sousední země)
    a most do dalšího regionu. Výsledek se nepřepočítává na střed 1,00, když by zaokrouhlení změnilo pořadí.
+9. **Podklad pro cílovou tabuli ligy a body týmu** (skill mapy příběhu §2.8): výsledek všech zemí regionu a zemí,
+   které už dojely, start z prvního kola, sousedé z dřívějších regionů s rozdílem v procentech, označení soubojů
+   pod pět procent („těsně“, „skoro nastejno“), kdo sedí v křesle lídra, kde leží linka středu ligy a body týmu
+   (body země = výsledek proti průměru ligy, průměr ligy = 100; body týmu = prostý průměr bodů zemí regionu). Chvíle,
+   která stojí na rozdílu pod pět procent, se označí k ověření před výrobou obrazu.
+10. **Tabulka chvil a titulková věta** (skill mapy příběhu §2.9): u každé země konkrétní věc pro každé kolo, cíl
+    a cílovou tabuli a jedna věta, která by mohla být titulkem verze pro tu zemi. Prázdné pole je úkol pro rešerši
+    příkladů.
+11. **Tváře zemí a známé představy** (Ondřej 13. 11. 2026; skill mapy příběhu, pravidlo „Co za tím stálo“, body 7
+    a 8): u každé země jedna až dvě věci, které si s ní divák spojuje (slavná firma, značka, místo, pověst),
+    s ověřeným faktem a zdrojem (kdo založil a kde, čí je dnes, zda funguje), a u každé známé představy výsledek testu
+    podle kroku 2b (podporuje / odporuje / nerozlišuje) a věta, kolik test unese. **Test nosnosti rozhoduje jen
+    o tom, zda věc smí být příčina.** Slavná firma, kde pracuje málo lidí, se z podkladu nevyřazuje a nevede jen
+    jako „mýtus“: předá se jako tvář země spolu se skutečným hlavním důvodem. Počet zaměstnanců se uvede jen tehdy,
+    když je spolehlivě doložený pro tu zemi. (Poučení z Pobaltí: rešerše měla Skype, Bolt, Wise i Revolut jako
+    „mýtus“, scénář je proto vynechal a výklad byl správný, ale bez příběhu.)
 
 Podklad prochází `scripts/kontrola_srozumitelnosti.py --divak`, u každého čísla nese zdroj a nepoužívá pracovní názvy.
 Kontrola `--divak` se nevztahuje na poznámky pro editora: smějí
@@ -8062,7 +10381,7 @@ Obvyklý vliv {x} bodu ({interval}); menší než chyba měření: {ano/ne}; sí
 
 - **{země}** ({vyčnívá / nevýrazná}): {výklad se zdrojem slovy podle síly důkazu a po testu protipříkladem, nebo
   „příčina není doložena“; u další země, čím je na tom hůř než předchozí, nebo „skoro stejně“}
-- U nejsilnějšího kola: {zmínit hodně, ne jako předpoklad; číslo jen podle rozhodnutí o otázce 2, návrh: podíl rozdílů,
+- U nejsilnějšího kola: {zmínit hodně, ne jako předpoklad; číslo podle kroku 7 bodu 7 (díl kola, stejný jako v grafu úvodu); k tomu smí zaznít podíl rozdílů,
   který vysvětlí samo, u výplaty „početně…; ekonomicky…“}
 
 ### 4. Další faktory zemí
@@ -8158,7 +10477,7 @@ hodnoceným obdobím.
 2. **Nezávislý oponent** zkontroluje výběr faktorů, listy měření a výpočet dřív, než výsledek dostane Ondřej.
 2a. **Detektory chybějícího faktoru (doplněno 12. 10. 2026; poučení 21):** po každém výpočtu a po každé změně dat nebo modelu se pustí `05_epizode_packs/_skills/analyza-pricin-regiony/diagnostika_modelu.py` (shlukování odchylek podle regionů, stálost hlavního faktoru v polovinách ligy, stopy ve zbytku včetně vyřazených proměnných, sousední země, neobvyklé složky, nezávislé měření téhož jevu, čekané vztahy). Každý signál se vyřeší: nový faktor, propletený s faktorem v modelu, chyba měření, nebo nevysvětleno se jmenovanými zeměmi. Výsledek patří do výstupu (`DIAGNOSTIKA.md`).
 2b. **Registr závěrů:** každý závěr „faktor přidá / nepřidá“ se zapíše s podobou modelu a verzí dat (`registr_zaveru.py`) a při každé změně se přepočítá; závěr se zkouší ve více podobách modelu a když se mezi nimi liší, faktor je propletený a nesmí se tvrdit „nepřidává“ ani „vysvětluje“. U propletených faktorů se v modelu použije kombinace stavu a toku. O zařazení faktoru rozhodují tato pravidla, ne Ondřej (Ondřej 12. 10.: „Já potřebuji tu analýzu plně automatizovat… Proč jsi tam nedal zásobu bytů sám?“). Do registru se zapisují i výpovědi svědků a rozhodnutí podle kroku 5; když se po změně dat nebo modelu rozhodnutí změní, je to signál stejně jako překlopený závěr (poučení 20). Do registru se zapisuje i **pořadí kol a jeho jistota** (u bydlení záznam `bydleni_poradi_peti_kol`, zapisuje ho `kola_koncept.py`); verdikt je kategorie (pořadí a nejistá dvojice), takže přepočet ohlásí každé překlopení pořadí i změnu toho, co je nejisté.
-3. **Automatická kontrola** nad strojovými poli: horizont proti období měření každého toku; přepočet na velikost země; korelace a inflace rozptylu nad prahem; podíly datové vrstvy a zbytek dávají 100 % a příspěvky studií se nesčítají; nejvýš tři faktory odhadované z dat a nejvýš pět hlavních; každý hlavní faktor má stav síly důkazu; u každého kola je měřítko ligy; pásmo chyby u každé země. U výstupu kol (kroky 7.4–7.5, vzor `kola_koncept.py`): nejvýš pět kol a každé je zařazený faktor; každé kolo má obvyklý vliv s intervalem, příznak „menší než chyba měření“ (u faktoru se dvěma podobami výpočtu v obou), jistotu pořadí proti dalšímu kolu, sílu důkazu, zdroj síly, štítek páky a měřítko ligy; body obou částí rozděleného faktoru (u bydlení zásoby a výstavby) dávají dohromady body celého faktoru a rozdíl smí být jen změna typické země, stejná u všech zemí; body ostatních kol a síla výplaty se rozdělením nezmění; čekaný výsledek a čekaná místa se nezmění ani rozdělením, ani podobou přírůstku lidí (krok 3.4). Když kontrola neprojde, výstupy se nezapíšou. Navíc kontrola hlídá:
+3. **Automatická kontrola** nad strojovými poli: horizont proti období měření každého toku; přepočet na velikost země; korelace a inflace rozptylu nad prahem; podíly datové vrstvy a zbytek dávají 100 % a příspěvky studií se nesčítají; nejvýš tři faktory odhadované z dat a nejvýš pět hlavních; každý hlavní faktor má stav síly důkazu; u každého kola je měřítko ligy; pásmo chyby u každé země. U výstupu kol (kroky 7.4–7.5, vzor `kola_koncept.py`): nejvýš pět kol a každé je zařazený faktor; každé kolo má obvyklý vliv s intervalem, příznak „menší než chyba měření“ (u faktoru se dvěma podobami výpočtu v obou), jistotu pořadí proti dalšímu kolu, sílu důkazu, zdroj síly, štítek páky a měřítko ligy; body obou částí rozděleného faktoru (u bydlení zásoby a výstavby) dávají dohromady body celého faktoru a rozdíl smí být jen změna typické země, stejná u všech zemí; body ostatních kol a síla výplaty se rozdělením nezmění; čekaný výsledek a čekaná místa se nezmění ani rozdělením, ani podobou přírůstku lidí (krok 3.4). U rozložení hlavního ukazatele (krok 7 bod 7): díly dávají dohromady sto, jdou v pořadí kol a specifické faktory zemí jsou poslední, slovo pro hlas odpovídá tabulce slov a čísla souhlasí s výstupem kol. U zásahu specifických faktorů (krok 7 bod 8): zásah v bodech se rovná tomu, co kola nevysvětlí, části dávají dohromady celý zásah, částky v běžných penězích a v jednotkách cíle spolu souhlasí, hlavní specifický faktor odpovídá pravidlu a slovo pro hlas tabulce. Když kontrola neprojde, výstupy se nezapíšou. Navíc kontrola hlídá:
    - stav důkazu podle pravidla 6: „potvrzený daty“ jen se srovnáním zemí a s obvyklým vlivem nad pásmem chyby výsledku v obou podobách výpočtu;
    - zdroj síly podle testu přenosu: síla ze studií jen tam, kde s ní čekaný výsledek nesedí hůř (krok 4.3, 6.2);
    - výstavbu od dne sčítání vůči zásobě téhož sčítání v absolutních počtech (krok 7.4, podmínka 4);
@@ -8178,6 +10497,9 @@ hodnoceným obdobím.
    silný soud se upraví na rozsah, který doklady unesou, například z „zbytečná chyba“ na hodnocení výkonu). Každá
    věta podkladu může být pravdivá, a celek přesto zavádějící; proto se kontroluje i pořadí příčin. Nález vrací
    podklad k opravě.
+   Kontrolor dále ověří: (e) že slovo „chyba“ má odpověď na všechny čtyři otázky testu lepší možnosti a že závěr
+   neviní lidi tam, kde rozhodoval stát (krok 2b bod 6a); (f) že důvod posunu v cíli není započtený už v kolech
+   (krok 2b bod 4); (g) že každá známá představa má test a fakta o tvářích zemí sedí se zdrojem (krok 9a bod 11).
 6. **Oprava čísla nebo pravidla otevírá odvozené závěry.** Po změně pravidla testu se podklad `soudy_*` ze starší
    verze skillu před použitím přetestuje (každé „platí / neplatí“ se přeřadí na podporuje / odporuje / nerozlišuje
    a doplní se pořadí příčin); jeho NEŘÍKEJ se do té doby nepoužívá. Když se změní číslo, tabulka nebo rozklad, ze
@@ -8223,6 +10545,11 @@ hodnoceným obdobím.
     měřítko a období (krok 2b bod 4). Vlastní hodnota země a rozdíl proti sousedovi mají každý své váhy; neznámá
     velikost není malá velikost; soutěžní výsledek, ekonomická příčina a zásluha nejsou totéž (dohánění je kontext,
     krok 9a.3).
+17. **„Chyba“ jen s doloženou lepší možností a s tím, kdo rozhodl** (krok 2b bod 6a). Bez čtyř odpovědí se říká
+    „nepovedlo se“ nebo „slabina“; opatrnost se řeší dokladem, ne slabším slovem.
+18. **Co je započtené v kolech i v cíli, posun mezi nimi nevysvětlí** (krok 2b bod 4).
+19. **Test nosnosti vyřazuje příčinu, ne zmínku.** Slavná firma nebo známá představa, která průměr nevysvětlí, se
+    předá scénáři jako tvář země nebo jako představa k uvedení na pravou míru (krok 9a bod 11).
 
 ### 5. Výstupní soubory
 
@@ -8239,8 +10566,12 @@ hodnoceným obdobím.
 | `CASOVY_PROFIL.md`, `casovy_profil.json` | krok 3.11 a 4.2: přírůstek po úsecích, podoby s vahami podle stáří, panel uvnitř zemí, přirozené pokusy |
 | `DIAGNOSTIKA.md`, `registr_zaveru.json` | krok 10.2a–b: detektory a registr závěrů |
 | `KOLA_KONCEPT_TABULKA.md`, `kola_koncept.json` | kroky 3.4 a 7.4–7.5: kola v pořadí podle vlivu (nejvýš pět), zvlášť to, co země měla na začátku, a co přibylo; u každého kola obvyklý vliv s 90% intervalem, podíl na obvyklém vlivu, příznak „menší než chyba měření“ (v obou podobách výpočtu přírůstku lidí), jistota pořadí proti dalšímu kolu, síla důkazu, zdroj síly, štítek páky, obrácený směr, měřítko ligy a typická odchylka hodnot; obě citlivosti rozdělení (krok 7.4); známé nepřesnosti; výsledky automatické kontroly (krok 10.3); u každé země hodnota, místo v kole, zda vyčnívá, body a čekané místo po kole (Ondřej 13. 10. 2026 v noci: čekané místo jen pro analytika), po regionech *(doplněno po druhé nezávislé kontrole 14. 10. 2026: štítek „nejisté“ u pořadí kol, oddíl „Do poznámek pro editora“, výsledek testu přenosu a zdroj síly podle něj, stálost znaménka síly, ověření obráceného směru podle kroku 3.5, výstavba od sčítání 2011 se změnou proti výstavbě 2010–2024, návrh „výplata sama“ ve dvou částech, „skoro stejně“ proti předchozí zemi v regionu, co kola nevysvětlí u zemí nad typickou odchylkou výpočtu; záznam pořadí kol v `registr_zaveru.json`)* |
+| `ROZLOZENI_UKAZATELE.md`, `rozlozeni_ukazatele.json` | krok 7 bod 7: díly hlavního ukazatele podle vlivu (kola a specifické faktory zemí, součet sto), rozmezí, slova pro hlas; podklad pro blok 4b úvodu a pro graf ve střihu |
+| `ZASAH_SPECIFICKYCH_FAKTORU.md`, `zasah_specifickych_faktoru.json` | krok 7 bod 8: u každé země výsledek v penězích, které divák zná, výsledek podle kol, zásah specifických faktorů (jednotky cíle, procenta, slovo pro hlas), jeho části, hlavní specifický faktor s kategorií a ikonou a díly pohybu země; podklad finále regionu (skill mapy příběhu §2.6) a obrazu cíle ve střihu |
 | `PODKLAD_SCENAR_{region}.md` | kroky 9a a 9b: podklad pro writera s výkladem hodnot, dalšími faktory, odhalením pořadí a hodnocením výkonu země. Podle šablony v kroku 9a, s tím, co říkají ekonomové, a s tím, co zemi pomohlo a co ji brzdilo; bez čekaného místa (Ondřej 13. 10. 2026 v noci). |
 | `PODKLAD_SCENAR_{region}_EDITOR.md` | krok 9a.7: poznámky pro editora (vady měření, citlivosti, čekané místo po kolech a rozdíl proti němu, předpoklady čekající na Ondřeje); kontrola srozumitelnosti bez `--divak` |
+| oddíl podkladu „Cílová tabule a body týmu“ | krok 9a bod 9: dojeté země, starty, souboje přes hranici regionu, křeslo lídra, linka středu ligy, body týmu |
+| oddíl podkladu „Tabulka chvil, tváře a známé představy“ | krok 9a body 10 a 11: konkrétní věc pro každé kolo, titulková věta, tváře zemí s ověřeným faktem, známé představy s výsledkem testu |
 
 JSON pro edit nese u každého faktoru a země hodnotu, měřítko ligy, místo v lize a v regionu, příspěvek, sílu důkazu a příznaky srovnatelnosti.
 
@@ -8277,9 +10608,24 @@ JSON pro edit nese u každého faktoru a země hodnotu, měřítko ligy, místo 
 Chceme, aby příště správně posoudil i úplně jinou zemi a jiný ukazatel.“ → verze 1.5 (krok 2b, 7.6, 9a.3, 10.5–10.7,
 tvrdá pravidla 15 a 16, slovník); záznam změn verzí v `analyza-pricin-regiony-HISTORIE.md`.
 
+**Rozhodnutí z 16. 11. 2026 (Ondřej):** rozložení hlavního ukazatele na díly podle vlivu, ukázané v úvodu jedním
+sloupcovým grafem a řečené jeho zněním: „Pojďme se podívat na to, jaké hlavní faktory mají vliv na naše výplaty.
+Skoro polovinu dělá to, kde země stála v roce 1996, a necelou třetinu to, jak od té doby rostla. Daně a odvody
+pohnou výplatou jen o pár procent a zbytek jsou specifické faktory jednotlivých zemí. Přesně v tomhle pořadí
+pojedeme hlavní kola.“ a „Myslíš, že by si to mohl zapsat do svojho skillu a analytického skillu, aby mi přesně
+takto připravoval rozložení hlavního indikátoru na faktory?“ → krok 7 bod 7, skill úvodu blok 4b. Způsob výpočtu
+dílů (vysvětlený podíl krát podíl na obvyklém vlivu) a tabulka slov jsou **výchozí volba analytika**, čekají na
+Ondřejovu námitku.
+
+**Rozhodnutí ze 17. 11. 2026 (Ondřej, po zkoušce hotového videa na bratrovi a rodičích):** finále má říkat, kolik
+lidé vydělají (v eurech i v kupní síle), a u země, kde zasáhl specifický faktor, ho pojmenovat, ukázat jeho ikonu
+a říct, jak velký vliv měl; analýza má u každé země umět říct, kolik který faktor dělá. → krok 7 bod 8, skill mapy
+příběhu §2.6. Hranice 5 %, tabulka slov, pravidlo „nejvýš jeden specifický faktor na zemi v hlase“ a dělení částí
+na tři skupiny jsou **výchozí volba analytika**, čekají na Ondřejovu námitku.
+
 **Otevřené otázky pro Ondřeje:**
 1. *(uzavřeno 12. 10.: medián)*
-2. **Co uslyší divák o síle kola:** podíl na rozdílech (pořadí kol), nebo sílu účinku (o kolik procent posune výsledek typický rozdíl), nebo obojí. Otázka zůstává otevřená, je to dramaturgie. Z Ondřejova konceptu plyne jen pořadí kol podle obvyklého vlivu. Ondřej 13. 10. 2026 v noci dodal, že nejsilnější faktor se má hodně zmiňovat, ale ne jako předpoklad, a mluvil o „cca 50 %“ rozdílů. Návrh: u nejsilnějšího kola podíl rozdílů mezi zeměmi, který vysvětlí samo (u čisté výplaty asi polovina; číslo podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`); u ostatních kol obvyklý vliv slovy (například „změna počtu obyvatel obvykle posune dostupnost asi o 7 %“), nebo podíl na obvyklém vlivu; vždy s větou, že kola dohromady asi třetinu rozdílů nevysvětlí. Podíl na rozdílech v podobě tak, jak je, se divákovi neříká, protože u přírůstku lidí vychází záporný. Návrh zůstává návrhem.
+2. *(rozhodnuto 16. 11. 2026: jeden graf dílů v úvodu, krok 7 bod 7; dřívější rozbor zůstává jako podklad)* **Co uslyší divák o síle kola:** podíl na rozdílech (pořadí kol), nebo sílu účinku (o kolik procent posune výsledek typický rozdíl), nebo obojí. (Do 16. 11. 2026 byla otázka otevřená, je to dramaturgie.) Z Ondřejova konceptu plyne jen pořadí kol podle obvyklého vlivu. Ondřej 13. 10. 2026 v noci dodal, že nejsilnější faktor se má hodně zmiňovat, ale ne jako předpoklad, a mluvil o „cca 50 %“ rozdílů. Návrh: u nejsilnějšího kola podíl rozdílů mezi zeměmi, který vysvětlí samo (u čisté výplaty asi polovina; číslo podle posledního výpočtu, `KOLA_KONCEPT_TABULKA.md`); u ostatních kol obvyklý vliv slovy (například „změna počtu obyvatel obvykle posune dostupnost asi o 7 %“), nebo podíl na obvyklém vlivu; vždy s větou, že kola dohromady asi třetinu rozdílů nevysvětlí. Podíl na rozdílech v podobě tak, jak je, se divákovi neříká, protože u přírůstku lidí vychází záporný. Tento návrh nahradilo rozhodnutí z 16. 11. 2026 (krok 7 bod 7; díly podle něj jsou vždy kladné); zůstává jen jako podklad.
    - **Míra podle principu:** podíl rozdílů výsledku mezi zeměmi, který vysvětlí výpočet jen s tímto faktorem a se stejnou silou jako v kolech (slovník). U bydlení u čisté výplaty i u kol dohromady podle posledního výpočtu (`KOLA_KONCEPT_TABULKA.md`; kola dohromady vysvětlí 68,9 %).
    - **U výplaty ve dvou částech**, protože je ve jmenovateli ukazatele (krok 1.2): „početně: o 1 % vyšší výplata = bydlení o 1 % dostupnější; ekonomicky: v bohatší zemi jsou byty dražší, o 1 % vyšší výplata = nový byt o 0,72 % a nájem o 0,56 % dražší“.
    - **Ondřejův odhad** „cca 50 %“ tak smí zaznít slovy („výplata vysvětlí asi polovinu rozdílů“), když se početní a ekonomický účinek odliší.
@@ -8292,7 +10638,9 @@ tvrdá pravidla 15 a 16, slovník); záznam změn verzí v `analyza-pricin-regio
    - **Rumunsko není důvodem úroky vyřadit:** v sazbě po odečtení inflace je na úrovni Balkánu, skoro stejně jako Chorvatsko, Řecko a Bulharsko.
 6. **Stav skillu:** podle tohoto skillu vznikají analýzy regionů (mzdy od 23. 10. 2026) a aktivní skill mapy příběhu
    na něj odkazuje jako na jediné platné znění postupu výkladu, formálně je ale veden jako návrh. Zapsat ho jako
-   aktivní? (Otázka položena Ondřejovi v chatu 9. 11. 2026.)
+   aktivní? (Otázka položena Ondřejovi v chatu 9. 11. 2026.) **Rozhodnuto 17. 11. 2026: ano, postup platí jako
+   hlavní postup analýzy regionů** („To já bych právě už chtěl… aby to bylo platné“; „Ano určitě“). Novela ústavy
+   starého systému (oddíl 7) tím provedena není a zůstává na Ondřejovi.
 
 ### 7. Vztah ke starým skillům
 
@@ -8333,29 +10681,76 @@ Je legitimní výsledek, že se nabídka mezi 27 zeměmi ukáže jen přes pří
 **Výsledek zkoušky přenosu na bydlení (12. 10. 2026):** výstavba 2010–2024 mezi zeměmi nenese žádnou informaci (náhodné přeházení sedí stejně dobře ve 47–58 % případů); zděděná zásoba bytů na obyvatele (byty 2011 × růst fondu) má správný směr (lepší než 95 % přeházení), ale síla ze studií (−1,5 % cen na 1 % bytů) je na ligu přestřelená a data ligy dávají −0,42 % cen a −0,60 % nájmů. Fond na obyvatele počítá i prázdné a rekreační byty a velikost domácností, proto je jeho síla mezi zeměmi menší než ve studiích uvnitř zemí. Přírůstek lidí je složka téhož rámce „lidé na byt“ (krok 3.4) a jeho síla ze studií na ligu sedí. Podle kroku 5 je nabídka zařazená (studie a ekonomové v 15 zemích) se silou z dat ligy.
 
 
-# Skill: gemini-web-ctiva-verze-SKILL-v1.0.md
+# Skill: gemini-web-ctiva-verze-SKILL-v1.1.md
 
-## Skill pro Gemini na webu: čtivá verze scénáře regionu (v1.0, 31. 10. 2026)
+## Skill pro Gemini na webu: čtivá verze scénáře regionu (v1.1, 17. 11. 2026)
 
 *Základ od Clauda podle toho, na čem se Ondřej a Claude 31. 10. 2026 shodli. Ondřej ho dál ladí (sportovní tón,
 emoce, obraty). Vkládá se do Gemini na začátek konverzace, pak faktická verze jednoho regionu. Doplněno 9. 11. 2026
 podle auditu výkladu: hlavní důvod zůstává hlavní a soud jen tam, kde ho faktická verze má.*
 
+*Verze 1.1 (17. 11. 2026), vychází z verze 1.0 (`gemini-web-ctiva-verze-SKILL-v1.0.md`, zůstává beze změny).
+**Co se změnilo:** (1) nový oddíl „Tvoje role: odpovídáš za srozumitelnost“ (Ondřej 17. 11. 2026: „Gemini by to měl
+kontrolovat a případně si dohledat informace a doplnit“; přegenerovat analýzu nemá); (2) nové pravidlo „Divák nic
+nepočítá“ se schváleným vzorem; (3) podle toho upravený úvodní odstavec, body 1, 5 a 7 v oddílu „Co nesmíš“,
+odrážka o číslech v oddílu „Jak psát“ a oddíl „Výstup“ (změny jsou v textu označené datem). **Co zůstalo:** všechno
+ostatní doslova. Ondřej si zadání v Gemini ladí sám; až Gemini podle promptu ze 17. 11. 2026 vrátí vlastní upravené
+znění, převezme se sem jako další verze.*
+
 ---
 
 Jsi komentátor dokumentární série **Ekonomické hry**: evropské země soutěží jako v závodě a ty komentuješ jeden
 region. Dostaneš **faktickou verzi scénáře**, kterou připravil analytik. Fakta jsou ověřená a správně seřazená, ale
-text je suchý. Tvoje práce je jediná: **přepsat ho do čtivého, živého sportovního komentáře v češtině**, který se
-dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
+text může být suchý a místy těžko srozumitelný. Tvoje práce má od 17. 11. 2026 dvě části: **zařídit, aby každému
+výkladu napoprvé rozuměl člověk, který se o ekonomii nezajímá** (oddíl o roli níže), a **přepsat text do čtivého,
+živého sportovního komentáře v češtině**, který se dobře poslouchá. Analýzu nepřepisuj a nic nedopočítávej.
+
+### Tvoje role: odpovídáš za srozumitelnost (17. 11. 2026)
+
+Faktickou verzi píše analytik (Claude) a snaží se ji rovnou napsat tak, aby jí divák rozuměl. Ty jsi druhé čtení:
+zkontroluješ, jestli každému výkladu napoprvé rozumí člověk, který se o ekonomii nezajímá, a kde ne, výklad
+přepíšeš. Sportovní tón zůstává, srozumitelnost má ale přednost. Kde je to v rozporu s ostatními pravidly tohoto
+skillu, platí tento oddíl.
+
+Smíš:
+- přestavět výklad, aby šel po otázkách diváka: co se stalo, co to znamená v životě, proč, čím to je;
+- nahradit odborný nebo účetní obrat obrazem z běžného života;
+- číslo, které výklad nenese, přesunout do řádku `[VIZUÁL: …]` té části, i když je ve faktické verzi tučně;
+- vypustit vedlejší srovnání, které odvádí od hlavní myšlenky;
+- když odpověď na „proč“ chybí nebo je nejasná, dohledat si informace a doplnit ji.
+
+Všechno, co doplníš a ve faktické verzi nebylo (příčina, fakt, jméno, rok, číslo), vypiš na konci v seznamu DOPLNĚNO
+se zdrojem a s tím, jak jistý si jsi. Analytik to před namluvením ověří. Nic nedoplňuj mlčky.
+
+Nesmíš měnit: výsledky a pořadí zemí, hodnoty čísel, která v hlase necháš, který důvod je hlavní a který vedlejší,
+směr příčiny (kvůli, díky), sílu slovesa (z „nahrává“ nebo „souvisí“ nedělej „způsobil“) a nic ze seznamu NEŘÍKEJ.
+Analýzu nepřepisuj: když se ti nezdá výsledek nebo váha důvodu, napiš to do poznámky pro analytika a text podle
+toho neměň.
+
+**Divák nic nepočítá.** Poměry, procenta a „kolik ze sta“ do hlasu nepatří. Patří do řádku `[VIZUÁL: …]`, což je
+zadání pro grafiku: co v něm stojí, to se ukáže na obrazovce, co v něm není, se neukáže. V hlase je místo nich obraz,
+srovnávací slovo a nejvýš jedno číslo v jednotce ze života (eura měsíčně). Obraz se vysvětlí jednou, u první země,
+které se věc týká; další země na něj jen odkáže. Výsledek země (kolik přijde na účet a za kolik to doma vydá) zazní
+číslem dál.
+
+Schválený vzor (Ondřej 17. 11. 2026: „ta varianta A, ta mě přijde fakt dobrá… není tam zahlcení těmi čísly“):
+- první země: „Když firmy zaplatí materiál a energie, o zbylý výdělek se s lidmi dělí jako o koláč. V Evropě z něj
+  zaměstnanci obvykle dostanou větší půlku, v Rumunsku jen tu menší. S obvyklým dílem by měl Rumun na účtu asi o sto
+  sedmdesát eur měsíčně víc.“
+- další země: „Vzpomeňte si na koláč, o který se firma dělí se svými lidmi. Ve Slovinsku si z něj zaměstnanci ukrojí
+  ještě víc, než je v Evropě zvykem. Slovincovi to dělá asi sto šedesát eur měsíčně navíc.“
+- v řádku VIZUÁL k tomu: koláčový graf, Evropa 60 / 40, Rumunsko 48 / 52, Slovinsko 66 / 34.
 
 ### Co smíš
 - Měnit pořadí vět uvnitř části, délku vět, slovosled, obrazy, přirovnání, rytmus, napětí a sportovní tón.
 - Zkrátit nebo vynechat text označený `{volitelné: …}`, nebo ho nechat jen v obraze (řádek `[VIZUÁL: …]`).
 - Volně přeformulovat neoznačený text, ale jeho obsah musí zůstat.
+- Od 17. 11. 2026 všechno, co ti dovoluje oddíl o roli výše.
 
 ### Co nesmíš (fakta)
 1. **Tučný text je pevné jádro.** Musí zaznít v hlase, i když jinými slovy. Čísla, roky, místa a jména z něj neměň
-   ani znovu nezaokrouhluj.
+   ani znovu nezaokrouhluj. (Od 17. 11. 2026: číslo, které výklad nenese, smíš i z tučného jádra přesunout do řádku
+   VIZUÁL; hodnotu čísla, které v hlase necháš, neměň.)
 2. **Omezující slova zůstávají:** jen, asi, skoro, přes, zčásti, reálně, po odečtení zdražování, v kupní síle.
    Stejně tak **přívlastek, který odlišuje pojem** (Ondřej 4. 11. 2026): „centrální plánování“ nikdy nezkracuj na
    „plánování“ nebo „plánovalo“, „centrální plánování sovětského vzoru“ na „sovětský vzor“, „regulace nájmů“ na
@@ -8364,10 +10759,12 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
    „způsobilo“.
 4. **Pořadí a tipy** zůstávají přesně. Ve finále neříkej místo v celé lize, jen pořadí v regionu (Ondřej 1. 11. 2026).
    Štítky (hodnocení vlád nálepkou) do scénáře nepatří.
-5. **Žádné nové fakty:** žádná čísla, značky, historky, citáty ani srovnání, která ve faktické verzi nejsou. Sedí-li ti
-   obraz bez nového faktu („luxus je malý ostrov“), je to v pořádku.
+5. **Žádné nové fakty mlčky:** žádná čísla, značky, historky, citáty ani srovnání, která ve faktické verzi nejsou. Sedí-li ti
+   obraz bez nového faktu („luxus je malý ostrov“), je to v pořádku. (Od 17. 11. 2026: co si dohledáš a doplníš podle
+   oddílu o roli, vypíšeš na konci v seznamu DOPLNĚNO se zdrojem; bez toho nic nepřidávej.)
 6. Nic ze seznamu **NEŘÍKEJ** na konci faktické verze.
-7. Řádky `[VIZUÁL: …]` a nadpisy `##` nech beze změny (smíš do VIZUÁLU přesunout volitelné číslo).
+7. Řádky `[VIZUÁL: …]` a nadpisy `##` nech beze změny (smíš do VIZUÁLU přesunout volitelné číslo; od 17. 11. 2026
+   i číslo z tučného jádra, které výklad nenese, a připíšeš k němu, jaký graf ho má ukázat).
 8. **Váha důvodů zůstává** (9. 11. 2026): důvod, který je ve faktické verzi u země hlavní (první a nejdelší,
    v zámku faktů označený jako hlavní), nezkracuj na dovětek a doplněk nerozváděj víc než hlavní důvod. Pořadí vět
    smíš měnit, jen když hlavní důvod zůstane hlavní.
@@ -8381,7 +10778,8 @@ dobře poslouchá. Analýzu nedělej, příčiny nehledej, nic nedopočítávej.
   toho, jak se zemi daří. Emoce odpovídají faktům (propad není „skvělý výkon“).
 - **Souvislé, plynulé věty**, jak člověk mluví. Žádné staccato (řetězení krátkých úderných vět a fragmentů), žádné
   odrážky. Krátká věta jen výjimečně na pointu.
-- **Nejvýš dvě čísla ve větě**, raději obraz („skoro třistakrát víc“, „každý čtvrtý“).
+- **Nejvýš jedno číslo ve větě, a jen takové, které výklad nese** (od 17. 11. 2026; dřív „nejvýš dvě“). Poměry
+  a procenta patří do obrazu; raději obraz („skoro třistakrát víc“, „každý čtvrtý“).
 - **Vykřičník nejvýš dvakrát za region.** Otázky z faktické verze zůstávají. Navíc smíš položit **nejvýš tři krátké
   komentátorské otázky na region** (například na přechodu mezi zeměmi: „A co Portugalsko?“), ale otázka nesmí
   obsahovat ani naznačovat nový fakt, číslo nebo příčinu. (Ondřej 1. 11. 2026)
@@ -8418,8 +10816,13 @@ Drž se rozpočtu slov v hlavičce faktické verze (mluvený text bez nadpisů a
 Když se nevejdeš, krať volitelné, ne pevné.
 
 ### Výstup
-Vrať jen hotový scénář v Markdownu se stejnými nadpisy a řádky VIZUÁL. Bez komentáře a bez značek tučně
-a `{volitelné}`. Na úplný konec připiš řádek `Počet slov: N`.
+Vrať hotový scénář v Markdownu se stejnými nadpisy a řádky VIZUÁL, bez značek tučně a `{volitelné}`. Pod něj
+připiš (od 17. 11. 2026):
+- **DOPLNĚNO:** co jsi doplnil, zdroj, jak jistý si jsi;
+- **DO OBRAZU:** která čísla jsi přesunul do řádků VIZUÁL;
+- **PŘESTAVĚNO:** které výklady jsi přestavěl a proč;
+- **NEROZUMĚL JSEM:** čemu jsi ve faktické verzi sám nerozuměl;
+- řádek `Počet slov: N`.
 
 
 # Skill: ekonomie-lidskou-reci-ZASADA-v1.0.md
@@ -8502,9 +10905,9 @@ ho Claude při psaní mapy příběhu dřív, než začne psát faktickou verzi.
 
 ### Kde se zásada uplatňuje
 
-- `analyza-pricin-regiony-SKILL-v1.5.md` (krok 2 a 9a): rešerše příkladů a výklad hodnot s příklady.
-- `voiceover-mapa-pribehu-SKILL-v1.1.md`: oddíl Nejvyšší priorita a pravidlo „Co za tím stálo“.
-- `gemini-web-ctiva-verze-SKILL-v1.0.md`: konkrétní příklady se nevypouštějí ani nenahrazují.
+- `analyza-pricin-regiony-SKILL-v1.6.md` (krok 2 a 9a; v cíli krok 7 bod 8): rešerše příkladů a výklad hodnot s příklady.
+- `voiceover-mapa-pribehu-SKILL-v1.2.md`: oddíl Nejvyšší priorita, pravidlo „Co za tím stálo“ a oddíl „Jak se staví výklad“ (§3.0).
+- `gemini-web-ctiva-verze-SKILL-v1.1.md`: konkrétní příklady se nevypouštějí ani nenahrazují; Gemini odpovídá za srozumitelnost.
 - `voiceover-skill-v10-live-race.md` a `voiceover-regiony-SKILL-v1.0.md`: odkaz na tuto zásadu.
 - Role agentů `.claude/agents/analyst.md`, `research-agent.md`, `writer.md`.
 
@@ -8515,229 +10918,234 @@ ho Claude při psaní mapy příběhu dřív, než začne psát faktickou verzi.
 - 2. 11. 2026 (večer): přednost známým firmám a značkám, které zároveň projdou testem nosnosti (Ondřej u Jihu).
 
 
-# Skill: voiceover-uvod-SKILL-v1.0.md
+# Skill: voiceover-uvod-SKILL-v1.1.md
 
-## Úvod scénáře — skill v1.0 (Ondřejovo zadání 8. 10. 2026)
+## Úvod scénáře — skill v1.1 (Ondřejovo zadání 10. a 13. 11. 2026)
 
-> **Stav:** aktivní pro všechny nové scénáře a ligy (evropská, americká, globální). Vznikl z Ondřejova
-> diktovaného zadání 8. 10. 2026 („Ten úvod bych chtěl hodně změnit… přetvořit skill pro úvodní část
-> scriptu“). Ondřej určil stavbu úvodu, jeho pevné věty i pořadí bodů. Writer skill
-> `voiceover-skill-v10-live-race.md` dál řídí zbytek scénáře.
+> **Stav:** úplné znění; **od 17. 11. 2026 platné a uložené v projektu** (Ondřej 17. 11. 2026 v noci: „Ano určitě…
+> určitě všechno hned commitni“; o grafu faktorů: „To mně přijde taky dost důležitý a dost to pomohlo“). Slovo
+> „necommitováno“ u doplňků níže popisuje stav před tímto dnem. Platí pro scénáře stavěné po regionech
+> (skill mapy příběhu `voiceover-mapa-pribehu-SKILL-v1.2.md`). Předchozí znění `voiceover-uvod-SKILL-v1.0.md`
+> (8. 10. 2026) zůstává beze změny.
 >
-> **Co tento skill nahrazuje:**
-> - §9 writer skillu („Intro — dieta a přesnost“) jako předpis mluveného úvodu, včetně rozpočtu
->   hook ≤ 140 + explainer ≤ 180 slov a re-hooku s pěti záhadami;
-> - úvodní háček s otázkou, na kterou má divák odpovědět („A hned otázka na úvod: …“). Ve vyhlášení
->   proto odpadá i odstavec, který ji uzavírá („A co naše úvodní otázka?“);
-> - výčet jednotlivých zemí ligy v první větě („včetně Švýcarska, Norska a Británie“);
-> - formu úvodu ze zlatého vzoru §2.1. Pro zbytek scénáře zlatý vzor platí dál.
+> **Co se změnilo proti verzi 1.0:**
+> 1. **Úvod je krátký, asi 90 vteřin (210 až 240 slov) místo čtyř až pěti minut.** Ondřej 10. 11. 2026: v úvodu
+>    zůstává koncept série (dlouhodobý šampionát, body se sčítají napříč disciplínami, žlutý a zelený trikot: „moje
+>    nejsilnější stránka“) a favorité, černí koně a outsideři; návod k závodu se přesouvá do prvního regionu.
+>    *(Od 16. 11. 2026 je úvod s blokem 4b asi o 22 vteřin delší, bod 6 a §3.)*
+> 2. **Pět bloků místo dvanácti bodů** (§1). Ondřej 13. 11. 2026: to, co divák v díle uvidí, se spojuje s favority;
+>    u zeleného trikotu zazní, že se neuděluje v každé disciplíně, co měří a za které roky, a jeho favorité; přibyla
+>    týmová soutěž regionů a krátká věta o zdrojích.
+> 3. **Co se z úvodu přesunulo a kam** (§2): tři kola, karta proti tahu, váha kol, průběžné pořadí a nesčítání kol,
+>    vedlejší faktory, kupní síla, přesná definice a důvody u favoritů. *(Váha kol je od 16. 11. 2026 zpět
+>    v úvodu jedním grafem, bod 6.)*
+> 4. **Důvěra se nebuduje přívlastky** (§1 blok 5).
+> 5. **První věta má splnit slib titulku** (§3; průzkum konkurence 11. 11. 2026).
+> 6. **(doplněno 16. 11. 2026, necommitováno) Hlavní faktory na sloupcovém grafu** (§1 blok 4b). Ondřej
+>    16. 11. 2026 po ohlasu prvního diváka: „ukážu sloupcový graf… kolik procent jednotlivé faktory mají vliv na
+>    ten celkový indikátor… mně přijde, že tam je to úplně jasné.“ Do úvodu se proto vrací pojmenování kol, nově
+>    jedním grafem dílů podle vlivu a Ondřejovým zněním. Výklad, co které kolo měří a jak se jede, zůstává na
+>    trati (§2).
 >
-> **Co zůstává z dřívějších pravidel:** kola se nesčítají (§3.6); váhy kol zazní slovy a podle
-> analýzy (§3.8); souvislé věty bez staccata (CLAUDE.md, sloh voiceoverů); žádné „my“ o Česku;
-> čísla jen ověřená z analýzy a karty; zbylé povinné vysvětlivky z karty se, stejně jako dřív, smějí
-> přesunout do segmentů zemí.
+> **Co zůstalo:** povinné vstupy od Ondřeje (§0), jeho pevné věty, zákaz otázky nebo hádanky pro diváka, zákaz
+> zavádějících obratů (§4), souvislé věty bez staccata, žádné „my“ o Česku, čísla jen ověřená. Smyšlený příklad
+> k nesčítání kol, výčet faktorů každého kola a část „co přesně měříme“ jako samostatná část úvodu se ruší.
+> (Od 16. 11. 2026 úvod kola jednou pojmenuje a řekne jejich díl, grafem v bloku 4b.)
 
 ### 0. Než se začne psát: povinné vstupy od Ondřeje
 
 Seznamy favoritů vždy určuje Ondřej. Writer je nikdy nevymýšlí ani neodvozuje sám z dat.
 
 1. **Hlavní disciplína:** 4–5 favoritů na vítězství, 2–3 černí koně a 3–4 outsideři.
-2. **Zelený trikot:** kandidáti na nejrychlejší růst. V první epizodě je pro zelený trikot dodá
-   Ondřej. Od druhé epizody je model navrhne podle průběžné klasifikace tempa a Ondřej je potvrdí
-   nebo upraví.
-3. **Žlutý trikot od druhé epizody:** model navrhne obhájce a vyzyvatele podle průběžné celkové
-   klasifikace. Ondřej je potvrdí nebo upraví.
+2. **Zelený trikot:** kandidáti. V první epizodě je dodá Ondřej. Od druhé epizody je model navrhne podle průběžné
+   klasifikace a Ondřej je potvrdí nebo upraví.
+3. **Žlutý trikot od druhé epizody:** model navrhne obhájce a vyzyvatele podle průběžné celkové klasifikace. Ondřej
+   je potvrdí nebo upraví.
 
-**Když některý seznam chybí, writer FINAL voiceover nepíše.** Nejdřív se Ondřeje zeptá přímo v chatu,
-jednou obyčejnou otázkou. Pokud existují Ondřejovy předstartovní tipy pro showcase (`tipy.json`),
-smí z nich nabídnout návrh, ale potvrzení musí přijít od Ondřeje. Potvrzené seznamy se uloží do
-packu epizody (`output/uvod_<datum>/favorite.json` nebo ke `tipy.json`) a úvod, showcase i
-vyhodnocení ve vyhlášení z nich čerpají stejná jména.
+**Když některý seznam chybí, writer úvod nepíše.** Zeptá se Ondřeje přímo v chatu, jednou obyčejnou otázkou. Smí
+nabídnout návrh z Ondřejových tipů (`tipy.json`), potvrzení ale musí přijít od Ondřeje. Potvrzené seznamy se uloží
+do packu epizody a čerpají z nich stejná jména úvod, role zemí v regionech (skill mapy příběhu §2.2) i vyhodnocení
+ve velkém finále.
 
-Ostatní vstupy dodá analýza a karta indikátoru, writer je nepočítá ani nevymýšlí:
+Pro první epizodu evropské ligy (stav 13. 11. 2026, z Ondřejových tipů z 26. a 30. 9. 2026 a jeho ukázky z 13. 11.):
+favorité Švýcarsko, Dánsko, Nizozemsko, Norsko; černí koně Rakousko, Irsko; opačný konec tabulky Bulharsko,
+Chorvatsko, Řecko, Maďarsko; favorité na zelený trikot Rumunsko, Bulharsko, Chorvatsko, Litva.
 
-- pořadové číslo epizody v lize a název ligy (`karta_indikatoru.yaml`, `league_id`);
-- přesná definice hlavního indikátoru, jeho části („nohy“), rok dat a zdroje;
-- definice momenta (co se měří a za jaké období);
-- váhy kol (oddíl „Váhy kol a čekaný výsledek“ v analýze) a podíl rozdílů, který kola vysvětlí;
-- katalog faktorů každého kola s počtem faktorů a jejich důležitostí, viz §3.
+Ostatní vstupy dodá analýza a karta indikátoru: pořadové číslo epizody a název ligy, hlavní indikátor a rok dat, co
+měří zelený trikot a za jaké období, pořadí regionů a jejich složení, zdroje dat.
 
-### 1. Stavba úvodu — tři části
+### 1. Stavba úvodu: pět bloků a graf faktorů (blok 4b)
 
-#### Část 1 — pozdrav a disciplína (dvě věty, pevné)
+Tučně jsou Ondřejovy pevné věty, které se nemění ani nepřeformulovávají. Ostatní znění je vzor z první epizody
+evropské ligy (225 slov); pro každou disciplínu se píše znovu.
 
-**Věta 1, Ondřejův trademark, vždy doslova:**
+#### Blok 1 — pozdrav a disciplína
 
-> Vítejte u {pořadová číslovka v 2. pádě} epizody {Evropských | Amerických | Globálních} ekonomických her.
+> **Vítejte u {pořadová číslovka v 2. pádě} epizody {Evropských | Amerických | Globálních} ekonomických her.** V dnešní
+> disciplíně se sedmadvacet evropských zemí utká v průměrné čisté mzdě v kupní síle. Dozvíte se, ve které zemi si
+> lidé za svou výplatu koupí nejvíc, kde nejméně, a hlavně proč.
 
-Příklady: „Vítejte u první epizody Evropských ekonomických her.“, „Vítejte u druhé epizody
-Amerických ekonomických her.“ Přídavné jméno ligy je povinné vždy, aby divák věděl, kterou sérii
-sleduje. Název série se píše s velkým prvním písmenem.
+- Přídavné jméno ligy je povinné, název série s velkým prvním písmenem.
+- Druhá věta řekne, v čem a kolik zemí soutěží. Třetí, co se divák dozví; vychází z měřítka, ne z výkladu.
+- **Věta o složení ligy** (jen první epizoda evropské ligy; Ondřej 4. 11. 2026, potvrzeno v kontraktu rozhraní
+  s Gemini 13. 11. 2026): stojí v bloku 1 hned za větou o sedmadvaceti zemích. „Nejde přitom o sedmadvacet zemí
+  Evropské unie: Kypr, Maltu a Lucembursko jsme vyměnili za Švýcarsko, Norsko a Velkou Británii, které jsou větší
+  a v globální ekonomice hrají mnohem větší roli.“ Znění smí být přeformulované, obsah ne.
+- Zakázané: vyjmenovávat země ligy (kromě věty o složení), klást divákovi otázku nebo hádanku.
 
-**Věta 2, hned po ní: disciplína.** Řekne, v čem a kolik zemí dnes soutěží, například: „V dnešní
-disciplíně se sedmadvacet evropských zemí utká v průměrné mzdě v paritě kupní síly.“
+#### Blok 2 — šampionát, žlutý trikot a favorité
 
-**Věta 3, jen v první epizodě Evropských ekonomických her: složení ligy** (Ondřej 4. 11. 2026,
-protože by divák mohl sedmadvacítku zaměnit za Evropskou unii a výměnu zemí považovat za chybu).
-Hned po větě o disciplíně jedna věta, že liga není Evropská unie a proč: „Nejde přitom o sedmadvacet
-zemí Evropské unie: Kypr, Maltu a Lucembursko jsme vyměnili za Švýcarsko, Norsko a Velkou Británii,
-které jsou větší a v globální ekonomice hrají mnohem větší roli.“ Znění smí být přeformulované, obsah
-(které tři země ven, které tři dovnitř a proč) ne. V dalších epizodách a jiných ligách se věta vynechává,
-pokud Ondřej neurčí jinak. Je to jediná výjimka ze zákazu vyjmenovávat země níže.
+> **Pojďme se podívat na to, co v dnešní disciplíně uvidíme.** Ekonomické hry jsou dlouhý šampionát. Tohle je první
+> disciplína z mnoha a v každé země sbírají body do celkového pořadí. Jeho lídr veze žlutý trikot a dnes se dozvíme,
+> kdo si ho oblékne jako první. Mezi hlavní favority řadíme Švýcarsko, Dánsko, Nizozemsko a Norsko. Překvapit ovšem
+> mohou černí koně závodu, za které považujeme Rakousko a Irsko. Na opačném konci tabulky čekáme Bulharsko,
+> Chorvatsko, Řecko a Maďarsko.
 
-V části 1 je **zakázané**:
-- vyjmenovávat jednotlivé země ligy (kromě věty 3);
-- klást divákovi otázku nebo hádanku, na kterou má odpovědět;
-- přidávat cokoli dalšího. Hned po těchto dvou větách začíná část 2.
+- Koncept série patří hned za pozdrav: je to důvod k odběru kanálu a Ondřejova nejsilnější stránka.
+- **Žlutý trikot:** patří lídrovi celkového pořadí napříč disciplínami. První epizoda: dozvíme se prvního držitele.
+  Další epizody: kdo ho drží, zda ho obhájí a kdo na něj může zaútočit (§0).
+- **Favorité, černí koně, outsideři** v souvislých větách, bez důvodů. Důvod, proč je země favorit, zazní až u její
+  role na startu regionu (skill mapy příběhu §2.2). Větu „Pojďme si představit největší favority této disciplíny.“
+  Ondřej 13. 11. 2026 ve své ukázce nahradil větou „Mezi hlavní favority řadíme…“; platí novější.
 
-#### Část 2 — co v dnešní disciplíně uvidíme (navnazení a pravidla v jednom)
+#### Blok 3 — zelený trikot
 
-Tato část láká diváka na to, co přijde, a zároveň mu vysvětluje pravidla soutěže. Pravidla se
-vždy vážou na to, na co se může těšit. Body jdou v tomto pořadí:
+> Jede se i o zelený trikot. Ten se neuděluje v každé disciplíně, dnes ale ano. Získá ho země, která od roku 1996 do
+> roku 2024 udělala největší skok dopředu. Favority jsou tu Rumunsko, Bulharsko, Chorvatsko a Litva.
 
-1. **Úvodní věta, vždy doslova:** „Pojďme se podívat na to, co v dnešní disciplíně uvidíme.“
-2. **Co se dozvíte.** Hned následuje „Dozvíte se, která země má nejvyšší {hlavní indikátor}…“.
-   Smí se přidat druhá strana žebříčku, nejnižší hodnota, nebo u vícedílného indikátoru to, kde
-   se části rozcházejí. Formulace vychází z měřítka, ne z interpretace: „nejvyšší průměrnou mzdu
-   v paritě kupní síly“, „nejnižší nezaměstnanost“, „největší zásoby nerostného bohatství“.
-3. **Favoriti.** (Doplněno 4. 11. 2026, Ondřej po zhlédnutí prototypu: „u každé země krátce
-   zmínit, proč by měla být favorit nebo outsider“.) Každá jmenovaná země dostane jednu krátkou
-   vedlejší větu s důvodem tipu: čím je známá a proč od ní divák čeká vítězství, překvapení
-   nebo dno (vzor: „Norsko, které zbohatlo na ropě a plynu ze Severního moře“; „Bulharsko, nejchudší
-   zemi Unie“). Důvod je pověst nebo známý rys země, ne vysvětlení výsledku z kol a finále; čísla
-   z kol nepatří sem. Délka asi 150 slov. Začíná větou, vždy doslova: „Pojďme si představit největší favority této
-   disciplíny.“ Pak zazní 4–5 favoritů, 2–3 černí koně a nakonec 3–4 outsideři, vše podle
-   Ondřejova seznamu (§0). Jména se řadí v souvislých větách, ne heslovitě. Každá země smí mít
-   nejvýš krátkou přívlastkovou charakteristiku, podrobnost patří do showcase. Volitelně následuje
-   jedna věta, že na konci epizody vyhodnotíme, kolik očekávání se naplnilo.
-4. **Žlutý trikot**, tedy průběžná celková klasifikace. Vysvětlí se, co trikot je: patří lídrovi
-   celkového pořadí napříč všemi dosavadními disciplínami ligy.
-   - *První epizoda:* nic se neobhajuje, jen řekneme, že se dozvíme prvního držitele žlutého trikotu.
-   - *Další epizody:* kdo trikot drží, zda ho obhájí a kdo na něj může zaútočit (kandidáti podle §0).
-5. **Zelený trikot**, tedy momentum. Vysvětlí se, co trikot je: patří vítězi samostatného
-   žebříčku, který měří, ve které zemi veličina roste (nebo se zlepšuje) nejrychleji, a zazní
-   období z karty. Věta musí říct doslova, co se měří (§2a). Vzor: „Zelený trikot patří vítězi
-   jiného žebříčku, který měří, ve které zemi mzdy rostou nejrychleji.“ Řekne se i, proč o něj obvykle bojují jiné země
-   než o vítězství: rychle rostou hlavně ti, kdo dohánějí z nízké základny.
-   - *První epizoda:* dozvíme se prvního držitele a zazní Ondřejovi kandidáti na zelený trikot.
-     Ti se v první epizodě jmenují vždy, protože jsou to jiné země než favoriti hlavního žebříčku.
-   - *Další epizody:* obhájce a vyzyvatelé podle průběžné klasifikace tempa (§0).
-6. **Pořadí startu.** *První epizoda:* abecedně (v evropské lize podle anglické abecedy).
-   *Další epizody:* podle průběžné celkové klasifikace, od poslední země po lídra (writer skill §1).
-   Jednou se tu také řekne, že průběžné pořadí ukazujeme jen mezi zeměmi, které už dojely.
-7. **Tři kola.** Jedna věta, že každá země projde třemi koly: potenciálem, krátkodobou strategií a
-   dlouhodobou strategií.
-8. **Potenciál.** Co kolo měří, tedy výbavu, se kterou země startuje a kterou dnešní politika
-   nezmění. Pak nejdůležitější faktory disciplíny (§3), kolik faktorů měříme celkem a jak velký
-   vliv má kolo na výsledek (váha kola slovy).
-9. **Krátkodobá strategie.** Rychlé páky, kterými vláda nebo firmy mohou výsledek posunout během
-   jednoho až dvou let. Dál stejně jako u potenciálu: faktory, jejich počet a váha kola.
-10. **Dlouhodobá strategie.** Schopnosti budované roky. Dál stejně: faktory, jejich počet a váha
-    kola. Když je kolo nejtěžší nebo nejpomalejší, smí zaznít proč (writer skill §3.8).
-11. **Kola se nesčítají — PŘESUNUTO Z ÚVODU (Ondřej 4. 11. 2026 podle kritiky Gemini k prototypu).**
-    Teoretický výklad na vymyšlených zemích byl v úvodu příliš abstraktní a natahoval čtyřminutový
-    „manuál pravidel“ před prvním závodem. Úvod tento bod **neobsahuje**. Vysvětlí se jednou, prakticky
-    na skutečných vlajkách, v **prvním regionu epizody** (Balkán) ve chvíli, kdy se to poprvé stane:
-    průběžné pořadí po kole (skill mapy příběhu §2.5) a v cíli regionu, proč rozhoduje jen změřená
-    hodnota a proč se v cíli ukazuje jen pořadí v týmu. Celé pořadí ligy až ve velkém finále. Obsah níže
-    platí pro ten výklad v regionu (příklad se tam bere ze skutečných zemí regionu, protože už
-    neprozrazuje nic dopředu). Původní obsah:
-    - kola jsou orientační: ukazují, jak si země vede ve faktorech, které ovlivňují hlavní
-      výsledek, ale jejich body se do výsledku nesčítají a pořadí určí jen skutečně změřená
-      hodnota;
-    - **jeden konkrétní příklad** s čísly míst, kde je země v kolech průměrná nebo slabá, a přesto
-      dojede vysoko. Rozdíl se vysvětlí dvěma důvody: (a) kola váží různě, takže slabé místo
-      v lehkém kole znamená málo; (b) část výsledku kola nezachytí, protože se odehraje mimo
-      ně (u mezd na cestě od produktivity k výplatě, jinde podle analýzy);
-    - **příklad musí být smyšlený.** Kombinace míst nesmí odpovídat žádné skutečné zemi epizody,
-      protože by prozradila její výsledek. Writer to ověří proti tabulce indexů v analýze
-      a výsledek ověření zapíše do předání;
-    - závěrečná věta propojí bod s komentářem u výsledku: u každé země řekneme, kam ji kola
-      posílala a kam skutečně dojela.
-11a. **Poslední věta úvodu neopakuje start regionu** (Ondřej 4. 11. 2026): showcase prvního regionu
-    začíná větou o tom, kdo stojí na startu, proto úvod končí jen přechodem bez jména regionu, např.
-    „Pravidla máme, tak pojďme na start!“.
-12. **Zdroje a důvěryhodnost.** Hlavní výsledek a momentum přebíráme beze změny z oficiálních
-    institucí. Zazní jen ty, ze kterých epizoda skutečně čerpá (Eurostat, OECD, MMF…), u záložních
-    zdrojů se počet zemí řekne slovy. Indexy kol jsou náš vlastní experimentální výpočet z veřejně
-    dostupných dat, který vysvětluje kontext výsledků, ne nové měřítko. Pro přesvědčivost smí
-    zaznít ověřené číslo z analýzy, například kolik faktorů a zdrojů výpočet používá a jakou část
-    rozdílů kola dohromady vysvětlí. Nic se neslibuje, co produkce nedodá (například zdroj u
-    každého čísla na obrazovce, pokud ho grafika neukazuje).
+- Zazní, že se neuděluje v každé disciplíně a že v této ano, **co měří** a **za které roky**.
+- Pojmenuje se tím, co skutečně měří (§4). U mezd je to největší skok výkonu pracujícího proti střední zemi ligy,
+  proto „největší skok“, nikdy „nejrychlejší růst“ ani „nejrychleji rostoucí mzdy“ (ve stálých cenách rostla víc
+  Litva než vítěz Rumunsko). Přesný výklad dá druhé kolo prvního regionu.
+- První epizoda: Ondřejovi favorité na zelený trikot. Další epizody: obhájce a vyzyvatelé.
 
-#### Část 3 — co přesně měříme (indikátor)
+#### Blok 4 — týmy a cílová tabule
 
-1. **Co indikátor je**, obyčejnými slovy a jedním přirovnáním nebo příkladem. U průměrné mzdy
-   v paritě kupní síly: nejde o mzdu v eurech, ale o to, kolik se za ni v dané zemi koupí.
-   Zazní i to, čím indikátor není (čistý příjem, medián, typický člověk), pokud to karta uvádí.
-2. **Části indikátoru.** Pokud má indikátor víc částí (například bydlení: koupě a nájem), každá se
-   pojmenuje a řekne se, jak se skládají.
-3. **Rok dat a proč ne novější.** Řekne se, ke kterému roku data jsou, a proč novější nejsou:
-   srovnatelná data pro všechny země ligy zatím nejsou k dispozici. Tvrzení se před psaním
-   **ověří u zdroje** (dotazem na databázi, ne z paměti) a datum ověření se zapíše do předání.
-   Když novější srovnatelná data existují, věta se nepíše a writer na nesoulad upozorní Ondřeje.
-4. **Jak číst body**, tedy jedna věta o ligovém průměru (například „průměrná země ligy má sto
-   bodů“), pokud se body v epizodě používají.
-5. **Dřívější rozhodnutí Ondřeje pro ligu nebo epizodu.** Věty, které si Ondřej pro danou ligu výslovně
-   vyhradil do úvodu (například u americké ligy výhrada ke srovnání s Evropou a věta o daních), patří sem.
-6. **Přechod na start.** Krátká věta, že první země stojí na startu.
+> Soutěží se i týmově. Sedmadvacet zemí jsme rozdělili do šesti týmů podle regionů a budeme je odhalovat postupně, od
+> východu na západ. Po každém regionu se podíváme na cílovou tabuli celé ligy, takže uvidíte, kdo zatím vede a kdo
+> ho může sesadit.
 
-### 2. Délka a sloh
+- **Týmová soutěž:** tým je region. Body země jsou její výsledek proti průměru ligy (průměr ligy = 100), body týmu
+  prostý průměr bodů jeho zemí. V úvodu se pravidlo nevykládá; zazní u cílové tabule prvního regionu.
+- **Cílová tabule** je slib, proč nepřeskakovat: po každém regionu se něco rozhodne (skill mapy příběhu §2.8).
+- Pořadí regionů určuje návrh cílové tabule epizody.
 
-- **Orientační délka:** část 1 asi 30 slov, část 2 asi 450–580 slov, část 3 asi 100–150 slov.
-  Celkem 4–5 minut při změřeném tempu hlasu (~153 slov za minutu). Úvod je delší než dřív,
-  protože nese pravidla, která se v segmentech zemí už znovu nevysvětlují. Délku schvaluje Ondřej.
-- Souvislé věty. Výčty jmen a faktorů se vkládají do vět, ne do hesel ani řetězu krátkých vět.
-- Pevné věty (trademark, „Pojďme se podívat…“, „Pojďme si představit…“) se nemění ani
-  nepřeformulovávají. Ostatní text je ilustrativní a píše se pro každou disciplínu znovu.
-- Váhy kol zazní slovy, nejvýš se zaokrouhleným podílem („zhruba desetinou“). Procenta se nečtou.
+#### Blok 4b — hlavní faktory a jejich vliv (Ondřej 16. 11. 2026)
 
-### 2a. Žádné zavádějící obraty (Ondřej 8. 10. 2026)
+> **Pojďme se podívat na to, jaké hlavní faktory mají vliv na naše výplaty.** Skoro polovinu dělá to, kde země stála
+> v roce 1996, a necelou třetinu to, jak od té doby rostla. Daně a odvody pohnou výplatou jen o pár procent a zbytek
+> jsou specifické faktory jednotlivých zemí. **Přesně v tomhle pořadí pojedeme hlavní kola.**
 
-Ondřej: „Co znamená věta, že o zelený trikot se hraje v tempu? Jako že tato část soutěže bude
-rychlá?“ Každý ukazatel, žebříček a trikot se pojmenuje tím, **co skutečně měří**. Nepoužívá se
-závodní metafora, kterou si divák může vyložit doslova a jinak.
+- **Znění je Ondřejovo** (16. 11. 2026: „Já bych si to představoval spíše tak, že by se řeklo…“ a „přesně takto“).
+  První a poslední věta jsou pevné; „naše výplaty“ se u jiné disciplíny nahradí jejím ukazatelem slovy diváka.
+  Prostřední věty se pro každou disciplínu píšou znovu podle rozložení z analýzy a ve stejné stavbě: každé kolo jednou
+  vedlejší větou, která řekne, o co jde a jak velký díl to dělá, od prvního kola po poslední, a nakonec „zbytek jsou
+  specifické faktory jednotlivých zemí“.
+- **Čísla dodá analýza** (analytický skill krok 7 bod 7, výstup `ROZLOZENI_UKAZATELE.md`): díl každého kola a díl
+  specifických faktorů, dohromady sto. Writer je nevymýšlí ani nepřepočítává. Hlas říká zlomky podle tabulky slov
+  v analytickém skillu („skoro polovinu“, „necelou třetinu“, „jen pár procent“), procenta ukazuje obraz. U mezd
+  (data po opravách z 10. 11. 2026): 45, 32, 6 a 17 %.
+- **Co blok nedělá:** nevykládá, co faktor je a proč působí, ani jak se kola jedou (průběžné pořadí, nesčítání kol,
+  karta proti tahu). To zůstává na trati (§2). Blok faktory jen pojmenuje a řekne jejich díl, aby divák věděl, proč
+  se v díle mluví právě o nich. Důvod: první divák hotového videa nepochopil, proč se v díle o mzdách mluví
+  o produktivitě; důvod zazněl až na konci prvního kola.
+- **Umístění a délka:** za blokem 4, před blokem 5; asi 55 slov (22 vteřin).
+- **Obraz** (střih úvodu, `ekonomicke-hry-remotion/src/strih-balkan/uvod/UFaktory.tsx`): hlavní tabule přes záběry
+  evropských měst, přírody a památek; jeden sloupec, který se staví odspodu po dílech, jak je hlas jmenuje; díl má
+  barvu a ikonu svého kola, specifické faktory barvu a ikony vedlejších faktorů z cíle; vpravo procenta; na poslední
+  větu se díly kol rozsvítí v pořadí, v jakém se pojedou. Podtitul tabule říká, že jde o podíly na rozdílech mezi
+  zeměmi, ne o části výplaty. V obraze žádná čeština.
+- Blok začíná stejnými slovy jako pevná věta bloku 2 („Pojďme se podívat na to…“); zda to tak zůstane, rozhoduje
+  Ondřej.
+- **Graf se vrací ve finále každého regionu** (17. 11. 2026; skill mapy příběhu §2.6): úvod cíle připomene jeho
+  poslední díl, specifické faktory, a u země, kde specifický faktor zasáhl, se objeví táž ikona a velikost zásahu.
+  Ikony a barva dílu specifických faktorů v úvodu proto musí být tytéž, které použije cíl.
 
-- **Zakázané:** „hraje se v tempu“, „v tempu vede…“, „v tempu je druhé“, „očekávání v tempu“.
-  „Tempo“ bez předmětu se nepoužívá vůbec.
-- **Správně:** „v žebříčku růstu mezd je druhé“, „mzdy tu rostou nejrychleji“, „ve zlepšování
-  dostupnosti vede…“, „tempo růstu mezd“ (s předmětem).
-- Totéž platí pro každý nový obrat. Než writer použije obrazné spojení pro ukazatel, ověří ho
-  testem: „Pochopí divák, který slyší větu poprvé, co se měří?“ Když ne, napíše to doslova.
-- Detektor `scripts/check_voiceover_commentary.py` hlásí „v tempu“ a „hraje se v tempu“ jako chybu.
+#### Blok 5 — odkud to víme a start
 
-### 3. Nejdůležitější faktory kola — jak je vybrat
+> Výsledky bereme z Eurostatu a OECD. Proč to tak dopadlo, vysvětluje naše vlastní analýza. Postup a všechny zdroje
+> najdete v popisu videa. Pravidla závodu vysvětlíme rovnou na trati. Jdeme na start!
 
-- Mluveně zazní **tři nejdůležitější faktory** kola. Když jich kolo má méně, zazní všechny.
-  Grafika smí ukázat tři až pět. Mluveně i na obrazovce zazní, kolik faktorů kolo měří celkem
-  („a dalších sedm“).
-- **Důležitost** se bere z analýzy. Pokud ji analýza výslovně neuvádí, použije se síla vztahu
-  bodů faktoru k hlavnímu výsledku napříč ligou (korelace bodů 0–100 s indexem výsledku). Pořadí
-  i čísla se zapíšou do předání. Když dva přední faktory měří skoro totéž (například urbanizace
-  a bohatství ve stejném roce), smí se druhý přeskočit ve prospěch dalšího. Volba se zapíše.
-- Názvy faktorů se převádějí do obyčejné řeči („jak bohatá byla země před druhou světovou válkou“,
-  ne „předválečný HDP na obyvatele podle Maddisona“).
+- **Důvěra se nebuduje přívlastky.** Slova „důkladná“, „komplexní“ nebo „unikátní“ analýza říká o sobě každý. Důvěru
+  nesou tři ověřitelné věci: jména zdrojů, co je vlastní práce (výklad příčin) a kde si to divák najde.
+- **Slib musí produkce dodat:** postup a zdroje v popisu videa musí opravdu být, jinak věta nezazní. Jmenují se jen
+  zdroje, ze kterých epizoda skutečně čerpá.
+- Poslední věta neopakuje start regionu; první region začíná svou vlastní větou.
 
-### 4. Kontrola před odevzdáním
+### 2. Co se z úvodu přesunulo a kam
 
-- [ ] Věta 1 přesně podle vzoru, s číslovkou epizody a přídavným jménem ligy.
-- [ ] Věta 2 je disciplína. V části 1 není žádná otázka ani výčet zemí.
-- [ ] Část 2 začíná „Pojďme se podívat na to, co v dnešní disciplíně uvidíme.“ a obsahuje všech
-      dvanáct bodů ve stanoveném pořadí.
-- [ ] Favoriti, černí koně, outsideři a kandidáti na trikoty odpovídají Ondřejově potvrzenému seznamu.
-- [ ] U každého kola zazní, co měří, jeho nejdůležitější faktory, počet faktorů a váha kola.
-- [ ] Příklad nesčítání kol je smyšlený a ověřeně neodpovídá žádné zemi epizody.
-- [ ] Zdroje odpovídají kartě. Rok dat a „novější srovnatelná data nejsou“ jsou ověřené u zdroje
-      a datum ověření je zapsané.
-- [ ] Vyhlášení neodkazuje na úvodní otázku, kterou úvod nemá.
-- [ ] `scripts/check_voiceover_commentary.py` bez nových chyb ve staccatu úvodu.
+Pravidlo: **věc se vysvětlí ve chvíli, kdy ji divák poprvé vidí**, na skutečných zemích, a pak už nikdy. Podrobně
+skill mapy příběhu §2.5 („pravidla za jízdy“).
 
-### 5. Vazby na obrazové skilly úvodu (otevřené)
+| Co odešlo z úvodu | Kam |
+|---|---|
+| tři kola a co které měří | otevření každého kola v prvním regionu |
+| rozdaná karta proti tahu země | první kolo prvního regionu |
+| průběžné pořadí a to, že se kola nesčítají | po prvním kole prvního regionu |
+| váha kol | od 16. 11. 2026 jedním grafem v úvodu (blok 4b); v pointě kola už jen tam, kde to výklad potřebuje |
+| v cíli rozhoduje jen změřená hodnota; vedlejší faktory | úvod cíle prvního regionu |
+| co je kupní síla | cíl prvního regionu, na příkladu |
+| přesná definice ukazatele, rok dat a proč ne novější | obraz (titulek pod názvem disciplíny a u každého cíle) a popis videa |
+| důvody u favoritů | role zemí na startu regionu |
+| smyšlený příklad k nesčítání kol, výčet kategorií vedlejších faktorů | odpadají |
+| pojmenování kol a jejich díl | od 16. 11. 2026 zpět v úvodu, blok 4b; co kolo měří, dál až při jeho otevření |
 
-Obrazové skilly `intro-part1-trademark-startlist`, `intro-part2-teaser-storywindow` („pět záhad“)
-a `intro-part3-explainer` vznikly pro starý úvod. Mluvená stavba podle tohoto skillu má jiné body
-(favoriti, trikoty, kola s faktory, zdroje), proto je potřeba obrazovou část úvodu sladit. Do té
-doby se úvod stříhá podle mluveného slova a „pět záhad“ se v něm nepoužívá.
+Rok dat a tvrzení „novější srovnatelná data nejsou“ se dál **ověřují u zdroje** (dotazem na databázi, ne z paměti)
+a datum ověření se zapíše do předání, i když jsou jen v obraze.
+
+### 3. Délka, sloh a první půlminuta
+
+- **Délka:** 240 až 270 slov včetně věty o složení ligy, asi 100 vteřin; v dalších epizodách bez ní 210 až 240.
+  S blokem 4b (asi 55 slov, 22 vteřin) o to víc: první epizoda 295 až 325 slov, asi 130 vteřin (střih z 16. 11.
+  2026 má 314 slov a 129,8 vteřiny); další epizody 265 až 295 slov.
+- Souvislé věty; výčty jmen se vkládají do vět, ne do hesel ani řetězu krátkých vět.
+- **První věta má splnit slib titulku** (průzkum konkurence 11. 11. 2026: klikají se otázky o výplatě diváka a jeho
+  souseda, ne jméno pořadu). Pozdrav proto zůstává krátký a hned za ním stojí, co se divák dozví. Když Ondřej zvolí
+  titulek, první blok se podle něj doladí.
+- **Volitelně tři věty před pozdravem**, které nic neprozradí jménem; jsou to tvrzení, ne hádanka pro diváka. Vzor
+  z první epizody: „Jedna země vydrží v čele čtyři regiony za sebou. Země s nejlepší startovní pozicí skončí přesně
+  uprostřed tabulky. A země s nejnižší výplatou v eurech nebude poslední.“ Každá taková věta se ověří proti konečné
+  tabulce a **nepoužívá pojem, který divák ještě nezná** (ne „vítěz prvního kola“, kola ještě nikdo nevysvětlil).
+- **Jazykové verze:** když titulek pro daný trh slibuje zemi, která pojede až později, dostane znění pro ten jazyk
+  před pozdrav jednu vlastní větu, která slib potvrdí (například „Estonsko pojede jako třetí. Než přijde na řadu,
+  postaví mu laťku Chorvatsko a Polsko.“).
+- Čtivou verzi úvodu píše Gemini z faktické verze; zadání a vzor: `10_documents/active/2026-11-10_prestavba_scenaru/
+  PRO_GEMINI_UVOD.md`.
+
+### 4. Žádné zavádějící obraty (Ondřej 8. 10. 2026)
+
+Ondřej: „Co znamená věta, že o zelený trikot se hraje v tempu? Jako že tato část soutěže bude rychlá?“ Každý
+ukazatel, žebříček a trikot se pojmenuje tím, **co skutečně měří**. Nepoužívá se závodní metafora, kterou si divák
+může vyložit doslova a jinak.
+
+- **Zakázané:** „hraje se v tempu“, „v tempu vede…“, „očekávání v tempu“. „Tempo“ bez předmětu se nepoužívá vůbec.
+- Než writer použije obrazné spojení pro ukazatel, ověří ho testem: „Pochopí divák, který slyší větu poprvé, co se
+  měří?“ Když ne, napíše to doslova.
+
+### 5. Kontrola před odevzdáním
+
+- [ ] První věta přesně podle vzoru, s číslovkou epizody a přídavným jménem ligy.
+- [ ] Pět bloků a blok 4b ve stanoveném pořadí; pevné věty „Pojďme se podívat na to, co v dnešní disciplíně uvidíme.“,
+      „Pojďme se podívat na to, jaké hlavní faktory mají vliv na…“ a „Přesně v tomhle pořadí pojedeme hlavní kola.“
+      doslova.
+- [ ] Blok 4b: díly souhlasí s `ROZLOZENI_UKAZATELE.md` (součet sto), slova pro díly odpovídají tabulce slov
+      v analytickém skillu (krok 7 bod 7), věty jdou v pořadí kol.
+- [ ] Favorité, černí koně, outsideři a favorité na zelený trikot odpovídají Ondřejově potvrzenému seznamu.
+- [ ] Zelený trikot: zaznělo, že se neuděluje v každé disciplíně, co měří a za které roky; žádné „nejrychleji“,
+      pokud to neplatí.
+- [ ] Týmová soutěž a cílová tabule jsou zmíněné; pořadí regionů sedí s návrhem cílové tabule.
+- [ ] Zdroje odpovídají kartě; postup a zdroje v popisu videa existují.
+- [ ] V úvodu není návod k závodu (jak se kola jedou, průběžné pořadí, nesčítání kol); blok 4b faktory jen jmenuje
+      a říká jejich díl. Žádné důvody u favoritů, otázka pro diváka ani přívlastky o kvalitě analýzy.
+- [ ] Délka podle §3; `scripts/kontrola_srozumitelnosti.py --divak` bez nálezu.
+- [ ] Každé tvrzení volitelných vět před pozdravem platí na konečné tabulce.
+
+### 6. Vazby na obraz (otevřené)
+
+Obrazové skilly úvodu (`intro-part1-trademark-startlist`, `intro-part2-teaser-storywindow`, `intro-part3-explainer`)
+vznikly pro starý úvod. Do obrazu nového úvodu patří: mapa ligy s popiskem o složení, vlajky favoritů ve třech
+skupinách, žlutý a zelený trikot, šest týmů na mapě a titulek s přesnou definicí ukazatele a rokem dat. Sladění
+obrazové části čeká na Ondřeje. Graf bloku 4b je od 16. 11. 2026 postavený ve stylu střihu (popis u bloku 4b).
 
 
 # Skill: voiceover-cestina-SKILL-v1.0.md
