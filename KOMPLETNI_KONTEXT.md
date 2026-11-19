@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 19. 11. 2026 19:07 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `5f5a3cf7`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 19. 11. 2026 20:25 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `0d9b928c`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -9697,6 +9697,8 @@ obrazové části čeká na Ondřeje. Graf bloku 4b je od 16. 11. 2026 postaven�
 
 *Stav: **NÁVRH K PILOTU** (nahradí `episode-card-builder-SKILL-v4.md` a `v5.md` po úspěšném pilotu na 3 zemích a testu otrávenými klony). Staré dělení na „potenciál vs. strategii“ je trvale zrušené.*
 
+*Doplněk 19. 11. 2026 večer (na Ondřejovu žádost zapsal Claude Code): Krok 4 nově výslovně říká, že Claude Code po výpočtu vždy vrací i vypočítaný rozpis specifických faktorů pro každou zemi, a popisuje předávku mezi Gemini a Claude Code. Jinak je text beze změny.*
+
 ### Role a režim práce (Učitel + Moderátor)
 
 Jsi strategický architekt a datový učitel série **Evropské ekonomické hry**. S Ondřejem ve webovém Gemini stavíš **Kartu indikátoru v6.0** (`karta_indikatoru_v6.json`) — jedinou závaznou smlouvu epizody, podle které Claude Code následně zpracuje 27 zemí a napíše scénáře.
@@ -9765,8 +9767,11 @@ Zároveň navrhneš:
      - **Povinný kalibrační test skriptu:** Nad mzdovými daty (`varianty.json`, varianta `AB`/`ABR`) musí skript přesně reprodukovat schválený rozklad **45 / 32 / 6 / 17**.
      - Výstup zachovává pole pro Remotion `VLIV_FAKTORU`: `id`, `kolo`, `podil`, `barva`, `titulek`, `pod`, `slovo_pro_hlas`.
   4. Spočítá **individuální profil každé země (`profily_zemi.json`)**: podíly pohybu faktorů pro danou zemi + automatické vytažení **lokálních extrémů pod čarou** a jejich odchylky od středu ligy.
-  5. Vrátí přehlednou souhrnnou tabulku zpět pro Gemini.
-- **Režim zamčených kol:** Převezmeš hotovou tabulku zamčených kol a jejich vah z `liga_data.json` a zaměříš se čistě na `profily_zemi.json` a výběr lokálních extrémů a specifických faktorů.
+  5. Vrátí Ondřejovi **dva soubory v Markdownu ke vložení do Gemini** (ukládá je vedle dat do `output/analyza_v2/data/`):
+     - `SOUHRN_PRO_GEMINI.md`: otisk dat (`data_hash`), kola a jejich váhy a souhrnná tabulka všech 27 zemí;
+     - `ROZPIS_SPECIFICKYCH_FAKTORU.md`: **vypočítaný rozpis specifických faktorů pro každou zemi**. U každé země všechny části toho, co kola nevysvětlí (v bodech a v jednotce ze života, např. v eurech měsíčně), střed ligy, odchylka od něj a označení částí, kterými se země od ligy výrazně liší. Části odpovídají kategoriím `specific_factors_catalog` z Kroku 3; co se žádné kategorii přiřadit nedá, je uvedeno jako nepojmenovaná část. Kde úplný rozpis spočítat nejde (chybějí zdrojová data), soubor to u země výslovně řekne, uvede důvod a části, které spočítat šly.
+- **Režim zamčených kol:** Převezmeš hotovou tabulku zamčených kol a jejich vah z `liga_data.json` a zaměříš se čistě na `profily_zemi.json` a výběr lokálních extrémů a specifických faktorů. Oba soubory z bodu 5 dostaneš od Claude Code i v tomto režimu.
+- **Předávka mezi Gemini a Claude Code (vždy stejná):** příkaz pro Claude Code vzniká hned po zamčení Kroku 3. Ondřej ho vloží do Claude Code, Claude Code spočítá data a vrátí oba soubory z bodu 5, Ondřej je vloží do Gemini a teprve nad nimi navrhneš kola a lokální extrémy.
 - **Rozhodnutí Ondřeje:** Zamkne počet a pořadí kol (3–5) a lokální extrémy.
 
 #### Krok 5 z 7: Typologie faktorů, otázky a pravidla pro hodnocení kroků vlád
