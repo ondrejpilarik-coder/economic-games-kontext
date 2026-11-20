@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 19. 11. 2026 20:25 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `bfddaae4`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 20. 11. 2026 14:07 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `934c3050`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -9931,6 +9931,8 @@ Každému kolu a hlavnímu specifickému faktoru přiřadíš **1 ze 6 typů**, 
 
 *Stav: **NÁVRH K PILOTU** (nahradí výkladovou část `analyza-pricin-regiony-SKILL-v1.6.md` po úspěšném pilotu). Výběr faktorů a ligové váhy jsou již zamčené v `karta_indikatoru_v6.json`.*
 
+*Doplněno 20. 11. 2026 (Ondřej): pravidlo 8 o důvodech, kterým lidé věří (`public_beliefs`), a pole `public_beliefs_tests` ve schématu karty. Ostatní text beze změny.*
+
 ### Účel a povinné vstupy
 
 Pro každou zemi (mimo zamčené regiony uvedené v `card_metadata.frozen_regions`) vytvoříš **jediný autoritativní podklad**: `output/analyza_v2/karty_zemi/{ISO}.json` (+ čitelný náhled `{ISO}.md`). Tím odpadají čtyři ztrátové předávky mezi `vyklad/`, `ekonomove/`, `soudy_*` a `PODKLAD_SCENAR`.
@@ -9993,6 +9995,10 @@ Kdykoli hodnotíš krok státu, soudu, města nebo firem, **nikdy netipuj** — 
   - Pokud je největší částí skutečný rozdíl složení trhu práce (např. zkrácené úvazky v Maďarsku/Rakousku), označ `is_composition_difference: true` a napiš pro něj křišťálově jasné vysvětlení (koho počítala kola vs. koho cíl) + přilož druhý reálný faktor (např. DPH), pokud je významný.
   - Skutečnou technickou vadu dat (`is_data_bug: true`) řeš primárně opravou dat; pokud opravit nejde, zapiš ji jen jako stručnou výhradu a vyhoď do `EXCEPTION_DIGEST.md`.
 - **Pozor na významový skluz u peněz:** U částek v `life_unit_impact` (např. *+170 € za obvyklý díl koláče*) vždy zapiš pole `money_scope_note` (co přesně ta částka měří, aby ji scénář omylem nepřipsal jediné reformě).
+
+#### 8. Důvody, kterým lidé věří (`public_beliefs`)
+Každou položku v `working_theses[ISO].public_beliefs` otestuj tvrdými daty a vrať objekt `{ claim, verdict: 'sedi'|'napul'|'nesedi', evidence_one_liner, use_in_script: true|false, target_slot: 'kolo_1'|'kolo_2'|'kolo_3'|'finale' }`. Pokud je `public_beliefs` prázdné, žádný stereotyp nevymýšlej.
+- Objekty zapiš do seznamu `public_beliefs_tests` v kartě země, jeden na každou položku; výchozí `target_slot` je `target_slot_hint` z karty indikátoru.
 
 ---
 
@@ -10140,6 +10146,15 @@ Do digestu jde **každá karta**, která spustí libovolnou pojistku: stupeň `o
     ],
     "paper_illusion_flag": null
   },
+  "public_beliefs_tests": [
+    {
+      "claim": "Doslovně z working_theses[ISO].public_beliefs[].claim",
+      "verdict": "sedi | napul | nesedi",
+      "evidence_one_liner": "Jedna věta s číslem, rokem a zdrojem.",
+      "use_in_script": true,
+      "target_slot": "kolo_1 | kolo_2 | kolo_3 | finale"
+    }
+  ],
   "forbidden_claims": [
     "Že vysoké odvody vyhánějí Slovince do ciziny víc než sousedy",
     "Že za vyšší díl mezd mohou jen slovinští majitelé firem"
@@ -10157,6 +10172,8 @@ Do digestu jde **každá karta**, která spustí libovolnou pojistku: stupeň `o
 ## Voiceover: Faktická verze scénáře regionu v2.0
 
 *Stav: **NÁVRH K PILOTU** (nahradí `voiceover-mapa-pribehu-SKILL-v1.2.md` po úspěšném pilotu a testu otrávenými klony). Plynule navazuje na `analyza-pricin-zeme-SKILL-v2.0.md` (vstup) a webový komentátorský skill `ekonomicke-hry-ctiva-verze-v2-3` (přepis).*
+
+*Doplněno 20. 11. 2026 (Ondřej): oddíl 3, bod 7 o důvodech, kterým lidé věří (`public_beliefs`), a o očekávaném umístění (`ranking_expectation`). Ostatní text beze změny.*
 
 **Přechodné pravidlo pro Epizodu 1 (Mzdy):** Již namluvený a sestříhaný region **Balkán** je uzavřená výjimka a nepřepisuje se podle nových pravidel zpětně. Tento skill se nasazuje od pilotu a zbývajících 5 regionů Epizody 1 + pro všechny další epizody.
 
@@ -10226,6 +10243,7 @@ Skript `kontrola_scenare_v2.py --predstart` ověří:
    - **Tvář země (`country_face`):** bez příčinného slova, hned za ní poctivé propojení se skutečným důvodem.
    - **Obraz bez češtiny:** Každý řádek `[VIZUÁL: …]` obsahuje přesná data pro `liga.ts`, jméno ikony (`icon_id_remotion`) a anglické štítky.
 6. **Značení pro Gemini:** `**tučně**` max. 40 % slov (jen krátké jádro: číslo, omezující slovo, směr, slovo soudu, tvář země); `{volitelné: …}` pro škrtatelné doplňky.
+7. **Důvody, kterým lidé věří (`public_beliefs`), a očekávané umístění:** Položky z `public_beliefs` s `use_in_script: true` vpleť přirozeně v 1–2 větách VÝHRADNĚ v jejich závazném `target_slot` (nikdy je nepřesouvej do jiného kola a nikdy je neuváděj referátově jako anketu). `ranking_expectation` patří jen na start země v 1. kole.
 
 ---
 
