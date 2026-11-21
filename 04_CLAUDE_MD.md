@@ -16,9 +16,12 @@ skilly ve stavu „NÁVRH K PILOTU“: stavbu karty indikátoru 6.0, analýzu p�
 regionu 2.0 (jsou v přehledu skillů níže). Dokud neprojde zkouška kontrol úmyslnou vadou a pilot na třech zemích
 a Ondřej nerozhodne o přepnutí, platí dál postupy z tohoto oddílu a podle nových skillů se nic nepřepisuje; namluvený
 a sestříhaný Balkán zůstane uzavřenou výjimkou i potom. Jednotná data mezd pro pilot a popis otisku dat:
-`05_epizode_packs/ep_001_prumerna_mzda_pps_v18/output/analyza_v2/README.md`. Skill čtivé verze používá Gemini na
-webu ve verzi 2.3; v repozitáři je zatím verze 1.1 (Ondřej novou pošle k uložení). Stav a další krok:
-`PREKLADOVY_MUSTEK.md`.
+`05_epizode_packs/ep_001_prumerna_mzda_pps_v18/output/analyza_v2/README.md`. Skill čtivé verze pro Gemini na webu:
+`05_epizode_packs/_skills/ekonomicke-hry-ctiva-verze-SKILL-v3.0.md` (od Ondřeje) a verze 3.1 s doplňky z 21. 11. 2026,
+kterou Ondřej nahrává do Gemini. 21. 11. 2026 Ondřej schválil doplňky všech čtyř pilotních skillů ze tří posudků
+(účetní rozdíl v cíli do hlasu nepatří, strop délky jen upozornění, soud nad jízdou a tahy s váhou, sousedé, vrácený
+oddíl „Jak se staví výklad“); **pořadí práce: nejdřív doplňky do skillů a commit, teprve potom přepis textů**. Stav
+a další krok: `PREKLADOVY_MUSTEK.md`.
 
 - **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.2.md` postaví mapu příběhu
   (kostra `py scripts/kostra_mapy_pribehu.py --region "…"`) a napíše **faktickou verzi** scénáře regionu se zámkem
