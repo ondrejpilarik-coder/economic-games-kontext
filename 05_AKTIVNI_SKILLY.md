@@ -9800,17 +9800,22 @@ proti kartám):**
 > Třetí je Polsko. Polák bere v čistém kolem 1 310 eur, skoro stejně jako Slovák, v Polsku je ale levněji, hlavně
 > bydlení a energie, a tak si doma koupí tolik jako jinde v Evropě za 1 870. Na startu bylo poslední v regionu,
 > protože každý pátý pracující Polák hospodařil na poli, hlavně na malých políčkách. Odchod z polí pak udělal asi
-> polovinu toho, o co Polsko rostlo rychleji než Slovensko. V zemědělství dnes pracuje o dva miliony lidí méně a práce
-> přibylo v továrnách a kancelářích, kde každý vytvoří mnohem víc. A stát mu z výplaty bere nejméně v regionu.
+> polovinu toho, o co Polsko rostlo rychleji než Slovensko: v zemědělství pracuje o dva miliony lidí méně a práce
+> přibylo tam, kde každý vytvoří mnohem víc. A stát mu z výplaty bere nejméně v regionu.
 
 *Pořadí se změnilo kvůli tomu, kdo se počítá (Nizozemsko; při přepisu Skandinávie a Beneluxu se ověří kontrolou váhy důvodů, zkouška C a D: rozklad proti Dánsku ukazuje větší díly v koláči a v drahotě života než v nepojmenované části):*
 > Vítězem regionu je Nizozemsko. Nizozemec bere méně eur než Dán, jenže život je v Nizozemsku levnější, a tak si
 > koupí o kousek víc. Jak to, že po třech kolech bylo až čtvrté? Průměr na jednoho pracujícího tu sráží to, že čtyři
 > z deseti Nizozemců pracují jen část týdne, a většinou to tak chtějí. Cíl ale porovnává výplaty za plný úvazek.
 
-*Jedna otázka v odstavci (Litva; důvod z rozkladu proti Estonsku a dopad na výplatu se doplní při přepisu Pobaltí, zkouška C a D):*
-> Vítězem regionu je Litva. Estonci chodí na účet víc eur, v Litvě ale stejné peníze vystačí dál, a tak si víc koupí
-> Litevec. První místo drží Litva už od druhého kola, kdy předjela Estonsko.
+*Dva skoro stejně velké důvody a jeden proti nim (Litva; doplněno při přepisu Pobaltí 21. 11. 2026 večer, zkouška C
+a D; bydlení s energiemi je specifický faktor „drahota života proti cenám výroby“, ne převod na kupní sílu):*
+> Vítězem regionu je Litva. Litevec bere v čistém kolem 1 490 eur, méně než Estonec. V Litvě je ale o pětinu levněji,
+> a tak si doma koupí víc: tolik jako jinde v Evropě za 1 900. Před Estonskem ji drží dvě skoro stejně velké věci:
+> rychlejší růst, kterým ho po roce 2021 předjela, a levné bydlení s energiemi, za tři pětiny průměru Unie, levnější,
+> než by odpovídalo tomu, co Litva vyrábí. Kdyby Estonsko mělo kteroukoli z nich, měl by Estonec na účtu asi
+> o osmdesát až sto eur víc. Estonské firmy přitom dávají lidem z výdělku víc než litevské. Bez toho by byl náskok
+> Litvy víc než dvakrát větší.
 
 *Kolo: odstup od souseda, který divák čeká naopak (Maďarsko na startu; scéna z posudku ChatGPT):*
 > Maďarsko prodávalo podniky západním firmám dřív než Česko. Jak tedy může startovat až za ním? Na začátku
