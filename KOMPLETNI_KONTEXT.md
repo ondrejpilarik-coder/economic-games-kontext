@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 22. 11. 2026 00:04 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `01a79bd7`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 22. 11. 2026 00:34 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `9ac2d72e`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -10676,10 +10676,15 @@ proti kartám):**
 > polovinu toho, o co Polsko rostlo rychleji než Slovensko: v zemědělství pracuje o dva miliony lidí méně a práce
 > přibylo tam, kde každý vytvoří mnohem víc. A stát mu z výplaty bere nejméně v regionu.
 
-*Pořadí se změnilo kvůli tomu, kdo se počítá (Nizozemsko; při přepisu Skandinávie a Beneluxu se ověří kontrolou váhy důvodů, zkouška C a D: rozklad proti Dánsku ukazuje větší díly v koláči a v drahotě života než v nepojmenované části):*
-> Vítězem regionu je Nizozemsko. Nizozemec bere méně eur než Dán, jenže život je v Nizozemsku levnější, a tak si
-> koupí o kousek víc. Jak to, že po třech kolech bylo až čtvrté? Průměr na jednoho pracujícího tu sráží to, že čtyři
-> z deseti Nizozemců pracují jen část týdne, a většinou to tak chtějí. Cíl ale porovnává výplaty za plný úvazek.
+*Pořadí se změnilo kvůli tomu, kdo se počítá, a kvůli drahotě u souseda (Nizozemsko; ověřeno kontrolou váhy důvodů
+v noci na 22. 11. 2026, `scenare/SKANDINAVIE_A_BENELUX/KONTROLA_VAHY_DUVODU.md`: obrat proti Dánsku dělají lidé, kteří
+pracují jen část týdne nebo na sebe, a dánské bydlení skoro stejným dílem; proti tomu rychlejší dánský růst.
+Dřívější znění vysvětlovalo celý skok jen úvazky):*
+> Vítězem regionu je Nizozemsko. Nizozemec bere méně eur než Dán, jenže život je v Dánsku o dost dražší, a tak si
+> Nizozemec doma koupí o kousek víc. Jak mohlo vyhrát, když bylo po třech kolech až čtvrté? Spousta Nizozemců pracuje
+> jen část týdne nebo na sebe, a cíl porovnává zaměstnance na plný úvazek. Dánům k tomu ukrojí bydlení, které je proti
+> tomu, co Dánsko vyrábí, mnohem dražší: s nizozemským by si Dán koupil, jako by měl na účtu asi o dvě stě třicet eur
+> víc. Dánsko přitom rostlo rychleji, a tak Nizozemsko vyhrálo jen těsně.
 
 *Dva skoro stejně velké důvody a jeden proti nim (Litva; doplněno při přepisu Pobaltí 21. 11. 2026 večer, zkouška C
 a D; bydlení s energiemi je specifický faktor „drahota života proti cenám výroby“, ne převod na kupní sílu):*
