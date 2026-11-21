@@ -25,7 +25,10 @@ odpoledne Ondřej schválil nový skill **Kontrola váhy důvodů** (`05_epizode
 každý důvod pořadí v cíli stojí na rozkladu rozdílu mezi sousedy, říká dopad na výplatu a nesmí být výplatou ani cenami;
 váhu důvodů kontroluje koordinující sezení, fakta jiný model než ten, který psal karty (Fable proti Opusu). Skill
 čtivé verze pro Gemini je od té chvíle ve verzi 3.2, večer 3.3 (zbylé výtky z oponentur Clauda a ChatGPT: pět
-dalších vzorců Claudoviny, upřesněná vlajka 4, opora ve faktické verzi v protokolu). Stav
+dalších vzorců Claudoviny, upřesněná vlajka 4, opora ve faktické verzi v protokolu). V noci na 22. 11. Ondřej
+rozhodl: v hlase „průměrná země ligy“ místo „střední země ligy“, zelený trikot dočasně zrušený, v kolech jen
+pořadí v regionu (bez celoligových míst); zapsáno ve skillech scénáře, analýzy, mapy příběhu, úvodu, velkého
+finále a ve skillu Gemini 3.4. Stav
 a další krok: `PREKLADOVY_MUSTEK.md`.
 
 - **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.2.md` postaví mapu příběhu

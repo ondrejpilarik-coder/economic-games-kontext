@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 21. 11. 2026 22:34 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `0eee00e0`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 21. 11. 2026 23:41 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `26bd7981`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -358,7 +358,10 @@ odpoledne Ondřej schválil nový skill **Kontrola váhy důvodů** (`05_epizode
 každý důvod pořadí v cíli stojí na rozkladu rozdílu mezi sousedy, říká dopad na výplatu a nesmí být výplatou ani cenami;
 váhu důvodů kontroluje koordinující sezení, fakta jiný model než ten, který psal karty (Fable proti Opusu). Skill
 čtivé verze pro Gemini je od té chvíle ve verzi 3.2, večer 3.3 (zbylé výtky z oponentur Clauda a ChatGPT: pět
-dalších vzorců Claudoviny, upřesněná vlajka 4, opora ve faktické verzi v protokolu). Stav
+dalších vzorců Claudoviny, upřesněná vlajka 4, opora ve faktické verzi v protokolu). V noci na 22. 11. Ondřej
+rozhodl: v hlase „průměrná země ligy“ místo „střední země ligy“, zelený trikot dočasně zrušený, v kolech jen
+pořadí v regionu (bez celoligových míst); zapsáno ve skillech scénáře, analýzy, mapy příběhu, úvodu, velkého
+finále a ve skillu Gemini 3.4. Stav
 a další krok: `PREKLADOVY_MUSTEK.md`.
 
 - **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.2.md` postaví mapu příběhu
@@ -802,7 +805,7 @@ Obsah (37 skillů):
 - voiceover-styl-ondrej-SKILL-v1.0.md
 - references/voiceover-komentar-zlaty-vzor-2026-09-24.md
 - causal-claim-repair-ADDENDUM-v1.0.md
-- ekonomicke-hry-ctiva-verze-SKILL-v3.3.md (NÁVRH K PILOTU, zatím neplatí)
+- ekonomicke-hry-ctiva-verze-SKILL-v3.4.md (NÁVRH K PILOTU, zatím neplatí)
 
 Návrhy k pilotu (5) jsou označené v obsahu i v nadpisu. Neplatí, dokud pilot neprojde a Ondřej nerozhodne o přepnutí; do té doby platí dosavadní postupy.
 
@@ -6557,6 +6560,11 @@ Balkánu, čtyři regiony ze 13. 11.); přehled: `10_documents/active/2026-11-17
 
 *Změněno 21. 11. 2026 večer (Ondřej): body šampionátu a body týmů se v regionech neříkají ani neukazují; vysvětlí se jednou ve velkém finále (`voiceover-velke-finale-SKILL-v1.0.md`).*
 
+**Rozhodnutí Ondřeje z noci na 22. 11. 2026 (platí pro faktické verze i pro kontrolu čtivých verzí; Ondřej: „promítnout do kontroly čtivých verzí a budoucích faktických scénářů“):**
+1. **V hlase se neříká „střední země ligy“** (zní jako střední Evropa). Říká se „průměrná země ligy“ nebo „průměrná evropská země“. V řádku VIZUÁL smí zůstat `LEAGUE MEDIAN`.
+2. **Zelený trikot je dočasně zrušený:** neuvádí se v hlase ani v řádku VIZUÁL (ani role „adept na zelený trikot“).
+3. **Celoligová pořadí (1. až 27.) se ruší i u jednotlivých faktorů v 1. až 3. kole:** v kolech zůstává jen pořadí v regionu, v hlase i v obraze. Dál platí: na kartách zemí v cíli žádné konečné ligové místo a cílová tabule ligy v závěru regionu ukazuje jen dojeté země.
+
 **Co se změnilo ve verzi 1.2 (13. 11. 2026; úplné znění).** Ondřej si v Pobaltí všiml dvou věcí, které nezadal, a obě se po dohledání ukázaly jako mezera v postupu. Zkouška na Pobaltí: `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/gemini/POBALTI_FABLE_2026-11-10/`.
 1. **Tvář země, ne jen příčina** (pravidlo „Co za tím stálo“, bod 7): test nosnosti rozhoduje o tom, co smí být
    příčina, ne o tom, co smí zaznít. Firmy, které si divák se zemí spojuje (Skype, Vinted), zazní jménem jako tvář
@@ -9385,6 +9393,13 @@ ho Claude při psaní mapy příběhu dřív, než začne psát faktickou verzi.
 
 *Změněno 21. 11. 2026 večer (Ondřej): body šampionátu a body týmů se v regionech neříkají ani neukazují; vysvětlí se jednou ve velkém finále (`voiceover-velke-finale-SKILL-v1.0.md`).*
 
+**Rozhodnutí Ondřeje z noci na 22. 11. 2026 (platí pro faktické verze i pro kontrolu čtivých verzí; Ondřej: „promítnout do kontroly čtivých verzí a budoucích faktických scénářů“):**
+1. **V hlase se neříká „střední země ligy“** (zní jako střední Evropa). Říká se „průměrná země ligy“ nebo „průměrná evropská země“. V řádku VIZUÁL smí zůstat `LEAGUE MEDIAN`.
+2. **Zelený trikot je dočasně zrušený:** neuvádí se v hlase ani v řádku VIZUÁL (ani role „adept na zelený trikot“).
+3. **Celoligová pořadí (1. až 27.) se ruší i u jednotlivých faktorů v 1. až 3. kole:** v kolech zůstává jen pořadí v regionu, v hlase i v obraze. Dál platí: na kartách zemí v cíli žádné konečné ligové místo a cílová tabule ligy v závěru regionu ukazuje jen dojeté země.
+
+Zelený trikot je v úvodu (blok 3) a v rolích zemí do odvolání zrušený.
+
 > **Stav:** úplné znění; **od 17. 11. 2026 platné a uložené v projektu** (Ondřej 17. 11. 2026 v noci: „Ano určitě…
 > určitě všechno hned commitni“; o grafu faktorů: „To mně přijde taky dost důležitý a dost to pomohlo“). Slovo
 > „necommitováno“ u doplňků níže popisuje stav před tímto dnem. Platí pro scénáře stavěné po regionech
@@ -9888,6 +9903,8 @@ Každému kolu a hlavnímu specifickému faktoru přiřadíš **1 ze 6 typů**, 
 
 *Doplněno 21. 11. 2026 (Ondřej schválil návrh doplňků ze tří posudků: Gemini, ChatGPT a Claude; `10_documents/active/2026-11-20_oponentura_podkladu_v3_2/DOPLNKY_DO_SKILLU_NAVRH.md`). Změněno: pravidlo 3 (rok podle kola), 4 (soud nad jízdou a tahy s váhou), 7 (cíl stojí na celkovém rozsudku; účetní rozdíl do hlasu nepatří), 8 (představy bez verdiktu „napůl“). Nové: pravidlo 9 (sousedé), 10 (věta, kterou bys řekl sousedovi), 11 (oblouk vzorců) a oddíl o tom, jak kontrolor opravuje. Ve schématu nová pole. Ostatní text beze změny. Proč: noční karty a scénáře z 20. 11. vykládaly v cíli rozdíl proti vlastnímu výpočtu pořadu (Maďarsko, Slovensko), soudily jen 9 z 66 kol a do hlasu posílaly razítka „napůl“ a „ani chyba, ani zásluha“.*
 
+*Doplněno v noci na 22. 11. 2026 (Ondřej): věty pro hlas v kartě (`plain_line`, `line_for_voice`, `word_for_voice`, `effect_line`) neříkají „střední země ligy“ (říká se „průměrná země ligy“), nezmiňují zelený trikot (dočasně zrušený) a v kolech neuvádějí celoligová místa 1. až 27., jen pořadí v regionu. Data v kartě (místa v lize) zůstávají pro výpočty.*
+
 *Doplněno 21. 11. 2026 odpoledne (Ondřej schválil skill `kontrola-vahy-duvodu-SKILL-v1.0.md`): pravidlo 7 body 1 a 5 (rozsudek a soused v cíli odpovídají na otázku odstavce, stojí na dílu rozkladu a říkají dopad na výplatu; výplata, eura na účtu ani ceny nejsou důvod pořadí), pravidlo 4 (velký účinek tahu jen s porovnáním) a ve schématu pole `finale.verdict_basis`, `finale.neighbor.component`, `finale.neighbor.effect` a `moves[].effect_check`. Ostatní text beze změny. Proč: ukázka cíle Střední Evropy z 21. 11. řekla proč, ale ne kolik to udělalo s výplatou, u Slovenska vysvětlila výplatu výplatou a u Polska jmenovala slabší důvod místo silnějšího.*
 
 ### Účel a povinné vstupy
@@ -10313,16 +10330,17 @@ vlastně je dost zásadní pro tu dlouhodobou soutěž… Možná až ve finále
    jednotkami (od druhé epizody).
 2. Divák rozumí eurům. Otázka „kolik mi přijde na účet a co si za to koupím“ je důvod, proč se dívá. Body v regionech
    by byly další vrstva čísel, a hustota čísel byla největší problém scénářů.
-3. Pletly by se dva středy. Regiony srovnávají se **střední zemí ligy** (nad ní polovina ligy, pod ní druhá
-   polovina). Body mají sto jako **průměr všech zemí ligy**. Jsou to dvě různé věci a nikdy se nezaměňují ani
-   v hlase, ani v obraze.
+3. Pletly by se dva středy. Regiony srovnávají se zemí uprostřed ligy (nad ní polovina ligy, pod ní druhá
+   polovina; v hlase se jí od 22. 11. 2026 říká **„průměrná země ligy“**, v obraze `LEAGUE MEDIAN`). Body mají sto
+   jako **průměr všech zemí ligy**. Jsou to dvě různé čísla (u mezd 2 100 a 2 200 v kupní síle měsíčně). Ve finále
+   proto u bodů říkat „průměr všech sedmadvaceti zemí“, nikdy „průměrná země ligy má sto bodů“.
 
 #### 1.2 Jak se body počítají (pro text i obraz)
 - **Body země v disciplíně** = 100 × výsledek země / průměr všech zemí ligy. U ukazatele, kde je méně lépe (třeba
   roky výplaty na byt), obráceně: 100 × průměr / výsledek, aby víc bodů bylo vždy lépe.
 - **Body týmu** = prostý průměr bodů jeho zemí (tým je region).
 - **Žlutý trikot**: země s nejvíc body v celkovém pořadí, které sčítá body ze všech dosavadních disciplín.
-- **Zelený trikot**: největší skok dopředu (v epizodě o mzdách od roku 1996 do roku 2024), počítá se zvlášť.
+- **Zelený trikot je dočasně zrušený** (Ondřej 22. 11. 2026): ve finále se nevyhlašuje a v obraze není.
 - U odvětvových disciplín (třeba cestovní ruch) se body do celkového pořadí ředí podle váhy odvětví; zapíše se
   v epizodě, kde to poprvé nastane. Výpočet: `scripts/build_season_standings.py`, registr
   `05_epizode_packs/_registry/season_standings.json`.
@@ -10346,8 +10364,8 @@ Seznam se doplňuje při psaní každého regionu: co hlas slíbí na později, 
 
 1. **První držitel žlutého trikotu** (úvod, část 2: „Jeho lídr veze žlutý trikot, a právě dnes poznáme jeho prvního
    držitele.“). Před vyhlášením vysvětlení bodů (oddíl 1.3).
-2. **Zelený trikot za největší skok** (úvod, část 3; favorité Rumunsko, Bulharsko, Chorvatsko a Litva). V Pobaltí
-   zaznělo, že si ho drží Rumunsko.
+2. ~~Zelený trikot~~ **dočasně zrušený** (Ondřej 22. 11. 2026). Úvod ve videu ho ale v části 3 slibuje; Ondřej
+   úvod upravuje, tuhle část je potřeba vyškrtnout nebo přepsat.
 3. **Pořadí týmů s body týmů** (úvod, část 4: „Soutěží se i týmově“). V regionech body týmů nezazněly.
 4. **Vyhodnocení tipů z úvodu:** favorité Švýcarsko, Dánsko, Nizozemsko, Norsko; černí koně Rakousko a Irsko; u dna
    tabulky Bulharsko, Chorvatsko, Řecko a Maďarsko (úvod, část 2). Vyhodnotit i tipy, které nevyšly.
@@ -10500,6 +10518,11 @@ modelu.
 
 *Změněno 21. 11. 2026 večer (Ondřej): body šampionátu a body týmů se v regionech neříkají ani neukazují; vysvětlí se jednou ve velkém finále (`voiceover-velke-finale-SKILL-v1.0.md`).*
 
+**Rozhodnutí Ondřeje z noci na 22. 11. 2026 (platí pro faktické verze i pro kontrolu čtivých verzí; Ondřej: „promítnout do kontroly čtivých verzí a budoucích faktických scénářů“):**
+1. **V hlase se neříká „střední země ligy“** (zní jako střední Evropa). Říká se „průměrná země ligy“ nebo „průměrná evropská země“. V řádku VIZUÁL smí zůstat `LEAGUE MEDIAN`.
+2. **Zelený trikot je dočasně zrušený:** neuvádí se v hlase ani v řádku VIZUÁL (ani role „adept na zelený trikot“).
+3. **Celoligová pořadí (1. až 27.) se ruší i u jednotlivých faktorů v 1. až 3. kole:** v kolech zůstává jen pořadí v regionu, v hlase i v obraze. Dál platí: na kartách zemí v cíli žádné konečné ligové místo a cílová tabule ligy v závěru regionu ukazuje jen dojeté země.
+
 **Přechodné pravidlo pro Epizodu 1 (Mzdy):** Již namluvený a sestříhaný region **Balkán** je uzavřená výjimka a nepřepisuje se podle nových pravidel zpětně. Tento skill se nasazuje od pilotu a zbývajících 5 regionů Epizody 1 + pro všechny další epizody.
 
 ---
@@ -10509,7 +10532,7 @@ modelu.
 | Krok | Kdo | Odpovědnost |
 |---|---|---|
 | 1. Faktická verze (`FAKTICKA_VERZE.md`) | **Claude Code (tento skill)** | Sestaví jasný faktický příběh ze zamčených JSON karet, doplní anglické `[VIZUÁL: …]` bloky a programově připojí `NEŘÍKEJ`. |
-| 2. Čtivá verze (`CTIVA_VERZE.md`) | **Gemini Web (`ekonomicke-hry-ctiva-verze`, od 21. 11. 2026 večer verze 3.3)** | Přidá sportovní rytmus, napětí a obrazy; smí výklad přestavět, přesunout čísla do `[VIZUÁL: …]` a vazbu, která ve faktické verzi je, podat po svém. **Novou příčinu, číslo, slovo „hlavně“ či „jen“ ani nového viníka nedoplňuje** (Ondřej 21. 11. 2026): chybějící článek vrací Claudovi jako otázku. Nemění pořadí, čísla v hlase, váhu důvodů ani sílu soudů. |
+| 2. Čtivá verze (`CTIVA_VERZE.md`) | **Gemini Web (`ekonomicke-hry-ctiva-verze`, od noci na 22. 11. 2026 verze 3.4)** | Přidá sportovní rytmus, napětí a obrazy; smí výklad přestavět, přesunout čísla do `[VIZUÁL: …]` a vazbu, která ve faktické verzi je, podat po svém. **Novou příčinu, číslo, slovo „hlavně“ či „jen“ ani nového viníka nedoplňuje** (Ondřej 21. 11. 2026): chybějící článek vrací Claudovi jako otázku. Nemění pořadí, čísla v hlase, váhu důvodů ani sílu soudů. |
 | 3. Finální audit smyslu a faktů + export `texty.json` | **Claude Code (Oddíl 5 níže)** | Ověří `DOPLNĚNO`, 8 faktických invariantů **a spustí finální slepý audit smyslu až na konečném hlase po Gemini**. Pak vyexportuje `texty.json` pro Remotion. |
 
 ---
@@ -10547,7 +10570,7 @@ nestačí, region se prodlouží. Při 150 slovech za minutu stojí 50 slov nav�
 - **Soběstačnost YouTube kapitol:** Divák může kliknout rovnou na kapitolu svého regionu, aniž viděl předchozí regiony. Proto se při prvním použití sdíleného obrazu v regionu vždy přidá jeho **půlvěté připomenutí** z `karta_indikatoru_v6.json -> episode_vocabulary[].chapter_reminder` (např. *„z koláče, o který se firma dělí mezi výplaty a svůj zisk“*), nikdy holé *„Vzpomeňte si na koláč“*.
 
 **Odstavcová kostra (1:1 mapování na `ekonomicke-hry-ctiva-verze-v2-3` a Remotion `texty.json`):**
-- **Žádná sekce `## Předstartovní showcase`.** Soubor začíná `# <Region>` a hned následuje `## Kolo 1 – <Název>`. Výrazné role zemí (favorit, adept na zelený trikot) se vpletou přímo do prvního vystoupení země v Kolu 1.
+- **Žádná sekce `## Předstartovní showcase`.** Soubor začíná `# <Region>` a hned následuje `## Kolo 1 – <Název>`. Výrazné role zemí (favorit, černý kůň; zelený trikot je dočasně zrušený) se vpletou přímo do prvního vystoupení země v Kolu 1.
 - Každé kolo má: **úvod kola** (`kN_uvod`, bez výčtu pořadí), **odstavce zemí** (`kN_<iso>`, od 1. místa v regionu po poslední) a **průběžné pořadí jen uvnitř regionu + pointu končící hlavním ukazatelem** (`kN_poradi`).
 - **Jeden klíč = jedna země v jednom kole** (21. 11. 2026). Sloučené odstavce typu `k3_hu_cz` se rozdělí; střih má na zemi jednu kotvu. Vypuštěním druhého odstavce se nesmí rozpadnout první.
 - **Konec kola** (`kN_poradi`): průběžné pořadí **jen v regionu, v hlase i v řádku VIZUÁL**, bez ligových míst (průběžné pořadí je propočet, ne výsledek). Pointa vzorce z oblouku vzorců (analytický skill, pravidlo 11), jen když ji oblouk má. **Na konci 3. kola zazní celé průběžné pořadí regionu po třech hlavních faktorech**, od prvního po posledního („Do cílové rovinky jede první Litva, druhé Estonsko a třetí Lotyšsko.“).
@@ -10677,7 +10700,7 @@ mereni_claudoviny.py`) a první zemi nového regionu čte Ondřej jako krátkou 
 2. **Zákaz počítání v hlase (ve VŠECH kolech i v cíli):**
    - Poměry, procenta a „kolik eur ze sta“ patří výhradně do `[VIZUÁL: …]`.
    - V hlase zní obraz ze slovníku epizody, srovnávací slovo a nejvýš jedno číslo v jednotce ze života (mimo samotného výsledku země v cíli).
-   - **Tři tabule, které se nesmějí míchat (21. 11. 2026):** (a) **výkon v jednom faktoru**: regionální místo a u výrazných výkonů ligové místo *v tomto faktoru* („druhé v růstu v celé lize“), v hlase i v obraze; (b) **průběžné pořadí po kole**: jen region, v hlase i v obraze; (c) **skutečný cíl**: peníze a místo v regionu, žádné konečné ligové místo na kartě země. Cílová tabule ligy v závěru regionu ukazuje jen dojeté země.
+   - **Tři tabule, které se nesmějí míchat (21. 11. 2026):** (a) **výkon v jednom faktoru**: jen regionální místo, v hlase i v obraze (celoligové místo 1. až 27. se v kolech neříká ani neukazuje, Ondřej 22. 11. 2026; dřív „druhé v růstu v celé lize“); (b) **průběžné pořadí po kole**: jen region, v hlase i v obraze; (c) **skutečný cíl**: peníze a místo v regionu, žádné konečné ligové místo na kartě země. Cílová tabule ligy v závěru regionu ukazuje jen dojeté země.
    - **Váha kola v lize není tvrzení o jedné zemi:** „daně pohnou výplatou jen o pár procent“ platí pro rozdíly v celé lize, ne pro Británii, kterou kolo daní posunulo nejvíc. U jednotlivé země se říkají její dvě hodnoty nebo její posun.
 3. **Sousedé a dvojčata (změněno 21. 11. 2026):**
    - **V kole** u země, která je za sousedem o odstup nad prahem (`rounds[].neighbor` v kartě, `status: dolozeno`), zazní v **pevném hlase** důvod rozdílu (`line_for_voice`). Pod prahem stačí „těsně“. Se stavem `otevreno` jen průběh bez vymyšlené příčiny. Když karta zapsala, co by divák čekal naopak, odstavec začne touto otázkou (vzor Maďarska na startu v oddílu 3.0).
@@ -10692,7 +10715,7 @@ mereni_claudoviny.py`) a první zemi nového regionu čte Ondřej jako krátkou 
    - **Respektuj `money_scope_note`:** Nepřipisuj částku rozdílu celého faktoru jediné reformě, pokud měří jen rozdíl celkového podílu.
 5. **Česká jednoznačnost na poslech:**
    - **Kdo koho předjel:** Vždy jednoznačný aktivní rod (*„Rumunsko předjelo Bulharsko“*), nikdy dvojznačné *„Bulharsko, které přeskočilo Rumunsko“*.
-   - **Slovní hygiena:** Žádný ekonomický žargon bez obrazu („daňový klín“, „přidaná hodnota“), žádné kalky („tah země“, „cesta výplaty“, „podle kol / kola slibovala“). Vždy určující přívlastek (*centrální plánování*, *před druhou světovou válkou*). Zelený trikot vždy *„za největší skok“*.
+   - **Slovní hygiena:** Žádný ekonomický žargon bez obrazu („daňový klín“, „přidaná hodnota“), žádné kalky („tah země“, „cesta výplaty“, „podle kol / kola slibovala“). Vždy určující přívlastek (*centrální plánování*, *před druhou světovou válkou*). Místo „střední země ligy“ *„průměrná země ligy“* nebo *„průměrná evropská země“*. Zelený trikot je dočasně zrušený (Ondřej 22. 11. 2026).
    - **Tvář země (`country_face`):** bez příčinného slova, hned za ní poctivé propojení se skutečným důvodem.
    - **Obraz bez češtiny:** Každý řádek `[VIZUÁL: …]` obsahuje přesná data pro `liga.ts`, jméno ikony (`icon_id_remotion`) a anglické štítky.
 6. **Značení pro Gemini:** `**tučně**` max. 40 % slov (jen krátké jádro: číslo, omezující slovo, směr, slovo soudu, tvář země); `{volitelné: …}` pro škrtatelné doplňky.
@@ -18607,13 +18630,18 @@ délka (§8.6). Všechny tři jsou tvrdé; konflikt se řeší výběrem vhledu 
 a přesunem do UI (§8.3), nikdy oslabením kauzality ani nafouknutím bloku.
 
 
-# Skill (NÁVRH K PILOTU, zatím neplatí): ekonomicke-hry-ctiva-verze-SKILL-v3.3.md
+# Skill (NÁVRH K PILOTU, zatím neplatí): ekonomicke-hry-ctiva-verze-SKILL-v3.4.md
 
-## SKILL: Ekonomické hry – Čtivá verze pro voiceover (v3.3)
+## SKILL: Ekonomické hry – Čtivá verze pro voiceover (v3.4)
 
 **Určeno pro:** Gemini (přepis faktických scénářů z Claude Code do finálního mluveného slova pro dabing / ElevenLabs)  
 **Cíl:** Z věcně přesného, ale suchého faktického scénáře vytvořit **zábavný, napínavý, sportovně rytmický a pro naprostého laika srozumitelný komentář**, který zachová veškerou faktickou disciplínu a zároveň nekompromisně odhalí a vyčistí tzv. **„Claudovinu“**.
 
+> **Změny proti 3.3 (noc na 22. 11. 2026, tři rozhodnutí Ondřeje; zapsal Claude Code).** Změněná místa jsou označená **(3.4)**, jinak je text stejný jako 3.3.
+> 1. V hlase nikdy „střední země ligy“ (zní jako střední Evropa); říká se „průměrná země ligy“ nebo „průměrná evropská země“. V `[VIZUÁL]` smí zůstat `LEAGUE MEDIAN`.
+> 2. Zelený trikot je dočasně zrušený: ani v hlase, ani v `[VIZUÁL]`.
+> 3. V 1. až 3. kole žádná celoligová místa (1.–27.), ani u výkonu v jednom faktoru; jen pořadí v regionu.
+>
 > **Změny proti 3.2 (21. 11. 2026 večer; Ondřej: doplnit výtky z oponentur Clauda a ChatGPT, které ve skillu ještě nebyly; zapsal Claude Code).** Změněná místa jsou označená **(3.3)**, jinak je text stejný jako 3.2.
 > 1. Pět dalších vzorců Claudoviny, které skener dřív nechytal: hlas přiznává, co neví; shozená tvář; věta, která si protiřečí s jinou větou odstavce; dvě měřítka v jedné větě; jedna věc pod více jmény (oddíl 1).
 > 2. Vlajka 4: jedno vyvrácení představy těsně před příčinou je v pořádku (schválený vzor Rumunska); vlajka míří na výčet dvou a více věcí, které to nejsou, nebo na zápor, po kterém příčina nepřijde (oddíl 1).
@@ -18674,7 +18702,7 @@ a přesunem do UI (§8.3), nikdy oslabením kauzality ani nafouknutím bloku.
 | **7** | **Shozená tvář** | Slavná firma nebo osobnost země a hned za ní věta, která ji zmenší (*„Skype napsali estonští programátoři… jeho estonská pobočka ale měla necelé čtyři stovky lidí“*, *„jenže zaměstnává jen každého dvoustého“*). | Tvář je obraz země, ne příčina. Zmenšující údaj přesuň do `[VIZUÁL]` (**DO OBRAZU**), nebo tvář řekni bez příčinného slova a příčinu zvlášť. |
 | **8** | **Věta, která si protiřečí s jinou** | Po opravách kontrolora říká jedna věta „nejvíc ho odlišovaly finance“ a další, že finance zvedají průměr „jen o několik procent“. Tak dělají to banky, nebo ne? | Přečti odstavec celý. Nech jednu pravdivou verzi podle faktické verze, druhou zkrať nebo dej do obrazu. Když nevíš, která platí, `STOP – VRÁTIT CLAUDOVI`. |
 | **9** | **Dvě měřítka v jedné větě** | Na obyvatele i na pracujícího, „reálně“ i „proti střední zemi“, eura na účtu i kupní síla se dvěma čísly a srovnáním navrch. Divák počítá v hlavě. | Jedna věta, jedno měřítko. Druhé do `[VIZUÁL]`. Výjimka je věta o penězích v cíli (na účtu a doma), ta má obě částky. |
-| **10** | **Jedna věc pod více jmény** | Kus koláče, díl pro zaměstnance, díl výplat; střed ligy, střední země ligy, průměr všech sedmadvaceti zemí. | Drž jméno ze slovníku epizody a z faktické verze. „Střední země ligy“ a „průměr všech sedmadvaceti zemí“ jsou **různé věci**, nezaměňuj je ani kvůli rytmu. |
+| **10** | **Jedna věc pod více jmény** | Kus koláče, díl pro zaměstnance, díl výplat; průměrná země ligy, průměr všech sedmadvaceti zemí. **(3.4)** Výraz „střední země ligy“ v hlase nikdy (zní jako střední Evropa), vždy „průměrná země ligy“ nebo „průměrná evropská země“. | Drž jméno ze slovníku epizody a z faktické verze. „Střední země ligy“ a „průměr všech sedmadvaceti zemí“ jsou **různé věci**, nezaměňuj je ani kvůli rytmu. |
 
 #### (3.1) Tři čtení navíc (po pěti vlajkách)
 
@@ -18696,6 +18724,7 @@ Pokud narazíš na pasáž, kterou nedokážeš přeložit do srozumitelné če�
 * **(3.2) Dopad důvodu na výplatu je pevné jádro.** Věta typu *„Kdyby Maďarsko rostlo jako Slovensko, měl by Maďar na účtu asi o sto dvacet eur víc“* nebo podíl *„tři čtvrtiny toho náskoku smazalo“* v hlase zůstane; můžeš ji říct po svém, ale číslo, podíl a to, co se s čím srovnává, neměň a nevypouštěj. Právě ten dopad Ondřej v textu chtěl (21. 11. 2026: *„řekne proč, ale neřekne, jaký to má vliv na ten zkoumaný indikátor“*).
 * **(3.2) Ceny nejsou důvod pořadí.** Ceny patří do věty o penězích (*„bere výrazně víc než Maďar, na Slovensku je ale dráž, a tak si doma koupí jen o kousek víc“*). Nikdy nepiš, že země vede nebo je před sousedem, protože je u ní levněji, ani že ji před sousedem drží vyšší výplata: důvod pořadí je ve faktické verzi a ty ho nepřesouváš ani nenahrazuješ.
 * **Všechna přesná čísla patří do `[VIZUÁL: ...]`:** Řádky `[VIZUÁL: ...]` zachovej pod každým odstavcem s přesnými anglickými štítky a čísly z faktické verze (s výjimkou zakázaných položek níže, jako jsou ligová místa v průběžném pořadí, konečné ligové místo na kartě země v cíli nebo medaile v regionech).
+* **(3.4) Zelený trikot je dočasně zrušený:** nezmiňuj ho v hlase ani v `[VIZUÁL]`, ani jako roli země („adept na zelený trikot“). Když ho faktická verze ještě má, škrtni ho a zapiš do protokolu.
 * **Slovník epizody:** Drž jednotné obrazy ze slovníku (produktivita, koláč — *včetně opotřebení majetku, nejen zisku!*, kupní síla, zkrácené úvazky, cenovka daní). Slovo *„propustnost“* v hlase nikdy nepoužívej.
 * **Tři hlavní faktory (ne „tři kola“):** Vždy říkej *„tři hlavní faktory“*, nikdy ne *„kam ho poslala tři kola“*. **(3.1)** Obrat *„než by odpovídalo třem hlavním faktorům“* patří jen k věci ze života (ceny, daně v cenách, koláč), ne jako šablona ke každé zemi.
 
@@ -18715,7 +18744,7 @@ Pokud narazíš na pasáž, kterou nedokážeš přeložit do srozumitelné če�
 
 1. **Rozbíjení šablony:** Nikdy nezačínej čtyři odstavce po sobě stejně (*„Druhé je… Třetí je… Čtvrté je…“*). Střídej rytmus: přímý kontrast se sousedem, krátká sportovní věta, konkrétní tvář země nebo ostrý zlom.
 2. **Ligové pořadí vs. průběžné pořadí po kolech (KRITICKÉ PRAVIDLO):**
-   * **U výkonu země v konkrétním faktoru (1., 2., 3. kolo) ANO:** Celoligové místo (1.–27.) smí a u výrazných výkonů (špička, chvost, extrém) má zaznít v hlase i v `[VIZUÁL]`, vždy jasně odlišené od místa v regionu (*„první v regionu a čtvrté v celé lize“*, *„druhé v růstu v celé lize“*).
+   * **(3.4) U výkonu země v konkrétním faktoru (1., 2., 3. kolo) NE:** Celoligové místo (1.–27.) se v kolech neříká ani neukazuje (Ondřej 22. 11. 2026). Zůstává jen pořadí v regionu (*„první v regionu“*). Když ho faktická verze ještě má, škrtni ho a zapiš do protokolu.
    * **V průběžném pořadí PO 1., 2. a 3. kole STRIKTNÍ ZÁKAZ ligových míst:** V souhrnu na konci kola (v hlase **i v řádku `[VIZUÁL: průběžné pořadí po X. kole]`**) uváděj a nechávej **VÝHRADNĚ pořadí uvnitř regionu**.
    * **(3.1) Váha kola v lize není tvrzení o jedné zemi:** *„Daně pohnou výplatou jen o pár procent“* platí pro rozdíly v celé lize, ne pro Británii, kterou kolo daní posunulo nejvíc.
 3. **Povinné rozdíly mezi po sobě jdoucími zeměmi (odstup nad 5 procent):** Nikdy při přepisu nevynechávej ani nezkracuj důvod, proč je země pod státem bezprostředně nad ní v regionu (pokud je odstup větší než 5 procent). U rozdílů pod 5 procent stačí slovo *„těsně“*.
