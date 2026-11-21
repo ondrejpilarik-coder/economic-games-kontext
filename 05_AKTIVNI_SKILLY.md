@@ -37,7 +37,7 @@ Obsah (36 skillů):
 - voiceover-styl-ondrej-SKILL-v1.0.md
 - references/voiceover-komentar-zlaty-vzor-2026-09-24.md
 - causal-claim-repair-ADDENDUM-v1.0.md
-- ekonomicke-hry-ctiva-verze-SKILL-v3.2.md (NÁVRH K PILOTU, zatím neplatí)
+- ekonomicke-hry-ctiva-verze-SKILL-v3.3.md (NÁVRH K PILOTU, zatím neplatí)
 
 Návrhy k pilotu (5) jsou označené v obsahu i v nadpisu. Neplatí, dokud pilot neprojde a Ondřej nerozhodne o přepnutí; do té doby platí dosavadní postupy.
 
@@ -9665,7 +9665,7 @@ modelu.
 | Krok | Kdo | Odpovědnost |
 |---|---|---|
 | 1. Faktická verze (`FAKTICKA_VERZE.md`) | **Claude Code (tento skill)** | Sestaví jasný faktický příběh ze zamčených JSON karet, doplní anglické `[VIZUÁL: …]` bloky a programově připojí `NEŘÍKEJ`. |
-| 2. Čtivá verze (`CTIVA_VERZE.md`) | **Gemini Web (`ekonomicke-hry-ctiva-verze`, od 21. 11. 2026 verze 3.1)** | Přidá sportovní rytmus, napětí a obrazy; smí výklad přestavět, přesunout čísla do `[VIZUÁL: …]` a vazbu, která ve faktické verzi je, podat po svém. **Novou příčinu, číslo, slovo „hlavně“ či „jen“ ani nového viníka nedoplňuje** (Ondřej 21. 11. 2026): chybějící článek vrací Claudovi jako otázku. Nemění pořadí, čísla v hlase, váhu důvodů ani sílu soudů. |
+| 2. Čtivá verze (`CTIVA_VERZE.md`) | **Gemini Web (`ekonomicke-hry-ctiva-verze`, od 21. 11. 2026 večer verze 3.3)** | Přidá sportovní rytmus, napětí a obrazy; smí výklad přestavět, přesunout čísla do `[VIZUÁL: …]` a vazbu, která ve faktické verzi je, podat po svém. **Novou příčinu, číslo, slovo „hlavně“ či „jen“ ani nového viníka nedoplňuje** (Ondřej 21. 11. 2026): chybějící článek vrací Claudovi jako otázku. Nemění pořadí, čísla v hlase, váhu důvodů ani sílu soudů. |
 | 3. Finální audit smyslu a faktů + export `texty.json` | **Claude Code (Oddíl 5 níže)** | Ověří `DOPLNĚNO`, 8 faktických invariantů **a spustí finální slepý audit smyslu až na konečném hlase po Gemini**. Pak vyexportuje `texty.json` pro Remotion. |
 
 ---
@@ -17763,13 +17763,18 @@ délka (§8.6). Všechny tři jsou tvrdé; konflikt se řeší výběrem vhledu 
 a přesunem do UI (§8.3), nikdy oslabením kauzality ani nafouknutím bloku.
 
 
-# Skill (NÁVRH K PILOTU, zatím neplatí): ekonomicke-hry-ctiva-verze-SKILL-v3.2.md
+# Skill (NÁVRH K PILOTU, zatím neplatí): ekonomicke-hry-ctiva-verze-SKILL-v3.3.md
 
-## SKILL: Ekonomické hry – Čtivá verze pro voiceover (v3.2)
+## SKILL: Ekonomické hry – Čtivá verze pro voiceover (v3.3)
 
 **Určeno pro:** Gemini (přepis faktických scénářů z Claude Code do finálního mluveného slova pro dabing / ElevenLabs)  
 **Cíl:** Z věcně přesného, ale suchého faktického scénáře vytvořit **zábavný, napínavý, sportovně rytmický a pro naprostého laika srozumitelný komentář**, který zachová veškerou faktickou disciplínu a zároveň nekompromisně odhalí a vyčistí tzv. **„Claudovinu“**.
 
+> **Změny proti 3.2 (21. 11. 2026 večer; Ondřej: doplnit výtky z oponentur Clauda a ChatGPT, které ve skillu ještě nebyly; zapsal Claude Code).** Změněná místa jsou označená **(3.3)**, jinak je text stejný jako 3.2.
+> 1. Pět dalších vzorců Claudoviny, které skener dřív nechytal: hlas přiznává, co neví; shozená tvář; věta, která si protiřečí s jinou větou odstavce; dvě měřítka v jedné větě; jedna věc pod více jmény (oddíl 1).
+> 2. Vlajka 4: jedno vyvrácení představy těsně před příčinou je v pořádku (schválený vzor Rumunska); vlajka míří na výčet dvou a více věcí, které to nejsou, nebo na zápor, po kterém příčina nepřijde (oddíl 1).
+> 3. Protokol nálezů má sloupec „opora ve faktické verzi“ (oddíl 7).
+>
 > **Změny proti 3.1 (21. 11. 2026 odpoledne, Ondřej schválil skill Claude Code „Kontrola váhy důvodů“; zapsal Claude Code).** Změněná místa jsou označená **(3.2)**, jinak je text stejný jako 3.1.
 > 1. Dopad důvodu na výplatu je pevné jádro: věta „Kdyby …, měl by … asi o … eur víc“ nebo podíl („tři čtvrtiny toho náskoku smazalo“) v hlase zůstává a číslo ani podíl se nemění (oddíl 2).
 > 2. Výplata, eura na účtu ani ceny nejsou důvod pořadí; ceny patří do věty o penězích na začátku odstavce (oddíl 2).
@@ -17814,6 +17819,18 @@ a přesunem do UI (§8.3), nikdy oslabením kauzality ani nafouknutím bloku.
 | **3** | **Alibistický salát („zčásti / ale / ovšem“)** | Jedna věta skládá za sebe hlavní tezi a 2–3 akademická omezení najednou (*„zčásti proto… ale to vysvětlí nejvýš polovinu… a zbytek data nerozliší… i když na druhou stranu…“*). Posluchač na konci věty neví, co si má zapamatovat. | **(3.1)** Jedna věta nese **jednu pointu a nejvýš jedno omezení**. **Omezení stojí před tvrzením** (*„Ještě před finanční krizí se v části italských firem…“*), ne jako dovětek na konci. Další výhrady vynech nebo přesuň do obrazu. Délku vět nehlídej: souvislá dlouhá věta je v pořádku, **řada krátkých vět za sebou je zakázané staccato**. |
 | **4** | **Dvojitý zápor před pointou („co to NENÍ“ dřív než „co to JE“)** | Odstavec začne výčtem dvou až tří věcí, které za výsledek *nemohou* (*„lakota firem, slabé odbory ani zahraniční majitelé to nejsou…“*), dřív než divák vůbec slyší, co výsledek skutečně způsobilo. | **Otoč pořadí:** Nejdřív řekni jasný verdikt nebo skutečný důvod, a teprve potom jednou svižnou větou shoď omyl. *(Výjimka: krátká ostrá otázka z diváckého mýtu na začátku scény — ale hned druhá věta musí říct, jak je to doopravdy.)* Sem patří i opakovaný záporný verdikt *„ani chyba, ani zásluha“*: místo něj řekni, co se na trati stalo. |
 | **5** | **Abstraktní šuplík bez člověka** | Věta používá suché ekonomické kontejnery místo konkrétního děje (*„výkon klesl v oborech, kam přišlo nejvíc lidí“*, *„firmy mají na každé vytvořené euro mimořádně mnoho majetku, jehož opotřebení si bere víc“*). | **Kuchyňský test:** Představ si, že to vyprávíš kamarádovi u stolu, který nesleduje ekonomiku. Přelož šuplík do běžného života bez ztráty přesnosti, třeba *„miliony nových lidí nastoupily hlavně na stavby a do obchodů, ale na jednoho člověka tam vyrobili méně než dřív“*. **(3.1)** U opotřebení: *„Z toho, co česká firma vytvoří, se nejdřív odečte, jak se opotřebovávají budovy, stroje a software, a toho je v Česku nezvykle mnoho. Teprve ze zbytku se platí lidé a zisk.“* Opotřebení není účet, který firma někomu platí. |
+
+**(3.3) Upřesnění k vlajce 4:** Jedno vyvrácení představy diváků **těsně před příčinou** je v pořádku a smí zůstat (schválený vzor Rumunska: *„Překvapivě za to nemohou zahraniční koncerny, které lidem platí štědřeji. Výplaty drží nízko hlavně domácí firmy.“*). Vlajka 4 míří na **výčet dvou a více věcí**, které to nejsou, a na zápor, po kterém skutečná příčina nepřijde hned.
+
+#### (3.3) Pět dalších vzorců (skener je dřív nechytal)
+
+| # | Typ Claudoviny | Jak ji poznáš | Povinná akce Gemini |
+|---|---|---|---|
+| **6** | **Hlas přiznává, co neví** | *„kolik to přidalo, ale nikdo nespočítal“*, *„doložit to nejde“*, *„data to nerozliší“*, *„zbytek zůstává nevysvětlený“* | **Škrtni.** Zůstane výsledek a důvod, který faktická verze má. Chybí-li důvod úplně, `STOP – VRÁTIT CLAUDOVI`. Nevědění do hlasu nepatří. |
+| **7** | **Shozená tvář** | Slavná firma nebo osobnost země a hned za ní věta, která ji zmenší (*„Skype napsali estonští programátoři… jeho estonská pobočka ale měla necelé čtyři stovky lidí“*, *„jenže zaměstnává jen každého dvoustého“*). | Tvář je obraz země, ne příčina. Zmenšující údaj přesuň do `[VIZUÁL]` (**DO OBRAZU**), nebo tvář řekni bez příčinného slova a příčinu zvlášť. |
+| **8** | **Věta, která si protiřečí s jinou** | Po opravách kontrolora říká jedna věta „nejvíc ho odlišovaly finance“ a další, že finance zvedají průměr „jen o několik procent“. Tak dělají to banky, nebo ne? | Přečti odstavec celý. Nech jednu pravdivou verzi podle faktické verze, druhou zkrať nebo dej do obrazu. Když nevíš, která platí, `STOP – VRÁTIT CLAUDOVI`. |
+| **9** | **Dvě měřítka v jedné větě** | Na obyvatele i na pracujícího, „reálně“ i „proti střední zemi“, eura na účtu i kupní síla se dvěma čísly a srovnáním navrch. Divák počítá v hlavě. | Jedna věta, jedno měřítko. Druhé do `[VIZUÁL]`. Výjimka je věta o penězích v cíli (na účtu a doma), ta má obě částky. |
+| **10** | **Jedna věc pod více jmény** | Kus koláče, díl pro zaměstnance, díl výplat; střed ligy, střední země ligy, průměr všech sedmadvaceti zemí. | Drž jméno ze slovníku epizody a z faktické verze. „Střední země ligy“ a „průměr všech sedmadvaceti zemí“ jsou **různé věci**, nezaměňuj je ani kvůli rytmu. |
 
 #### (3.1) Tři čtení navíc (po pěti vlajkách)
 
@@ -17900,7 +17917,7 @@ Pokud narazíš na pasáž, kterou nedokážeš přeložit do srozumitelné če�
 Pod hotovou čtivou verzí regionu vždy vypiš přesně těchto 6 položek:
 
 1. **`SKENER CLAUDOVINY` (povinná tabulka nálezů):** **(3.1)** Každý zásah na jeden řádek:
-   * `země a klíč odstavce | krátký původní úryvek | jak by to posluchač mohl pochopit špatně | co jsem udělal (PŘEPSÁNO / ZKRÁCENO / DO OBRAZU / STOP – VRÁTIT CLAUDOVI) | nová věta nebo otázka pro Clauda | stav`.
+   * `země a klíč odstavce | krátký původní úryvek | jak by to posluchač mohl pochopit špatně | co jsem udělal (PŘEPSÁNO / ZKRÁCENO / DO OBRAZU / STOP – VRÁTIT CLAUDOVI) | nová věta nebo otázka pro Clauda | **(3.3)** opora ve faktické verzi (klíč a věta, ze které nová věta vychází) | stav`.
    * Uveď, že kontrola zahrnula úvody, země, představy, souhrny kol, celý odpočet i poslední předávku, a že skener proběhl znovu na hotovém textu.
    * *(Pokud nenajdeš nic v celém regionu, je to podezřelé — projdi text ještě jednou Kuchyňským testem!)*
 2. **`DOPLNĚNO`:** Vše, co bylo přidáno z volitelných úseků `{volitelné}` nebo z řádků `[VIZUÁL]` (jinak `nic`). **(3.1)** Nic odjinud.
