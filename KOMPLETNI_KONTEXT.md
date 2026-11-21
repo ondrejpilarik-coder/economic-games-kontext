@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 21. 11. 2026 01:52 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `b03880b2`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 21. 11. 2026 20:25 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `1285ba72`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -10,7 +10,7 @@ Aktualizováno 21. 11. 2026 01:52 automaticky ze soukromého repozitáře projek
 | 02_KUCHARKA_GEMINI | instrukce, podle kterých Gemini scénář napsal |
 | 03_PODKLADY_SCENARE | data a výklady zemí, ze kterých scénář vznikl (jediný zdroj čísel) |
 | 04_CLAUDE_MD | závazná pravidla projektu |
-| 05_AKTIVNI_SKILLY | 35 skillů (analýza, scénáře, úvod, čeština, střih, hlas); z toho 4 návrhy k pilotu, které zatím neplatí |
+| 05_AKTIVNI_SKILLY | 36 skillů (analýza, scénáře, úvod, čeština, střih, hlas); z toho 5 návrhy k pilotu, které zatím neplatí |
 
 Čísla ve scénáři se smějí opírat jen o soubor 03; skilly a pravidla určují formu.
 
@@ -492,7 +492,11 @@ a sestříhaný Balkán zůstane uzavřenou výjimkou i potom. Jednotná data me
 `05_epizode_packs/_skills/ekonomicke-hry-ctiva-verze-SKILL-v3.0.md` (od Ondřeje) a verze 3.1 s doplňky z 21. 11. 2026,
 kterou Ondřej nahrává do Gemini. 21. 11. 2026 Ondřej schválil doplňky všech čtyř pilotních skillů ze tří posudků
 (účetní rozdíl v cíli do hlasu nepatří, strop délky jen upozornění, soud nad jízdou a tahy s váhou, sousedé, vrácený
-oddíl „Jak se staví výklad“); **pořadí práce: nejdřív doplňky do skillů a commit, teprve potom přepis textů**. Stav
+oddíl „Jak se staví výklad“); **pořadí práce: nejdřív doplňky do skillů a commit, teprve potom přepis textů**. Týž den
+odpoledne Ondřej schválil nový skill **Kontrola váhy důvodů** (`05_epizode_packs/_skills/kontrola-vahy-duvodu-SKILL-v1.0.md`):
+každý důvod pořadí v cíli stojí na rozkladu rozdílu mezi sousedy, říká dopad na výplatu a nesmí být výplatou ani cenami;
+váhu důvodů kontroluje koordinující sezení, fakta jiný model než ten, který psal karty (Fable proti Opusu). Skill
+čtivé verze pro Gemini je od té chvíle ve verzi 3.2. Stav
 a další krok: `PREKLADOVY_MUSTEK.md`.
 
 - **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.2.md` postaví mapu příběhu
@@ -810,6 +814,7 @@ Instrukční dokumenty pro generování obsahu jsou v `05_epizode_packs/_skills/
 - **`voiceover-uvod-SKILL-v1.1.md`** — AKTIVNÍ skill mluveného úvodu pro scénáře po regionech (Ondřej 10., 13. a 16. 11. 2026; platný od 17. 11. 2026), nahrazuje §9 writer skillu: krátký úvod asi 90 vteřin v pěti blocích, trademark „Vítejte u {první} epizody {Evropských/Amerických/Globálních} ekonomických her.“, favoriti, černí koně a outsideři vždy od Ondřeje, trikoty a týmová soutěž, a blok 4b: sloupcový graf hlavních faktorů a jejich vlivu na zkoumaný ukazatel se zněním od Ondřeje. Verze 1.0 (8. 10. 2026) zůstává pro starší formát živého závodu.
 - **`indicator-card-builder-SKILL-v6.0.md`** — NÁVRH K PILOTU, NEPLATÍ (Ondřej s Gemini na webu, 19. 11. 2026): stavba karty indikátoru v sedmi krocích, které Gemini vede s Ondřejem (definice ukazatele; mapa příčin a srovnání jednotek; místa, kde statistika klame; výpočet vah a výběr kol; druhy faktorů s otázkami a režimy hodnocení; pracovní teze 27 zemí a slovník epizody; export). Výstup `input/karta_indikatoru_v6.json`, kontrola `py scripts/validate_indicator_card.py <karta>` (větev 6.0; otisk dat podle `scripts/otisk_dat.py`). Platné zůstávají karty verze 4 a 5 (`episode-card-builder-SKILL-v4.md` a `-v5.md`), dokud pilot neprojde.
 - **`analyza-pricin-zeme-SKILL-v2.0.md`** — NÁVRH K PILOTU, NEPLATÍ (19. 11. 2026): analýza příčin po zemích s jednou kartou na zemi (`output/analyza_v2/karty_zemi/{ISO}.json`): tři patra odpovědi (číslo, rozklad, skutečná příčina s dokladem rozsahu), test každé hlavní příčiny proti datům se třemi výsledky, příčina se musela stát v měřeném období, čtyři kroky hodnocení rozhodnutí, stupně jistoty s dovolenými slovesy, nezávislá kontrola faktů u zdrojů a kontrolor, který se kartu snaží rozbít. Platným postupem analýzy zůstává `analyza-pricin-regiony-SKILL-v1.6.md`.
+- **`kontrola-vahy-duvodu-SKILL-v1.0.md`** — SCHVÁLENO PRO PILOT (Ondřej 21. 11. 2026): kontrola, jestli důvody v kartách zemí a ve scénáři jsou ty hlavní a jestli říkají dopad na výplatu. Rozklad rozdílu mezi sousedy na díly, které se sčítají (`output/analyza_v2/doplnky/rozklad_dvojic.py`), časování ve dvou měřítkách a odchod ze zemědělství (`rust_po_obdobich.py`), pět zkoušek (kruh a ceny jako důvod, otázka odstavce, váha, dopad, co stojí za dílem), pole `finale.verdict_basis` v kartě. Dělá ji koordinující sezení po kartách a před faktickou verzí; nová fakta ověřuje jiný model (Fable 5.2 proti Opusu 5.5).
 - **`voiceover-scenar-regionu-SKILL-v2.0.md`** — NÁVRH K PILOTU, NEPLATÍ (19. 11. 2026): faktická verze scénáře regionu psaná z karet zemí: nové délky podle počtu zemí, srovnání s podobnou zemí místo důvodu u každého souseda, zkouška kontrol úmyslnou vadou a pilot na třech zemích před přepnutím, závěrečná kontrola smyslu až nad konečným textem po Gemini. Kontrola `py scripts/kontrola_scenare_v2.py` (před psaním, faktická verze, čtivá verze). Platným postupem zůstává `voiceover-mapa-pribehu-SKILL-v1.2.md` s branou `scripts/kontrola_paru_sousedu.py`; namluvený a sestříhaný Balkán se podle nového postupu nepřepisuje.
 - **`voiceover-cestina-SKILL-v1.0.md`** — ČESKÁ JAZYKOVÁ VRSTVA, NA ZKOUŠKU (Ondřej rozhoduje vkus; 2026-09-15, z rešerší R1/R2 a ze slepého porovnání dvou verzí voiceoveru ep_003). Není to writer ani přepis: **omezený druhý průchod** nad hotovou skillovou verzí — mapa bodových oprav jazyka (`scripts/voiceover_apply_replacements.py`), zámek číslovek a hedgí (`scripts/voiceover_cestina_detektory.py --pred`, exit 0), INFO rozdíly kvalifikátorů/první osoby/zesilovačů, čerstvá kontrola, pak standardní slepé čtení + viewer review. §15.1 = pravidla, která obstála (nominalizace → sloveso, aktér místo pasiva, réma na konec, dvojtečka → spojka ne tečka, „kam“, genitiv po „dost“ a u kvantity, statistická jednotka není fyzický objekt); §15.2 = tvrdé zákazy (hodnotící přívlastek u čísla, první osoba u verdiktu, škrtnutý kvalifikátor, změněná kauzální spojka, přidaný fakt, přejmenovaný pojem série, dvojtečka → tečka); §15.4 = otázky vkusu pro Ondřeje (vrstva postoje, první osoba, průvodcovské vazby, nocleh/startér).
 - **`voiceover_skill_v_9_2.md`** — LEGACY craft base (v9.x formát bez živého závodu). ⚠ v19/v20 voiceovery napsané podle v9.2 (FINAL_voiceover_v19, první FINAL_voiceover_v20) NEJSOU stylový kanon — Ondřej 2026-07-31: „absolutně nepoužitelný styl"; slouží jen jako zdroj kauzálních formulací.
@@ -896,7 +901,7 @@ Stručně:
 
 # Aktivní skilly Ekonomických her
 
-Obsah (35 skillů):
+Obsah (36 skillů):
 
 - pipeline-orchestration-SKILL-v3.md
 - data-collection-SKILL-v1.0.md
@@ -914,6 +919,7 @@ Obsah (35 skillů):
 - voiceover-uvod-SKILL-v1.1.md
 - indicator-card-builder-SKILL-v6.0.md (NÁVRH K PILOTU, zatím neplatí)
 - analyza-pricin-zeme-SKILL-v2.0.md (NÁVRH K PILOTU, zatím neplatí)
+- kontrola-vahy-duvodu-SKILL-v1.0.md (NÁVRH K PILOTU, zatím neplatí)
 - voiceover-scenar-regionu-SKILL-v2.0.md (NÁVRH K PILOTU, zatím neplatí)
 - voiceover-cestina-SKILL-v1.0.md
 - voiceover-review-skill-v2_4.md
@@ -932,9 +938,9 @@ Obsah (35 skillů):
 - voiceover-styl-ondrej-SKILL-v1.0.md
 - references/voiceover-komentar-zlaty-vzor-2026-09-24.md
 - causal-claim-repair-ADDENDUM-v1.0.md
-- ekonomicke-hry-ctiva-verze-SKILL-v3.1.md (NÁVRH K PILOTU, zatím neplatí)
+- ekonomicke-hry-ctiva-verze-SKILL-v3.2.md (NÁVRH K PILOTU, zatím neplatí)
 
-Návrhy k pilotu (4) jsou označené v obsahu i v nadpisu. Neplatí, dokud pilot neprojde a Ondřej nerozhodne o přepnutí; do té doby platí dosavadní postupy.
+Návrhy k pilotu (5) jsou označené v obsahu i v nadpisu. Neplatí, dokud pilot neprojde a Ondřej nerozhodne o přepnutí; do té doby platí dosavadní postupy.
 
 # Skill: pipeline-orchestration-SKILL-v3.md
 
@@ -9748,6 +9754,8 @@ obrazové části čeká na Ondřeje. Graf bloku 4b je od 16. 11. 2026 postaven�
 
 *Doplněk 21. 11. 2026 (Ondřej schválil návrh doplňků ze tří posudků; `10_documents/active/2026-11-20_oponentura_podkladu_v3_2/DOPLNKY_DO_SKILLU_NAVRH.md`; zapsal Claude Code): Krok 4 navíc určuje pravidlo odstupu sousedů a měřítko soudu nad jízdou; Krok 5 obvyklé nástroje u kol; Krok 6 nahrazuje jednu větu `viewer_stereotype` seznamem představ diváků (`public_beliefs`) s původem a zdrojem a přidává očekávání před startem (`pre_race_expectation`); přeshraniční srovnání mají stav; karta má číslo revize; v režimu zamčených kol se název a barva kol přebírají z dat. Schéma i validátor tomu odpovídají. Ostatní text beze změny. Proč: validátor dal 100 bodů i kartě bez představ diváků, odhad stroje se ve scénáři měnil na „rozšířenou představu“ a vyřazené srovnání Polska se Švédskem zůstávalo v kartě aktivní.*
 
+*Doplněk 21. 11. 2026 odpoledne (Ondřej schválil skill `kontrola-vahy-duvodu-SKILL-v1.0.md`; zapsal Claude Code): Krok 4 zmiňuje rozklad rozdílu mezi sousedy, ze kterého analýza bere hlavní důvod pořadí a jeho dopad. Ostatní text beze změny.*
+
 ### Role a režim práce (Učitel + Moderátor)
 
 Jsi strategický architekt a datový učitel série **Evropské ekonomické hry**. S Ondřejem ve webovém Gemini stavíš **Kartu indikátoru v6.0** (`karta_indikatoru_v6.json`) — jedinou závaznou smlouvu epizody, podle které Claude Code následně zpracuje 27 zemí a napíše scénáře.
@@ -9822,6 +9830,11 @@ Zároveň navrhneš:
 - **Režim zamčených kol:** Převezmeš hotovou tabulku zamčených kol a jejich vah z `liga_data.json` a zaměříš se čistě na `profily_zemi.json` a výběr lokálních extrémů a specifických faktorů. Oba soubory z bodu 5 dostaneš od Claude Code i v tomto režimu. *Doplněk 21. 11. 2026:* z dat se přebírá i anglický název a barva každého kola (`title_en`, `color`), aby obraz dalších regionů odpovídal hotovému střihu; vlastní návrh barev v tomto režimu není.
 - **Pravidlo odstupu sousedů (21. 11. 2026, `neighbor_gap_rule`):** jak se počítá odstup dvou zemí, které stojí v pořadí regionu hned za sebou, a od kdy se jejich rozdíl musí ve scénáři vysvětlit. U kladných ukazatelů typu mezd: `100 × (vyšší − nižší) / vyšší` z nezaokrouhlených hodnot kola, práh 5 %, přesně 5 je „těsně“. U ukazatele s opačným směrem, zápornými hodnotami nebo nulou se jednotka určí zvlášť. Claude Code z toho spočítá seznam dvojic pro celou ligu.
 - **Měřítko soudu nad jízdou (21. 11. 2026, `rounds[].performance_norm`):** u kola, kde se hodnotí výkon (režim `efektivita`), proti čemu se měří, jak si země vedla vzhledem ke svým možnostem. U mezd ve 2. kole: čára celé ligy podle startu a medián šesti zemí s nejbližším startem; soud zazní jen tam, kde se obě měřítka shodnou. Claude Code je spočítá pro celou ligu.
+- **Rozklad rozdílu mezi sousedy (21. 11. 2026 odpoledne, skill `kontrola-vahy-duvodu-SKILL-v1.0.md`):** z bodů kol
+  a částí specifických faktorů Claude Code spočítá, z čeho se skládá rozdíl ve výplatě mezi zeměmi, které v cíli
+  stojí v regionu vedle sebe (díly se sčítají; ke každému dopad v eurech), a kdy se rozdíly otevřely
+  (`output/analyza_v2/doplnky/rozklad_dvojic.py`, `rust_po_obdobich.py`). Z toho analýza bere hlavní důvod pořadí
+  a jeho dopad; karta indikátoru k tomu nic nepřidává, díly jsou kola a specifické faktory této karty.
 - **Předávka mezi Gemini a Claude Code (vždy stejná):** příkaz pro Claude Code vzniká hned po zamčení Kroku 3. Ondřej ho vloží do Claude Code, Claude Code spočítá data a vrátí oba soubory z bodu 5, Ondřej je vloží do Gemini a teprve nad nimi navrhneš kola a lokální extrémy.
 - **Rozhodnutí Ondřeje:** Zamkne počet a pořadí kol (3–5) a lokální extrémy.
 
@@ -10007,6 +10020,8 @@ Každému kolu a hlavnímu specifickému faktoru přiřadíš **1 ze 6 typů**, 
 
 *Doplněno 21. 11. 2026 (Ondřej schválil návrh doplňků ze tří posudků: Gemini, ChatGPT a Claude; `10_documents/active/2026-11-20_oponentura_podkladu_v3_2/DOPLNKY_DO_SKILLU_NAVRH.md`). Změněno: pravidlo 3 (rok podle kola), 4 (soud nad jízdou a tahy s váhou), 7 (cíl stojí na celkovém rozsudku; účetní rozdíl do hlasu nepatří), 8 (představy bez verdiktu „napůl“). Nové: pravidlo 9 (sousedé), 10 (věta, kterou bys řekl sousedovi), 11 (oblouk vzorců) a oddíl o tom, jak kontrolor opravuje. Ve schématu nová pole. Ostatní text beze změny. Proč: noční karty a scénáře z 20. 11. vykládaly v cíli rozdíl proti vlastnímu výpočtu pořadu (Maďarsko, Slovensko), soudily jen 9 z 66 kol a do hlasu posílaly razítka „napůl“ a „ani chyba, ani zásluha“.*
 
+*Doplněno 21. 11. 2026 odpoledne (Ondřej schválil skill `kontrola-vahy-duvodu-SKILL-v1.0.md`): pravidlo 7 body 1 a 5 (rozsudek a soused v cíli odpovídají na otázku odstavce, stojí na dílu rozkladu a říkají dopad na výplatu; výplata, eura na účtu ani ceny nejsou důvod pořadí), pravidlo 4 (velký účinek tahu jen s porovnáním) a ve schématu pole `finale.verdict_basis`, `finale.neighbor.component`, `finale.neighbor.effect` a `moves[].effect_check`. Ostatní text beze změny. Proč: ukázka cíle Střední Evropy z 21. 11. řekla proč, ale ne kolik to udělalo s výplatou, u Slovenska vysvětlila výplatu výplatou a u Polska jmenovala slabší důvod místo silnějšího.*
+
 ### Účel a povinné vstupy
 
 Pro každou zemi (mimo zamčené regiony uvedené v `card_metadata.frozen_regions`) vytvoříš **jediný autoritativní podklad**: `output/analyza_v2/karty_zemi/{ISO}.json` (+ čitelný náhled `{ISO}.md`). Tím odpadají čtyři ztrátové předávky mezi `vyklad/`, `ekonomove/`, `soudy_*` a `PODKLAD_SCENAR`.
@@ -10072,7 +10087,9 @@ může vyhrát a přitom pokazit dvě zatáčky. Proto se zvlášť zapisuje:
   moc pomohly nebo uškodily a jak zásadní byly**, protože právě tam vzniká poučení. Kde je účinek doložený,
   `plain_line` ho řekne („…a to stálo Maďarsko roky, kdy sousedé doháněli“). Kde doložený není
   (`effect_size: nezmereno`), smí být známka jen `bez_soudu` nebo `cena_volby` a krok se vypráví jako událost bez
-  soudu, nikdy s větou „nikdo nespočítal“. Kolo smí mít soud nad jízdou a vedle toho tah jedné firmy (Nokia zaspala
+  soudu, nikdy s větou „nikdo nespočítal“. Účinek `velky` potřebuje porovnání s podobnou zemí nebo obdobím
+  (`effect_check`; skill Kontrola váhy důvodů, zkouška E): Maďarsko v letech škrtů ztratilo v reálném růstu za Českem
+  asi 4 body, za Slovenskem 18, takže schodky 2002–2006 mají účinek střední, ne velký. Kolo smí mít soud nad jízdou a vedle toho tah jedné firmy (Nokia zaspala
   chytré telefony, Finsko jako celek přitom rostlo jako jiné bohaté země). Povinný počet tahů na zemi není.
   *Systematické měření účinku kroků států (jak velký kus výsledku který krok udělal) je odložené na další epizodu.*
 - **Udržitelnost** („může si to dovolit“) u ceny volby jen s vlastním dokladem o financování; jinak se vynechá
@@ -10103,6 +10120,11 @@ i Slovensko byly na svém místě v regionu už po třech kolech a u Maďarska d
 1. **Celkový rozsudek** (`finale.overall_verdict`, povinný): jedna až dvě věty, proč země dojela tam, kde dojela.
    Začíná částí, která udělala největší kus pohybu její výplaty (`profily_zemi.json`, `nejvetsi_dil_pohybu`; u mezd
    je to u 13 zemí z 22 start, u 7 růst). Obsahuje soud nad jízdou a nejdůležitější doložený tah, když jsou.
+   *Doplněno 21. 11. 2026:* rozsudek odpovídá na otázku odstavce. O pořadí v regionu rozhoduje díl rozkladu
+   proti sousedovi (`doplnky/rozklad_dvojic.json`), ne největší díl pohybu proti středu ligy: Maďarsko startovalo
+   před Slovenskem i Polskem, takže jeho poslední místo nevysvětluje start, ale to, že oba sousedé rostli rychleji.
+   K rozsudku patří pole `finale.verdict_basis` (proti komu, díl rozkladu, dopad na výplatu v eurech nebo podílem,
+   co za dílem stojí a jak to bylo ověřeno; skill `kontrola-vahy-duvodu-SKILL-v1.0.md`, oddíl 5).
 2. **Druh rozdílu proti třem hlavním faktorům** (`finale.gap_kind`):
    - `zivot`: věc ze života, ve které někdo jedná nebo kterou člověk zažije (ceny bydlení a služeb, daně v cenách,
      jak velký kus z koláče firmy dávají lidem a proč);
@@ -10123,7 +10145,10 @@ i Slovensko byly na svém místě v regionu už po třech kolech a u Maďarska d
    mu ukrojí ještě jedna věc: nejvyšší DPH v Evropské unii.“).
 5. **Soused v cíli** (`finale.neighbor`): země, která v odpočtu dojela těsně předtím (o místo níž), a jedna věta,
    proč je tahle země před ní (`line_for_voice`). Slovensko se srovnává s Maďarskem, ne s Polskem, které ještě
-   nedojelo.
+   nedojelo. *Doplněno 21. 11. 2026:* s dílem rozkladu (`component`) a dopadem (`effect`). Důvodem není
+   výplata, eura na účtu ani ceny: ceny patří do věty o penězích na začátku odstavce (vzor ve skillu scénáře 2.0,
+   oddíl 3.0). Vadný vzor: „Před Maďarskem ho drží vyšší výplata… většinu náskoku spolknou vyšší ceny.“ Správně:
+   „Před Maďarskem ho drží rychlejší růst výkonu… Přes třetinu toho náskoku mu ale vezmou vyšší odvody.“
 6. Skutečnou technickou vadu dat (`is_data_bug: true`) řeš primárně opravou dat; pokud opravit nejde, zapiš ji jen
    jako stručnou výhradu a vyhoď do `EXCEPTION_DIGEST.md`. Do hlasu nejde.
 7. **Pozor na významový skluz u peněz:** U částek v `life_unit_impact` (např. *+170 € za obvyklý díl koláče*)
@@ -10313,7 +10338,19 @@ Do digestu jde **každá karta**, která spustí libovolnou pojistku: stupeň `o
     "overall_verdict": "Jedna až dvě věty, proč země dojela tam, kde dojela; začíná největším dílem pohybu.",
     "gap_kind": "zivot | kdo_se_pocita | zapis | maly",
     "gap_in_voice": true,
-    "neighbor": {"iso": "HR", "gap_pct": 6.7, "line_for_voice": "Proč je země před tou, která právě dojela."},
+    "verdict_basis": {
+      "comparison": "HR",
+      "component": "dil_pro_zamestnance_mimo_mala_hospodarstvi",
+      "component_points": 9.3,
+      "share_of_gap_pct": 140,
+      "effect_eur": 160,
+      "effect_line": "Věta s dopadem na výplatu: Kdyby…, měl by… na účtu asi o … víc (nebo podíl slovy).",
+      "sub_cause": "Co za dílem stojí (věc ze života, tah).",
+      "sub_cause_test": "Jak se to ověřilo: čas ve dvou měřítkách, přesun mezi odvětvími, protipříklad, studie.",
+      "component_note": "Jen když hlavní důvod není největší díl rozkladu: proč."
+    },
+    "neighbor": {"iso": "HR", "gap_pct": 6.7, "component": "dil_pro_zamestnance_mimo_mala_hospodarstvi",
+                 "effect": "dopad na výplatu v eurech nebo podíl", "line_for_voice": "Proč je země před tou, která právě dojela."},
     "specific_factors": [
       {
         "rank_by_impact": 1,
@@ -10352,6 +10389,7 @@ Do digestu jde **každá karta**, která spustí libovolnou pojistku: stupeň `o
       "effect": "nejnižší doplatky za léčení v regionu, nejvyšší zdanění práce v regionu",
       "effect_size": "velky | stredni | maly | nezmereno",
       "evidence": "zdroj a rok",
+      "effect_check": "u velky povinně: s jakou podobnou zemí nebo obdobím se účinek porovnal",
       "grade": "dobry_tah | chyba | slabina | cena_volby | bez_soudu",
       "scene": "kolo_1 | kolo_2 | kolo_3 | finale",
       "in_voice": true,
@@ -10381,6 +10419,132 @@ Do digestu jde **každá karta**, která spustí libovolnou pojistku: stupeň `o
 }
 ```
 
+# Skill (NÁVRH K PILOTU, zatím neplatí): kontrola-vahy-duvodu-SKILL-v1.0.md
+
+## Kontrola váhy důvodů v1.0
+
+*Stav: **schváleno Ondřejem 21. 11. 2026** jako součást pilotu postupu po kartách (spolu se skilly analýzy zemí 2.0
+a scénáře regionu 2.0). Vznik a ukázka: `10_documents/active/2026-11-21_kontrola_vahy_duvodu/` (rozbor
+`KONTROLA_VAHY_DUVODU.md`, ukázka `…/scenare/STREDNI_EVROPA/UKAZKA_CILE_v2.md`).*
+
+### 1. Proč
+
+Ondřej 21. 11. 2026 nad ukázkou cíle Střední Evropy: „Řekne proč, ale přijde mi, že už neřekne, jaký to má vliv na ten
+zkoumaný indikátor.“ A: „Může se stát, že třeba Opus 5.5 vyjmenoval faktor, který ve výsledku nemá až takový vliv,
+a třeba nějaký faktor, který má vyšší vliv, opomenul. To chci, abys zkontroloval… a dělal bys to ty.“
+
+Ukázka měla pět druhů chyb: důvod bez dopadu na výplatu; výplatu vysvětlenou výplatou („před Maďarskem ho drží vyšší
+výplata“); ceny vydávané za důvod pořadí; důvod, který odpovídá na jinou otázku (start Maďarska vysvětluje polohu
+v Evropě, ne poslední místo v regionu); slabší důvod místo silnějšího (polské zvláštní zóny místo odchodu lidí
+z malých políček). Kontroly faktů je nenašly, protože každá věta byla pravdivá. Chyba byla ve váze a ve vztahu důvodu
+k výsledku, ne ve faktu.
+
+### 2. Kdo a kdy
+
+- **Kdo:** koordinující sezení (Claude, který vede epizodu a má celý kontext). Karty zemí píší pomocníci; tuto kontrolu
+  nedělají sami nad sebou.
+- **Kdy:** (1) po dokončení karet zemí regionu a před psaním faktické verze; (2) znovu nad faktickou verzí
+  a nad čtivou verzí od Gemini, tam jen zkoušky A až D (oddíl 4).
+- **Fakta, která kontrola přidá** (nový důvod, čísla z časových řad, studie), ověří u zdroje **jiný model než ten,
+  který psal karty** (Ondřej 21. 11. 2026: „Opus 5.5 by ještě měl kontrolovat nějaký model v těch faktických věcech“).
+  Píše-li karty Opus 5.5, kontroluje Fable 5.2.
+
+### 3. Podklady (strojová část)
+
+1. **Rozklad rozdílu mezi sousedy** (`output/analyza_v2/doplnky/rozklad_dvojic.py` → `ROZKLAD_DVOJIC.md`,
+   `rozklad_dvojic.json`): `100 × ln(výplata vyšší / výplata nižší)` = Δ start + Δ růst + Δ daně + Δ každé části
+   specifických faktorů. Díly se sčítají; ke každému podíl na rozdílu a „eura navíc“ (kolik by nižší země měla
+   měsíčně na účtu navíc, kdyby v tom dílu byla na úrovni vyšší). Totéž pro každou zemi proti střední zemi ligy.
+2. **Růst po obdobích a přesuny mezi odvětvími** (`output/analyza_v2/doplnky/rust_po_obdobich.py` →
+   `RUST_PO_OBDOBICH.md`): kdy se rozdíl otevřel, ve dvou měřítkách (úroveň výkonu na pracujícího v kupní síle, kterou
+   měří kolo, a reálný růst v národních cenách), a hrubý odhad, kolik růstu udělal odchod lidí ze zemědělství.
+3. **Karty zemí** (celkový rozsudek, soused v kolech i v cíli, věta pro souseda, tahy, představy diváků) a text.
+
+U jiného ukazatele se díly rozkladu berou z jeho karty indikátoru (kola a specifické faktory); vzorec je stejný.
+
+### 4. Postup
+
+**Krok 1: seznam důvodů.** Z karty i z textu se vypíše každá věta, která říká proč (rozsudek, soused v kole i v cíli,
+tah v hlase, představa diváků). Ke každé: (a) na jakou otázku odpovídá („proč je X před Y“, „proč je X pod středem
+ligy“, „proč X v kole stoupl“), (b) na který díl rozkladu ukazuje (v kole je díl samo kolo a hledá se, co za ním
+stojí, zkouška E).
+
+**Krok 2: pět zkoušek.**
+- **A. Není to kruh ani převod.** Důvodem není ukazatel ani jeho část (eura na účtu, „vyšší výplata“) ani převod na
+  kupní sílu (ceny). Ceny patří do věty o penězích na začátku odstavce („bere výrazně víc než Maďar, na Slovensku je
+  ale dráž, a tak si koupí jen o kousek víc“). Mezi důvody patří jen část „drahota života proti cenám výroby“,
+  protože ta je ve specifických faktorech.
+- **B. Odpovídá na otázku odstavce.** Důvod pořadí mezi sousedy musí být díl, ve kterém se sousedé liší. Důvod, proč
+  je země hluboko pod středem ligy, nevysvětluje, proč je poslední v regionu, když ostatní v regionu mají totéž
+  (Maďarsko startovalo před Slovenskem i Polskem; start po plánování vysvětluje jen polohu v Evropě).
+- **C. Váha.** Hlavní důvod je největší díl rozkladu pro danou otázku. Díl aspoň poloviční velikosti, který text
+  vynechá, je nález, kromě dílů, které pravidla z hlasu vyřazují (zápis ve statistice; kdo se počítá bez změny
+  pořadí v regionu). Když dva díly působí proti sobě (lepší start, pomalejší růst), řekne se obojí.
+- **D. Dopad.** Každý hlavní důvod má v hlase dopad na výplatu: jedno číslo v eurech měsíčně ve tvaru „Kdyby…, měl by
+  … na účtu asi o … víc“, nebo podíl slovy („tři čtvrtiny toho náskoku smazalo“). Podíly se počítají z bodů rozkladu
+  (sčítají se), eura z protipříkladu jednoho dílu. Přesné hodnoty jdou do řádku VIZUÁL. V kole je dopadem hodnota
+  kola a místo v něm; zkouška D se v kolech týká jen tahu, který karta posílá do hlasu (jak moc pomohl).
+- **E. Co stojí za dílem.** Uvnitř dílu se porovnají kandidáti, ne jen ten z karty:
+  1. **čas**: kdy se rozdíl otevřel; důvod musí sedět s obdobím. Ověřuje se ve dvou měřítkách: úroveň v kupní síle
+     (to měří kolo) a reálný růst v národních cenách. Mohou dát jiné rozdělení po obdobích (Slovensko proti
+     Maďarsku: v kupní síle utíkalo hlavně od roku 2004, v reálném růstu hlavně po roce 2006); v hlase platí jen to,
+     co platí v obou;
+  2. **přesun mezi odvětvími**: kolik udělal odchod lidí z méně výkonného odvětví (zemědělství);
+  3. **protipříklad**: země, která udělala totéž bez stejného účinku, nebo dosáhla téhož bez toho kroku;
+  4. **studie se změřeným účinkem**.
+  Pojmenovaný důvod musí být ten nejlépe doložený. Účinek tahu v kartě (`effect_size`) nesmí být silnější, než ukáže
+  porovnání s podobnou zemí nebo obdobím (u Maďarska: v letech škrtů ztratilo v reálném růstu za Českem asi 4 body,
+  za Slovenskem 18; větší díl udělal slovenský růst, ne maďarské škrty, proto „střední“, ne „velký“).
+
+**Krok 3: výstup.** Tabulka po zemích: důvod → otázka → díl → velikost (body, eura) → verdikt (**drží**, **přeceněný**,
+**jiná otázka**, **chybí silnější**, **bez dopadu**, **kruh nebo převod**) → oprava. Zapíše se k regionu jako
+`scenare/<REGION>/KONTROLA_VAHY_DUVODU.md` a promítne do karet zemí (oddíl 5).
+
+**Krok 4: opravy.** Jen škrtem, užším tvrzením, náhradou silnějším doloženým důvodem nebo doplněním dopadu. Nikdy
+výhradou nebo přiznáním nevědění v hlase.
+
+**Krok 5: nezávislá kontrola faktů** nových údajů z kroků 2E a 4 jiným modelem (oddíl 2).
+
+### 5. Pole v kartě země (skill analýzy zemí 2.0)
+
+```json
+"finale": {
+  "verdict_basis": {
+    "comparison": "SK",
+    "component": "rust",
+    "component_points": 11.3,
+    "share_of_gap_pct": 214,
+    "effect_eur": 123,
+    "effect_line": "Kdyby Maďarsko rostlo jako Slovensko, měl by Maďar na účtu asi o 120 eur měsíčně víc.",
+    "sub_cause": "Slovensko utíkalo hlavně od roku 2004, s novými automobilkami a cestou k euru",
+    "sub_cause_test": "čas ve dvou měřítkách; protipříklad: Maďarsko rostlo jako Česko",
+    "component_note": "jen když hlavní důvod není největší díl rozkladu: proč"
+  },
+  "neighbor": {"iso": "HU", "gap_pct": 5.13, "component": "rust", "effect": "přes třetinu náskoku vezmou odvody",
+               "line_for_voice": "Před Maďarskem ho drží rychlejší růst výkonu…"}
+}
+```
+
+- `comparison`: soused o místo níž (`finale.neighbor`); u poslední země regionu soused o místo výš; „liga“, když
+  odstavec odpovídá na polohu v lize.
+- `moves[]` s `effect_size: "velky"` nesou `effect_check`: s jakou podobnou zemí nebo obdobím se účinek porovnal.
+
+### 6. Kontroly ve skriptu
+
+- `scripts/kontrola_scenare_v2.py`: v odstavcích cíle hledá kruh a převod jako důvod pořadí (ukázky typu: „drží ho
+  vyšší výplata“, „jenže v … je levněji“ u slova o pořadí, „náskok spolknou ceny“) a u každého odstavce země v cíli
+  dopad (věta „Kdyby…, měl by… o … víc“ nebo podíl u slova „náskok“, „rozdíl“, „smazal“).
+- `scripts/kontrola_karty_zeme_v2.py`: vyžaduje `finale.verdict_basis` a u souseda nad prahem `component` a `effect`;
+  upozorní, když hlavní důvod není největší díl rozkladu bez zdůvodnění, a na „velký účinek“ bez porovnání.
+- Zadání kontrol: `10_documents/active/2026-11-21_kontrola_vahy_duvodu/ZADANI_KONTROLY_VE_SKRIPTECH.md`.
+
+### 7. Role modelů
+
+Karty píše Opus 5.5 (pomocníci), fakta kontroluje Fable 5.2, váhu důvodů koordinující sezení. Koordinující sezení
+v listopadu 2026 běží také na Opusu 5.5; síla kontroly stojí na výpočtu z dat a na celém kontextu, ne na jiném
+modelu.
+
+
 # Skill (NÁVRH K PILOTU, zatím neplatí): voiceover-scenar-regionu-SKILL-v2.0.md
 
 ## Voiceover: Faktická verze scénáře regionu v2.0
@@ -10390,6 +10554,8 @@ Do digestu jde **každá karta**, která spustí libovolnou pojistku: stupeň `o
 *Doplněno 20. 11. 2026 (Ondřej): oddíl 3, bod 7 o důvodech, kterým lidé věří (`public_beliefs`), a o očekávaném umístění (`ranking_expectation`). Ostatní text beze změny.*
 
 *Doplněno 21. 11. 2026 (Ondřej schválil návrh doplňků ze tří posudků; `10_documents/active/2026-11-20_oponentura_podkladu_v3_2/DOPLNKY_DO_SKILLU_NAVRH.md`). Nové: oddíl 3.0 „Jak se staví výklad“ převzatý z platného postupu (mapa příběhu 1.2) i se schválenými vzory a s novými vzory cíle. Změněno: délka je cíl a strop jen upozornění (oddíl 2); stavba cíle a průběžného pořadí (oddíl 2); oddíl 3 body 2, 3, 4 a nové body 8 až 13; kontroly v oddílu 5. Ostatní text beze změny. Proč: noční faktické verze z 20. 11. porušily pravidla, která Ondřej schválil 17. 11. (oddíl 3.0 do pilotního skillu nebyl přenesen), cíl vykládal rozdíl proti vlastnímu výpočtu pořadu a obraz prozrazoval ligová místa.*
+
+*Doplněno 21. 11. 2026 odpoledne (Ondřej schválil skill `kontrola-vahy-duvodu-SKILL-v1.0.md`): stavba odstavce v cíli (oddíl 2 a 3 bod 4: ceny ve větě o penězích, hlavní důvod z rozkladu rozdílu mezi sousedy, dopad na výplatu), opravené vzory Maďarska, Slovenska a Polska v oddílu 3.0, poznámka k vzorům Nizozemska a Litvy a nové kontroly v oddílu 5A. Ostatní text beze změny. Proč: ukázka cíle z 21. 11. řekla proč, ale ne kolik to udělalo s výplatou; Slovensko vysvětlila vyšší výplatou a pořadí sousedů cenami; u Maďarska dala důvod k jiné otázce a u Polska slabší důvod místo silnějšího.*
 
 **Přechodné pravidlo pro Epizodu 1 (Mzdy):** Již namluvený a sestříhaný region **Balkán** je uzavřená výjimka a nepřepisuje se podle nových pravidel zpětně. Tento skill se nasazuje od pilotu a zbývajících 5 regionů Epizody 1 + pro všechny další epizody.
 
@@ -10444,7 +10610,8 @@ nestačí, region se prodlouží. Při 150 slovech za minutu stojí 50 slov nav�
 - **Konec kola** (`kN_poradi`): průběžné pořadí **jen v regionu, v hlase i v řádku VIZUÁL**, bez ligových míst (průběžné pořadí je propočet, ne výsledek). Pointa vzorce z oblouku vzorců (analytický skill, pravidlo 11), jen když ji oblouk má. **Na konci 3. kola zazní celé průběžné pořadí regionu po třech hlavních faktorech**, od prvního po posledního („Do cílové rovinky jede první Litva, druhé Estonsko a třetí Lotyšsko.“).
 - **Finále (`## Finále: cíl`):**
   1. `cil_uvod`: **jen v prvním regionu epizody** stručné vysvětlení, co cíl měří (čistá výplata bezdětného jednotlivce na plný úvazek v kupní síle) a že vstupují specifické faktory. **V regionech 2–6 se úvod cíle vypouští** (Ondřej, výtka 3): klíč zůstane prázdný, nebo nese nejvýš jednu krátkou přechodovou větu. Pořadí podle tří faktorů zaznělo na konci 3. kola.
-  2. `cil_<iso>`: od posledního místa po vítěze. **Ochrana fotofiniše:** v odstavci 2. místa nikdy nejmenuj vítěze, ani v jeho obraze. V hlase ani na kartě země v obraze **žádné konečné ligové místo** (zbytek ligy ještě nejel).
+  2. `cil_<iso>`: od posledního místa po vítěze. Stavba odstavce podle oddílu 3 bod 4: peníze s cenami → případně
+     představa diváků → hlavní důvod z rozkladu proti sousedovi → dopad na výplatu. **Ochrana fotofiniše:** v odstavci 2. místa nikdy nejmenuj vítěze, ani v jeho obraze. V hlase ani na kartě země v obraze **žádné konečné ligové místo** (zbytek ligy ještě nejel).
   3. `cil_zaver`: shrnutí, křeslo lídra, linka středu ligy, 1 přeshraniční souboj, body týmu a předávka dalšímu regionu. Cílová tabule ligy v obraze nese popis „zatím z dojetých zemí“. Předávka se v každém regionu říká jinak (ne čtyřikrát „Sesadí Rakousko někdo?“).
 
 ---
@@ -10517,27 +10684,32 @@ odpovídá, a pole karty (komentář `<!-- otázka: … | odpověď: … | karta
 **Vzory cíle podle nových pravidel (Ondřej schválil 21. 11. 2026 s návrhem doplňků; čísla při přepisu znovu ověřit
 proti kartám):**
 
-*Celkový rozsudek, když rozdíl proti třem faktorům je jen zápis ve statistice (Maďarsko):*
-> Poslední v regionu je Maďarsko. Maďarovi přijde na účet kolem 1 030 eur měsíčně a díky levnému životu si za ně
-> doma pořídí tolik jako jinde v Evropě za skoro 1 500. Poslední bylo už po třech kolech a důvody známe: start po
-> čtyřiceti letech centrálního plánování a roky po roce 2006, kdy stát škrtal a sousedé rostli. Právě ty ho stály
-> místo před Slovenskem. A z výplaty mu ukrojí ještě jedna věc: nejvyšší DPH v Evropské unii.
+*Poslední země: důvod proti sousedovi výš, s dopadem (Maďarsko; opraveno 21. 11. 2026 odpoledne, dřív zde stál start po plánování, který poslední místo v regionu nevysvětluje, a škrty po roce 2006, ačkoli Slovensko utíkalo už od roku 2004):*
+> Poslední v regionu je Maďarsko, jak se před startem čekalo. Maďar bere v čistém kolem 1 030 eur měsíčně, a protože
+> je v Maďarsku levně, koupí si za ně doma tolik jako jinde v Evropě za 1 500. Překvapivě za to nemohou slabé odbory:
+> firmy se s lidmi o výdělek dělí skoro jako jinde v Evropě. Na startu přitom bylo před Slovenskem i Polskem, oba mu
+> ale utekli rychlejším růstem: Slovensko hlavně od roku 2004 s novými automobilkami a cestou k euru, Polsko až po
+> finanční krizi. Kdyby Maďarsko rostlo jako Slovensko, měl by Maďar na účtu asi o sto dvacet eur měsíčně víc.
 
-*Soused, který právě dojel (Slovensko):*
-> Čtvrté je Slovensko. Slovákovi přijde na účet kolem 1 280 eur měsíčně a doma to vydá za 1 580. Výkonem je skoro
-> nastejno s Polskem, jenže z výplaty mu zůstane méně než Čechovi, Polákovi i Maďarovi. Před Maďarskem ho drží
-> vyšší výplata: má na účtu asi o čtvrt tisíce eur víc, většinu toho náskoku ale spolknou vyšší slovenské ceny.
+*Ceny ve větě o penězích, důvod z rozkladu proti sousedovi, dva díly proti sobě (Slovensko; opraveno 21. 11. 2026 odpoledne, dřív zde stál kruh „před Maďarskem ho drží vyšší výplata“ a ceny jako důvod pořadí):*
+> Čtvrté je Slovensko. Slovák bere v čistém kolem 1 280 eur, výrazně víc než Maďar. Na Slovensku je ale dráž, a tak si
+> doma koupí jen o kousek víc: tolik jako jinde v Evropě za 1 580. Před Maďarskem ho drží rychlejší růst výkonu,
+> hlavně díky automobilkám a cestě k euru: na startu byl slovenský pracující o kousek za maďarským, dnes je před ním.
+> Přes třetinu toho náskoku mu ale vezmou vyšší odvody.
 
-*Stejné peníze, jiné ceny (Polsko):*
-> Třetí je Polsko. Polákovi přijde na účet skoro stejně jako Slovákovi. Jenže v Polsku je levněji, hlavně bydlení
-> a energie, a tak si za stejné peníze koupí asi o pětinu víc.
+*Silnější důvod uvnitř dílu (Polsko; opraveno 21. 11. 2026 odpoledne, dřív zde ceny vystupovaly jako důvod pořadí a karta jmenovala zvláštní zóny místo odchodu z políček):*
+> Třetí je Polsko. Polák bere v čistém kolem 1 310 eur, skoro stejně jako Slovák, v Polsku je ale levněji, hlavně
+> bydlení a energie, a tak si doma koupí tolik jako jinde v Evropě za 1 870. Na startu bylo poslední v regionu,
+> protože každý pátý pracující Polák hospodařil na poli, hlavně na malých políčkách. Odchod z polí pak udělal asi
+> polovinu toho, o co Polsko rostlo rychleji než Slovensko. V zemědělství dnes pracuje o dva miliony lidí méně a práce
+> přibylo v továrnách a kancelářích, kde každý vytvoří mnohem víc. A stát mu z výplaty bere nejméně v regionu.
 
-*Pořadí se změnilo kvůli tomu, kdo se počítá (Nizozemsko):*
+*Pořadí se změnilo kvůli tomu, kdo se počítá (Nizozemsko; při přepisu Skandinávie a Beneluxu se ověří kontrolou váhy důvodů, zkouška C a D: rozklad proti Dánsku ukazuje větší díly v koláči a v drahotě života než v nepojmenované části):*
 > Vítězem regionu je Nizozemsko. Nizozemec bere méně eur než Dán, jenže život je v Nizozemsku levnější, a tak si
 > koupí o kousek víc. Jak to, že po třech kolech bylo až čtvrté? Průměr na jednoho pracujícího tu sráží to, že čtyři
 > z deseti Nizozemců pracují jen část týdne, a většinou to tak chtějí. Cíl ale porovnává výplaty za plný úvazek.
 
-*Jedna otázka v odstavci (Litva):*
+*Jedna otázka v odstavci (Litva; důvod z rozkladu proti Estonsku a dopad na výplatu se doplní při přepisu Pobaltí, zkouška C a D):*
 > Vítězem regionu je Litva. Estonci chodí na účet víc eur, v Litvě ale stejné peníze vystačí dál, a tak si víc koupí
 > Litevec. První místo drží Litva už od druhého kola, kdy předjela Estonsko.
 
@@ -10564,7 +10736,9 @@ mereni_claudoviny.py`) a první zemi nového regionu čte Ondřej jako krátkou 
    - **V cíli** srovnání se zemí, která v odpočtu právě dojela (`finale.neighbor`), ne se zemí, která ještě nejela.
    - **Dvojčata** (`broadcast_twin`, `callback_twin` se stavem `active`) zůstávají jako přeshraniční souboj; sousedy nenahrazují.
 4. **Cíl země (změněno 21. 11. 2026; vzory v oddílu 3.0):**
-   - Pořadí v odstavci: **peníze** (na účet a doma, zaokrouhleně na desítky eur, přesně v obraze) → **celkový rozsudek** (`finale.overall_verdict`: proč dojela tam, kde dojela, s nejdůležitějším doloženým tahem) → **věc ze života, jen když ji karta pouští do hlasu** (`finale.gap_in_voice`) → **soused, který právě dojel**. Tři až pět vět; rozsudek má vlastní větu.
+   - Pořadí v odstavci (změněno 21. 11. 2026 odpoledne, skill Kontrola váhy důvodů): **peníze s cenami** (kolik bere na účet, zaokrouhleně na desítky eur; jak to změní ceny a co si za to doma koupí; srovnání se sousedem v eurech jen slovy, „výrazně víc než Maďar“, přesně v obraze) → **představa diváků, která neplatí**, těsně před příčinou (smí-li do hlasu) → **hlavní důvod z rozkladu rozdílu proti sousedovi** (`finale.verdict_basis`: u poslední země soused o místo výš; díl, ve kterém se sousedé liší, a co za ním stojí) → **dopad na výplatu**: jedno číslo („Kdyby Maďarsko rostlo jako Slovensko, měl by Maďar na účtu asi o sto dvacet eur víc.“) nebo podíl slovy („tři čtvrtiny toho náskoku smazalo“), a když proti sobě působí dva díly, oba → **věc ze života, jen když ji karta pouští do hlasu** (`finale.gap_in_voice`). Rozsudek má vlastní větu; dlouhé věty se dělí, přesná čísla jdou do obrazu.
+   - **Výplata, eura na účtu ani ceny nejsou důvod pořadí** (zkouška A). „Před Maďarskem ho drží vyšší výplata“ je kruh; „jenže v Polsku je levněji, a tak vede“ vydává převod na kupní sílu za příčinu. Ceny patří do věty o penězích. Mezi důvody smí jen specifický faktor „drahota života proti cenám výroby“ (život levnější, než odpovídá tomu, co země vyrábí).
+   - **Důvod odpovídá na otázku odstavce** (zkouška B): pořadí v regionu vysvětluje díl, ve kterém se země liší od souseda; poloha v Evropě (start po plánování) pořadí mezi zeměmi se stejným startem nevysvětluje.
    - **Účetní rozdíl není důvod umístění a do hlasu nepatří** (`gap_kind: zapis` nebo `maly`). Výjimka: země změnila kvůli tomu, kdo se počítá, pořadí v regionu (`kdo_se_pocita` s `gap_in_voice: true`); pak jedna věta o lidech, nikdy o výpočtu.
    - „Než by odpovídalo třem hlavním faktorům“ zazní jen u věci ze života, ne jako šablona u každé země.
    - **Respektuj `money_scope_note`:** Nepřipisuj částku rozdílu celého faktoru jediné reformě, pokud měří jen rozdíl celkového podílu.
@@ -10601,6 +10775,8 @@ Běží na `FAKTICKA_VERZE.md` (a ve zkráceném režimu délky + srozumitelnost
 a na kartách zemí v cíli, medaile, zakázané obraty („ani chyba, ani zásluha“, „sedí napůl“, „nikdo nespočítal“,
 „kola podcenila“, „statistika připisuje“), opakovanou větu-kostru, „dnes“, délku úvodu cíle v regionech 2–6,
 zmínku o sousedovi nad prahem a tahy označené do hlasu. Přepínač `--pevny-hlas` vypíše jen pevný hlas ke čtení.
+*Doplněno 21. 11. 2026 odpoledne:* v odstavcích cíle hledá výplatu vysvětlenou výplatou a ceny jako důvod pořadí
+a u každé země dopad důvodu na výplatu (skill Kontrola váhy důvodů, oddíl 6).
 Hustota proti Balkánu z videa: `10_documents/active/2026-11-20_oponentura_podkladu_v3_2/mereni_claudoviny.py`.
 
 **Jak se opravuje po kontrole (21. 11. 2026):** škrtem, užším pravdivým tvrzením, nebo přesunem omezení do obrazu.
@@ -18483,13 +18659,17 @@ délka (§8.6). Všechny tři jsou tvrdé; konflikt se řeší výběrem vhledu 
 a přesunem do UI (§8.3), nikdy oslabením kauzality ani nafouknutím bloku.
 
 
-# Skill (NÁVRH K PILOTU, zatím neplatí): ekonomicke-hry-ctiva-verze-SKILL-v3.1.md
+# Skill (NÁVRH K PILOTU, zatím neplatí): ekonomicke-hry-ctiva-verze-SKILL-v3.2.md
 
-## SKILL: Ekonomické hry – Čtivá verze pro voiceover (v3.1)
+## SKILL: Ekonomické hry – Čtivá verze pro voiceover (v3.2)
 
 **Určeno pro:** Gemini (přepis faktických scénářů z Claude Code do finálního mluveného slova pro dabing / ElevenLabs)  
 **Cíl:** Z věcně přesného, ale suchého faktického scénáře vytvořit **zábavný, napínavý, sportovně rytmický a pro naprostého laika srozumitelný komentář**, který zachová veškerou faktickou disciplínu a zároveň nekompromisně odhalí a vyčistí tzv. **„Claudovinu“**.
 
+> **Změny proti 3.1 (21. 11. 2026 odpoledne, Ondřej schválil skill Claude Code „Kontrola váhy důvodů“; zapsal Claude Code).** Změněná místa jsou označená **(3.2)**, jinak je text stejný jako 3.1.
+> 1. Dopad důvodu na výplatu je pevné jádro: věta „Kdyby …, měl by … asi o … eur víc“ nebo podíl („tři čtvrtiny toho náskoku smazalo“) v hlase zůstává a číslo ani podíl se nemění (oddíl 2).
+> 2. Výplata, eura na účtu ani ceny nejsou důvod pořadí; ceny patří do věty o penězích na začátku odstavce (oddíl 2).
+>
 > **Změny proti 3.0 (21. 11. 2026, Ondřej schválil návrh doplňků ze tří posudků: Gemini, ChatGPT a Claude; zapsal Claude Code).** Změněná místa jsou označená **(3.1)**, jinak je text stejný jako 3.0.
 > 1. Účetní rozdíl v cíli do hlasu vůbec nepatří; jediná výjimka je země, která kvůli tomu, kdo se počítá, změnila pořadí v regionu (vlajka 1, oddíl 5).
 > 2. Věty se nesekají na 18–20 slov; jedna pointa a nejvýš jedno omezení, omezení před tvrzením (vlajka 3). Balkán z videa má věty v průměru 22 slov a funguje; řada krátkých vět je zakázané staccato.
@@ -18548,6 +18728,8 @@ Pokud narazíš na pasáž, kterou nedokážeš přeložit do srozumitelné če�
 
 * **Hlas bez procent a poměrů:** V mluveném textu **neříkej procenta ani tabulkové poměry** (*„53,4 ze 100“, „-11,5 %“, „1,76krát“*). Převáděj je na přirozenou lidskou řeč (*„skoro polovina“, „o víc než desetinu“, „o kousek míň“, „téměř dvakrát tolik“*).
 * **Co v hlase říkat přesně:** Částky peněz na účtu a v kupní síle v cíli, **(3.1) zaokrouhleně na desítky eur** (*„kolem 1 570 eur měsíčně a doma to vydá za 1 940“*; přesná čísla jsou v obraze), letopočty a zřetelná pořadí. Kupní sílu řekni jako hodnotu při průměrných cenách, aby nezněla jako druhá částka na účtu.
+* **(3.2) Dopad důvodu na výplatu je pevné jádro.** Věta typu *„Kdyby Maďarsko rostlo jako Slovensko, měl by Maďar na účtu asi o sto dvacet eur víc“* nebo podíl *„tři čtvrtiny toho náskoku smazalo“* v hlase zůstane; můžeš ji říct po svém, ale číslo, podíl a to, co se s čím srovnává, neměň a nevypouštěj. Právě ten dopad Ondřej v textu chtěl (21. 11. 2026: *„řekne proč, ale neřekne, jaký to má vliv na ten zkoumaný indikátor“*).
+* **(3.2) Ceny nejsou důvod pořadí.** Ceny patří do věty o penězích (*„bere výrazně víc než Maďar, na Slovensku je ale dráž, a tak si doma koupí jen o kousek víc“*). Nikdy nepiš, že země vede nebo je před sousedem, protože je u ní levněji, ani že ji před sousedem drží vyšší výplata: důvod pořadí je ve faktické verzi a ty ho nepřesouváš ani nenahrazuješ.
 * **Všechna přesná čísla patří do `[VIZUÁL: ...]`:** Řádky `[VIZUÁL: ...]` zachovej pod každým odstavcem s přesnými anglickými štítky a čísly z faktické verze (s výjimkou zakázaných položek níže, jako jsou ligová místa v průběžném pořadí, konečné ligové místo na kartě země v cíli nebo medaile v regionech).
 * **Slovník epizody:** Drž jednotné obrazy ze slovníku (produktivita, koláč — *včetně opotřebení majetku, nejen zisku!*, kupní síla, zkrácené úvazky, cenovka daní). Slovo *„propustnost“* v hlase nikdy nepoužívej.
 * **Tři hlavní faktory (ne „tři kola“):** Vždy říkej *„tři hlavní faktory“*, nikdy ne *„kam ho poslala tři kola“*. **(3.1)** Obrat *„než by odpovídalo třem hlavním faktorům“* patří jen k věci ze života (ceny, daně v cenách, koláč), ne jako šablona ke každé zemi.
