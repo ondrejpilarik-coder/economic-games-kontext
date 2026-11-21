@@ -9610,6 +9610,12 @@ Seznam se doplňuje při psaní každého regionu: co hlas slíbí na později, 
 ### 3. Co se doplní, až se bude velké finále psát
 Stavba a délka, pořadí vyhlašování (medaile, trikoty, týmy), práce s tabulí, vzory a kontroly.
 
+**První náčrt (Claude, noc na 22. 11. 2026, na Ondřejovo zadání; zatím NEPLATÍ jako vzor):**
+`05_epizode_packs/ep_001_prumerna_mzda_pps_v18/output/analyza_v2/scenare/VELKE_FINALE/NACRT.md`, asi 520 slov.
+Navržené pořadí: tabule a rozpětí ligy (eura na účtu, potom kupní síla) → medaile od bronzu → výklad bodů a první
+žlutý trikot → týmy → tipy z úvodu a Řecko → odpověď na „proč“ z úvodu → upoutávka na další disciplínu. Medailisté
+dostávají jen připomínku z regionu, ne nový důvod. O pořadí oddílů rozhoduje Ondřej.
+
 
 # Skill (NÁVRH K PILOTU, zatím neplatí): kontrola-vahy-duvodu-SKILL-v1.0.md
 
