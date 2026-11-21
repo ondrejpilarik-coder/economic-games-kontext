@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 21. 11. 2026 21:33 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `400e4256`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 21. 11. 2026 22:34 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `0eee00e0`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -10,7 +10,7 @@ Aktualizováno 21. 11. 2026 21:33 automaticky ze soukromého repozitáře projek
 | 02_KUCHARKA_GEMINI | instrukce, podle kterých Gemini scénář napsal |
 | 03_PODKLADY_SCENARE | data a výklady zemí, ze kterých scénář vznikl (jediný zdroj čísel) |
 | 04_CLAUDE_MD | závazná pravidla projektu |
-| 05_AKTIVNI_SKILLY | 36 skillů (analýza, scénáře, úvod, čeština, střih, hlas); z toho 5 návrhy k pilotu, které zatím neplatí |
+| 05_AKTIVNI_SKILLY | 37 skillů (analýza, scénáře, úvod, čeština, střih, hlas); z toho 5 návrhy k pilotu, které zatím neplatí |
 
 Čísla ve scénáři se smějí opírat jen o soubor 03; skilly a pravidla určují formu.
 
@@ -20,7 +20,7 @@ Aktualizováno 21. 11. 2026 21:33 automaticky ze soukromého repozitáře projek
 
 # Poslední scénář – Pobaltí
 
-*Faktická verze se zámkem faktů a seznamem NEŘÍKEJ, kterou napsal Claude podle skillu mapy příběhu a nechal nezávisle zkontrolovat; čtivou verzi z ní píše Gemini na webu podle skillu gemini-web-ctiva-verze a fakta nemění. Uloženo 21. 11. 2026 21:17.*
+*Faktická verze se zámkem faktů a seznamem NEŘÍKEJ, kterou napsal Claude podle skillu mapy příběhu a nechal nezávisle zkontrolovat; čtivou verzi z ní píše Gemini na webu podle skillu gemini-web-ctiva-verze a fakta nemění. Uloženo 21. 11. 2026 22:29.*
 
 
 Faktická verze pro Gemini na webu (pilot postupu po kartách, skilly `voiceover-scenar-regionu-SKILL-v2.0.md` a `kontrola-vahy-duvodu-SKILL-v1.0.md`); přepsal Claude (Opus 5.5) 21. 11. 2026 večer podle pravidel, která Ondřej schválil 21. 11. 2026. Nahrazuje noční verzi z 20.–21. 11. (v historii gitu).
@@ -91,8 +91,8 @@ Druhé je **Estonsko**. Estonec bere v čistém **nejvíc eur z Pobaltí**, kole
 Vítězem regionu je **Litva**. Litevec bere v čistém kolem **1 490 eur**, méně než Estonec. V Litvě je ale o **pětinu levněji**, a tak si doma koupí víc: tolik jako jinde v Evropě za **1 900**. Před Estonskem ji drží dvě skoro stejně velké věci: **rychlejší růst**, kterým ho po roce 2021 předjela, a **levné bydlení** s energiemi, za tři pětiny průměru Unie, levnější, než by odpovídalo tomu, co Litva vyrábí. Kdyby Estonsko mělo kteroukoli z nich, měl by Estonec na účtu asi o **osmdesát až sto eur** víc. Estonské firmy přitom dávají lidem z výdělku **víc** než litevské. Bez toho by byl náskok Litvy víc než **dvakrát** větší.
 [VIZUÁL: karta peněz LT "1,494 € / MONTH NET" · "AT HOME: 1,904 PPS / MONTH" · "PRICE LEVEL 78.5" · "1ST IN THE BALTICS"; pořadí v regionu po kolech "2ND → 1ST → 1ST"; srovnání se sousedem "LITHUANIA VS ESTONIA · ON THE ACCOUNT -14 % · AT HOME +7 %"; "IF ESTONIA HAD GROWN LIKE LITHUANIA: +80 € A MONTH · WITH LITHUANIA'S HOUSING COSTS: ABOUT +100 €"; "HOUSING & ENERGY PRICE LEVEL: LITHUANIA 60, ESTONIA 97 (EU = 100)"; rozklad náskoku: "FASTER GROWTH +5 · CHEAPER HOUSING +5 · OTHER PARTS +4 · ESTONIAN FIRMS SHARE MORE -8 (POINTS)"; ikona pie_chart u věty o firmách]
 
-Pobaltí tak dojelo ve stejném pořadí, v jakém vjelo do cílové rovinky. Na cílové tabuli ligy zůstává v **křesle lídra Rakousko** a nad **linkou, která dělí ligu napůl**, je pořád **samo**. Ze šesti zemí, které v roce 1996 startovaly nejníž, dojela **nejvýš Litva**, i před **Rumunskem**, které rostlo ještě rychleji. Litva totiž startovala o kus výš a rumunské firmy dávají lidem z výdělku **mnohem menší kus**. {volitelné: Tým Pobaltí má zatím osmdesát bodů, nejméně ze tří odjetých týmů; sto je průměr všech sedmadvaceti zemí.} Teď jede **jižní Evropa** a s ní země, která v roce 1996 startovala z celé ligy nejvýš: **Itálie**.
-[VIZUÁL: cílová tabule ligy, jen dojeté země, nově dojeté označené ●: 1 AT 2,841 PPS / měsíc, linka "LEAGUE MEDIAN 2,100 PPS / MONTH", 2 SI 2,034, 3 CZ 1,935, 4 LT 1,904 ●, 5 HR 1,899, 6 PL 1,874, 7 EE 1,787 ●, 8 BG 1,724, 9 GR 1,692, 10 RO 1,628, 11 LV 1,605 ●, 12 SK 1,580, 13 HU 1,499; štítky "LEADER" a "FINISHED SO FAR: 13 OF 27"; zvýraznění šesti nejnižších startů roku 1996 (LT, PL, EE, BG, RO, LV); souboj "LITHUANIA VS ROMANIA: START 34 VS 26 · GROWTH ×2.48 VS ×3.17 · FINISH 1,904 VS 1,628 PPS"; "WAGES' SHARE OF WHAT FIRMS EARN: ROMANIA 48, EUROPE 59 OF 100"; volitelně "TEAM POINTS: CENTRAL EUROPE 88, BALKANS 82, BALTICS 80 · 100 = AVERAGE OF ALL 27 COUNTRIES"]
+Pobaltí tak dojelo ve stejném pořadí, v jakém vjelo do cílové rovinky. Na cílové tabuli ligy zůstává v **křesle lídra Rakousko** a nad **linkou, která dělí ligu napůl**, je pořád **samo**. Ze šesti zemí, které v roce 1996 startovaly nejníž, dojela **nejvýš Litva**, i před **Rumunskem**, které rostlo ještě rychleji. Litva totiž startovala o kus výš a rumunské firmy dávají lidem z výdělku **mnohem menší kus**. Teď jede **jižní Evropa** a s ní země, která v roce 1996 startovala z celé ligy nejvýš: **Itálie**.
+[VIZUÁL: cílová tabule ligy, jen dojeté země, nově dojeté označené ●: 1 AT 2,841 PPS / měsíc, linka "LEAGUE MEDIAN 2,100 PPS / MONTH", 2 SI 2,034, 3 CZ 1,935, 4 LT 1,904 ●, 5 HR 1,899, 6 PL 1,874, 7 EE 1,787 ●, 8 BG 1,724, 9 GR 1,692, 10 RO 1,628, 11 LV 1,605 ●, 12 SK 1,580, 13 HU 1,499; štítky "LEADER" a "FINISHED SO FAR: 13 OF 27"; zvýraznění šesti nejnižších startů roku 1996 (LT, PL, EE, BG, RO, LV); souboj "LITHUANIA VS ROMANIA: START 34 VS 26 · GROWTH ×2.48 VS ×3.17 · FINISH 1,904 VS 1,628 PPS"; "WAGES' SHARE OF WHAT FIRMS EARN: ROMANIA 48, EUROPE 59 OF 100"]
 
 ## NEŘÍKEJ
 
@@ -676,6 +676,7 @@ Instrukční dokumenty pro generování obsahu jsou v `05_epizode_packs/_skills/
 - **`voiceover-uvod-SKILL-v1.1.md`** — AKTIVNÍ skill mluveného úvodu pro scénáře po regionech (Ondřej 10., 13. a 16. 11. 2026; platný od 17. 11. 2026), nahrazuje §9 writer skillu: krátký úvod asi 90 vteřin v pěti blocích, trademark „Vítejte u {první} epizody {Evropských/Amerických/Globálních} ekonomických her.“, favoriti, černí koně a outsideři vždy od Ondřeje, trikoty a týmová soutěž, a blok 4b: sloupcový graf hlavních faktorů a jejich vlivu na zkoumaný ukazatel se zněním od Ondřeje. Verze 1.0 (8. 10. 2026) zůstává pro starší formát živého závodu.
 - **`indicator-card-builder-SKILL-v6.0.md`** — NÁVRH K PILOTU, NEPLATÍ (Ondřej s Gemini na webu, 19. 11. 2026): stavba karty indikátoru v sedmi krocích, které Gemini vede s Ondřejem (definice ukazatele; mapa příčin a srovnání jednotek; místa, kde statistika klame; výpočet vah a výběr kol; druhy faktorů s otázkami a režimy hodnocení; pracovní teze 27 zemí a slovník epizody; export). Výstup `input/karta_indikatoru_v6.json`, kontrola `py scripts/validate_indicator_card.py <karta>` (větev 6.0; otisk dat podle `scripts/otisk_dat.py`). Platné zůstávají karty verze 4 a 5 (`episode-card-builder-SKILL-v4.md` a `-v5.md`), dokud pilot neprojde.
 - **`analyza-pricin-zeme-SKILL-v2.0.md`** — NÁVRH K PILOTU, NEPLATÍ (19. 11. 2026): analýza příčin po zemích s jednou kartou na zemi (`output/analyza_v2/karty_zemi/{ISO}.json`): tři patra odpovědi (číslo, rozklad, skutečná příčina s dokladem rozsahu), test každé hlavní příčiny proti datům se třemi výsledky, příčina se musela stát v měřeném období, čtyři kroky hodnocení rozhodnutí, stupně jistoty s dovolenými slovesy, nezávislá kontrola faktů u zdrojů a kontrolor, který se kartu snaží rozbít. Platným postupem analýzy zůstává `analyza-pricin-regiony-SKILL-v1.6.md`.
+- **`voiceover-velke-finale-SKILL-v1.0.md`** — ROZPRACOVÁNO (Ondřej 21. 11. 2026): velké finále epizody. Zatím zapisuje, jak vysvětlit body šampionátu (body země = 100 × výsledek / průměr všech zemí ligy; v regionech se body neříkají ani neukazují, vysvětlí se jednou ve velkém finále před prvním žlutým trikotem) a seznam slibů z úvodu a regionů, které musí finále splnit (trikoty, týmy, tipy, medaile, Řecko). Před finále mezd sladit registr celkového pořadí s daty epizody. Stavba a vzory se doplní, až se bude finále psát.
 - **`kontrola-vahy-duvodu-SKILL-v1.0.md`** — SCHVÁLENO PRO PILOT (Ondřej 21. 11. 2026): kontrola, jestli důvody v kartách zemí a ve scénáři jsou ty hlavní a jestli říkají dopad na výplatu. Rozklad rozdílu mezi sousedy na díly, které se sčítají (`output/analyza_v2/doplnky/rozklad_dvojic.py`), časování ve dvou měřítkách a odchod ze zemědělství (`rust_po_obdobich.py`), pět zkoušek (kruh a ceny jako důvod, otázka odstavce, váha, dopad, co stojí za dílem), pole `finale.verdict_basis` v kartě. Dělá ji koordinující sezení po kartách a před faktickou verzí; nová fakta ověřuje jiný model (Fable 5.2 proti Opusu 5.5).
 - **`voiceover-scenar-regionu-SKILL-v2.0.md`** — NÁVRH K PILOTU, NEPLATÍ (19. 11. 2026): faktická verze scénáře regionu psaná z karet zemí: nové délky podle počtu zemí, srovnání s podobnou zemí místo důvodu u každého souseda, zkouška kontrol úmyslnou vadou a pilot na třech zemích před přepnutím, závěrečná kontrola smyslu až nad konečným textem po Gemini. Kontrola `py scripts/kontrola_scenare_v2.py` (před psaním, faktická verze, čtivá verze). Platným postupem zůstává `voiceover-mapa-pribehu-SKILL-v1.2.md` s branou `scripts/kontrola_paru_sousedu.py`; namluvený a sestříhaný Balkán se podle nového postupu nepřepisuje.
 - **`voiceover-cestina-SKILL-v1.0.md`** — ČESKÁ JAZYKOVÁ VRSTVA, NA ZKOUŠKU (Ondřej rozhoduje vkus; 2026-09-15, z rešerší R1/R2 a ze slepého porovnání dvou verzí voiceoveru ep_003). Není to writer ani přepis: **omezený druhý průchod** nad hotovou skillovou verzí — mapa bodových oprav jazyka (`scripts/voiceover_apply_replacements.py`), zámek číslovek a hedgí (`scripts/voiceover_cestina_detektory.py --pred`, exit 0), INFO rozdíly kvalifikátorů/první osoby/zesilovačů, čerstvá kontrola, pak standardní slepé čtení + viewer review. §15.1 = pravidla, která obstála (nominalizace → sloveso, aktér místo pasiva, réma na konec, dvojtečka → spojka ne tečka, „kam“, genitiv po „dost“ a u kvantity, statistická jednotka není fyzický objekt); §15.2 = tvrdé zákazy (hodnotící přívlastek u čísla, první osoba u verdiktu, škrtnutý kvalifikátor, změněná kauzální spojka, přidaný fakt, přejmenovaný pojem série, dvojtečka → tečka); §15.4 = otázky vkusu pro Ondřeje (vrstva postoje, první osoba, průvodcovské vazby, nocleh/startér).
@@ -763,7 +764,7 @@ Stručně:
 
 # Aktivní skilly Ekonomických her
 
-Obsah (36 skillů):
+Obsah (37 skillů):
 
 - pipeline-orchestration-SKILL-v3.md
 - data-collection-SKILL-v1.0.md
@@ -781,6 +782,7 @@ Obsah (36 skillů):
 - voiceover-uvod-SKILL-v1.1.md
 - indicator-card-builder-SKILL-v6.0.md (NÁVRH K PILOTU, zatím neplatí)
 - analyza-pricin-zeme-SKILL-v2.0.md (NÁVRH K PILOTU, zatím neplatí)
+- voiceover-velke-finale-SKILL-v1.0.md
 - kontrola-vahy-duvodu-SKILL-v1.0.md (NÁVRH K PILOTU, zatím neplatí)
 - voiceover-scenar-regionu-SKILL-v2.0.md (NÁVRH K PILOTU, zatím neplatí)
 - voiceover-cestina-SKILL-v1.0.md
@@ -6553,6 +6555,8 @@ a dělbu práce s Gemini (§3.0, §0) a graf faktorů v úvodu (postup pro úvod
 u doplňků níže popisuje stav před tímto dnem. Neuzavřené zůstává, co čeká na jeho posouzení (celé znění cíle
 Balkánu, čtyři regiony ze 13. 11.); přehled: `10_documents/active/2026-11-17_co_je_schvaleno/PREHLED_SCHVALENI.md`.
 
+*Změněno 21. 11. 2026 večer (Ondřej): body šampionátu a body týmů se v regionech neříkají ani neukazují; vysvětlí se jednou ve velkém finále (`voiceover-velke-finale-SKILL-v1.0.md`).*
+
 **Co se změnilo ve verzi 1.2 (13. 11. 2026; úplné znění).** Ondřej si v Pobaltí všiml dvou věcí, které nezadal, a obě se po dohledání ukázaly jako mezera v postupu. Zkouška na Pobaltí: `ep_001_prumerna_mzda_pps_v18/output/scenar_regiony_2026_10/gemini/POBALTI_FABLE_2026-11-10/`.
 1. **Tvář země, ne jen příčina** (pravidlo „Co za tím stálo“, bod 7): test nosnosti rozhoduje o tom, co smí být
    příčina, ne o tom, co smí zaznít. Firmy, které si divák se zemí spojuje (Skype, Vinted), zazní jménem jako tvář
@@ -6572,7 +6576,7 @@ Balkánu, čtyři regiony ze 13. 11.); přehled: `10_documents/active/2026-11-17
 7. **soud nahlas, hlavní větou**, slovník slov soudu a test slova „chyba“ (§2.3a);
 8. **průběžné pořadí jen uvnitř regionu** a pravidla závodu vysvětlená za jízdy v prvním regionu (§2.5);
 9. **věta účtu u každé země v cíli** a otázka, zda důvod posunu není započtený už v kolech (§2.6);
-10. **cílová tabule ligy a body týmu** na konci regionu (§2.8);
+10. **cílová tabule ligy** na konci regionu (§2.8; body týmu až ve velkém finále, změněno 21. 11. 2026);
 11. **psaní na poslech** a příčina krkolomných vět (§3 bod 2);
 12. **zkouška poslechem u každého regionu** a pořadí kontrol; omezující slovo je součást faktu (§3 bod 7, §5a);
 13. **dělba práce s Gemini:** zamčený je význam, ne slovosled; styl je celý jeho (§0, §3 bod 3, §4);
@@ -6819,7 +6823,7 @@ jsou provázané rozdíly mezi sousedy a značkami pro obraz, rozpadla by se log
    `[VIZUÁL: Místa v kole N (v regionu / v lize z 27): Země 1. / 15., …]`. **Průběžné pořadí po kole se v hlase
    říká jen uvnitř regionu** (§2.5; Ondřej 10. a 13. 11. 2026: „do toho shrnutí pořadí po těch kolech to
    nepatří“); průběžná místa v lize a držitel zeleného trikotu jsou jen v jeho řádku VIZUÁL jako podklad.
-4. **Cílová tabule na konci každého regionu** (§2.8), v řádku VIZUÁL i s držitelem zeleného trikotu a body týmu.
+4. **Cílová tabule na konci každého regionu** (§2.8), v řádku VIZUÁL i s držitelem zeleného trikotu (body týmu až ve velkém finále).
 5. **Každý zlom má štítek.** U každého propadu, stagnace a skoku stojí v oddíle Soudy, co to bylo: vnější smůla,
    vlastní chyba (test čtyř otázek, §2.3a), dobrý tah, dědictví, nebo **jiná či opatrnější cesta než konkrétní soused
    z regionu** (se jménem souseda a tím, v čem se lišili). Hlas to věcně rozliší, takže komentátor může srovnat
@@ -6841,8 +6845,7 @@ Pro každý ukazatel a region:
   nečeká); rozmezí míst z tipů zůstává jen v podkladech;
 - **tváře zemí a známé představy** s výsledkem testu (pravidlo „Co za tím stálo“, body 7 a 8);
 - **podklad pro cílovou tabuli ligy** (výsledek všech zemí regionu a zemí, které už dojely, start z prvního kola,
-  rozdíly proti sousedům přes hranici regionu v procentech, kdo sedí v křesle lídra, kde leží linka středu ligy, body
-  týmu): z analýzy (analytický skill krok 9a body 9 až 11) a z návrhu tabule epizody;
+  rozdíly proti sousedům přes hranici regionu v procentech, kdo sedí v křesle lídra, kde leží linka středu ligy): z analýzy (analytický skill krok 9a body 9 až 11) a z návrhu tabule epizody;
 - **štítky** (hodnocení kroků vlády vůči výchozí pozici, rok zlomu, vedlejší štítek);
 - **výklady zemí** (proč má země v kolech takové hodnoty, další faktory, co říkají ekonomové) a **rešerše ekonomů**
   (důvody od největšího vlivu, síla dokladu);
@@ -7218,7 +7221,7 @@ zemi; omezující slovo u něj („z velké části“, „hlavně stát“) je 
   | v cíli rozhoduje jen změřená hodnota | úvod cíle | „V cíli ale rozhoduje jen skutečná čistá mzda v kupní síle.“ |
   | vedlejší faktory | úvod cíle | „Do hry vstupují vedlejší faktory, tedy věci, které tři kola nezachytí: třeba kolik z vytvořeného dá firma zaměstnancům nebo jak drahý je život.“ |
   | co je kupní síla | cíl, první země, u které rozdíl eur a kupní síly něco mění | na příkladu, bez definice |
-  | cílová tabule, křeslo lídra, linka středu ligy, body týmu | konec regionu | „Vodorovná linka ukazuje výplatu střední země ligy.“ |
+  | cílová tabule, křeslo lídra, linka středu ligy | konec regionu | „Vodorovná linka ukazuje výplatu střední země ligy.“ |
   | pojem, který divák nemusí znát | půlvětou při první zmínce | „centrální plánování, kdy o výrobě rozhodoval stát“ |
 
   První region smí kvůli tomu překročit strop o 50 slov (§3 bod 6). Smyšlený příklad k nesčítání kol se nepoužívá,
@@ -7378,7 +7381,8 @@ Pak pro každou dvojici sousedů v cíli:
   („favorit roli potvrdil“, „na zelený trikot nestačila“). Tipy z úvodu epizody se spočítají jednou, ve velkém finále,
   proti aktuálním datům.
 
-#### 2.8 Konec regionu: cílová tabule ligy a body týmu
+#### 2.8 Konec regionu: cílová tabule ligy
+*Změněno 21. 11. 2026 večer (Ondřej): body šampionátu, body týmů i jejich vysvětlení až ve velkém finále (`voiceover-velke-finale-SKILL-v1.0.md`); v regionech se body neříkají ani neukazují. Dřívější znění chtělo u cílové tabule každého regionu větu o bodech týmu.*
 (Ondřej 10. 11. 2026: „průběžná tabulka cíle napříč regiony… ukazovat na ní vzorce“.) Region nekončí větou zápletky,
 ale **cílovou tabulí celé ligy**: stálou tabulí všech zemí, které už dojely, seřazených podle skutečného výsledku.
 Dojeté země tak zůstávají ve hře do konce epizody. Návrh tabule (zastávky na skutečných číslech, věty, obraz) vzniká
@@ -7393,10 +7397,9 @@ NAVRH_CILOVA_TABULE.md` a náčrt `cilova_tabule_nacrt.html` tamtéž.
   neopakovala.
 - **Každá země regionu má na tabuli svou chvíli:** vedle koho dojela a odkud startovala (hlasem, nebo aspoň v řádku
   VIZUÁL).
-- **Body týmu (Ondřej 13. 11. 2026).** Soutěží se i týmově, tým je region. Body země jsou její výsledek proti
-  průměru ligy (průměr ligy = 100), body týmu prostý průměr bodů jeho zemí. U tabule zazní jednou větou („Tým
-  Balkánu má 82 bodů, sto je průměr ligy“); celé pořadí týmů vyhlásí velké finále. Rozdíl pod pět procent mezi týmy
-  se říká „skoro nastejno“.
+- **Body týmu až ve velkém finále (Ondřej 21. 11. 2026; dřív 13. 11. jedna věta u každé tabule).** V regionu se
+  body neříkají ani neukazují: v první disciplíně pořadí nemění, divák rozumí eurům a sto bodů (průměr všech zemí)
+  by se pletlo se střední zemí ligy. Výklad bodů a pořadí týmů: `voiceover-velke-finale-SKILL-v1.0.md`.
 - **Vzorec, ne výklad:** tabule ukazuje (start není osud; kdo je pod linkou), proč se to stalo, říkají kola a cíl
   regionu. Tabule nepřidává novou příčinu.
 - **Slova:** rozdíl pod pět procent „těsně“, „vedle“, „skoro nastejno“; místo číslem jen u křesla a prvních míst;
@@ -7407,7 +7410,7 @@ NAVRH_CILOVA_TABULE.md` a náčrt `cilova_tabule_nacrt.html` tamtéž.
 - Počítá se do stropu regionu (§3 bod 6). Čísla jsou z jednoho přepočtu ligy; chvíle, která stojí na rozdílu pod
   pět procent, se před výrobou obrazu ověří zvlášť a věta se píše tak, aby malý posun přežila.
 - Ve faktické verzi stojí tabule na konci části `## Finále: cíl` s vlastním řádkem `[VIZUÁL: …]` (pořadí dojetých
-  zemí s čísly, linka, starty, počitadlo „na trati ještě N“, body týmu).
+  zemí s čísly, linka, starty, počitadlo „na trati ještě N“).
 
 #### 2.9 Tabulka chvil a titulková věta (před psaním)
 1. **Tabulka chvil:** řádek země, sloupce kolo 1, kolo 2, kolo 3, cíl, cílová tabule. V každém poli konkrétní věc
@@ -7601,8 +7604,8 @@ Dál platí:
    - **Kolo o daních je suché,** když jsou v něm jen procenta. Hlavní scéna říká, co to znamená pro konkrétního
      člověka a jeho výplatu v eurech (firma zaplatí za zaměstnance 3 700 eur, na účet mu přijdou dva tisíce);
      ostatní země dostanou jednu konkrétní věc (rok, pravidlo, co za odvody lidé mají).
-   - **Cílová tabule je hustá.** V hlase nejvýš dvě čísla, každé procento říká pod kým nebo před kým, body týmu jen
-     se souvislostí („sto je průměr ligy“). Vypráví se jako děj: kdo útočil, kdo odolal, kdo se vedle koho zařadil.
+   - **Cílová tabule je hustá.** V hlase nejvýš dvě čísla, každé procento říká pod kým nebo před kým; body týmu
+     v regionu nezazní (od 21. 11. 2026 až ve velkém finále). Vypráví se jako děj: kdo útočil, kdo odolal, kdo se vedle koho zařadil.
    - **Zelený trikot v rolích** bez vysvětlení mate, když v regionu žádný adept není. Buď půlvěta, co trikot je a kdo
      ho veze, nebo nic.
    - **Dva názvy pro součet kol** („tři hlavní faktory“ a „papírové předpoklady“) posluchač bere jako dvě různé
@@ -7839,7 +7842,7 @@ z analýzy toho ukazatele, a když ho nemá, finále vykládá jen doložené in
 otázka diváka, průběžné pořadí, páry sousedů, dvě otázky výkladu (proč je země taková a proč je před sousedem nebo
 za ním) s pořadím příčin, komentátorské hodnocení se silou podle předmětu a dokladů a zámek faktů platí beze
 změny. Kde skill mluví o výplatě (kudy k výplatě, pointa končí výplatou), u jiné epizody platí její ukazatel.
-Role zemí, tabulka chvil, slova soudu, tváře zemí a známé představy, cílová tabule ligy s body týmu a psaní na poslech
+Role zemí, tabulka chvil, slova soudu, tváře zemí a známé představy, cílová tabule ligy a psaní na poslech
 platí pro každý ukazatel. Návrh cílové tabule se pro každou epizodu počítá znovu z jejích čísel (kde leží linka, kdo
 drží křeslo, které souboje přes hranici regionu vyjdou).
 
@@ -9380,6 +9383,8 @@ ho Claude při psaní mapy příběhu dřív, než začne psát faktickou verzi.
 
 ## Úvod scénáře — skill v1.1 (Ondřejovo zadání 10. a 13. 11. 2026)
 
+*Změněno 21. 11. 2026 večer (Ondřej): body šampionátu a body týmů se v regionech neříkají ani neukazují; vysvětlí se jednou ve velkém finále (`voiceover-velke-finale-SKILL-v1.0.md`).*
+
 > **Stav:** úplné znění; **od 17. 11. 2026 platné a uložené v projektu** (Ondřej 17. 11. 2026 v noci: „Ano určitě…
 > určitě všechno hned commitni“; o grafu faktorů: „To mně přijde taky dost důležitý a dost to pomohlo“). Slovo
 > „necommitováno“ u doplňků níže popisuje stav před tímto dnem. Platí pro scénáře stavěné po regionech
@@ -9484,7 +9489,8 @@ evropské ligy (225 slov); pro každou disciplínu se píše znovu.
 > ho může sesadit.
 
 - **Týmová soutěž:** tým je region. Body země jsou její výsledek proti průměru ligy (průměr ligy = 100), body týmu
-  prostý průměr bodů jeho zemí. V úvodu se pravidlo nevykládá; zazní u cílové tabule prvního regionu.
+  prostý průměr bodů jeho zemí. V úvodu se pravidlo nevykládá; vysvětlí se ve velkém finále spolu s pořadím týmů
+  (Ondřej 21. 11. 2026, `voiceover-velke-finale-SKILL-v1.0.md`; dřív u cílové tabule prvního regionu).
 - **Cílová tabule** je slib, proč nepřeskakovat: po každém regionu se něco rozhodne (skill mapy příběhu §2.8).
 - Pořadí regionů určuje návrh cílové tabule epizody.
 
@@ -10281,6 +10287,79 @@ Do digestu jde **každá karta**, která spustí libovolnou pojistku: stupeň `o
 }
 ```
 
+# Skill: voiceover-velke-finale-SKILL-v1.0.md
+
+## Velké finále epizody (skill pro Claude, v1.0, rozpracováno)
+
+*Stav: **rozpracováno** (Ondřej 21. 11. 2026). Zatím zapisuje dvě věci, které se nesmějí ztratit: jak vysvětlit body
+šampionátu a co všechno musí ve velkém finále zaznít, protože to úvod a regiony slíbily. Stavba, délka a vzory
+velkého finále se doplní, až se bude psát. Platí pro všechny epizody a ligy.*
+
+Ondřej 21. 11. 2026: „My tam vůbec nemluvíme o přepočtu toho hlavního indikátoru na náš indexový koeficient, což
+vlastně je dost zásadní pro tu dlouhodobou soutěž… Možná až ve finále, myslím ve velkém finále.“ Po Claudově návrhu:
+„Přijde mi, že jsi to vysvětlil vlastně docela dobře, a jen nechci, aby se na to zapomnělo.“
+
+### 1. Body šampionátu
+
+#### 1.1 Kde se vysvětlují
+- **V regionech se body neříkají ani neukazují.** Regiony mluví v jednotkách ukazatele (u mezd eura na účtu a kolik
+  si za ně člověk koupí doma). Body týmů v regionech také ne.
+- **Vysvětlí se jednou, ve velkém finále první epizody ligy**, těsně před vyhlášením prvního žlutého trikotu, aby
+  divák věděl, z čeho se trikot počítá. V dalších epizodách stačí jedna připomínková věta.
+
+**Proč (Claude 21. 11. 2026, Ondřej souhlasil):**
+1. V první disciplíně body pořadí nemění. Bod je výsledek země vydělený průměrem všech zemí ligy a vynásobený stem,
+   takže pořadí podle bodů je stejné jako podle výplaty. Rozhodovat začnou, až se sčítají disciplíny s různými
+   jednotkami (od druhé epizody).
+2. Divák rozumí eurům. Otázka „kolik mi přijde na účet a co si za to koupím“ je důvod, proč se dívá. Body v regionech
+   by byly další vrstva čísel, a hustota čísel byla největší problém scénářů.
+3. Pletly by se dva středy. Regiony srovnávají se **střední zemí ligy** (nad ní polovina ligy, pod ní druhá
+   polovina). Body mají sto jako **průměr všech zemí ligy**. Jsou to dvě různé věci a nikdy se nezaměňují ani
+   v hlase, ani v obraze.
+
+#### 1.2 Jak se body počítají (pro text i obraz)
+- **Body země v disciplíně** = 100 × výsledek země / průměr všech zemí ligy. U ukazatele, kde je méně lépe (třeba
+  roky výplaty na byt), obráceně: 100 × průměr / výsledek, aby víc bodů bylo vždy lépe.
+- **Body týmu** = prostý průměr bodů jeho zemí (tým je region).
+- **Žlutý trikot**: země s nejvíc body v celkovém pořadí, které sčítá body ze všech dosavadních disciplín.
+- **Zelený trikot**: největší skok dopředu (v epizodě o mzdách od roku 1996 do roku 2024), počítá se zvlášť.
+- U odvětvových disciplín (třeba cestovní ruch) se body do celkového pořadí ředí podle váhy odvětví; zapíše se
+  v epizodě, kde to poprvé nastane. Výpočet: `scripts/build_season_standings.py`, registr
+  `05_epizode_packs/_registry/season_standings.json`.
+- **Před velkým finále mezd sladit registr s daty epizody (zjištěno 21. 11. 2026).** Registr bere výplatu i zelený
+  trikot ze starého `05_epizode_packs/ep_001_prumerna_mzda_pps_v18/input/data.json`: jiná výplata, než o které mluví
+  regiony (Česko 29 664 PPS ročně proti 23 215 v `output/analyza_v2/data/liga_data.json`), a zelený trikot podle
+  ročního tempa růstu, ne podle skoku 1996–2024, jak slibuje úvod. Body a trikoty se musejí přepočítat z dat, ze
+  kterých mluví hlas (otisk `sha256:254e4783…`), jinak by finále vyhlásilo jiné pořadí než regiony.
+
+#### 1.3 Jak to říct (vzor, Claude 21. 11. 2026)
+> Aby šly sčítat disciplíny s různými jednotkami, převádíme výsledek na body: průměr všech sedmadvaceti zemí má sto,
+> kdo bere o pětinu víc, má sto dvacet. V první disciplíně body pořadí nemění, rozhodovat začnou, až se k výplatám
+> přidá další disciplína.
+
+V obraze potom tabulka bodů (země i týmy). Čísla se berou z registru celkového pořadí, ne ručně.
+
+### 2. Co musí ve velkém finále zaznít (sliby z úvodu a regionů)
+
+Seznam se doplňuje při psaní každého regionu: co hlas slíbí na později, zapíše se sem. Pro epizodu o mzdách (stav
+21. 11. 2026, zdroj `ekonomicke-hry-remotion/public/strih_balkan/hlas/texty.json` a faktické verze regionů):
+
+1. **První držitel žlutého trikotu** (úvod, část 2: „Jeho lídr veze žlutý trikot, a právě dnes poznáme jeho prvního
+   držitele.“). Před vyhlášením vysvětlení bodů (oddíl 1.3).
+2. **Zelený trikot za největší skok** (úvod, část 3; favorité Rumunsko, Bulharsko, Chorvatsko a Litva). V Pobaltí
+   zaznělo, že si ho drží Rumunsko.
+3. **Pořadí týmů s body týmů** (úvod, část 4: „Soutěží se i týmově“). V regionech body týmů nezazněly.
+4. **Vyhodnocení tipů z úvodu:** favorité Švýcarsko, Dánsko, Nizozemsko, Norsko; černí koně Rakousko a Irsko; u dna
+   tabulky Bulharsko, Chorvatsko, Řecko a Maďarsko (úvod, část 2). Vyhodnotit i tipy, které nevyšly.
+5. **Řecko a poslední místo celé ligy** (závěr Balkánu: „a jestli Řecko uniklo poslednímu místu celé ligy, ukáže až
+   velké finále“).
+6. **Medaile** (zlato, stříbro, bronz) jen tady; v regionech nezazní (skill scénáře regionu 2.0, oddíl 3 bod 11).
+7. **Kdo zůstal v křesle lídra** po posledním regionu a konečná tabule celé ligy.
+
+### 3. Co se doplní, až se bude velké finále psát
+Stavba a délka, pořadí vyhlašování (medaile, trikoty, týmy), práce s tabulí, vzory a kontroly.
+
+
 # Skill (NÁVRH K PILOTU, zatím neplatí): kontrola-vahy-duvodu-SKILL-v1.0.md
 
 ## Kontrola váhy důvodů v1.0
@@ -10419,6 +10498,8 @@ modelu.
 
 *Doplněno 21. 11. 2026 odpoledne (Ondřej schválil skill `kontrola-vahy-duvodu-SKILL-v1.0.md`): stavba odstavce v cíli (oddíl 2 a 3 bod 4: ceny ve větě o penězích, hlavní důvod z rozkladu rozdílu mezi sousedy, dopad na výplatu), opravené vzory Maďarska, Slovenska a Polska v oddílu 3.0, poznámka k vzorům Nizozemska a Litvy a nové kontroly v oddílu 5A. Ostatní text beze změny. Proč: ukázka cíle z 21. 11. řekla proč, ale ne kolik to udělalo s výplatou; Slovensko vysvětlila vyšší výplatou a pořadí sousedů cenami; u Maďarska dala důvod k jiné otázce a u Polska slabší důvod místo silnějšího.*
 
+*Změněno 21. 11. 2026 večer (Ondřej): body šampionátu a body týmů se v regionech neříkají ani neukazují; vysvětlí se jednou ve velkém finále (`voiceover-velke-finale-SKILL-v1.0.md`).*
+
 **Přechodné pravidlo pro Epizodu 1 (Mzdy):** Již namluvený a sestříhaný region **Balkán** je uzavřená výjimka a nepřepisuje se podle nových pravidel zpětně. Tento skill se nasazuje od pilotu a zbývajících 5 regionů Epizody 1 + pro všechny další epizody.
 
 ---
@@ -10474,7 +10555,7 @@ nestačí, region se prodlouží. Při 150 slovech za minutu stojí 50 slov nav�
   1. `cil_uvod`: **jen v prvním regionu epizody** stručné vysvětlení, co cíl měří (čistá výplata bezdětného jednotlivce na plný úvazek v kupní síle) a že vstupují specifické faktory. **V regionech 2–6 se úvod cíle vypouští** (Ondřej, výtka 3): klíč zůstane prázdný, nebo nese nejvýš jednu krátkou přechodovou větu. Pořadí podle tří faktorů zaznělo na konci 3. kola.
   2. `cil_<iso>`: od posledního místa po vítěze. Stavba odstavce podle oddílu 3 bod 4: peníze s cenami → případně
      představa diváků → hlavní důvod z rozkladu proti sousedovi → dopad na výplatu. **Ochrana fotofiniše:** v odstavci 2. místa nikdy nejmenuj vítěze, ani v jeho obraze. V hlase ani na kartě země v obraze **žádné konečné ligové místo** (zbytek ligy ještě nejel).
-  3. `cil_zaver`: shrnutí, křeslo lídra, linka středu ligy, 1 přeshraniční souboj, body týmu a předávka dalšímu regionu. Cílová tabule ligy v obraze nese popis „zatím z dojetých zemí“. Předávka se v každém regionu říká jinak (ne čtyřikrát „Sesadí Rakousko někdo?“).
+  3. `cil_zaver`: shrnutí, křeslo lídra, linka středu ligy, 1 přeshraniční souboj a předávka dalšímu regionu. Body týmu ani vysvětlení bodů šampionátu v regionu nezaznějí a nejsou ani v obraze; patří do velkého finále (Ondřej 21. 11. 2026, `voiceover-velke-finale-SKILL-v1.0.md`). Cílová tabule ligy v obraze nese popis „zatím z dojetých zemí“. Předávka se v každém regionu říká jinak (ne čtyřikrát „Sesadí Rakousko někdo?“).
 
 ---
 
