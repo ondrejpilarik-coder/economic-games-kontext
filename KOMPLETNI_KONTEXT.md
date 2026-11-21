@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 21. 11. 2026 01:22 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `a3102136`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 21. 11. 2026 01:52 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `b03880b2`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -10117,7 +10117,10 @@ i Slovensko byly na svém místě v regionu už po třech kolech a u Maďarska d
 4. **Specifické faktory** se dál mapují na `specific_factors_catalog` (včetně `icon_id_remotion`) a procházejí
    **testem odchylky od středu ligy** (`deviation_vs_league_median`): faktor, v němž se země od zbytku Evropy
    neliší, se jako příčina neuvádí. Do hlasu jde jen ten, jehož druh je `zivot`, nebo `kdo_se_pocita` se změnou
-   pořadí. Řazení podle velikosti zůstává jen pro obraz.
+   pořadí. Řazení podle velikosti zůstává jen pro obraz. Když rozdíl v cíli do hlasu nepatří (`zapis`, `maly`,
+   nebo `kdo_se_pocita` bez změny pořadí), smí zaznít nejvýš jedna konkrétní věc ze života jako doplněk celkového
+   rozsudku, když je pro zemi typická a doložená, nikdy jako důvod umístění (vzor Maďarska ve scénáři: „A z výplaty
+   mu ukrojí ještě jedna věc: nejvyšší DPH v Evropské unii.“).
 5. **Soused v cíli** (`finale.neighbor`): země, která v odpočtu dojela těsně předtím (o místo níž), a jedna věta,
    proč je tahle země před ní (`line_for_voice`). Slovensko se srovnává s Maďarskem, ne s Polskem, které ještě
    nedojelo.
