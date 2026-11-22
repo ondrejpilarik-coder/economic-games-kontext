@@ -28,7 +28,11 @@ váhu důvodů kontroluje koordinující sezení, fakta jiný model než ten, kt
 dalších vzorců Claudoviny, upřesněná vlajka 4, opora ve faktické verzi v protokolu). V noci na 22. 11. Ondřej
 rozhodl: v hlase „průměrná země ligy“ místo „střední země ligy“, zelený trikot dočasně zrušený, v kolech jen
 pořadí v regionu (bez celoligových míst); zapsáno ve skillech scénáře, analýzy, mapy příběhu, úvodu, velkého
-finále a ve skillu Gemini 3.4. Stav
+finále a ve skillu Gemini 3.4. Večer 22. 11. Ondřej po nepovedené čtivé verzi Západu nechal
+zapsat a vyzkoušet doplňky skillu scénáře 2.0: nejdřív volné vyprávění bez karet a teprve potom karty jako
+zkoušející, podmětem věty je ten, kdo jedná, představa lidí zazní celá, konec kola bez povinné věty o výplatě;
+skill Gemini je ve verzi 3.7 (od Ondřeje) a 3.8 (s pravidlem o věci místo činnosti). Zkouší se na Skandinávii
+a Beneluxu. Stav
 a další krok: `PREKLADOVY_MUSTEK.md`.
 
 - **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.2.md` postaví mapu příběhu
