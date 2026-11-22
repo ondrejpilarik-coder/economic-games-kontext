@@ -1,10 +1,10 @@
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 22. 11. 2026 00:34 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `9ac2d72e`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 22. 11. 2026 01:18 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `653bedee`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
-| 01_POSLEDNI_SCENAR | poslední scénář (POBALTI, faktická verze od Clauda) a kontrola čísel |
+| 01_POSLEDNI_SCENAR | poslední scénář (SKANDINAVIE_A_BENELUX, faktická verze od Clauda) a kontrola čísel |
 | 02_KUCHARKA_GEMINI | instrukce, podle kterých Gemini scénář napsal |
 | 03_PODKLADY_SCENARE | data a výklady zemí, ze kterých scénář vznikl (jediný zdroj čísel) |
 | 04_CLAUDE_MD | závazná pravidla projektu |

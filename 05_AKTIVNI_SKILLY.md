@@ -9731,7 +9731,10 @@ výhradou nebo přiznáním nevědění v hlase.
 
 - `scripts/kontrola_scenare_v2.py`: v odstavcích cíle hledá kruh a převod jako důvod pořadí (ukázky typu: „drží ho
   vyšší výplata“, „jenže v … je levněji“ u slova o pořadí, „náskok spolknou ceny“) a u každého odstavce země v cíli
-  dopad (věta „Kdyby…, měl by… o … víc“ nebo podíl u slova „náskok“, „rozdíl“, „smazal“).
+  dopad (věta „Kdyby…, měl by… o … víc“ nebo podíl u slova „náskok“, „rozdíl“, „smazal“). *Doplněno 22. 11. 2026:*
+  dopad se nežádá u země, jejíž soused v cíli je podle karty pod prahem odstupu (`finale.neighbor.gap_pct`, u mezd
+  5 %) a odstavec řekne jen „těsně“ bez důvodu (analýza zemí 2.0: „pod prahem hlas řekne těsně“). Dřív kontrola
+  žádala dopad i tam a tlačila k vymyšlenému důvodu (Dánsko před Norskem o 1 %).
 - `scripts/kontrola_karty_zeme_v2.py`: vyžaduje `finale.verdict_basis` a u souseda nad prahem `component` a `effect`;
   upozorní, když hlavní důvod není největší díl rozkladu bez zdůvodnění, a na „velký účinek“ bez porovnání.
 - Zadání kontrol: `10_documents/active/2026-11-21_kontrola_vahy_duvodu/ZADANI_KONTROLY_VE_SKRIPTECH.md`.
