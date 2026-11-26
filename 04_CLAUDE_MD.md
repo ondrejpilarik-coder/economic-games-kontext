@@ -16,6 +16,16 @@ kontrolní skript a nechává fakta hotového textu zkontrolovat modelem, který
 dělá Gemini na webu svým skillem (`ekonomicke-hry-ctiva-verze`). Namluvený Balkán se nepřepisuje. Odstavce níže
 popisují dělbu práce do 26. 11. 2026 (podle ní vznikl Balkán) a postupy, které skill 3.0 nahradil.
 
+**Úprava 27. 11. 2026** (Ondřej po čtení celého regionu Skandinávie a Benelux; důvody ve
+`voiceover-scenar-regionu-HISTORIE.md`): skill faktické verze 3.0 je upravený na místě. V kolech nezazní věta o tom,
+jestli země naplnila očekávání. Co platí pro všechny země stejně, zazní jednou: krátká lekce o výkonu na konkrétním
+příkladu u první země 1. kola, v dalších regionech jedna věta v úvodu 1. kola. V cíli zazní u země jedna částka (co
+si za výplatu koupí) a přepočet „kdyby…, měl by o tolik víc“ jen u největšího zvratu regionu. Každé srovnání říká,
+s kým nebo od kdy. **První dvě kola mezd měří od 27. 11. 2026 výkon na plný úvazek, stejně jako cíl** (pravidlo
+„kola měří totéž co ukazatel“ je ve skillu stavby karty ukazatele; přepočet v
+`10_documents/active/2026-11-26_stejna_jednotka/`). Karty zemí se nad novými daty znovu ověřují a pět regionů mimo
+Balkán se píše znovu.
+
 Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
 webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
 

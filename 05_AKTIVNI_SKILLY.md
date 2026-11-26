@@ -8920,7 +8920,7 @@ Platí jednotně pro celou sérii (všechny epizody, analýzu, scénáře i stř
 
 #### Krok 2 z 7: Kauzální mapa, srovnání jednotek a funkční horizont
 - Rozložíš ukazatel na 4–6 hlavních větví z literatury a lidsky vysvětlíš jejich přenos do výsledku.
-- **Kontrola jednotek:** U každé větve explicitně zapíšeš *koho měří* (`scope_population`), *v jakém období* a *v jakých cenách* (`scope_prices`). Kde se definice rozcházejí, navrhneš jejich sjednocení už tady.
+- **Kontrola jednotek:** U každé větve explicitně zapíšeš *koho měří* (`scope_population`), *v jakém období* a *v jakých cenách* (`scope_prices`). **Kola měří totéž co ukazatel: stejné lidi a stejnou jednotku** (Ondřej 26. 11. 2026: „aby ta jednotlivá kola vždy byla ve stejných jednotkách jako indikátor“). Kde zdroj měří jinak (u mezd výkon na každého pracujícího proti mzdě na plný úvazek), kolo se na jednotku ukazatele přepočítá, jedním pravidlem pro všechny země, a výhrada přepočtu se zapíše. Jen když přepočítat nejde, zůstane kolo v jiné jednotce a divák to uslyší jednou v úvodu kola. Rozdíl jednotek se nikdy nenechává k vysvětlování až v cíli: z chyby měření by se stal příběh země.
 - **Funkční horizont a pravidlo celé historie:** Určíš hlavní hodnocené období epizody (např. 1990–2024 u mezd včetně transformace, 2010–2024 u bydlení) a u dědických faktorů se výslovně zeptáš: *„Existují starší historické epizody nebo 40 let staré aktivně udržované politiky, které výsledek dodnes zásadně tvarují?“*
 - **Rozhodnutí Ondřeje:** Schválí kauzální mapu, horizont a kandidátské faktory.
 
@@ -9196,17 +9196,16 @@ Kdykoli hodnotíš krok státu, soudu, města nebo firem, **nikdy netipuj** — 
 **Soud má dvě oddělené části (21. 11. 2026).** Ve sportu může závodník zajet životní výkon a dojet devátý, favorit
 může vyhrát a přitom pokazit dvě zatáčky. Proto se zvlášť zapisuje:
 
-- **Soud nad jízdou** (`rounds[].performance_verdict`, povinně u kola s režimem `efektivita`): jak si země v kole
-  vedla proti tomu, co se od ní při jejím startu čeká. Měřítka určuje karta indikátoru (`performance_norm`); u mezd
-  jsou spočítaná pro celou ligu v `output/analyza_v2/doplnky/norma_jizdy.json` (čára celé ligy podle startu
+- **Jízda proti zemím s podobným startem** (`rounds[].performance_verdict`, u kola s režimem `efektivita`): jak země
+  v kole rostla proti tomu, co je při jejím startu obvyklé. Měřítka určuje karta indikátoru (`performance_norm`);
+  u mezd jsou spočítaná pro celou ligu v `output/analyza_v2/doplnky/norma_jizdy.json` (čára celé ligy podle startu
   a medián šesti zemí s nejbližším startem). Verdikt `nad` / `podle` / `pod` smí padnout jen tam, kde se **obě
-  měřítka shodnou**; jinak `nelze` a hlas řekne srovnání s konkrétní skupinou („proti stejně bohatým zemím ztratila
-  Itálie nejvíc“). Soud nad jízdou nepotřebuje znát příčinu: „Belgie si na svůj mimořádně vysoký start vedla
-  v růstu lépe, než se čekalo“ je poctivý soud, i když nevíme, zda za to mohla výměna automobilek za léky.
-  Slovo pro hlas (`word_for_voice`) se volí podle očekávání země z karty indikátoru (`pre_race_expectation`):
-  favorit pod očekáváním „zaváhal“, outsider nad očekáváním „jel nad poměry“, země podle očekávání „splnila, co se
-  čekalo“. **Vyšší nárok na favorita nezvyšuje jistotu důkazu:** stejné sloveso potřebuje stejný doklad u vítěze
-  i u posledního.
+  měřítka shodnou**; jinak `nelze`. **Je to podklad pro analýzu, do hlasu nejde** (Ondřej 26. 11. 2026: věta o tom,
+  jestli země naplnila očekávání, v kolech nezazní; „Na svůj start si Dánsko vedlo lépe, než se čekalo“ u favorita
+  nedává smysl a u šesti zemí po sobě zní jako formulář). Pole `word_for_voice` se nevyplňuje. Kde je země proti
+  podobným zemím výrazně nad nebo pod, je to pro analytika pokyn hledat, co za tím stálo; do hlasu pak jde ta
+  příčina a srovnání se zemí před ní, ne známka. **Vyšší nárok na favorita nezvyšuje jistotu důkazu:** stejné
+  sloveso potřebuje stejný doklad u vítěze i u posledního.
 - **Tahy** (`moves`): seznam doložených kroků vlád, centrálních bank, firem nebo odborů, které se v zemi za
   hodnocené období staly. U každého: kdo (`actor`), co (`action`), rok schválení a rok účinnosti, na co mířil
   (`aim`), co způsobil (`effect`), **jak moc** (`effect_size`: `velky` / `stredni` / `maly` / `nezmereno`, vždy
@@ -9456,7 +9455,7 @@ Do digestu jde **každá karta**, která spustí libovolnou pojistku: stupeň `o
         "verdict": "nad | podle | pod | nelze",
         "measures": {"proti_care_ligy_bodu": -6.0, "proti_podobnym_bodu": -19.0},
         "agree": false,
-        "word_for_voice": "Jen u kola s režimem efektivita; slovo podle očekávání země."
+        "word_for_voice": "Nevyplňuje se: od 27. 11. 2026 tento soud do hlasu nejde."
       },
       "stereotype_test": {
         "stereotype": "Vysoké daně vyhánějí Slovince do ciziny",
@@ -9702,9 +9701,11 @@ stojí, zkouška E).
 - **C. Váha.** Hlavní důvod je největší díl rozkladu pro danou otázku. Díl aspoň poloviční velikosti, který text
   vynechá, je nález, kromě dílů, které pravidla z hlasu vyřazují (zápis ve statistice; kdo se počítá bez změny
   pořadí v regionu). Když dva díly působí proti sobě (lepší start, pomalejší růst), řekne se obojí.
-- **D. Dopad.** Každý hlavní důvod má v hlase dopad na výplatu: jedno číslo v eurech měsíčně ve tvaru „Kdyby…, měl by
-  … na účtu asi o … víc“, nebo podíl slovy („tři čtvrtiny toho náskoku smazalo“). Podíly se počítají z bodů rozkladu
-  (sčítají se), eura z protipříkladu jednoho dílu. Přesné hodnoty jdou do řádku VIZUÁL. V kole je dopadem hodnota
+- **D. Dopad.** Každý hlavní důvod má v kartě spočítaný dopad na výplatu: eura měsíčně z protipříkladu jednoho dílu
+  a podíl z bodů rozkladu (sčítají se). **V hlase se dopad říká slovem** („o hodně“, „o kousek“, „skoro celý
+  náskok“, „tři čtvrtiny toho náskoku smazalo“); částka jde do řádku VIZUÁL. Přepočet „Kdyby…, měl by … na účtu asi
+  o … víc“ zazní jen u největšího zvratu regionu, nejvýš dvakrát za region (Ondřej 27. 11. 2026 o propočtech
+  v každém odstavci cíle: „Nic to nepřidává, zabírá to čas, kognitivně zatěžuje diváka.“). V kole je dopadem hodnota
   kola a místo v něm; zkouška D se v kolech týká jen tahu, který karta posílá do hlasu (jak moc pomohl).
 - **E. Co stojí za dílem.** Uvnitř dílu se porovnají kandidáti, ne jen ten z karty:
   1. **čas**: kdy se rozdíl otevřel; důvod musí sedět s obdobím. Ověřuje se ve dvou měřítkách: úroveň v kupní síle
@@ -9754,15 +9755,11 @@ výhradou nebo přiznáním nevědění v hlase.
 ### 6. Kontroly ve skriptu
 
 - `scripts/kontrola_scenare_v2.py`: v odstavcích cíle hledá kruh a převod jako důvod pořadí (ukázky typu: „drží ho
-  vyšší výplata“, „jenže v … je levněji“ u slova o pořadí, „náskok spolknou ceny“) a u každého odstavce země v cíli
-  dopad (věta „Kdyby…, měl by… o … víc“ nebo podíl u slova „náskok“, „rozdíl“, „smazal“). *Doplněno 22. 11. 2026:*
-  dopad se nežádá u země, jejíž soused v cíli je podle karty pod prahem odstupu (`finale.neighbor.gap_pct`, u mezd
-  5 %) a odstavec řekne jen „těsně“ bez důvodu (analýza zemí 2.0: „pod prahem hlas řekne těsně“). Dřív kontrola
-  žádala dopad i tam a tlačila k vymyšlenému důvodu (Dánsko před Norskem o 1 %). *Změněno 26. 11. 2026 (Ondřej:
-  rozdíl proti sousedovi se vysvětluje u každé země, i malý):* výjimka je zrušená, dopad se žádá u každého odstavce
-  země v cíli. Vymyšlenému důvodu brání rozklad dvojic, který počítá díly u každé dvojice, i těsné: u těsné dvojice
-  jsou to často dva velké díly proti sobě (Nizozemsko před Dánskem o 2 %: dánský rychlejší růst proti nizozemskému
-  startu a dánské drahotě), a právě ty se řeknou.
+  vyšší výplata“, „jenže v … je levněji“ u slova o pořadí, „náskok spolknou ceny“). *Změněno 27. 11. 2026 (Ondřej):*
+  dopad v hlase už skript nežádá. Jen upozorní, když má cíl regionu víc než dva přepočty „Kdyby…, měl by… o … eur
+  víc“ nebo když odstavec země v cíli říká víc než jednu částku v eurech. Rozdíl proti sousedovi se dál vykládá
+  u každé dvojice, i těsné (Ondřej 26. 11. 2026); díly a dopad k tomu nese rozklad dvojic a karta
+  (`finale.verdict_basis`).
 - `scripts/kontrola_karty_zeme_v2.py`: vyžaduje `finale.verdict_basis` a u souseda v cíli `component` a `effect`
   (od 26. 11. 2026 u každé dvojice, dřív jen nad prahem); v kolech od 26. 11. 2026 žádá příčinu rozdílu u každé
   dvojice a stav `tesne` hlásí jako nález;
@@ -9786,6 +9783,12 @@ připomínek. Nahrazuje `voiceover-scenar-regionu-SKILL-v2.0.md` a pro faktické
 `voiceover-mapa-pribehu-SKILL-v1.2.md`; obě starší znění zůstávají jako historie. Proti 2.0 zůstala pravidla formátu,
 stavba regionu, kontroly a vzory cíle; nový je oddíl 2 a vzory pro kola; odešly datované dodatky, postup „nejdřív
 vyprávění bez karet“ a vzor Litvy. Důvody pravidel: `voiceover-scenar-regionu-HISTORIE.md`.*
+
+*Úprava 27. 11. 2026 (Ondřej po čtení celého regionu Skandinávie a Benelux, důvody v historii): v kolech nezazní věta
+o tom, jestli země naplnila očekávání; co platí pro všechny země stejně, zazní jednou (lekce u první země a úvod kola)
+a odstavce zemí to neopakují; v cíli zazní u země jedna částka a přepočet „kdyby…, měl by o tolik víc“ jen u největšího
+zvratu regionu; každé srovnání říká, s kým nebo od kdy. První dvě kola měří od 27. 11. 2026 výkon na plný úvazek,
+stejně jako cíl.*
 
 **Vstup:** schválené karty zemí (`analyza-pricin-zeme-SKILL-v2.0.md`), karta indikátoru
 `input/karta_indikatoru_v6.json`, data ligy `output/analyza_v2/data/liga_data.json`, kontrola váhy důvodů regionu
@@ -9834,41 +9837,45 @@ Soudcem srozumitelnosti je Ondřej nad krátkou ukázkou. Model ji nepotvrdí, p
 1. **Výpis faktů v heslech,** žádné věty, pro každou zemi, každé kolo a pro cíl. Nese všechno, co odstavec potřebuje:
    - místo v regionu; při prvním vystoupení roli země a co se od ní čekalo;
    - hlavní důvod: skutečnou příčinu z karty (`floor_3_driver`: kdo co udělal a kdy) se slovesy, která karta dovoluje
-     (`allowed_verbs`), a prostřední krok k výsledku jednoho člověka;
+     (`allowed_verbs`);
    - rozdíl proti zemi před sebou (`rounds[].neighbor`): v čem je, jestli je doložený, nebo otevřený, jestli je odstup
      těsný a co by divák čekal naopak;
-   - tah do hlasu, představu lidí pro toto kolo, tvář země a soud nad jízdou, pokud je karta má;
-   - pro cíl peníze, hlavní díl rozkladu proti sousedovi s dopadem (`finale.verdict_basis`, `finale.neighbor`) a to, co
-     z rozdílu proti třem faktorům smí do hlasu (`gap_kind`, `gap_in_voice`, `money_scope_note`);
+   - tah do hlasu, představu lidí pro toto kolo a tvář země, pokud je karta má;
+   - pro cíl jednu částku do hlasu (co si země za výplatu koupí), hlavní díl rozkladu proti sousedovi a jeho dopad
+     slovem (`finale.verdict_basis`, `finale.neighbor`) a to, co z rozdílu proti třem faktorům smí do hlasu
+     (`gap_kind`, `gap_in_voice`, `money_scope_note`);
    - čísla rozdělená na „do hlasu“ a „do obrazu“ (oddíl 2D), obrazy ze slovníku epizody s připomenutím a zákazy
      z `forbidden_claims`, které se odstavce týkají.
 2. **Psaní jen z výpisu.** Kdo píše, má před sebou výpis, ne kartu. Věty z karty (`plain_line`, `line_for_voice`,
    `cause`, `summary_line`, `evidence_one_liner`) slouží výpisu a kontrole; neopisují se ani neupravují. Doslova se
-   bere jen představa lidí (`claim`), slovo soudu (`word_for_voice`), kotva tahu (`anchor_word`), připomenutí obrazu
-   (`chapter_reminder`), čísla a jména.
+   bere jen představa lidí (`claim`), kotva tahu (`anchor_word`), připomenutí obrazu (`chapter_reminder`), čísla
+   a jména.
 3. **Porovnání s kartou** a s jejím seznamem zákazů. Potom řádky pro obraz, značení a oddíl NEŘÍKEJ.
 
 #### B. Co odstavec země v kole říká
 
-1. **Jádro zazní vždy:** kde země v kole stojí a jeden hlavní důvod i s prostředním krokem. U země, která není první,
-   čím se liší od země před sebou a co stálo za její ztrátou (oddíl 4.2); když karta zapsala, co by divák čekal
+1. **Jádro zazní vždy:** kde země v kole stojí mezi ostatními zeměmi regionu a jeden hlavní důvod. U země, která není
+   první, čím se liší od země před sebou a co stálo za její ztrátou (oddíl 4.2); když karta zapsala, co by divák čekal
    naopak, začíná jádro touto otázkou. Nejlepší odstavec vysvětlí místo právě tím rozdílem; pak má jedinou myšlenku.
-2. **K jádru nejvýš dvě další věci,** každá jako půlvěta nebo jedna věta: role a očekávání při prvním vystoupení
-   (dohromady jedna věc), představa lidí, tah, tvář země, soud nad jízdou (v kole, kde ho karta má). Tah nebo
-   představa, které samy jsou hlavním důvodem, patří do jádra. Když se nevejde všechno, má přednost to, co karta
-   posílá do hlasu závazně (tah, představa lidí v jejím kole), potom soud, potom role. Tvář ustoupí do obrazu první.
+2. **K jádru nejvýš dvě další věci,** každá jako půlvěta nebo jedna věta: role při prvním vystoupení, představa lidí,
+   tah, tvář země. Tah nebo představa, které samy jsou hlavním důvodem, patří do jádra. Když se nevejde všechno, má
+   přednost to, co karta posílá do hlasu závazně (tah, představa lidí v jejím kole), potom role. Tvář ustoupí do
+   obrazu první.
 3. **Do obrazu jde všechno ostatní:** přesné podíly, druhé měřítko, výjimky, vedlejší důvody.
 4. **Strop platí pro důvody, ne pro slova.** Odstavec smí být delší; hustší věta řešením není.
-5. **Když karta příčinu nemá,** řekne se výsledek a soud. Nevědění se do hlasu nepřiznává a měření se nevykládá.
+5. **Když karta příčinu nemá,** řekne se výsledek a kde země stojí proti ostatním. Nevědění se do hlasu nepřiznává
+   a měření se nevykládá.
+6. **Co platí pro všechny země stejně, zazní jednou** (oddíl 3C): jak se výkon mění ve výplatu, co kolo měří a proč
+   na něm záleží. Odstavec země to neopakuje, ani jinými slovy.
 
 Pod klíč každého odstavce země se mimo hlas zapíše `<!-- otázka: … | odpověď: … | proti komu: … | karta: … -->`.
 Otázka se uvnitř odstavce nemění; závěrečný audit se ptá právě na ni.
 
 **Pořadí výkladu.** Každá věta odpovídá na otázku, kterou vyvolala věta před ní, a odpověď nepřijde dřív než otázka.
-Divák se ptá takhle: co se stalo a co to znamená v životě → je to víc, nebo méně, než se čekalo → proč (nejdřív jak
-to chodí obvykle, pak jak je to tady) → co to dělá s výsledkem jednoho člověka, v jednotce, kterou zná → čí je to dílo
-a jak moc pomohlo nebo uškodilo. Odstavec nemusí projít všech pět kroků, pořadí ale neobrací. Kroky příčiny jdou
-popořadě a žádný se nepřeskočí: co se stalo, co to způsobilo, co z toho.
+Divák se ptá takhle: co se stalo a co to znamená v životě → jak tím země stojí mezi ostatními v regionu → proč
+(nejdřív jak to chodí obvykle, pak jak je to tady) → čí je to dílo a jak moc pomohlo nebo uškodilo. Odstavec nemusí
+projít všechny kroky, pořadí ale neobrací. Kroky příčiny jdou popořadě a žádný se nepřeskočí: co se stalo, co to
+způsobilo, co z toho. Co to dělá s výplatou jednoho člověka, říká lekce a cíl, ne každý odstavec kola.
 
 #### C. Věty
 
@@ -9888,12 +9895,13 @@ popořadě a žádný se nepřeskočí: co se stalo, co to způsobilo, co z toho
   (pomáhá, nahrává, brzdí), ne vrstvením výhrad.
 - **Věty jsou souvislé.** Krátká věta je koření na pointu, ne stavební kámen; řada krátkých vět za sebou je zakázané
   staccato.
-- **Jednoznačnost.** Srovnání řekne s čím („dvakrát víc než průměr Unie“). Pojem má určující přívlastek („centrální
-  plánování“, „před druhou světovou válkou“), část země celé jméno („východní Německo“). Kdo koho předjel, říká činný
-  rod: „Rumunsko předjelo Bulharsko“.
+- **Jednoznačnost.** Každé srovnání řekne, s kým nebo od kdy: „dvakrát víc než průměr Unie“, „o čtvrtinu víc než
+  v roce 1996“. Holému „vyrábí jen o čtvrtinu víc“ divák nerozumí; konec „než…“ se neškrtá ani při krácení. Pojem má
+  určující přívlastek („centrální plánování“, „před druhou světovou válkou“), část země celé jméno („východní
+  Německo“). Kdo koho předjel, říká činný rod: „Rumunsko předjelo Bulharsko“.
 - **Pořad nemluví o svém měření.** Neříká, s čím kola „počítala“, co „podcenila“, co je „jen na papíře“, co „statistika
   připisuje“, ani „na začátku sledovaného období“. Jediná výjimka: když zemi v cíli změní pořadí to, kdo se počítá,
-  smí zaznít jedna věta o tom, koho cíl porovnává (vzor Nizozemska v cíli).
+  smí zaznít jedna věta o tom, koho cíl porovnává.
 - **Zákaz se nevypráví.** Položky ze seznamu zákazů nejsou látka pro hlas: žádné „Neudělala to slavná čokoláda…“.
   Vyvrací se jen představa lidí, která má v kartě určené kolo.
 - **Obraz ze slovníku epizody** (`episode_vocabulary`) se plně vysvětlí jednou v epizodě. V každém dalším regionu ho
@@ -9909,10 +9917,11 @@ Rozhoduje druh čísla, ne počet.
   hodnoty jdou do obrazu vždy.
 - **Číslo, které je samo příběhem,** v hlase zůstane („každý pátý pracující Polák hospodařil na poli“).
 - **Dvě čísla v jedné větě** jen tehdy, když má každé svou část věty a svůj smysl: dva sousedé ve stejném měřítku („v
-  Rumunsku třetina, v Bulharsku ani ne čtvrtina“), nebo částka na účtu a to, co se za ni koupí. Dva podíly téže věci
-  se neřetězí.
-- **V cíli** zazní peníze na účet, co se za ně koupí při průměrných evropských cenách, a jeden dopad (eura měsíčně,
-  nebo podíl slovy). Druhý dopad jen tehdy, když proti sobě působí dva díly.
+  Rumunsku třetina, v Bulharsku ani ne čtvrtina“). Dva podíly téže věci se neřetězí.
+- **V cíli** zazní u země jedna částka: co si za výplatu koupí při průměrných evropských cenách. Výplata na účet
+  a přesné srovnání se sousedem jsou v obraze. Dopad důvodu se říká slovem („o hodně“, „o kousek“, „skoro celý
+  náskok“). Přepočet „kdyby…, měl by na účtu o tolik eur víc“ zazní jen u největšího zvratu regionu, nejvýš dvakrát
+  za region.
 - Co z hlasu vypadlo, stojí v řádku `[VIZUÁL: …]` té části: číslo, jaký graf ho ukáže a u kterých slov.
 
 #### E. Kde končí zjednodušení
@@ -9926,7 +9935,7 @@ Zjednodušit je žádoucí. Nesmí se přitom změnit čtyři věci:
    „rozhodlo“; „nejméně z 22 zemí s údajem“ není „nejméně v lize“). Slabší a jednodušší tvrzení smí vždy. Obraz nebo
    příklad smí být o slovo silnější („hlavně chemie“); kontrola to ohlásí a neopravuje.
 4. **Odpověď na „proč“ je skutečná příčina,** tedy co lidé, firmy a stát udělali. Samotné „rostlo rychleji“ nestačí,
-   má zaznít, co za tím stálo. Kde karta příčinu nemá, řekne se rozdíl jako rozdíl (oddíl 4.2) nebo výsledek a soud;
+   má zaznít, co za tím stálo. Kde karta příčinu nemá, řekne se rozdíl jako rozdíl (oddíl 4.2) nebo jen výsledek;
    příčina se nevymýšlí.
 
 Zákony, daně a pravidla se říkají s rokem, ne slovem „dnes“.
@@ -9936,7 +9945,7 @@ Zákony, daně a pravidla se říkají s rokem, ne slovem „dnes“.
 Tvar se vybírá podle toho, co data vyprávějí. Stejný tvar nemají tři země po sobě.
 
 - **Háček** (tohle platí, jenže…, a proto…): když je v datech skutečný rozpor. Část před „jenže“ musí sama znít jako
-  opak toho, co přijde. Vzor: Nizozemsko na startu.
+  opak toho, co přijde.
 - **Nejdřív překvapení, potom důvod:** když místo na první poslech nedává smysl. Řečnická otázka nejvýš dvakrát za
   kolo. Vzor: Maďarsko na startu.
 - **Přímý tah:** když rozpor není; kdo co udělal a co to přineslo. Vzor: Belgie na startu.
@@ -9957,9 +9966,11 @@ prodlouží asi o desetinu a hlas jede asi 140 slov za minutu.
 | 5 zemí (Střední a Západní Evropa) | 1 900 | 2 000 | 15 min |
 | 6 zemí (Skandinávie a Benelux) | 2 250 | 2 350 | 17,5 min |
 
-- První region epizody smí přidat 80 slov na pravidla vysvětlená za jízdy.
-- **Délka slouží výkladu.** Horní mez jen upozorní; nikdy není důvodem vyškrtnout rozdíl proti sousedovi nebo
-  prostřední krok. Čtyři složité věty se nahradí třemi jasnými, a kde to nestačí, region se prodlouží.
+- První region epizody smí přidat 80 slov na pravidla vysvětlená za jízdy. Region, který nese lekci (oddíl 3C), má
+  na ni dalších asi 80 slov.
+- **Délka slouží výkladu.** Horní mez jen upozorní; nikdy není důvodem vyškrtnout rozdíl proti sousedovi ani větu,
+  bez které divák nepochopí, proč se něco stalo (krize, která zemi srazila; jak to bylo předtím). Čtyři složité věty
+  se nahradí třemi jasnými, a kde to nestačí, region se prodlouží.
 - Každá země má vlastní hlavní scénu (kolo, kde má nejsilnější příběh podle `profily_zemi.json`, nebo cíl) a vlastní
   tvář; žádná se nekrátí na „stejný příběh jako…“. Slova se dělí podle síly příběhu, ne všem stejně.
 - Cíl zabírá asi 25–35 % regionu, výjimečně do 38 %.
@@ -9970,10 +9981,11 @@ prodlouží asi o desetinu a hlas jede asi 140 slov za minutu.
   černý kůň) patří k prvnímu vystoupení země v 1. kole.
 - **Jeden klíč je jedna země v jednom kole** (`kN_<iso>`). Sloučené odstavce nejsou; každý stojí sám. Klíč se píše
   jako poznámka před odstavcem: `<!-- k1_cz -->`. Co stojí za vodorovnou čarou `---`, skript za hlas nepočítá.
-- **Kolo:** `kN_uvod` (bez výčtu pořadí; v regionech 2–6 krátce a bez definic, ty nese obraz) → `kN_<iso>` od prvního
-  místa v regionu po poslední → `kN_poradi` (pořadí jen uvnitř regionu, v hlase i v obraze). Povinná věta o výplatě na
-  konci kola není; most k výplatě smí zaznít, jen když něco říká, a pak podmiňovacím způsobem. Pointa vzorce zazní, jen
-  když ji oblouk vzorců v analýze má. Na konci 3. kola zazní celé pořadí regionu po třech hlavních faktorech.
+- **Kolo:** `kN_uvod` (bez výčtu pořadí; říká jednou a krátce, co v kole platí pro všechny země, oddíl 3C) →
+  `kN_<iso>` od prvního místa v regionu po poslední → `kN_poradi` (pořadí jen uvnitř regionu, v hlase i v obraze).
+  Povinná věta o výplatě na konci kola není; most k výplatě smí zaznít, jen když něco říká, a pak podmiňovacím
+  způsobem. Pointa vzorce zazní, jen když ji oblouk vzorců v analýze má. Na konci 3. kola zazní celé pořadí regionu
+  po třech hlavních faktorech.
 - **Cíl (`## Finále: cíl`):** `cil_uvod` jen v prvním regionu epizody (co cíl měří podle karty indikátoru, u mezd čistá
   výplata bezdětného jednotlivce na plný úvazek v kupní síle, a že vstupují specifické faktory), jinde prázdný nebo
   jedna přechodová věta → `cil_<iso>` od posledního místa po vítěze (oddíl 4.3) → `cil_zaver`: shrnutí dojezdu, křeslo
@@ -9982,6 +9994,25 @@ prodlouží asi o desetinu a hlas jede asi 140 slov za minutu.
 - **Ochrana fotofiniše:** odstavec cíle nejmenuje vítěze ani místo země, která ještě nedojela, v hlase ani v obraze.
   Poslední země se smí srovnat se zeměmi nad sebou, aniž řekne jejich místa. Všechny ostatní se srovnávají se zemí,
   která právě dojela.
+
+#### C. Co zazní jen jednou: lekce a úvod kola
+
+Divák, který se o ekonomii nezajímá, neví, proč se v závodě o výplaty mluví o výkonu. Potřebuje to slyšet jednou
+a pořádně, ne u každé země znovu.
+
+- **Lekce o hlavním faktoru epizody** (u mezd o výkonu; klíč `k1_lekce`, hned za odstavcem první země 1. kola): na
+  konkrétním příkladu z té země řekne, jak se výkon mění ve výplatu (firma může lidem zaplatit jen z toho, co s nimi
+  vydělá), proč na něm záleží nejvíc (výkon vysvětlí většinu rozdílů ve výplatách mezi zeměmi) a proč ho pořad
+  sleduje. Asi 60 až 80 slov, jeden příklad, žádná definice. Celá zazní jednou v epizodě, v jejím prvním regionu.
+  Balkán je namluvený bez ní: dokud Ondřej nerozhodne, kam v epizodě patří, píše se jako samostatný blok do prvního
+  regionu po Balkánu.
+- **V ostatních regionech** lekci připomene jedna věta v `k1_uvod`, protože divák může začít až kapitolou svého
+  regionu.
+- **Úvod kola** (`kN_uvod`) říká jednou a krátce, co kolo měří a co v něm platí pro všechny země. Definice kola
+  zazní v prvním regionu epizody; v dalších ji nese obraz.
+- **Odstavce zemí to neopakují.** Věta „vytvoří vysokou hodnotu, ze které firmy mohou platit vysoké mzdy“ u čtyř zemí
+  po sobě je táž věc řečená čtyřikrát, i když pokaždé jinými slovy. Když země potřebuje na společný výklad navázat,
+  stačí pár slov.
 
 ---
 
@@ -10013,19 +10044,23 @@ a rozpor se ohlásí.
   u těsného se říká „skoro nastejno, jen…“.
 - **Stav `otevreno`:** hlas řekne ověřený rozdíl jako rozdíl, ne jako prokázanou příčinu; slova „důvod“ a „protože“
   u něj nezazní.
-- **V cíli** se srovnává se zemí, která právě dojela (`finale.neighbor`): díl rozkladu a dopad na výplatu u každé
-  dvojice, i těsné.
+- **V cíli** se srovnává se zemí, která právě dojela (`finale.neighbor`): díl rozkladu u každé dvojice, i těsné,
+  a jeho dopad slovem.
 - **Dvojčata** (`broadcast_twin`, `callback_twin` se stavem `active`) jsou přeshraniční souboj navíc. Sousedy
   nenahrazují.
 
 #### 4.3 Odstavec země v cíli (`cil_<iso>`)
 
-Pořadí: **(1) peníze:** kolik přijde na účet, zaokrouhleně na desítky eur, a co se za to koupí při průměrných
-evropských cenách; srovnání se sousedem jen slovy („výrazně víc než Maďar“), přesně v obraze → **(2) představa lidí,
-která neplatí,** má-li v cíli místo → **(3) hlavní důvod z rozkladu rozdílu proti sousedovi** (`finale.verdict_basis`;
-u poslední země soused o místo výš): díl, ve kterém se sousedé liší, a co za ním stojí → **(4) dopad na výplatu**
-v eurech měsíčně nebo podílem slovy; působí-li proti sobě dva díly, oba → **(5) věc ze života,** jen když ji karta
-pouští do hlasu. Rozsudek má vlastní větu.
+Pořadí: **(1) peníze:** jedna částka, co si za výplatu koupí při průměrných evropských cenách, zaokrouhleně na
+desítky eur; srovnání se sousedem jen slovy („výrazně víc než Maďar“). Výplata na účet a přesné srovnání jsou
+v obraze; slovy smí výplata na účet zaznít, jen když sousedy řadí opačně než kupní síla („bere méně eur než Dán,
+jenže život je v Dánsku o dost dražší“) → **(2) představa lidí, která neplatí,** má-li v cíli místo → **(3) hlavní
+důvod z rozkladu rozdílu proti sousedovi** (`finale.verdict_basis`; u poslední země soused o místo výš): díl, ve
+kterém se sousedé liší, a co za ním stojí → **(4) dopad na výplatu slovem** („o hodně“, „o kousek“, „skoro celý
+náskok“); částka je v obraze → **(5) věc ze života,** jen když ji karta pouští do hlasu. Rozsudek má vlastní větu.
+
+**Přepočet „kdyby…, měl by na účtu o tolik eur víc“** zazní jen u největšího zvratu regionu, nejvýš dvakrát za
+region. V šesti odstavcích po sobě se divák v částkách ztratí.
 
 - **Výplata, eura ani ceny nejsou důvod pořadí.** „Drží ho vyšší výplata“ je kruh. „Je tam levněji, a tak vede“ vydává
   převod na kupní sílu za příčinu. Ceny patří do věty o penězích. Mezi důvody smí jen drahota života proti cenám
@@ -10059,9 +10094,11 @@ pouští do hlasu. Rozsudek má vlastní větu.
 - **Tah** s `in_voice: true` zazní v pevném hlase i se svou kotvou (`anchor_word`): kdo ho udělal, kdy, co způsobil
   a jak moc pomohl nebo uškodil (`effect_size`). Tah s `effect_size: nezmereno` se vypráví jako událost bez soudu.
   Povinný počet tahů není.
-- **Soud nad jízdou** (`performance_verdict.word_for_voice`): favorit pod očekáváním „zaváhal“, outsider nad
-  očekáváním „jel nad poměry“, země podle očekávání „splnila, co se čekalo“. Kde se měřítka neshodnou (`nelze`), zazní
-  srovnání s konkrétní skupinou zemí. Nikdy „ani chyba, ani zásluha“; řekne se, co se na trati stalo.
+- **V kolech se neříká, jestli země naplnila očekávání.** Žádné „vedla si lépe, než se čekalo“, „splnila, co se
+  čekalo“, „jela nad poměry“ ani jiná známka za jízdu. Komentátor popisuje závod: kdo je před kým, kdo koho dotahuje,
+  kdo komu utekl a čím. Pole `performance_verdict` v kartě je podklad analýzy, do hlasu se nebere. Tip zveřejněný
+  v úvodu epizody se vyhodnotí až v cíli (oddíl 4.4). Nikdy „ani chyba, ani zásluha“; řekne se, co se na trati
+  stalo.
 - **Tvář země** (`country_face`) je obraz, ne příčina: stojí bez příčinného slova. Nevyvrací se a nezmenšuje se číslem
   („jenže zaměstnává jen každého dvoustého“ patří do obrazu). Po tváři přijde skutečný důvod, řečený kladně.
 
@@ -10070,7 +10107,7 @@ pouští do hlasu. Rozsudek má vlastní větu.
 - **`**tučně**`** jen krátké kotvy: číslo, rok, směr, na koho se počítá, omezující slovo („jen“, „hlavně“, „skoro“),
   jméno nebo tvář, slovo soudu. Nikdy celé souvětí; nejvýš 40 % slov.
 - **`{volitelné: …}`** jen jména měst, výčty a ilustrace. Pevný hlas musí po vyškrtnutí volitelného a bez obrazu stát
-  sám: zůstane výsledek, důvod i prostřední krok.
+  sám: zůstane výsledek i důvod.
 - **`[VIZUÁL: …]`** pod každým odstavcem: přesná data pro `liga.ts`, jméno ikony (`icon_id_remotion`), anglické štítky
   a čísla odsunutá z hlasu. Celý na jednom řádku a bez hranatých závorek uvnitř (roky a poznámky do kulatých).
   V uvozovkách jsou jen anglické štítky; česká slova, u kterých se má obraz ukázat, se píšou bez uvozovek („u slov
@@ -10078,7 +10115,8 @@ pouští do hlasu. Rozsudek má vlastní větu.
 
 #### 4.7 Ostatní
 
-- Stejná věta-kostra nejvýš dvakrát za region („Představa, že…“, „Cenovkou je…“, „Neudělala to…“).
+- Stejná věta-kostra nejvýš dvakrát za region („Představa, že…“, „Cenovkou je…“, „Neudělala to…“). Stejná myšlenka
+  řečená u několika zemí pokaždé jinými slovy je táž vada (oddíl 3C).
 - Váha kola v lize není tvrzení o jedné zemi. O zemi se mluví přes její vlastní hodnoty nebo posun.
 
 ---
@@ -10086,7 +10124,9 @@ pouští do hlasu. Rozsudek má vlastní větu.
 ### 5. Vzory
 
 Vzorem je jen text, který Ondřej četl a schválil. Ukázky vymyšlené modelem sem nepatří. Každý vzor ukazuje jednu věc,
-která je u něj napsaná; výjimkou z pravidel oddílu 4 není. Čísla se při psaní berou z aktuální karty.
+která je u něj napsaná; výjimkou z pravidel oddílu 4 není. Čísla se při psaní berou z aktuální karty. Vzory cíle
+zkrácené 27. 11. 2026 podle rozhodnutí o částkách v cíli Ondřej v upravené podobě ještě nečetl; zkrácené jsou jen
+škrtem a spojením vět.
 
 #### Kola
 
@@ -10095,11 +10135,6 @@ která je u něj napsaná; výjimkou z pravidel oddílu 4 není. Čísla se při
 > Do roku 1996 patřila Belgie k absolutní evropské špičce v tom, kolik hodnoty dokázal vytvořit jeden pracující
 > člověk, protože zdědila silný průmysl (hlavně chemii), velmi dobře využitou výrobu a velké množství strojů na každého
 > zaměstnance.
-
-**Háček ve třech krocích a míra zjednodušení** (Nizozemsko na startu; z diskuse Ondřeje s Gemini 26. 11. 2026). Tak
-krátké věty jsou výjimka pro háček, ne styl celého regionu:
-> Nizozemci byli v práci stejně výkonní jako Američané. Jenže obrovská část z nich chodila do práce jen na pár dní
-> v týdnu. V ročním součtu na pracujícího je tak Belgie přeskočila.
 
 **Odstavec začíná otázkou, když divák čeká pořadí naopak** (Maďarsko na startu; schváleno 21. 11. 2026). Kde karta
 zná příčinu, zazní i ta:
@@ -10117,9 +10152,10 @@ co za rozdílem stálo, zazní i to:
 
 #### Cíl
 
-**Úroveň výkladu: řetěz otázek, obraz koláče, dopad v eurech, vyvrácená představa těsně před příčinou** (Rumunsko;
-Gemini 17. 11. 2026, Ondřej schválil). Není vzorem stavby cíle a věta „než by odpovídalo třem hlavním faktorům“ se
-nepřebírá:
+**Úroveň výkladu: řetěz otázek, obraz koláče, vyvrácená představa těsně před příčinou a jediný přepočet v eurech
+u největšího zvratu regionu** (Rumunsko; namluvený Balkán, Gemini 17. 11. 2026, Ondřej schválil). Není vzorem stavby
+cíle: věta „než by odpovídalo třem hlavním faktorům“ se nepřebírá a ze dvou částek na začátku dnes zazní jen druhá
+(co si za výplatu koupí), výplata na účet je v obraze:
 > Na páté, poslední místo v regionu padá Rumunsko. Průměrnému zaměstnanci tu na účet přijde v čistém kolem devíti
 > set padesáti eur měsíčně. Díky levnému bydlení, službám i jídlu si za ně doma pořídí stejný životní standard, na
 > jaký by v průměrně drahé evropské zemi potřeboval tisíc šest set třicet eur. I tak je to ale o desetinu méně, než
@@ -10129,39 +10165,32 @@ nepřebírá:
 > platí štědřeji. Výplaty drží nízko hlavně domácí firmy. Nahrává jim, že většině lidí tu mzdu nevyjednávají odbory,
 > a také daně, při kterých se majiteli malé firmy vyplatí brát si peníze jako zisk, a ne jako mzdu.
 
-**Další země se stejným obrazem na něj jen odkáže** (Slovinsko; Ondřej 17. 11. 2026: „není tam zahlcení těmi čísly“):
+**Další země se stejným obrazem na něj jen odkáže** (Slovinsko; namluvený Balkán, Ondřej 17. 11. 2026: „není tam
+zahlcení těmi čísly“; částka v eurech, kterou Balkán dodává, dnes patří do obrazu):
 > Proč? Vzpomeňte si na koláč, o který se firma dělí se svými lidmi. Ve Slovinsku si z něj zaměstnanci ukrojí ještě
-> víc, než je v Evropě zvykem. Slovincovi to dělá asi sto šedesát eur měsíčně navíc.
+> víc, než je v Evropě zvykem.
 
-**Poslední země regionu: důvod proti zemím nad ní, s dopadem v eurech; první věta vyhodnocuje tip z úvodu epizody**
-(Maďarsko; schváleno 21. 11. 2026):
-> Poslední v regionu je Maďarsko, jak se před startem čekalo. Maďar bere v čistém kolem 1 030 eur měsíčně, a protože
-> je v Maďarsku levně, koupí si za ně doma tolik jako jinde v Evropě za 1 500. Překvapivě za to nemohou slabé odbory:
-> firmy se s lidmi o výdělek dělí skoro jako jinde v Evropě. Na startu přitom bylo před Slovenskem i Polskem, oba mu
-> ale utekli rychlejším růstem: Slovensko hlavně od roku 2004 s novými automobilkami a cestou k euru, Polsko až po
-> finanční krizi. Kdyby Maďarsko rostlo jako Slovensko, měl by Maďar na účtu asi o sto dvacet eur měsíčně víc.
+**Poslední země regionu: důvod proti zemím nad ní; první věta vyhodnocuje tip z úvodu epizody** (Maďarsko; schváleno
+21. 11. 2026, 27. 11. zkráceno o výplatu na účet a o přepočet v eurech):
+> Poslední v regionu je Maďarsko, jak se před startem čekalo. Maďar si za výplatu koupí tolik jako jinde v Evropě za
+> 1 500 eur. Překvapivě za to nemohou slabé odbory: firmy se s lidmi o výdělek dělí skoro jako jinde v Evropě. Na
+> startu přitom bylo před Slovenskem i Polskem, oba mu ale utekli rychlejším růstem: Slovensko hlavně od roku 2004
+> s novými automobilkami a cestou k euru, Polsko až po finanční krizi.
 
 **Ceny ve větě o penězích, dva díly proti sobě; předposlední země důvod neopakuje celý** (Slovensko; schváleno
-21. 11. 2026):
-> Čtvrté je Slovensko. Slovák bere v čistém kolem 1 280 eur, výrazně víc než Maďar. Na Slovensku je ale dráž, a tak si
-> doma koupí jen o kousek víc: tolik jako jinde v Evropě za 1 580. Před Maďarskem ho drží rychlejší růst výkonu,
-> hlavně díky automobilkám a cestě k euru: na startu byl slovenský pracující o kousek za maďarským, v roce 2024 už
-> před ním. Přes třetinu toho náskoku mu ale vezmou vyšší odvody.
+21. 11. 2026, 27. 11. zkráceno o výplatu na účet):
+> Čtvrté je Slovensko. Slovák bere výrazně víc eur než Maďar, na Slovensku je ale dráž, a tak si doma koupí jen
+> o kousek víc: tolik jako jinde v Evropě za 1 580 eur. Před Maďarskem ho drží rychlejší růst výkonu, hlavně díky
+> automobilkám a cestě k euru: na startu byl slovenský pracující o kousek za maďarským, v roce 2024 už před ním. Přes
+> třetinu toho náskoku mu ale vezmou vyšší odvody.
 
-**Silnější důvod uvnitř dílu, číslo jako příběh, dopad řečený podílem** (Polsko; schváleno 21. 11. 2026):
-> Třetí je Polsko. Polák bere v čistém kolem 1 310 eur, skoro stejně jako Slovák, v Polsku je ale levněji, hlavně
-> bydlení a energie, a tak si doma koupí tolik jako jinde v Evropě za 1 870. Na startu bylo poslední v regionu,
-> protože každý pátý pracující Polák hospodařil na poli, hlavně na malých políčkách. Odchod z polí pak udělal asi
-> polovinu toho, o co Polsko rostlo rychleji než Slovensko: v zemědělství pracuje o dva miliony lidí méně a práce
-> přibylo tam, kde každý vytvoří mnohem víc. A stát mu z výplaty bere nejméně v regionu.
-
-**Pořadí změnilo to, kdo se počítá, a drahota u souseda; jediná dovolená věta o tom, koho cíl porovnává** (Nizozemsko;
-ověřeno v noci na 22. 11. 2026):
-> Vítězem regionu je Nizozemsko. Nizozemec bere méně eur než Dán, jenže život je v Dánsku o dost dražší, a tak si
-> Nizozemec doma koupí o kousek víc. Jak mohlo vyhrát, když bylo po třech kolech až čtvrté? Spousta Nizozemců pracuje
-> jen část týdne nebo na sebe, a cíl porovnává zaměstnance na plný úvazek. Dánům k tomu ukrojí bydlení, které je proti
-> tomu, co Dánsko vyrábí, mnohem dražší: s nizozemským by si Dán koupil, jako by měl na účtu asi o dvě stě třicet eur
-> víc. Dánsko přitom rostlo rychleji, a tak Nizozemsko vyhrálo jen těsně.
+**Silnější důvod uvnitř dílu, číslo jako příběh, dopad řečený podílem** (Polsko; schváleno 21. 11. 2026, 27. 11.
+zkráceno o výplatu na účet):
+> Třetí je Polsko. Polák bere skoro stejně eur jako Slovák, v Polsku je ale levněji, hlavně bydlení a energie, a tak
+> si doma koupí tolik jako jinde v Evropě za 1 870 eur. Na startu bylo poslední v regionu, protože každý pátý
+> pracující Polák hospodařil na poli, hlavně na malých políčkách. Odchod z polí pak udělal asi polovinu toho, o co
+> Polsko rostlo rychleji než Slovensko: v zemědělství pracuje o dva miliony lidí méně a práce přibylo tam, kde každý
+> vytvoří mnohem víc. A stát mu z výplaty bere nejméně v regionu.
 
 ---
 
@@ -10185,8 +10214,10 @@ ověřeno v noci na 22. 11. 2026):
    a kolo; ligová místa v kolech, v průběžném pořadí a v obraze karty země v cíli (v hlase odstavců cíle je nehlídá);
    medaile, zelený trikot, „střední země ligy“; zakázané obraty („ani chyba, ani zásluha“, „sedí napůl“, „nikdo
    nespočítal“, „doložit nejde“, „kola podcenila“, „statistika připisuje“, „jen na papíře“); kotvu tahu do hlasu;
-   v cíli kruh, ceny jako důvod a dopad na výplatu. Jen upozorní na délku, opakovanou kostru, „dnes“, dlouhý úvod
-   cíle a na souseda, kterého odstavec nejmenuje. `--pevny-hlas` vypíše čistý hlas ke čtení; `--nerikej --balik
+   v cíli kruh a ceny jako důvod; v kolech větu o naplněném očekávání („lépe, než se čekalo“). Jen upozorní na délku,
+   opakovanou kostru, „dnes“, dlouhý úvod cíle, na souseda, kterého odstavec nejmenuje, na srovnání, které neříká,
+   s kým nebo od kdy, na víc než dva přepočty „kdyby…“ v cíli regionu a na víc než jednu částku v eurech v odstavci
+   cíle. `--pevny-hlas` vypíše čistý hlas ke čtení; `--nerikej --balik
    <balík> --region "<Region>"` složí oddíl NEŘÍKEJ.
 2. **Co skript nehlídá** a čte to kontrolor a Ondřej: stavbu vět, druh čísel, měřítka, pomlčky, strop důvodů
    a jestli věta s rozdílem proti sousedovi opravdu říká rozdíl.
@@ -10230,7 +10261,12 @@ Schválený hlas se rozdělí po odstavcích do `texty.json` (`k1_uvod`, `k1_<is
   a kontrolní skript ne. Čeká na Ondřeje; do té doby se neříkají.
 - **Vzor pro dva skoro stejně velké důvody v cíli** chybí (Litva čeká na úpravu a schválení).
 - **Skill pro Gemini na webu** (čtivá verze) ještě není sladěný: čísla mají zůstat v obraze, tučné písmo je kotva
-  a pořadí vět v cíli je jiné. Kontrolní skript zatím nehlídá délku tučného úseku.
+  a pořadí vět v cíli je jiné. Kontrolní skript zatím nehlídá délku tučného úseku. Skill pro Gemini navíc ještě říká,
+  že věty „Kdyby…“ jsou pevné jádro; od 27. 11. 2026 to neplatí.
+- **Kam v epizodě patří lekce o výkonu** (oddíl 3C): správně do prvního regionu nebo do úvodu, ty jsou ale namluvené.
+  Čeká na Ondřeje; do té doby se píše jako samostatný blok do prvního regionu po Balkánu.
+- **Vzory po přepočtu kol na plný úvazek:** vzor háčku (Nizozemsko na startu) a vzor cíle Nizozemska odešly, protože
+  po přepočtu neplatí. Nové vzniknou z textů, které Ondřej schválí.
 
 
 # Skill: voiceover-cestina-SKILL-v1.0.md
