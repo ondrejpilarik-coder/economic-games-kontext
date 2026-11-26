@@ -10072,7 +10072,9 @@ pouští do hlasu. Rozsudek má vlastní větu.
 - **`{volitelné: …}`** jen jména měst, výčty a ilustrace. Pevný hlas musí po vyškrtnutí volitelného a bez obrazu stát
   sám: zůstane výsledek, důvod i prostřední krok.
 - **`[VIZUÁL: …]`** pod každým odstavcem: přesná data pro `liga.ts`, jméno ikony (`icon_id_remotion`), anglické štítky
-  a čísla odsunutá z hlasu.
+  a čísla odsunutá z hlasu. Celý na jednom řádku a bez hranatých závorek uvnitř (roky a poznámky do kulatých).
+  V uvozovkách jsou jen anglické štítky; česká slova, u kterých se má obraz ukázat, se píšou bez uvozovek („u slov
+  o ropném fondu“). Slova „celoligový“ a „medaile“ do něj nepatří ani jako poznámka pro střih.
 
 #### 4.7 Ostatní
 
