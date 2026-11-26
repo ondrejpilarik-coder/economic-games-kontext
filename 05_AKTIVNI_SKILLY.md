@@ -8920,7 +8920,7 @@ Platí jednotně pro celou sérii (všechny epizody, analýzu, scénáře i stř
 
 #### Krok 2 z 7: Kauzální mapa, srovnání jednotek a funkční horizont
 - Rozložíš ukazatel na 4–6 hlavních větví z literatury a lidsky vysvětlíš jejich přenos do výsledku.
-- **Kontrola jednotek:** U každé větve explicitně zapíšeš *koho měří* (`scope_population`), *v jakém období* a *v jakých cenách* (`scope_prices`). **Kola měří totéž co ukazatel: stejné lidi a stejnou jednotku** (Ondřej 26. 11. 2026: „aby ta jednotlivá kola vždy byla ve stejných jednotkách jako indikátor“). Kde zdroj měří jinak (u mezd výkon na každého pracujícího proti mzdě na plný úvazek), kolo se na jednotku ukazatele přepočítá, jedním pravidlem pro všechny země, a výhrada přepočtu se zapíše. Jen když přepočítat nejde, zůstane kolo v jiné jednotce a divák to uslyší jednou v úvodu kola. Rozdíl jednotek se nikdy nenechává k vysvětlování až v cíli: z chyby měření by se stal příběh země.
+- **Kontrola jednotek:** U každé větve explicitně zapíšeš *koho měří* (`scope_population`), *v jakém období* a *v jakých cenách* (`scope_prices`). **Kola měří totéž co ukazatel: stejné lidi a stejnou jednotku** (Ondřej 26. 11. 2026: „aby ta jednotlivá kola vždy byla ve stejných jednotkách jako indikátor“). Kde zdroj měří jinak (u mezd výkon na každého pracujícího proti mzdě na plný úvazek), kolo se na jednotku ukazatele přepočítá, jedním pravidlem pro všechny země, a výhrada přepočtu se zapíše. Jen když přepočítat nejde, zůstane kolo v jiné jednotce a divák to uslyší jednou v úvodu kola. Rozdíl jednotek se nikdy nenechává k vysvětlování až v cíli: z chyby měření by se stal příběh země. V kartě to každé kolo říká polem `scope_matches_indicator`; kontrola karty bez něj neprojde.
 - **Funkční horizont a pravidlo celé historie:** Určíš hlavní hodnocené období epizody (např. 1990–2024 u mezd včetně transformace, 2010–2024 u bydlení) a u dědických faktorů se výslovně zeptáš: *„Existují starší historické epizody nebo 40 let staré aktivně udržované politiky, které výsledek dodnes zásadně tvarují?“*
 - **Rozhodnutí Ondřeje:** Schválí kauzální mapu, horizont a kandidátské faktory.
 
@@ -9060,6 +9060,8 @@ Každému kolu a hlavnímu specifickému faktoru přiřadíš **1 ze 6 typů**, 
       "league_share_pct": 45,
       "voice_share_word": "skoro polovinu",
       "scope_population": "...",
+      "scope_matches_indicator": true,
+      "scope_mismatch_note": "jen když kolo měří jiné lidi než ukazatel a nejde přepočítat: proč, a co divák uslyší v úvodu kola",
       "scope_prices": "...",
       "mandatory_questions": ["Otázka 1", "Otázka 2"],
       "typical_instruments": ["způsob privatizace", "lákání investorů", "vstup do Unie a eura"],
