@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 26. 11. 2026 11:59 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `211e8d75`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 26. 11. 2026 13:49 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `211e8d75`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -478,7 +478,11 @@ kole, i když je odstup malý** („rozdíly popisovat u každé země, protože
 procent už důvod nevypíná, jen určuje slovo „těsně“; stav „těsně bez důvodu“ je v kartách zemí zrušený a kontroly
 ho hlásí. Zapsáno ve skillech analýzy zemí 2.0, scénáře regionu 2.0, karty indikátoru 6.0, kontroly váhy důvodů,
 ve starších platných postupech (mapa příběhu 1.2, analýza regionů 1.6) a ve skillu Gemini 3.9. V kartách zemí chybí
-důvod u 28 dvojic v kolech; doplňuje je analýza, ne scénář. Stav
+důvod u 28 dvojic v kolech; doplňuje je analýza, ne scénář. **26. 11. 2026 odpoledne** Ondřej poslal návrh skillu
+scénáře regionu 3.0 od Gemini (čistá verze bez datovaných dodatků, s pěti metodikami, jak analýzu přeložit do lidské
+řeči) a záznam jejich diskuse; připomínky Clauda a oba podklady jsou v
+`10_documents/active/2026-11-26_skill_scenare_3_0/`. Návrh NEPLATÍ: do Ondřejova souhlasu a přepisu platí pro pilot
+skill 2.0 ve znění z 26. 11. Stav
 a další krok: `PREKLADOVY_MUSTEK.md`.
 
 - **Claude** podle skillu `05_epizode_packs/_skills/voiceover-mapa-pribehu-SKILL-v1.2.md` postaví mapu příběhu
