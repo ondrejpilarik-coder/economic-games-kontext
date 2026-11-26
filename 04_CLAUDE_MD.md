@@ -24,7 +24,8 @@ si za výplatu koupí) a přepočet „kdyby…, měl by o tolik víc“ jen u n
 s kým nebo od kdy. **První dvě kola mezd měří od 27. 11. 2026 výkon na plný úvazek, stejně jako cíl** (pravidlo
 „kola měří totéž co ukazatel“ je ve skillu stavby karty ukazatele; přepočet v
 `10_documents/active/2026-11-26_stejna_jednotka/`). Karty zemí se nad novými daty znovu ověřují a pět regionů mimo
-Balkán se píše znovu.
+Balkán se píše znovu (nástroj `…/output/analyza_v2/scenare/_psani_gemini/pis_region.py`). Skill čtivé verze pro Gemini na webu
+je s tím sladěný ve verzi 3.10 (`ekonomicke-hry-ctiva-verze-SKILL-v3.10.md`); do Gemini ji nahrává Ondřej.
 
 Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
 webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
