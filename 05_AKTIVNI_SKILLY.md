@@ -10289,7 +10289,8 @@ a rozpor se ohlásí.
   `LEAGUE MEDIAN`);
 - celoligové místo (1. až 27.) v kolech, v průběžném pořadí a na kartě země v cíli. Tři tabule se nemíchají: výkon
   v jednom faktoru a průběžné pořadí jen v regionu; skutečný cíl jsou peníze a místo v regionu; celou ligu ukáže až
-  cílová tabule v závěru regionu, a jen z dojetých zemí;
+  cílová tabule v závěru regionu, a jen z dojetých zemí. Netýká se to prvenství v jiné věci, které karta dokládá
+  („na výzkum dávalo nejvíc v Evropě“);
 - „my“ a „u nás“ o kterékoli zemi (video se dabuje pro celou ligu).
 
 #### 4.2 Rozdíl proti zemi před sebou
@@ -10300,7 +10301,8 @@ a rozpor se ohlásí.
 - **Těsný odstup** (`above_threshold: false`) se řekne jako těsný a hned se řekne, čím se ty dvě země liší; bývají to
   dvě věci proti sobě, které se skoro vyrovnají. Samotné „těsně“ nestačí. „Ztrácí, protože“ patří odstupu nad prahem;
   u těsného se říká „skoro nastejno, jen…“.
-- **Stav `otevreno`:** hlas řekne ověřený rozdíl jako rozdíl, ne jako prokázanou příčinu.
+- **Stav `otevreno`:** hlas řekne ověřený rozdíl jako rozdíl, ne jako prokázanou příčinu; slova „důvod“ a „protože“
+  u něj nezazní.
 - **V cíli** se srovnává se zemí, která právě dojela (`finale.neighbor`): díl rozkladu a dopad na výplatu u každé
   dvojice, i těsné.
 - **Dvojčata** (`broadcast_twin`, `callback_twin` se stavem `active`) jsou přeshraniční souboj navíc. Sousedy
@@ -10338,7 +10340,9 @@ pouští do hlasu. Rozsudek má vlastní větu.
 - Představu s původem `odhad_ai` říká komentátor jako otázku, ne jako názor lidí.
 - Představa, na kterou není zajímavá odpověď, se vynechá a zapíše se to do poznámky pod klíčem.
 - Očekávané umístění (`ranking_expectation`) patří jen na start země v 1. kole. Tip zveřejněný v úvodu epizody se
-  v cíli vyhodnotí, i když nevyšel. Vnitřní tip se nevydává za očekávání diváků.
+  v cíli vyhodnotí, i když nevyšel.
+- **Role jde do hlasu, jen když byla zveřejněná v úvodu epizody** (`pre_race_expectation.source: intro`). Vnitřní tip
+  autora se v hlase neříká: ani jako očekávání diváků, ani jako tip z úvodu, ani jako vlastní odhad komentátora.
 
 #### 4.5 Tahy, soudy a tváře
 
