@@ -9998,6 +9998,9 @@ prodlouží asi o desetinu a hlas jede asi 140 slov za minutu.
 
 - První region epizody smí přidat 80 slov na pravidla vysvětlená za jízdy. Region, který nese lekci (oddíl 3C), má
   na ni dalších asi 80 slov.
+- Úprava z odpoledne 27. 11. 2026 (dvě částky v cíli, shrnutí kol s posuny, popis cílové tabule) přidala v pěti
+  hotových regionech 90 až 190 slov na region, tedy asi minutu videa. Cíle slov v tabulce ji nezahrnují; čtyři
+  z pěti regionů jsou proto nad hranicí upozornění.
 - **Délka slouží výkladu.** Horní mez jen upozorní; nikdy není důvodem vyškrtnout rozdíl proti sousedovi ani větu,
   bez které divák nepochopí, proč se něco stalo (krize, která zemi srazila; jak to bylo předtím). Čtyři složité věty
   se nahradí třemi jasnými, a kde to nestačí, region se prodlouží.
@@ -10019,13 +10022,15 @@ prodlouží asi o desetinu a hlas jede asi 140 slov za minutu.
   kdo koho předjel, kdo se propadl, kdo se na koho dotáhl nebo komu utekl („Polsko předjelo Slovensko i Maďarsko a je
   třetí, … Maďarsko padá na páté“). Posuny a odstupy dostane pisatel spočítané v podkladech. Když se pořadí nezměnilo,
   shrnutí to řekne a zmíní nejzajímavější změnu odstupu (ve Střední Evropě se po daních pořadí nezměnilo, Maďarsko
-  se ale na Slovensko dotáhlo skoro nastejno). **Průběžné místo a posuny patří jen sem.** Odstavec země řekne, jak
+  se ale na Slovensko dotáhlo skoro nastejno). Dvě souvislé věty, kolem 40 slov (u regionu se šesti zeměmi do 60);
+  z odstupů nejvýš jedna věc, ta nejzajímavější. **Průběžné místo a posuny patří jen sem.** Odstavec země řekne, jak
   země dopadla v kole a proč („Druhé kolo vyhrává Polsko“); na jaké průběžné místo tím skáče, neříká.
 - **Cíl (`## Finále: cíl`):** `cil_uvod` jen v prvním regionu epizody (co cíl měří podle karty indikátoru, u mezd čistá
   výplata bezdětného jednotlivce na plný úvazek v kupní síle, a že vstupují specifické faktory), jinde prázdný nebo
   jedna přechodová věta → `cil_<iso>` od posledního místa po vítěze (oddíl 4.3) → `cil_zaver`. Cílová tabule ligy
   nese v obraze štítek „zatím z dojetých zemí“.
-- **Závěr cíle (`cil_zaver`)** má od druhého regionu epizody čtyři části, pokaždé jinými slovy:
+- **Závěr cíle (`cil_zaver`)** má od druhého regionu epizody čtyři části, pokaždé jinými slovy, dohromady kolem
+  110 slov:
   1. shrnutí dojezdu regionu;
   2. **sportovní popis cílové tabule ligy:** kdo sedí v křesle lídra, kde je linka průměrné země ligy a kam se nově
      dojeté země zařadily mezi už dojeté. Popisují se jen zajímavá místa: kdo přeskočil celé dosavadní pole, kdo

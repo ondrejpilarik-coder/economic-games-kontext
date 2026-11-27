@@ -37,9 +37,17 @@ upravený na místě. V cíli zazní u země zase dvě částky (kolik přijde n
 částka“ neplatí. Kdo se posunul v průběžném pořadí, říká jen shrnutí na konci kola. Závěr cíle sportovně popíše, kam
 se region zařadil na cílové tabuli ligy (jen zajímavá místa, bez důvodů), a souboj přes hranice regionů
 s vysvětlením je nejvýš jeden až dva za region a určuje ho karta indikátoru. U země v cíli stojí mimo hlas poznámka,
-kudy v regionu jela. Na koho se počítá, se u každé země neopakuje. **Úpravu čte ke kontrole Gemini 4 Carbon.**
-Kontrolní skript je sladěný; nástroj pro podklady (`pis_region.py`), dvě věty v kartě Polska a skill čtivé verze
-pro Gemini (3.10 říká v cíli jednu částku) se teprve sladí a regiony se podle úpravy zatím nepíší.
+kudy v regionu jela. Na koho se počítá, se u každé země neopakuje. Přepočet „kdyby“ zůstal jen u největšího zvratu
+regionu. **Gemini 4 Carbon úpravu zkontroloval a přidal tři věci, které jsou zapracované:** země, která je v kole
+první nebo poslední z celé ligy, to smí mít v hlase řečeno slovy, bez číslice (v datech z 27. 11. Švýcarsko na
+startu, Belgie a Británie v daních; pod odstavcem to nese pole `liga:` v poznámce); čtivá verze smí jednou za region
+postavit kontrast s rolí z úvodu epizody; po změně dat se před psaním prověří příčiny v kartách. Nástroj pro
+podklady (`pis_region.py`) a kontrolní skript jsou sladěné a dvě věty v kartě Polska opravené. **Pět regionů mimo
+Balkán má druhé znění z 27. 11. 2026** (Ondřej: „nemusí se to dělat odznova… jenom drobnější změny“): pisatel
+přepsal jen shrnutí 2. a 3. kola, věty o penězích v cíli a závěr cíle, opakované měřítko a průběžné místo
+v odstavci země odešly škrtem, poznámky `dráha` a `liga` vložil nástroj z dat. Soubory ke čtení končí `_v2`
+(`10_documents/active/2026-11-27_pet_regionu/`). Skill čtivé verze pro Gemini (3.10 říká v cíli jednu částku) se
+teprve sladí.
 
 Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
 webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
