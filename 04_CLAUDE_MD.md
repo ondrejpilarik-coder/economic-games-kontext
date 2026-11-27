@@ -19,13 +19,26 @@ popisují dělbu práce do 26. 11. 2026 (podle ní vznikl Balkán) a postupy, kt
 **Úprava 27. 11. 2026** (Ondřej po čtení celého regionu Skandinávie a Benelux; důvody ve
 `voiceover-scenar-regionu-HISTORIE.md`): skill faktické verze 3.0 je upravený na místě. V kolech nezazní věta o tom,
 jestli země naplnila očekávání. Co platí pro všechny země stejně, zazní jednou: krátká lekce o výkonu na konkrétním
-příkladu u první země 1. kola, v dalších regionech jedna věta v úvodu 1. kola. V cíli zazní u země jedna částka (co
-si za výplatu koupí) a přepočet „kdyby…, měl by o tolik víc“ jen u největšího zvratu regionu. Každé srovnání říká,
+příkladu u první země 1. kola, v dalších regionech jedna věta v úvodu 1. kola. V cíli měla podle ranního znění zaznít
+u země jedna částka (co si za výplatu koupí); odpoledne se vrátily dvě (odstavec níže). Přepočet „kdyby…, měl by
+o tolik víc“ zůstává vzácný, nejvýš dvakrát za region. Každé srovnání říká,
 s kým nebo od kdy. **První dvě kola mezd měří od 27. 11. 2026 výkon na plný úvazek, stejně jako cíl** (pravidlo
 „kola měří totéž co ukazatel“ je ve skillu stavby karty ukazatele; přepočet v
 `10_documents/active/2026-11-26_stejna_jednotka/`). Karty zemí se nad novými daty znovu ověřují a pět regionů mimo
 Balkán se píše znovu (nástroj `…/output/analyza_v2/scenare/_psani_gemini/pis_region.py`). Skill čtivé verze pro Gemini na webu
 je s tím sladěný ve verzi 3.10 (`ekonomicke-hry-ctiva-verze-SKILL-v3.10.md`); do Gemini ji nahrává Ondřej.
+
+**Úprava 27. 11. 2026 odpoledne** (Ondřej po čtivé verzi Střední Evropy, kterou zkontroloval model Gemini 4 Carbon:
+„ten script je fakt dobrý… už takhle by to ve videu klidně mohlo asi být“; a po čtyřech bodech, které Carbon navrhl
+pro faktickou verzi; důvody ve `voiceover-scenar-regionu-HISTORIE.md`, posouzení, Ondřejova rozhodnutí a dokument
+změn v `10_documents/active/2026-11-27_doplnek_fakticke_verze_od_gemini/`): skill faktické verze 3.0 je znovu
+upravený na místě. V cíli zazní u země zase dvě částky (kolik přijde na účet a co si za to koupí); ranní „jedna
+částka“ neplatí. Kdo se posunul v průběžném pořadí, říká jen shrnutí na konci kola. Závěr cíle sportovně popíše, kam
+se region zařadil na cílové tabuli ligy (jen zajímavá místa, bez důvodů), a souboj přes hranice regionů
+s vysvětlením je nejvýš jeden až dva za region a určuje ho karta indikátoru. U země v cíli stojí mimo hlas poznámka,
+kudy v regionu jela. Na koho se počítá, se u každé země neopakuje. **Úpravu čte ke kontrole Gemini 4 Carbon.**
+Kontrolní skript je sladěný; nástroj pro podklady (`pis_region.py`), dvě věty v kartě Polska a skill čtivé verze
+pro Gemini (3.10 říká v cíli jednu částku) se teprve sladí a regiony se podle úpravy zatím nepíší.
 
 Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
 webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
