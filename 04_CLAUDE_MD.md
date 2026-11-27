@@ -21,7 +21,8 @@ popisují dělbu práce do 26. 11. 2026 (podle ní vznikl Balkán) a postupy, kt
 jestli země naplnila očekávání. Co platí pro všechny země stejně, zazní jednou: krátká lekce o výkonu na konkrétním
 příkladu u první země 1. kola, v dalších regionech jedna věta v úvodu 1. kola. V cíli měla podle ranního znění zaznít
 u země jedna částka (co si za výplatu koupí); odpoledne se vrátily dvě (odstavec níže). Přepočet „kdyby…, měl by
-o tolik víc“ zůstává vzácný, nejvýš dvakrát za region. Každé srovnání říká,
+o tolik víc“ zazní jen u největšího zvratu regionu, nejvýš dvakrát za region (Ondřej odpoledne znovu: „Jen
+u zvratu“). Každé srovnání říká,
 s kým nebo od kdy. **První dvě kola mezd měří od 27. 11. 2026 výkon na plný úvazek, stejně jako cíl** (pravidlo
 „kola měří totéž co ukazatel“ je ve skillu stavby karty ukazatele; přepočet v
 `10_documents/active/2026-11-26_stejna_jednotka/`). Karty zemí se nad novými daty znovu ověřují a pět regionů mimo

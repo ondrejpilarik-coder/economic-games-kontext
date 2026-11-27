@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 27. 11. 2026 15:50 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `dfc9a13b`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 27. 11. 2026 15:55 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `dfc9a13b`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -484,7 +484,8 @@ popisují dělbu práce do 26. 11. 2026 (podle ní vznikl Balkán) a postupy, kt
 jestli země naplnila očekávání. Co platí pro všechny země stejně, zazní jednou: krátká lekce o výkonu na konkrétním
 příkladu u první země 1. kola, v dalších regionech jedna věta v úvodu 1. kola. V cíli měla podle ranního znění zaznít
 u země jedna částka (co si za výplatu koupí); odpoledne se vrátily dvě (odstavec níže). Přepočet „kdyby…, měl by
-o tolik víc“ zůstává vzácný, nejvýš dvakrát za region. Každé srovnání říká,
+o tolik víc“ zazní jen u největšího zvratu regionu, nejvýš dvakrát za region (Ondřej odpoledne znovu: „Jen
+u zvratu“). Každé srovnání říká,
 s kým nebo od kdy. **První dvě kola mezd měří od 27. 11. 2026 výkon na plný úvazek, stejně jako cíl** (pravidlo
 „kola měří totéž co ukazatel“ je ve skillu stavby karty ukazatele; přepočet v
 `10_documents/active/2026-11-26_stejna_jednotka/`). Karty zemí se nad novými daty znovu ověřují a pět regionů mimo
@@ -10739,8 +10740,8 @@ vyprávění bez karet“ a vzor Litvy. Důvody pravidel: `voiceover-scenar-regi
 
 *Úpravy 27. 11. 2026 (důvody v historii). Ráno, po Ondřejově čtení celého regionu Skandinávie a Benelux: v kolech
 nezazní věta o tom, jestli země naplnila očekávání; co platí pro všechny země stejně, zazní jednou (lekce u první země
-a úvod kola) a odstavce zemí to neopakují; přepočet „kdyby…, měl by o tolik víc“ je vzácný; každé srovnání říká, s kým
-nebo od kdy. První dvě kola měří od 27. 11. 2026 výkon na plný úvazek, stejně jako cíl. Odpoledne, po čtivé verzi
+a úvod kola) a odstavce zemí to neopakují; přepočet „kdyby…, měl by o tolik víc“ jen u největšího zvratu regionu;
+každé srovnání říká, s kým nebo od kdy. První dvě kola měří od 27. 11. 2026 výkon na plný úvazek, stejně jako cíl. Odpoledne, po čtivé verzi
 Střední Evropy a čtyřech bodech od Gemini 4 Carbon, které Ondřej s úpravami schválil: v cíli zazní u země zase dvě
 částky (kolik přijde na účet a co si za to koupí); průběžné pořadí a posuny říká jen shrnutí na konci kola; závěr cíle
 sportovně popíše, kam se region zařadil na cílové tabuli, a vysvětlený souboj přes hranice regionů určuje karta
@@ -10894,7 +10895,8 @@ Rozhoduje druh čísla, ne počet.
 - **V cíli** zazní u země dvě částky spojené větou o cenách: kolik zaměstnanci přijde na účet a co si za to koupí při
   průměrných evropských cenách. Přesné srovnání se sousedem je v obraze. Dopad důvodu se říká slovem („o hodně“,
   „o kousek“) nebo podílem slovy („polovinu toho náskoku“). Třetí částka smí zaznít jen v přepočtu „kdyby…, měl by na
-  účtu o tolik eur víc“: nejvýš dvakrát za region a jen kde ho karta má spočítaný (oddíl 4.3).
+  účtu o tolik eur víc“: jen u největšího zvratu regionu, nejvýš dvakrát za region a jen kde ho karta má spočítaný
+  (oddíl 4.3).
 - Co z hlasu vypadlo, stojí v řádku `[VIZUÁL: …]` té části: číslo, jaký graf ho ukáže a u kterých slov.
 
 #### E. Kde končí zjednodušení
@@ -11050,11 +11052,11 @@ která neplatí,** má-li v cíli místo → **(3) hlavní důvod z rozkladu roz
 v obraze → **(5) věc ze života,** jen když ji karta pouští do hlasu. Rozsudek má vlastní větu. Vyhodnocení tipu
 z úvodu epizody smí stát před penězi.
 
-**Přepočet „kdyby…, měl by na účtu o tolik eur víc“** je třetí částka. Zazní nejvýš dvakrát za region, jen kde ho
-karta má spočítaný, jednoduchou větou a s částkou na účtu, jak ji má karta: u největšího zvratu regionu (země, která
-se proti pořadí po třech kolech posunula nejvíc, nebo dvojice, kde se pořadí otočilo). Když se pořadí v cíli proti
-kolům nezměnilo, smí zaznít jednou, u země, kde je rozdíl nejvýmluvnější. V šesti odstavcích po sobě se divák
-v částkách ztratí.
+**Přepočet „kdyby…, měl by na účtu o tolik eur víc“** je třetí částka. Zazní jen u největšího zvratu regionu (země,
+která se proti pořadí po třech kolech posunula nejvíc, nebo dvojice, kde se pořadí otočilo), nejvýš dvakrát za
+region, jen kde ho karta má spočítaný, jednoduchou větou a s částkou na účtu, jak ji má karta. Region, kde se pořadí
+v cíli proti kolům nezměnilo, přepočet nemá (Ondřej 27. 11. 2026: „Jen u zvratu“). V šesti odstavcích po sobě se
+divák v částkách ztratí.
 
 - **Výplata, eura ani ceny nejsou důvod pořadí.** „Drží ho vyšší výplata“ je kruh. „Je tam levněji, a tak vede“ vydává
   převod na kupní sílu za příčinu. Ceny patří do věty o penězích. Mezi důvody smí jen drahota života proti cenám
@@ -11175,13 +11177,13 @@ zahlcení těmi čísly“; částka v eurech, kterou Balkán dodává, dnes pat
 > víc, než je v Evropě zvykem.
 
 **Poslední země regionu: dvě částky spojené větou o cenách; důvod proti zemím nad ní; první věta vyhodnocuje tip
-z úvodu epizody; přepočet „kdyby“ jednou za region, jednoduchou větou** (Maďarsko; schváleno 21. 11. 2026; částka
-přepočtu je z dat po 27. 11. 2026):
+z úvodu epizody** (Maďarsko; schváleno 21. 11. 2026; 27. 11. zkráceno o přepočet „kdyby“, protože Střední Evropa
+zvrat v cíli nemá):
 > Poslední v regionu je Maďarsko, jak se před startem čekalo. Maďar bere v čistém kolem 1 030 eur měsíčně, a protože
 > je v Maďarsku levně, koupí si za ně doma tolik jako jinde v Evropě za 1 500. Překvapivě za to nemohou slabé odbory:
 > firmy se s lidmi o výdělek dělí skoro jako jinde v Evropě. Na startu přitom bylo před Slovenskem i Polskem, oba mu
 > ale utekli rychlejším růstem: Slovensko hlavně od roku 2004 s novými automobilkami a cestou k euru, Polsko až po
-> finanční krizi. Kdyby Maďarsko rostlo jako Slovensko, měl by Maďar na účtu asi o devadesát eur měsíčně víc.
+> finanční krizi.
 
 **Ceny ve větě o penězích, dva díly proti sobě; předposlední země důvod neopakuje celý** (Slovensko; schváleno
 21. 11. 2026):
