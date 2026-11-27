@@ -2,7 +2,7 @@
 
 # Ekonomické hry – kontext pro Gemini
 
-Aktualizováno 27. 11. 2026 15:55 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `5fcd52d0`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
+Aktualizováno 27. 11. 2026 17:11 automaticky ze soukromého repozitáře projektu (skilly a pravidla v nejnovější verzi z mainu a pracovních kopií, main `5fcd52d0`). Soubory se přepisují po každé změně skillů, pravidel, kuchařky nebo po novém scénáři; vždy platí nejnovější verze.
 
 | Soubor | Co obsahuje |
 |---|---|
@@ -10746,8 +10746,10 @@ Střední Evropy a čtyřech bodech od Gemini 4 Carbon, které Ondřej s úprava
 částky (kolik přijde na účet a co si za to koupí); průběžné pořadí a posuny říká jen shrnutí na konci kola; závěr cíle
 sportovně popíše, kam se region zařadil na cílové tabuli, a vysvětlený souboj přes hranice regionů určuje karta
 indikátoru; u země v cíli stojí mimo hlas poznámka, kudy v regionu jela; měřítko se v odstavcích zemí neopakuje.
-Odpolední úpravu čte ke kontrole Gemini 4 Carbon. Nástroj pro podklady se s ní teprve sladí (oddíl 7); do té doby se
-podle ní regiony nepíší.*
+Odpolední úpravu zkontroloval Gemini 4 Carbon a jeho tři doplnění jsou zapracovaná: země, která je v kole první nebo
+poslední z celé ligy, to smí mít v hlase řečeno slovy; čtivá verze smí jednou za region postavit kontrast s rolí
+z úvodu epizody; po změně dat se před psaním prověří příčiny v kartách. Nástroj pro podklady a kontrolní skript jsou
+s úpravou sladěné.*
 
 **Vstup:** schválené karty zemí (`analyza-pricin-zeme-SKILL-v2.0.md`), karta indikátoru
 `input/karta_indikatoru_v6.json`, data ligy `output/analyza_v2/data/liga_data.json`, kontrola váhy důvodů regionu
@@ -10781,7 +10783,9 @@ Soudcem srozumitelnosti je Ondřej nad krátkou ukázkou. Model ji nepotvrdí, p
 
 1. `py scripts/kontrola_scenare_v2.py --predstart --balik <balík> --region "<Region>"` projde: každá země regionu má
    schválenou kartu nad stejnými daty jako `liga_data.json` a každá dvojice sousedů má v každém kole zapsáno, čím se
-   země liší.
+   země liší. Po změně dat (přepočet jednotky, nová řada) se k tomu prověří, že každá nová dvojice sousedů a každý
+   zvrat v cíli má v kartě věcnou příčinu, nebo otevřený stav s ověřeným rozdílem; prázdné místo po vyřazené
+   příčině neprojde. Otevřený stav se kvůli tomu nedomýšlí na příčinu.
 2. Kontrola váhy důvodů regionu je hotová (`scenare/<REGION>/KONTROLA_VAHY_DUVODU.md`) a promítnutá do karet.
 3. Co v kartě chybí (rozdíl u dvojice, příčina kola), se vrací analýze. Scénář to nedoplňuje a potichu nevynechá.
 4. Když karta chce v jednom odstavci víc než jádro a dvě další věci (oddíl 2B), ohlásí se to teď a řeší se to v kartě,
@@ -10795,7 +10799,8 @@ Soudcem srozumitelnosti je Ondřej nad krátkou ukázkou. Model ji nepotvrdí, p
 
 1. **Výpis faktů v heslech,** žádné věty, pro každou zemi, každé kolo a pro cíl. Nese všechno, co odstavec potřebuje:
    - místo v regionu v tomto kole; při prvním vystoupení roli země a co se od ní čekalo (průběžné pořadí a posuny
-     patří jen do hesel pro shrnutí kola, oddíl 3B);
+     patří jen do hesel pro shrnutí kola, oddíl 3B); u země, která je v kole první nebo poslední ze všech zemí ligy,
+     i to (oddíl 4.1);
    - hlavní důvod: skutečnou příčinu z karty (`floor_3_driver`: kdo co udělal a kdy) se slovesy, která karta dovoluje
      (`allowed_verbs`);
    - rozdíl proti zemi před sebou (`rounds[].neighbor`): v čem je, jestli je doložený, nebo otevřený, jestli je odstup
@@ -10838,7 +10843,8 @@ Soudcem srozumitelnosti je Ondřej nad krátkou ukázkou. Model ji nepotvrdí, p
 
 Pod klíč každého odstavce země se mimo hlas zapíše `<!-- otázka: … | odpověď: … | proti komu: … | karta: … -->`.
 Otázka se uvnitř odstavce nemění; závěrečný audit se ptá právě na ni. U odstavce země v cíli má poznámka navíc pole
-`dráha:` (oddíl 4.3).
+`dráha:` (oddíl 4.3). U země, která je v kole první nebo poslední ze všech zemí ligy, má poznámka toho kola pole
+`liga:` (oddíl 4.1).
 
 **Pořadí výkladu.** Každá věta odpovídá na otázku, kterou vyvolala věta před ní, a odpověď nepřijde dřív než otázka.
 Divák se ptá takhle: co se stalo a co to znamená v životě → jak tím země stojí mezi ostatními v regionu → proč
@@ -11022,7 +11028,11 @@ a rozpor se ohlásí.
 - celoligové místo (1. až 27.) v kolech, v průběžném pořadí a na kartě země v cíli. Tři tabule se nemíchají: výkon
   v jednom faktoru a průběžné pořadí jen v regionu; skutečný cíl jsou peníze a místo v regionu; celou ligu ukáže až
   cílová tabule v závěru regionu, a jen z dojetých zemí. Netýká se to prvenství v jiné věci, které karta dokládá
-  („na výzkum dávalo nejvíc v Evropě“);
+  („na výzkum dávalo nejvíc v Evropě“). **Výjimka (Ondřej 27. 11. 2026):** zemi, která je v kole první nebo poslední
+  ze všech 27 zemí ligy, to hlas říct smí, slovy a obrazem ze života („tady stát bere z výplaty nejvíc v celé
+  lize“), bez pořadové číslice. Jsou to dvě země v každém kole; podklady to u nich uvádějí a pod odstavcem to nese
+  pole `liga:` v poznámce. Nikdy z neúplného srovnání („nejméně z 22 zemí s údajem“ není „nejméně v lize“) a nikdy
+  v obraze;
 - „my“ a „u nás“ o kterékoli zemi (video se dabuje pro celou ligu).
 
 #### 4.2 Rozdíl proti zemi před sebou
@@ -11099,7 +11109,9 @@ divák v částkách ztratí.
   čekalo“, „jela nad poměry“ ani jiná známka za jízdu. Komentátor popisuje závod: kdo je před kým, kdo koho dotahuje,
   kdo komu utekl a čím. Pole `performance_verdict` v kartě je podklad analýzy, do hlasu se nebere. Tip zveřejněný
   v úvodu epizody se vyhodnotí až v cíli (oddíl 4.4). Nikdy „ani chyba, ani zásluha“; řekne se, co se na trati
-  stalo.
+  stalo. Faktická verze to drží bez výjimky. Čtivá verze smí nejvýš jednou za region postavit kontrast s rolí
+  zveřejněnou v úvodu epizody, jen kde outsider drží čelo nebo favorit padá ke dnu; šablonovité známky („lépe, než
+  se čekalo“, „nad poměry“, „podle očekávání“) zůstávají zakázané i tam.
 - **Emoce nad tratí ano, známka ne.** Co se na trati stalo, smí zaznít se sportovní emocí: stíhací jízda, rozplynutý
   náskok, jízda od startu do cíle, obrat v cíli. Opírá se o místa země po kolech a v cíli. Slovo soudu o příčině
   („chyba“, „promarnila“) smí být jen tak silné, jak ho unese karta země (`judgment`, `allowed_verbs`). Seznam
@@ -11219,7 +11231,8 @@ doplněno „než v roce 1996“ a „než na poli“):
 1. **Skript:** `py scripts/kontrola_scenare_v2.py FAKTICKA_VERZE.md`. Hlídá: že karty regionu jsou pořád schválené
    a nad stejnými daty a že každá dvojice sousedů má v kartě rozdíl; tučné nejvýš 40 %; úplný oddíl NEŘÍKEJ; anglické
    štítky v obraze; slova, kterým divák nerozumí (`scripts/kontrola_srozumitelnosti.py --divak`); jeden klíč na zemi
-   a kolo; ligová místa v kolech, v průběžném pořadí a v obraze karty země v cíli (v hlase odstavců cíle je nehlídá);
+   a kolo; ligová místa v kolech, v průběžném pořadí a v obraze karty země v cíli (v hlase odstavců cíle je nehlídá;
+   v hlase kola pustí slovní zvýraznění u země, která je v tom kole první nebo poslední ze všech zemí ligy);
    medaile, zelený trikot, „střední země ligy“; zakázané obraty („ani chyba, ani zásluha“, „sedí napůl“, „nikdo
    nespočítal“, „doložit nejde“, „kola podcenila“, „statistika připisuje“, „jen na papíře“); kotvu tahu do hlasu;
    v cíli kruh a ceny jako důvod; v kolech větu o naplněném očekávání („lépe, než se čekalo“). Jen upozorní na délku,
@@ -11244,7 +11257,8 @@ doplněno „než v roce 1996“ a „než na poli“):
 
 #### C. Po návratu od Gemini
 
-1. **Skript** s přepínačem `--ctiva` na `CTIVA_VERZE.md`.
+1. **Skript** s přepínačem `--ctiva` na `CTIVA_VERZE.md`. Větu o naplněném očekávání v kole hlásí jen jako
+   šablonovitou známku; kontrast s rolí z úvodu epizody nálezem není (oddíl 4.5).
 2. **`DOPLNĚNO` a `STOP`:** nová příčina, číslo nebo viník v čtivé verzi je nález. Co má z doplněného zůstat, ověří
    kontrolor u zdroje. Odpověď na `STOP` se doplní do karty a do faktické verze, ne rovnou do čtivé.
 3. **Fakta proti kartám** kontroluje model, který faktickou verzi nepsal; platí to po každém přepisu, i jen stylovém.
@@ -11267,20 +11281,13 @@ Schválený hlas se rozdělí po odstavcích do `texty.json` (`k1_uvod`, `k1_<is
 
 ### 7. Otevřené body
 
-- **Absolutní první a poslední místo celé ligy v kole:** skill pro Gemini na webu je dovoluje říct, tento skill
-  a kontrolní skript ne. Čeká na Ondřeje; do té doby se neříkají.
 - **Vzor pro dva skoro stejně velké důvody v cíli** chybí (Litva čeká na úpravu a schválení).
-- **Odpolední úpravu z 27. 11. 2026 čte ke kontrole Gemini 4 Carbon.** Co z kontroly vzejde, zapíše se sem na místo.
-- **Nástroj pro podklady** (`scenare/_psani_gemini/pis_region.py`) ještě nedává, co tento skill slibuje: posuny
-  a odstupy po kole pro shrnutí kola, dráhu země pro poznámku v cíli, zařazení regionu na cílové tabuli ligy
-  a označení zemí, u kterých se měření na plný úvazek a na pracujícího rozcházejí. Jeho zadání pro pisatele ještě
-  říká jednu částku v cíli. Hlavička seznamu NEŘÍKEJ nemá větu o tom, co seznam hlídá (oddíl 4.5). Doplní se před
-  dalším psaním regionů; do té doby se podle odpolední úpravy nepíše.
-- **Karty zemí:** věta v kartě Polska o posunu „z posledního místa v regionu na třetí“ ve 2. kole a věta o odchodu
-  lidí z polí „do továren a kanceláří“ (odporuje seznamu zákazů téže karty) čekají na úpravu.
-- **Skill pro Gemini na webu** (čtivá verze 3.10) se s odpolední úpravou teprve sladí: říká v cíli jednu částku
-  (platí dvě) a nezná poznámku `dráha`, shrnutí kola s posuny ani nový závěr cíle. Starší neshody trvají: tučné
-  písmo je kotva a pořadí vět v cíli je jiné. Kontrolní skript nehlídá délku tučného úseku.
+- **Skill pro Gemini na webu** (čtivá verze 3.10) se s odpolední úpravou z 27. 11. 2026 teprve sladí: říká v cíli
+  jednu částku (platí dvě) a nezná poznámky `dráha` a `liga`, shrnutí kola s posuny ani nový závěr cíle. Starší
+  neshody trvají: tučné písmo je kotva a pořadí vět v cíli je jiné. Kontrolní skript nehlídá délku tučného úseku.
+- **Pět regionů mimo Balkán** má od 27. 11. 2026 odpoledne dílčí přepis podle této úpravy: pisatel přepsal jen
+  shrnutí 2. a 3. kola, věty o penězích v cíli a závěr cíle; opakované měřítko a průběžné místo v odstavci země
+  odešly škrtem; poznámky `dráha` a `liga` vložil nástroj z dat. Celé znovu se regiony nepsaly.
 - **Kam v epizodě patří lekce o výkonu** (oddíl 3C): správně do prvního regionu nebo do úvodu, ty jsou ale namluvené.
   Čeká na Ondřeje; do té doby se píše jako samostatný blok do prvního regionu po Balkánu.
 - **Vzory po přepočtu kol na plný úvazek:** vzor háčku (Nizozemsko na startu) a vzor cíle Nizozemska odešly, protože
