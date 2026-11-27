@@ -27,7 +27,7 @@ s kým nebo od kdy. **První dvě kola mezd měří od 27. 11. 2026 výkon na pl
 „kola měří totéž co ukazatel“ je ve skillu stavby karty ukazatele; přepočet v
 `10_documents/active/2026-11-26_stejna_jednotka/`). Karty zemí se nad novými daty znovu ověřují a pět regionů mimo
 Balkán se píše znovu (nástroj `…/output/analyza_v2/scenare/_psani_gemini/pis_region.py`). Skill čtivé verze pro Gemini na webu
-je s tím sladěný ve verzi 3.10 (`ekonomicke-hry-ctiva-verze-SKILL-v3.10.md`); do Gemini ji nahrává Ondřej.
+byl s tím sladěný ve verzi 3.10; od večera 27. 11. platí verze 3.11 (odstavec níže).
 
 **Úprava 27. 11. 2026 odpoledne** (Ondřej po čtivé verzi Střední Evropy, kterou zkontroloval model Gemini 4 Carbon:
 „ten script je fakt dobrý… už takhle by to ve videu klidně mohlo asi být“; a po čtyřech bodech, které Carbon navrhl
@@ -46,8 +46,11 @@ podklady (`pis_region.py`) a kontrolní skript jsou sladěné a dvě věty v kar
 Balkán má druhé znění z 27. 11. 2026** (Ondřej: „nemusí se to dělat odznova… jenom drobnější změny“): pisatel
 přepsal jen shrnutí 2. a 3. kola, věty o penězích v cíli a závěr cíle, opakované měřítko a průběžné místo
 v odstavci země odešly škrtem, poznámky `dráha` a `liga` vložil nástroj z dat. Soubory ke čtení končí `_v2`
-(`10_documents/active/2026-11-27_pet_regionu/`). Skill čtivé verze pro Gemini (3.10 říká v cíli jednu částku) se
-teprve sladí.
+(`10_documents/active/2026-11-27_pet_regionu/`). **Skill čtivé verze pro Gemini na webu je s odpolední úpravou
+sladěný ve verzi 3.11** (`ekonomicke-hry-ctiva-verze-SKILL-v3.11.md`, Ondřej 27. 11. večer: „Ano, slaď ho“): v cíli
+dvě částky, posuny jen ve shrnutí kola, závěr regionu se sportovním popisem cílové tabule a soubojem přes hranice
+jen z faktické verze, pole `dráha` a `liga` z poznámek jako opora pro závodní oblouk a pro první nebo poslední místo
+celé ligy, kontrast s rolí z úvodu nejvýš jednou za region. Do Gemini ji nahrává Ondřej.
 
 Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
 webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
