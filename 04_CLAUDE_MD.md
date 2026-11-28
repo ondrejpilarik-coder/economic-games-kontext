@@ -52,6 +52,14 @@ dvě částky, posuny jen ve shrnutí kola, závěr regionu se sportovním popis
 jen z faktické verze, pole `dráha` a `liga` z poznámek jako opora pro závodní oblouk a pro první nebo poslední místo
 celé ligy, kontrast s rolí z úvodu nejvýš jednou za region. Do Gemini ji nahrává Ondřej.
 
+**Úprava 28. 11. 2026** (Ondřej po zhlédnutí střihu Střední Evropy): **hlavní video je anglicky**, ostatní jazyky
+vzniknou dabingem; střih Střední Evropy se převádí do angličtiny a ostatní regiony po něm také, česká verze zůstane
+k pouštění. Scénáře se dál píšou a kontrolují česky, překládá se až hotová čtivá verze (nástroj
+`scripts/strih_preklad.py`, mapa slov, na která čeká obraz; scény se nepřepisují). **Tabule průběžného pořadí po
+kole ukazuje u každé země body** (100 = průměr všech zemí ligy, z výplaty čekané po dosavadních kolech) **a ztrátu
+na zemi před sebou**; hlas je neříká (skill faktické verze 3.0, oddíly 3B a 4.1; výpočet ve skillu velkého finále,
+oddíl 1.2).
+
 Ondřej 31. 10. 2026 změnil dělbu práce („faktickou verzi by sis měl psát ty. A čtivou pak přepíše Gemini na
 webu“). Důvod: Argon psal hezky, ale dělal faktické chyby, a při zákazu cokoli vypustit zůstával text hustý.
 

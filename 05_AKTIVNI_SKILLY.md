@@ -9577,25 +9577,41 @@ vlastně je dost zásadní pro tu dlouhodobou soutěž… Možná až ve finále
 ### 1. Body šampionátu
 
 #### 1.1 Kde se vysvětlují
-- **V regionech se body neříkají ani neukazují.** Regiony mluví v jednotkách ukazatele (u mezd eura na účtu a kolik
-  si za ně člověk koupí doma). Body týmů v regionech také ne.
+- **V regionech se body neříkají. Ukazuje je jen tabule průběžného pořadí po kole** (Ondřej 28. 11. 2026: „tam dát
+  to, kolik mají ty státy bodů nebo procent vůči průměru celé ligy, tak, aby diváci mohli vidět, kolik ty státy ještě
+  ztrácejí na další stát“). Na tabuli po 1., 2. a 3. kole stojí u každé země body po dosavadních kolech a mezi
+  sousedy ztráta v bodech. Hlas body ani ztrátu číslem neříká, odstupy říká slovem. Karty zemí, grafy kol a cíl
+  regionu dál mluví v jednotkách ukazatele (u mezd eura na účtu a kolik si za ně člověk koupí doma). Body týmů
+  v regionech nejsou ani na tabuli. Jak se body na tabuli počítají: oddíl 1.2.
 - **Vysvětlí se jednou, ve velkém finále první epizody ligy**, těsně před vyhlášením prvního žlutého trikotu, aby
   divák věděl, z čeho se trikot počítá. V dalších epizodách stačí jedna připomínková věta.
 
-**Proč (Claude 21. 11. 2026, Ondřej souhlasil):**
+**Proč (Claude 21. 11. 2026, Ondřej souhlasil; bod 2 upravený 28. 11. 2026):**
 1. V první disciplíně body pořadí nemění. Bod je výsledek země vydělený průměrem všech zemí ligy a vynásobený stem,
    takže pořadí podle bodů je stejné jako podle výplaty. Rozhodovat začnou, až se sčítají disciplíny s různými
    jednotkami (od druhé epizody).
-2. Divák rozumí eurům. Otázka „kolik mi přijde na účet a co si za to koupím“ je důvod, proč se dívá. Body v regionech
-   by byly další vrstva čísel, a hustota čísel byla největší problém scénářů.
+2. Divák rozumí eurům. Otázka „kolik mi přijde na účet a co si za to koupím“ je důvod, proč se dívá, a hustota čísel
+   byla největší problém scénářů. Body proto nepatří do hlasu ani na karty zemí. Tabule pořadí je výjimka: bez bodů
+   divák nevidí, kolik jeho zemi chybí na souseda a jestli ho ještě může předjet, a do hlasu tím žádné číslo
+   nepřibude.
 3. Pletly by se dva středy. Regiony srovnávají se zemí uprostřed ligy (nad ní polovina ligy, pod ní druhá
    polovina; v hlase se jí od 22. 11. 2026 říká **„průměrná země ligy“**, v obraze `LEAGUE MEDIAN`). Body mají sto
    jako **průměr všech zemí ligy**. Jsou to dvě různé čísla (u mezd 2 100 a 2 200 v kupní síle měsíčně). Ve finále
-   proto u bodů říkat „průměr všech sedmadvaceti zemí“, nikdy „průměrná země ligy má sto bodů“.
+   proto u bodů říkat „průměr všech sedmadvaceti zemí“, nikdy „průměrná země ligy má sto bodů“. Na tabuli pořadí
+   stojí legenda `100 = LEAGUE AVERAGE`, linky v grafech zůstávají `LEAGUE MEDIAN`; v anglickém hlase se prostřední
+   zemi říká „the league median“, aby slovo „average“ patřilo jen bodům.
 
 #### 1.2 Jak se body počítají (pro text i obraz)
 - **Body země v disciplíně** = 100 × výsledek země / průměr všech zemí ligy. U ukazatele, kde je méně lépe (třeba
   roky výplaty na byt), obráceně: 100 × průměr / výsledek, aby víc bodů bylo vždy lépe.
+- **Body na tabuli průběžného pořadí po kole N** (od 28. 11. 2026) = 100 × výplata, kterou země čeká po kolech 1 až
+  N, / průměr téže čekané výplaty všech zemí ligy (data epizody mezd: `po_kole.N.cekana_cista_pps_rok`
+  v `output/analyza_v2/data/liga_data.json`). Ztráta na zemi před sebou je rozdíl zobrazených bodů, aby čísla na
+  tabuli seděla i při počítání z hlavy. Celá čísla; když dva sousedé po zaokrouhlení vyjdou stejně, má celá tabule
+  jedno desetinné místo. **Proč průměr všech zemí a ne prostřední země:** s prostřední zemí jako stem by pět zemí
+  mezd (Rakousko, Portugalsko, Finsko, Belgie, Švýcarsko) po kole, které jim ublížilo, body přidalo, protože se
+  střed ligy posunul víc než ony; s průměrem ani jedna (spočítáno 28. 11. 2026). Na konci regionu jsou body
+  v kupní síle cíle stejně definované jako body šampionátu výše; cíl regionu je ale neukazuje.
 - **Body týmu** = prostý průměr bodů jeho zemí (tým je region).
 - **Žlutý trikot**: země s nejvíc body v celkovém pořadí, které sčítá body ze všech dosavadních disciplín.
 - **Zelený trikot je dočasně zrušený** (Ondřej 22. 11. 2026): ve finále se nevyhlašuje a v obraze není.
@@ -10025,6 +10041,10 @@ prodlouží asi o desetinu a hlas jede asi 140 slov za minutu.
   se ale na Slovensko dotáhlo skoro nastejno). Dvě souvislé věty, kolem 40 slov (u regionu se šesti zeměmi do 60);
   z odstupů nejvýš jedna věc, ta nejzajímavější. **Průběžné místo a posuny patří jen sem.** Odstavec země řekne, jak
   země dopadla v kole a proč („Druhé kolo vyhrává Polsko“); na jaké průběžné místo tím skáče, neříká.
+  **Tabule pod shrnutím ukazuje body a ztráty** (Ondřej 28. 11. 2026): řádek `[VIZUÁL: …]` u shrnutí kola uvede
+  u každé země body po dosavadních kolech (100 = průměr všech zemí ligy) a mezi sousedy ztrátu na zemi před sebou
+  v bodech, aby divák viděl, kolik jeho zemi chybí na souseda. Čísla dostane pisatel spočítaná v podkladech; hlas je
+  neříká a odstupy dál popisuje slovem. Jak se body počítají: `voiceover-velke-finale-SKILL-v1.0.md`, oddíl 1.2.
 - **Cíl (`## Finále: cíl`):** `cil_uvod` jen v prvním regionu epizody (co cíl měří podle karty indikátoru, u mezd čistá
   výplata bezdětného jednotlivce na plný úvazek v kupní síle, a že vstupují specifické faktory), jinde prázdný nebo
   jedna přechodová věta → `cil_<iso>` od posledního místa po vítěze (oddíl 4.3) → `cil_zaver`. Cílová tabule ligy
@@ -10074,7 +10094,9 @@ a rozpor se ohlásí.
 #### 4.1 Co v regionech nezazní a není ani v obraze
 
 - medaile (medaile, zlato, stříbro, bronz, GOLD, SILVER, BRONZE, MEDAL); region má vítěze, druhé a třetí místo;
-- body šampionátu a body týmů (vysvětlí je velké finále);
+- body šampionátu a body týmů (vysvětlí je velké finále). **Výjimka (Ondřej 28. 11. 2026):** tabule průběžného
+  pořadí po kole ukazuje u každé země body po dosavadních kolech a ztrátu na zemi před sebou v bodech (oddíl 3B,
+  shrnutí kola); v hlase, na kartách zemí a v grafech kol body nejsou, body týmů nejsou ani na tabuli;
 - zelený trikot (dočasně zrušený, ani role „adept na zelený trikot“);
 - „střední země ligy“ v hlase: říká se „průměrná země ligy“ nebo „průměrná evropská země“ (v obraze smí
   `LEAGUE MEDIAN`);
